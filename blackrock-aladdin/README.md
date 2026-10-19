@@ -15,9 +15,12 @@ Interview preparation research on BlackRock's Aladdin platform and Aladdin Studi
 | `07-design-references/` | The three HTML design samples the branded editions follow: the BlackRock web brand guide, the Key Findings sample and the original October 8 Briefing HTML | `blackrock-web-brand-guide.html` |
 | `08-review-rounds/` | Every review and production round in time order: the expert panel, the media crawl, both fact-checks, the corrections and the HTML builds, with the reviewers' reports and screenshots | `README.md` inside, then the 0411 folder |
 | `09-related-ai-concepts/` | Transcripts of four IBM Technology explainers (agents, agentic harness, RAG vs fine-tuning, MCP vs API) in one Markdown, for the AI part of the interview | `ibm_ai_concepts_transcripts.md` |
+| `10-compendium/` | One matter-of-fact document laying out everything the pulls show about Aladdin, Aladdin Studio and BlackRock, in that order, with a source tag on every fact | `Aladdin_Studio_BlackRock_Compendium.pdf` |
 | `tools/` | Rendering and editing scripts: Chromium and WeasyPrint renderers, the V8 HTML builder, the Briefing HTML edit chain and page-number fixer | `render_chromium.js` |
 
 ## Final deliverables (PDF)
+
+- `10-compendium/Aladdin_Studio_BlackRock_Compendium.pdf` (35 pages, the single reference document)
 
 - `06-revised-documents/briefing-and-interview-guide/Aladdin_Studio_Briefing_and_Interview_Guide_REVISED.pdf` (81 pages, branded edition)
 - `06-revised-documents/what-it-does-v8/Aladdin_Studio_What_It_Does_V8.pdf` (34 pages, branded edition)

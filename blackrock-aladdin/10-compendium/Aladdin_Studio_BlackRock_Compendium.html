@@ -1,0 +1,2831 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="" xml:lang="">
+<head>
+  <meta charset="utf-8" />
+  <meta name="generator" content="pandoc" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
+  <title>Compendium</title>
+  <style>
+    code{white-space: pre-wrap;}
+    span.smallcaps{font-variant: small-caps;}
+    div.columns{display: flex; gap: min(4vw, 1.5em);}
+    div.column{flex: auto; overflow-x: auto;}
+    div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+    /* The extra [class] is a hack that increases specificity enough to
+       override a similar rule in reveal.js */
+    ul.task-list[class]{list-style: none;}
+    ul.task-list li input[type="checkbox"] {
+      font-size: inherit;
+      width: 0.8em;
+      margin: 0 0.8em 0.2em -1.6em;
+      vertical-align: middle;
+    }
+    .display.math{display: block; text-align: center; margin: 0.5rem auto;}
+  </style>
+  <style>@page{size:612pt 792pt;margin:54pt 54pt 60pt 54pt;@bottom-right{content:counter(page);font:9pt "Barlow",Arial,sans-serif;color:#000}@bottom-left{content:"Independent research. Not produced, reviewed or endorsed by BlackRock.";font:7.5pt Arial,sans-serif;color:#595959}}
+body{font-family:"Barlow",Arial,Helvetica,sans-serif;font-size:10pt;line-height:1.35;color:#000;max-width:none;margin:0}
+h1{font-size:22pt;line-height:1.15;margin:0 0 14pt;font-weight:800}
+h1::before{content:"";display:block;width:57pt;height:7pt;background:#FFCE00;margin-bottom:18pt}
+h2{font-size:15pt;margin:22pt 0 8pt;font-weight:800;break-after:avoid}
+h3{font-size:11.5pt;margin:16pt 0 6pt;font-weight:700;break-after:avoid}
+h4{font-size:10pt;margin:12pt 0 4pt;font-weight:700}
+p,li{margin:0 0 7pt}
+a{color:#000;text-decoration:underline;text-decoration-color:#FF4713}
+table{border-collapse:collapse;width:100%;font-size:8.5pt;line-height:1.25;margin:6pt 0 12pt;break-inside:auto}
+th{text-align:left;vertical-align:bottom;border-bottom:1pt solid #000;padding:3pt 6pt 4pt 0;font-weight:700}
+td{vertical-align:top;border-bottom:.5pt solid #D6D5DD;padding:3pt 6pt 3pt 0}
+tr{break-inside:avoid}
+code{font-family:"IBM Plex Mono",Menlo,monospace;font-size:8.5pt;background:#F2F2F2;padding:0 2pt}
+pre{background:#F2F2F2;padding:8pt;font-size:7.8pt;white-space:pre-wrap;overflow-wrap:anywhere}
+blockquote{margin:0 0 10pt;padding:6pt 10pt;background:#F2F2F2;border-left:3pt solid #FF4713}
+hr{border:0;border-top:1pt solid #D6D5DD;margin:14pt 0}
+
+h1{break-before:page} h1:first-of-type{break-before:auto} #TOC{break-after:page} #TOC ul{list-style:none;padding-left:0} #TOC ul ul{padding-left:14pt} #TOC li{margin:0 0 3pt} #TOC a{text-decoration:none} h2{break-after:avoid} table{break-inside:auto} .sourcetag{color:#595959}
+</style>
+</head>
+<body>
+<header hidden>
+<h1 class="title">Compendium</h1>
+</header>
+
+<h1
+id="what-the-data-pulls-show-about-aladdin-aladdin-studio-and-blackrock">What
+the data pulls show about Aladdin, Aladdin Studio and BlackRock</h1>
+<p>Prepared October 19, 2026. Independent research compiled from
+BlackRock's public material. Not produced, reviewed or endorsed by
+BlackRock.</p>
+<h2 id="what-this-document-is">What this document is</h2>
+<p>A plain statement of what was learned about BlackRock's Aladdin
+platform, Aladdin Studio and BlackRock itself from the material pulled
+for this project. It is organised in that order. It lays out facts and
+the source of each fact, and it says where the material is silent. It
+gives no advice.</p>
+<h2 id="what-was-pulled">What was pulled</h2>
+<table>
+<thead>
+<tr class="header">
+<th>Material</th>
+<th>What it is</th>
+<th>Size</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>API specifications</td>
+<td>The 54 Swagger 2.0 specifications inside BlackRock's 11 public
+<code>asdk_plugin_*</code> packages on PyPI (version 2.0.0b3), plus the
+AladdinSDK README</td>
+<td>54 specs, 301 operations</td>
+</tr>
+<tr class="even">
+<td>Product pages</td>
+<td>BlackRock's Aladdin, Aladdin Studio, Studio for Risk, Copilot, Whole
+Portfolio, Wealth, eFront and APIs pages; the Fivetran, Microsoft and
+Snowflake write-ups</td>
+<td>15 pages</td>
+</tr>
+<tr class="odd">
+<td>Transcripts, part 1</td>
+<td>The requested YouTube videos and BlackRock site videos: the
+Snowflake Summit talk, the LangChain Interrupt talk, Never Done podcast
+episodes with Microsoft and on Studio and Snowflake, the Big Little
+Questions series, Aladdin Explore and eFront explainers</td>
+<td>33 files</td>
+</tr>
+<tr class="even">
+<td>Transcripts, part 2</td>
+<td>Everything with captions or audio on BlackRock's Aladdin and eFront
+media library, the Never Done and Aladdin Client Stories podcast feeds,
+the Build vs Buy webinar and client videos</td>
+<td>95 files</td>
+</tr>
+<tr class="odd">
+<td>Job postings and press releases</td>
+<td>Studio Developer, Technical Writer and other Aladdin postings;
+BlackRock releases on Azure, AWS, Preqin and eFront, as captured in the
+research briefings</td>
+<td>as cited</td>
+</tr>
+</tbody>
+</table>
+<h2 id="how-to-read-the-source-tags">How to read the source tags</h2>
+<p>Every fact ends with a tag in square brackets.
+<code><span class="sourcetag">[spec: OrderAPI]</span></code> means the public API specification of that
+name. <code><span class="sourcetag">[SDK README]</span></code> means the AladdinSDK README on PyPI.
+<code><span class="sourcetag">[page: Copilot]</span></code> means a BlackRock web page.
+<code><span class="sourcetag">[T1-11 ...]</span></code> and <code><span class="sourcetag">[T2-049 ...]</span></code> mean transcript
+files in part 1 and part 2 of the transcript set, with the file number
+and a short title. <code><span class="sourcetag">[briefing: suite architecture]</span></code> means one
+of the two research briefings built from the specifications and
+BlackRock's pages. Quotations are verbatim from the transcript files;
+where a file is an automatic caption, the tag says so. Caption
+misspellings of proper names inside quotations (for example BlackRock
+and Preqin) were corrected; no other wording inside quotation marks was
+changed.</p>
+<nav id="TOC" role="doc-toc"><h2>Contents</h2>
+<ul>
+<li><a
+href="#what-the-data-pulls-show-about-aladdin-aladdin-studio-and-blackrock"
+id="toc-what-the-data-pulls-show-about-aladdin-aladdin-studio-and-blackrock">What
+the data pulls show about Aladdin, Aladdin Studio and BlackRock</a>
+<ul>
+<li><a href="#what-this-document-is" id="toc-what-this-document-is">What
+this document is</a></li>
+<li><a href="#what-was-pulled" id="toc-what-was-pulled">What was
+pulled</a></li>
+<li><a href="#how-to-read-the-source-tags"
+id="toc-how-to-read-the-source-tags">How to read the source
+tags</a></li>
+</ul></li>
+<li><a href="#part-1-aladdin" id="toc-part-1-aladdin">Part 1.
+Aladdin</a>
+<ul>
+<li><a href="#11-what-aladdin-is" id="toc-11-what-aladdin-is">1.1 What
+Aladdin is</a></li>
+<li><a href="#12-where-it-came-from" id="toc-12-where-it-came-from">1.2
+Where it came from</a></li>
+<li><a href="#13-what-it-does-the-investment-lifecycle-it-covers"
+id="toc-13-what-it-does-the-investment-lifecycle-it-covers">1.3 What it
+does: the investment lifecycle it covers</a></li>
+<li><a href="#14-the-product-family" id="toc-14-the-product-family">1.4
+The product family</a></li>
+<li><a href="#15-how-it-is-built-and-run"
+id="toc-15-how-it-is-built-and-run">1.5 How it is built and run</a></li>
+<li><a href="#16-risk-and-analytics" id="toc-16-risk-and-analytics">1.6
+Risk and analytics</a></li>
+<li><a href="#17-data" id="toc-17-data">1.7 Data</a></li>
+<li><a href="#18-artificial-intelligence-in-aladdin"
+id="toc-18-artificial-intelligence-in-aladdin">1.8 Artificial
+intelligence in Aladdin</a></li>
+<li><a href="#19-who-uses-it-and-at-what-scale"
+id="toc-19-who-uses-it-and-at-what-scale">1.9 Who uses it and at what
+scale</a></li>
+<li><a href="#110-what-the-pulls-do-not-show"
+id="toc-110-what-the-pulls-do-not-show">1.10 What the pulls do not
+show</a></li>
+</ul></li>
+<li><a href="#part-2-aladdin-studio" id="toc-part-2-aladdin-studio">Part
+2. Aladdin Studio</a>
+<ul>
+<li><a href="#21-what-studio-is" id="toc-21-what-studio-is">2.1 What
+Studio is</a></li>
+<li><a href="#22-history" id="toc-22-history">2.2 History</a></li>
+<li><a href="#23-the-apis-aladdin-graph"
+id="toc-23-the-apis-aladdin-graph">2.3 The APIs: Aladdin Graph</a></li>
+<li><a href="#24-authentication-and-authorisation"
+id="toc-24-authentication-and-authorisation">2.4 Authentication and
+authorisation</a></li>
+<li><a href="#25-events-and-streaming"
+id="toc-25-events-and-streaming">2.5 Events and streaming</a></li>
+<li><a href="#26-aladdin-data-cloud" id="toc-26-aladdin-data-cloud">2.6
+Aladdin Data Cloud</a></li>
+<li><a href="#27-developer-tools" id="toc-27-developer-tools">2.7
+Developer tools</a></li>
+<li><a href="#28-who-builds-on-studio"
+id="toc-28-who-builds-on-studio">2.8 Who builds on Studio</a></li>
+<li><a href="#29-copilot-and-studio" id="toc-29-copilot-and-studio">2.9
+Copilot and Studio</a></li>
+<li><a href="#210-how-blackrock-presents-studio"
+id="toc-210-how-blackrock-presents-studio">2.10 How BlackRock presents
+Studio</a></li>
+<li><a href="#211-what-the-pulls-do-not-show"
+id="toc-211-what-the-pulls-do-not-show">2.11 What the pulls do not
+show</a></li>
+</ul></li>
+<li><a href="#part-3-blackrock" id="toc-part-3-blackrock">Part 3.
+BlackRock</a>
+<ul>
+<li><a href="#31-the-aladdin-business-inside-blackrock"
+id="toc-31-the-aladdin-business-inside-blackrock">3.1 The Aladdin
+business inside BlackRock</a></li>
+<li><a href="#32-people-who-speak-for-aladdin-in-the-pulls"
+id="toc-32-people-who-speak-for-aladdin-in-the-pulls">3.2 People who
+speak for Aladdin in the pulls</a></li>
+<li><a href="#33-strategy-as-stated" id="toc-33-strategy-as-stated">3.3
+Strategy as stated</a></li>
+<li><a href="#34-partnerships-named-in-the-pulls"
+id="toc-34-partnerships-named-in-the-pulls">3.4 Partnerships named in
+the pulls</a></li>
+<li><a href="#35-clients-blackrock-features"
+id="toc-35-clients-blackrock-features">3.5 Clients BlackRock
+features</a></li>
+<li><a href="#36-how-blackrock-talks-to-the-market"
+id="toc-36-how-blackrock-talks-to-the-market">3.6 How BlackRock talks to
+the market</a></li>
+<li><a href="#37-hiring-and-roles-seen-in-the-pulls"
+id="toc-37-hiring-and-roles-seen-in-the-pulls">3.7 Hiring and roles seen
+in the pulls</a></li>
+<li><a href="#38-culture-and-operating-statements"
+id="toc-38-culture-and-operating-statements">3.8 Culture and operating
+statements</a></li>
+<li><a href="#39-what-the-pulls-do-not-show"
+id="toc-39-what-the-pulls-do-not-show">3.9 What the pulls do not
+show</a></li>
+</ul></li>
+</ul>
+</nav><h1 id="part-1-aladdin">Part 1. Aladdin</h1>
+<h2 id="11-what-aladdin-is">1.1 What Aladdin is</h2>
+<p>Aladdin is the investment platform BlackRock built for its own
+business and sells to other institutions. BlackRock's own description,
+as printed at the foot of its eFront pages, is: "Aladdin® is a
+technology platform used by asset managers and owners including banks,
+financial institutions, pensions, corporations, insurers, and wealth
+managers. The Aladdin platform unifies the investment management
+process, providing a common data language within an organization to
+enable scale, provide insights, and support business transformation."
+<span class="sourcetag">[page: eFront Insight LP video]</span> The same text adds that "Aladdin® and
+eFront® platforms bring together public and private asset class data to
+create an industry-recognized whole portfolio solution for investment
+professionals globally." <span class="sourcetag">[page: eFront Investment Café video]</span></p>
+<p>Brennan Rosales, AI engineering lead, gave the engineering-side
+version at LangChain Interrupt 2025: "Aladdin is a proprietary
+technology platform that unifies the investment management process. It
+provides asset managers with a whole portfolio solution that gives them
+access to both public and private markets and allows them to cover the
+needs of both institutional and retail investors. This system is built
+by the industry for the industry. BlackRock is the biggest user of
+Aladdin." <span class="sourcetag">[T1-16 LangChain Interrupt, 2025]</span></p>
+<p>The "whole portfolio" framing is BlackRock's current product
+language. The Whole Portfolio page describes "a connected ecosystem that
+gives institutional investors an enterprise-wide view across all asset
+classes—including both direct and indirect investments in private
+markets—enabling unified risk, exposure, as well as performance analysis
+and strategic oversight", and lists "an integrated ibor that supports
+public and private assets" among its three pillars. <span class="sourcetag">[page: Whole
+Portfolio]</span> The page's counters read "6 years delivering Whole Portfolio
+solutions—with 20+ years delivering solutions for private markets" and
+"50,000 unique private markets companies maintained and 2k+ private
+markets risk factors monitored daily". <span class="sourcetag">[page: Whole Portfolio]</span> Tarek
+Chouman, Global Head of the Aladdin Client Business, in the APAC client
+forum recap: "BlackRock and Aladdin was built for the concept of the
+whole portfolio." <span class="sourcetag">[T2-063 APAC Client Forum recap, 2025]</span></p>
+<p>The investment book of record is the anchor. Kunal Khara, Global Head
+of Aladdin Product: "Our iBOR is comprehensive and consistent that
+allows all clients and all users to have a single source of data for
+their portfolio, for their positions, for their exporters." <span class="sourcetag">[T2-061 Best
+Overall Technology Provider 2023, interview 2024]</span> Richard Newman, GM of
+Aladdin Studio: "It does start with IBOR. This other IP we have here at
+Aladdin that we create, data around credit analytics, around
+mortgage-backed security data, around insurance analytics, things
+linking that into the Aladdin Data Cloud." <span class="sourcetag">[T1-11 Never Done: Data, the
+key ingredient, Jan 2025]</span> The specs model both books: AborLot records
+carry a parallel OBOR lot id so the accounting book and the investment
+book reconcile at lot level. <span class="sourcetag">[spec: AborLotAPI]</span> <span class="sourcetag">[briefing: suite
+architecture]</span></p>
+<p>Who uses it inside a client firm, as the transcripts describe them:
+portfolio managers, traders, trading and data operators, compliance,
+risk, performance analysts, fund accountants and CFOs. Dave Woodhead,
+head of engineering for Aladdin Studio: "the Aladdin application is a
+suite of tools that power the entire investment life cycle from a
+portfolio manager that's managing a portfolio ... The portfolio manager
+is the tip of the iceberg. Behind them, you have an entire raft of data
+operators of of trading operators that make sure that the investment
+life cycle works as it's supposed to." <span class="sourcetag">[T1-01 Snowflake Data Cloud
+podcast, Woodhead, about 2024]</span> The Aladdin Accounting team: "Our clients
+are CFOs, they're controllers, they're heads of performance". <span class="sourcetag">[T1-33 Big
+Little Questions: Accounting]</span> The UserAPI classifies accounts as a
+client employee, "A User who is an employee of a AladdinProvider", a
+system user, or a BlackRock employee. <span class="sourcetag">[spec: UserAPI]</span></p>
+<h2 id="12-where-it-came-from">1.2 Where it came from</h2>
+<p>Woodhead dates the platform at "just over 20 years" and says
+BlackRock "was founded on the notion that technology is a differentiator
+... As as BlackRock grew, our clients recognized that our technology was
+differentiated and asked could they use the same software. So BlackRock
+pretty quickly entered the fintech business and we started offering
+Aladdin as a service." <span class="sourcetag">[T1-01 Snowflake Data Cloud podcast, Woodhead,
+about 2024]</span> Randy Fradin, in a Big Little Questions episode on the Azure
+migration, says "A Latin was created, you know, 30 years ago. And in
+that time, we've demonstrated repeatedly our ability to kind of
+completely re-underwrite the stack of technology and capabilities
+underpinning a Latin. I think our ability to do that without disrupting
+customers is kind of our superpower." <span class="sourcetag">[T1-28 Big Little Questions:
+platform and solution, Fradin and Kerner, undated]</span> The Fivetran write-up
+says Aladdin "has served as the backbone of BlackRock's technology and
+investment operations since the company's early days". <span class="sourcetag">[page: Fivetran
+blog, Aug 2024]</span></p>
+<p>The engineering history is told in one BlackRock podcast, the
+Principles of Design episode with Sue Zheng, Tech Fellow, and Afwa
+Kandawire, Global Head of Aladdin Platforms (May 2023). Zheng on the
+founding rule: "one of the engineering ethos we always had was one
+database. You join, people tell you it's one database, you cannot create
+another database. But at some point, the company continued to grow and
+the industry grew, you realize there's a physical constraint to one
+database. So, then we evolved one database to one source of truth".
+<span class="sourcetag">[T2-027 Principles of Design, May 2023]</span> On the first break from it:
+"when we first started to challenge that in trading, we were trying to
+figure out how to keep up with the growing trading volume and the need
+for more speed without impacting the rest of the system. And we realized
+that we probably have to take parts of the order management or order
+execution system and put it on top of a different real time
+transactional database ... at that point we leveraged Cassandra. So,
+before that everything was in one database, a side base database."
+<span class="sourcetag">[T2-027 Principles of Design, May 2023]</span> "Side base" is the transcript's
+rendering of Sybase. The technique was "writing behind, so that yes,
+we're going to be in a separate database so that we can reduce the
+contagion risk, but also making sure everyone still has access to the
+same information no different than before." <span class="sourcetag">[T2-027 Principles of
+Design, May 2023]</span></p>
+<p>Zheng on Charlie Hallac, whom Kandawire names as one of the founders
+of that thinking: "He would check every database change. You want to
+make sure that again, we stick to the one database. If you're going to
+write to this, make sure there's only one application writing to it ...
+The service was just called a BMS service back then, but it's the same
+concept." <span class="sourcetag">[T2-027 Principles of Design, May 2023]</span> She also describes
+rebuilding "an old C++ application into Java" and stripping compliance
+checks out into a shared service. <span class="sourcetag">[T2-027 Principles of Design, May
+2023]</span></p>
+<p>Kandawire on the current transition: "if we've been in this
+architecture for almost two decades over the last few years, we've
+started to migrate away from our layered architecture to a services
+architecture ... Every single client environment looks the same, is
+built the same way, we have a single control plane and a single source
+of truth. And so, you know, one of the things that we're starting to
+introduce is this notion of domain driven design and the idea being that
+the database is no longer the single source of truth, but rather the
+domain is the single source of truth for that domain." <span class="sourcetag">[T2-027
+Principles of Design, May 2023]</span></p>
+<p>On the same-code rule, Zheng: "in Aladdin we always try to push the
+same software out to all clients ... I don't want to be on the hook for
+saying I have like 50 different versions out there." Kandawire: "That
+notion of a single code base at all clients leads to simplicity, it's
+what enables the scale, it's what enables the reliability." Zheng:
+"BlackRock, the house, is using the same software, right? We have skin
+in the game". <span class="sourcetag">[T2-027 Principles of Design, May 2023]</span></p>
+<p>On the cloud decision, Kandawire: "I arrived, I joined at a point in
+time where we had made a decision on how we were going to migrate to the
+cloud. We had chosen our cloud provider. And one of the core, as you
+know, principles around the migration is that the first stage would be a
+lift and shift, and that meant really focusing on moving the
+infrastructure ... the principal reason for doing a lift and shift was
+to ensure that we could actually enable Aladdin to be available to more
+prospects in more regions than we had datacentres available." <span class="sourcetag">[T2-027
+Principles of Design, May 2023]</span> Microsoft's Ignite 2024 recap (Dec 2024)
+dates the start: "Five years ago, we began working on a strategy to move
+them into the cloud on Microsoft Azure. Today, all BlackRock's
+technology platform clients and services are hosted in the Azure cloud".
+<span class="sourcetag">[page: Microsoft Cloud blog, Dec 2024]</span> Lance Braunstein, head of Aladdin
+Engineering, in March 2023: "you're great at data centers. We will never
+be the data center operator that you are, and that's fine. So, we have
+partnered with you." <span class="sourcetag">[T2-022 Microsoft partner story, Mar 2023]</span> The
+Studio briefing adds, from the Microsoft customer story and the AWS
+release, that the migration was client by client with Microsoft Treasury
+the first instance moved, and that in December 2025 BlackRock announced
+an AWS hosting option, "cloud-agnostic by design", with general
+availability for AWS-hosted clients expected in H2 2026. <span class="sourcetag">[briefing:
+Studio]</span></p>
+<p>The second origin thread is private markets. Sudhir Nair, Global Head
+of Aladdin: "Aladdin grew up very much as a public markets oriented
+technology. And it wasn't until 2019, when we did our first major
+technology acquisition with E-Front, that we had the opportunity to
+bring side by side through this concept of the whole portfolio, the
+public markets investment technology alongside private markets
+investment technology." <span class="sourcetag">[T2-033 Never Done: Sudhir Nair, Jun 2025]</span> In
+the same episode he says "about three months ago, we closed our next
+acquisition", Preqin. <span class="sourcetag">[T2-033 Never Done: Sudhir Nair, Jun 2025]</span></p>
+<h2 id="13-what-it-does-the-investment-lifecycle-it-covers">1.3 What it
+does: the investment lifecycle it covers</h2>
+<p>Lou Rosato, speaking at Symphony Innovate 2026 for BlackRock
+operations: "We have a technology called Aladdin. That's our proprietary
+workflow. It goes end-to-end from risk to investment to trading to
+post-trade to accounting all the way through the life cycle." <span class="sourcetag">[T1-10
+Symphony Innovate 2026]</span> Khara: "a lot of firms very much value this
+integrated end-to-end investment management process, the front middle
+and back office all managed through Aladdin." <span class="sourcetag">[T2-061 Best Overall
+Technology Provider 2023]</span> The Aladdin Accounting team: "what we've built
+is a process where you can go from that first order through the trade,
+through all the operation protocols into accounting without lifting up
+the pencil". <span class="sourcetag">[T1-33 Big Little Questions: Accounting]</span></p>
+<p>The 54 public specifications are organised into eleven domains:
+accounting, analytics, clients, compliance, data, investment-operations,
+investment-research, platform, portfolio, portfolio-management and
+trading. <span class="sourcetag">[briefing: suite architecture]</span> The specs show pre-trade
+compliance as a property of the order itself: posting an order takes
+<code>whatIf</code> ("True to post orders in a what-if mode") and
+<code>runCompliance</code> ("Default is true to run compliance on this
+post order request") flags and returns violations inline. <span class="sourcetag">[spec:
+OrderAPI v1]</span> Compliance rules come in ten types (prohibition,
+concentration, value at risk, disclosure, scripted, look-through
+definition, information, trade, counterparty, counterparty exposure
+limit) with overnight and intraday run flags. <span class="sourcetag">[spec: ComplianceRuleAPI]</span>
+Cash forecasting is a settlement-date ladder per currency that can
+include intraday trades, authorised and open orders, confirmed and
+estimated new cash, collateral pledged and held, and unfunded
+commitments. <span class="sourcetag">[spec: CashLadderAPI v2]</span> Operations APIs cover corporate
+actions and entitlements, coupon resets, MBS factors, miscellaneous cash
+transmissions, collateral statements and broker and settlement reference
+data. <span class="sourcetag">[briefing: suite architecture]</span> The accounting domain is described
+in its own spec as "Aladdin Accounting". <span class="sourcetag">[spec:
+PortfolioConfigurationAPI]</span></p>
+<p>Performance and reporting run through Explore. A BlackRock client
+training recording: "performance analysts primarily leverage explore a
+One-Stop shop for reporting and portfolio analysis". Returns "are
+calculated at the security level and aggregated to the sector portfolio
+and Enterprise levels daily", decomposed into price, income, pay down,
+FX and trade P&amp;L, with "a Brinson 2 or three Factor attribution
+analysis" over a risk-based decomposition. <span class="sourcetag">[T1-06 Fixed Income
+Performance Analyst, undated]</span> The Explore classroom recording describes
+a web application launched "through your genie toolbar" or by adding
+"/app/Explorer" to the client site URL, with workspaces, widgets, risk
+settings ("analytical var as a 95% instead of an 84%"), stress P&amp;L
+columns, what-if models and saved what-if portfolios; the risk summary
+tab is "pulling straight from PRT". <span class="sourcetag">[T1-09 Aladdin Explore Intro,
+undated]</span> In a BlackRock webinar Explore is called "One of the main kind
+of all flagship tools that we have available ... This is our portfolio
+analysis and reporting application." <span class="sourcetag">[T2-048 Assessing the impact of
+escalating trade tensions, undated]</span></p>
+<p>The table maps lifecycle stages to the applications the specs and
+transcripts name.</p>
+<table>
+<thead>
+<tr class="header">
+<th>Lifecycle stage</th>
+<th>Aladdin applications and internal systems named</th>
+<th>Source</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Research and idea capture</td>
+<td>investment-research domain: ResearchNote, Engagement,
+AnalystCoverage, Watchlist, Criterion (all alpha)</td>
+<td><span class="sourcetag">[briefing: suite architecture]</span></td>
+</tr>
+<tr class="even">
+<td>Portfolio setup and mandate</td>
+<td>PortfolioToolkit (850-attribute Portfolio entity), "portfolio
+monitor" seen by PMG ("PMG Monitor Horizon Days"), Green Package risk
+services, FX Center (accounts in or out of scope "for making FX payments
+via the FX Center")</td>
+<td><span class="sourcetag">[spec: PortfolioToolkitAPI]</span></td>
+</tr>
+<tr class="odd">
+<td>Client custom data</td>
+<td>CID Manager UI, which uploads entity files to Custom Investment
+Datasets</td>
+<td><span class="sourcetag">[spec: CIDS writer]</span></td>
+</tr>
+<tr class="even">
+<td>Cash</td>
+<td>CashMaster ("Cash publishing is done using an Aladdin application
+called CashMaster"); AlphaCashMaster and AutoMatchServer for committed
+cash</td>
+<td><span class="sourcetag">[spec: CashLadderAPI v2]</span> <span class="sourcetag">[spec: PortfolioToolkitAPI]</span></td>
+</tr>
+<tr class="odd">
+<td>Order raising and compliance</td>
+<td>OrderAPI with whatIf, runCompliance and complianceTimeout; "Order
+Monitor of Aladdin Dashboard"; order statuses "Open", "Compl Pending",
+"Authorized", "Active"; Abacus compliance engine in parallel or live
+mode</td>
+<td><span class="sourcetag">[spec: OrderAPI v1]</span> <span class="sourcetag">[spec: ComplianceRuleAPI]</span></td>
+</tr>
+<tr class="even">
+<td>Trading and execution</td>
+<td>TradeAPI v2 block and child trades, quotes in competition, external
+trade references</td>
+<td><span class="sourcetag">[spec: TradeAPI v2]</span></td>
+</tr>
+<tr class="odd">
+<td>Risk and oversight</td>
+<td>Explore (portfolio analysis and reporting), PRT risk reports, Risk
+Radar (risk rules, exceptions, workflow, config)</td>
+<td><span class="sourcetag">[T1-09 Aladdin Explore Intro]</span> <span class="sourcetag">[T2-048 trade tensions webinar]</span> <span class="sourcetag">[spec:
+RiskConfigAPI]</span></td>
+</tr>
+<tr class="even">
+<td>Corporate actions</td>
+<td>"Dashboard Events Monitor", on which an approved event appears and
+later falls off</td>
+<td><span class="sourcetag">[spec: CorporateActionAPI]</span></td>
+</tr>
+<tr class="odd">
+<td>Coupons and factors</td>
+<td>Bulk Rate Mechanism (BRM) for internally generated coupon
+resets</td>
+<td><span class="sourcetag">[spec: CouponResetAPI]</span></td>
+</tr>
+<tr class="even">
+<td>Collateral and margin</td>
+<td>DECO (legal agreements; statements "viewable in the DECO tool");
+Paycheck (failed swap payments)</td>
+<td><span class="sourcetag">[spec: CollateralStatementAPI]</span></td>
+</tr>
+<tr class="odd">
+<td>Payments out</td>
+<td>the "transmission framework", which sends money out once confirmedBy
+and reviewedBy are recorded</td>
+<td><span class="sourcetag">[spec: MiscellaneousCashflowAPI]</span></td>
+</tr>
+<tr class="even">
+<td>Capital flows</td>
+<td>"newcash" module and VIEW_NEWCASH permissions</td>
+<td><span class="sourcetag">[spec: EnrichedCapitalFlowAPI]</span></td>
+</tr>
+<tr class="odd">
+<td>Accounting and NAV</td>
+<td>Aladdin Accounting: ABOR lots, valuations with sign-off, composite
+membership</td>
+<td><span class="sourcetag">[spec: AborLotAPI]</span> <span class="sourcetag">[briefing: suite architecture]</span></td>
+</tr>
+<tr class="even">
+<td>Performance and attribution</td>
+<td>Explore</td>
+<td><span class="sourcetag">[T1-06 Fixed Income Performance Analyst]</span></td>
+</tr>
+<tr class="odd">
+<td>Data distribution</td>
+<td>ADC Admin Center (Studio) for Aladdin Data Cloud datasets</td>
+<td><span class="sourcetag">[spec: AdcDatasetAPI]</span></td>
+</tr>
+<tr class="even">
+<td>Private markets</td>
+<td>eFront Insight, Investment Café, Invest GP, Invest LP, Invest AS,
+FAIR, eFront Provider, eFront Office</td>
+<td><span class="sourcetag">[page: eFront site navigation]</span> <span class="sourcetag">[T2-087 Meridiam]</span></td>
+</tr>
+</tbody>
+</table>
+<p>Positions, risk analytics outputs, performance attribution, pricing,
+benchmarks, execution management and private markets are absent from the
+public specification packages. <span class="sourcetag">[briefing: suite architecture]</span></p>
+<h2 id="14-the-product-family">1.4 The product family</h2>
+<p>The Aladdin site's navigation lists four platforms (Aladdin, Aladdin
+Wealth, eFront, Preqin) and nine solutions (Accounting, Aladdin Studio,
+Aladdin Data Cloud, Whole Portfolio, Risk Management, Sustainability,
+Climate Risk, Aladdin Copilot, Private Markets Data). <span class="sourcetag">[page: Copilot]</span>
+The name "Aladdin Enterprise" does not appear in the pulls.</p>
+<table>
+<thead>
+<tr class="header">
+<th>Product</th>
+<th>What the corpus says it is</th>
+<th>Source</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Aladdin (core platform)</td>
+<td>The end-to-end platform described in 1.1 and 1.3. The Whole
+Portfolio page calls it "an open, API-first platform that adapts to your
+code and strategy across the investment management process" with "an
+ecosystem of partners across data vendors, systems integrators, and
+liquidity providers".</td>
+<td><span class="sourcetag">[page: Whole Portfolio]</span></td>
+</tr>
+<tr class="even">
+<td>Aladdin Risk</td>
+<td>The analytics core. The Studio for Risk page: "Aladdin® Studio
+extends Aladdin Risk beyond the user interface, helping organizations
+embed risk analytics and data into the systems and workflows where their
+teams already work." Liz, head of transformations at Aladdin Wealth:
+"the Aladdin risk model, which was part of BlackRock's founding years
+ago ... it's a 3,000 risk factor model".</td>
+<td><span class="sourcetag">[page: Studio for Risk]</span> <span class="sourcetag">[T1-08 iCapital Connect, Aladdin
+Wealth]</span></td>
+</tr>
+<tr class="odd">
+<td>Aladdin Wealth</td>
+<td>"BlackRock's proprietary technology platform that enables wealth
+managers to accelerate growth across client segments ... combines
+sophisticated risk analytics with comprehensive portfolio management on
+a single, unified platform." Ted Stratigos is "Global Head of Aladdin
+Wealth Tech". Morgan Stanley's Portfolio Risk Platform "leverages a
+combination of BlackRock's Aladdin risk analytics and Morgan Stanley
+data". Intesa Sanpaolo's Fideuram Direct "is based on the Aladdin
+platform and has a model of advisory based on Aladdin".</td>
+<td><span class="sourcetag">[page: Wealth Auto Commentary, 2 Oct 2025]</span> <span class="sourcetag">[T2-002 Intesa Sanpaolo,
+Mar 2024]</span></td>
+</tr>
+<tr class="even">
+<td>Aladdin Climate</td>
+<td>Climate analytics built on scenarios "provided by the network for
+green and the financial system and GFS and the intergovernmental panel
+for climate change, IPCC", translated into cash-flow impacts and "the
+Aladdin traditional asset evaluation models"; coverage "around 3 million
+securities for about 9,000 ultimate holding issuers" across equity,
+fixed income including sovereign and securitised, funds and private
+market securities. The ClimateAPI exposes physical, transition and
+temperature-alignment metrics under named scenarios.</td>
+<td><span class="sourcetag">[T2-047 An introduction to Aladdin Climate, undated]</span> <span class="sourcetag">[spec:
+ClimateAPI]</span></td>
+</tr>
+<tr class="odd">
+<td>eFront</td>
+<td>Acquired 2019, "our first major technology acquisition". The eFront
+site covers "alternative investment data management ... From
+fundraising, fund administration and reporting to data services and
+analytics". Products: Insight, Invest GP, Invest LP, Invest AS,
+Investment Café, FAIR, eFront Provider. Investment Café: "more than
+10,000 funds choose to report with e-front investment cafe, securely
+sharing over 10 million documents through the portal." Tarek Chouman
+"was the CEO of eFront"; founder Olivier Dellenbach.</td>
+<td><span class="sourcetag">[T2-033 Nair, Jun 2025]</span> <span class="sourcetag">[page: eFront site]</span> <span class="sourcetag">[T1-35 eFront Investment
+Café video]</span> <span class="sourcetag">[T2-014 Democratizing private markets, Sep 2025]</span></td>
+</tr>
+<tr class="even">
+<td>Preqin</td>
+<td>Private markets data company founded by Mark O'Hare, "the home of
+alternatives", with "hundreds of researchers" and data collection "from
+4 million news articles a day". Closed about March 2025 per Nair ("about
+three months ago" in June 2025); BlackRock welcomed "the 1600 colleagues
+from prequin". Nair in Jan 2026: "We did that with Preqin this year."
+The Sept 2025 webinar: "investors now have access to over 15,000 fund
+investments within e front insight" and Preqin "is being embedded into e
+front insight"; the Studio briefing records the eFront Insight
+integration in Feb 2026.</td>
+<td><span class="sourcetag">[T1-07 Preqin video]</span> <span class="sourcetag">[T2-033 Nair]</span> <span class="sourcetag">[T2-062 Preqin completion video,
+2025]</span> <span class="sourcetag">[T2-016 Rethink Operating Models, Jan 2026]</span> <span class="sourcetag">[T2-056 Unifying the
+Whole Portfolio, Sep 2025]</span> <span class="sourcetag">[briefing: Studio]</span></td>
+</tr>
+<tr class="odd">
+<td>Aladdin Provider</td>
+<td>A network connecting asset managers to asset servicers. Chouman: "we
+developed the Aladdin provider network to bring a greater connectivity
+between asset managers and asset servicers ... Now we've expanded our
+provider network to include nine of the largest global asset services".
+J.P. Morgan "was one of the very early adopters ... from 2016".</td>
+<td><span class="sourcetag">[T2-059 JPM client story, undated]</span></td>
+</tr>
+<tr class="even">
+<td>Aladdin Explore</td>
+<td>The portfolio analysis and reporting application (section 1.3).</td>
+<td><span class="sourcetag">[T1-09]</span> <span class="sourcetag">[T2-048]</span></td>
+</tr>
+<tr class="odd">
+<td>Aladdin Copilot</td>
+<td>Generative AI assistant "now available to all Aladdin clients"
+(section 1.8).</td>
+<td><span class="sourcetag">[page: Copilot]</span></td>
+</tr>
+<tr class="even">
+<td>Aladdin Data Cloud</td>
+<td>"part of Studio" per Newman; Snowflake-based (section 1.7 and Part
+2).</td>
+<td><span class="sourcetag">[T1-11 Newman, Jan 2025]</span></td>
+</tr>
+<tr class="odd">
+<td>Aladdin Studio</td>
+<td>The extensibility layer: APIs and events, ADC and developer tools
+(Part 2).</td>
+<td><span class="sourcetag">[T1-01 Woodhead]</span></td>
+</tr>
+</tbody>
+</table>
+<h2 id="15-how-it-is-built-and-run">1.5 How it is built and run</h2>
+<p>Scale of the organisation, per Rosales in 2025: "we also sell and
+support hundreds of clients globally across 70 countries all using the
+Aladdin platform. The Aladdin organization is made up of around 7,000
+people, with over 4,000 of those being engineers. And these engineers
+build and maintain the around 100 Aladdin front-end applications that
+thousands of people use every day." <span class="sourcetag">[T1-16 LangChain Interrupt, 2025]</span>
+There are "say, 50, 60 Aladdin engineering teams that cover specific
+domains throughout the platform". <span class="sourcetag">[T1-16 LangChain Interrupt, 2025]</span></p>
+<p>Tenancy and control plane. Kandawire: "Every single client
+environment looks the same, is built the same way, we have a single
+control plane and a single source of truth." <span class="sourcetag">[T2-027 Principles of
+Design, May 2023]</span> The specs carry the tenant everywhere:
+<code>clientAbbreviation</code> on ADC datasets,
+<code>accountCode</code> on external trade references, a per-client ADC
+database, reconciliation of one client's datasets against a gold-copy
+client, OAuth endpoints at client.blackrock.com, and user types that
+separate client employees, AladdinProvider employees, system users and
+BlackRock employees. <span class="sourcetag">[spec: AdcDatasetAPI]</span> <span class="sourcetag">[spec: TradeAPI v2]</span> <span class="sourcetag">[spec:
+UserAPI]</span> <span class="sourcetag">[briefing: suite architecture]</span> Kandawire's platform
+organisation runs "product families": mission control (keeping Aladdin
+up and maintenance "with a cadence and in a highly controlled way"),
+hosting services, engineering services, enterprise architecture and a
+product office. <span class="sourcetag">[T2-027 Principles of Design, May 2023]</span></p>
+<p>Hosting. Azure since the lift-and-shift described in 1.2; "all
+BlackRock's technology platform clients and services are hosted in the
+Azure cloud" as of December 2024, with "New rollouts now take weeks
+instead of quarters to complete" and data "encrypted at rest and in
+transit". <span class="sourcetag">[page: Microsoft Cloud blog, Dec 2024]</span> Fradin: "Initial step
+of moving the Latin into Azure was always meant to be the springboard to
+what comes next, which is essentially a perpetual cloud journey." <span class="sourcetag">[T1-28
+Big Little Questions: Fradin and Kerner]</span> Matthew Kerner of Microsoft in
+the same episode notes Aladdin "is now hosted in this cloud, where
+there's this deep partnership with OpenAI, where you have the Azure
+Machine Learning capabilities and the ... Azure OpenAI integration".
+<span class="sourcetag">[T1-28]</span> AWS: announced December 2025, availability for AWS-hosted
+clients expected H2 2026. <span class="sourcetag">[briefing: Studio]</span> Khara: "a lot is built on a
+very, very scalable cloud-based infrastructure and architecture to
+handle the heightened volume, as well as the variety and the velocity of
+data and transactions". <span class="sourcetag">[T2-061]</span> Job postings describing an Aladdin
+Container Platform on Kubernetes with a Go control plane are reported in
+the Studio briefing at lower confidence; the specs themselves are
+hosting-neutral. <span class="sourcetag">[briefing: Studio]</span> <span class="sourcetag">[briefing: suite architecture]</span></p>
+<p>What the specifications show about engineering conventions:</p>
+<ul>
+<li>Protobuf and gRPC underneath, REST on top. Every spec carries
+<code>rpcStatus</code> (google.rpc.Status), <code>Any</code>,
+<code>google.type.DateTime</code>, <code>updateMask</code>,
+<code>pageToken</code>, <code>LongrunningOperation</code>, enums named
+<code>FOO_UNSPECIFIED</code>, and message names such as
+<code>v1FilterOrdersRequest</code>: the fingerprint of services defined
+in protobuf and exposed through gRPC-gateway style transcoding. "Aladdin
+Graph" names the unified layer; specs cite naming "agreed with Aladdin
+Graph team". <span class="sourcetag">[briefing: suite architecture]</span> <span class="sourcetag">[spec: OrderAPI v1]</span></li>
+<li>Google API design conventions enforced by a linter, with inline
+suppressions such as
+<code>api-linter: aladdin::9016::query-custom-method-http=disabled aip.dev/not-precedent</code>
+and the justification "changing existing URI to suggested URI will break
+all citizen developers code". <span class="sourcetag">[spec: RiskRuleAPI]</span> <span class="sourcetag">[briefing: suite
+architecture]</span></li>
+<li>Stability labels: 24 alpha, 6 beta, 23 stable, 1 sunset across the
+54 public specs; 190 of 301 operations are POST; 35 operations are
+flagged long-running. <span class="sourcetag">[briefing: suite architecture]</span></li>
+<li>Bitemporal fields: entities such as RiskException and
+RiskCustomEvaluationMetric carry <code>validBeginDate</code>,
+<code>validEndDate</code>, <code>entryTime</code> and
+<code>expiryTime</code>; ADC datasets have a <code>bitemporal</code>
+property. <span class="sourcetag">[spec: RiskExceptionAPI]</span> <span class="sourcetag">[spec: AdcDatasetAPI]</span></li>
+<li>Four-eyes approval: ADC dataset states are DRAFT, REVIEW ("dataset
+is ready for a 4-eyes check prior to release"), APPROVED and REJECTED;
+compliance rule assignments carry
+<code>resolutionRequiresFourEyesApproval</code>; cash transmissions
+require <code>confirmedBy</code> and <code>reviewedBy</code>. <span class="sourcetag">[spec:
+AdcDatasetAPI]</span> <span class="sourcetag">[spec: ComplianceRuleAssignmentAPI]</span> <span class="sourcetag">[spec:
+MiscellaneousCashflowAPI]</span></li>
+<li>Orders and compliance: <code>complianceTimeout</code> is "specified
+in seconds (example format: "10s") ... If the non-zero time is reached
+and the run is not complete, orders will be posted with the "Compl
+Pending" status set regardless of any violations". <span class="sourcetag">[spec: OrderAPI v1]</span>
+Trades carry a <code>compliancePending</code> flag. <span class="sourcetag">[spec: TradeAPI
+v2]</span></li>
+<li>Two-layer authorisation. Every call carries an application key
+header <code>VND.com.blackrock.API-Key</code> plus OAuth 2.0, a client
+key or basic auth, with scopes per resource such as
+<code>trading.order_management.order.v1.Order:read</code>; inside the
+service, legacy permission codes still apply: <code>brkrMaint</code> for
+broker maintenance, <code>asReAsMOD</code> for restricted assets,
+<code>PortGroupMOD</code>, <code>asPortMOD</code> and
+<code>GPMaint</code> for portfolio groups,
+<code>PERMS_GROUP_MOD_perm</code> or <code>MOD_PERMS</code> for
+permissions, and the newcash set
+<code>VIEW_NEWCASH, CASH_PAY, CASH_MOD, CASH_CONF, ASSET_MOD, ASSET_CONF, CASH_TRANSFER, ASSET_TRANSFER</code>.
+<span class="sourcetag">[spec: BrokerAPI]</span> <span class="sourcetag">[spec: RestrictedAssetAPI]</span> <span class="sourcetag">[spec: PortfolioGroupAPI]</span>
+<span class="sourcetag">[spec: UserGroupPermissionAPI]</span> <span class="sourcetag">[spec: EnrichedCapitalFlowAPI]</span> <span class="sourcetag">[briefing:
+suite architecture]</span> The platform user and permission APIs state "This is
+not intended to be used for Authorization." <span class="sourcetag">[spec: PermissionAPI]</span></li>
+<li>Internal expression languages: <code>bqlExpression</code>,
+<code>bqlFilter</code> and <code>jql</code> fields on trade routing.
+<span class="sourcetag">[briefing: suite architecture]</span></li>
+</ul>
+<h2 id="16-risk-and-analytics">1.6 Risk and analytics</h2>
+<p>Risk is the historical core. Woodhead: "at our roots where we
+started, our differentiation was our ability to understand the risk of
+the market. That's what we call our analytics factory ... We called it
+the green package. So every day a portfolio manager called it the green
+package because it was printed on green paper ... That's my portfolio
+risk for the day." <span class="sourcetag">[T1-01 Woodhead]</span> The Green Package survives in the
+specs: a portfolio attribute "Indicates whether or not risk
+services/green package are part of Client Services" and a compliance
+disaggregation option "Green Package Setting". <span class="sourcetag">[spec:
+PortfolioToolkitAPI]</span> <span class="sourcetag">[spec: ComplianceRuleAPI]</span> Woodhead adds that
+start-of-day risk "is still the heart of our of our data ecosystem. It's
+the most valuable product that comes out of our analytics factory."
+<span class="sourcetag">[T1-01]</span></p>
+<p>Factor counts stated in the corpus: "2k+ private markets risk factors
+monitored daily" <span class="sourcetag">[page: Whole Portfolio]</span>; "a 3,000 risk factor model"
+for Aladdin Wealth <span class="sourcetag">[T1-08 iCapital Connect]</span>; "my 2500 plus factors" in
+the Explore stress-test demo <span class="sourcetag">[T2-048]</span>; "We have factor models across our
+alternatives and our public assets" <span class="sourcetag">[T2-048]</span>. The fact-check attributes
+"monitors over 5,000 risk factors daily" to the Fivetran write-up, but
+the Fivetran blog text in the pulls does not contain that phrase; the
+5,000 figure is not found in the pulls. <span class="sourcetag">[page: Fivetran blog]</span></p>
+<p>Scenario analysis: BlackRock gives clients "a stress scenario as a
+basis or as a viewpoint" and users can "add multiple scenarios where you
+can also just edit these scenarios shocks", select a different risk
+model and apply long- or short-term settings; the demo scenario is "the
+US euro decoupling scenario". <span class="sourcetag">[T2-048]</span> The Whole Portfolio FAQ lists
+"proprietary risk models, stress testing tools, pacing analysis, and
+real-time analytics". <span class="sourcetag">[page: Whole Portfolio]</span> Yulia Yudelevich and
+Michael Sternberg, on the risk models: "what we try to do with our risk
+models is to translate data into actionable information that allows our
+clients to make investment decisions ... There are a lot of new forms of
+data, unstructured data, news events ... And we need to bring that into
+our analytics and make that available to people, but with caveats."
+<span class="sourcetag">[T1-22 Big Little Questions: Analytics and risk, 2024]</span></p>
+<p>Risk governance in the specs is a separate framework from compliance:
+RiskRule (metric, limit and breakdown, "250 bps tracking error" style
+absolute or relative limits), EvaluatorAnalytics (metric source "Aladdin
+Analytics" or custom data), RiskCustomEvaluationMetric, RiskException
+and RiskWorkflow, and RiskConfig that drives both evaluation and "the
+Risk Radar UI". <span class="sourcetag">[briefing: suite architecture]</span> <span class="sourcetag">[spec: RiskConfigAPI]</span>
+Analytics is exposed to clients as data retrieval and rule evaluation,
+not as a calculation engine they call directly. <span class="sourcetag">[briefing: suite
+architecture]</span> Newman, January 2025: "we have these engines that
+historically were run through interfaces. So we're providing those APIs
+now. We're releasing soon the ability to actually access those analytic
+APIs, portfolio analysis, security analysis, things like that. That's
+all part of the Studio umbrella." <span class="sourcetag">[T1-11 Newman, Jan 2025]</span> The Studio
+for Risk page: "Run analytics programmatically: Compute portfolio and
+security analytics for repeatable reporting, analysis, modeling, and
+integration into downstream systems." <span class="sourcetag">[page: Studio for Risk]</span></p>
+<p>Performance and attribution: security-level daily returns, P&amp;L
+decomposition, risk-based decomposition fused with Brinson attribution,
+ex-post statistics (tracking error, beta, information and Sharpe ratios,
+upside and downside capture, batting averages), batch reports to Excel
+or PDF, all in Explore. <span class="sourcetag">[T1-06 Fixed Income Performance Analyst]</span> Climate
+analytics: see 1.4; the ESG API normalises multi-vendor measures
+(examples "MSCI, SUST, ISS, REFINITIV, CLARITY_AI") into one schema.
+<span class="sourcetag">[spec: EsgDataAPI]</span> Jess Fitzgibbon, Head of Product for Aladdin Risk, in
+July 2026: "We've moved beyond the spreadsheet into the more exception
+based workflows and now we're moving into beyond exception based
+workflows." <span class="sourcetag">[T2-028 Reducing time to insight, Jul 2026]</span></p>
+<h2 id="17-data">1.7 Data</h2>
+<p>Woodhead's phrase for the data model is "the language of the
+portfolio": "when you hear us speak about the language of the portfolio,
+what we mean is we're stitching together all of the constituent pieces
+that make the investment process work." On symbology: "Getting that data
+is very easy. Mapping that data and understanding that in the context of
+the investments that you've made is very very hard. It requires you to
+do a lot of symbology processing. How do I bring the data into a common
+language? ... we bring all of that together into a single symbology, a
+single language, the language of the portfolio". <span class="sourcetag">[T1-01 Woodhead]</span> The
+ACF 2026 opener: "So we built a common language for portfolios." <span class="sourcetag">[T2-060
+Aladdin Client Forum 2026]</span> Kamya Somasundaram on trading connectivity:
+"that is how Aladdin, for example, communicates to a network of hundreds
+of participants, broker dealers, venues, trading platforms." <span class="sourcetag">[T2-017
+Aviva Investors, Dec 2025]</span> The specs address securities by Aladdin asset
+id, CUSIP, ISIN, SEDOL, RIC or CINS, and the SecurityCreation API writes
+CDS, CDX, equities, options, futures, FX instruments, swaps, swaptions,
+time deposits, repo and MBS TBAs. <span class="sourcetag">[briefing: suite architecture]</span></p>
+<p>Before Aladdin Data Cloud, Jeff Miller, Managing Director, Global
+Head of Data Platform and Product Engineering and Chief Architect:
+"Prior to our adoption of Snowflake and the advent of our Aladdin Data
+Cloud offering, like many firms, we used legacy and traditional ways of
+distributing data to our customers. We sent flat files, we sent large
+schema definitions, FTP and related transfers". <span class="sourcetag">[T1-17 Snowflake: Jeff
+Miller, undated]</span> Woodhead: "it was around 2019 we started look
+understanding that our clients are building their own data ecosystem ...
+we didn't have a data platform that could do that at the time and that's
+where we started our our conversation with Snowflake." <span class="sourcetag">[T1-01]</span> The
+Fivetran write-up: ADC "is supported by Fivetran for data movement and
+Snowflake as its cloud data platform"; users access "their Investment
+Books of Record (IBOR), Accounting Books of Record (ABOR) holdings and
+other market data". <span class="sourcetag">[page: Fivetran blog, Aug 2024]</span> Scale: "we operate
+um hundreds of Snowflake accounts. We share data to hundreds of
+Snowflake accounts and we're managing hundreds of vendors, tens of
+thousands of pipelines." <span class="sourcetag">[T1-01]</span> Diwakar Goel, Global Head of Data: ADC
+is "a data integration hub so that you can access all the data that you
+need in a lot in an e-front through one single source within 15 minutes
+of latency from various kinds of sources". <span class="sourcetag">[T2-050 Data as a strategic
+asset for pensions, undated]</span> Daily data volumes in bytes or rows are not
+stated in the pulls. Part 2 covers Data Cloud, Studio and the SDK.</p>
+<h2 id="18-artificial-intelligence-in-aladdin">1.8 Artificial
+intelligence in Aladdin</h2>
+<p>Aladdin Copilot, per its product page: "Introducing Aladdin® Copilot,
+now available to all Aladdin clients. Through generative AI, Aladdin
+Copilot serves to strengthen the connective tissue across the Aladdin®
+platform, surfacing answers instantly to support key business
+decisions". It "Will not give investment advice or respond to questions
+outside Aladdin platform boundaries" and "Contains content filtering and
+parameters to limit risk of hallucination, misinformation or
+inappropriate outputs", with "permission-dependent access to insights".
+<span class="sourcetag">[page: Copilot]</span> eFront Copilot is "now available within eFront Insight"
+and "built on the Aladdin-isolated instance of Azure OpenAI-secured
+connection where all personal information is filtered out". <span class="sourcetag">[page:
+eFront Copilot]</span> Microsoft's Dec 2024 recap: "with the launches of the
+Aladdin and eFront copilots, they are now delivering a set of natural
+language interfaces ... BlackRock technology clients are already using
+this capability today", and BlackRock started "an AI Lab in 2018".
+<span class="sourcetag">[page: Microsoft Cloud blog, Dec 2024]</span> Khara, in the awards interview
+recorded for 2024: "on the E-front side in particular, we have a
+co-pilot that is out in the market very soon, there'll be something
+we're going to be doing on the Aladdin front as well ... a big, big, big
+focus area for us in 2024." <span class="sourcetag">[T2-061]</span></p>
+<p>The architecture, from Rosales and Pedro Vicente Valdez, Principal AI
+Engineer, at LangChain Interrupt 2025: Copilot "is currently embedded
+across all of those 100 front-end applications" and "acts as the
+connective tissue across the Aladdin platform". The plug-in registry
+lets the "50, 60 Aladdin engineering teams" onboard in two ways: "we
+come to define a tool as kind of mapping one-to-one to an existing
+Aladdin API already out in production" or "spin up a custom agent and
+also plug that into the system". Design started "two, two and a half
+years ago" with "a very slim, very specific version" of an agent
+protocol, and the team is "actively evaluating" LangChain's agent
+protocol and A2A. A query enters "our orchestration graph. From day one,
+it's been built using Langchane": an input guardrail node for "off topic
+and toxic content" and PII, then a filtering and access control node
+over "couple of thousands agents and tools that are registered in the
+plug-in registry", where teams control "which environments this plug-in
+is enabled in, which user groups have access to this, and even which
+Aladdin apps can even access these plug-ins"; the set is cut to "say, 20
+to 30 tools and agents" because "if we're sending more than 40, 50
+tools, we probably won't have that good of a performance". Orchestration
+is "very reliant on GPT-4 function calling today", iterating planning
+and action, then output guardrails to "detect hallucinations as best as
+we can". <span class="sourcetag">[T1-16 LangChain Interrupt, 2025]</span></p>
+<p>Valdez: "We're all using supervisor ... And we are just one more of
+those presentations using supervisor. Why? Because it's very easy to
+build. It's very easy to release. It's very easy to test." On
+evaluation: "you have to do evaluation-driven development ... if I
+write, you're a lot in copilot, you must never provide investment
+advice. What is investment advice? I need to generate a lot of synthetic
+data ... and build an evaluation pipeline and make sure that we are
+never going to give investment advice." The report "runs every day. It
+runs on every PR", and "for every plugin that comes into a system, we
+ask them for ground truth". <span class="sourcetag">[T1-16 LangChain Interrupt, 2025]</span> Context
+the system uses: "which Aladdin application they're asking this question
+from, what they actually have up on the screen, what portfolios, what
+assets, what widgets". <span class="sourcetag">[T1-16]</span></p>
+<p>Human in the loop. Adrian Crockett of Microsoft, on BlackRock's
+podcast: "making sure that we've got human in the loop on the vast
+majority of operations, particularly in regulated industries, is going
+to be really, really critical." <span class="sourcetag">[T1-12 Humans in the loop part 1]</span> And:
+"in order to do that, you need to actually create the plug-ins. There's
+no copilot without plug-ins." <span class="sourcetag">[T1-13 Humans in the loop part 2, Nov
+2024]</span> Syril Smith Garson, Head of Product for AI: "we're very focused on
+how do we build this platform ... and a set of common services and
+capabilities that underpin all of these different copilot experiences"
+and "how do we think about Aladdin, right, as also an ecosystem, where
+we can now have plug-ins and capabilities across all of our own
+applications ... That it can act as this connective tissue across the
+entire platform." <span class="sourcetag">[T1-13]</span> Braunstein in March 2023: "I love the idea of
+a copilot, so I love the notion that like this doesn't go and make
+decisions and drive processes on its own." <span class="sourcetag">[T2-022 Microsoft partner
+story, Mar 2023]</span> Pavan Pemmaraju, Head of AI Product and Engineering,
+July 2026: "there's much more of a focus on ensuring that the data model
+itself is structured for agentic use cases and we're even changing the
+way that we refactor the way that our products are built in order to
+achieve that." <span class="sourcetag">[T2-028 Reducing time to insight, Jul 2026]</span> Chouman at
+the APAC forums: "a portfolio manager is going to be able to talk to
+Aladdin, where agents are going to be able to work together to make
+decisions, and Aladdin can provide you with suggestions." <span class="sourcetag">[T2-063]</span></p>
+<p>Aladdin Wealth Auto Commentary, announced 2 October 2025: "The new
+'Auto Commentary' feature turns complex portfolio analytics and
+client-level investment preferences into concise insights", combining
+"the Aladdin Wealth platform's robust data and risk analytics, an
+individual firm's CIO market outlook, and detailed information about the
+client's portfolio holdings"; Morgan Stanley's Portfolio Risk Platform
+"will be the first to implement". <span class="sourcetag">[page: Wealth Auto Commentary, 2 Oct
+2025]</span> A webinar panellist also described an experiment "using generative
+AI to read portfolio compliance guidelines and match it to either an
+existing compliance rule Aladdin or if the rule isn't there to create
+the relevant code for that new compliance rule". <span class="sourcetag">[T2-046 Accelerating
+Innovation webinar, undated]</span></p>
+<p>The NVIDIA GTC session page in the pulls carries no content
+(JavaScript-only page), so its talk points are not found in the pulls.
+<span class="sourcetag">[page: NVIDIA GTC]</span> <span class="sourcetag">[T1-00 INDEX]</span></p>
+<h2 id="19-who-uses-it-and-at-what-scale">1.9 Who uses it and at what
+scale</h2>
+<p>Segments on BlackRock's site: asset managers, asset servicers, banks
+and brokers, corporates, insurers, pension funds, private markets,
+wealth managers. <span class="sourcetag">[page: Copilot]</span> Every Aladdin page carries the
+disclaimer that the platform "is designed for institutional, wholesale,
+qualified, and professional investor/client use only and is not intended
+for end investor use". <span class="sourcetag">[page: Studio for Risk]</span> Counts stated by
+BlackRock on air: "hundreds of clients globally across 70 countries"
+<span class="sourcetag">[T1-16, 2025]</span>; "our ecosystem there's hundreds of participants" <span class="sourcetag">[T1-25
+Big Little Questions: COO and CTO]</span>. Georgette Anderson on insurers:
+"From an asset management perspective, we have roughly about 500 billion
+of insurance asset management on the system and 6 trillion of insurance
+assets that are actually processed through Aladdin." <span class="sourcetag">[T2-040 Big Little
+Questions: insurers, undated]</span> Khara: "across Aladdin, the work we do
+today in accounting is almost entirely predicated on bringing this data
+unification for the investment and accounting books of record for an
+insurance company together." <span class="sourcetag">[T2-010 Global Insurance Report, Nov 2023]</span>
+BlackRock "is the biggest user of Aladdin". <span class="sourcetag">[T1-16]</span> Inside BlackRock,
+"we have 3,000 citizen developers in business engineers that are
+interacting with all that in using Python or using R". <span class="sourcetag">[T1-01
+Woodhead]</span></p>
+<p>Named clients in BlackRock-published material:</p>
+<table>
+<thead>
+<tr class="header">
+<th>Client</th>
+<th>What was said</th>
+<th>Source</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Royal London Asset Management</td>
+<td>CEO Hans Georgeson: "a need on our part to have a single auto
+management system"; "we are genuinely in a minority of organisations
+that achieved it largely on time, if not ahead of plan, and we came in
+under budget ... So yourselves in Aladdin, ourselves in Royal London,
+and also, of course, HSBC as our partners"; "the client experience in
+the past was multiple order management systems"; "the implementation of
+Snowflake that we did as part of the overall programme has been really
+successful for us".</td>
+<td><span class="sourcetag">[T2-058 Royal London client story, Nov 2024]</span></td>
+</tr>
+<tr class="even">
+<td>BNP Paribas Asset Management</td>
+<td>CTO Fatia-Fatma Balit on the 2016 to 2020 "Back in the Race"
+programme: "with BlackRock Aladdin in the front to back chain, with
+Salesforce in the CRM, and transversally DataHub as a data platform.
+Along with that, we were able to decommission more than 60
+applications"; a new product structure delivered "with no new IT
+tools".</td>
+<td><span class="sourcetag">[T2-008 BNP Paribas AM, Feb 2023]</span></td>
+</tr>
+<tr class="odd">
+<td>Intesa Sanpaolo</td>
+<td>Paola Papanicolaou: "we decided together with you to do a full
+adoption of your platform, across the enterprise on asset management,
+wealth management, et cetera. Across legal entities as well"; Fideuram
+Direct "is based on the Aladdin platform".</td>
+<td><span class="sourcetag">[T2-002 Intesa Sanpaolo, Mar 2024]</span></td>
+</tr>
+<tr class="even">
+<td>SLC Management</td>
+<td>Candace Shaw: "We're focused on leveraging our foundational
+investment systems like eFront, like Aladdin, but also capitalizing on
+data as a key strategic asset".</td>
+<td><span class="sourcetag">[T2-025 SLC Management, Mar 2026]</span></td>
+</tr>
+<tr class="odd">
+<td>Aviva Investors</td>
+<td>Kate Hill, Global Head of Trading, on trading market structure and
+data architecture, with Somasundaram.</td>
+<td><span class="sourcetag">[T2-017 Aviva Investors, Dec 2025]</span></td>
+</tr>
+<tr class="even">
+<td>TCW</td>
+<td>Melissa Stolfi, Global COO: "asset management is really ripe for AI
+automation. Because on the operational side, it's very process and
+workflow heavy."</td>
+<td><span class="sourcetag">[T2-018 TCW part 2, Jul 2026]</span></td>
+</tr>
+<tr class="odd">
+<td>University Pension Plan (UPP)</td>
+<td>CIO Aaron Bennett on the Canadian "total portfolio approach, one
+balance sheet type of model".</td>
+<td><span class="sourcetag">[T2-034 UPP, Sep 2026]</span></td>
+</tr>
+<tr class="even">
+<td>Ingka Investments</td>
+<td>Samuel Rundle: "critical for us was to create more transparency ...
+We can go back and look at the performance attribution. We get input on
+risks. We can look across portfolios to actually identify risks that we
+didn't know were there before."</td>
+<td><span class="sourcetag">[T2-030 Ingka Investments, Dec 2024]</span></td>
+</tr>
+<tr class="odd">
+<td>Helvetia</td>
+<td>Dominik Gurtner, CTO of Asset Management, featured on the Whole
+Portfolio page; the video transcript in the pulls is unusable
+(non-English audio).</td>
+<td><span class="sourcetag">[page: Whole Portfolio]</span> <span class="sourcetag">[T2-057]</span></td>
+</tr>
+<tr class="even">
+<td>Northstar Group</td>
+<td>Priya Gopalan, Head of ESG, on ESG monitoring for a Southeast Asia
+PE and VC firm with "more than $2.6 billion in committed equity
+capital".</td>
+<td><span class="sourcetag">[T2-003 Northstar, May 2024]</span></td>
+</tr>
+<tr class="odd">
+<td>Columbia Threadneedle, AustralianSuper</td>
+<td>CEO Ted Truscott and COO Peter Curtis in conversation with Nair on
+operating models and digital transformation.</td>
+<td><span class="sourcetag">[T2-005, Jul 2024]</span> <span class="sourcetag">[T2-006, May 2023]</span></td>
+</tr>
+<tr class="even">
+<td>Morgan Stanley Wealth Management</td>
+<td>Portfolio Risk Platform on Aladdin risk analytics; first to
+implement Auto Commentary.</td>
+<td><span class="sourcetag">[page: Wealth Auto Commentary]</span> <span class="sourcetag">[T2-036, Oct 2025]</span></td>
+</tr>
+<tr class="odd">
+<td>Microsoft Treasury</td>
+<td>First Aladdin environment moved to Azure.</td>
+<td><span class="sourcetag">[briefing: Studio]</span></td>
+</tr>
+<tr class="even">
+<td>J.P. Morgan Securities Services</td>
+<td>Aladdin Provider early adopter from 2016: "gold copy messaging",
+"real-time bidirectional workflow for asset and cash reconciliation
+breaks", rolled out "through simple configuration. There has been no
+customization, no coding".</td>
+<td><span class="sourcetag">[T2-059 JPM client story]</span></td>
+</tr>
+<tr class="odd">
+<td>eFront users</td>
+<td>APG, Allianz Capital Partners, Velliv, Mizuho, Bouwinvest, Meridiam,
+BBH, Alter Domus, BNP Paribas Securities Services and others on the
+eFront testimonial pages. Meridiam: "We've been using eFront for three
+years now ... eFront Office as well as eFront Investment Café."</td>
+<td><span class="sourcetag">[T2-064 to T2-095 eFront videos]</span> <span class="sourcetag">[T2-087 Meridiam]</span></td>
+</tr>
+</tbody>
+</table>
+<p>Middle-office outsourcing in the corpus: J.P. Morgan lists "middle
+office outsourcing" among its services and uses Aladdin Provider so
+"clients can stay in Aladdin, we can stay in our application, but it
+still has that real-time workflow between the systems". <span class="sourcetag">[T2-059]</span> Mark
+Erickson: insurance assets outsourced "roughly doubled from about 7% of
+assets to about 15% of assets over the last six to seven years", against
+"about $35 trillion" managed globally. <span class="sourcetag">[T2-010, Nov 2023]</span> A client
+panellist on the FT webinar: "we can outsource technical debt to
+Blackrock for instance they take care of it for us". <span class="sourcetag">[T2-046]</span> Awards:
+BlackRock "won three categories in this year's BST Awards, Best iBOR or
+Investment Book and Record platform, Best Portfolio Analysis Tool and
+Best Overall Technology Provider for 2023". <span class="sourcetag">[T2-061]</span></p>
+<h2 id="110-what-the-pulls-do-not-show">1.10 What the pulls do not
+show</h2>
+<ul>
+<li>Pricing, fee schedules, contract values and revenue by product: none
+in the corpus. <span class="sourcetag">[briefing: Studio]</span></li>
+<li>A client count. BlackRock says "hundreds of clients globally across
+70 countries" and nothing more precise on air. <span class="sourcetag">[T1-16]</span></li>
+<li>Positions, risk analytics outputs, performance attribution, pricing
+and market data, execution management, settlement messaging, eFront and
+wealth APIs: absent from the public specification packages. <span class="sourcetag">[briefing:
+suite architecture]</span></li>
+<li>The "5,000 risk factors" figure: not in the Fivetran blog text in
+the pulls. <span class="sourcetag">[page: Fivetran blog]</span></li>
+<li>The NVIDIA GTC talk content: page retrieved without content. <span class="sourcetag">[page:
+NVIDIA GTC]</span></li>
+<li>The exact Copilot launch date: the Copilot page is undated;
+Microsoft's recap (Dec 2024) says launches had happened; Khara's
+interview (early 2024) says eFront Copilot was "out in the market very
+soon". <span class="sourcetag">[page: Copilot]</span> <span class="sourcetag">[page: Microsoft Cloud blog]</span> <span class="sourcetag">[T2-061]</span></li>
+<li>The product name "Aladdin Enterprise", daily data volumes, number of
+Copilot plug-ins beyond "couple of thousands", and the Studio client
+list: not stated in the pulls.</li>
+<li>Helvetia's statements: the transcript is machine-generated from
+non-English audio and unusable. <span class="sourcetag">[T2-057]</span></li>
+</ul>
+<h1 id="part-2-aladdin-studio">Part 2. Aladdin Studio</h1>
+<h2 id="21-what-studio-is">2.1 What Studio is</h2>
+<p>BlackRock's Aladdin site lists Aladdin Studio under "Solutions",
+beside Accounting, Aladdin Data Cloud, Whole Portfolio, Risk Management,
+Sustainability, Climate Risk, Aladdin Copilot and Private Markets Data;
+the "Platforms" list holds Aladdin, Aladdin Wealth, eFront and Preqin
+<span class="sourcetag">[page: Studio for Aladdin Risk, site navigation]</span>. The Studio product
+page describes the layer as "API-first", groups its examples under three
+benefit headings, "Create &amp; automate", "Make Aladdin your own" and
+"Align internally &amp; externally", and names three users: "a
+professional engineer building new workflow applications, a code-curious
+portfolio manager extracting investment insights, or a data analyst
+automating reporting" <span class="sourcetag">[page: Aladdin Studio, as recorded in briefing:
+Studio and the fact-check A1-12]</span>. The examples under the headings are
+auto-generating orders and managing targets, projecting settlement cash,
+intraday what-if analysis, custom scores combining reference and
+proprietary analytics, and regulatory and board reporting <span class="sourcetag">[briefing:
+Studio]</span>.</p>
+<p>Dave Woodhead, "managing director and head of engineering for Aladdin
+Studio" as the host introduces him, gives the definition BlackRock's own
+engineering uses. "Aladdin Studio is essentially the user experience
+that allows people to think of Aladdin as a platform. It exposes
+everything Aladdin knows how to do as a set of APIs events. The Aladdin
+data cloud built on top of Snowflake takes all of that information
+that's generated through our analytics factory and inside of Aladdin and
+pushes that into Snowflake. And increasingly we're building a set of
+developer tools." On the third pillar: "how do I create environments
+where they can they have sandboxes, research environments, they can
+start code, they can build applications. They can automate their
+workflows." <span class="sourcetag">[T1-01 From Analytics to Intelligence, Snowflake Data Cloud
+podcast, undated; auto-captions]</span>. Richard Newman, General Manager,
+Aladdin Studio, places Data Cloud inside it: "where the data cloud and
+Aladdin data cloud specifically comes in, which is part of Studio"
+<span class="sourcetag">[T1-11 Never Done: Data, the key ingredient, Jan 2025]</span>.</p>
+<p>A second page, "Aladdin Studio for Aladdin Risk", states that
+"Aladdin® Studio extends Aladdin Risk beyond the user interface", lists
+"Run analytics programmatically", "Automate portfolio oversight
+workflows", "Build tailored risk solutions" and "Strengthen data
+governance and controls", and describes a console whose "centralized
+experience supports the building, configuration, and governance of
+Studio workflows, including access management and usage monitoring"
+<span class="sourcetag">[page: Studio for Aladdin Risk]</span>.</p>
+<p>Inside the corpus, the earliest dated BlackRock statement naming
+Studio is Kunal Khara's winner interview after the 2023 Buy-Side
+Technology Awards, recorded ahead of 2024, which calls "the Aladdin
+studio estate" a focus for 2024 <span class="sourcetag">[T2-061 Best Overall Technology Provider
+2023; quoted in full in 2.10]</span>. The candidate's draft dates the Studio
+name to fall 2020 from trade press and to February 2021 from the Data
+Cloud press release; neither document is in the pulls [REVISED draft
+Exhibit 26].</p>
+<h2 id="22-history">2.2 History</h2>
+<p>The Data Cloud conversation with Snowflake began "around 2019", when
+"our clients were starting to ask the question how do we take you know
+this really high quality data that's coming out of Aladdin and bring
+that into our own data ecosystem", and BlackRock "didn't have a data
+platform that could do that at the time" <span class="sourcetag">[T1-01 Woodhead]</span>. BlackRock's
+press release says Aladdin Data Cloud launched in 2021 <span class="sourcetag">[briefing:
+Studio, citing the press release; V8 S102]</span>. ADC is "a next-generation
+data-as-a-service solution enabled by Fivetran and Snowflake" <span class="sourcetag">[page:
+Fivetran blog, 28 Aug 2024]</span>.</p>
+<p>The AladdinSDK core package first appeared on PyPI in May 2024 and
+stood at version 2.0.0b10 in July 2026; the 11 add-on packages were at
+2.0.0b3 [V8 Exhibit 12, with only the 2.0.0b10 version independently
+verified; briefing: Studio]. BlackRock's engineering blog says the SDK
+was open-sourced to cut low-level setup for "practitioners and citizen
+developers" with financial expertise and some programming skill
+<span class="sourcetag">[briefing: Studio, citing engineering.blackrock.com]</span>.</p>
+<p>The phrase "citizen developer" was used by Kunal Khara, Global Head
+of Aladdin Product, on 3 November 2023: "while Excel continues to be a
+part of the technology apparatus for a portfolio manager or a research
+analyst, ultimately, citizen developers are what are driving these
+organizations today" <span class="sourcetag">[T2-010 Global Insurance Report podcast, 3 Nov
+2023]</span>. Lance Braunstein had described the internal programme in March
+2023: "we call that program broadly citizen development, but it like the
+title is not important. What's important is the empowerment, making sure
+that with power comes responsibility. So, there's a control framework
+around that" <span class="sourcetag">[T2-022 Microsoft and Aladdin Partner Story, 7 Mar 2023]</span>. A
+March 2024 episode expects "python notebooks up on the desks of the
+traders" within weeks <span class="sourcetag">[T2-001 4IR Part 2, 28 Mar 2024; Whisper]</span>.</p>
+<p>Woodhead dates the shift from spreadsheets to code: "We several years
+ago crossed the threshold where more of our users are consuming data
+programmatically through R through Python ... then they are bringing it
+down to Excel not in terms of megabytes but in terms of the number of
+queries the number of users are on the platform" <span class="sourcetag">[T1-01]</span>. Kamya
+Somasundaram, Global Head of Aladdin Partnerships &amp; Trading Product
+Marketing, describes the same demand: "there is a burgeoning community
+of individuals saying 'I need that in the form of an API. I need that to
+speak to this.'" <span class="sourcetag">[T2-017 How Data Architecture Shapes Modern Trading, 25
+Dec 2025]</span>.</p>
+<p>The Studio briefing records BlackRock technical-writer postings from
+2025 and 2026 describing streaming APIs and webhook subscriptions
+documented with AsyncAPI alongside OpenAPI <span class="sourcetag">[briefing: Studio, job
+postings]</span>; the posting text is not in the pulls.</p>
+<h2 id="23-the-apis-aladdin-graph">2.3 The APIs: Aladdin Graph</h2>
+<p>Every public specification carries an id of the form
+<code>agraph.&lt;domain&gt;.&lt;segment&gt;.&lt;group&gt;.&lt;version&gt;.&lt;API&gt;</code>
+and a base path
+<code>/api/&lt;domain&gt;/&lt;segment&gt;/&lt;group&gt;/v1/</code>
+<span class="sourcetag">[briefing: suite architecture]</span>. The SDK README calls them "Aladdin Graph
+API's swagger specifications" <span class="sourcetag">[SDK README]</span>. The Order API's linter notes
+say "postOrder is the agreed naming with Aladdin Graph team" and "Design
+was agreed with agraph team" <span class="sourcetag">[spec: OrderAPI]</span>. No transcript speaker
+says "Aladdin Graph"; the name exists only in the files [review round
+1_vs_podcasts].</p>
+<p>The 11 public <code>asdk_plugin_*</code> packages, version 2.0.0b3,
+hold 54 Swagger 2.0 specs and 301 operations: 24 alpha, 6 beta, 23
+stable and 1 sunset [apis.json; briefing: suite architecture; V8
+verified counts].</p>
+<table>
+<thead>
+<tr class="header">
+<th>Domain</th>
+<th>Public specs</th>
+<th>Operations</th>
+<th>Example APIs</th>
+<th>Stability</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>analytics</td>
+<td>9</td>
+<td>53</td>
+<td>RiskRule (20 ops), RiskWorkflow, RiskException, RiskConfig,
+EvaluatorAnalytics, RiskCustomEvaluationMetric, RiskTask, Climate,
+EsgData</td>
+<td>8 stable, 1 sunset (RiskTask)</td>
+</tr>
+<tr class="even">
+<td>investment_operations</td>
+<td>15</td>
+<td>74</td>
+<td>CorporateAction, CorporateActionEntitlement, CouponReset,
+PrincipalInterestFactor, MiscellaneousCashflow, CollateralStatement,
+Broker and six broker reference APIs, Contact, AccountInfo, Audit</td>
+<td>9 alpha, 4 beta, 2 stable</td>
+</tr>
+<tr class="odd">
+<td>investment_research</td>
+<td>5</td>
+<td>41</td>
+<td>ResearchNote v2, Engagement, AnalystCoverage, Watchlist,
+Criterion</td>
+<td>5 alpha</td>
+</tr>
+<tr class="even">
+<td>platform</td>
+<td>6</td>
+<td>29</td>
+<td>User, UserGroup, UserGroupMember, Permission, UserGroupPermission,
+AdcDataset</td>
+<td>4 stable, 2 alpha</td>
+</tr>
+<tr class="odd">
+<td>portfolio_management</td>
+<td>4</td>
+<td>28</td>
+<td>CashLadder v2, CIDReader, CIDWriter, Strategy</td>
+<td>3 stable, 1 alpha</td>
+</tr>
+<tr class="even">
+<td>portfolio</td>
+<td>3</td>
+<td>23</td>
+<td>PortfolioGroup, PortfolioToolkit, RestrictedAsset</td>
+<td>2 stable, 1 alpha</td>
+</tr>
+<tr class="odd">
+<td>data</td>
+<td>1</td>
+<td>15</td>
+<td>SecurityCreation</td>
+<td>1 stable</td>
+</tr>
+<tr class="even">
+<td>trading</td>
+<td>2</td>
+<td>14</td>
+<td>Order v1, Trade v2</td>
+<td>1 stable, 1 alpha</td>
+</tr>
+<tr class="odd">
+<td>compliance</td>
+<td>4</td>
+<td>9</td>
+<td>ComplianceRule, ComplianceRuleAssignment, Level, Violation</td>
+<td>3 alpha, 1 stable</td>
+</tr>
+<tr class="even">
+<td>accounting</td>
+<td>4</td>
+<td>8</td>
+<td>PortfolioConfiguration, Valuations, AborLot,
+CompositeMembership</td>
+<td>2 alpha, 2 beta</td>
+</tr>
+<tr class="odd">
+<td>clients</td>
+<td>1</td>
+<td>7</td>
+<td>EnrichedCapitalFlow</td>
+<td>1 stable</td>
+</tr>
+<tr class="even">
+<td><strong>Total</strong></td>
+<td><strong>54</strong></td>
+<td><strong>301</strong></td>
+<td></td>
+<td><strong>24 alpha, 6 beta, 23 stable, 1 sunset</strong></td>
+</tr>
+</tbody>
+</table>
+<p>Source for every row: [apis.json; spec headers in digest].</p>
+<p><strong>Request conventions.</strong> The specs follow Google's API
+design conventions: resources with custom methods such as
+<code>:filter</code>, <code>:batchCreate</code>,
+<code>:batchValidate</code>, <code>:search</code>,
+<code>:undelete</code>, <code>:listRevisions</code> and
+<code>:cancel</code>; AIP-160 style filter strings;
+<code>pageToken</code> pagination; <code>updateMask</code>;
+<code>rpcStatus</code> (google.rpc.Status) and <code>Any</code> types;
+enums named <code>FOO_UNSPECIFIED</code> <span class="sourcetag">[briefing: suite architecture]</span>.
+POST is 190 of the 301 operations, and filtering is done by POST with a
+criteria body rather than GET query strings; batch endpoints are capped
+at 100 per request for broker reference data, 1,000 for restricted
+assets and 10,000 rows per page <span class="sourcetag">[briefing: suite architecture]</span>. Ten
+specs expose a <code>GET /longrunningoperations/{id}</code> endpoint and
+35 operations are flagged <code>x-aladdin-lro</code>; the SDK polls
+these [apis.json; briefing: suite architecture; SDK README]. Many
+entities carry entry and expiry times or valid-begin and valid-end
+dates, a bitemporal pattern that supports as-was reporting <span class="sourcetag">[briefing:
+suite architecture]</span>. "Four-eyes" approval appears by name on compliance
+rule assignments and ADC dataset review; cash transmissions need a
+confirmer and a reviewer, and risk rules carry sign-off authors
+<span class="sourcetag">[briefing: suite architecture; spec: MiscellaneousCashflowAPI]</span>.</p>
+<p>The Order API's <code>v1PostOrderConfig</code> carries
+<code>whatIf</code>, <code>runCompliance</code>,
+<code>accountCode</code>, <code>externalEntityType</code> and
+<code>complianceTimeout</code> <span class="sourcetag">[spec: OrderAPI, digest]</span>. Posting an
+order returns compliance violations inline, so pre-trade compliance is a
+property of the order API <span class="sourcetag">[briefing: suite architecture]</span>. The
+candidate's V8 document, whose add-on figures were recomputed and
+matched, records <code>runCompliance</code> defaulting to true and an
+order status of "Compl Pending" while compliance runs [V8, OrderAPI
+definition file]. The Portfolio entity in PortfolioToolkit has 850
+properties, with "slices" that expose subsets <span class="sourcetag">[spec:
+PortfolioToolkitAPI, <code>v1Portfolio | props(850)</code>]</span>. Fields
+named <code>bqlExpression</code>, <code>bqlFilter</code> and
+<code>skipBqlValidation</code>, and a comment "refer to BQL ord_flags",
+point to an internal query language used for filters and routing rules
+<span class="sourcetag">[briefing: suite architecture; spec: PortfolioToolkitAPI]</span>. Every public
+spec is tagged <code>Access.Internal</code>; the meaning of the tag is
+not documented publicly [digest; briefing: suite architecture].</p>
+<p>The specs carry inline linter suppressions such as
+<code>api-linter: aladdin::9016::query-custom-method-http=disabled aip.dev/not-precedent</code>,
+which shows BlackRock running Google's api-linter plus its own
+<code>aladdin::</code> rules with justified exceptions <span class="sourcetag">[briefing: suite
+architecture]</span>. In the RiskRule and EvaluatorAnalytics APIs the
+justification reads: "We need to do this because it is an existing api
+changing existing URI to suggested URI will break all citizen developers
+code." <span class="sourcetag">[spec: RiskRuleAPI; spec: EvaluatorAnalyticsAPI]</span>. The CashLadder
+v2 GET endpoint "is provided solely for backward compatibility and
+should no longer be used" <span class="sourcetag">[spec: CashLadderAPI]</span>.</p>
+<p><strong>What each domain exposes.</strong></p>
+<p><em>analytics.</em> A risk-oversight suite surfaced in an application
+the specs call Risk Radar: RiskRule holds metric, limit and breakdown
+conditions with draft and approved states; EvaluatorAnalytics triggers
+evaluation of a portfolio against all or one rule as a long-running
+operation; RiskException and RiskWorkflow hold breaches and work items;
+RiskCustomEvaluationMetric lets a client upload its own metric values
+[apis.json; briefing: suite architecture]. Climate exposes "physical,
+transition, and temperature alignment analytics as of a given date", and
+EsgData "a centralized source of ESG data and meta data across multiple
+vendors" <span class="sourcetag">[spec: ClimateAPI; spec: EsgDataAPI]</span>.</p>
+<p><em>data.</em> SecurityCreation "is used to create CDS, CDX, Equity
+Equity, Equity Option, Futures, FX NDF, FX SPOT, FX FWRD, FX CSWAP, FX
+Option, Swap, Swaption, CASH/TD, CASH/REPO, ARM/TBA and MBS/TBA"
+securities, 15 operations <span class="sourcetag">[spec: SecurityCreationAPI]</span>.</p>
+<p><em>trading.</em> Order v1: "Filter, post or cancel orders. An order
+is a directive from a portfolio manager to the trading desk to execute a
+particular investment decision", with <code>:post</code>,
+<code>:cancel</code>, <code>:filter</code>, <code>:batchPost</code>,
+<code>:batchCancel</code> and an order-id filter <span class="sourcetag">[spec: OrderAPI]</span>. Trade
+v2: "Post, cancel, filter and retrieve trade(s)", a BlockTrade with
+child allocations, broker quotes, settlement details and external trade
+references <span class="sourcetag">[spec: TradeAPI; briefing: suite architecture]</span>.</p>
+<p><em>compliance.</em> ComplianceRule ("used to automatically monitor
+whether a fund adheres to a regulation, client mandate, or internal
+guideline"), ComplianceRuleAssignment (binds rules to portfolios with
+four-eyes approval), Level (start-of-day and intraday room to limit) and
+Violation (breaches with contributing positions) [apis.json; briefing:
+suite architecture].</p>
+<p><em>portfolio_management.</em> CashLadder v2 gives "a settlement date
+based ladder of cash balances for all the exposure currencies for a
+given portfolio group and cash date"; Strategy names investment
+strategies that orders and trades are tagged with; CIDReader and
+CIDWriter load Custom Investment Datasets, where "CIDS does not
+transform the input data in any kind. The writer of the data owns it"
+<span class="sourcetag">[spec: CashLadderAPI; spec: CIDWriterAPI, via V8 S21]</span>.</p>
+<p><em>investment_research.</em> ResearchNote v2 (templated notes with
+permission groups), Engagement (meeting records), AnalystCoverage,
+Watchlist, and Criterion, stored screening expressions such as
+<code>((price &gt; 55 OR oas = 75) AND market_cap &lt; 1mm)</code> with
+alert schedules [apis.json; briefing: suite architecture].</p>
+<p><em>investment_operations.</em> CorporateAction and
+CorporateActionEntitlement (elections instructed to the custodian),
+CouponReset (from "Aladdin's Bulk Rate Mechanism (BRM) module or sourced
+from external vendors"), PrincipalInterestFactor, MiscellaneousCashflow
+(which sends money out "through the transmission framework" once
+confirmedBy and reviewedBy are recorded), CollateralStatement (from
+agreements set up in DECO), and the broker reference set: Broker,
+BrokerDesk, BrokerExternalAlias, BrokerConfirmRouting,
+CounterPartySettlementInstruction and its template, Contact,
+AccountInfo, Audit [apis.json; V8 S28].</p>
+<p><em>accounting.</em> "Aladdin Accounting" configuration attributes by
+process code, Valuations (NAV workflow with status, sign-off,
+publication time, Dietz and total return fields, and valuation
+exceptions with NAV impact), AborLot (lots "retrieved from the
+ledger_a_summary table" with a parallel OBOR lot id) and
+CompositeMembership <span class="sourcetag">[spec: PortfolioConfigurationAPI; spec:
+ValuationsAPI; spec: AborLotAPI]</span>.</p>
+<p><em>clients.</em> EnrichedCapitalFlow: "the cash and asset
+subscriptions coming into a fund and the cash and asset redemptions
+going out of a fund", with estimate and actual states, authorise and
+confirm actions, and permissions from a module called "newcash" such as
+CASH_PAY <span class="sourcetag">[spec: EnrichedCapitalFlowAPI; V8 S30]</span>.</p>
+<p><em>portfolio.</em> PortfolioToolkit (retrieve, filter and search
+portfolios and slices), PortfolioGroup (a hierarchy with ancestor and
+descendant queries), RestrictedAsset ("used prevent assets from being
+traded in Aladdin") [apis.json].</p>
+<p><em>platform.</em> User, UserGroup, UserGroupMember, Permission and
+UserGroupPermission for administration, which the specs say are "not
+intended to be used for Authorization", plus AdcDataset, which "Manages
+Datasets in Aladdin Data Cloud (ADC). Used by Studio's ADC Admin
+Center." [apis.json; spec: AdcDatasetAPI].</p>
+<h2 id="24-authentication-and-authorisation">2.4 Authentication and
+authorisation</h2>
+<p>Every API request carries an application key header,
+<code>VND.com.blackrock.API-Key</code>, for an application registered in
+Studio, plus one of: OAuth 2.0 authorization code, OAuth 2.0 client
+credentials, an <code>X-API-Key</code> client key, or basic auth
+<span class="sourcetag">[briefing: suite architecture]</span>. The OAuth endpoints are at
+<code>client.blackrock.com/api/oauth2/default/v1/</code> <span class="sourcetag">[briefing:
+suite architecture]</span>. Scopes are per resource, for example
+<code>trading.order_management.order.v1.Order:read</code> and
+<code>trading.order_management.order.v1.Order:write</code> <span class="sourcetag">[briefing:
+suite architecture]</span>. The SDK README says "Client ID and Secret can be
+sourced from Studio UI by creating a OAuth application under a Project",
+a basic-auth "API Token" is "registered via Studio UI", and selected
+scopes "must be a subset of scopes setup for the app in Studio UI" [SDK
+README].</p>
+<p>Authorisation is two-layered. Underneath the OAuth scope, the specs
+still cite Aladdin permission codes that the calling user must hold, for
+example <code>brkrMaint</code>, <code>asReAsMOD</code>,
+<code>PortGroupMOD</code>, <code>PERMS_GROUP_MOD</code> and
+<code>VIEW_NEWCASH</code> <span class="sourcetag">[briefing: suite architecture]</span>. The
+capital-flow API requires "standard API permissison ALADDIN_API_USER"
+and "standard newcash permissions" [V8 S29, S30]. Registering an ADC
+dataset "requires "StudioAdmin" Aladdin perm assigned to the user", and
+column refresh names the "StudioAdmin" Aladdin Permission Type and the
+"DATACLOUD" Aladdin Permission Group [V8 S23, AdcDatasetAPI definition
+file].</p>
+<p>ADC authentication is separate from API authentication. The SDK's
+ADCClient uses "'oauth' or 'snowflake_jwt' (i.e. RSA Keys) authenticator
+types for snowflake connectors"; where "ADC OAuth is configured via
+Studio application, SDK's ADCClient will attempt to fetch an OAuth
+AccessToken from Aladdin's TokenAPI", on the assumption that the "User
+has authenticated with the ADC OAuth client application by logging into
+Aladdin Studio UI" <span class="sourcetag">[SDK README]</span>.</p>
+<p>The User API names three user types:
+<code>USER_TYPE_CLIENT_EMPLOYEE</code> ("A User who is an employee of
+this client"), <code>USER_TYPE_PROVIDER</code> ("A User who is an
+employee of a AladdinProvider") and <code>USER_TYPE_SYSTEM</code>; its
+description lists "Aladdin Client's employees granted access to
+Aladdin", "BlackRock employees granted access to client's Aladdin
+products" and "bot accounts granted access to Aladdin" <span class="sourcetag">[spec: UserAPI]</span>.
+The same description links to a developer guide at
+<code>apps/aladdin-developer-portal/#/guides/developer-guide</code> on
+the client's Aladdin site <span class="sourcetag">[spec: UserAPI]</span>.</p>
+<h2 id="25-events-and-streaming">2.5 Events and streaming</h2>
+<p>Woodhead names events in Studio's first pillar: "a set of APIs
+events" <span class="sourcetag">[T1-01]</span>. Diwakar Goel, introduced on the pensions webinar as
+Global Head of Data for Aladdin, states the target: "we really want to
+make every single event that happens in a lot in available to you. So
+every single transaction that happens should be available and accessible
+to you via an event, via an API. And that should help you to
+programmatically build on top of a lot of it" <span class="sourcetag">[T2-050 Data as a
+strategic asset for pensions, undated; Whisper, "a lot in" is Aladdin]</span>.
+Alisha Sewdass, who "runs our Aladdin Solutions Engineering team for
+Aladdin in the Americas", lists the same requirement for any investment
+stack: "So you need access to APIs, you need access to events, and you
+need to make your workflow much more event based as opposed to batch
+based" <span class="sourcetag">[T2-049 Build vs Buy webinar, undated; published captions]</span>.</p>
+<p>Inside the public packages, the only event-shaped surface is Studio
+Notifications. The SDK core package holds "Studio Subscription and
+Notification APIs" and a <code>StudioNotification</code> utility that
+creates a subscription for recipients and then sends a subject, message
+and metadata by SMTP or push; a wrapper
+<code>send_studio_smtp_notification</code> gives "a simpler 'email'
+feature" <span class="sourcetag">[SDK README]</span>. The subscription spec lists event types including
+Studio Space, Studio Compute and ACM [V8 S5]. No AsyncAPI document,
+webhook specification or event stream is in the pulls; the 54 specs are
+all OpenAPI request-response definitions [digest].</p>
+<h2 id="26-aladdin-data-cloud">2.6 Aladdin Data Cloud</h2>
+<p>ADC runs on Snowflake with Fivetran moving the data. "Fivetran allows
+us to take data from a single source and move that with low latency into
+a Snowflake landing zone, where we transform it using our enterprise
+data platform" <span class="sourcetag">[page: Fivetran blog, 28 Aug 2024, quoting Woodhead]</span>.
+Users "can access their Investment Books of Record (IBOR), Accounting
+Books of Record (ABOR) holdings and other market data", and "users have
+access to dynamic tables for building Snowpark apps and asking
+cross-dimensional time-series questions" <span class="sourcetag">[page: Fivetran blog]</span>. Fivetran
+"helps address three key issues: disaster recovery, data recoverability,
+and consolidation of previously siloed data sets", and the write-up
+records Woodhead's Snowflake Summit 2024 statement: "We expanded
+Aladdin® Data Cloud's data network capabilities, enabling clients to
+bring their own data into ADC, and to distribute Aladdin data to their
+own data ecosystems" <span class="sourcetag">[page: Fivetran blog]</span>.</p>
+<p>Delivery is by Snowflake data sharing: clients get the data "sitting
+in their cloud provider of choice, they're sitting in their technology
+of choice through snowflake and through data sharing" <span class="sourcetag">[T1-01]</span>. On scale:
+"We share data to hundreds of Snowflake accounts and we're managing
+hundreds of vendors, tens of thousands of pipelines", and "One of our
+biggest challenges is fleet management" <span class="sourcetag">[T1-01]</span>. Pipelines are "moving
+away from batch oriented pipelines to more real time pipelines" using
+dynamic tables <span class="sourcetag">[T1-01]</span>. Goel gives the latency: ADC is "a near real time
+data store ... which we think about as a data integration hub so that
+you can access all the data that you need in a lot in an e-front through
+one single source within 15 minutes of latency from various kinds of
+sources" <span class="sourcetag">[T2-050]</span>. Jeff Miller, "Managing Director, Global Head of Data
+Platform and Product Engineering at BlackRock" and "a Chief Architect",
+describes what it replaced: "We sent flat files, we sent large schema
+definitions, FTP and related transfers, but the Aladdin Data Cloud and
+Snowflake makes it much simpler for us to get our clients' data and
+market data from our third-party providers and Aladdin partners back to
+our clients" <span class="sourcetag">[T1-17 Snowflake video, Jeff Miller, undated; Whisper]</span>.</p>
+<p>Woodhead calls the content "the language of the portfolio", delivered
+as data products that are "designed, it's thoughtful, it's governed,
+it's documented, it has metrics around it" <span class="sourcetag">[T1-01]</span>. Newman lists what is
+joining the network: eFront data, Preqin, "firms like London Stock
+Exchange data", and BlackRock IP "around credit analytics, around
+mortgage-backed security data, around insurance analytics", "all
+happening now" <span class="sourcetag">[T1-11]</span>. Preqin indices "are also available today in
+Aladdin explore and our Aladdin data cloud capabilities" <span class="sourcetag">[T2-056
+Unifying the Whole Portfolio, Sept 2025; Whisper]</span>.</p>
+<p>The specs show the per-client structure. An ADC Dataset "maybe a
+current or past deployment of a table/view in Aladdin Data Cloud", with
+properties including <code>clientAbbreviation</code>,
+<code>database</code>, <code>schema</code>, <code>bitemporal</code>,
+<code>state</code>, <code>etlConfig</code> and
+<code>columnMetadata</code> <span class="sourcetag">[spec: AdcDatasetAPI]</span>. Datasets move through
+draft, review and released states; release executes "DDLs in Snowflake
+which will create database objects such as table, views &amp; stored
+procedure"; a reconcile operation compares a client's datasets "against
+another gold-copy client"; and the create, update, release and reconcile
+operations are each "intended for internal BlackRock use only" <span class="sourcetag">[spec:
+AdcDatasetAPI; briefing: suite architecture]</span>. The API is "Used by
+Studio's ADC Admin Center" <span class="sourcetag">[spec: AdcDatasetAPI]</span>.</p>
+<p>One client has spoken about the Snowflake part on BlackRock's
+channel. Hans Georgeson, CEO of Royal London Asset Management: "the
+implementation of Snowflake that we did as part of the overall programme
+has been really successful for us and we feel that it has moved us, it's
+leap-frogged us in many ways in terms of our ability to use data within
+the front office initially" <span class="sourcetag">[T2-058 Royal London client story, video
+file dated Nov 2024; Whisper]</span>. He does not say "Data Cloud" or "Studio"
+[fact-check A1-6].</p>
+<h2 id="27-developer-tools">2.7 Developer tools</h2>
+<p><strong>AladdinSDK.</strong> The README states the goal: "to make it
+easier for everyone to efficiently access and utilize Aladdin APIs and
+Data Cloud" <span class="sourcetag">[SDK README]</span>. Installation is
+<code>pip install aladdinsdk</code> on Python 3.9, then optional add-ons
+such as <code>asdk_plugin_trading</code> <span class="sourcetag">[SDK README]</span>. The
+<code>AladdinAPI</code> client "wraps over OpenAPI generated python
+client code based on Aladdin Graph API's swagger specifications" and
+provides authentication, pydantic validation, response deserialisation,
+retries, "Rate limiting per API endpoint", error handling and "LRO
+Utilities to trigger and poll Long Running Operation endpoint calls"
+<span class="sourcetag">[SDK README]</span>. Plugins are built by the
+<code>aladdinsdk-plugin-builder</code> project under
+github.com/blackrock using openapi-generator v6.6.0, triggered by git
+tags; the core package reads each plugin's <code>api_registry.py</code>
+and <code>domain_apis_list.json</code> to register its APIs, so new
+add-ons are picked up "without any additional setup steps" <span class="sourcetag">[briefing:
+Studio; SDK README; V8 S59]</span>.</p>
+<p>Configuration "is performed using Dynaconf" with the environment
+prefix <code>ASDK_</code>, in increasing priority: default file, user
+file, <code>ASDK_</code> environment variables, inline parameters [SDK
+README]. <code>RUN_MODE</code> has three values: "AladdinSDK can run on
+a developer's local machine or in Aladdin Studio Compute sessions. There
+is also a test mode used by SDK developers" <span class="sourcetag">[SDK README]</span>. In local mode
+the SDK "uses Keyring internally for secret management" and stores a
+prompted password in the OS credential manager <span class="sourcetag">[SDK README]</span>. A log file
+per run, retries, pagination options, JSON-to-pandas conversion, Excel
+export and error emails "while executing their scripts / scheduled jobs"
+are built in <span class="sourcetag">[SDK README; V8 S41, S48, S49]</span>.</p>
+<p><code>ADCClient</code> "is a wrapper around
+snowflake-connector-python or snowflake-snowpark-python (connection type
+is configurable)" and can write a DataFrame to a table <span class="sourcetag">[SDK README; V8
+S19]</span>. <code>S3Client</code> wraps boto3 against "a Storage integration
+on Studio UI under a personal / shared project" <span class="sourcetag">[SDK README]</span>. "DomainSDK
+Development" lets teams bundle the plugins they need into "business
+specific SDKs" on top of the core <span class="sourcetag">[SDK README]</span>.</p>
+<p><strong>URL rewriting and gateways.</strong> "When consuming the
+Aladdin APIs via an enterprise API management platform such as Azure API
+Management, the relative URL of the Aladdin APIs are likely to be
+different (in addition to the host name)", so the SDK accepts
+<code>API.URL_REWRITE.FIND</code> and <code>REPLACE</code> settings, a
+class argument or a per-call argument <span class="sourcetag">[SDK README]</span>. The candidate's
+draft attributes the gateway URL rewriting and an additional-headers
+feature to two pull requests merged in December 2025 from a
+janushenderson.com address [REVISED draft Exhibit 33]; the fact-check
+lists this as not verifiable from the corpus, which holds the README and
+specs, not the repository history [fact-check A3].</p>
+<p><strong>Studio names in the files.</strong> The README and core specs
+name Studio UI, Studio Project (OAuth applications and storage sit
+"under a personal / shared project"), Studio Compute, Studio
+Notifications, S3 Storage Integration, API Applications, API Token,
+Studio Space and ADC Admin Center <span class="sourcetag">[SDK README; V8 Exhibit 4]</span>. Studio
+Space appears only in notification settings, as a recipient entity and
+an event type, and is not defined in the files [V8 S4, S5]. BlackRock
+marketing calls the hosted environment Aladdin Compute, "a hosted
+analytics platform with ready-to-use Python environments and automation
+tools" <span class="sourcetag">[briefing: Studio]</span>. The README refers to "'Aladdin Developer' or
+similar python development environments" where "a kernel restart is
+always recommended" after config changes <span class="sourcetag">[SDK README]</span>.</p>
+<p><strong>Developer Portal and the rest.</strong> The APIs page
+describes a portal with an API catalog, "API framework" documentation on
+how requests are built, authorised and processed, a Data Dictionary for
+browsing fields, downloadable Jupyter notebooks and multi-language code
+samples, all behind a client login; it says there are "dozens of APIs"
+with new ones added regularly, and it lists Aladdin Data eXchange (ADX)
+and Aladdin Tools for Excel (ATX) as Studio resources <span class="sourcetag">[briefing: Studio,
+citing the APIs page]</span>. ADX "appears to be bulk data delivery for
+reconciliation and feeding other systems; ATX is an Excel add-in. Little
+public detail" <span class="sourcetag">[briefing: Studio]</span>.</p>
+<h2 id="28-who-builds-on-studio">2.8 Who builds on Studio</h2>
+<p>Two BlackRock speakers give the same internal figure. Woodhead:
+"inside of black rockck we have 3,000 citizen developers in business
+engineers that are interacting with all that in using Python or using R.
+I think that number has probably peaked. I think now we're on the other
+side of that where increasingly sophisticated workloads are going to be
+presented through natural language" <span class="sourcetag">[T1-01; auto-captions]</span>. Goel: "every
+organization has a growing number of citizen developers, or in fact,
+some people like to call them as embedded engineers now because they
+actually have a PhD degree in some cases ... When I reflected BlackRock,
+we have 3,000 people who qualify in this bracket today" <span class="sourcetag">[T2-050;
+Whisper]</span>. Both figures count BlackRock staff, not Studio clients
+[fact-check A1-3].</p>
+<p>Goel states the governance rule for that code: "when they are doing
+certain analysis, which are high risk, they have to promote these into
+production category. And at that point in time, they have to have
+certain governance around checking this code into GitHub in the same
+governance level that we check code from our software engineer as well
+as they need to have survivorship so that if they leave the
+organization, we can make sure that the code still runs after they have
+left" <span class="sourcetag">[T2-050]</span>. He adds "a new class of employee, which I call as
+digital employees, or what we call as agents today" <span class="sourcetag">[T2-050]</span>. Khara
+describes the user-provider model, with BlackRock using Aladdin "to
+manage the managed portfolios across the firm" <span class="sourcetag">[T2-061; verbatim in
+2.10]</span>.</p>
+<p>The Studio page names three personas (engineer, code-curious
+portfolio manager, data analyst), and the V8 document reads the files as
+serving two kinds of user: business staff who write Python (pandas and
+Excel export, settings that help "citizen developers share code-snippets
+or projects", the "break all citizen developers code" linter note) and
+IT teams that connect systems (enterprise API gateways, system account
+credentials, bot users) <span class="sourcetag">[page: Aladdin Studio via briefing: Studio; V8
+conclusion 7; SDK README]</span>.</p>
+<p>Outside firms named with Studio or Snowflake in the corpus: Royal
+London Asset Management, whose CEO credits the Snowflake implementation
+in its Aladdin programme <span class="sourcetag">[T2-058]</span>; and Janus Henderson, through the SDK
+pull requests the candidate's draft reports from GitHub, unverified here
+[REVISED draft; fact-check A3]. On the Build vs Buy webinar, Clark
+Schafer of Alpha FMC says RFPs now ask "what's the API suite that you
+have? Are you using connectors to Snowflake or to data bricks?" and how
+quickly data moves, "every 15 seconds or ... every four hours?"
+<span class="sourcetag">[T2-049]</span>. BlackRock has not named a client as building on Studio's APIs
+or the SDK; the SLC Management episodes placed on the Data Cloud page do
+not mention Data Cloud, Snowflake, Studio or APIs [fact-check A1-5,
+A1-6]. The draft's list of Barings, Thrivent, Franklin Templeton, Strata
+and EY as Studio users rests on job boards and third-party sites, not on
+the corpus [fact-check A3].</p>
+<h2 id="29-copilot-and-studio">2.9 Copilot and Studio</h2>
+<p>Aladdin Copilot is "now available to all Aladdin clients" and "Will
+not give investment advice or respond to questions outside Aladdin
+platform boundaries" <span class="sourcetag">[page: Aladdin Copilot]</span>. BlackRock's AI engineering
+lead Brennan Rosales and Principal AI Engineer Pedro Vicente Valdez
+describe a plug-in registry where "50, 60 Aladdin engineering teams"
+onboard in two ways: "we come to define a tool as kind of mapping
+one-to-one to an existing Aladdin API already out in production", or
+"the ability to spin up a custom agent" <span class="sourcetag">[T1-16 LangChain Interrupt 2025;
+Whisper]</span>. Teams control "which environments this plug-in is enabled in,
+which user groups have access to this, and even which Aladdin apps can
+even access these plug-ins", and evaluation runs "on every PR" and
+"every day" <span class="sourcetag">[T1-16]</span>. The Copilot tools are the same production APIs that
+Studio exposes; the packages themselves never mention AI, and the word
+"copilot" appears once, in a portfolio field about a distribution
+programme [V8 "What the files cannot tell us"; briefing: Studio].</p>
+<p>Woodhead's AI strategy has three parts: AI in every product; "AI as a
+platform" for builders; and "how do I power the builder? So when I'm
+building on top of Aladdin and I need a co-pilot to help me build and
+solve the problem that I have, how does AI inside of the platform help
+me as an engineer, as a as an in business engineer, as a portfolio
+manager who's building or customizing or generating an artifact on top
+of the system?" <span class="sourcetag">[T1-01]</span>. Newman's governance line: "speed to market
+doesn't necessarily imply better data. You still have to have the data
+governance. You still have to make sure that what is provided is
+correct"; and on AI, "If the data is wrong ... it might give you
+dangerous answers" <span class="sourcetag">[T1-11]</span>. In the same episode he states the API
+roadmap: "we have these engines that historically were run through
+interfaces. So we're providing those APIs now. We're releasing soon the
+ability to actually access those analytic APIs, portfolio analysis,
+security analysis, things like that. That's all part of the Studio
+umbrella" <span class="sourcetag">[T1-11]</span>. Goel adds that BlackRock wants "to start exposing
+some of the software and application that we're building so that our
+clients can also access and leverage the AI that we developing"
+<span class="sourcetag">[T2-050]</span>. Microsoft's Adrian Crockett, on BlackRock's podcast: "There's
+no copilot without plugins" <span class="sourcetag">[T2-023 Microsoft Copilot Episode Part 2, 6
+Nov 2024; Whisper]</span>. Pavan Pemmaraju, Head of AI Product &amp;
+Engineering, says "the data model itself is structured for agentic use
+cases" <span class="sourcetag">[T2-028 Reducing time to insight, 16 Jul 2026; Whisper, via
+fact-check A5-11]</span>.</p>
+<h2 id="210-how-blackrock-presents-studio">2.10 How BlackRock presents
+Studio</h2>
+<p>What is public: the Studio page, whose calls to action are "Book a
+meeting" and "Download the brochure"; the Studio for Aladdin Risk page;
+the APIs page with "dozens of APIs"; the Data Cloud page; the SDK
+README, GitHub repositories and PyPI packages; the engineering blog post
+on the SDK; the Woodhead and Newman podcasts; the Fivetran write-up; the
+Jeff Miller video; and the LangChain talk <span class="sourcetag">[briefing: Studio; REVISED
+draft Exhibit 29; T1-01; T1-11; T1-16; T1-17]</span>. What is gated: the API
+catalog, API-framework documentation, Data Dictionary, notebooks, code
+samples, rate limits, SLAs, pricing and the Studio UI <span class="sourcetag">[briefing: Studio
+§8]</span>. The SDK needs the client's Aladdin host URL and a token or OAuth
+application "registered via Studio UI" before any call succeeds [SDK
+README; fact-check A4].</p>
+<p>Job postings on BlackRock's careers site, as recorded in the briefing
+and the candidate's draft (seen 8 October 2026): a Senior Product
+Director, Aladdin Studio Developer, describing Studio Developer as
+"Aladdin's extensibility layer" that lets clients "build, adapt, and run
+custom workflows in a governed, enterprise-ready way", with goals to
+"reduce off-platform development risk" and "translate internal success
+into client adoption"; a Technical Writer, Aladdin Studio, covering
+"Open APIs and event-driven workflows", AsyncAPI, and an "Aladdin Studio
+Developer Portal"; a Studio Developer Operations Vice President asking
+for Python or Go plus Kubernetes/AKS; a Forward Deploy Engineer, Aladdin
+Data, in Mumbai, naming "Model Context Protocol (MCP), AI agents, and
+Copilot extensions"; and a Studio product-marketing posting live by
+November 2024 saying Studio has "free and premium capabilities"
+<span class="sourcetag">[briefing: Studio §1, §6, §7; REVISED draft Exhibits 14 and 28]</span>. The
+posting texts are not in the pulls.</p>
+<p>The leaders who speak for Studio, with titles as the corpus gives
+them: Dave Woodhead, "managing director and head of engineering for
+Aladdin Studio" <span class="sourcetag">[T1-01]</span> and "BlackRock's Head of Aladdin Studio
+Engineering" <span class="sourcetag">[page: Fivetran blog]</span>; Richard Newman, "General Manager,
+Aladdin Studio" <span class="sourcetag">[T1-11, page header]</span>; Diwakar Goel, "Global Head of
+Data" for Aladdin <span class="sourcetag">[T2-050]</span>; Jeff Miller, "Managing Director, Global Head
+of Data Platform and Product Engineering" and "Chief Architect" <span class="sourcetag">[T1-17]</span>;
+Kunal Khara, "Global Head of Aladdin Product" <span class="sourcetag">[T2-010; T2-061]</span>; Pavan
+Pemmaraju, "Head of AI Product &amp; Engineering" <span class="sourcetag">[T2-028]</span>; Kamya
+Somasundaram, "Global Head of Aladdin Partnerships &amp; Trading Product
+Marketing" <span class="sourcetag">[T2-017]</span>; Lance Braunstein, "Managing Director, Aladdin"
+<span class="sourcetag">[T2-022]</span>. Khara's two Studio lines, verbatim: "What we call the Aladdin
+studio estate, we think is going to this year be a major, major unlock,
+because we're finding that more users are craving this ability to
+interact with our data, with their data, with reporting with dashboards
+on a programmatic basis at machine scale, over and above what they get
+through our front end applications as well" and "Ultimately, we eat our
+own cooking at BlackRock" <span class="sourcetag">[T2-061 Best Overall Technology Provider 2023;
+Whisper]</span>.</p>
+<p>The same interview lists Khara's 2024 themes: generative AI on a data
+foundation, cloud elasticity, the network ecosystem, the whole
+portfolio, and Studio <span class="sourcetag">[T2-061]</span>. The Big Little Questions series frames
+the audience as a client trend: "Now they want programmatic access to
+the data to build various kinds of applications. And that's a huge shift
+that has happened in the last five to seven years" <span class="sourcetag">[T1-26 BLQ: In the
+age of AI, what is data today]</span>.</p>
+<h2 id="211-what-the-pulls-do-not-show">2.11 What the pulls do not
+show</h2>
+<ul>
+<li>No public event specification. The 54 specs are OpenAPI
+request-response definitions; no AsyncAPI document, webhook or stream
+specification is in the packages. Events exist in BlackRock's
+description (Woodhead, Goel, Sewdass) and in job-posting summaries only
+[digest; T1-01; T2-050; T2-049; briefing: Studio].</li>
+<li>No pricing or packaging. No Studio price, SLA, rate limit or tier
+appears in any BlackRock-published source in the corpus. The one
+packaging phrase, "free and premium capabilities", comes from a job
+posting recorded in the candidate's draft [REVISED draft Exhibit 14;
+briefing: Studio §8].</li>
+<li>No named external SDK or API client. Royal London credits Snowflake;
+no client on a BlackRock channel describes building on the APIs or SDK
+<span class="sourcetag">[T2-058; fact-check A1-6]</span>. The Janus Henderson pull requests are
+reported from GitHub, outside the corpus [fact-check A3].</li>
+<li>Core-package API counts. The core <code>aladdinsdk</code> package's
+four APIs (TokenAPI, Studio Subscription, Studio Notification, a
+TrainJourney demo) and 25 operations, and the totals that include them
+(58 APIs, 326 operations), are the candidate's own tally; only the 11
+add-ons' 54 specs and 301 operations were recomputed and verified [V8
+"What the packages contain"; fact-check B3].</li>
+<li>The full catalog. BlackRock says "dozens of APIs" and Newman says
+analytics APIs were "releasing soon" in January 2025; positions and
+holdings, risk analytics outputs, performance attribution, pricing and
+market data, benchmarks, execution and FIX connectivity, settlement
+messaging, eFront and wealth APIs are absent from the public packages
+<span class="sourcetag">[briefing: suite architecture §2; T1-11]</span>.</li>
+<li>The Studio screens, Studio Space, Compute scheduling and the ADC
+Admin Center UI: named in the files, not described; no scheduler inside
+Studio is shown [V8 Exhibit 4 and conclusion 6].</li>
+<li>Usage. No BlackRock source counts Studio clients, API calls, SDK
+installs or Compute sessions; the 3,000 figure is internal headcount
+<span class="sourcetag">[T1-01; T2-050]</span>.</li>
+<li>The meaning of <code>Access.Internal</code>, the expansion of the
+ACM event type, and the dates APIs moved between alpha, beta and stable
+<span class="sourcetag">[briefing: suite architecture §5; V8 verification note 3]</span>. Release
+history (first release May 2024; add-on releases 17 July 2024 and 22
+January 2026) is the candidate's reading of PyPI; only 2.0.0b10 in July
+2026 was verified [V8 Exhibit 12].</li>
+</ul>
+<h1 id="part-3-blackrock">Part 3. BlackRock</h1>
+<h2 id="31-the-aladdin-business-inside-blackrock">3.1 The Aladdin
+business inside BlackRock</h2>
+<p>BlackRock is the first user of Aladdin and the vendor of it. Brennan
+Rosales put it as "BlackRock is the biggest user of Aladdin, but we also
+sell and support hundreds of clients globally across 70 countries all
+using the Aladdin platform" <span class="sourcetag">[T1-16 LangChain Interrupt, 2025]</span>. Dave
+Woodhead gave the origin in the same terms: "As BlackRock grew, our
+clients recognized that our technology was differentiated and asked
+could they use the same software. So BlackRock pretty quickly entered
+the fintech business and we started offering Aladdin as a service"
+<span class="sourcetag">[T1-01 Snowflake Data Cloud podcast, 2024]</span>. James Sword described
+"BlackRock Aladdin, the business unit within BlackRock that builds our
+portfolio management software Aladdin, used by BlackRock and its clients
+alike to manage their whole portfolio solutions across public and
+private assets" <span class="sourcetag">[T2-052 Navigating private markets webinar,
+undated]</span>.</p>
+<p>The size of the organisation is stated once in the pulls: "The
+Aladdin organization is made up of around 7,000 people, with over 4,000
+of those being engineers", who "build and maintain the around 100
+Aladdin front-end applications that thousands of people use every day",
+organised in "say, 50, 60 Aladdin engineering teams that cover specific
+domains throughout the platform" <span class="sourcetag">[T1-16 LangChain Interrupt, 2025]</span>. The
+ratio of internal to external use is not given; the only internal
+headcount figure is the 3,000 "citizen developers and business
+engineers" inside BlackRock, stated by Woodhead and again by Diwakar
+Goel ("we have 3,000 people who qualify in this bracket today") <span class="sourcetag">[T1-01
+Snowflake Data Cloud podcast, 2024; T2-050 Data as a strategic asset for
+pensions, 2025]</span>.</p>
+<p>"We eat our own cooking" is Kunal Khara's phrase: "we are a user
+provider at the core. Ultimately, we eat our own cooking at BlackRock.
+We use Aladdin to manage the managed portfolios across the firm" <span class="sourcetag">[T2-061
+BST Awards winner interview, 2023 awards]</span>. Sue Zheng put the engineering
+consequence: "in Aladdin we always try to push the same software out to
+all clients ... I don't want to be on the hook for saying I have like 50
+different versions out there", and "it's also important for the client
+to know that BlackRock, the house, is using the same software, right? We
+have skin in the game" <span class="sourcetag">[T2-027 Principles of Design, May 2023]</span>. Afwa
+Kandawire added that "Every single client environment looks the same, is
+built the same way, we have a single control plane and a single source
+of truth", and "That notion of a single code base at all clients leads
+to simplicity, it's what enables the scale, it's what enables the
+reliability" <span class="sourcetag">[T2-027 Principles of Design, May 2023]</span>. Lance Braunstein
+calls the same thing "the user provider model of BlackRock, the world's
+largest asset manager" <span class="sourcetag">[T2-037 The Way Forward, May 2024]</span>.</p>
+<p>Internal use is described concretely. BlackRock's private equity
+partners business now wires capital calls through Aladdin's SWIFT
+capability, "moving from something that took 24 hours now down to one
+hour" <span class="sourcetag">[T2-056 Unifying the Whole Portfolio webinar, Sept 2025]</span>. The
+private credit data model was designed "from a user provider perspective
+with our professionals at BlackRock" and then with "our new colleagues
+from HPS" <span class="sourcetag">[T2-056]</span>. Darren Cannon is introduced as the person who runs
+"BlackRock's private market operations from investor onboarding, middle
+office and now production" on Aladdin and eFront <span class="sourcetag">[T2-052]</span>. The
+accounting team says "we're the user of the same software ... the way we
+use it is the way our clients use it" <span class="sourcetag">[T1-33 Big Little Questions,
+accounting episode]</span>.</p>
+<p>Teams named by BlackRock speakers in the pulls: the Aladdin Client
+Business (Tarek Chouman; Pia Schaefer's Value Engineering sits inside
+it), Aladdin Engineering (Braunstein), Aladdin Studio engineering
+(Woodhead) and Aladdin Studio as a product with a General Manager
+(Richard Newman), Aladdin Product (Khara), Aladdin Wealth Tech (Ted
+Stratigos; James Werner for APAC), Data Platform and Product Engineering
+(Jeff Miller), a Global Head of Data (Goel), AI Product and Engineering
+(Pavan Pemmaraju), Product for AI (Syril Smith Garson), Aladdin
+Platforms (Kandawire, with product families she lists as mission
+control, hosting services, engineering services, enterprise architecture
+and a product office), Solutions Engineering (Cameron Skinner globally;
+Alisha Sewdass for the Americas; Sword for private markets; Sanaya
+Khaneja), Aladdin Partnerships and Trading Product Marketing (Kamya
+Somasundaram), Aladdin Business Development (Tim Garbien for the
+Americas; Hui Min Loh), Aladdin Client Engagement (Tara Kodali, James
+Davidson, Alton Garrity for pensions), Aladdin product marketing (Said
+Shah, Nick Codge), Product Marketing and Climate Solutions (Tracy
+Weldon), the Aladdin sustainability team (Matt Guinness), the Aladdin
+private markets product team (Paul McGaugh) and RQA, BlackRock's risk
+management group (Rory Van Swannenberg) [sources as in the table in
+3.2].</p>
+<p>No BlackRock speaker or page in the transcripts and pages states a
+revenue, ACV or client-count figure for the technology business. The
+Studio briefing records, from BlackRock job postings and quarterly
+results outside the transcript set, that postings call Aladdin a "$1BN+
+technology business" and that Q2 2026 technology services revenue rose
+13% with ACV up 15% <span class="sourcetag">[briefing: Studio]</span>. Two figures for a client segment
+do appear: Georgette Anderson said "we have roughly about 500 billion of
+insurance asset management on the system and 6 trillion of insurance
+assets that are actually processed through Aladdin" <span class="sourcetag">[T2-040 Big Little
+Questions, insurers]</span>.</p>
+<h2 id="32-people-who-speak-for-aladdin-in-the-pulls">3.2 People who
+speak for Aladdin in the pulls</h2>
+<table>
+<thead>
+<tr class="header">
+<th>Name</th>
+<th>Title as the corpus gives it</th>
+<th>Where</th>
+<th>Responsible for, as stated</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Sudhir Nair</td>
+<td>"Global Head of Aladdin"; "Global Head of the Aladdin Business"
+(2023)</td>
+<td>T2-033 Art of the possible, Jun 2025; T2-005 Columbia Threadneedle,
+Jul 2024; T2-006 AustralianSuper, May 2023</td>
+<td>Runs the Aladdin business; 25 years at BlackRock from the graduate
+analyst programme; "leads a really vibrant technology organization"
+<span class="sourcetag">[T2-033]</span></td>
+</tr>
+<tr class="even">
+<td>Dave Woodhead</td>
+<td>"managing director and head of engineering for Aladdin Studio"
+(Snowflake podcast); "Head of Aladdin Studio Engineering" (Fivetran
+blog)</td>
+<td>T1-01 Snowflake Data Cloud podcast, 2024; page: Fivetran blog, Aug
+2024</td>
+<td>Engineering for Studio: APIs and events, Aladdin Data Cloud on
+Snowflake, developer tools <span class="sourcetag">[T1-01]</span></td>
+</tr>
+<tr class="odd">
+<td>Richard Newman</td>
+<td>"General Manager, Aladdin Studio"</td>
+<td>T1-11 Never Done: Data, the key ingredient (also T2-013, Jan
+2025)</td>
+<td>"my role here at Aladdin is to be very much between Commercials and
+Engineering" <span class="sourcetag">[T1-11]</span></td>
+</tr>
+<tr class="even">
+<td>Diwakar Goel</td>
+<td>"Global Head of Data from Aladdin" (Whisper renders him "the boxer,
+Guell")</td>
+<td>T2-050 Data as a strategic asset for pensions, 2025</td>
+<td>Data and AI platform strategy; opening Aladdin through events, APIs
+and ADC <span class="sourcetag">[T2-050]</span></td>
+</tr>
+<tr class="odd">
+<td>Jeff Miller</td>
+<td>"Managing Director, Global Head of Data Platform and Product
+Engineering at BlackRock ... Chief Architect and a member of our
+Enterprise Architecture team"</td>
+<td>T1-17 Snowflake video, undated</td>
+<td>Aladdin Data Cloud; replaced "flat files ... FTP" distribution
+<span class="sourcetag">[T1-17]</span></td>
+</tr>
+<tr class="even">
+<td>Kunal Khara</td>
+<td>"MD and Global Head of Aladdin Product"</td>
+<td>T2-061 BST Awards interview; T2-010 Global Insurance Report, Nov
+2023; T2-037/038 The Way Forward, 2024; T1-30 Big Little Questions</td>
+<td>Product roadmap; named Studio as a 2024 focus <span class="sourcetag">[T2-061]</span></td>
+</tr>
+<tr class="odd">
+<td>Pia Schaefer</td>
+<td>"Global Head of Value Engineering for the Aladdin Client
+Business"</td>
+<td>T2-011 Change alpha with McKinsey, Jul 2025; T2-012, Apr 2024</td>
+<td>"change alpha", operating leverage from the platform <span class="sourcetag">[T2-011]</span></td>
+</tr>
+<tr class="even">
+<td>Ted Stratigos</td>
+<td>"Global Head of Aladdin Wealth Tech"</td>
+<td>page: Aladdin Wealth Auto Commentary press release, 2 Oct 2025</td>
+<td>Aladdin Wealth; Auto Commentary launch with Morgan Stanley</td>
+</tr>
+<tr class="odd">
+<td>Cameron Skinner</td>
+<td>"Global Head of Solutions Engineering for the Aladdin business";
+"Managing Director and Head of Aladdin Solutions Engineering at
+BlackRock"</td>
+<td>T2-016 Citisoft, Jan 2026; T2-056 Whole Portfolio webinar, Sept
+2025; T2-041 Big Little Questions; T2-045 FT FundFire webinar</td>
+<td>Solutions design for prospects; "a decade here at BlackRock"
+<span class="sourcetag">[T2-016]</span></td>
+</tr>
+<tr class="even">
+<td>Lance Braunstein</td>
+<td>"Managing Director, Aladdin" (2023); "head of Aladdin Engineering at
+BlackRock" (Microsoft, Dec 2024)</td>
+<td>T2-022 Microsoft partner story, Mar 2023; T2-037/038, 2024; page:
+Microsoft Cloud blog</td>
+<td>Engineering; cloud and AI journey with Microsoft</td>
+</tr>
+<tr class="odd">
+<td>Georgette Anderson</td>
+<td>no title given</td>
+<td>T2-040 Big Little Questions, insurers</td>
+<td>Insurance segment; gives the $500bn / $6tn figures</td>
+</tr>
+<tr class="even">
+<td>Pavan Pemmaraju</td>
+<td>"Head of AI Product &amp; Engineering"</td>
+<td>T2-028 Reducing time to insight, Jul 2026</td>
+<td>"leading our AI strategy" per the host; agents, memory,
+guardrails</td>
+</tr>
+<tr class="odd">
+<td>Jess Fitzgibbon</td>
+<td>"Head of Product for Aladdin Risk"; "manager director and head of
+product at Aladdin risk"</td>
+<td>T2-028; T2-051 FT FundFire webinar</td>
+<td>Aladdin Risk product</td>
+</tr>
+<tr class="even">
+<td>Kamya Somasundaram</td>
+<td>"Global Head of Aladdin Partnerships &amp; Trading Product
+Marketing"</td>
+<td>T2-017 Aviva Investors, Dec 2025</td>
+<td>Trading network (FIX, "hundreds of participants"), partnerships</td>
+</tr>
+<tr class="odd">
+<td>Brennan Rosales; Pedro Vicente Valdez</td>
+<td>"AI engineering lead at BlackRock"; "Principal AI Engineer"</td>
+<td>T1-16 LangChain Interrupt, 2025</td>
+<td>Aladdin Copilot orchestration, plug-in registry, evaluation</td>
+</tr>
+<tr class="even">
+<td>Afwa Kandawire</td>
+<td>"Global Head of Aladdin Platforms"</td>
+<td>T2-027 Principles of Design, May 2023</td>
+<td>Platform engineering: uptime, hosting, developer friction,
+enterprise architecture</td>
+</tr>
+<tr class="odd">
+<td>Sue Zheng</td>
+<td>"Tech Fellow"; "leads Global Engineering for the whole portfolio
+solution and private credit"</td>
+<td>T2-027; T2-052</td>
+<td>Multi-asset data model, private credit</td>
+</tr>
+<tr class="even">
+<td>Syril Smith Garson</td>
+<td>"Head of Product for AI" (2025); "Head of Product for Alpha,
+Research and AI platforms" (2023)</td>
+<td>T1-12/13 Never Done with Microsoft; T2-019, Nov 2025; T2-035, Sept
+2023; T1-27</td>
+<td>Copilot platform, "common services and capabilities that underpin
+all of these different copilot experiences" <span class="sourcetag">[T1-13]</span></td>
+</tr>
+<tr class="odd">
+<td>Adam Salvatori</td>
+<td>"Head of AI, Alpha, and Digital Assets Engineering"</td>
+<td>T2-035 Fourth industrial revolution, Sept 2023</td>
+<td>AI and digital assets engineering</td>
+</tr>
+<tr class="even">
+<td>Tarek Chouman</td>
+<td>"Global Head of the Aladdin Client Business"; former CEO of
+eFront</td>
+<td>T2-014, Sept 2025; T2-030, Dec 2024; T2-058, T2-059, T2-063</td>
+<td>Client business; Provider network; private markets</td>
+</tr>
+<tr class="odd">
+<td>Mark O'Hare</td>
+<td>"Vice Chairman for BlackRock"; founder of Preqin</td>
+<td>T2-014 Democratizing private markets, Sept 2025</td>
+<td>Preqin inside BlackRock</td>
+</tr>
+<tr class="even">
+<td>Tim Garbien</td>
+<td>"Head of Aladdin Business Development for the Americas"; "managing
+director of Aladdin at BlackRock"</td>
+<td>T2-021 Alpha FMC, Mar 2026; T1-18 Summit for Asset Management</td>
+<td>"travel the earth talking to asset managers and asset owners"
+<span class="sourcetag">[T1-18]</span></td>
+</tr>
+<tr class="odd">
+<td>Woo Fung Kwong</td>
+<td>"Managing Director, Chief Strategic Advisor to Aladdin"</td>
+<td>T2-036 Morgan Stanley, recorded Q3 2023</td>
+<td>Aladdin Wealth origins</td>
+</tr>
+<tr class="even">
+<td>Robert Mitchnick</td>
+<td>"Head of Digital Assets, BlackRock"</td>
+<td>T2-015 Coinbase, Apr 2026</td>
+<td>Digital assets; partnership strategy</td>
+</tr>
+<tr class="odd">
+<td>James Werner</td>
+<td>"head of Aladdin WealthTech APAC" (Whisper: "London WealthTech
+APAC")</td>
+<td>T2-039, Mar 2026</td>
+<td>APAC wealth</td>
+</tr>
+<tr class="even">
+<td>Melissa Faraz; Paul McGaugh</td>
+<td>"global head of business development for private markets, analytics
+platforms and head of Preqin London"; "managing director in our Aladdin
+private markets product team"</td>
+<td>T2-056, Sept 2025</td>
+<td>Preqin integration; whole portfolio and private credit</td>
+</tr>
+<tr class="odd">
+<td>Alisha Sewdass; Michael Campos</td>
+<td>"runs our Aladdin Solutions Engineering team for Aladdin in the
+Americas"; "I cover the US Asset Managers for Aladdin"</td>
+<td>T2-049 Build vs Buy webinar</td>
+<td>Build vs buy framing</td>
+</tr>
+<tr class="even">
+<td>Randy Fradin; Lou Rosato; Marija Djordjevic; "Shirley Tvett"</td>
+<td>no titles in the files (Rosato speaks for BlackRock operations;
+Tvett is "Managing Director and Chief Operating Officer at Aladdin
+BlackRock" as Whisper renders it)</td>
+<td>T1-28; T1-10 Symphony Innovate 2026; T2-043/044 Uncharted; T2-046 FT
+webinar</td>
+<td>Azure migration; interoperability; private markets benchmarking; FT
+panel</td>
+</tr>
+<tr class="odd">
+<td>Microsoft counterparts</td>
+<td>Adrian Crockett, "General Manager, Microsoft Cloud for Financial
+Services"; Jason Wild, "Vice President, CEO Co-Innovation and Customer
+Engagement"; Matthew Kerner; Allison Nachtigal; Judson Althoff,
+"Executive Vice President and Chief Commercial Officer"</td>
+<td>T2-019/023, T1-12/13; T2-022; T1-28; T1-27; page: Microsoft Cloud
+blog</td>
+<td>Copilot design; partnership; Azure migration; Ignite 2024</td>
+</tr>
+<tr class="even">
+<td>Snowflake, Fivetran counterparts</td>
+<td>Christopher Napoli, "Head of Wealth &amp; Asset Management,
+Snowflake"; Taylor Brown, COO, Fivetran</td>
+<td>T1-11, T2-013, T2-050; page: Fivetran blog</td>
+<td>Data Cloud partnership; pipelines</td>
+</tr>
+<tr class="odd">
+<td>NVIDIA counterpart</td>
+<td>none; the GTC page was JavaScript-only and holds no names</td>
+<td>page: NVIDIA GTC (empty)</td>
+<td>not retrievable</td>
+</tr>
+</tbody>
+</table>
+<h2 id="33-strategy-as-stated">3.3 Strategy as stated</h2>
+<p><strong>Whole portfolio and a common language.</strong> Khara: "our
+entire focus since that time that even today has been about supporting
+the investment lifecycle for the whole portfolio the whole way through
+... Aladdin unifies the entire investment management process through a
+common data language" <span class="sourcetag">[T2-061 BST Awards interview]</span>. Woodhead: "we bring
+all of that together into a single symbology, a single language, the
+language of the portfolio" <span class="sourcetag">[T1-01]</span>. The 2026 Client Forum opener: "So we
+built a common language for portfolios. Today, we're building on it, an
+investment intelligence platform powered by AI-native intelligence"
+<span class="sourcetag">[T2-060 Aladdin Client Forum 2026]</span>. Melissa Faraz: "while Aladdin lives
+as is the common language for portfolios. We really want a lot and
+inclusive of a front and prequin to also be the common language of data"
+<span class="sourcetag">[T2-056, Sept 2025]</span>. Chouman: "BlackRock and Aladdin was built for the
+concept of the whole portfolio" <span class="sourcetag">[T2-063 APAC Client Forum recap, 2025]</span>,
+and "The whole portfolio today, we are speaking about it, we believe
+that in few years it will become the norm" <span class="sourcetag">[T2-014, Sept 2025]</span>.
+Woodhead: "we are very much on a journey to what we call a whole
+portfolio view ... We don't think anybody else will be able to provide
+that" <span class="sourcetag">[T1-01]</span>. The product page claims "6 years delivering Whole
+Portfolio solutions—with 20+ years delivering solutions for private
+markets" and "50,000 unique private markets companies maintained and 2k+
+private markets risk factors monitored daily" <span class="sourcetag">[page: Whole
+Portfolio]</span>.</p>
+<p><strong>Public and private together.</strong> Nair: "Aladdin grew up
+very much as a public markets oriented technology. And it wasn't until
+2019, when we did our first major technology acquisition with E-Front
+... The private market side was still very opaque ... which led us to
+about three months ago, we closed our next acquisition, which is a
+company called Pregwin" <span class="sourcetag">[T2-033, Jun 2025]</span>. Newman spoke of "the
+announcement of the Preqin acquisition" and "eFront's an obvious example
+of that, that data coming into the Aladdin Data Cloud" <span class="sourcetag">[T1-11]</span>. The
+acquisition video welcomes "the 1600 colleagues from prequin to
+BlackRock" <span class="sourcetag">[T2-062]</span>. O'Hare: private markets were "4 or 500 billion of
+dollars of AUM worldwide" in 2002, "Today, it's $13 trillion", with a
+Preqin mantra of "30 by 30" <span class="sourcetag">[T2-014]</span>. Goel: "we actually want to make it
+available across the whole Aladdin Suite, which is core Aladdin e-front
+as well as Aladdin wealth. We want to make data like the fund data, the
+benchmark data also available in our analytical platforms like the
+Explore and ADC" <span class="sourcetag">[T2-050]</span>. Faraz, September 2025: "investors now have
+access to over 15,000 fund investments within e front insight"; "Preqin
+indices are also available today in Aladdin explore and our Aladdin data
+cloud"; indices on BlackRock's strategic asset allocation tools and on
+Aladdin Wealth were "working to embed" and "looking to integrate"
+<span class="sourcetag">[T2-056]</span>. McGaugh described "over 10 different transaction types" added
+for loans and a private credit IBOR; Faraz said it launched "in less
+than a year post acquisition" <span class="sourcetag">[T2-056]</span>. The Studio briefing dates
+Preqin's fold into eFront Insight to February 2026 <span class="sourcetag">[briefing: Studio]</span>. A
+May 2026 private credit analytics release is asserted only in the
+candidate's revised draft and is not in the pulled transcripts or
+pages.</p>
+<p><strong>Cloud.</strong> Microsoft's Ignite recap: "Five years ago, we
+began working on a strategy to move them into the cloud on Microsoft
+Azure. Today, all BlackRock's technology platform clients and services
+are hosted in the Azure cloud ... New rollouts now take weeks instead of
+quarters to complete" <span class="sourcetag">[page: Microsoft Cloud blog, 11 Dec 2024]</span>.
+Kandawire: "the first stage would be a lift and shift ... the principal
+reason for doing a lift and shift was to ensure that we could actually
+enable Aladdin to be available to more prospects in more regions than we
+had datacentres available" <span class="sourcetag">[T2-027, May 2023]</span>. From the Fradin and
+Kerner episode, whose Whisper file does not label speakers: "Initial
+step of moving the Latin into Azure was always meant to be the
+springboard to what comes next, which is essentially a perpetual cloud
+journey" <span class="sourcetag">[T1-28]</span>. Braunstein, on why Microsoft: "you're great at data
+centers. We will never be the data center operator that you are, and
+that's fine" <span class="sourcetag">[T2-022, Mar 2023]</span>. The AWS option announced December 2025
+with general availability in H2 2026 appears in the briefings, not in
+any transcript or page <span class="sourcetag">[briefing: suite architecture]</span>.</p>
+<p><strong>Openness.</strong> Khara listed "this big focus on open
+architecture and access to APIs" as "in very high demand over the last
+few years", and for 2024: "What we call the Aladdin studio estate, we
+think is going to this year be a major, major unlock, because we're
+finding that more users are craving this ability to interact with our
+data, with their data, with reporting with dashboards on a programmatic
+basis at machine scale" <span class="sourcetag">[T2-061]</span>. Goel: "we really want to make every
+single event that happens in a lot in available to you. So every single
+transaction that happens should be available and accessible to you via
+an event, via an API"; ADC as "a data integration hub ... within 15
+minutes of latency"; and "extending a lot in into a platform", with
+investment automation as the first use case <span class="sourcetag">[T2-050]</span>. Woodhead's three
+pillars: "It exposes everything Aladdin knows how to do as a set of APIs
+events. The Aladdin data cloud built on top of Snowflake ... And
+increasingly we're building a set of developer tools" <span class="sourcetag">[T1-01]</span>. Newman:
+"The vision's always been other firms join that ecosystem. So, you know,
+bringing in, like, firms like London Stock Exchange data into the
+ecosystem" <span class="sourcetag">[T1-11]</span>. Chouman on the Provider network: "we've expanded our
+provider network to include nine of the largest global asset services"
+<span class="sourcetag">[T2-059]</span>. Somasundaram: "there is a burgeoning community of individuals
+saying 'I need that in the form of an API. I need that to speak to
+this.'" <span class="sourcetag">[T2-017]</span>. Chouman in APAC: "our strategy is to meet where you
+are" <span class="sourcetag">[T2-063]</span>.</p>
+<p><strong>AI.</strong> Khara, early 2024: "on the E-front side in
+particular, we have a co-pilot that is out in the market very soon,
+there'll be something we're going to be doing on the Aladdin front as
+well" <span class="sourcetag">[T2-061]</span>. The FT webinar panellist for Aladdin: "we recently
+introduced the Aladdin Co-Pilot ecosystem with a select number of
+clients. The first example of that was e-front co-pilot" <span class="sourcetag">[T2-046]</span>. By
+December 2024 Microsoft wrote "BlackRock technology clients are already
+using this capability today" <span class="sourcetag">[page: Microsoft Cloud blog]</span>; the product
+page says "now available to all Aladdin clients" <span class="sourcetag">[page: Aladdin
+Copilot]</span>; by 2025 Copilot was "embedded across all of those 100
+front-end applications" <span class="sourcetag">[T1-16]</span>. Microsoft also records BlackRock
+"starting an AI Lab in 2018" <span class="sourcetag">[page: Microsoft Cloud blog]</span>. Woodhead's
+"AI strategy in in my mind is really three-fold": AI "woven into
+everything we do", "AI as a platform" for builders, and "a co-pilot to
+help me build" <span class="sourcetag">[T1-01]</span>. Pemmaraju and Fitzgibbon, July 2026: "We're not
+at a point of the agents making decisions. It's human in the loop", and
+Pemmaraju: "I see a 12 to 18 month time frame. I think I definitely see
+high confidence, low risk actions can potentially be automated"
+<span class="sourcetag">[T2-028]</span>. Goel: "a new class of employee, which I call as digital
+employees, or what we call as agents today" <span class="sourcetag">[T2-050]</span>. Chouman: "a
+futuristic view of trading. One where a portfolio manager is going to be
+able to talk to Aladdin, where agents are going to be able to work
+together to make decisions" <span class="sourcetag">[T2-063]</span>.</p>
+<p><strong>Direction, verbatim.</strong> Khara, May 2024: "our goal is
+to first, meet them where they are, but ultimately to take them where
+they need to go. So, it's not just about how we adapt to change, but
+it's actually how we drive the change as well" <span class="sourcetag">[T2-037]</span>. Nair, June
+2025, on what excites him over two to three years: "this idea of private
+markets ... I think it will happen in a much shorter time frame than 25
+years" <span class="sourcetag">[T2-033]</span>. Woodhead: "We want to live in a world where any user
+can with natural language ask any sophistication of question against our
+entire data corpus and we can with explanability answer that through AI"
+<span class="sourcetag">[T1-01]</span>. Goel: "we need to have one single data and AI platform for the
+firm" <span class="sourcetag">[T2-050]</span>. Pemmaraju: "portfolio becomes a living system" <span class="sourcetag">[T2-028]</span>.
+Braunstein, June 2024: "blockchain, and I'm not talking about crypto ...
+I mean, a token ... to me is foundational" <span class="sourcetag">[T2-038]</span>.</p>
+<h2 id="34-partnerships-named-in-the-pulls">3.4 Partnerships named in
+the pulls</h2>
+<table>
+<thead>
+<tr class="header">
+<th>Partner</th>
+<th>Role as the corpus states it</th>
+<th>Source</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Microsoft</td>
+<td>Azure hosting of all Aladdin clients; Copilot co-development ("A lot
+of the new AI development taking place now is a close engineering
+partnership between the BlackRock and the Microsoft team", Fradin and
+Kerner episode, speaker not labelled); Azure OpenAI and Azure ML; M365
+and GitHub Copilot, Copilot Studio and Dynamics 365 used internally;
+Ignite 2024 stage. A Nadella/Fink 2020 announcement is not in the
+corpus.</td>
+<td>T1-28; T2-022; T1-12/13; T2-019/023; T1-27; page: Microsoft Cloud
+blog</td>
+</tr>
+<tr class="even">
+<td>Snowflake</td>
+<td>Platform for Aladdin Data Cloud; "hundreds of Snowflake accounts";
+Data Cloud podcast; Snowflake Summit 2024 talk; audiocast with Napoli;
+pensions webinar</td>
+<td>T1-01; T1-11; T1-17; T2-050; page: Fivetran blog</td>
+</tr>
+<tr class="odd">
+<td>Fivetran</td>
+<td>Data movement into ADC's Snowflake landing zone; "wasn't possible
+without Fivetran" (Woodhead)</td>
+<td>page: Fivetran blog, 28 Aug 2024</td>
+</tr>
+<tr class="even">
+<td>LangChain</td>
+<td>Copilot orchestration "built using Langchane" from day one;
+LangSmith traces; GPT-4 function calling; evaluating agent
+protocols</td>
+<td>T1-16</td>
+</tr>
+<tr class="odd">
+<td>NVIDIA</td>
+<td>A GTC session (S72854) exists in the link directory, but the page
+was JavaScript-only and nothing was retrieved</td>
+<td>T1-00 index; page: NVIDIA GTC</td>
+</tr>
+<tr class="even">
+<td>Amazon Web Services</td>
+<td>Hosting option announced December 2025, GA H2 2026; not in any
+transcript</td>
+<td>briefing: suite architecture</td>
+</tr>
+<tr class="odd">
+<td>HSBC</td>
+<td>Third partner on Royal London's implementation: "yourselves in
+Aladdin, ourselves in Royal London, and also, of course, HSBC as our
+partners" (Georgeson)</td>
+<td>T2-058</td>
+</tr>
+<tr class="even">
+<td>J.P. Morgan Securities Services and eight other asset servicers</td>
+<td>Aladdin Provider network; JPMorgan "one of the very early adopters
+... from 2016"; "nine of the largest global asset services"</td>
+<td>T2-059</td>
+</tr>
+<tr class="odd">
+<td>BNY</td>
+<td>Named with BlackRock in AIA's July 2024 agreement</td>
+<td>page: Whole Portfolio</td>
+</tr>
+<tr class="even">
+<td>iCapital</td>
+<td>Aladdin Wealth proposal to subscription workflow, "the first time
+we've done something like this"</td>
+<td>T1-08 iCapital Connect</td>
+</tr>
+<tr class="odd">
+<td>Symphony</td>
+<td>Interoperability "bridge" for BlackRock operations; Enhanced
+Directory in Aladdin</td>
+<td>T1-10 Symphony Innovate 2026</td>
+</tr>
+<tr class="even">
+<td>Coinbase</td>
+<td>"Coinbase was the first of those" partnerships for BlackRock digital
+assets (Mitchnick); not an Aladdin connectivity claim</td>
+<td>T2-015, Apr 2026</td>
+</tr>
+<tr class="odd">
+<td>London Stock Exchange</td>
+<td>Named by Newman as the kind of data firm the ecosystem vision brings
+in</td>
+<td>T1-11</td>
+</tr>
+<tr class="even">
+<td>Citisoft; Alpha FMC; McKinsey</td>
+<td>Consultancies co-hosting podcasts and the Build vs Buy webinar</td>
+<td>T2-016/029; T2-021, T2-049; T2-011</td>
+</tr>
+<tr class="odd">
+<td>Financial Times / FundFire; ILPA</td>
+<td>Webinar series sponsor and co-host; eFront FAIR session with
+ILPA</td>
+<td>T2-045/046/051; T2-054</td>
+</tr>
+<tr class="even">
+<td>Preqin, eFront, HPS, GIP</td>
+<td>Acquisitions, "three significant private market deals ... in the
+past year, alongside global infrastructure partners and HPS"</td>
+<td>T2-056; T2-033; T2-014</td>
+</tr>
+</tbody>
+</table>
+<h2 id="35-clients-blackrock-features">3.5 Clients BlackRock
+features</h2>
+<table>
+<thead>
+<tr class="header">
+<th>Client</th>
+<th>Segment</th>
+<th>What was said</th>
+<th>Source</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Columbia Threadneedle</td>
+<td>Asset manager</td>
+<td>CEO Ted Truscott with Nair; "in the research department, we won't
+hire anybody who can't program in R or Python"</td>
+<td>T2-005, Jul 2024</td>
+</tr>
+<tr class="even">
+<td>Intesa Sanpaolo</td>
+<td>Asset manager / bank</td>
+<td>Paola Papanicolaou, Group Head of Transformation Area; "we decided
+together with you to do a full adoption"</td>
+<td>T2-002, Mar 2024; T2-020</td>
+</tr>
+<tr class="odd">
+<td>BNP Paribas Asset Management</td>
+<td>Asset manager</td>
+<td>CTO Fatia-Fatma Balit: "Back in the Race" 2016 to 2020 "with
+BlackRock Aladdin in the front to back chain, with Salesforce in the
+CRM, and transversally DataHub"; "decommission more than 60
+applications"</td>
+<td>T2-008, Feb 2023; T2-009</td>
+</tr>
+<tr class="even">
+<td>Royal London Asset Management</td>
+<td>Asset manager</td>
+<td>CEO Hans Georgeson: "largely on time, if not ahead of plan, and we
+came in under budget"; one order management system replacing "multiple";
+"the implementation of Snowflake that we did as part of the overall
+programme has been really successful"</td>
+<td>T2-058, recorded Nov 2024</td>
+</tr>
+<tr class="odd">
+<td>TCW</td>
+<td>Asset manager</td>
+<td>Global COO Melissa Stolfi on AI and scale</td>
+<td>T2-018, Jul 2026</td>
+</tr>
+<tr class="even">
+<td>Aviva Investors</td>
+<td>Asset manager</td>
+<td>Global Head of Trading Kate Hill: "we've been using rules-based
+execution, I think now coming up a decade"</td>
+<td>T2-017, Dec 2025</td>
+</tr>
+<tr class="odd">
+<td>Franklin Templeton, Russell Investments, Barings, AXA IM ("Accident
+Investment Managers") and a Swiss group CTO</td>
+<td>Asset managers</td>
+<td>Webinar panellists alongside Aladdin speakers; no adoption
+statement</td>
+<td>T2-045, T2-051, T2-046</td>
+</tr>
+<tr class="even">
+<td>SLC Management</td>
+<td>Insurer-owned asset manager</td>
+<td>Candace Shaw, Deputy CIO and COO, on data practices and legacy
+systems</td>
+<td>T2-025, Mar 2026; T2-031, Feb 2024; T2-032</td>
+</tr>
+<tr class="odd">
+<td>Helvetia</td>
+<td>Insurer</td>
+<td>CTO Dominik Gurtner; the audio transcript is garbled, the page
+description says "holistic, real-time view across public and private
+assets"</td>
+<td>T2-057; page: Whole Portfolio</td>
+</tr>
+<tr class="even">
+<td>AIA</td>
+<td>Insurer</td>
+<td>"AIA announces a new agreement with BlackRock and BNY as it
+transforms its investment platform" (12 July 2024)</td>
+<td>page: Whole Portfolio</td>
+</tr>
+<tr class="odd">
+<td>AustralianSuper</td>
+<td>Pension</td>
+<td>COO Peter Curtis with Nair on digital transformation</td>
+<td>T2-006, May 2023; T2-007</td>
+</tr>
+<tr class="even">
+<td>University Pension Plan (UPP)</td>
+<td>Pension</td>
+<td>CIO Aaron Bennett on trusted data and the total portfolio
+approach</td>
+<td>T2-034, Sept 2026</td>
+</tr>
+<tr class="odd">
+<td>Ingka Investments</td>
+<td>Corporate investor</td>
+<td>Samuel Rundle: "critical for us was to create more transparency";
+moved to electronic execution; look-through on private funds</td>
+<td>T2-030, Dec 2024</td>
+</tr>
+<tr class="even">
+<td>Morgan Stanley Wealth Management</td>
+<td>Wealth</td>
+<td>Chris Scott-Hansen on risk-centred advice; first to implement Auto
+Commentary, October 2025</td>
+<td>T2-036, recorded Q3 2023; page: Wealth Auto Commentary</td>
+</tr>
+<tr class="odd">
+<td>J.P. Morgan Securities Services</td>
+<td>Asset servicer</td>
+<td>Naveen TV, Global Head, Data strategy and Integrations; Provider
+early adopter; reconciliation-break workflow live</td>
+<td>T2-059</td>
+</tr>
+<tr class="even">
+<td>Northstar Group</td>
+<td>Private equity (APAC)</td>
+<td>Head of ESG Priya Gopalan on an ESG toolkit implemented in 2023</td>
+<td>T2-003, May 2024; T2-026</td>
+</tr>
+<tr class="odd">
+<td>Ardian</td>
+<td>Private markets</td>
+<td>Teaser on automated investor-portal data</td>
+<td>T2-004, Aug 2023</td>
+</tr>
+<tr class="even">
+<td>eFront testimonial videos</td>
+<td>Private markets GPs, LPs, servicers</td>
+<td>6M, Adepa, Allianz Capital Partners, Alter Domus, Andera Partners,
+APG Asset Management, BlackRock Alternative Investors, BNP Paribas
+Securities Services, Bouwinvest, Brown Brothers Harriman, CapMan,
+Dunedin, EDC, IPS Fund Services, Madrona Venture Group, MB Fund,
+Meridiam, Mirova, Mizuho, Neo Capital, Ocorian, Old Mutual Alternative
+Investments, Social Investment Scotland, Vaekstfonden, Velliv</td>
+<td>T2-064 to T2-076, T2-084 to T2-095</td>
+</tr>
+<tr class="odd">
+<td>Microsoft Treasury</td>
+<td>Corporate</td>
+<td>First environment moved to Azure, per the briefing only</td>
+<td>briefing: Studio</td>
+</tr>
+</tbody>
+</table>
+<h2 id="36-how-blackrock-talks-to-the-market">3.6 How BlackRock talks to
+the market</h2>
+<p>The channels found are podcasts, a video series, webinars,
+client-story videos, event videos, partner stages and one press
+release.</p>
+<p><strong>Podcasts.</strong> "Aladdin Client Stories" runs from
+February 2023 (BNP Paribas AM) and "Never Done by Aladdin" from a
+trailer dated 28 May 2025, hosted by Meera Jessa, whose intro is "Today,
+technology is truly never done" <span class="sourcetag">[T2-00 index; T2-024; T2-033]</span>. Episodes
+pair a BlackRock lead with a client, consultant or partner. Engineer-led
+episodes exist: "Principles of Design" with Kandawire and Zheng
+<span class="sourcetag">[T2-027]</span>, and "The fourth industrial revolution" with Smith and
+Salvatori <span class="sourcetag">[T2-035]</span>.</p>
+<p><strong>Big Little Questions.</strong> "A new series by Aladdin,
+delivered by the people on the front lines of change" <span class="sourcetag">[page: Big Little
+Questions]</span>. Episode questions on the page: How can tech transform
+numbers into insightful narratives? What is the potential of AI in
+financial services? How is emerging tech reshaping the user experience?
+How do clients shape product development? How are analytics reshaping
+how we manage risk? As tech evolves, how do you create better client
+solutions? What is the role of emerging tech in financial services? In
+the age of AI, what is data today? In fintech, where does the platform
+end and the solution begin? In financial services, how have
+relationships evolved? Where's the light at the end of the tunnel for
+pensions? Is ecosystem an empty word? How do private markets players
+define risk anymore? Are insurers disruptive or disrupted? What does
+scale mean for asset managers? <span class="sourcetag">[page: Big Little Questions]</span>. Transcripts
+cover twelve of these plus an asset-managers episode whose opening line
+is "is efficiency a dirty word" <span class="sourcetag">[T1-21 to T1-33; T2-040 to T2-042]</span>.</p>
+<p><strong>Build vs Buy webinar.</strong> Hosted by Michael Campos with
+Sewdass and Alpha FMC's Clark Schafer. Poll one: "mostly built in house
+at about 15%. The next is actively reevaluating at 18%, hybrid second
+most at 30 and then mostly vendor platforms at 37%". Cost slide: "6070%
+of tech costs or maintenance of current systems", which Schafer restated
+as "60 to 70% of your, your tech organisation focused on keeping the
+lights on". Poll two: "AI and data demands at 42% an exact tie between
+cost and speed to market And last place was regulatory complexity". Poll
+three: "compliance reporting is number one at 53% followed by position
+and cash management 22%, trade life cycle at 17 and finally risk
+infrastructure at 9%". Timeline: "roughly 12 to 18 months", with ROI
+"about that six month post implementation". The RFP line: "what's the
+API suite that you have? Are you using connectors to Snowflake or to
+data bricks?" Closing: "maintaining plumbing or functions that are
+solved or commoditized may not be the best source of generating alpha,
+generating differentiation" <span class="sourcetag">[T2-049]</span>.</p>
+<p><strong>Events.</strong> Aladdin Client Forum 2026 in New York, with
+a produced opener ("This is Aladdin, built by you, the intelligence of
+investing") <span class="sourcetag">[T2-060]</span>; an APAC Client Forum recap for 2025 <span class="sourcetag">[T2-063]</span>;
+cadence not stated. Snowflake Summit 2024 (Woodhead with Fivetran)
+<span class="sourcetag">[page: Fivetran blog]</span>; Snowflake's Data Cloud podcast <span class="sourcetag">[T1-01]</span>; LangChain
+Interrupt 2025 <span class="sourcetag">[T1-16]</span>; Microsoft Ignite, Chicago, November 2024,
+written up by Althoff <span class="sourcetag">[page: Microsoft Cloud blog]</span>; Symphony Innovate
+2026 <span class="sourcetag">[T1-10]</span>; iCapital Connect <span class="sourcetag">[T1-08]</span>; the Summit for Asset Management
+East Coast <span class="sourcetag">[T1-18]</span>. NVIDIA GTC: a session exists but was not retrievable
+<span class="sourcetag">[T1-00 index]</span>.</p>
+<p><strong>Awards.</strong> "BlackRock won three categories in this
+year's BST Awards, Best iBOR or Investment Book and Record platform,
+Best Portfolio Analysis Tool and Best Overall Technology Provider for
+2023", in WatersTechnology's winner interview with Khara <span class="sourcetag">[T2-061]</span>. Royal
+London and Aladdin also "got an award, jointly" for the implementation,
+unnamed <span class="sourcetag">[T2-058]</span>.</p>
+<p><strong>Other formats.</strong> The Uncharted series on private
+markets benchmarking with Marija Djordjevic <span class="sourcetag">[T2-043/044]</span>; webinar
+replays behind registration, including FT FundFire series, Aladdin
+Climate, trade tensions with Market Driven Scenarios in Explore,
+pensions data, private markets, the whole portfolio, and eFront sessions
+<span class="sourcetag">[T2-045 to T2-056]</span>; client-story videos <span class="sourcetag">[T2-057 to T2-059]</span>; the Global
+Insurance Report podcast <span class="sourcetag">[T2-010]</span>; "The Way Forward" white paper and two
+podcasts <span class="sourcetag">[T2-037/038; page footer]</span>; product explainers (eFront Insight
+LP, Investment Cafe, Invest GP/LP, Portfolio Monitoring, Education
+Services) <span class="sourcetag">[T1-34/35; T2-078 to T2-082]</span>; an "Ask eFront Copilot" video
+and a whole-portfolio promo with on-screen text only <span class="sourcetag">[T1-00 index]</span>; and
+the Auto Commentary press release <span class="sourcetag">[page: Wealth Auto Commentary]</span>. The
+Explore classroom video <span class="sourcetag">[T1-09]</span> and the Fixed Income Performance Analyst
+walkthrough <span class="sourcetag">[T1-06]</span> are on third-party channels.</p>
+<h2 id="37-hiring-and-roles-seen-in-the-pulls">3.7 Hiring and roles seen
+in the pulls</h2>
+<p>Job postings are summarised in the Studio briefing, with three cited:
+Senior Product Director, Aladdin Studio Developer (New York); Technical
+Writer, Aladdin Studio, Associate (New York); Studio Developer
+Operations, Vice President (Gurgaon) <span class="sourcetag">[briefing: Studio]</span>. The product
+posting calls Studio Developer "Aladdin's extensibility layer", letting
+clients "build, adapt, and run custom workflows in a governed,
+enterprise-ready way", with goals to drive adoption "with BlackRock's
+own teams first, then clients", to "reduce off-platform development
+risk" and to embed governance in the developer experience; it names
+"AI-assisted developer tooling" <span class="sourcetag">[briefing: Studio]</span>. The technical writer
+postings describe "Streaming APIs and webhook subscriptions, documented
+with AsyncAPI alongside OpenAPI; docs generated and versioned in CI/CD"
+<span class="sourcetag">[briefing: Studio]</span>. The operations posting asks for "Python or Go plus
+Kubernetes/AKS" on an "Aladdin Container Platform: Kubernetes-based, Go
+control plane, operator pattern, AKS, Prometheus and Grafana"; data
+platform roles describe "scalable, governed, event-driven data
+ecosystems" with Kafka-style streaming <span class="sourcetag">[briefing: Studio]</span>. The briefing
+also records that postings call Aladdin a "$1BN+ technology business"
+<span class="sourcetag">[briefing: Studio]</span>.</p>
+<p>A Forward Deploy Engineer posting naming Model Context Protocol, a
+Technical Writer posting naming an "Aladdin Studio Developer Portal", an
+Aladdin Graph engineering posting citing "over 200 institutions", a
+Technical Solutions Architect building a citizen-developer community,
+and "free and premium capabilities" for Studio appear only in the
+candidate's revised draft; the fact-check lists these as unverifiable
+from the pulled material [fact-check A3].</p>
+<p>The "citizen developer" vocabulary is BlackRock's own and predates
+the SDK. Khara, November 2023: "citizen developers are what are driving
+these organizations today" <span class="sourcetag">[T2-010]</span>. Braunstein, March 2023: "this
+notion of the citizen developer. So, no matter which part of the
+organization you're in, you understand data, you understand data
+visualization, you understand how to do basic coding", and "we call that
+program broadly citizen development" <span class="sourcetag">[T2-022]</span>. Woodhead: "inside of
+black rockck we have 3,000 citizen developers in business engineers that
+are interacting with all that in using Python or using R. I think that
+number has probably peaked" <span class="sourcetag">[T1-01]</span>. Goel: "every organization has a
+growing number of citizen developers, or in fact, some people like to
+call them as embedded engineers now because they actually have a PhD
+degree in some cases" <span class="sourcetag">[T2-050]</span>. A Big Little Questions speaker: "this
+new emerging class of citizen developers at an organization" <span class="sourcetag">[T1-25]</span>.
+Garbien: "give technologists or the citizen developer the opportunity to
+work on really cool things" <span class="sourcetag">[T1-18]</span>. On talent, Nair: "we have always
+tried to find talent at all levels that is fundamentally curious", and
+"I actually don't think it's going to change the nature of the type of
+person that we're going to want" <span class="sourcetag">[T2-033]</span>. Woodhead: "the grads that are
+coming in from college they have those skills built in" <span class="sourcetag">[T1-01]</span>.</p>
+<h2 id="38-culture-and-operating-statements">3.8 Culture and operating
+statements</h2>
+<ul>
+<li>"we are a user provider at the core. Ultimately, we eat our own
+cooking at BlackRock." Kunal Khara, MD and Global Head of Aladdin
+Product <span class="sourcetag">[T2-061]</span>.</li>
+<li>"BlackRock, the house, is using the same software, right? We have
+skin in the game in terms of the software we deploy." Sue Zheng, Tech
+Fellow <span class="sourcetag">[T2-027]</span>.</li>
+<li>"We've always had this principle, in building and operating Aladdin
+of stability being our first feature. We actually described stability,
+resilience, scale, performance, security, as a feature." Lance
+Braunstein <span class="sourcetag">[T2-037, May 2024]</span>.</li>
+<li>"I view the primary mission of the platform's organization as being
+number one, let's make sure Aladdin is up and running for our clients
+every single day." Afwa Kandawire, Global Head of Aladdin Platforms
+<span class="sourcetag">[T2-027]</span>.</li>
+<li>"What's important is the empowerment, making sure that with power
+comes responsibility. So, there's a control framework around that."
+Lance Braunstein <span class="sourcetag">[T2-022, Mar 2023]</span>.</li>
+<li>Governance for citizen code: "they have to have certain governance
+around checking this code into GitHub in the same governance level that
+we check code from our software engineer as well as they need to have
+survivorship so that if they leave the organization, we can make sure
+that the code still runs after they have left." Diwakar Goel
+<span class="sourcetag">[T2-050]</span>.</li>
+<li>"speed to market doesn't necessarily imply better data. You still
+have to have the data governance." Richard Newman, General Manager,
+Aladdin Studio <span class="sourcetag">[T1-11]</span>.</li>
+<li>"getting to trust is going to be predominantly about transparency in
+the short term. So, making sure that we've got human in the loop on the
+vast majority of operations, particularly in regulated industries, is
+going to be really, really critical." Adrian Crockett, Microsoft, on
+BlackRock's podcast; Garson's reply: "Can you show me how you got that
+answer? Can you cite me back to the original source?" <span class="sourcetag">[T1-12]</span>.</li>
+<li>"we are thinking deeply about what are the control frameworks and
+how does this operate more in the copilot paradigm than in the spit out
+the authoritative answer and that's my investment decision." Lance
+Braunstein <span class="sourcetag">[T2-022]</span>.</li>
+<li>"some of those core components that drive investment management as a
+process, human in the loop, control points, all those are then well
+integrated into a modernized, automated experience, very much navigated
+and driven by AI." Kunal Khara <span class="sourcetag">[T2-037]</span>.</li>
+<li>"We're not at a point of the agents making decisions. It's human in
+the loop." and "It's a continuous feedback loop as well in order to
+improve and to stay within the guardrails that are needed." Pavan
+Pemmaraju and Jess Fitzgibbon; the Whisper file does not label which of
+them says which <span class="sourcetag">[T2-028, Jul 2026]</span>.</li>
+<li>"There are guardrails that we can put in place ... We can't replace
+the judgment of the trader. That is the secret sauce." Ben Keeler,
+Partner, Citisoft, on BlackRock's podcast; Cameron Skinner's follow-up:
+"Where do you want the human in the loop? Where do you want them able to
+exercise their judgment" <span class="sourcetag">[T2-016, Jan 2026]</span>.</li>
+<li>"you're a lot in copilot, you must never provide investment advice
+... build an evaluation pipeline and make sure that we are never going
+to give investment advice." Pedro Vicente Valdez, Principal AI Engineer
+<span class="sourcetag">[T1-16]</span>; the product page: "Will not give investment advice or respond
+to questions outside Aladdin platform boundaries" <span class="sourcetag">[page: Aladdin
+Copilot]</span>.</li>
+<li>Client co-development: "Our clients are the key driver behind how
+that product also evolves"; "the innovation does not come at the cost or
+should not ever come at the cost of anything being different or worse
+off in the way that they operate." Kunal Khara, Global Head of Aladdin
+Product <span class="sourcetag">[T1-30]</span>. "I think our ability to do that without disrupting
+customers is kind of our superpower." Randy Fradin <span class="sourcetag">[T1-28]</span>. "A good
+portion of the development that actually comes into the Aladdin system
+is on the back of the feedback that we receive directly from insurers."
+Georgette Anderson <span class="sourcetag">[T2-040]</span>.</li>
+<li>Efficiency: "Scale is often equated to do more with less. I think
+it's more do more with technology." Big Little Questions, asset managers
+episode <span class="sourcetag">[T1-24]</span>. "Today we're seeing organizations trying to elevate
+talent. So move people from doing lower value add activities to much
+higher value add activities." Tim Garbien <span class="sourcetag">[T1-18]</span>. "I think if you're
+thinking returns net of cost back to the client, you can return more
+when your costs are lower." Pia Schaefer <span class="sourcetag">[T2-011]</span>.</li>
+<li>"Never done" framing: "one thing that I can say with great
+confidence is never done is technology ... relevance is a point in time
+measurement." Sudhir Nair <span class="sourcetag">[T2-033]</span>. "Never done, that's right." Lance
+Braunstein, agreeing with Jason Wild's "better, better, never done
+getting better" <span class="sourcetag">[T2-022]</span>. "technology it wasn't furniture ... it was a
+lever, it was a catalyst that could actually transform the way business
+is done." Sudhir Nair <span class="sourcetag">[T2-033]</span>.</li>
+<li>"I just use that as another proof point of how some of the thinking
+of Aladdin was well ahead of its time because we've had this notion of
+an application framework embedded in the platform for quite a while."
+Afwa Kandawire <span class="sourcetag">[T2-027]</span>.</li>
+</ul>
+<h2 id="39-what-the-pulls-do-not-show">3.9 What the pulls do not
+show</h2>
+<p>The pulled transcripts and pages contain no technology-services
+revenue, margin, ACV or growth figure spoken by a BlackRock person; no
+count of Aladdin clients beyond "hundreds of clients globally across 70
+countries" <span class="sourcetag">[T1-16]</span> and the insurance figures in 3.1; no pricing, fee
+schedule or contract value for Aladdin, Studio, ADC or Copilot; no deal
+values for eFront, Preqin, HPS or GIP; no named wins or losses against
+competitors, and no comparison with Charles River, SimCorp, Enfusion,
+FactSet or any other vendor by a BlackRock speaker (the only competitor
+names in the corpus come from webinar panellists describing their own
+stacks). The AWS announcement, the Preqin-into-eFront-Insight date and
+the job-posting detail rest on the briefings, which drew on BlackRock
+pages outside the transcript set, and the Forward Deploy Engineer,
+Developer Portal and "over 200 institutions" items rest only on the
+candidate's draft. The NVIDIA GTC session and the Microsoft industry
+blog of September 2024 were not retrieved. These are outside the pulled
+material.</p>
+</body>
+</html>
