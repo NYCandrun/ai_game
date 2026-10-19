@@ -25,3 +25,4 @@ Each row is one round of research, review or production. The commit for each rou
 | 15:52 to 16:15 | Related AI concept videos | Four IBM Technology videos transcribed into one Markdown | `09-related-ai-concepts/` |
 | 16:15 | Index | README, folder READMEs and this timeline | `README.md`, `00-timeline.md` |
 | 16:20 to 16:55 | Compendium | Three writers drafted Aladdin, Studio and BlackRock parts from the pulls; assembled into one PDF and HTML | `10-compendium/` |
+| 19:20 | Compendium review | Nine reviewers checked the compendium against the nine requested recordings; agreed corrections applied; two new transcripts added | `10-compendium/review-rounds/`, `04-transcripts/requested-recordings/` |

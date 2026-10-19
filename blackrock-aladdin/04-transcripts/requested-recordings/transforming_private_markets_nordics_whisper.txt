@@ -1,0 +1,428 @@
+[00:00] Good afternoon and welcome to our first technology webinar in the Nordics. It's great to be connected
+[00:06] virtually here with clients and partners from across the region. My name is Christian Houdhail
+[00:12] and I'm the head of Northern Europe and senior advisor to European pension funds for BlackRock.
+[00:18] BlackRock has proudly built a local presence in the Nordics for over 15 years while our teams on
+[00:23] the ground have supported partnerships across investments and technology. Now let's turn to private
+[00:28] markets. Private markets are a core part of institutional portfolios. Yet many investors still face
+[00:35] data silos, manual processes and uneven reporting making it harder to achieve a single portfolio view
+[00:43] and scalable competence. Here in the Nordics we speak to institutional clients who are increasingly
+[00:49] looking to unify public and private asset data, streamlining risk oversight and enhanced operational
+[00:55] efficiency. Today's webinar is an opportunity to explore how data and technology are reshaping
+[01:01] private markets and what that means for Nordic investors. With our leading platform and e-front
+[01:07] private market capabilities, investors can connect post-investment workflows with pre-investment
+[01:12] data and insights from prequid. The result is one set of data, one process and more time for your
+[01:19] teams to focus on value-added tasks. Over the next 40 minutes our HPER panel will discuss the
+[01:26] latest trends in private markets asset allocation. Team considerations when developing an effective
+[01:32] data strategy for private assets and how single platform can simplify risk reporting and operations
+[01:39] across public and private markets. Our goal is simple helping you manage your whole portfolio
+[01:46] and support you and your teams to make better investment decisions. So thank you for joining us.
+[01:53] With that let's begin the macro lens approach on investing in private markets.
+[01:57] Home over to you. Thank you Christian and warm welcome to everyone. It's great to be here and to
+[02:05] represent prequid. Now of course part of the BlackRock family. I'm Paul Centonon, head of asset
+[02:13] allocation research at Prickens and Sites Plus team. So our team is responsible to produce research,
+[02:19] utilizing the excessive data that Prickens has across the asset asset classes. Of course on top
+[02:25] of that we have analytics and work both to support private markets investing whether you're a GP or an
+[02:31] LP. Our team's job is really to for a drug deal of those insights to you and to give you ideas
+[02:39] and how to utilize our data further. The plan today is really threefold. I would like to cover
+[02:44] some of the global trends that we're seeing in the private market space. So that includes topics
+[02:49] like changing the changing asset allocation, issues that LPs are challenged by issues around
+[02:57] liquidity and distribution challenges. And then we're going to more European and the
+[03:02] Nordic specific data points that we have available to you. And finally we'll end up with a forecast
+[03:08] for the future where we expect Prime markets to be in 2030. So hope you all find this interesting.
+[03:14] So I will begin with the global private market trends that we're seeing at the moment. We're best
+[03:20] to start by looking at some of the data we have put together on the global portfolio or what we see
+[03:26] it currently. So the traditional portfolio obviously is full of private market, public market
+[03:32] instruments and asset classes. The global portfolio now is quite diverse including public, private,
+[03:39] new digital currencies as well as gold. We estimate that the private markets in its current state
+[03:46] so assets that are currently invested so ignoring the dry powder is about 4.6% of the
+[03:52] vegetable universe. That's estimated to be about $250 trillion. This number is up from 2020 which
+[03:58] was only a 3.5% and we anticipate a number to continue to grow. This represents some of the
+[04:03] blurring and the line between what's happening in the public and private markets. We see institutional
+[04:08] investors of course the leaders and the initial investors within the private markets. We always
+[04:12] see opportunities for retail and high net with space and even below investing in this as it
+[04:19] becomes a little bit easier to invest due to the new investment structures in the semi-liquid space
+[04:27] as well as the increased access overall in pensions for the retail investors.
+[04:34] When you think about what is on the sidelines a well, right now we have about 4 trillion in
+[04:38] dry powder waiting to be invested in private markets so this number is likely to go up over time.
+[04:45] Breaking down those leaders as I mentioned to you before who are the original drivers of the
+[04:52] increase in global portfolio allocation that we see. We see the additional investors
+[04:57] have quite diverse in terms of their allocation to private markets. Endowments and foundations are
+[05:03] the original I would say for foreigners 40% almost go endowments and we see that number
+[05:11] increasing over the last five years in particular and that's a case where PE and VC we see the most
+[05:17] increase especially for endowments and foundations but in the public pension plan space we see actually
+[05:23] a lot of increases in allocation to what infrastructure and private credit and we see those numbers
+[05:28] increasing about two to four percent respectively. Private and private pension also a large group of
+[05:34] institution investors we see the numbers increasing the most over that time period but it's more
+[05:40] broad across the different asset classes and finally insurance companies where we see our data
+[05:46] showing flat increase in asset allocation but we anticipate that this number is actually larger
+[05:51] in reality due to the way that insurance companies invest in asset classes like private credit
+[05:55] where they look to access it through different means through rated-free funds for example
+[06:01] where they can benefit from some of the regulatory requirements around investing in
+[06:08] rather than investing in close-ended structures so we see those allocations go into the other
+[06:13] buckets so overall institutional allocations on a weighted basis has reached about 20%
+[06:20] from an Nordic perspective so if a Merci-S Nordic perspective this number is quite similar but we
+[06:25] do have some larger investors in the region that perhaps have not increased the allocation or have
+[06:31] minimal allocations so the number is slightly less but overall very much present in all the asset
+[06:36] classes available within the alternative space. Of course everyone's top of mind is how performance
+[06:46] of private markets and one of the reasons where investors have told us why they invest in
+[06:51] in alternatives in particular particular private equity adventure has been the performance and over
+[06:56] a long time we've seen the outperformance in particular if you look at the time period between
+[07:00] 2007 and 2019 on the left hand side there our performance of both PE and VC over the S&P 500
+[07:07] as a public market benchmark and this is followed by again private credit and infrastructure
+[07:12] again showing a good representation from prior markets but over a more recent time period the
+[07:20] I guess performance has been quite mixed we had the exuberance in the post-covid pandemic
+[07:26] followed by the market crash in 2022 of the public markets we saw VC markets follow that
+[07:34] and we've seen kind of a low in performance in particular with single-digit returns in PE
+[07:38] and some of the other asset classes where private credit and infrastructure has actually
+[07:43] performed the best and private credit has performed well due to the rising interest rates and the
+[07:48] floating nature of that asset class. For 2025 we see a recovery in venture after a three-year trough
+[07:55] while we're still waiting to see some unlocking of deals and exits within the private equity space
+[08:01] which is the biggest challenge that investors face today and based on our data we see that number
+[08:09] potentially improving. As I mentioned to you earlier performance has been great in 2021 when
+[08:14] you look at all the deals that aggregate deal values that we saw across asset classes we see
+[08:18] that peak speaks the spike there and we've seen a low period and actually anticipated for 2024
+[08:24] and coming into 2025 was quite strong but due to some policy changes particularly in the US and
+[08:31] a student seat around tariff policy Q2 was hit hard within the deal space. Pricing deals was quite
+[08:37] difficult when interest rates were moving quite significantly but now in Q3 we saw that rebound
+[08:43] as things become more clear and the deal values and aggregate deal numbers I thought look better in Q3
+[08:50] especially in PE with some big take privates pushing that number up as well and looking forward we
+[08:58] anticipate to continue with your greater certainty. Now another challenge often talked about is the
+[09:09] distributions that LPS receive in the purpose of recycling that capital to invest in newer
+[09:16] integers and newer funds to maintain allocations or to increase allocations and what we've seen over
+[09:21] the last two three years has been that lack of distributions in particular and that's been quite
+[09:27] difficult for LPS to manage especially if you have a pacing model based on assumptions of certain
+[09:32] returns over that time period which they have not materialized. The last time we were in a what we
+[09:38] call a distribution glut was back in June the global financial crisis and although we're not in
+[09:44] us as severe point of time the good that has been gradual and has been quite lengthy which has
+[09:50] caused some concern around committing more to funds on this why we've seen an impact on fund
+[09:57] raising in particular. One of the other one of the asset classes that I do stand out in this chart
+[10:02] is the private debt which has managed to continue to deliver reliable and constrained to investors
+[10:08] through distributions and we see that that really stands out compared to the other asset classes.
+[10:16] Finally let's go into some of the trends that we're seeing in the European and Nordic space.
+[10:21] Europe itself has growing quite being a quite growing, seen quite significant growth period in
+[10:28] the private market space and when you look at the number of investors that are invested or
+[10:36] basically have invested in the last 12 months or plan to invest the next 12 months it's in the
+[10:40] thousands right whether you're a GP and LP and we split that number up across the different asset
+[10:45] classes and by region within Europe itself Nordic plays a significant part of that investment story.
+[10:54] In particular real estate it has a highest number of absolute investors in that space
+[10:59] and it really reflects some of the traditional investments within the real estate where in 2020
+[11:05] the largest asset class in the institutional portfolios was real estate actually that has now been
+[11:10] released by private, C&BC. So even though the numbers look high in the real estate space
+[11:15] then the actual amount in terms of absolute term amount is actually the largest in PE.
+[11:20] While in venture the portion across compared to other regions represented by Nordic investors
+[11:27] is actually largest out across all the asset classes showing interest, the interest that this
+[11:33] region has in this asset class. In the AUM terms, a European AUM has seen a significant
+[11:42] interest and I've highlighted two of the asset classes here where Nordic has the highest representation
+[11:48] 16.5% in infrastructure and 12.2% in PE has percent of European AUM. European AUM has always been
+[11:57] a little bit overshadowed by its North American counterpart. Well the last three years we've seen
+[12:02] North and Europe actually grow a little bit faster in some of the specific strategies.
+[12:07] And with infrastructure in particular European infrastructure has grown faster much faster than
+[12:11] any other region globally led by you see the greater contribution that the Nordics has in the
+[12:17] space. Infrastructure has been supported a lot by the megaphorces that Black Rock investment to
+[12:24] comment about in significant detail whether that's the energy transition whether that's the
+[12:29] AI revolution all benefiting this asset class and we can see the representation there at the
+[12:34] Nordic displays. Another theme that we're seeing and we talked about was the lack of distributions
+[12:42] but linked to that is the the fundraising that has happened in the space and the reflection of that
+[12:49] has been the number of funds actually globally has increased in terms of the number of funds
+[12:55] who are raising and looking to raise and that reflects somewhat the number of funds closing
+[13:01] or fewer funds closing has become a little bit more tougher environment as distributions
+[13:06] have slowed and the ability to recycle capital and invest in new funds comes more difficult.
+[13:12] But what we also seeing in Europe that this this fall is a little bit less which is a testament to
+[13:17] the strengths of the region and we see that some some funds as well look to reestablish the capital
+[13:27] that they are targeting. Gloily targets so that they actually can close and look forward to
+[13:33] move forward to investing and actually making that first investment and and really start to deliver
+[13:39] the returns back to the investors. Part of our research we normally have data across the benchmarks
+[13:48] and fund level we also do some qualitative research as well where we collect information
+[13:52] from LPs globally and we're running surveys for decades now and what I've done here is highlighted
+[14:01] three most recent three time periods and looked at what the greatest kind of interest in in terms
+[14:07] of regions for investors in P in private equity and what we saw was quite an interesting trend
+[14:13] where in for example in June of 2025 we're in much a reflection of that policy the US trade policy
+[14:20] US a foreign interest in the US an increased interest in Europe in particular and we see that interest
+[14:26] in both Western Europe and in Nordics increasing and that continues to increase over time both
+[14:32] for domestic investors as well as from the US investors the largest group of of educators
+[14:38] there are in the globe and we expect that trend to continue moving forward. Now onto what we expect
+[14:46] for the future for private markets. Part of our research we produce a report called the
+[14:51] private markets in 2030 which looks to forecast out five years ahead where we expect the
+[14:57] different asset classes so within that we look at contributions distributions performance and AUM
+[15:03] and we've based that on one of the factors including historical trends but part of that is
+[15:09] where we where investors are telling us they're going to either commit in the short term as well
+[15:14] in the long term. So what we see is consistent story in both scenarios in the short term
+[15:20] investors are most positive about and post positive about increasing allocations or
+[15:26] committing increasing commitments in private equity and infrastructure and in private debt
+[15:31] private equity investors are looking for every higher risk just returns they're also looking
+[15:36] for all diversification and that does not mean just low correlation it means diversification
+[15:41] in terms of size of company in earnings profiles and in factor exposures. For private credit it's
+[15:47] about reliable income streams right it's about high risk of return as well and infrastructure
+[15:53] we see low correlation and reliable extremes as well and inflation hedge as we enter a high
+[15:59] going to more higher inflationary environment as kind of the reasons why investors are more
+[16:04] interested in these asset classes and in the long term if you look at the three asset classes again
+[16:09] appear and even more positive about the sentiment towards these asset classes.
+[16:13] And finally that puts put together we put together our forecast where we see prior markets
+[16:20] reaching 32 trillion by 2030. Now during this period we see a single digit but high single digit
+[16:28] robust growth of about 9.6 percent a little bit slower than what it was in the past six years but
+[16:35] that also reflects the macro my environment that we see rates a little bit higher than they were in
+[16:41] those previous six years and with asset classes that depend more heavily on leverage of course it's
+[16:46] going to impact our forecasts going forward. We also seen that we're entering a fundraising
+[16:53] low where with the last three years we've seen fundraising fall consistently over the last three
+[16:57] years our forecast anticipates a recovery in fundraising in 20 by 2027 which will boost the
+[17:06] the AUM figures that presented here but again our forecast really much time with what
+[17:13] investors are telling us when it comes to the asset classes that are due to benefit the most
+[17:17] over the long term private equity, private debt and infrastructure with asset classes that we feel
+[17:23] we're going to have the highest growth across the board real estate which I mentioned I haven't
+[17:29] mentioned yet a single digit growth or we have experienced a three year low in terms of performance
+[17:36] obviously interest rates have impacted that but there are pockets of opportunities that we see
+[17:40] a higher growth areas where opportunistic real estate will become a seen a higher growth rate than
+[17:47] some of the other strategies. In private in hedge funds again similar story where we've seen
+[17:54] net outflows, fund closures but yet stability there where during we've seen investors looking to
+[18:02] invest in asset class for downside risk protection and low correlation strategies and we anticipate
+[18:10] the market to be single but single digit growth, experienced single digit growth on the lower side.
+[18:15] Finally venture capital weeks to expect the growth rate to be much higher in the second half
+[18:20] of that time period forecast as the venture capital prospects improve over that time period but we've
+[18:29] seen it in the three year low and we start to see some of the indications of that we'll cover
+[18:33] in the future. Well that's it for the presentation I hope you found it quite useful and I would like
+[18:38] to pass it on to Jen and the team to talk about some of the themes that they're seeing in the market.
+[18:46] Thank you very much Paul and thank you all for joining today's session. So as you've seen we started
+[18:52] with a house view of the investments that people are taking part in from a public and private market
+[19:00] lens from Christian. We then moved on to Paul who discussed private markets and spoke about
+[19:06] the global trends, the Nordic trends and more so like what's happening in the future where
+[19:12] are people investing in next and we want to wrap this all together by bringing you a solution
+[19:19] to how do you then bring that data in and view it as part of the whole portfolio view.
+[19:26] My name is Jennifer Cohen and I'm part of the Nordic's Business Development team and we're here
+[19:32] joined with James Smallwood and Eric Hookman who are both the global head of Solutions Engineering
+[19:40] for e-front which is private markets and the global head the Inya head of Solutions Engineering
+[19:47] for Aladdin Eric Hookman. So we're here to explore Nordic opportunities and how they are
+[19:54] how investors are approaching the challenges in integrating public and private markets together
+[20:00] in one place with one framework that allows you to support your multi-asset investment decisions
+[20:07] giving you that operational scale and that framework to then conduct your investments.
+[20:13] So we want to keep the session very interactive we have a live Q&A that's live right now I have
+[20:19] an iPad with me right here so please submit your questions and we'll answer them throughout or
+[20:26] at the end of the session and we also have two live polls as part of the session so we hope that
+[20:32] we can make this as interactive as possible. So if we go on to our first question which is to
+[20:40] James so James over the past decade what types of assets and strategies have Nordic
+[20:47] investors been positioning and what's shaping the need for that whole portfolio of you?
+[20:54] Thanks Jennifer and thanks Paul so I think some of your information will help guide some of the
+[21:00] conversation but I think if you look back over the last decade and probably beyond
+[21:06] the Nordic region is probably the most sophisticated and forward thinking in terms of private markets
+[21:15] they've always prioritized capital towards long-term resilient strategies and I think that shows
+[21:22] quite well in the charts you know that typically leads to private equity real estate infrastructure
+[21:29] and obviously with the renewables and the energy transition that aligns quite well.
+[21:34] Now we are seeing more movement towards private credit and venture and I think the
+[21:39] Nordics have always taken a very value-based approach and you know their investments truly
+[21:46] reflect the culture towards sustainability and governance but I think if we think about like
+[21:55] strategically that has evolved so you know as part of you front which I came into Blau
+[22:00] through so our private market is technology you know we worked with Nordic institutions maybe
+[22:07] a decade ago and really their main focus was probably in the allocation right so what I mean
+[22:13] by that is rather than taking active participation in deals they were typically
+[22:17] allocating to close-ended commingle funds. I think if you look at that from a data perspective
+[22:26] you know they were very big supporters of or earlier doctors of our data services where we were
+[22:31] going out and collecting really granular data both on the funds and the underlying constituent parts
+[22:37] of those funds so the assets and the portfolio companies they're operating metrics because they
+[22:41] wanted a view of performance and risk and exposure within that private market book and I think if you
+[22:48] think about that kind of structure it makes sense maybe you don't need to mix your very kind of passive
+[22:55] style private investments alongside your public book but there has been a significant shift and so
+[23:04] big institutions or larger institutions are starting to build their own house capabilities for direct
+[23:08] investments and co-investments and so that brings in itself a bigger demand on data, a bigger demand
+[23:15] on technology and so thinking about how do we do deal origination, do diligence, how do we do our
+[23:22] portfolio tracking, collecting different metrics and I think as you think about the expansion of the
+[23:30] asset classes and strategies within their private markets book alongside those public markets to
+[23:36] create the scale transparency and efficiencies needed it makes sense to put that into an integrated system
+[23:44] and so that's really where our whole portfolio demand is coming from you know a Nordic CIO
+[23:49] doesn't want to look at a public view and a private view they want a connected integrated
+[23:57] view of risk exposure performance liquidity in a single integrated platform and so you know that's
+[24:05] obviously where we see the big drive coming from and obviously creates its own complications
+[24:10] because of the differences in data and how do you bring those two things together?
+[24:14] Thanks and I know you've spoken and touched on the challenges that Nordic investors face
+[24:20] bringing together those public and private assets but Eric can you expand on that and tell us what
+[24:25] the key challenges are in the space? Yeah I think James very touched on it partly but I think you know
+[24:31] essentially private market data is very different from public market data I think in the public market
+[24:36] space you can partner with let's say a handful of vendors and get access to all the data that
+[24:41] you'll need to run the vast majority of your of your workflows in the private market space
+[24:46] the landscape is very different right? You know we have large LPEs working with you know some of this
+[24:51] 2013 some of those more more GPs which all require dedicated data collection efforts in some cases
+[24:58] these LPEs have large direct investments as well which you know to James' point will require
+[25:03] data collection when it comes to operational GPs etc and I think traditionally the approach has been
+[25:08] that organizations do a less distinct approach for let's say public market investing as well as
+[25:14] public market data management versus private market investments in private market data collection
+[25:20] and I think now on the back of let's say more of the pressure is on from a regulatory perspective
+[25:24] when it comes to transparency but also when it comes to a more more pressure on feature
+[25:30] transparency for example we see that clients are taking more of an approach where you consolidate
+[25:35] this data and to get that holistic hope and photo view and I think really if you look at the market
+[25:39] it's really those organizations that kind of like front footed this strength and that have kind of
+[25:44] tried to bridge the gap between public and private that are really thriving in this market.
+[25:49] Thanks Eric and that leads us very well to our first poll so if everyone can see the first
+[25:55] poll up on the webinar right now it should say 60 percent of investors that we serve they believe
+[26:03] that having a single view across across public and private market is crucial to managing investments
+[26:10] while the main challenges in private markets that prevent a comprehensive view of both public
+[26:17] and private assets you should have five options there the first one being data fragmentation
+[26:23] and lack of standardization technology silos and integration gaps inconsistent risk and performance
+[26:31] frameworks access to information in opaque markets and finally effort required to source private
+[26:37] market data so we are seeing some questions and answers being sent in and hopefully you are
+[26:48] voting by now they are coming in we'll give a few extra seconds for all of you voting all right
+[27:04] looks like the votes are in thank you for voting so it's clear that data fragmentation and integration
+[27:10] gaps are top of mind James how are we helping clients address this?
+[27:17] So I think if you'd have taken a poll in this room we may have all said something slightly
+[27:21] different but I think the important part there is that actually each one of those
+[27:26] challenges are symptomatic really of a root cause and so I don't necessarily like to think
+[27:33] about the individual aspects there about the silos and lack of standards and access and so on
+[27:39] I think it's a full gone conclusion well known fact that data still is and always has been
+[27:46] one of the major challenges in in private markets you know I think when I started in this
+[27:51] industry 14 years ago and you got excited if you received a fund report and it had an IRR
+[27:57] and a strategy on it and an avenue but that was kind that was that was what good looked like back
+[28:01] then so I think it's really important that we we've also recognized that whilst it's still not perfect
+[28:07] it's come a long way you know I think we have seen over the last decade an alignment on
+[28:16] consistency of the type of data that's provided but there is a complexity that is going to be
+[28:25] embedded within within datasets anyway so across taxonomies how often it's reported
+[28:32] the different asset classes all of that all of those elements are there and we have to recognize them
+[28:40] I think that really underpins all of those issues and you know I think what are we doing to help
+[28:47] well I think for the last decade from e-front into black rock and black rock really gave us the
+[28:55] the great scale in able and the amplifier effect really driven by public market clients who wanted
+[29:01] private markets data integrated we have been defining really what good looks like within private
+[29:06] markets data we have a data service and we've industrialized that data service in a way that we
+[29:13] try to be as well governed as possible in the type of information we will consume from a from a fund
+[29:19] manager and the data the data expectations we expect from that fund manager supported by our
+[29:25] allocator client base to align with our standards and so we've been able to really shape what
+[29:31] good looks like in terms of in terms of data exchange and we do it in a way that is industry
+[29:39] aligned you know we do it in a mutually beneficial scenario so we don't just force information we
+[29:45] educate the fund managers and we explain to them why it's important we understand how it's being
+[29:50] used we support them in being able to provide the final simplest way for them to provide that data
+[29:55] and to be able to do it a scale you know we we focus on a strength in numbers approach
+[29:59] and by doing that we have really been able to go across 18,000 funds and so this is what information
+[30:05] should look like and it's a part of that process we we standardize and normalize that information
+[30:10] into the right classifications and into a consistent set of data points recognizing there are
+[30:16] AC class specifics and so I think what we've done is we've taken a bottom-up approach to normalizing
+[30:24] that information at the most granular level and making sure as it comes to our ecosystem it is
+[30:29] ripe and ready for our to be consumed by our technology and what that's enabled us to do
+[30:35] importantly is create a common language that enables us to be interoperable and that's not
+[30:42] interoperability from just a technology perspective but it's also from a data perspective and so we
+[30:47] can now match public and private market data in between our e-front and our lagging systems
+[30:54] we can match transaction types so we know what an equity purchase looks like to a purchase of a
+[30:59] company and so as we start to build out that common data language data can be connected
+[31:06] we can start getting our systems to talk to each other so e-front data seamlessly into a lagging we
+[31:11] can start to build risk models and we can start to think about how AI will start driving
+[31:19] in new insights across different data sets rather than just in its in its solid mode
+[31:25] I think if you think about that's what we've been doing for the last six years and it's taken
+[31:29] us six years together and we continue to evolve you know that's a really difficult job and I think
+[31:34] we're very proud in the work that we've done there and what's really exciting is you know
+[31:39] pull sits here from prequin we're not only going to be able to close the gap on between public
+[31:45] and private but we're also going to be able to close the gap on pre-investment and post-investment
+[31:49] so having a single solution where we can go through the whole investment lifecycle across
+[31:53] different asset classes is something that we're doing today and also continue to
+[31:59] address for our clients in the future. Thank you James and as you rightly say that pre- and post
+[32:06] investment joined together makes our story even more powerful and when it comes to making decisions
+[32:13] on your investment it's also interesting to see what the view is like across your whole portfolio
+[32:20] and so when you think Eric about the whole portfolio and making these decisions like what's
+[32:25] at the forefront of your mind? Yeah I think many of the large asset owners that we're speaking to
+[32:30] are kind of reconsidering the way in which they deploy capital across across asset classes so you hear
+[32:36] this emerging trend of a total portfolio approach or TPA which I think is simply but
+[32:42] it's more of a dynamic way of deploying capital across asset classes and I think this is something
+[32:49] that I definitely see play out in the coming years even more but I think in order to be able to
+[32:55] implement this approach you really need to have that single i-board where you can capture all
+[32:59] of your transaction activity regardless of whether it's a public market investment or private market
+[33:05] and really having that single i-board to drive your total total approach to
+[33:10] portfolio management and this goes hand in hand with having the ability to generate you know cash
+[33:14] for focus being able to leverage commitment-facing models to support your liquidity planning having
+[33:22] access to a single cash ladder where you can see all the cash flows coming in on your liquid side
+[33:27] of the book but also having insights into capital going coming out through let's say capital calls on
+[33:33] on a fund they've made invested in so I think you know all these things coming together is
+[33:38] is really key in being able to support a total portfolio approach obviously that goes hand
+[33:42] in hand with at the entrance point being able to generate risk and performance analytics on
+[33:46] on portfolio realistically being able to rebalance large portfolios across public and
+[33:51] privates within within that single dashboard I think that's that's ultimately the goal I think
+[33:55] really what you what what you really need is is to have that clean and actual data there in
+[34:01] order to be ready to implement a total portfolio approach
+[34:06] thank you so we've heard from James we've heard from Eric now it's back to you on the polls
+[34:13] so the next question is what where do you see the greatest opportunity to for technology to
+[34:21] improve your investment operations is it data standardization workflow automation
+[34:28] AI driven analytics integration across asset classes or transparency and reporting again we'll give
+[34:36] you a few seconds just to answer the questions it should be popping up on your screens and I will
+[34:44] also check on our end when the results are in James what do you think the results will be
+[34:51] um it's going to likely I think it's going to be in a site we generate I can't see the
+[35:03] AI driven analytics I think it's always the buzz at the moment right so I think everyone's
+[35:07] going to be excited about that Eric do you think the same or do you think there'll be a slightly
+[35:11] different answer I think AI obviously is a stop of mind for for most people I think
+[35:17] continue to drive for transparency probably is the other one but I think one of us do okay well
+[35:22] the results are in again and you are correct it is AI driven analytics and transparency that
+[35:30] is leading again so Eric what's your take on that yeah I mean I think AI is is obviously a very
+[35:36] interesting topic in this day and age I think we already see it across our client base we can see
+[35:40] it also here internally the use of AI really really emerging in different ships and sizes I think it
+[35:46] all started with being able to query more portfolio analytics so getting an understanding
+[35:51] of okay you know I want to get a better understanding of my largest drivers of risk or I want to understand
+[35:56] you know how well we were performing in specific asset class or let's say as a portfolio management
+[36:01] getting insights into how are my analysts thinking about a specific stock or specific sector
+[36:06] and now we're really looking forward you can really see more of us in the agenda AI theme coming to
+[36:12] life already in the public market space I think this largely evolves around you know automating
+[36:17] multi-step workflows like for example portfolio hedging but also in private markets we can see
+[36:22] you know some trends emerging around for example automating parts of the of the deal management
+[36:27] workflow automating things like for example processing capital goals but I think I think here again
+[36:33] right in order to be able to benefit from this AI wave you need to have that clean data ready to go
+[36:39] that's really a starting point to be able to be positioned to benefit from all these all these
+[36:43] emerging technologies great thank you so we've moved and we've looked into what your view is of
+[36:50] what is important what are the challenges how do we deal with it what's the next big thing
+[36:55] we've looked at it from a whole portfolio of you if we drill back down into a private markets view
+[37:01] James how do you see AI taking effect onto private markets
+[37:09] so that we see AI in in a few different places we've been using AI and machine learning technology
+[37:17] within our data services over the last four years and we've created huge huge scale and
+[37:23] efficiency in terms of what are people are spending that spending their time on we've deployed AI
+[37:31] in terms of our analytics so how do we become more efficient in navigating and interrogating our
+[37:37] data we're looking at AI in terms of being able to connect different workflows as Eric said like
+[37:45] how do we automate that capital core process and I think you know we continue to evaluate the power
+[37:52] of AI in terms of research on the due diligence side you know being able to deploy multiple
+[37:57] agents to assess we know we hear a lot about liquidity in secondaries how can I go and assess a fun
+[38:02] but very quickly and generate the insights that I need to so I think all of that that's that's
+[38:06] super exciting and there's some valid user cases there I do think there's going to be two
+[38:12] significant shifts in AI over the over the coming years it's not going to solve everything right
+[38:18] no matter what AI does in terms of data it's going to give me indications I don't sure whether
+[38:23] I'm not sure whether I'm going to completely trust it intrinsically and so you're still
+[38:27] going to need humans in the loop to be able to do that verification to go and do further analysis
+[38:32] and I think the mindset will shift there where we've got this belief that AI is just going to solve
+[38:37] everything it's actually just going to make us much more efficient and I think if we go back to
+[38:41] what Paul was talking about 32 trillion by 2030 right which is double that's a huge amount of money
+[38:48] that's got to come in to private markets that's a huge amount of deals that have got to be filtered
+[38:53] through that's a huge amount of work that's got to go on and so the difference that AI can make is it
+[38:58] will it will enable ensure that private markets isn't limited by human bandwidth and I think it has
+[39:06] to be that as the core focus of what we're doing with AI to ensure that we can bring all that capital
+[39:12] in and to be able to support it across the industry thanks James so we have a final fire question for
+[39:19] both of you and then we can move on to Q&A so the question is in private markets no if there's one
+[39:27] area where the private markets ecosystem needs to get its act together over the next 12 months
+[39:34] what would it be data, transparency, standardization, liquidity or something else and James will start
+[39:43] with you uh to to to to I think I think all of those I think fundamentally liquidity is critical
+[39:51] you can't have that without data, standardization and transparency or anything else right so I think
+[39:56] everything you say is is is where we need to get our act together we need to
+[40:00] these bar heads on it on it very soon and Eric no I mean I would agree with James and I think
+[40:06] it may be just double clicking into into let's say one specific data component in particular I
+[40:10] think you you see more about say centralized entity mapping and identify management I think that's
+[40:15] going to be more of a say enabler to to to really boost that interoperability and to really
+[40:21] create that unified view thank you and we have a few minutes left and we have been receiving
+[40:26] some questions so thank you for sending those in so if we start with the first question let me read
+[40:31] this out so I think this on is for Eric what are the trade-offs between best of breed architecture
+[40:41] and a platform consolidation right I mean I think if you look at the let's say the idea behind
+[40:48] best of breed I think it's allowing each team to operate in a way that that they see fit and I
+[40:54] think you know from that perspective each team feels like they own their own workflows
+[40:58] I think obviously the benefits of of of that approach being that you know each team can
+[41:02] pick and choose what what what would they like to take the flip side of that is that as a result
+[41:07] teams tend to work more in the inside also right so there's more isolation there's less let's say
+[41:12] connectivity across the firm and I think really if you look at the direction of travel across
+[41:17] the firm that we're speaking to is more yeah creating a consolidated platform to let's say enhance
+[41:23] interactions across teams to improve connectivity to improve efficiency so I think really if you
+[41:29] look at this say that the bigger picture the benefits of of a consolidated and I say hope
+[41:34] or follow approach and hope or follow platform massively outweigh the benefits of of of a
+[41:38] best of breed approach thank you Eric and we have time for one more question so the question is
+[41:45] what advice would you give to Nordic asset managers starting their whole portfolio transformation journey
+[41:54] who would like to take this James would you yeah I think I can start I'm sure I would love to
+[41:59] pitch in as well if necessary but I think that I think but and the way we are questions being
+[42:05] asked I'm assuming it's from a from a technology perspective and I think if you look at our whole
+[42:10] portfolio perspective like what we've just talked about for the last 30 minutes is data private
+[42:18] markets data is the really the foundation to be able to get there and so I think whether
+[42:24] when you're looking at your partners from a service provider or technology I think that
+[42:30] that would be the starting point do they have a well-governed mature scalable data service
+[42:40] that is not just reliant entirely on technology that has a history of being able to deliver both
+[42:47] high quality time the information across a large volume of the active portfolio or the active
+[42:53] universal funds but likewise being able to then also bring in pre-investment because if you're
+[42:59] on your whole portfolio journey right you're expanding your private markets book as well and so
+[43:03] how are you going to be able to have a single environment where I can bring pre-investment
+[43:08] market research investment due diligence to sit alongside my post-investment activity
+[43:13] so I think that's a key question you ask yourself when you think about who you're going with
+[43:18] for your whole portfolio provision. Thank you James and that brings us up to the time for today's session
+[43:25] thank you very much for joining thank you for your question your engagement on the polls
+[43:29] and if you have any questions please reach out to us we also will be sharing the webinar through
+[43:35] recording the dates will be shared so keep your eyes out for that thank you for joining

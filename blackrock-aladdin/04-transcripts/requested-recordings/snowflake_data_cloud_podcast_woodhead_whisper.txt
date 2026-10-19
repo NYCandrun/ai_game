@@ -1,0 +1,659 @@
+[00:04] Hello and welcome to the DataCloud podcast.
+[00:08] Today's episode features an interview with David Woodhead,
+[00:10] head of engineering for Aladdin Studio at BlackRock,
+[00:13] hosted by Dana Gardner, principal analyst
+[00:15] at Interarber Solutions.
+[00:17] They delve into BlackRock's comprehensive data strategies,
+[00:19] highlighting the evolution of the Aladdin platform
+[00:22] from an analytics factory to an intelligence factory
+[00:24] built on modern data infrastructure.
+[00:27] The conversation also touches on AI integration,
+[00:29] the complexities of managing large scale data distribution,
+[00:33] and the cultural and technological shifts
+[00:35] necessary to support these advancements.
+[00:37] So please enjoy this interview between David Woodhead
+[00:39] and your host, Dana Gardner.
+[00:41] Welcome to the DataCloud podcast, Dave.
+[00:43] We're very happy to have you with us.
+[00:45] It's good to be here.
+[00:47] Putting an organization's data resources into top form
+[00:50] for analytics and business intelligence benefits
+[00:53] goes a long way to ensuring quality processes
+[00:56] and enhanced business outcomes.
+[00:58] But for BlackRock, a leading asset manager
+[01:01] and technology provider, modern data infrastructure
+[01:04] is also the path to productizing financial services.
+[01:08] So tell us how BlackRock developed the Aladdin platform
+[01:12] internally as a way to share data programmatically
+[01:15] and then how that led to an external commercial product
+[01:19] and then also Aladdin Studio.
+[01:21] Sure, Dan, appreciate the question.
+[01:23] So Aladdin is a platform that's been around just over 20 years.
+[01:27] And I have the benefit of working at a company
+[01:30] that has always understood the value of data.
+[01:32] So when you hear us speak about the language of the portfolio,
+[01:36] what we mean is we're stitching together
+[01:39] all of the constituent pieces that make the investment
+[01:41] process work.
+[01:42] So from the beginning, Aladdin has been driven by data.
+[01:46] I think what's changed is that the way we think about data
+[01:49] historically has been that it's a utility
+[01:52] and the raw ingredients into the factory,
+[01:54] the market data, the economic data
+[01:55] that we bring into the platform,
+[01:57] and then the analytics that we produce.
+[01:59] I think what's changed today is that the data is now
+[02:02] at the core of the investment process.
+[02:04] We are differentiated.
+[02:05] The decision is that we're making on what we're investing in,
+[02:08] more and more are driven by the data that we have.
+[02:10] So I think we've transitioned,
+[02:12] we've always had data at the core of what we do.
+[02:15] Now data is a descendant of the investment decision-making process.
+[02:18] So Aladdin has evolved from being an analytics factory
+[02:21] to becoming an intelligence factory built on top
+[02:24] of a rich set of data.
+[02:27] Help me understand the differentiation between the rich
+[02:30] and quality nature of the data,
+[02:33] and then the modern data fabric and cloud assets behind that
+[02:37] that help Aladdin move forward.
+[02:39] Is it an equal share or is one more important
+[02:42] than the other and how do you keep both in line?
+[02:45] For sure.
+[02:45] Yeah, so first of all, our clients
+[02:47] trust us to get their data right.
+[02:49] So the first thing, the most important thing
+[02:51] is that the market data that we're bringing in,
+[02:53] the trading, the transactional information
+[02:55] that we have from our clients,
+[02:56] is that that is pristine.
+[02:57] So that evolves around data governance, data quality,
+[03:00] checking that everything is right.
+[03:02] So that's the regulatory, the investment data
+[03:05] that is critical, is the most central part of our business.
+[03:08] Then there is the data that's powering the decision-making.
+[03:11] Now that might be as varied as airline flight prices,
+[03:14] macroeconomic data, even things like
+[03:16] satellite imagery that we might bring in.
+[03:19] That obviously has a very different shape.
+[03:21] So in our, in a single cohesive data platform,
+[03:24] we are on the one hand dealing with very high quality,
+[03:27] regulatory, standard quality data.
+[03:30] And on the same platform, we're able to bring in at scale
+[03:34] a very, very wide variety of data, very, very quickly,
+[03:37] bringing in new types of data into the platform
+[03:39] that are powering the decision-making process.
+[03:41] I see.
+[03:42] Now BlackRock is not only a top asset manager.
+[03:45] You've also become basically a technology products company.
+[03:48] Tell us how that productization took place
+[03:51] and what that means for you as an organization
+[03:54] seems like you've got a dual mandate.
+[03:56] At the beginning, BlackRock was founded on the notion
+[03:59] that technology is a differentiator.
+[04:01] Like I said, underpinning that is the heart
+[04:03] of the data platform.
+[04:04] As BlackRock grew, our clients recognized
+[04:07] that our technology was differentiated
+[04:09] and asked, could they use the same software?
+[04:11] So BlackRock pretty quickly answered the FinTech business
+[04:13] and we started offering Aladdin as a service.
+[04:16] Festival would 20 years to where we are today.
+[04:19] Now we think of Aladdin as a platform.
+[04:21] Our clients are some of the world's biggest
+[04:23] financial institutions.
+[04:25] They are coming into Aladdin,
+[04:26] building on top of Aladdin, customizing, extending,
+[04:29] extending Aladdin, bringing in their own data,
+[04:31] their own perspectives across a very, very, very set
+[04:35] of public, private market assets
+[04:36] and an entire universe of data that backs those up.
+[04:40] But it fundamentally changes the mindset.
+[04:42] When you are building an internal software product
+[04:45] versus building a product that you know is going
+[04:47] to some of these very large financial institutions,
+[04:50] the way that you think about the quality of the data product,
+[04:53] the quality of the software that you're delivering,
+[04:56] it's fundamentally different.
+[04:59] Tell us a little bit, Dave, if you would,
+[05:00] about your role there as head of engineering
+[05:02] for Aladdin Studio, your background
+[05:04] and how you got to where you are.
+[05:07] Sure, so I'm a data nerd at heart.
+[05:09] I started my career in my strategy
+[05:11] and my role now at BlackRock is to do exactly
+[05:15] what I just laid out.
+[05:16] So we think about Aladdin today as a platform.
+[05:18] Now Aladdin Studio is essentially the user experience
+[05:22] that allows people to think of Aladdin as a platform.
+[05:25] It exposes everything Aladdin knows how to do
+[05:27] as a set of APIs, events, the Aladdin data cloud,
+[05:31] built on top of Snowflake,
+[05:32] takes all of that information that's generated
+[05:35] through our analytics factory and inside of Aladdin
+[05:36] and pushes that into Snowflake.
+[05:39] And increasingly we're building a set of developer tools.
+[05:41] So understanding that we power innovation
+[05:45] when we decentralize it.
+[05:46] Like the world where the investment process is built
+[05:49] by a small set of engineers and a team
+[05:51] that's in a central organization
+[05:52] that's long gone.
+[05:54] We see in business engineering more and more
+[05:56] across all of our clients.
+[05:58] So the third pillar of Studio is how do I bring those people in?
+[06:01] How do I create environments where they can,
+[06:03] they have Sandbox's research environments,
+[06:05] they can start code, they can build applications,
+[06:07] they can automate their workloads,
+[06:09] they can automate the investment process through Algos
+[06:12] and then taking those artifacts that people come
+[06:14] and build on top of Aladdin
+[06:15] and natively integrating them into the investment process.
+[06:19] That's my role is engineering for that platform
+[06:22] and studio.
+[06:23] And a few moments ago you mentioned that you have transitioned
+[06:26] from an analytics engine to an intelligence engine.
+[06:30] It's just a few small words
+[06:31] but I think there's an awful lot behind that.
+[06:33] Tell us how that transition takes place.
+[06:35] How do you get from analytics to intelligence?
+[06:39] For sure, like I said, I think our roots,
+[06:41] where we started our differentiation with our ability
+[06:43] to understand the risk of the market.
+[06:45] That's what we call our analytics factory.
+[06:47] The raw ingredients for the analytics factory
+[06:50] are those macroeconomics that they're part of that reference data.
+[06:53] That would drive a risk we call the degree package.
+[06:56] So every day a portfolio manager called it a degree package
+[06:58] because it was printed on green paper.
+[07:00] So it stood out on their desk.
+[07:01] It was the most important thing set in front of them.
+[07:03] So every day they had this thing called the green package.
+[07:05] That's my portfolio risk for the day.
+[07:07] That gave them insight into where the portfolios were
+[07:10] and what the risk was.
+[07:11] But the decision making process was largely bears.
+[07:14] What we see increasingly is the decision making process
+[07:17] is also powered by data.
+[07:19] And the volume of data that you're consuming
+[07:21] as you're going through the decision making process,
+[07:23] increasingly you need machines to help you either suggest or refine
+[07:28] or curate that decision based on the data that you have
+[07:32] or maybe even propose ideas that as a portfolio manager
+[07:35] you can then react to.
+[07:36] So that's the transition from we're still producing that daily risk.
+[07:39] It's still the heart of our data ecosystem.
+[07:42] It's the most valuable product that comes out of our analytics factory.
+[07:45] But once I take a mess start the day risk,
+[07:48] there's an entire universe of other data sets
+[07:51] that are being fed either into traditional Pythonic environments
+[07:54] into BI tools, reporting tools or increasingly into AI
+[07:58] that are then creating suggestions or driving additional insight
+[08:01] as to our portfolio managers have at their fingertips.
+[08:04] And in doing this, does the opportunity
+[08:07] to have more intelligence brought to bear on a 20-year-old process?
+[08:14] Does that bring about what we think of as democratization?
+[08:18] That is to say, can more people avail themselves of this?
+[08:21] Have you been able to, with the intelligence, make it perhaps more user-friendly
+[08:27] across a wider group of people who might want to be programmatic
+[08:31] and how they develop their own analysis?
+[08:33] It's a great question.
+[08:34] One of the things I was thinking about is,
+[08:37] so I like it's in the data network, I've been doing this for a long time.
+[08:40] And one of the things that's really exciting is
+[08:43] the group of us that work in the data space
+[08:45] have somehow found ourselves in the center of the universe, technically.
+[08:49] I'm sure some people plan that and their career has got it exactly
+[08:52] into the right place.
+[08:53] I think some of those just happen to love data and wound up here.
+[08:57] But the thing that's really exciting about where we are today
+[09:00] is that our consumer base, like the people that are directly
+[09:03] consuming our product, has grown and grown, and the potential now
+[09:08] for the future is for it to exponentially grow.
+[09:10] And that, you know, we talk about democratization of data
+[09:13] so that started with the end user tools, Excel, Power BI.
+[09:17] So we've been there for a while.
+[09:19] We several years ago crossed the threshold
+[09:22] where more of our users are consuming data programmatically
+[09:25] through Python, you know, pick your favorite toolkit,
+[09:29] then they are bringing it down to Excel, not in terms of megabytes,
+[09:32] but in terms of the number of queries,
+[09:34] the number of users are on the platform.
+[09:36] So then we have this entire new user base, this Python IQ space.
+[09:39] And now where we're heading is something that would require
+[09:43] a data scientist PhD to answer is now going to be
+[09:46] at your fingertips with a simple prompt.
+[09:49] So we think about, you know, the potential of AI.
+[09:51] And of course, it's really exciting to think about
+[09:53] we're heading.
+[09:54] The thing that I found most exciting and gratifying
+[09:57] is the universal customers that we have
+[10:00] is basically everybody that can ask a question.
+[10:04] So that democratization of data, I think,
+[10:06] where we just hit the peak of the kind of the Pythonic,
+[10:10] the programmatic interaction curve.
+[10:12] So inside of BlackFork, we have 3,000 citizen developers
+[10:16] in business engineers that are interacting with the Latin
+[10:18] using Python or using R.
+[10:20] I think that number is probably peaked.
+[10:23] I think now we're on the other side of that
+[10:25] where increasingly sophisticated workloads
+[10:27] are going to be presented through natural language.
+[10:29] And that means any user can ask complicated questions
+[10:33] of a whole variety of data sets
+[10:34] and the AI can take those away and in an explainable way
+[10:39] in a governed way, because that's important,
+[10:41] can answer those questions and provide insight
+[10:43] that historically has required a very special skill set.
+[10:46] So I think, yes, we make huge progress in democratizing data,
+[10:51] but I also think we're just getting started.
+[10:53] Yeah, it's very interesting that you're,
+[10:55] as an early adopter of bleeding edge technology,
+[10:58] you're expanding rapidly your addressable market.
+[11:01] And though that relationship hasn't always been
+[11:03] the case with technology, a lot of times,
+[11:05] the more technical, the more complex
+[11:08] and unfortunately even a smaller addressable market.
+[11:10] So you reversed a major trend in technology.
+[11:12] Fundabas, I agree.
+[11:14] Yeah, okay, for those of us who don't fully understand
+[11:18] what an asset manager does,
+[11:20] how are people internally at BlackRock
+[11:22] availing themselves of this analysis?
+[11:25] And also, how are you outside the consumers
+[11:27] of the productization of your technology doing that?
+[11:31] What do they do with this?
+[11:32] What kind of questions are they gonna answer?
+[11:34] Give us a sense of the use cases that are most prominent.
+[11:37] For sure, I think when our technology works at its best,
+[11:41] most of our users will never think,
+[11:43] oh, this data is coming from a store of like,
+[11:44] or we have a new enterprise-based platform
+[11:46] that's powering this great site.
+[11:48] The reaction that we want from our users is,
+[11:51] wow, I'm getting the information that I need,
+[11:53] so I think we're just, it's embedded in all of the tools.
+[11:55] So the Aladdin application is a suite of tools
+[11:59] that power the entire investment lifecycle
+[12:02] from a portfolio manager that's managing the portfolio
+[12:04] and wants to understand what holdings do I have,
+[12:07] if it's a fixed income portfolio,
+[12:09] if it's an equity portfolio, how will my assets balance?
+[12:12] Where is my risk?
+[12:13] How do I want to change the structure of my portfolio?
+[12:16] So that means bringing down massive amounts of data,
+[12:19] launching those, working on those,
+[12:21] working with those in the context of macroeconomics
+[12:23] on forward projections,
+[12:25] and then presenting those to a user in a meaningful way.
+[12:28] The portfolio manager is the tip of the iceberg.
+[12:30] Behind them, you have an entire raft of data operators,
+[12:33] of trading operators,
+[12:35] and make sure that the investment lifecycle
+[12:36] works as opposed to.
+[12:38] Like when I'm successful,
+[12:40] that means that the data that our team is providing
+[12:43] is making the investment process work seamlessly.
+[12:46] One of the key metrics that we think about
+[12:48] when we talk about the efficiency of the investment processes
+[12:51] is our straight through processing rate.
+[12:53] Our first time rate on analytics,
+[12:56] that is all based on our ability to do shift left QC.
+[13:00] We want our technical data quality,
+[13:02] business data quality as far left in the pipeline as we can.
+[13:04] That lets us hit those straight through processing rates,
+[13:07] those first time rate rates on our analytics.
+[13:09] And that means that our users have a great experience of the tool.
+[13:13] To that point about the quality of the shifting of left,
+[13:17] getting as best as you can, as early as you can,
+[13:19] describe the Aladdin data cloud.
+[13:22] I think you're about five years into that,
+[13:24] and how that fits into that shift left data quality process.
+[13:27] Yeah, I think so.
+[13:28] It was around 2019, we started understanding that our clients
+[13:33] are building their own data ecosystem.
+[13:35] So it was early in the, we just passed the,
+[13:39] maybe the peak of high curve for big data.
+[13:41] And then it was more about how do we build enterprise data
+[13:44] that generates real insights.
+[13:46] Data mesh was becoming popular.
+[13:48] The notion of data products was becoming popular.
+[13:51] And our clients just aren't asked the question,
+[13:53] how do we take this really high quality data
+[13:55] that's coming out of Aladdin and bring that
+[13:57] into our own data ecosystem?
+[13:59] Or how can Aladdin provide us higher scale data
+[14:03] consumption tools that will allow us to ask
+[14:05] like by temple or questions of the history
+[14:08] of our investment process?
+[14:10] We didn't have a data platform that could do that at the time.
+[14:13] And that's where we started our conversation with SoFlake.
+[14:16] The purpose of the Aladdin data cloud
+[14:18] is to take all of the data that lives inside of Aladdin,
+[14:22] to take all of that third party data,
+[14:24] that macroeconomic data.
+[14:25] And this is the key part.
+[14:26] We unified that, we call it the language of the portfolio,
+[14:29] and then to deliver that to our clients.
+[14:32] And the real enabler, and the thing that is generated,
+[14:36] I think real data joy in our clients,
+[14:38] is that we can deliver that to them where they are.
+[14:41] So they're sitting in their cloud provider of choice,
+[14:44] they're sitting in their technology of choice
+[14:46] through SoFlake and through data sharing,
+[14:49] that allowed us to bring this all rich Aladdin contacts
+[14:52] into their data ecosystem and they could start accessing it.
+[14:55] But the big differentiator is it's not about taking
+[14:57] the raw data and moving it to them.
+[14:59] Like we understand that they can do that themselves.
+[15:02] If you take an example of something like ESG,
+[15:04] so like environmental social governance,
+[15:06] how does that play into the makeup of my portfolio?
+[15:09] Getting that data is very easy.
+[15:12] Mapping that data, an understanding that
+[15:14] in the context of the investments that you've made
+[15:16] is very, very hard.
+[15:18] It requires you to do a lot of symbology processing.
+[15:20] How do I bring the data into a common language?
+[15:23] We call it the language of the portfolio.
+[15:26] And what's happened in the last 10, 15 years is the complexity
+[15:29] of the things that you could buy as an asset manager,
+[15:32] has massively increased.
+[15:34] So we have prior markets investments,
+[15:35] we have public market investments.
+[15:37] The benefit of Aladdin and Aladdin data flat out
+[15:40] is we bring all of that together into a single symbology,
+[15:43] a single language, the language of the portfolio,
+[15:46] and we deliver it to our clients in a way
+[15:47] that they get value from.
+[15:49] And again, that very much is rooted
+[15:50] in this notion of data products.
+[15:52] So understanding that a product is something
+[15:55] that is designed, it's thoughtful, it's governed,
+[15:58] it's documented, it has metrics around it
+[16:01] of when the data is going to be available,
+[16:02] what the quality control metrics are, what the warranties are,
+[16:05] and then deliver that with a specific business purpose
+[16:08] in mind to our clients so that they can get value from it.
+[16:10] We talk a lot in our conversations
+[16:12] about the challenges around ingestion
+[16:14] and getting the data in good shape for analysis.
+[16:17] But you've now taken the analysis
+[16:19] and are driving it back out, so a two-way street.
+[16:22] And I'm thinking that other organizations
+[16:25] are going to be attempting the same thing.
+[16:27] So I want to know what challenges you had
+[16:29] in becoming a two-way street in terms of distribution
+[16:33] of the data and analytics in a way
+[16:35] that your prospective addressable market can consume it.
+[16:40] I think it's two things.
+[16:41] I think the first thing we realized this early on
+[16:44] is that we had to invest in our DevOps framework.
+[16:47] So understanding who was going to get, who were the stewards,
+[16:50] how and the product managers, like the data product owners,
+[16:53] who were the product owners that were going to shape the state.
+[16:55] And that was a muscle that we didn't have organizationally.
+[16:58] And that's before you start thinking about
+[17:00] federating that out across the organization,
+[17:02] but we'll park that one for now.
+[17:04] So the first thing is making a legitimate investment
+[17:07] organizationally and in terms of talent
+[17:09] and building out the data governance muscle.
+[17:12] I think the second thing is recognizing
+[17:14] that the platform isn't just one piece.
+[17:17] So we love the privacy of it so far.
+[17:19] It's a key part of our platform,
+[17:20] but it's a part of a platform.
+[17:22] The platform is very, very complex.
+[17:25] We actually have a slide that we show our internal stakeholders
+[17:27] that has all the technologies that we use
+[17:29] in our enterprise data platform.
+[17:31] And the purpose behind that is to demonstrate
+[17:33] like it is a fairly sophisticated machine
+[17:36] that you have to put together to deliver a data product.
+[17:39] It requires observability, transformation,
+[17:42] requires governance, a data catalog,
+[17:44] obviously is going to be at the heart of it.
+[17:46] So understanding that complexity is much more than simply
+[17:49] solving for the data platform.
+[17:51] So building that technology muscle,
+[17:53] but then also building the governance muscle
+[17:55] so that you can deliver and scale high quality,
+[17:58] operable data products out to your clients.
+[18:01] Yeah, I'm curious Dave, what cultural shift did you have to take
+[18:05] in going from being an organization
+[18:08] as an internal supplier to BlackRock
+[18:11] for technology and solutions to that external
+[18:14] and commercial approach?
+[18:16] Do you have to think differently?
+[18:17] Or how do you have to flex different muscles if you will
+[18:21] in order to not just satisfy an internal constituency
+[18:24] but productize that?
+[18:25] Because again, I think other people
+[18:26] are going to be following your lead.
+[18:29] So I would say to be clear,
+[18:30] we have always been distributed data to our clients.
+[18:34] So that was something that we had done before.
+[18:37] We'd been sending files, we had less modern ways
+[18:40] of sending data to our clients.
+[18:41] That wasn't new to us.
+[18:42] And our clients very much depend on us
+[18:44] to deliver the highest quality data to that.
+[18:46] So that relationship that mindset of our product is data
+[18:50] and the data has to be right, that already existed.
+[18:53] I think what we underestimated was the complexity
+[18:57] and the scale of the operations engine
+[19:00] that you have to have.
+[19:00] One of our biggest challenges is fleet management.
+[19:03] We operate hundreds of snowflake accounts.
+[19:08] We share data to hundreds of snowflake accounts
+[19:12] and we're managing hundreds of vendors,
+[19:14] tens of thousands of pipelines.
+[19:16] The scale that we are bringing in sending data out
+[19:20] hasn't massively grown.
+[19:22] So I think that's something that we certainly had to focus on.
+[19:25] And again, the complexity of that data has also grown.
+[19:28] So I think those are the areas where we've been really focused
+[19:31] in terms of delivering data as a product of our clients.
+[19:34] So it sounds like you brought in snowflake,
+[19:36] particularly for the Aladdin data cloud,
+[19:39] but that it's sort of expanded that the model
+[19:42] to manage the complexity and scale
+[19:44] now touches more parts of your organization.
+[19:46] Is that fair?
+[19:47] A hundred percent.
+[19:48] You know you're winning with a technology
+[19:51] when you bring it into a large organization
+[19:53] and you see that that organic growth,
+[19:55] people see they have a new tool in the toolkit.
+[19:57] And as long as we understand where does it work really, really well,
+[20:01] we're getting massive value from it across the estate.
+[20:03] So we started our relationship with snowflake
+[20:06] as a vehicle for historicizing all of the data that lives inside
+[20:10] of our Aladdin ecosystem and delivering natural clients.
+[20:13] That was the product.
+[20:14] It's now being used across their organization.
+[20:17] A variety of use cases, intro and external,
+[20:20] and that continues to grow.
+[20:22] And one of the really gratifying parts
+[20:25] of being an early partner of snowflake
+[20:27] is we have had an opportunity to go on the journey with you.
+[20:30] So seeing the new technology.
+[20:32] So one of the things that we're moving into
+[20:35] is we're proving away from batch variants
+[20:37] to pipelines to more real-time pipelines.
+[20:40] Technologies like dynamic tables that didn't exist,
+[20:42] you know, 12 months ago
+[20:44] are changing the way we think about building your pipelines.
+[20:46] So as the platform evolves,
+[20:48] the opportunity for you first to use it
+[20:50] in more parts of our ecosystem is also presenting itself.
+[20:53] So absolutely, it's become a core part
+[20:56] of many different parts of our organizational process.
+[20:59] What comes next for your organization?
+[21:00] What are your priorities in terms of the types of projects
+[21:03] in order to manage that addressable market?
+[21:06] And then once you've captured it,
+[21:07] keep adding more sophistication and service levels on top.
+[21:12] I think I'm required to say AI is the focus for us.
+[21:15] And of course it is.
+[21:17] That building the data platform that's going to power
+[21:20] differentiated AI comes for black or open
+[21:22] our clients down the road is very much a key focus rose.
+[21:25] But where that is built on top of a foundation
+[21:30] of higher data quality, more data,
+[21:34] the ability to bring in different types of data.
+[21:36] So we are very much on a journey
+[21:38] to what we call a whole portfolio view.
+[21:40] And I told a little bit about bringing
+[21:42] you and probably a comprived of market data together.
+[21:44] We are on the journey,
+[21:45] but we're not done with that journey.
+[21:47] So that's very much a focus for us.
+[21:50] And again, that means supporting different perspectives of data.
+[21:54] So for those that are not familiar,
+[21:56] private market data is very diverse.
+[21:58] Private market investment could be into a wind farm
+[22:02] or it could be into a piece of infrastructure,
+[22:03] a data center, a very different type of asset
+[22:07] versus I'm pursuing an equity or something
+[22:09] from the fixed and community of ours.
+[22:11] So bringing these very different types of data together
+[22:14] requires us to build a different kind of technology.
+[22:17] And again, this is where some of Snowflake's newer technologies
+[22:20] is really enabling us.
+[22:21] The ability support on search of data sets,
+[22:23] the ability to store data in a vectorized database.
+[22:26] These are things that are powering that transformation
+[22:29] into a whole portfolio view.
+[22:31] So today's those two things.
+[22:32] AI is going to be the heart of what we're focused on
+[22:34] in the next five years, like a lot of our competitors.
+[22:37] But that has to be driven off of a very, very,
+[22:41] wide data universe, which provides a whole portfolio view
+[22:45] of public and private market data.
+[22:46] We don't think anybody else will be able to provide that.
+[22:50] Interesting.
+[22:51] So it seems that for quite some time
+[22:53] you've been productizing data
+[22:55] and then you productized analytics
+[22:57] and then you productized a sophisticated way
+[23:00] of leveraging those analytics.
+[23:02] And now you're teasing the idea,
+[23:05] I think of productizing AI itself, is that fair?
+[23:08] Yeah, I think our AI strategy in my mind is really threefold.
+[23:13] The first part is every part of our product
+[23:16] has to have AI integrated it from the start.
+[23:19] So when a user comes to a Latin,
+[23:21] increasingly that interaction is going to be more,
+[23:24] it will be more refined, it will be more natural language.
+[23:27] Like a lot of tools you're seeing today,
+[23:29] AI will be woven into everything you do.
+[23:32] The second thing is we have AI as a platform.
+[23:35] So as somebody who's building
+[23:36] myself up with the Aladdin ecosystem,
+[23:38] what are the AI capabilities that Aladdin will provide
+[23:41] that will give me differentiated insight into my portfolio?
+[23:44] So as a builder, and I integrated on the platform,
+[23:46] how do I think?
+[23:47] And the third is how do I power the builder?
+[23:50] So when I'm building on top of Aladdin
+[23:52] and I need a co-pilot to help me build and solve the problem
+[23:55] that I have, how does AI inside of the platform help me
+[23:59] as an engineer, as an in-business engineer,
+[24:01] as a portfolio manager with building or customizing
+[24:03] or generating an artifact on top of the system?
+[24:06] So a lot of AI enabling the generation
+[24:09] and advancement of more AI.
+[24:12] For sure, and also recognizing that our role
+[24:15] as the owners of the data platform,
+[24:18] so we know down the road,
+[24:20] and this is when I talk about growing our customer base,
+[24:23] we wanna live in a world where any user
+[24:26] can, with natural language, ask any sophistication of question
+[24:29] against our entire data corpus
+[24:32] and we can, with explainability, answer that through AI.
+[24:36] Now we're leveraging a lot of the AI capabilities
+[24:39] of live inside of Surflake
+[24:40] and across our partner ecosystem, and we're not there yet,
+[24:43] but that's the direction, one, that's where we need to get to.
+[24:46] And everything we're doing is underpinning AI outcomes
+[24:50] that are gonna be used by our clients.
+[24:52] We're going back to the core concept.
+[24:54] If we get this right, the outcome of that
+[24:57] will be a very simple, very natural interaction
+[25:00] from our clients, and they'll never think about
+[25:02] this massive complexity that sits underneath that.
+[25:05] The invisible AI enablement, yeah.
+[25:08] Hey, it's very exciting, and I hope I can talk with you
+[25:11] in a couple of years and see how that pansed out.
+[25:13] Last question, because you're the head of engineering,
+[25:15] I have to ask you, as you've been developing AI
+[25:19] in association with these sophisticated data fabrics
+[25:24] and corpus as you refer to it,
+[25:26] are there skill sets in the engineering department,
+[25:29] those who you work with, that you may have found
+[25:32] counterintuitive to what you may have initially expected.
+[25:35] And as to say, what are the type of skills
+[25:37] and people and culture that you found
+[25:40] you'll need as an engineering organization
+[25:42] to accomplish this?
+[25:43] I think it's a great question.
+[25:45] I think the answer is that it isn't so much
+[25:47] a different skill set.
+[25:49] It's a different way to think about problem solving.
+[25:53] So we've reached the point where AI isn't correcting
+[25:57] our bad code anymore.
+[25:58] AI isn't generating just test cases for us.
+[26:02] We are at a place where we can think about AI
+[26:05] as being an engineer that sits next to me
+[26:07] that I compare code with.
+[26:09] And I can actually outsource some tasks to that engineer.
+[26:13] So what we are very serious about is how do we reskill
+[26:17] and upskill our engineers so that we are leveraging
+[26:20] the best of the AI capabilities
+[26:22] that are gonna help us move faster.
+[26:24] And of course, what we're finding is that the new,
+[26:26] that if people are joining the organization
+[26:28] of the grassroots, the grads that are coming in
+[26:29] from college, they have those skills built in.
+[26:31] So they're teaching those in some ways.
+[26:33] I think fundamentally, the skills that make you successful
+[26:36] as an engineer haven't changed.
+[26:39] The mindset of how you work with AI,
+[26:43] but how you then make the AI more valuable
+[26:46] by being a subject matter expert,
+[26:48] by being a horizontal connector,
+[26:51] by working through the process
+[26:53] to generate a differentiated outcome.
+[26:55] Like that's the human superpower.
+[26:56] And I don't see that going away,
+[26:58] but upskilling ourselves so that we're leveraging
+[27:00] the best of the tools so we can move faster.
+[27:03] Well, we ourselves provide that horizontal glue
+[27:05] and we push towards that high value outcome for our clients.
+[27:09] That's the mindset change.
+[27:11] Well, my friend, we'll have to leave it there.
+[27:12] Thank you so much to our latest data cloud podcast guests,
+[27:15] Dave Woodhead, managing director and head of engineering
+[27:18] for Aladdin Studio at BlackRock.
+[27:20] We so much appreciate your sharing your thoughts,
+[27:22] experience and expertise.
+[27:24] Thank you so much.
+[27:25] Thanks, David.
+[27:26] It's been a pleasure.
+[27:27] Calling all developers, business leaders, IT execs
+[27:30] and data scientists.
+[27:31] Snowflake World Tour is your chance to learn and network.
+[27:35] Discover how Snowflake's AI data cloud
+[27:36] can transform your career and company.
+[27:39] Experience the future.
+[27:40] Join us on tour.
+[27:41] Join the Snowflake World Tour to experience the future
+[27:43] of the AI data cloud with Snowflake.
+[27:46] Hear from experts, engage in breakout sessions
+[27:48] and network with peers.
+[27:50] Transform your business and career with Snowflake.
+[27:53] Register today for one of our 23 stops worldwide
+[27:55] at snowflake.com slash world dash tour.
