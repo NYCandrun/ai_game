@@ -1,0 +1,210 @@
+[00:08] If we think about data, we think about the cloud digital assets, are there two tech trends
+[00:13] that you would pick that when combined together really are going to have sort of outsized impact
+[00:19] for our clients?
+[00:20] So I think the foundation of everything that Kunal and Tarek both talked about is data.
+[00:26] So when you think about what informs workflow, augmentation, automation, insight, productivity
+[00:35] enhancements, it's all the data that you feed it.
+[00:38] Is that a complete data set, a high quality data set, a biased data set?
+[00:41] I think that there is this duality between our data strategy and our AI strategy that
+[00:47] we have to keep at the forefront of our thinking.
+[00:49] So data to me is foundational to any AI work that we do.
+[00:54] I think there is still a lot to be done in the cloud, especially as we think about elastic
+[00:59] compute and as we think about our operating model evolving to be much more dynamic to our
+[01:04] client needs, that again informs the earlier comments around scalability and performance.
+[01:10] And then I think importantly, blockchain, and I'm not talking about crypto, I'm not talking
+[01:14] about a new kind of ETF, I mean a token, the idea that we can create value, we can create
+[01:22] tokens around different dimensions of value across asset classes.
+[01:28] To me is foundational.
+[01:29] I think that changes the industry over the next number of years.
+[01:33] I know there's been an outsized focus on cryptocurrency to this point.
+[01:37] I really do think it's going to change the way we interact, the way we think about intermediaries,
+[01:43] the ways we think about connecting sources of capital and demand for capital.
+[01:49] I think that is going to be informed by blockchain in a way that we are just beginning to understand
+[01:55] today.
+[01:56] One of the ones that you pulled out was the cloud, which it sounds like is really critical
+[02:00] to underpinning a lot of what we want to do.
+[02:02] Tarek, I'll ask you a question here, which is should all of our clients be on the cloud?
+[02:08] Should every business be on the cloud?
+[02:09] How do we start to think about that trend in particular?
+[02:13] This question is entrenched with the sentiment of fear, sometimes concern of people feeling
+[02:24] that by giving their data, their assets to someone else and outsourcing and getting the
+[02:31] data that they are relying on on a daily basis and putting it outside of their walls is something
+[02:38] that is risky.
+[02:41] It takes time culturally to adapt to this concept and you see it if you look at how between different
+[02:49] countries, different regions.
+[02:52] It's not the same perception of the risk and of the threat that is related to being on
+[02:58] the cloud.
+[02:59] My personal conviction is that it's a no-brainer.
+[03:03] We will operate everything on the cloud when it comes to future ability to upgrade systems,
+[03:11] interact and integrate systems within the ecosystem of all those systems that our clients are operating.
+[03:19] It's something that will happen.
+[03:21] It will take time.
+[03:22] It's not totally understood yet.
+[03:25] It's also a responsibility for the industry to make sure that from a security perspective,
+[03:30] from a vulnerability perspective, we are doing the right thing to secure for our clients the
+[03:36] access to the cloud and everything that is being done to secure their data.
+[03:42] This being said, this is the trend that nobody is arguing with today in the industry.
+[03:48] This is where we are heading and this is what will allow us to do much more and a better
+[03:53] way going forward.
+[03:54] It's funny, Tarek, 10 years ago we would have had this debate.
+[03:57] Should we put sensitive workloads in the cloud?
+[04:00] That was a debate, a legitimate debate.
+[04:02] I think what we've seen is the maturity of the cloud, importantly in cyber, infosec, operational
+[04:09] stability has advanced to the point where it's not a debate anymore.
+[04:13] Now it's a question of how do you enhance your security posture, you protect your data,
+[04:19] your transactions in a way that doesn't entirely depend on the cloud provider.
+[04:24] So I think the question now is how do I operate in the cloud in a way where I control my own
+[04:29] destiny?
+[04:30] This is not something that you defer to a provider and let them manage for you.
+[04:36] Yeah, absolutely.
+[04:38] And can all you had said in one of your examples, you were seeing really cool applications of
+[04:44] these technologies.
+[04:45] So I actually want to ask all of you, but maybe can all I'll pick on you first, what is a
+[04:49] really cool application of any of these technologies you're seeing?
+[04:53] You don't have to limit to the BlackRock, we can say more broadly.
+[04:56] I have experimented with a couple of these.
+[04:58] I love the music AI apps.
+[05:02] They're absolutely incredible.
+[05:03] I dabbled as a DJ in college.
+[05:05] I was not particularly good.
+[05:07] There are some really, really awesome applications for music creation.
+[05:11] And I think this is what I love about humanity in general.
+[05:15] This notion of driving creativity and then finding applications of things like AI to really
+[05:19] accelerate that creativity is fascinating.
+[05:22] Well, it's really cool.
+[05:24] Tarek, are you a music guy or are there other applications that?
+[05:27] Not at all.
+[05:28] I am not into music.
+[05:31] As many of you know, I'm more into video games.
+[05:34] This being said, there is something that is way more dull than music and video games that
+[05:40] I am thinking of is the impact of AI on the way we design screens, basically UI and UX.
+[05:50] Yeah.
+[05:51] Because this is something that we usually don't mention because we are so conscious of the
+[05:56] human in the loop.
+[05:57] And we don't realize that a system that with whom you are interacting through English,
+[06:03] are you going still to need a scroll bar, a tab, a list, a combo?
+[06:10] Maybe it will change drastically the way we interact with the UI, with the UX system and
+[06:17] change drastically the way we design screens, dashboards, workflows.
+[06:23] And this is something that if you extrapolate this aspect and think forward about it, how
+[06:29] are we going to be in a situation where there are firms, companies, people who are operating
+[06:37] in a certain way that will have to operate drastically differently, let alone the UI and
+[06:43] UX of a system, because something is going to work differently.
+[06:48] We use several examples here at BlackRock, translation services, contracts and low firms,
+[06:55] data scraping, multiple examples.
+[06:58] All this is going to be looked at differently, will be really operating in a way that is significantly
+[07:06] different from the way it operates today.
+[07:08] And I find this quite exciting, not as much as the music, but still.
+[07:13] And one of the things that we've talked about here is you have to make the computer work for
+[07:17] you.
+[07:18] And maybe in the future there's a space where you can just speak to it as you're saying and
+[07:22] it will do everything it needs to behind the scene.
+[07:24] Do you think that's true?
+[07:25] Definitely.
+[07:26] And this is what will make companies and people at one point become better is how much they
+[07:33] are able to leverage this AI, this computer to work for you.
+[07:38] And it happened to us in the past.
+[07:39] It's not necessarily different from, and I don't want to be the old person on the podcast,
+[07:44] but it's not totally different from what we have seen with the arrival of all the technologies
+[07:48] that we have seen in the past.
+[07:50] Where it was always the same sentiment, excitement and fear.
+[07:55] The two sentiments are exactly the same with AI, just that it's in a different context.
+[08:00] So I think we should tame those two emotions and use them to the benefit of our business
+[08:08] in general.
+[08:09] And Lance, you talk about the user experience quite a lot.
+[08:11] How do you see that?
+[08:12] I love that example.
+[08:14] And I'll tell you why.
+[08:15] I actually think that the human computer interface changes.
+[08:19] This is a moment where we start to prompt more than click, navigate, pull down.
+[08:25] And I think there is a fundamentally different future of design than we've experienced over
+[08:30] the last decade.
+[08:31] And so I think, Terrick, you are spot on the ways in which we think about user design,
+[08:38] information architecture changes through prompts.
+[08:41] And I also think that it creates a democratization of complex models that perhaps you wouldn't
+[08:48] have been able to access historically.
+[08:50] But now, you know what, like a liquidity model, a mortgage model, these things become a prompt.
+[08:55] Like, can you tell me my liquidity in this portfolio and the risk of climate transition
+[09:02] risk?
+[09:03] Those things now become much more viable than having to navigate complex user interfaces,
+[09:09] which perhaps didn't have the fullness of those capabilities.
+[09:13] So I think you touch on a critically important point.
+[09:17] And to be clear, there is an educational component to this, which is we all better get way, way
+[09:22] more precise in the commands and the prompts that we provide than we have historically
+[09:27] been through chat assistants.
+[09:30] It's a very important topic.
+[09:31] And I think it'll be really interesting to see how it changes.
+[09:33] So I want you to pick any application.
+[09:35] But I also want to tell you towards blockchain, tokenization, distributive ledgers.
+[09:42] Is there a qualification of that that you're seeing?
+[09:44] So the AI example that I like to give and the one that I've played around with most is
+[09:49] what we call multimodal, the idea of taking images and text and creating something new.
+[09:56] So the idea that you could go from ideation to working code in many of these generative
+[10:02] AI tools is like a magic trick to me.
+[10:05] So drawing a picture of a workflow on a whiteboard.
+[10:08] And I mean doing it in a rudimentary way and then asking your gen AI to create code,
+[10:15] to run the code, to modify the code, to write a business requirements document based on that
+[10:21] picture, it largely just works.
+[10:24] And when you see it in action and you go from ideation to a working app in the space of a
+[10:30] couple of minutes, it's a profound moment.
+[10:33] You realize that we are going to code differently.
+[10:35] We're all going to be developers in the future.
+[10:37] And the idea that we engineer solutions through this set of handoffs, that changes.
+[10:44] I think that changes over the next number of years.
+[10:47] And I mean like single digit years, not decade.
+[10:51] And I think that will change how we work.
+[10:54] That'll change how we create solutions for our clients.
+[10:57] The blockchain and the notion of tokenization, I think, has tremendous promise across so many
+[11:04] of our businesses.
+[11:05] I think especially in our illiquid businesses, where there is not a public market for kind
+[11:12] of exchanging value, I think there is a huge opportunity to exploit blockchain and the
+[11:19] notion of a token assigning a token to an element of value.
+[11:24] Whatever that value happens to be, a piece of a portfolio, somebody's time, I think we
+[11:29] are just scratching the surface now on figuring out where we can apply those technologies.
+[11:35] But I think this idea of an immutable ledger that is sort of public, that is not intermediated,
+[11:43] is an incredibly powerful concept.
+[11:46] And again, I think in the exchange of value, this is something that's going to be important
+[11:50] for the industry.
+[11:51] One of the things, Lance, that you said was around how everyone is going to start leveraging
+[11:57] these technologies within their day to day job, right?
+[12:00] Our workflows are going to fundamentally change.
+[12:02] We're going to become more productive.
+[12:04] I think, Derek, you said this, this sort of fear aspect of it.
+[12:08] How do we get ahead of it?
+[12:09] How do we start to prepare and educate ourselves for these technologies?
+[12:12] We can all start with you.
+[12:13] How do you think about that?
+[12:16] So first off, if you go back even 10 or 15 years and maybe you could start with something
+[12:22] as revolutionary as the iPhone, that maybe change the way we look at touching screens.
+[12:27] I think each of those things had a certain element of behavior modification in the traditional
+[12:33] ways that we as a society and as a community tend to interact with technology.
+[12:38] I think there are similar concepts that you could think about in the context of AI, as
+[12:43] well as with my colleagues, we're talking about in the context of user experience and
+[12:45] user interfaces.
+[12:47] I think to me, this is all about training, education, and then rightly calling out what
+[12:53] things are really problematic, let's say, from a risk perspective and just getting ahead
+[12:58] of them.
+[12:59] At the end of the day, I think we as a society will continue to thrive because we are excited
+[13:04] about what these new technologies bring to us.
+[13:07] And the one thing that as Tarek and Lance were talking about the UI UX concept, now just
+[13:11] imagine that if you're not even five years, like two years out, in fact, this may be six
+[13:16] months, you combine AI, this notion of multimodal prompting and multimodal interactions with
+[13:23] speech, driving action in an interface that first of all does not limit it to your desktop.
+[13:28] And second, doesn't required actually have a desk.
+[13:32] So you think about things like augmented reality and spatial computing.
+[13:35] On top of then, what is an incredibly rich potential experience of interaction with technology?
+[13:41] One, it's the dream of all those people like me who watched Minority Report in the 1990s
+[13:46] and said, I want to be like Tom Cruise and move my fingers around and have screens move in
+[13:49] the sky.
+[13:50] Yeah.
+[13:52] And you're seeing some of that happen in certain industries today, particularly in the manufacturing
+[13:56] sectors.
+[13:57] It all comes back again to training and how we make sure that we give all of people everywhere.
+[14:02] And one of the things we spend a lot of time talking about the BlackRock is what does this
+[14:04] mean for our talent profile?
+[14:06] What does it mean for the skills of the future?
+[14:08] And how do you imbue those skills across the entirety of teams of different types of people
+[14:13] at all levels?
+[14:15] And in a lot of cases, modifier augment the skills they already have thought them what they
+[14:19] really think about how best to not worry that these things are ultimately driving away
+[14:23] jobs or anything else.
+[14:24] I think it's all about changing the dimensions of the way we are productive as a society.

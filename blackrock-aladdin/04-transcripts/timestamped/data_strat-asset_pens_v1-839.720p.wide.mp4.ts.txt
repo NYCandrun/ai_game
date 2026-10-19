@@ -1,0 +1,234 @@
+[00:04] Thank you to everyone for joining. My name is Alton Garrity and I lead our Latin client engagements with our US, Canadian and Latin American pensions.
+[00:13] Delighted today to see a diverse array of attendees from across this client community in the Americas.
+[00:19] And before we jump into the topic at hand, let's introduce our panel. Maybe Devacher, if we can speak with you, then Jonathan and then Chris.
+[00:28] Hello everyone. I'm the boxer, Guell, Global Head of Data from Aladdin.
+[00:33] Jonathan Fuhrer, I lead pre-wins limited partner business. We work with pensions, nowments, family offices on the private markets.
+[00:45] And everyone I'm Christopher Napoli. I lead the Walton Asset Management. Go to Market Strategy at Snowflake. Thank you.
+[00:53] Thank you all. So over the course of the next 45 minutes or so, we're going to explore the topic of data as a strategic asset for pensions.
+[01:02] Do note at the bottom of the screen, there's a Q and A section in the webinar which allows attendees to post questions and we'll get to what we can at the end.
+[01:10] But first, I think just given the recent close to the pre-quin acquisition, I think we've been remiss not to focus on what was a strategic and data centric acquisition into the Aladdin family.
+[01:22] So with that in mind, maybe Chris, sorry, Jonathan, maybe you could just spend a couple of minutes for us on what is prequin as the resident expert on the call.
+[01:31] Sure, very happy to and very excited to be part of the wider BlackRock ecosystem. So prequin as the leading market data provider on private markets may have been for over 20 years.
+[01:44] Our mandate and our service to our customers is to track the full flow of capital in private markets. So we track the investors, the funds that they're investing into performance and evaluations on those funds as well as they're buying deals and transactions.
+[01:59] With respect to our investor clients, our allocated funds, be pensions specifically, we try to power the full life cycle of private markets investing.
+[02:09] So when you think about asset allocation, constructing a portfolio, planning to sourcing a fund or investment, conducting due diligence and executing an LPA investment private markets, all the way through post trade when you're trying to understand the relative performance of your portfolio.
+[02:25] So what we're doing offers data, research benchmarks and data analytics to help private markets allocators to navigate investing in private markets and intelligent data driven seamless way.
+[02:40] So again, I think that's really been our position as a standalone company for the last 20 years. We're really excited about the possibilities of bringing our data together with the capabilities of each front of Aladdin, the wider BlackRock ecosystem to continue to enable pensions
+[02:54] and investors writ large to invest in private markets leveraging our data.
+[02:59] Great. And Devacher, maybe if you could overlay a little bit of the early vision. I know it's still early days in terms of integration, but some of the wider sort of long term vision of the solution as an integrated product.
+[03:14] I think since now we have the fortune of having this data set within the company, we actually want to make it available across the whole Aladdin suite, which is core Aladdin, e-front as well as Aladdin wealth.
+[03:30] So we're also going to be able to make data like the fund data, the benchmark data also available in our analytical platforms like the explore and ADC.
+[03:39] And as we continue to partner with Prickwin to build a variety of new products that we will make those products that's also accessible and available into the broader Aladdin ecosystem.
+[03:51] And then we'll go into the discussion, lots to get through. What I'm going to do is ask a series of questions and I'll sort of sub title them just so the audience can follow along into the broader themes.
+[04:00] But I think the first one I had was really around data as a differentiator and really data as a product, right?
+[04:07] So you have to talk or if I turn to you again, maybe just, you know, data is increasingly been recognized as a core investment driver, rather than, you know,
+[04:16] actually more being seen as an operational byproducts. Why is now the right moment for pension and damage other public fund organizations to rethink how they're structuring, governing, activating investment data?
+[04:30] And maybe as a second part that like, how are we thinking about that in Aladdin, you know, again, treating data as a product with its own intrinsic value?
+[04:39] Yeah, well done. It's a great question. And I think if we take a step back, you know, over the last couple of decades, what we've seen is a variety of industries retail, health care, transportation.
+[04:51] They've fundamentally disrupted their business model and what they do with the power of data and AI.
+[04:57] And I would argue when we look at investment management, which we always claim as it's a business of data and information processing has perhaps not gone through the similar disruption that we've seen in some of the other data.
+[05:08] The bigger question is we generally feel we are at that inflection point. The next decade, perhaps, will look significantly different than what the last two decades have looked for in the investment management space.
+[05:20] And I think for us to be really be able to harness what that creative disruption could look like for our industry, it is important. We have the right foundation in place from a data and AI standpoint.
+[05:32] So it's very imperative for us to focus on that. And we in Aladdin generally believe and then committed to invest in those areas.
+[05:40] I think the bigger shift for us as we want to harness what the potential of data and AI is is to evolve from our world and a mindset, which was like data is a feeder or input to a process to data is a product.
+[05:55] And I think it's a hard shift, both from cultural and how we think about data, as well as how do you organize data that it is really a product in itself.
+[06:06] You can build on top of it. You understand what the product looks like. You understand the metadata around it. You understand the lineage and governance around it.
+[06:14] But also the product itself is organized to drive various kinds of outcomes.
+[06:23] Right. I mean, interesting perspective from, I guess, our lens is a multi user and a provider of data, BlackRock. And I guess Chris, from the snowflake side as a data centric solution and product, can you share some thoughts and particularly as you think about how that evolution has occurred and maybe somebody or interactions you've had with this particular client segment.
+[06:48] Yes. Thanks for your question, Alton. And as you mentioned, you know, part of my role and responsibilities to oversee the lifecycle and of snowflake across all the different organizations on the buy side.
+[07:00] That includes the tier one organizations and accordingly, private equity, private markets and venture capital all the way at the tail end and the pension plans are right smack in the middle of that landscape.
+[07:12] And over the course of the past three years, I've been fortunate enough to sit in the seat. I've seen the maturity drastically change as snowflake has started to expand into, say, the up to 150 billion assets under management land world.
+[07:25] And part of that is exactly what has been highlighted is there are some key drivers that are shifting why organizations are reevaluating their data state, right? And what the technologies should or could be levered in order to take advantage of them.
+[07:40] And I think in our world, what I have seen in particular from a financial services perspective, it's really been the rise of private assets as we are chatting about on this webinar here, mostly because that workflow is very or previously had been very manual, very
+[07:59] opaque from onboarding all the way out to the investment lifecycle. And the other really has been the rise of generative AI and what that means in order for you to take advantage of the capabilities.
+[08:10] And just as to a car's earlier point, it took the financial services industry just three years to have the same amount of generative AI workloads in production, then the 20 years prior of outright machine learning capabilities like we did not adopt with the latest and greatest
+[08:27] capabilities like the rest of the other industries did, mostly because we're the most regulated industry, but we understand now going forward that that is going to wind up being how our world and how our industry is going to evolve.
+[08:39] But with that being said, rather quickly, it does present three challenges, and I just want to get to them quick that three challenges that we could be aware of, but it's part of the modernization of the ecosystem.
+[08:50] The first is how you bring in data that's much more unstructured than structured. It requires a different kind of technological ecosystem to be able to have that be viewed on an enterprise level to be able to ask a question about what's going on in the market, but then also know your holdings and your exposure accordingly.
+[09:10] The solutions to kind of extract information out of the much more document based and unstructured world used to have its whole entire technological ecosystem.
+[09:21] And now we have organizations like ourselves trying to simplify that process on behalf of our client base so that they don't have to go through the same pain points that we have learned from it.
+[09:31] And then last but not least, it's making sure that you can ask questions that may require both of various different types of data and data formats being combined to give the most accurate answer and really try to say even take a total portfolio or a total plan view of what is going on from a data perspective.
+[09:51] So those have really been the drivers I've seen, and accordingly evolving our platform to help meet those needs.
+[09:59] That's great. Thanks. And we'll come back to the total plan point in a minute. I think Jonathan, you know, in many ways, I guess, as you think about frequent it's the data is the product and I think, you know, it's a very applicable question probably slightly different from the answers that the
+[10:15] question and Chris gave but maybe just from a frequent perspective, like how have you seen this conversation evolve in terms of data as a product?
+[10:24] Yeah, absolutely. I mean, you know, I guess, I think about the Walker's point on investing management and the journey that it's on.
+[10:30] The data availability, digitization of workflows, it really is very manual asset class with a great deal capacity.
+[10:37] And so you see this very big transparency gap between the public markets and the private markets that we're working on closing.
+[10:44] I think some of the drivers of the demand for this are one over the last 20 years institutional allocations to private markets have increased substantially to 20, 30, 40% of total assets within portfolio.
+[10:57] And also at the same time, the private markets to this version of outcomes is very wide. If you look at top quartile versus fourth quartile outcomes, we're talking about very material dispersion.
+[11:08] And so all of this is really leading our clients to question, how could we be more systematic in private markets investing to drive better outcomes?
+[11:17] How can we operate a portfolio that's now really scaled, again, in terms of allocation in a more effective way, more cost effective way, while still driving better investment outcomes?
+[11:28] So again, we've tried to grow the industry, buy more transparency and do that the way that's enabling our clients to get better investment outcomes in private and do so scale.
+[11:37] Great.
+[11:41] Great. I guess so Chris kind of touched on the total blind question. So that's my next subtitle that I wanted to get to. It's obviously near and dear to the heart of pretty much every public and corporate plan that's going to be on the call or engaging with us.
+[11:55] So maybe Devocra if I can again turn to you first. I mean, sure, there are trends that drive the need, whether it's, you know, pensions increasing, moving towards it.
+[12:06] Total plan approach, TPA or like whole portfolio, however we want to term it, but, you know, we're all grappling with this sort of vast, diverse, unstructured data sets across public and private assets and trying to bring them together.
+[12:19] I guess in your experience as we've tried to tackle this challenge, what are some of the biggest components of trying to integrate and analyze all of the information so you can start to support the total plan.
+[12:33] Yeah, well done. And, you know, the whole genesis of bringing and acquiring E front, as well as now, Prickwin is rooted in the belief that we hadn't allowed in that a the private allocation in the portfolio will continue to increase.
+[12:49] And there is going to be more of a need for people to be able to see the public book and private book in the same way, right? And that leads to the total plan approach.
+[12:59] The reality is it is hard. It is hard because how the private market operates and how the public market operates is different. The characteristics that we need to manage private wealth is different from the public.
+[13:10] Well, the biggest challenge in the data space is when we think the context is need to be aligned. The data that we gather in the public market is by design different than private market.
+[13:24] We need to bring those together by actually investing in what we call as data modeling so that we are able to bring the common elements of public and private market together.
+[13:33] At the same time, not losing some of the interesting aspects of private market that by design is different, right? Deal information is different in private market and we need to keep and preserve that and overlay it with some of the important aspect that we need in total plan approach, right?
+[13:48] So how do we solve for things that are common and how do we also keep the uniqueness of these private book is going to be an important aspect.
+[13:57] The other important contextualization that is important as we bring public and private market together is what we call as master data or even simple identifiers, right?
+[14:08] As simple it is that we have a Q-SIP in the public market. We don't have a similar Q-SIP that exists in a private market. And then the lack of something like that to do a TPA in a very constructive and a meaningful way is very difficult.
+[14:21] So we're very invested to solve some of these core challenges that allows people to look the whole book in a meaningful fashion.
+[14:30] Thanks. And Chris, you've started to touch on it, I guess, but similar question. Obviously, this total plan component is sort of central to this.
+[14:40] But I mean, in your world, you guys are kind of well versed in bringing together many different data sets. That's sort of the sort of main selling point.
+[14:49] But I think to what extent have you seen this in terms of, again, how you've helped clients to navigate these challenges in bringing very different data set challenges together?
+[15:00] Yeah. I'm going to echo the points earlier, Said. It takes a different way to think about what not just the underneath private market, these are the asset classes, sub asset classes, all have different operating rhythms and different solutions and data requirements to go through.
+[15:18] So as you had mentioned, it winds up being a too pronged approach. Probably the first one is going and understanding what that workflow is and accordingly thinking about how you could ultimately map right at the end to kind of have those joints.
+[15:35] I see organizations try to build this themselves depending on where they are. And I see other organizations start to look to outsource some of these capabilities just because it is a bit more challenging to kind of do it yourself and stay on top of it.
+[15:48] It really just depends about what the appropriate operating model may be depending upon your size, your scale, and some other significant factors.
+[15:56] But that is the world that we're starting to head is how do you wind up having consistent and accurate joins between trying to put together that total portfolio of you, right?
+[16:08] And what would that mean from a security perspective? It does wind up leaning into a lot of what has been highlighted.
+[16:14] It matters how you're managing the data, how you build that model. Are you purchasing that model?
+[16:19] How are you enhancing and bringing in additional types of data by say real estate, hard asset investment, what about for digital assets, etc. How does this evolve as we really start to diversify what the asset classes are underneath?
+[16:33] So we're starting to see organizations really to be quite honest, outsource or look for other technological partners that could help them instead of them try to process document extraction over and over for their book.
+[16:46] So it's evolving, but it's starting to be a little bit more centralized with technological providers helping along the way.
+[16:53] Yeah, I guess, Chris, this is somewhere we've partnered quite a lot, right, as well with the taking of the Aladdin data sets into Snowflake.
+[17:00] And when you've already kind of manufactured that and sort of cleansed it in Aladdin as a public plus private portfolio, sort of being able to have that in Snowflake as a pre-cleansed data set is a sort of core challenge that we've been collecting.
+[17:15] We've been collectively addressing with some of our clients, right?
+[17:17] Yep, that is correct. And as mentioned, you get to see it, it variously changes the operating model based on the client base, but starting to see more organizations be mindful that they're scale to be done, focus on the front office, they're scale to be done, middle back, etc.
+[17:36] Yeah, I guess, Jonathan, similar question, but you know, frequent data sets by their nature are kind of dealing with the opaque challenges of private market data, just generally, like, how have you guys addressed this over time to refine the solution?
+[17:53] Yeah, and again, fundamentally, I think from our client's perspective, for the insights and the analytics to be useful, regardless of whether they're being ingested, the data has to be high quality, and that's what we live in breathe every day.
+[18:05] And you're absolutely right, it's an opaque market that's very little in terms of regulatory disclosure, information and public domain.
+[18:12] And so the way pre-cleans always approach that problem is by being innovative and clever in how we source information in that opaque market.
+[18:19] So the way our business started is we actually started submitting freedom of information after West, probably many of the members of this audience to get some of that initial data on commitments, performance, since then more of our data has actually come from direct contributors of information.
+[18:37] So as we built that initial data set from FOIA, the GPs started to submit information on the performance on their various funds.
+[18:45] And the public domain grew out of business, we put the picture between those three sources to give more transparency to this market.
+[18:52] The other lens through which we've been smart about how we acquire data is actually how we work in the back office.
+[18:59] So through our e-front business, we obviously see a lot of transactional information, a lot of company information, a lot of fee information, and we'd be able to navigate and minimize that information up into benchmarks, which give our clients even more transparency and review of what's going on in terms of private markets.
+[19:18] So there's no one size fits all answer to your question. I'd say we just have to keep being clever in terms of how we source whether that's to the public domain, whether it's through relationships, or something we're doing on the back office side.
+[19:31] And, you know, I think there's still a lot to do there to close that transparency gap.
+[19:37] So I say one of us we do in pre-incident business. The other aspect is that, again, we as a market data provider can provide that transparency.
+[19:45] We also increasingly need to pair that with their own proprietary information, whether it's from the portfolio or the type of information that they see in the due diligence processes, which is proprietary, and across those different states being able to put together the insights on, you know, potential investments, things you've already invested in.
+[20:01] So again, I think navigating the fragmented information landscape private markets means we're living in a multi source world, at least for a while, and that free more focus and help in our clients navigate navigate.
+[20:15] Yeah, that's great. The next topic, I think two of you have touched on already but, you know, the future of data with AI.
+[20:24] I think we hear a lot when we engage with pensions, asset owners more broadly about the challenges of trying to meet some of the changing paradigm and trying to analyze these data sets, the sheer kind of resources that takes, but I think technology is a bit of a game changer here.
+[20:41] Maybe this time, Chris, we could start with you from the snowflake side, you know, whether it's on, you know, specific components of things that you're offering, but I think ultimately just that sort of idea of clients working with partners who can help them by investing in these technologies on their behalf.
+[20:58] Is there something you can share in that sort of guys.
+[21:02] Yes, and I'll, I'll take this in two different ways. The first is snowflake and then organizations that adopts snowflake to power industry specific solutions.
+[21:14] So what is the first one means snowflake in general is evolving. Just as I kind of mentioned the data landscape what generative AI has ultimately been as a forcing function.
+[21:24] So the first came, came out to the market. It's very, very useful for unstructured data. What do I mean by that. It's great at extracting covenant information out of prospectuses. It's great at finding the assets field for various different bank statements in order to help the onboarding process.
+[21:44] The capability of being able to leverage and or they are that really changed a lot of not just snowflake strategy, but how the world in truth has been operating for the past three years.
+[21:54] That means that snowflake has opened up its capabilities of handling various different types of data. We made a recent acquisition that now is branded as snowflake open flow to just have it easier to have Google documents and
+[22:09] things sitting in SharePoint run through the snowflake platforms that you could lever the latest and greatest and easy toolkit to help with these more complicated processes. What is the latter.
+[22:21] What I find very interesting for the group that we have here is organizations like yourself that know exactly or have a very, very strong point of view on what that data model should look like to help those organizations.
+[22:36] It would take each client such a long time to build a semantic model bespoke to discovering what a total plan or total portfolio view would be.
+[22:47] And then quite honestly, it wouldn't operate with the rest of the industry and their shareholders.
+[22:52] So finding organizations or leaning in with other technological providers that can take the snowflake platform and bring the best out of it specifically to help in certain workloads and use cases is one of the operating models.
+[23:04] I think that's really allowed organizations like pension plans to start being able to take advantage of the latest and greatest in technology without needing to completely be on a five year journey to get to the current data state.
+[23:17] I'm going to you. Sorry. Yeah, I'm just going to say I don't know. I apologize.
+[23:30] I'm hitting the mute button. No, I wonder if you could add Devacher just some thoughts about how we've been partnering with our clients on this topic, you know, both in terms of the broader sort of future of data.
+[23:41] But I think more specifically around AI and how clients will benefit from that.
+[23:47] How we might use some of the technologies and some of the services that we're providing today.
+[23:51] Yeah, I think it's a broad question and it's also evolving.
+[23:56] I think there are two or three broad dimension I'd like to touch upon.
+[24:01] First is, you know, as consumer, we all have loved Google kind of experiences.
+[24:07] And we know there was a reality that that kind of experience couldn't flow into enterprise software.
+[24:13] But I think with Jenny, I coming into the play, there is more appetite of making that a reality.
+[24:20] So we are partnering with our clients thinking through the future workflow.
+[24:24] So what does that model or application and interaction paradigm look like and how will people interact with the software which is as regulated in the investment management space, but with the flexibility and the model.
+[24:35] That is needed for the next gen right. So that's one area.
+[24:38] The second area is as we think about BlackRock as an asset manager, there has been a lot of different things that we do to reduce our middle office and back office costs as well as support various kind of regulatory reporting needs, where we are thinking how AI can help.
+[24:53] These are use cases where there were hundreds of people that were supporting these use cases and we find them prime example where AI can be applied and benefits can be read right.
+[25:03] Those use cases are not actually unique to BlackRock.
+[25:07] We think they are the same use cases that live across multiple client and are adjacent to a lot of it.
+[25:13] Example creation of security, coding binary compliance rules, you know, writing certain some of client reporting and reg reporting.
+[25:22] What we want to do is we want to actually start exposing some of the software and application that we're building so that our clients can also access and leverage the AI that we developing.
+[25:33] We don't necessarily think about these as secret sauce, but we think that there is obviously client overlay that is important.
+[25:40] So how do we build out and release out some of our real foundational model overlay that people can build upon.
+[25:47] And I think the last thing is, as clients are maturing their AI journey, they have more need for data, which is real time and vast as compared to the data that they used to they used to prefer from allowed in before.
+[26:02] So we're also partnering with them in providing a lot more low latency data feed at scale in their platform of choice and really supporting their AI journey.
+[26:13] So I would say those are the two or three broad spectrum where we partnering with clients on.
+[26:18] And Jonathan, anything you need out from the frequent side on AI specifically.
+[26:23] Yeah, I mean, you know, I guess, following with to offer saying, I mean, AI is enabling us to do a lot more and more quickly within frequent.
+[26:30] And I think the way our clients will benefit from that is we'll be able to get more data more quickly at more difficult sources at a wider range of sources.
+[26:40] And that's going to improve data that we deliver to our clients.
+[26:43] I think the other benefit is a lot of the use cases powered by our data typically would require a good deal of kind of analytical resource on our clients.
+[26:54] And I think as we use AI in our products to enable our clients to use our information, analyze our information,
+[27:02] essentially going to make the data itself more valuable in the way that's queried and the way that's analyzed and lowers some of the barriers to entry on some of those, I'd say kind of systematic investing workflows that may be some more large banking and has some management
+[27:17] clients to make them more accessible.
+[27:19] So again, I think it's too full to make sort of data better because it makes us operate better.
+[27:22] We'll also have our clients access our information analyze it more quickly as we integrate into the product.
+[27:30] Thank you. And just before I go on to the next question, just a reminder for everybody. There is the question capability at the bottom.
+[27:36] We're hopefully going to give you five minutes at the end to get those, but let me just keep going. So I think the next topic I had was around sort of data as a building block and sort of opening up the architecture.
+[27:50] This is something we've been highly focused on in the Latin and we touched on quickly with Chris earlier, but again, you know, as you think about, you know, a Latin providing flexibility and the ability for, you know, customers to support diverse investment and operational needs.
+[28:08] How are you thinking about this moving forward?
+[28:13] Yeah, for everyone here in the webinar, I assume that a lot of it is a big part of the ecosystem for you. But I also recognize for most of you, a lot of it is not the only critical part, right?
+[28:27] There are other things and other systems you need to bring together to build a complete data story.
+[28:33] As a result, one of our focus areas, how do we really open up a lot in a fashion that it is easy for you to seamlessly integrate the data from a lot in into your data ecosystem to really build that complete picture.
+[28:47] And this is an area of big focus for us, and we're doing this in two or three different ways.
+[28:52] The first is we really want to make every single event that happens in a Latin available to you. So every single transaction that happens should be available and accessible to you via an event, via an API.
+[29:06] And that should help you to programmatically build on top of a lot of it.
+[29:11] We're also starting to expose what we call as our secret sauce around analytics available to you so that now you can also query and these analytical procedures through APIs and also actually store those data in ADC from a time series standpoint so that you can access it.
+[29:28] The second big focus for us in opening up a lot in is we actually want to give you a near real time data store.
+[29:37] So we're also thinking about the data in the form of ADC, which we think about as a data integration hub so that you can access all the data that you need in a lab in an e-front through one single source within 15 minutes of latency from various kinds of sources.
+[29:52] Right. So that's the second big focus for us.
+[29:55] And then finally we're also thinking about opening up a lot in as extending a lot in into a platform.
+[30:01] And then the third big focus on right now is investment automation, which allows you to build on top of a laddon and rebalance areas things like portfolios, which is, which is used very extensively by our BlackRock family, but at the same time overlay your own configuration and code right.
+[30:19] I think the broader commitment is we want to actually look at all avenues so that it's easier for you to integrate into your laddon data into your ecosystem.
+[30:30] Thank you. And I guess, first, you know, this is from an all-ad perspective, you guys are, you know, recipient as a platform of the data extracts that the VOC is talking about, but obviously you have a wider capability in terms of inflow.
+[30:46] Any thoughts on this in terms of, you know, again, sort of modernizing investment platforms to support analytics and workflows into the future?
+[30:55] Yes, and, you know, as you mentioned, I know I didn't go into a snowflake 101, but to answer this question, I will for this group.
+[31:03] Really, snowflake is software that sits on the hyperscalers, the Googles, the Microsoft Azure AWS, and it makes it much easier in order to orchestrate the cloud servers to process the power of the cloud.
+[31:16] What does that mean?
+[31:17] So for organizations that have on-prem data warehouses and are looking and run into storage and compute limitations, snowflake pretty much solves those problems and drastically shortens the time to decision the time to report.
+[31:32] But more importantly, as you all are alluding to, there's numerous systems within any organization's enterprise that need to, that have either source data or, you know, or analytical data that needs to be merged to have a much more important system.
+[31:46] And that's really where snowflake shines.
+[31:48] It's the ability to join and break down those silos to not just in our case focus on the investment lifecycle was both pre and post trade, but just in general, the finance and the FP&A process, the human resource reporting.
+[32:02] So, snowflake allows you to have in a very secure and governed way the ability to create data domains, right, that are entitled and able to be accessed by the right party.
+[32:13] So that data starts to flow through the organization much more liquid than it had previously, right back to the point of data as a product.
+[32:21] These domains vary in finance. We have our transactional domain, our position domain, et cetera. But there's many other just enterprise requirements and enterprise built domains when we get into other workflows.
+[32:35] So that's really what you start seeing organizations thinking about is how do you design these data products that help answer questions faster that are prepared for the latest and greatest of technology so that we can get to that world where you can just in a Google
+[32:51] Ask format ask, what are my top 10 holdings? What is my exposure to a certain geographical location or a certain company?
+[33:00] That's really where the world is heading, but that's the thought process about how ultimately snowflake can help it just in a different landscape than just investment analytics.
+[33:10] Yeah, and that kind of brings me on to one of the next topics I had, which is customization really by the need of the individual to the data, which I think, of course, you kind of answered some of that.
+[33:21] I think Jonathan, as you think about the future vision of frequent data integration with Aladdin, what do you see as possible in terms of private market visibility and analytics?
+[33:36] Yeah, I mean, I think there's a lot there and we're really excited by the possibilities. I mean, in short, you know, frequent is this market intelligence platform, the state platform, private markets, and Aladdin being the solution for the portfolio, specifically being perfectly management solution.
+[33:55] We think that when you bring those pieces together, we're going to be able to enable the pre-investment through this investment clients to any single platform manage the entire investment lifecycle.
+[34:07] So whether you're trying to construct a portfolio that includes privates, whether you're trying to identify fun and conduct due diligence on it, whether you're actually trying to execute an investment and then be informed about what is the market rate for terms, or actually be able to compare your relative performance
+[34:22] against the broader frequent universe or participate in the secondary market, we think that we can bring the pieces together so that our clients can be sophisticated, intelligent, private markets, investors, you can do so seamlessly and scalably.
+[34:38] So we're really excited about the possibility of bringing these things together and people are working on those now and are looking very to announcing what's the market as we make progress.
+[34:48] Yeah, I guess Devacher, just to close this customization point out, you know, as you think about keys to delivering a decision-ready insights while maintaining flexibility and more importantly, I guess control across the organization.
+[35:01] Can you maybe touch on that?
+[35:04] Yeah, I also, and I read your question a little bit like, you know, every organization has a growing number of citizen developers, or in fact, some people like to call them as embedded engineers now because they actually have a PhD degree in some cases, right?
+[35:23] When I reflected BlackRock, we have 3,000 people who qualify in this bracket today.
+[35:27] Now, they obviously want to use more and more data in AI to be able to facilitate the decisions they make in a real time, right?
+[35:35] And they need access to that same data that historically only IT engineers used to have.
+[35:40] So I think it's critical that we are able to provide platform to our citizen developers who have the same access of the data, but they're governed.
+[35:51] We've invested into platforms that allow people to build quick analysis in these platforms, but at the same time when they are doing certain analysis, which are high risk, they have to promote these into production category.
+[36:04] And at that point in time, they have to have certain governance around checking this code into GitHub in the same governance level that we check code from our software engineer, as well as they need to have survivorship so that if they leave the organization, we can make sure that the code still
+[36:19] runs after they have left, right? So I think we need to really orchestrate and build platform that is able to facilitate our citizen developers of the future and help them to operate in the best fashion possible.
+[36:32] I also would say that as we think about the future, we are also going to have a new class of employee, which I call as digital employees, or what we call as agents today.
+[36:43] And we need to also think and prepare for what the world should look like and how do we facilitate that in a govern fashion, right? I think the answer cannot be that we will not open up the platform because that will limit the innovation that we will drive.
+[36:56] But how do we do it in a safe fashion is going to be very critical for all of us.
+[37:01] That's great. Thanks guys. So I'm just going to go. I want to go one question so far. So let me start with that.
+[37:09] It's the theme of it is really around organizations, and in this case, I guess, funds working to break down data silos and I guess, Devaka, maybe we can stay with you on that.
+[37:22] I think part of this is just moving away from fragmented systems, you know, towards a more interoperable data ecosystem.
+[37:31] We touched on some of the whole portfolio components earlier, but I guess more broadly than that, just going back to your previous answer, like how do we make sure that we don't go back into the world and sort of people federating data in their own space.
+[37:44] Yeah, you know, if we go back to a couple of years back and in fact, even today in a lot of organizations, we have built data platform by teams.
+[37:56] You will see an alpha team having their own data platform, a regulatory team having their own data platform, you know, different portfolio teams having their different data platform.
+[38:06] As a result of it, it has always been very hard to actually just bring all of the data in one single place and maturing and governing so that everybody has access at the same time.
+[38:18] They can really operate well on that data and build insights that is needed. Right. So I think as we think about the future, one of our strong belief system is that we need to have one single data platform for the firm.
+[38:32] While every different data team will have data sets that they manage uniquely will have outcomes that they manage uniquely. There is a dire need of having one single data platform for the firm so that they can actually be successful.
+[38:47] And if you see, even in the case of AI, you know, and the recent study from Gartner, they talk about how like around the net effectiveness of data scientists is only 10 to 15%.
+[38:58] And that is largely driven by the fact that a data scientist today spent 70% of the data aggregating, assimilating data, which would they call on the data prep, and only one third of the model that they build, ever see the light of production,
+[39:13] because they were never really built on real data and were not tested back tested on real data sets. Right. So I think there is going to be more and more a need to really unify a single platform across the investment management.
+[39:26] And that is going to be hard. But at the same time, if you don't do this right, I think it's going to be limiting into what we can really achieve on the realm of data in the future.
+[39:34] Got it. And maybe Chris just to close this out. I'm sure snowflake has some specific thoughts in this in this space.
+[39:41] Yeah, it is part of that evolution of the platform that I was alluding to earlier because this was just highlighted.
+[39:47] It's not just whether or not you could get warehouses into snowflake. It's also, as we mentioned, there's going to be other data repositories and silos by format that need to wind up being incorporated into that enterprise data platform that was just highlighted will wind up being the way that most organizations look to design.
+[40:07] And it is under the guise of twofold that the agent that the digital workers and the sit on top of the citizen development, the citizen data scientists that we do currently have, they're going to need to go to these disparate systems over time and know how to extract that information or what is within there.
+[40:27] And the more and the least the more the architecture shrinks down so that it knows how to find certain answers or operate certain processes will ultimately make it much more productive.
+[40:40] Otherwise, it's going to be another effort of needing to code basically almost like an RPA process in various different formats.
+[40:50] And that ultimately is not going to get us to the productivity that we're looking to do, but snowflake in itself and even in particular what was just highlighted, we're starting to make investments, not just to get certain data types into snowflake and the ability to process them.
+[41:04] But even as recently as this week we we moved XML capabilities just for their prominence of that data format in regulatory reporting or the communication of it to certain regulators so that we can start thinking about how we could be a part of that solution across the platform.
+[41:19] And so that's a part of that solution across the the by side as other organizations start to think about how to modernize so that there aren't these use case and department specific data platforms with their unique needs that we can ultimately get to a world where we can help organizations build on top of snowflake
+[41:38] and what they need to solve.
+[41:40] And thank you all I know there's been a lot of questions a lot of material thank you to all the attendees I would say just in closing.
+[41:47] Hopefully you found this of use whatever you know impartial questions are in totality but obviously we'd love to follow up with any organization on anything that sort of piqued your interest today.
+[41:58] These topics are obviously many areas of them that we can go a lot deeper on but again thank you to all of our panelists to the worker to to Chris and Jonathan and we'll leave it there but thank you all for attending.
+[42:11] Thank you for having me.

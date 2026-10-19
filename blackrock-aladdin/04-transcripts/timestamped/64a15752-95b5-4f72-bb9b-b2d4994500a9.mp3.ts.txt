@@ -1,0 +1,229 @@
+[00:05] As we all know, data is critical.
+[00:08] Data is a strategic asset for our clients.
+[00:10] And clients have been requesting more access,
+[00:12] more openness to Aladdin content.
+[00:14] We all need technology and the data opportunities
+[00:17] keep growing, you can't do it all yourself.
+[00:19] And partnering is sometimes a different muscle
+[00:21] for organizations and with the data cloud
+[00:23] and the Aladdin data cloud specifically comes in,
+[00:25] which is part of Studio, is we recognize that partnering
+[00:28] whether it's with Snowflake, but also with other firms,
+[00:31] whether it's firms that do asset servicing,
+[00:33] firms that provide other types of data
+[00:35] to complement the core iBOR and abOR information.
+[00:39] We're seeing that on the openness we have to that,
+[00:42] I think is unique.
+[00:43] Technology was not nearly as advanced in order to share,
+[00:46] to the open source kind of world that we are heading into now.
+[00:49] And that paradigm shift has been noticeable.
+[00:52] And similarly, as you have seen that as well,
+[00:56] what that has been able to provide
+[00:58] different operating models to the industry.
+[01:00] Because now we can collaborate on data,
+[01:03] we're both all looking at it.
+[01:04] How do I start using symbology, linking in other data?
+[01:07] So e-fronts an obvious example of that.
+[01:09] That data coming into the Aladdin data cloud,
+[01:12] with the announcement of the prequin acquisition
+[01:14] bringing in that data, the vision's always been
+[01:16] other firms joined that ecosystem.
+[01:18] So bringing in firms like London Stock Exchange data
+[01:21] into the ecosystem.
+[01:23] So the vision is to be, again,
+[01:24] back to partnering like we talked about before,
+[01:27] being an ecosystem driven by what's our core value,
+[01:30] where's our starting point,
+[01:32] what's our key, it does start with iBoard.
+[01:34] There's other IP we have here at Aladdin that we create,
+[01:36] data around credit analytics,
+[01:38] around mortgage back security data,
+[01:39] around insurance analytics,
+[01:41] things linking that into the Aladdin data cloud.
+[01:43] This is all happening now by the way.
+[01:45] So that's sort of the start of the vision.
+[01:46] So that's the data.
+[01:47] Then you bring in the API start part of it,
+[01:49] which is we have these engines
+[01:51] that historically were run through interfaces.
+[01:53] So we're providing those APIs now,
+[01:54] we're releasing soon,
+[01:55] the ability to actually access those analytic APIs,
+[01:58] portfolio analysis, security analysis, things like that.
+[02:00] That's all part of the studio umbrella.
+[02:03] But what I also stress always is,
+[02:05] speed to market doesn't necessarily imply better data.
+[02:07] You still have to have the data governance.
+[02:08] You still have to make sure
+[02:10] that what is provided is correct.
+[02:12] So the joke here today is how many times
+[02:14] you're gonna hear the word AI.
+[02:16] And you're gonna hear it a lot.
+[02:17] If the data is wrong,
+[02:19] and you don't have the integrity in the data
+[02:21] and the trust in the data,
+[02:22] the AI is not gonna give you the answers.
+[02:24] In fact, it might give you dangerous answers.
+[02:25] So I think that's a really important part of it.
+[02:28] No matter how much things have changed,
+[02:30] I still believe the data integrity
+[02:32] is sometimes underappreciated and underestimated.
+[02:34] It sounds boring, but it's key to it.
+[02:35] Yeah, Rich, it's not boring,
+[02:37] actually is part of the snowflake strategy
+[02:39] to remind people that in order to have an AI strategy,
+[02:41] you first need a data strategy.
+[02:44] And to that point, the data strategy these days
+[02:47] is pretty much dependent on cloud provider strategy.
+[02:50] It's how to get to the point
+[02:52] where you could have this massive data at scale
+[02:55] in forming models, but more importantly,
+[02:56] the thing about having bad data
+[02:58] that goes into a computer system
+[03:00] is that when you ask the question, it stops.
+[03:02] But if you give bad data to a human,
+[03:04] they go through their whole life
+[03:06] thinking the incorrect answer, right?
+[03:07] So, or correct, right, depending on who you ask.
+[03:10] But the whole point is that
+[03:11] without the proper governance, as you mentioned,
+[03:13] without the nomenclature,
+[03:15] without someone providing that,
+[03:16] there's the opportunity at the bare minimum
+[03:18] since we all have to do it by industry,
+[03:20] by subject matter over the course of everything moving forward,
+[03:24] that there's opportunities for organizations
+[03:26] that understand that subject matter,
+[03:28] that's a mantic layer,
+[03:29] to help empower the other organizations
+[03:31] in the ecosystem to use it.
+[03:33] And I see that particularly well
+[03:35] what you all are doing with the data cloud.
+[03:37] Actually coming out of the financial crisis,
+[03:39] one of the more powerful things
+[03:41] that came from the regulations there
+[03:42] was the requirement for data lineage,
+[03:45] for data dictionaries, for systems of record.
+[03:47] Those are actually the same building blocks
+[03:49] that empower artificial intelligence.
+[03:51] So, it's encouraging to see that something
+[03:54] that came out as a defensive mechanism
+[03:56] now be the proactive ingredient
+[03:58] that really gets people to this empowerment.
+[04:00] So, there's much more advanced tools now.
+[04:03] I'm gonna talk about data governance
+[04:04] from the practical user perspective
+[04:08] and why that hasn't changed.
+[04:10] So, when people talk about the openness of solutions
+[04:12] and openness of data,
+[04:14] the challenge is what we talked about a little before,
+[04:16] about what they are even,
+[04:17] the data has to be right.
+[04:18] So, this is the challenge we're facing now
+[04:20] and I look at maybe we'll address this Chris.
+[04:23] Data sharing is industry changing.
+[04:26] Now, the question is,
+[04:27] okay, how do we ensure the integrity of that data?
+[04:29] My fear and concern is production.
+[04:32] Because when you do a data share,
+[04:33] you're opening up the world to a lot of users
+[04:35] who really aren't necessarily,
+[04:37] they're assuming the data's right.
+[04:38] Yeah, correct.
+[04:39] So, that's probably the biggest challenge
+[04:40] I see with data integrity.
+[04:41] So, I partner and I guess my role here at Aladdin
+[04:44] is to be very much between commercials and engineering
+[04:47] because I get the commercial power of data sharing,
+[04:49] the ability to give clients access to all this data.
+[04:51] It is just opening up opportunities for new analyses.
+[04:55] The risk is the data not being correct.
+[04:57] So, I'm a big advocate for what you talked about,
+[04:59] some of the tools that are coming out,
+[05:01] following those same approaches that have always been there,
+[05:03] we cannot lose sight that you cannot lose
+[05:06] that data integrity focus, the data governance focus.
+[05:08] The thing that gets me excited more than the data day
+[05:11] is really thinking about how to modernize industries.
+[05:15] Part of what we look to do at Snowflake,
+[05:17] the engineering team is just build a platform, right?
+[05:20] And how people look to use that platform
+[05:22] and how it may disrupt legacy industries,
+[05:25] that's actually the reason we build the platform.
+[05:27] So, if people do see an opportunity
+[05:30] with more informed subject matter,
+[05:32] like that's what gets us up.
+[05:34] It's like, oh, okay, this gets us out of some processes
+[05:37] that I always try to solve.
+[05:39] If it's secure, governed, attested, recorded, auditable,
+[05:43] I mean, we could move some processes up
+[05:45] so we could start doing the more fun things.
+[05:47] I think what happens is there's always this envy
+[05:49] that firms feel other firms are revolutionizing
+[05:52] and changing everything.
+[05:53] The reality is evolutionary.
+[05:55] Yes, things move fast and all that,
+[05:56] but you can't change legacy systems overnight.
+[05:59] Legacy systems are really tough to change,
+[06:02] but we can do parts of it and recognize that firms
+[06:05] are moving at different paces.
+[06:07] AI is the best example.
+[06:09] AI is in its early, early stages.
+[06:10] It's not gonna give it to everyone's job.
+[06:12] It's not gonna change the world today.
+[06:15] Tomorrow, it's gonna be an enabling technology,
+[06:16] has a lot of power, but that doesn't mean it's,
+[06:19] okay, we get rid of our old legacy systems.
+[06:22] So I think the important thing is to talk to others
+[06:24] in the community and don't feel like you're an island.
+[06:26] I think a lot of firms have this anxiety
+[06:29] that they're way behind.
+[06:30] Everyone else has moved into this new world.
+[06:32] And I see it with Snowflake.
+[06:33] I think I'm saying it's in a positive way.
+[06:35] Snowflake doesn't come in saying
+[06:36] we're gonna change your legacy system.
+[06:38] We're gonna leverage what you have.
+[06:39] I think that's a really smart strategy
+[06:41] and a very realistic strategy.
+[06:43] We're just at the beginning though.
+[06:44] I'm fortunate enough to be able to see
+[06:47] how the industry operates and all of it
+[06:49] from growth to maturity.
+[06:51] It's evolving so fast that you can't imagine,
+[06:55] like you can't guess what's gonna happen.
+[06:57] So the fortunate part, though, is to let people know,
+[07:00] hey, there is a roadmap and there are operating models
+[07:03] and systems powered by Snowflake such as yourselves
+[07:06] that will help you get there faster.
+[07:08] You gotta be flexible and pivot.
+[07:10] I mean, if you said something 2019, things change.
+[07:14] I think humility is the right word.
+[07:15] I think when companies slowly, I don't wanna say die,
+[07:19] but slow down, it's when they think they have
+[07:21] the answer themselves, they don't need to talk to clients,
+[07:23] they don't need to see what's coming out.
+[07:25] And it's hard to do that because part of the conviction
+[07:27] of a company is we are right and we're competitive,
+[07:29] but it's being open-minded enough to say
+[07:31] I can learn from others.
+[07:33] What you're fighting for now is the ecosystem.
+[07:35] That's the big change.
+[07:36] So I think humility is what is key with an incredible drive
+[07:41] and intellectual interest.
+[07:42] Intellectual curiosity.
+[07:45] If it's probably the number one skill,
+[07:47] I think we all should have what I look for
+[07:51] because this world is changing and if you are not curious,
+[07:53] it will leave you behind.
+[07:55] Things are happening to that rapid pace
+[07:57] and you have to be willing to be humble
+[07:59] and continually learning and perhaps think of a new process
+[08:02] when some new solution comes out
+[08:05] where we will get left behind quick.
+[08:07] I've been at this a long time.
+[08:08] I've been through doing my own startups,
+[08:10] to bigger companies, the uniqueness here
+[08:12] is we have the machine, but also the creativity
+[08:15] and the focus to get it done.
+[08:17] So it's been amazing.

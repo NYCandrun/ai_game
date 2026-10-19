@@ -1,0 +1,239 @@
+[00:05] As we think about access to data and how our relationship with data changes is that access
+[00:10] to unstructured data at scale, being able to digest it a lot quicker, being able to pull
+[00:15] that information into some sort of investment thesis, it's almost this idea of moving towards
+[00:21] this idea of quantum mental or quant for everyone, not just the systematic teams.
+[00:25] Yeah.
+[00:26] But maybe how do we think about data more broadly within this space and access to data?
+[00:32] So obviously, I think within financial services, we have two different sets of data,
+[00:38] what we can get from the web, and then also what we pay for from premium providers.
+[00:42] Right.
+[00:43] So the premium provider is going to be very focused on how do they actually protect
+[00:47] their brands and their reputations.
+[00:49] Right.
+[00:49] And also their business models.
+[00:51] So making sure that we're actually working with those parties and that we've got the
+[00:54] differentiation between what has been scraped from the web versus coming from premium providers.
+[01:01] The other thing that for me is really interesting here is when we're thinking about data,
+[01:05] he's really thinking about the breadth of the data, not just the quality of the data,
+[01:09] but also the breadth of the data.
+[01:10] Sometimes we just think about quality of analysis.
+[01:13] How would the human have done it versus what the machine can actually do?
+[01:18] Right.
+[01:18] But there are many different things that just aren't happening in financial services,
+[01:22] with the breadth of unstructured data in particular.
+[01:25] Right.
+[01:25] You just can't actually keep up with it.
+[01:27] No, there's no way.
+[01:28] That's not a task that a human can do.
+[01:31] So the results are going to be significantly better, not because the human versus machine output,
+[01:38] but because the human wasn't doing it in the first place.
+[01:40] But if the human wasn't doing it in the first place, not really just augmentation.
+[01:45] Yeah, absolutely.
+[01:47] It's actually setting up a new set of analysis altogether.
+[01:50] It's really interesting that goes back to our, do you augment versus transform or close,
+[01:54] right?
+[01:55] And this feels like a very clear answer to that, transforming of the workflows,
+[01:58] really having that copilot be part of the process.
+[02:01] And you briefly touched on web script data and provider data.
+[02:04] I'll maybe give you a middle bucket of that, which is alternative data,
+[02:08] and how we can start to use alternative.
+[02:11] And I mean that with a lower case A, meaning different types of sources,
+[02:14] not private markets data.
+[02:15] How do we start to think about what that also unlocks?
+[02:19] Not just for the most sophisticated end of investors, but for really anyone.
+[02:23] How can we start to use that?
+[02:25] I think that question, we need to also be trying to address that from a multimodal perspective.
+[02:32] So depending who you are, you could either take the word data.
+[02:36] Many people in finance might think about that as structured data.
+[02:39] These are the fundamentals, market prices and such forth.
+[02:42] But we also know that we have a wealth of unstructured data, whether that's news,
+[02:45] analyst reports, the variety of other sources that we should be incorporating into investment
+[02:50] decisions. But we also, for the last 15 or so years, have been taking photos from a satellite
+[02:57] over the top of big box car parks to try and work out how many people are actually going there.
+[03:02] So what's the next generation of that? Well, the next generation of that might be,
+[03:05] well, can the satellite actually infer the types of cars?
+[03:09] There's no reason we can't do that. We're already doing that in the insurance space.
+[03:13] Right.
+[03:13] Right.
+[03:14] So in insurance, you have a car crash now. You take a photo of the car.
+[03:18] The AI understands what the car is, understands what the estimate of the damages,
+[03:22] books you in, et cetera, et cetera.
+[03:24] Absolutely.
+[03:24] So let's go back to the big box retailer.
+[03:27] Now the satellite image actually takes the photo, actually does an assessment of the different
+[03:32] brands of cars, and can now do a time series of the average expense of the car that went to that
+[03:39] big box retailer. So can I create an investment thesis out of that? That seems like something I
+[03:45] probably want to run some data on, right? So I think actually going through these and saying,
+[03:50] listen, we've got a lot of different data that historically wasn't available to us,
+[03:56] that we can now extract the information out of it so much better and form better investment
+[04:01] hypotheses and create different models is going to be something that we're going to see
+[04:05] significant movement.
+[04:06] And we talked about multi-model. What is multi-model?
+[04:09] So we're both communicating quite a bit.
+[04:13] So we are talking at the moment, we're putting off data, but we both do something in common.
+[04:19] We both speak with our hands. We're both very expressive in our face.
+[04:23] We are actually communicating not just through the audio, but through visual elements.
+[04:28] So multi-modal is really about how can we actually take the combination of text,
+[04:33] audio, and also visual elements, and actually extract data from that.
+[04:38] You see these instances where you're actually going, listen, I'm actually going through an
+[04:42] asking a natural language question. So people who have used something like Dali or Microsoft
+[04:46] designer, I'm actually typing in my tween daughter does this all the time, right?
+[04:51] Types in a description and then gets the image. So that's an example of text to visual.
+[04:57] Right.
+[04:57] Then we flip that around. We go now actually take a equity analyst report for argument's sake.
+[05:03] Weirdly, we might not think about it as a design chart, but there's a lot of charts and tables in
+[05:08] there. So now what I need to do is I need to take that and extract the data from the table
+[05:16] and put that into words. I might want to do that because an equity research report is actually a
+[05:21] combination of unstructured data and then charts and tables. If I want to provide a text summarization
+[05:28] over that, I don't want to miss out on the charts and tables. That would be a big mistake,
+[05:32] because as we spoke about a while ago, in finance, we use charts and tables to express data.
+[05:38] So we want to make sure that we're capturing all those elements. I think within finance at the moment,
+[05:43] the predominant elements, a lot of natural language or text, visuals are becoming really the focus area.
+[05:51] As you can imagine, everyone is super excited about audio. Think about an earnings report or
+[05:57] something of that nature. Speed is actually a critical element there. I like to think about
+[06:02] a company talking about an expansion plans in Asia, for argument's sake.
+[06:06] Well, when the CFO actually talks about that in the earnings transcript,
+[06:10] I want that extracted from the audio file, but then I actually want that tagged.
+[06:15] And then I want to see a time series of that. And then I want to combine that with correlations
+[06:21] with what their share price did in real time. Well, I was going to add the sentiment over top of it
+[06:26] or compare that to the actual earnings statement. Are they saying the same thing? I think it unlocks
+[06:31] those capabilities as well. 100%. We talked a little bit about this idea of now, we've got everyone
+[06:37] coming up with really fantastic ideas and need us to be able to design for, think about,
+[06:41] componentize all the pieces. How does the way that we design and build and think about products
+[06:48] now have to change? So I think this is really the fundamental question.
+[06:53] The problem that we're actually faced with here is actually, how do you build the foundations?
+[06:58] Absolutely. So that you can have all those plugins and skills actually interacting with each other,
+[07:03] so that we actually have a multiplier effect. And ultimately, that each different person on a
+[07:09] trading desk or a BlackRock is actually got their own copilates. We need to facilitate hyper
+[07:14] personalization. But the problem as a product person, I think, is significantly more about how do we
+[07:21] actually create those multiplier effects so that we do get to that position where every person
+[07:26] can lean on a copilot to help them get to done and do their job.
+[07:31] Well, and it's really interesting where we are now, we're very focused on how do we build this
+[07:35] platform to your point and a set of common services and capabilities that underpin all of these
+[07:40] different copilot experiences. There's two things that maybe I'll pull on there that you've said,
+[07:45] which is this idea of everyone has to have their own copilot. I think right now, the minds that we're
+[07:50] seeing is everyone has to have their own interface. We're shifting that to say, you don't necessarily
+[07:56] need a net new user interface. You do need to work towards building your own copilot. That's fine.
+[08:00] So I think there's an interesting conversation here of how does that transform from I need a UI
+[08:05] to I need a copilot? We're working on that transition. But then the second thing we keep getting
+[08:09] challenged with is, okay, now everyone on the investment team has their own copilot. And it does
+[08:14] slightly different things. And maybe it needs to for the investment process to be unique for us to be
+[08:20] able to generate alpha. There are use cases where these copilates have to be different. But then
+[08:25] navigating across all of these copilates, right? And how do we think about this world as you started
+[08:30] this conversation with where we're going to have the copilot that sort of rules them all, right?
+[08:34] How are all these going to plug into? How do we move from just the one off interfaces, one off
+[08:39] micro apps to now plugins and capabilities? And how do we think about Aladdin, right?
+[08:45] It's also an ecosystem where we can now have plugins and capabilities across all of our own
+[08:50] applications that allow you to tap into skill sets, right? That it can act as sort of this
+[08:55] connective tissue across the entire platform. I think in a lot of ways, what we're doing with
+[08:59] Microsoft Teams today in BlackRock is that we're saying, how do we have each team be able to build
+[09:05] their own plugin or capability into the product? I think the other interesting thing just because
+[09:09] you've used a couple of phrases, which are really about the copilot stack and some respect,
+[09:14] is traditionally we always thought about the product as being the interface that people went
+[09:20] into. If I'm talking to an engineer, obviously looking about the APIs and such a fourth,
+[09:24] but there was one level of product that we often focus on. The interesting thing for a firm like
+[09:29] BlackRock is I can imagine one of your customers experiencing your copilates, but I can also
+[09:35] imagine them actually wanting to use your orchestrator. I can imagine them wanting to use your plugins.
+[09:41] I can imagine them asking the question, hey, can we continue to use the BlackRock copilot,
+[09:46] but we actually want to inject our own plugins and give priority to that. The flip side might be
+[09:52] is they might say that they've actually got a custom copilot and they want your plugins exposed
+[09:56] there. 100%. I think there's a myriad of different ways that people are going to come at this and
+[10:02] really architecting for that flexibility, but this is a new paradigm and we're still in the
+[10:08] very early stages and a lot of customers in financial services also do actually have very
+[10:14] large technology teams themselves. So that also changes the dynamics about whether they want to
+[10:19] actually be able to custom copilot, where they want to leverage your plugins in their custom
+[10:25] copilot and such. And we are hearing that from our clients, right? I think that really resonates.
+[10:29] The other piece that you said that resonated with me very acutely as we think about product
+[10:34] management is I'm spending less of my time on how do I think the experience should be the
+[10:39] capabilities, the features that need to be for those sort of bespoke use cases. And I'm spending a
+[10:43] lot of my time thinking about what are those services, capabilities, access points, platforms,
+[10:49] that are that sort of Lego piece or that plug and play that you're talking about as well.
+[10:53] So there's a lot of philosophical discussions. And as I alluded to before, it's not a technology
+[10:58] discussion. The technology or product side of this is one portion of this. This is much about
+[11:03] organizational designers. It is about technology. I think the other set of discussions that are
+[11:07] very prevalent at the moment is how do I think about that platform layer or the services layer
+[11:13] to actually optimize the return on investment. And it's great that we're sitting at BlackRock
+[11:18] because I can use the word optionality, right? This is about how you being a product person
+[11:24] that actually facilitates optionality for the unknown future. There are paths that we can see
+[11:29] spanning out by actually facilitating that optionality and recognizing that a lot of our
+[11:34] customers are very strong and have very specific views that we can also facilitate all those.
+[11:40] Yeah, I love that. We briefly talked about this idea of you open up your computer, your
+[11:47] financial dashboard in the future. And you see that you've got a search bar. And that's where you
+[11:53] start with. Where do you think we are going to go with user experience beyond that? What is the
+[11:59] next action step? What happens after that? So I think it's an interesting question from the
+[12:05] perspective of the way that you phrased it is still a pull event. I'm going into my laptop.
+[12:11] I'm going into a search bar. The mental model that I have is very much around co-pilots is
+[12:17] they're like a fantastic intern who never sleeps and never eats and also decides to take the long-term
+[12:23] job offer, I should say. Yeah, right. If you had a person like that, what would really happen?
+[12:28] What is the ideal sense? The ideal sense is when you actually wake up, pick up your phone and it's
+[12:33] actually given you an indication of what's important for you today. It's actually helping prepare.
+[12:38] So I think the paradigm for me is very much how do we actually evolve this co-pilot process
+[12:46] from a pull event to actually being pull and push and also representative of once off task or low
+[12:53] frequency tasks versus repetitive tasks? How do we actually expand that? I think when we're
+[12:58] thinking about that future, the experiences are going to evolve quite significantly. So I do really
+[13:05] want to wake up and have someone help me out and say, listen, there's only so many hours in the day.
+[13:11] Right. These are the things that you have to do. These are the things that are actually going to
+[13:15] move the needle. And when we're thinking about what the implications are on the experiences there,
+[13:20] and I think it is actually thinking about this as an experience rather than just the UX UI,
+[13:25] we're both product people and financial services. But your job is very different to mine. Mine
+[13:30] very different to yours. So there's not going to be a co-pilot that can actually describe all those
+[13:35] things given what our calendar's also look like, the calls and such forth. So the experience there on
+[13:41] the generative UX side of things is going to be very different. And that's why it's going to have
+[13:45] to be very much dynamic, because that is really the hyper personalization element.
+[13:51] Taking into account all the data that's in my system and it represents about what I have to do
+[13:57] versus what you have to do. I really like this idea of the generative experience. I think there's
+[14:02] another implicit thing that you had said, which is it understands the intent of what you're trying
+[14:06] to do as well. It's that nuance of it understands your calendar versus mine, but it also understands
+[14:13] your behaviors, your patterns, your preferences. It remembers conversations that you've had before.
+[14:18] I think over time, that ability to into it, what you're trying to do, I think will be really interesting
+[14:23] as well. So I think in the very early days of generative AI, everyone jumped out. We were working
+[14:29] together. We built a whole series of co-pilots. And the approach that we went through was very much
+[14:35] about how do we actually build that one POC. Now how do we build another POC? And in many respects,
+[14:42] every major firm in financial service has gone through that process of building those POCs.
+[14:47] Absolutely.
+[14:47] In the background, what's also been happening is the number of use cases that people are actually
+[14:52] asking for has doubled, then doubled, and then doubled and doubled and doubled again. So then
+[14:57] people like us have to start thinking slightly different about what the actual problem space is.
+[15:02] So this is where the thought process has really evolved to the platform and services level.
+[15:09] And that's really, in some respects, it's like a Taylorism movement. You're actually going through
+[15:14] and we've rather than actually building a car once off, like as a bespoke car, we're actually saying,
+[15:20] no, we're actually going to need to get ready to actually operationalize this.
+[15:24] That's right.
+[15:25] And that is actually setting up the factory floor. And now, so what we're actually seeing is
+[15:29] firms who are actually investing those factory floors, the speed at which they're actually being
+[15:33] able to get the copilots out, all the plugins and skills also is just growing.
+[15:39] I love this idea and I resonate so much with how we're thinking about it, of stepping back and
+[15:44] building the factory floor first. That's very much where we are now. And I think the other thing
+[15:50] that maybe I would add to that, that I feel like I took for granted when we started this,
+[15:54] was getting to the POC. It's actually kind of easy. We have no shortage of POCs across the firm.
+[16:01] However, it's really getting it beyond the POC, making sure that it is consistently accurate.
+[16:08] I think one of the things that's been really fascinating to me is there's no scale one to 10.
+[16:13] This is an eight. There's no easy way to evaluate the responses. There's no universal way to do that
+[16:18] yet. I think many people are working on that evaluation framework, but there's no easy way.
+[16:23] And there's no easy way to say, okay, well, this product, the responses that you're getting back,
+[16:27] we've agreed that it's a six out of 10. That's good enough to go live. It's sort of very
+[16:31] subjective right now. And so I think that's the other piece of this has been really interesting
+[16:36] for me is that POC is easy. Getting past the POC has been a much bigger challenge.
+[16:41] Yeah. And I think the other thing that's interesting is when I think across all of my customers and
+[16:47] partners that I work with, there is not one central AI team at any of those funds.
+[16:54] So what is the unified copilot strategy that the firm is actually going to implement
+[16:59] rather than actually sitting there and saying, team A has done this, team B has done that,
+[17:03] because you can go forward. And there's many firms who I work with who have literally got
+[17:08] a thousand POCs up and running. But if you have a thousand POCs and you continue to actually
+[17:14] productionize on the basis of all those POCs, unless there was a unified framework,
+[17:19] it's going to be very expensive to actually maintain. It's not going to be scalable.
+[17:24] So I think what we're going to see is a lot of firms create their own custom copilots.
+[17:29] Now, in order to do that, you need to actually create the plugins. There's no copilot without
+[17:34] plugins. Right. Can't do anything. If you were to ask me the question, in three years time,
+[17:39] does someone go to M365 copilot, if they're in a Microsoft environment, to ask an Aladdin question,
+[17:45] or do they go to an Aladdin copilot to ask an Aladdin question?
+[17:49] Right.
+[17:50] That is going to be very, very persona specific or down to the end of it.
+[17:54] But going back to the optionality that we're talking about before, our job is to facilitate
+[18:01] both of those people, because as long as Aladdin is providing that person with value,
+[18:06] and also that you can actually get the providence and such forth. So if the answer's coming back
+[18:11] in M365 copilot, you're going to want it to be very clear that this was powered by Aladdin.
+[18:16] Yeah, absolutely.
+[18:17] You're not going to want your data commingled with anyone else. Right. So there's a bunch of
+[18:20] different stipulations there. But as long as you're providing that insight and the person is actually
+[18:26] referring the value of that exercise back to BlackRock, I think you're relatively agnostic to that.

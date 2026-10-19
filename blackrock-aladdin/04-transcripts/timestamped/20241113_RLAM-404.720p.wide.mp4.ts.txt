@@ -1,0 +1,111 @@
+[00:06] Hans, how are you? Great to see you again, Tarek.
+[00:09] Great to see you.
+[00:10] Complicated times, as I can see.
+[00:13] The world is all over the place.
+[00:16] It's been a challenging year, I would say,
+[00:18] challenging a couple of years.
+[00:19] When we look at our business,
+[00:21] and we've known each other for a number of years now,
+[00:24] so, certainly when I first came to Royal London,
+[00:29] the critical thing for us was to have the right partnership
+[00:34] in particular because the business was very UK centric.
+[00:39] And one of the key things I wanted to achieve
+[00:41] was the ability to take us beyond the borders
+[00:44] that we operate in today.
+[00:47] So I think, in coming into the business,
+[00:49] what was really clear is a complex infrastructure
+[00:52] that we were operating with,
+[00:55] and a need on our part to have a single auto management system,
+[01:02] and one that can really underpin our global aspirations.
+[01:06] It's interesting because I've known you to be a hands-on CEO,
+[01:11] which is not exactly something that we see often.
+[01:15] This approach you had to putting in motion and in place,
+[01:21] a system that has shaken the processes
+[01:24] and even the mindset of the overall users of our lab
+[01:29] and the way it reflects towards your clients,
+[01:32] how have you achieved this?
+[01:34] I suppose if I start a little bit backwards,
+[01:37] it was a very successful implementation for us.
+[01:41] I think we are genuinely in a minority of organisations
+[01:44] that achieved it largely on time, if not ahead of plan,
+[01:50] and we came in under budget.
+[01:53] And that's, I think, a hell of an achievement
+[01:56] across the three organisations that were really driving this,
+[01:59] so yourselves in Aladdin, ourselves in Royal London,
+[02:04] and also, of course, HSBC as our partners.
+[02:07] There is a cultural element to the kind of partner that you're looking for,
+[02:11] and we were really focused on having a partner
+[02:14] that will provide ongoing continuous support
+[02:17] where we don't have to rebuild the system every 12, 18 or 24 months.
+[02:22] When you look at this successful implementation
+[02:26] and how Aladdin has been able to help you,
+[02:30] is there something in particular that happened during the project
+[02:35] where you told yourself, I should have done it differently?
+[02:40] I suppose there's probably two aspects.
+[02:42] One is we set out at the very beginning for this to be one team,
+[02:47] and it was a really clear conviction in terms of the way that we wanted to run it.
+[02:52] So irrespective of which organisation you come from,
+[02:55] it was one team around the implementation.
+[02:57] A very different take on it was what we implemented in terms of a sentiment tracker.
+[03:03] And from a cultural perspective, in many ways,
+[03:06] what you're doing for the front office is open heart surgery.
+[03:10] It was critical for us to make sure that we had the hearts and minds of the front office with us.
+[03:15] And when you make a transition from a system that people have used for,
+[03:20] in some cases, 30, 35 years, you will get resistance,
+[03:24] and people will be uncomfortable and unhappy about it.
+[03:27] And that's natural, but it was being able to track that
+[03:30] and being able to talk to people and address it.
+[03:34] It was really challenging, and I'm glad that we did it,
+[03:37] but really as we build the business of the next year or two or decade or two,
+[03:41] it is having that core strength and the fabric of the organisation
+[03:46] that is so critical to me, and ultimately to the underlying
+[03:50] policy holders, investors and clients.
+[03:53] When you think about the future of our land and where you are heading,
+[03:59] and how Aladdin is helping you looking at this future,
+[04:03] how Aladdin is allowing you to do things or preparing you
+[04:10] to invest in asset classes or open new regions or scale,
+[04:15] what is Aladdin allowing you to do that you wouldn't have been able to do,
+[04:19] wouldn't you have had Aladdin implemented?
+[04:22] OK, sure.
+[04:24] So it helps us, I think, in a number of ways.
+[04:26] The first one is in risk management and risk mitigation.
+[04:29] So that was a core driver in terms of stabilising our existing platform.
+[04:35] That stability then expands beyond the existing borders
+[04:38] that we're operating in today and gives us an operational platform
+[04:42] that we can use in multiple territories, in multiple currencies and so on.
+[04:47] I suppose the second one is directly in relation to clients,
+[04:51] and the client experience in the past was multiple order management systems,
+[04:55] and what this allows us to do is provide a single client statement,
+[05:00] and overall improve what the client benefit is through that one.
+[05:03] I suppose the third one, and we haven't talked about,
+[05:05] is the data side of things, and it's a very, very competitive environment.
+[05:13] It's very key for us to have data providers and data solutions
+[05:19] that allow us to move forward at place,
+[05:21] and the implementation of Snowflake that we did,
+[05:25] as part of the overall programme, has been really successful for us,
+[05:29] and we feel that it has moved us, it's leap-frogged us in many ways,
+[05:32] in terms of our ability to use data within the front office initially,
+[05:38] and then over time as we build our client data into our platform,
+[05:42] it gives us a much more rounded picture of the overall business.
+[05:46] If we take a step back on the future of our land, what's next?
+[05:51] I think what's next is, in many ways,
+[05:55] we have a really clear vision for the business,
+[05:58] which is that we want to be a leading global active asset management firm.
+[06:04] We come from an environment which is a mutual service,
+[06:07] it's slightly different, I think, operating contacts and certainly ownership model.
+[06:13] And we are fortunate, I think, in terms of the combination of a mutual parent
+[06:17] and a partnership with an insurer.
+[06:19] So those two things in the current environment are really
+[06:22] structurally and strategically helpful for us.
+[06:25] But the vision hasn't changed, which is that we want to diversify outside the UK,
+[06:29] we want to diversify into new asset classes,
+[06:32] so we are working quite significantly on expanding our private credit business,
+[06:39] but we're looking at infrastructure and infrastructure equity,
+[06:43] we're looking at expanding outside the UK,
+[06:46] so some of the initial markets around Australia.
+[06:49] And I think you've got an award, if I'm right, it was the award.
+[06:53] We got an award, jointly.
+[06:57] We got an award, I think you got the award for the implementation of our solution.
+[07:01] We wouldn't have been able to do it without you Hans,
+[07:03] thank you very much for coming here today.
+[07:05] It's a pleasure.

@@ -1,0 +1,592 @@
+[00:00] Hi, I'm Kate Dood.
+[00:01] I am the capital markets correspondent for the Financial
+[00:03] Times in New York.
+[00:05] Investment management is at a critical juncture.
+[00:08] Emerging tech from generative AI to cloud
+[00:11] is creating new opportunities for asset managers and asset
+[00:14] owners.
+[00:15] But there are challenges, too.
+[00:17] This webinar, which is hosted by the Financial Times
+[00:19] and partnership with Aladdin by BlackRock,
+[00:22] will explore how the fourth Industrial Revolution is
+[00:24] transforming investment management
+[00:26] and how institutional investors are adapting.
+[00:30] I'd like to thank our sponsor, Aladdin by BlackRock,
+[00:33] and welcome our panelists, Bill Hance Arnold, who's
+[00:36] the global head of innovation, client operations, performance,
+[00:39] and reporting at Accent Investment Managers,
+[00:42] which ties GEPART, Chief Technology Officer, Group Asset
+[00:44] Management at Swiss Free, and Shirley
+[00:47] Tvet, managing director and chief operating officer
+[00:50] at Aladdin BlackRock.
+[00:53] Kick us off, Shirley.
+[00:55] OK, so should we start?
+[00:56] I think one of the areas we were going to start
+[00:59] was talking about the trends driving the fourth Industrial
+[01:02] Revolution, and specifically the impact on investment
+[01:05] management.
+[01:06] And maybe I'll jump in with some of my views,
+[01:08] and then Laurent and Matyska get yours as well.
+[01:12] So when we talk about the fourth Industrial Revolution,
+[01:14] there's not really one piece of technology that's driving it.
+[01:17] It's a convergence of innovation across cloud, AI, blockchain,
+[01:22] and robotics.
+[01:23] And the combination of these will drive innovation and efficiency,
+[01:27] not seen since the creation of the internet.
+[01:29] It's really the beginning of the next Industrial Revolution.
+[01:32] From the vantage point of an investment manager,
+[01:34] what does this mean?
+[01:35] So we look at several technology advancements.
+[01:38] First is generative AI, which will become woven into virtually
+[01:43] every process through the use of co-pilots that help employees
+[01:47] do their jobs, whether that's writing first
+[01:49] drafts of presentations, normalizing and analyzing data
+[01:53] to derive insights, which can help inform investment
+[01:56] decisions, or even writing code.
+[01:59] Next is cloud, which is indispensable for unlocking scale.
+[02:03] It's a requirement for the scale needed to support
+[02:06] gen AI, of course, but also as asset managers
+[02:10] need to support more portfolios, asset classes,
+[02:12] transaction volumes, they need the scale of the cloud.
+[02:16] And leveraging the cloud also makes it easier
+[02:18] to tap into third-party technologies.
+[02:21] So you can focus on your own core competencies.
+[02:24] And finally, I touch on blockchain.
+[02:26] Tokenization allows for more assets to become investable.
+[02:30] Over the last few years, we've seen digital assets
+[02:33] emerge as a new asset class, and blockchain
+[02:35] emerge as a technology theme.
+[02:38] Tokenization also has the potential
+[02:40] to transform market structure, driving greater efficiency
+[02:44] and lower cost.
+[02:46] What's exciting from an investment management
+[02:48] and billion investment technology perspective
+[02:51] is the opportunity to harness these technologies,
+[02:54] to improve the lives of our employees, our clients,
+[02:57] and ultimately, and investors, helping more people
+[03:01] experience financial well-being through access
+[03:03] to high-value investment products that meet their unique names.
+[03:11] Yeah, look, from a rather smaller institutional investor
+[03:16] like Swiss vista management, we have 100 billion plus assets
+[03:19] on the management.
+[03:21] And for us, it's always important to keep operational resilience.
+[03:25] We learned from the past as well that innovation in itself
+[03:29] is obviously important to move on into the future.
+[03:33] However, we have to keep our systems up and running.
+[03:36] And therefore, we prioritize always
+[03:39] in a balanced systems view our operational resilience.
+[03:43] And then we continuously try to innovate,
+[03:46] look at the technologies.
+[03:47] As you said, they are popping up left and right.
+[03:50] And we're trying to take advantage of them
+[03:52] in a very proactive and opportunistic way.
+[03:57] And we try to bring the system together into a balanced view
+[04:00] so that we move on a technology side,
+[04:03] that we move on a business side,
+[04:07] and utilizing these new technologies as best as we can.
+[04:13] Yeah, it's clearly a revolution, as you said.
+[04:15] It's a big acceleration.
+[04:17] And we see lots of things popping up in almost everyone's hand now.
+[04:22] That's a big difference nowadays,
+[04:24] is that as you mentioned, it would really impact
+[04:27] the way we work everywhere.
+[04:29] And if you look at opportunities, what we do at AXA Investment
+[04:34] Managers is the test and learn approach.
+[04:37] It's really to take everything which comes up,
+[04:41] test it and see what it brings, but also the risk it brings.
+[04:45] And I think that's also very important.
+[04:47] We have set up a governance around risk associated,
+[04:51] for example, to AI or generative AI,
+[04:53] as this is a big push in our company today.
+[04:57] So it's really about taking the opportunities and testing
+[05:02] and seeing what we can scale, but also framing this
+[05:06] from a risk perspective and making sure that it doesn't bring additional
+[05:10] to a risk to our company, but mainly also to our clients, obviously.
+[05:14] That's very important.
+[05:15] And obviously, when we talk about revolution new technologies,
+[05:20] it's also very important to have very solid foundations,
+[05:23] and we're both mentioning it.
+[05:26] Tech foundations, data foundations,
+[05:30] and that's really key to really take the most of new technologies,
+[05:34] like generative AI or AI in general as well.
+[05:38] Yeah, I think just picking up on the data governance perspective,
+[05:41] I think, we've had a really solid and best-of-class data governance
+[05:46] now for probably more than 15 years,
+[05:49] which helped us through the last 15 years,
+[05:51] but will not help us through the next 15 years,
+[05:53] because the data governance requirements have also shifted.
+[05:57] So from a more structured data perspective
+[06:01] where we had really proper data governance,
+[06:04] we have to now adopt, obviously, to a different type of alternative data,
+[06:08] unstructured data, and creating a data governance framework for that
+[06:13] is an interesting challenge for us as well at the moment.
+[06:16] So I think we're moving on also from a governance perspective,
+[06:19] and also from obviously all of the assurance functions' perspectives.
+[06:24] And being part of a bigger group helps here,
+[06:28] because we obviously try to bundle and scale our assurance qualities
+[06:34] across the entire company, and asset management,
+[06:36] can benefit from that scale that our group can bring to the table.
+[06:41] Yeah, I think it's a great point on data.
+[06:44] You know, in making investment decisions as first and foremost, all about data.
+[06:48] And we say investment management is really an information processing business.
+[06:53] And as you pointed out, that information used to be structured data sets about a portfolio,
+[06:58] security terms and conditions, prices, risk analytics,
+[07:01] and of course that data is still really important,
+[07:04] but so much information now goes into making investment decisions beyond that.
+[07:08] So like unstructured data sets, as you said, like Google search information,
+[07:12] or satellite imagery, or data extracted from company financial documents,
+[07:17] and earnings calls, including through AI.
+[07:19] And what we hear from clients who responded to a survey we put out
+[07:23] is that while they feel confident in their technical knowledge,
+[07:27] they cited integrating and managing unstructured data as their top data management challenge.
+[07:32] So like clearly everyone is feeling it.
+[07:34] And the key is having a data platform that enables you to take it
+[07:40] and then govern that unstructured data.
+[07:42] That could be a clear source of benefit for an asset manager.
+[07:46] Yeah, it's exactly a key challenge we're facing.
+[07:50] In general, data is, I would say, mostly centralized.
+[07:55] When it comes to structured data and when it comes to unstructured data,
+[07:58] it's, I would say, almost the opposite.
+[08:00] It's everywhere and the governance is key around that.
+[08:04] And obviously during, I think, the next month,
+[08:07] we have to be very quick on organizing ourselves
+[08:09] to really take the most of this data
+[08:13] and also making sure that the data is auditable, accessible,
+[08:18] and for sure that we can explain every result coming out of the generative AI we use
+[08:25] or other AI tools, obviously.
+[08:28] Mm-hmm.
+[08:30] Yeah, that's a great way.
+[08:32] Yeah, I was saying we should pick up on AI, right?
+[08:34] As a clear concept.
+[08:35] Are we going to taste this? Is that where you were going?
+[08:37] Yeah, no, I think I was just listening to Lawrence, right?
+[08:40] It's on so many dimensions.
+[08:43] It's an interesting evolution, right?
+[08:46] It's not only on the data, on the data governance.
+[08:48] It's also on the architecture side, I feel.
+[08:51] And last but not least, it's also on the people's side, right?
+[08:53] The skills that we have to onboard,
+[08:57] that we have to educate and learn within our team.
+[09:02] It's just, I mean, I've been around for quite some time,
+[09:05] but I feel so much fun right now to be in the space,
+[09:09] where also our business side is really asking for stuff, right?
+[09:13] So it has turned around.
+[09:14] I felt in the past that I was a little bit of business development
+[09:18] a person to really try to sell technology.
+[09:22] Now it's really the opposite, right?
+[09:24] I try to keep up the speed of our business,
+[09:27] which is really a cool situation to be in.
+[09:30] I mean, data is the foundation of everything we do nowadays.
+[09:34] And proper data governance, again, we've worked on that since 15 years,
+[09:39] and it proved to be most important.
+[09:42] And only the analytics, the information, the insights
+[09:47] that we generate on top of the data can be as good as the data we provide.
+[09:51] And that's why I also go back to what we call our end-to-end batch.
+[09:57] You have to remember, investment management is also about processing
+[10:00] a lot of data throughout the entire value chain.
+[10:04] And that's super complex, I feel.
+[10:06] And if that doesn't work, no insights will be generated,
+[10:09] because you need that end-to-end chain in order to generate the data
+[10:14] and quality control data to then, at the end,
+[10:18] create the fun stuff on top, which leads to hopefully
+[10:21] better investment decision-making.
+[10:24] Yeah, it's always been important.
+[10:25] And in a world of AI, it becomes even more important when you are looking
+[10:31] to derive insights from that data.
+[10:33] And I think we didn't really go into Gen AI all that much.
+[10:37] But when I think about Gen AI in the context of investment management,
+[10:42] there are a variety of areas where it can really add value.
+[10:46] First is empowering people to be more productive,
+[10:49] enabling people and clients to interact with digital tools
+[10:53] through natural language to improve the customer experience,
+[10:56] leveraging data to generate investment insights,
+[10:59] really insights in all parts of the investment process,
+[11:02] and then democratizing coding to give everyone the ability to write code
+[11:06] so people can speak in natural language,
+[11:08] and the AI models will write the code,
+[11:10] making English the coding language of the future.
+[11:13] We have some tangible examples that I think of regularly.
+[11:17] So we recently introduced the Aladdin Co-Pilot ecosystem
+[11:21] with a select number of clients.
+[11:23] The first example of that was E-Front Co-Pilot,
+[11:26] which allows users to interact with our E-Front technology and plain English.
+[11:31] So like a CIO can type in a plain English prompt,
+[11:34] like show me my private market exposures, performance and risks
+[11:38] in a given sector, and do it in a specific chart format,
+[11:42] with no need to navigate screens or know how to create views.
+[11:45] Think about how this can lower the barrier to entry for adopting new technologies
+[11:50] and how much it can save people time in their day.
+[11:53] As another example, we think about AI Co-Pilots writing the first draft
+[11:57] of meeting notes or a memo.
+[11:59] But you can also use it in asset management to do things
+[12:01] like code the first draft of a portfolio compliance rule
+[12:05] within an investment system.
+[12:07] So it's very early days, but we're experimenting with using generative AI
+[12:11] to read portfolio compliance guidelines
+[12:14] and match it to either an existing compliance rule in the Latin,
+[12:17] or if the rule isn't there to create the relevant code for that new compliance rule.
+[12:22] It's to be clear there's always a human in the loop in this process,
+[12:25] and the Co-Pilot isn't making investment decisions,
+[12:27] but it is really enabling that process to go much smoother.
+[12:30] And then I can go on and on with examples.
+[12:32] I'm going to give one more and then turn it over to others.
+[12:35] But the other component, we think about the importance of data to train the AI models
+[12:40] or to have AI models access.
+[12:43] But there's also very much a role that AI is playing in creating the datasets.
+[12:47] So for example, AI is allowing investment teams to extract data and insights at scale
+[12:52] from company financial documents, earnings calls, fed speeches.
+[12:57] And then the teams use generative AI to quickly process these documents
+[13:01] and then create new datasets based on them that they can turn into alpha signals.
+[13:07] I would add to all of this,
+[13:10] I think generative AI is coming to us through many software as we already use.
+[13:15] We call it the commodity part and software upgrades,
+[13:19] which are coming with generative AI, additional services in them.
+[13:25] And then we have also to look at which models or which gen AI we could use also on our own data
+[13:32] and where it's worth building and developing our own models
+[13:37] to get the most value out of our data.
+[13:40] And I think that's the biggest challenge today,
+[13:43] to see what will be the trends in software as we use in general.
+[13:47] And I think, Shirley, you mentioned quite a lot.
+[13:50] And then on the other side, what we should build to have a competitive advantage,
+[13:55] to take the most of our information we have stored for, I would say,
+[14:01] over 20 years, several decades,
+[14:04] and see what we can produce with that and also bring to our fund managers,
+[14:10] to our clients, to our transversal teams, et cetera.
+[14:14] Yeah, it's just really we have also a program that spans within asset management
+[14:20] across different work streams.
+[14:22] And we look, actually we start a data again,
+[14:26] because we also need to look at the data in order to make gen AI work on our structured data
+[14:31] that we have also on our unstructured data.
+[14:33] So there's an architectural question.
+[14:35] There's an application layer question.
+[14:38] And then obviously, as Shirley said, we have a lot of vendors that offer us co-pilots,
+[14:44] starting obviously with the big one, Microsoft, but also E-front Aladdin co-pilots.
+[14:50] So we try to leverage as much, obviously, as possible, of our vendors' capabilities.
+[14:58] However, there's probably the adding piece for our proprietary analytics,
+[15:04] where we really experiment across several use cases,
+[15:09] obviously also within the productivity range,
+[15:11] but also the investment decision process space,
+[15:14] which hopefully can add even more return on investment.
+[15:19] Mm-hmm.
+[15:20] And on top of that, what will be very important as well is to look at it
+[15:27] with the upcoming regulation, which is coming into force soon.
+[15:33] And that's where governance around risks and risk assessment of all those models
+[15:38] are, is also very important.
+[15:40] So it's an opportunity, and I think everyone,
+[15:44] every asset manager of firm is embracing these new technologies,
+[15:50] but then there's also to be in line with regulation,
+[15:54] and we are very regulated entities at investment managers.
+[15:58] So it's key for us to make sure that we align.
+[16:05] It's a great point.
+[16:06] So according to a recent survey by Institutional Investor,
+[16:09] 88% of respondents agreed that Gen AI would offer a competitive edge, right, to your point.
+[16:15] But just 8% of firms have begun implementing it.
+[16:18] And I think some of that hesitation comes from concerns about risks,
+[16:23] which, of course, is really an important consideration.
+[16:27] When it comes to AI risks, we think about three foundational principles,
+[16:31] a human in the loop, so making sure that an expert human is always in the loop
+[16:36] and has the appropriate level of oversight.
+[16:38] The second is the Waldgarten approach, where data is not shared
+[16:42] outside of your own secure cloud environment.
+[16:45] And the third is to supplement the co-pilot model via retrieval,
+[16:50] augment, generate, approach to feed live knowledge from a curated data set
+[16:54] to ensure that the responses are accurate and relevant,
+[16:57] despite the model operating in a Waldgarten.
+[17:00] But I think in many cases, people may be missing one of the biggest risks,
+[17:03] which is being left behind, right?
+[17:05] So investor demand and expectations are quickly evolving.
+[17:08] They're going to want customized solutions at low cost
+[17:11] with easy access to information on their portfolios,
+[17:14] and adopting new technologies like Gen AI in a controlled risk-aware way
+[17:18] is a big opportunity for asset managers to meet those evolving needs.
+[17:23] So just one question to both of you, maybe.
+[17:27] Within our company, we have a centralized governance framework
+[17:31] that looks at different use cases and goes through a channel of different
+[17:36] approval process steps in order to really go live with the use case.
+[17:40] But then the use case itself, we can be experimental,
+[17:43] we can be innovative and work on that individually,
+[17:47] and yet it's governed by really well-controlled,
+[17:51] I would say best in class governance process.
+[17:53] How have you organized that in your companies?
+[17:57] Very similar to you.
+[17:59] Currently, it's quite centralized, and we're trying to prioritize.
+[18:05] And it's also not easy, I would say, to define business cases as well
+[18:12] when it comes to really foundational use cases.
+[18:17] But that's quite centralized today.
+[18:19] And there is the discussion of bringing it closer to data management,
+[18:27] for example, having data and AI strategies together.
+[18:30] So it's an evolving trend.
+[18:33] Today it's centralized because it's still new and we need to frame it,
+[18:37] but it will evolve and it will potentially be decentralized
+[18:41] or sitting within other instances.
+[18:46] Yeah, I completely agree.
+[18:48] I think it's important to encourage people to come up with ideas
+[18:53] and experiment in a controlled way within a walled garden.
+[18:56] But there still needs to be a central process to review and understand
+[19:00] use cases given.
+[19:02] You know, there are some cases where these new technologies,
+[19:06] where AI is really just augmenting existing risks.
+[19:12] And in some cases it's introducing new risks,
+[19:14] as you would expect with any novel technology.
+[19:16] So we agree it's important to have, at least in the early days,
+[19:21] that central oversight and review process before things are rolled out broadly.
+[19:26] Mm-hmm.
+[19:28] Can we dig in a little bit more too?
+[19:29] I know that we've addressed some of these sort of cloud-based technologies,
+[19:33] but I was hoping that we can talk a little bit more about the steps
+[19:36] taken to manage the complexity of cloud-based technologies.
+[19:39] Can we get into that a little bit?
+[19:46] Look, I mean, cloud-backed technologies is a very wide coverage, right?
+[19:54] So we run basically a larger-scale cloud transformation across multiple years.
+[20:02] And we believe in kind of incremental steps,
+[20:05] so we don't want to push it too big.
+[20:08] So we do this solely with internal skills and with internal team members.
+[20:14] And it's a continuous learning experience, right?
+[20:17] We started with the cloud multiple years, obviously, go.
+[20:20] But now I think we have a team built up that's capable of really understanding
+[20:26] the architectures required, the cloud native architectures required,
+[20:29] but also the services that are offered,
+[20:32] and really creating best of breed apps and architectures on the cloud.
+[20:39] So I think it's a continuous evolving process that we go through.
+[20:43] I think the important step is, and I think we wanted to cover also technical depth,
+[20:48] I think it's a question of continuously transforming your landscape
+[20:52] into new technologies, using new technologies to also bring your platform across, right?
+[21:00] And I think this needs to be done in parallel to Gen AI and technologies
+[21:07] that are maybe more visible to also the business side.
+[21:13] Yeah, today innovation from when it comes to new technologies,
+[21:16] you need agility, you need access to data, everything very quick.
+[21:20] And that's where all these technologies, cloud-based technologies are really key.
+[21:25] And it's very difficult to move forward without them.
+[21:28] And we also have those new components within the cloud tenants.
+[21:33] So it's also very important when it comes to AI components,
+[21:38] the use of AI components and what we do.
+[21:42] And in addition to enabling scale and innovation,
+[21:46] think about it this way, every company had to locally run machines
+[21:49] within their own data centers to support the increasing scale in our industry.
+[21:53] Even before you get to the storage and compute hubry capabilities like Gen AI,
+[21:59] just what's needed to support increased numbers of portfolios, transactions,
+[22:03] and data sets used for investing, individual asset vendors couldn't afford to do that.
+[22:07] So it's become a requirement to rent the scale of others,
+[22:11] and the cloud is the prime example, where we, and here I mean both financial companies
+[22:15] and technology companies, look to the cloud providers who know how to run data centers at scale
+[22:21] to do that so that we can focus on what we do best.
+[22:24] And running your tech in the cloud also allows you to more easily tap into other technologies
+[22:28] as we've talked about like an authentication engine or a data warehouse technology,
+[22:33] again allowing you to focus on what you do well and tap into the expertise of others.
+[22:38] So my view on how do you manage cloud complexity is being deliberate,
+[22:42] you know, what are you focusing on, what are you leveraging the cloud to tap into others for,
+[22:48] and this approach should be decided centrally or at least deliberately,
+[22:51] not a choose your own adventure by team.
+[22:54] I think it's also a question of, I think Lawrence can talk about agility,
+[22:58] it's also about empowering our teams, right?
+[23:00] So it requires a certain direction setting in terms of architecture strategy
+[23:05] and choice of technologies maybe on a higher level.
+[23:10] But then I think it's really about empowering cross-functional teams
+[23:14] and that's what we believe in, we are small asset managers.
+[23:16] So we have really our analytics experts, our technology experts,
+[23:21] our business experts sitting together in the product based team where we allow for innovation,
+[23:26] right? And I think there's a natural learning experience in these kind of setups and these
+[23:31] operating models to move into new technologies into new cloud but also keep track of the existing
+[23:39] technologies and platforms. So I think there's another area, right, looking at operating models.
+[23:46] Yeah, we talked about data governance but tech governance is really important as well and it's also
+[23:52] things where this can be streamlined and technical data can also be reduced. So it's really important
+[23:58] to have those governance in place as well.
+[24:02] Yeah, with governance you can empower, right? Governance is the, you know, governance in good
+[24:06] architecture is the foundation of good empowerment from my perspective. Yeah, definitely.
+[24:12] So too, you have mentioned this idea of technical debt and I'd like to sort of get into that a
+[24:18] little bit more. I would love to hear about thoughts on strategies that can be adopted to reduce the
+[24:24] challenges of technical debt. Yeah, it's a fun, I think it's a fun topic. I mean, it's not necessarily
+[24:32] the most fun topic but I think it's a fun topic because it's an interesting challenge to have and
+[24:37] I think again, I come back to maybe this is kind of a little bit of a strategic view.
+[24:42] You need to manage that on a continuous basis, right? It's not about having a program to manage
+[24:48] technical debt, it's about incorporating into your operating model and for me this partially is
+[24:54] true for cross functional product based teams that have to take care of a specific product
+[25:00] and usually people try to not generate too much technical debt and there are different forms
+[25:08] how the teams do it, right? They run in sprints and maybe one sprint is for removing technical debt.
+[25:14] The other one is obviously running a larger multi-year cloud transformation which by nature of it will
+[25:21] remove technical debt. Another element for us which is quite cool, we can outsource technical
+[25:26] debt to BlackRock for instance, they take care of it for us so we don't have to deal with it
+[25:31] and we trust them. So there's an interesting topic. Yeah, I completely agree. I think it's part of
+[25:39] managing technical debt. You have to think about what you build versus what you buy from others.
+[25:44] With the new Latin team, we've started talking about this concept of change alpha and change
+[25:49] alpha is looking at whether you're positioned to be agile enough to take advantage of opportunities
+[25:54] and navigate and all of this change we've been talking about. So we looked at how our clients
+[25:59] use a Latin to generate scale and be able to grow and take advantage of the innovation available to
+[26:04] them by using a Latin for certain aspects. This is what we call change alpha or operational alpha.
+[26:10] It's deepening our clients use of a Latin to get more out of every dollar they invest and reduce
+[26:15] the time it takes them to do their work and help them make decisions faster. A lot of
+[26:20] exchanging at once asset managers can't be complacent so taking a deliberate approach to technology,
+[26:25] to managing tech debt, to taking advantage of new technologies to outsourcing where it makes
+[26:29] sense is key to achieving the ability to adapt during these changing times.
+[26:37] I guess I wanted to get into maybe some other technologies as well. We'd love to hear about
+[26:41] how asset managers are adopting blockchain technology.
+[26:51] So on blockchain technology is a wide topic and when we talk about blockchain it can be
+[26:57] cryptocurrencies but also all the financial instruments which are issued on blockchain technology.
+[27:04] At AXA I am, we don't do and manage cryptocurrencies so we'll not talk about that topic
+[27:11] but we do look into financial securities which are issued on blockchain technology
+[27:17] and also central bank digital currencies and with the ongoing soon to start test by the European
+[27:26] central bank on this. So it's quite a game changer for the industry in general for capital markets
+[27:35] but it's very slow but it's slow for good reasons and it's not a technology which really changes
+[27:43] the approach of the interactions between financial institutions and that's where at AXA I am we tried
+[27:54] to test to learn and we did several investments in digital bonds for example to see what it brings
+[28:03] the risk also which it brings and what we need also to go further. We invested in two different
+[28:10] type of funds three different type of bonds on public blockchain private blockchains
+[28:16] and we also tried out some stable coins with the city general for and what we see is that
+[28:25] depending on the technology all the processes and the post trade processes are very different
+[28:30] roles and responsibilities are very different and there's still a lot of work to be done on this
+[28:37] part but also on all the interoperability thing discussions we all have on blockchains
+[28:44] and I think the test with the central bank money will also be very interesting.
+[28:51] We had some in the past in France with the French central bank but we also looking forward to
+[28:56] different types of central bank money which will be issued by the ECB.
+[29:05] Yeah from a Swiss free asset management perspective we have been monitoring obviously the evolution
+[29:10] of blockchain technologies, blockchain investments, coconut assets and I have to say we probably
+[29:18] five, six years ago the hype was much obviously bigger than I would say now now we are trying to
+[29:25] follow what's going on in the market. We experiment with obviously investment opportunities we are
+[29:32] buy site asset managers so we look at what kind of opportunities we have in that space within our
+[29:38] asset allocation obviously and we look at how our operations pieces and technology pieces quite
+[29:43] frankly could be affected by more scale in that area but at the moment it's probably small for us
+[29:51] experimentation based and we're in the learning space clearly but we are monitoring it.
+[29:58] Jenny I would say is bigger of interest at the moment faster.
+[30:07] And then maybe more clearly sort of in that vein of blockchain how is technology evolving
+[30:17] based with client expectations? Great. I would say there are two things, three things,
+[30:27] it's client expectation on cryptocurrencies that's a story apart but then there's also I would say
+[30:35] client expectation when it comes to fund tokenization I think Shirley you mentioned it at the beginning
+[30:42] so fund tokenization today there are some bits and pieces starting on that front we have some
+[30:49] companies in Europe which are already working on that and life but I would say there's not
+[30:58] clear client demand I think client don't really care about the technology they care about access
+[31:02] to funds, access to performance, access to potentially ESG funds etc but they don't really care about
+[31:09] which technology you use. The only caveat I would put there is there are some institutional
+[31:16] clients who are still looking into blockchain technology and they don't want us to take more risk
+[31:23] when it comes to fund management and they don't want additional risk to their financial security so
+[31:29] it's also a discussion and I would say education on what is public blockchain the risk associated
+[31:36] to it and how it could potentially impact our end investors so it's really important that the
+[31:42] dialogue on that. So we have a question that's coming from the audience and it's about ESG
+[31:52] and the person has asked how to use AI for ESG integration and assessment of ESG risks and
+[31:59] opportunities? Well I think there obviously are use cases in the space of ESG I think I run
+[32:13] a roundtable and I think five years ago or six years ago already we had use case around
+[32:18] data science use case that was dealing with unstructured data and assessing
+[32:23] the governance piece of ESG and obviously it's all about information about data and
+[32:31] gen AI data science is all about harvesting whole amount of data that we were not able to process
+[32:39] before and for that purpose you can use obviously new technologies also in the ESG space clearly
+[32:46] and there are many use cases that could be adopted there. Yeah completely agree with that
+[32:52] I mean ESG is a lot of it is about data and unstructured data sets then there are so many uses
+[32:58] of AI to get that data normalized and make it accessible for those making investment decisions.
+[33:06] We have another audience question and I think this is this is pertinent but it's
+[33:16] do you guys expect to develop all of these new tech tools internally or do you know providers
+[33:22] and if it's the latter how do you scan the market to select the best provider? Yeah it's a very good
+[33:30] question when it comes to generative AI I would say it's pretty new at least it's
+[33:38] pretty new for our institutions and it's in the hand of everyone so it's clearly the build versus
+[33:46] by what we see today is that and we mentioned it them earlier Microsoft having developed and bought
+[33:54] a lot of having partnerships with a lot of AI companies so it's clearly a big big acceleration
+[34:02] and then it's to see and I think there are others that will not name them but there are other
+[34:07] companies we work with which are really putting efforts and putting money into developing tools
+[34:15] so it's also not always always developing things by yourself and as that managers our role is not
+[34:23] to be a tech company it's to be an investment company so it's also to look into what the market
+[34:28] where our software providers will go also which companies develop and which
+[34:35] potential new players are out there to work with but then there's also what we should develop in
+[34:41] house where it brings a real competitive advantage but there it's a different analysis and it's
+[34:48] it's almost a bet today I would say to know exactly you should put your money when it comes to
+[34:54] developing your own technology to have this competitive advantage yeah same same with us right
+[35:04] first of all we want to buy software we don't necessarily want to build it ourselves however I
+[35:11] think the stage of a gen AI where we are right now you have to I think experiment with the technology
+[35:17] to to learn so we've built our own architecture around you know the the Azure cloud where we
+[35:26] experiment with certain use cases we also do this with offers from the market like co-pilots from
+[35:32] from different providers so we have a mix and at the end I'm sure that that there will be more
+[35:39] more services that we can consume because most of the problems are similar in the market so we don't
+[35:46] want to reinvent the wheel and I know that there are many companies out there which which have more
+[35:50] scale than us to develop these kind of services and there will always be small
+[35:56] proprietary use cases that are just for us and there my team has to play role and we have to take
+[36:02] care of the architecture and of the education of our users and the choice of technologies I think
+[36:08] that's my job as well and we have a small team that looks at the funnel process you know best
+[36:14] best-in-class innovation processes where we also scan the market for new services where we you know
+[36:20] assess if this is fit for purpose for us we do obviously run demos with with certain providers
+[36:26] and then assess if that could make sense on the long term for us and it's worth the investment.
+[36:32] I completely agree with these points you know BlackRock we've rolled out the ability to
+[36:37] access certain AI tools through a walled garden some are third-party tools some are internally
+[36:43] built capabilities and co-pilots but into your point of test that's only one step you really
+[36:47] need to help people figure out when and how to use these tools so a big component when we think
+[36:54] about AI and AI adoption is training we're peers walk through real life use cases what's worked
+[37:02] you know AI champions on each team even an AI fest where we talk and learn together so really
+[37:08] optimizing around learning is like a key part of the strategy I think across all technology but
+[37:12] really AI at this moment yeah learning and change management I think everyone is excited and use
+[37:20] it for a few weeks and but having this in in the day-to-day every day it's different and the change
+[37:28] management is also very important in addition to training yeah I think adoption I love that
+[37:37] it's clearly an adoption play and then you know we from a technology perspective we also have the
+[37:42] the job to change manage and move the adoption to a level that is that is productive for the
+[37:50] for the company because there you can really lose a lot of your client internal clients I feel
+[37:58] yeah so on this point so the audience is also interested in this in this topic of
+[38:04] gen AI and you know you're talking about these communication challenges and it's
+[38:10] like how do you can you can you guys say a little bit more about how you foster transparency and
+[38:15] trust both to embrace but also to customers and investors around this around generative AI around
+[38:21] this new and kind of emerging technology around which a lot of people have questions today I would
+[38:30] say there are many questions around it we we have more questions on not really about how we use
+[38:36] them but how we look at them from an investor perspective so it's a it's a different angle
+[38:41] but obviously the question of where we use it do we use it in our investment decisions that's
+[38:50] question we have often and also from regulators then there is also the question around do we use it in
+[38:56] in client interactions that's also very different if you retail investment manager or
+[39:03] institutional one but there are questions coming up but I would say they also have their
+[39:11] generative AI or AI roadmap or very often when it comes to corporate so institutional clients
+[39:18] so the questions we have they also have for themselves hmm that makes good sense
+[39:27] we have another audience question that has just come in about automation opportunities
+[39:32] and sort of how far up the food stack you can go so when it comes to something like augmented
+[39:37] intelligence that requires a human when does it become a question of augmented intelligence
+[39:43] that requires a human to step in truly I know you're talking a lot about the human in the loop here
+[39:48] yeah look at at this point our view is in all of these uses that we're talking about on gen AI
+[39:55] there is a human in the loop so it is very useful for the first draft or for answering a question but
+[40:01] even then we need to make sure we're surfacing the information that is driving the answer to that
+[40:07] question so people can then sort of verify and do their own research and see where the AI is
+[40:13] generating that information so from our perspective at this point having a human in the loop is a core
+[40:20] part of our adoption for these AI capabilities yes generative AI is probabilistic so you you're
+[40:30] never sure about the outcome and sometimes you have very big surprises and and that's really
+[40:37] important to to review the output it it always has always we always have to challenge what what
+[40:44] comes out and then in AI in general you always have to explain the result of your AI so if you're
+[40:50] not capable of explaining what your model has put out or put out then you have an issue so human
+[40:57] in the loop but also human understanding of what the machine is doing yeah I think the trust element
+[41:03] is an interesting one Kate I think you brought that up and obviously there's a psychological
+[41:08] element involved right trust is built over time so I think there's also an adoption element
+[41:14] that that needs to be taken care of so if you start let's say smaller experimenting bringing
+[41:21] the the teams along the way I think generates that trust because they learn over time learning
+[41:28] means you understand better what the results look like and and where you can look out for
+[41:35] and that generates at the end the trust right I think so it's also not only a technology element
+[41:40] but also a people element it's a journey right it's not like a we snap our fingers and you know I
+[41:47] think although when you look at past industrial revolutions and air types of change you know right
+[41:53] now everything seems to be moving faster and faster but fast that's in a relative sense right
+[41:58] when we look at like past industrial revolutions it might have been 50 years I don't think this
+[42:01] is going to be 50 years before there's real change but at the same time it is a journey it's
+[42:06] a steak dime it's not like tomorrow things will be dramatically different when it comes to AI
+[42:12] doing all of these things on its own yeah yeah okay um so we've got five minutes left and I kind of
+[42:19] wanted to loop back to our main topic and see if there are any key trends sort of underlying this
+[42:25] as we've called it the the fourth industrial revolution whether or not there are any key trends
+[42:30] that we've missed talking about but also if there's anything that you that any of you would like to
+[42:35] add about about essential things that we need to think about in developing tech strategy yeah for
+[42:43] me again I come back to the to the beginning of of this very entertaining webinar I feel we need
+[42:50] to balance in the system so for me a technology strategy needs to have operational resilience
+[42:56] in place so you need to basically also watch out for your current platform because without the platform
+[43:01] stability security and really well-governed technologies around that you will not be able to
+[43:08] innovate at all right first of all you cannot innovate on bad data right so you need the data
+[43:14] in order to innovate and quite frankly my my clients will tell me not to innovate if the platform
+[43:20] is not running and I know that BlackRock will probably hear the same so it needs to have balance so it's
+[43:26] it's operational resilience it's technical evolution and innovation and then it's all about people
+[43:32] people and culture I think which is a foundational element which we have to bring across so these
+[43:37] three four elements I need as a good tech analytics strategy to move us into the future on a continuous
+[43:44] continuous basis completely like at my view it's stability and reliability first right like
+[43:52] everything has to be stable and reliable and adaptability and I think Lawrence you said
+[43:57] agility like I think those are very similar words on adaptability your technology needs to be able
+[44:02] to adapt so you have to have your tech data under control you have to have a clear data strategy
+[44:07] you have to tap into innovations of other leading tech providers so you can focus on your areas of
+[44:12] expertise and differentiation and just as importantly we've all been saying this your people and teams
+[44:16] need to be able to adapt so that's all about culture right that's often overlooked creating a
+[44:21] culture where organizations can evolve to take advantage of new technologies is so key and the
+[44:26] culture that encourages experimentation in a controlled way but that rewards innovation and provides the
+[44:32] training and tools to take advantage of new capabilities that's like such a core part of a tech strategy
+[44:37] and the last element I would add to that is process innovation is also about processes and
+[44:45] knowing the processes I think when you really want to take the best out of those technologies
+[44:50] you really need to know your end-to-end processes and the bigger the company the more complex it is
+[44:56] and the most you are outsourced it's even more complex so knowing the end-to-end processes to
+[45:02] really understand your value chain but not only on the big big principles but really on the workflows
+[45:09] and the architecture behind is key so that you can know you can identify where you can enhance
+[45:17] all of your operating model that's really important
+[45:23] okay I think we're we're just wrapping up now but thank you again thanks to our wonderful panel
+[45:30] for all of this you know this is a this is like a rapidly changing world and so we we appreciate
+[45:39] getting some of you both the opportunities ahead as well as the challenges while we're here I
+[45:46] also like to thank our sponsor Aladdin by BlackRock

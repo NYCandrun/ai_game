@@ -1,0 +1,268 @@
+[00:00] Our world is changing. Markets are transforming and technology is underpinning all of it.
+[00:07] Making a future of unknowns more noble. Today, technology is truly never done.
+[00:13] I'm your host, Mira Jessa, and this is the Never Done podcast by Aladdin. Now let's get into it.
+[00:27] To your eldest, you should have said Blue, Blue Horseshoe.
+[00:30] Yes, Anna Cox.
+[00:31] She loves Anna Cox still. That's what she just said.
+[00:33] That's what she should have been wandering around saying.
+[00:41] Kate and Karmia, I am so excited to have you join us today.
+[00:45] It's not often you get two powerhouse women in a room to talk about trading in a world
+[00:53] where typically you don't see women quite frankly. Before we get started, Kate,
+[00:59] I hear that you are a passionate gardener and that you attend the RHS Chelsea Flower Show every year.
+[01:07] I have lived in London or did live in London for 25 years and I have never been.
+[01:13] Please, can you give me a little bit of an inside scoop on what goes on over there?
+[01:20] I'm not sure it's an inside scoop, but so that flower show is the jewel in the crown of the RHS.
+[01:28] It's an event that brings the absolute best of what's on offer in terms of garden design and planting.
+[01:37] It's a fascinating construction process and it's just a fun thing to go to if you're interested in that sort of thing.
+[01:45] It shows you, I guess, the art of the possible and there's always something new and different there,
+[01:51] even though I've been going for hundreds of years.
+[01:54] As you think about gardening and having to understand sort of seasonal cycles and soil conditions,
+[02:03] weather patterns, it's not that dissimilar to what you do in the trading world, right?
+[02:08] You need to interpret market trends, shifting sentiment, look at economic data, you need to manage your risk,
+[02:16] right? They need to do that as gardeners too and adjust when conditions change as well.
+[02:21] Today, if we think about the market, there is so much going on and really Kate and Kamiya, for both of you,
+[02:28] how do we break this all down and understand the moment that we're in? Maybe I'll start with you,
+[02:35] Kamiya, like break it down for me. What is going on right now?
+[02:40] Information overload. That's actually how I would characterize it. The decisions that we make
+[02:48] will greatly shape whether we use that information to our benefit or to our detriment.
+[02:55] If you look at history over the last hundreds of years, or even if you take recent history over
+[03:01] the last 25 years, when you look at major events that were catastrophic in nature, they all talk
+[03:08] about one commonality, which is data fragmentation and silos. The fact that organizations are unable
+[03:16] to share relevant information or don't even know what is relevant has been a common pattern
+[03:22] amongst these events. I think about that a lot in the world of trading, where there is a plethora
+[03:28] of information, but if we don't have the right architecture, we don't have the right plumbing,
+[03:32] the right channels to take that information, manipulate it, understand what it means, and then
+[03:39] share it with others who need to know, that could really change the trajectory of whether we use data
+[03:45] to our benefit or we use data to our detriment.
+[03:47] Kate, how about you? How would you describe this moment that we're in right now?
+[03:54] So this moment that we're in right now, in some respects, is very different to what's gone before,
+[04:03] but also is exactly the same. What I mean by that is you're at a point in time where you're on the
+[04:12] precipice or in the process of introducing new technology in the form of AI, etc.
+[04:20] And much the same as if you go as far back as the industrial revolution or before then,
+[04:26] that will always have a very significant impact depending on how it's adopted and deployed.
+[04:33] But what I would say to Camus Point is that our ability to leverage that new technology in the
+[04:40] world of trading is entirely dependent on our data infrastructure, so it only kind of works as well
+[04:47] as what you feed it. So I think we're at an important turning point, a very exciting one,
+[04:54] but in some respects it's not that different to what's gone before.
+[05:00] If you think about how you started your career and where we are now and your statement around,
+[05:07] it's different, but it's exactly the same as I guess you could describe it as an oxymoron in some
+[05:12] regards. What is it surprised you the most as you look at what you've seen in the industry and market
+[05:18] structure throughout the course of your career? That's a tricky one because I think I've been doing
+[05:24] this now for coming up 30 years. That's a long time. So when I started in markets, we weren't even
+[05:31] using email. I guess over the course of that 30 years the constant is change and how technology
+[05:40] always finds its way into financial markets in one way or the other. And I think back to the early
+[05:47] days in FX, our order board at that time was in fact was a whiteboard with a mark pen.
+[05:56] Any of the banks listening to this will have a bit of a giggle about that because that's just not
+[06:00] obviously sustainable or scalable or but that was considered the best technology at the time.
+[06:05] So if you assume that the only certainty is change, the way that you look at technology and the way
+[06:12] you deploy it leaves you open to new ideas and new ways of thinking, especially if you've started in
+[06:20] the era of pretty close to pen and paper. You're also forgetting a very important technological
+[06:27] instrument we had in the past called the squawk box. From a squawk box perspective,
+[06:32] shouting is quicker than typing. One of the downsides of technology sometimes,
+[06:38] you change market structure to a point where it's less fun and the noise I remember when I walked into
+[06:47] the city bank trading room in 1994, the noise of that place was just exciting and fascinating
+[06:55] and bells, whistles, alarms, people shouting at each other. But obviously as technology progresses,
+[07:01] you end up losing some of that noise, which is a bit of a shame but it's a different type of fun.
+[07:06] So if we think about that noise and the sort of shouty trader and when anyone thinks about trading,
+[07:13] everyone thinks of the coats, the open outcry and the sort of shouty world, right? And today,
+[07:21] that noise still exists. It just exists in a different medium. So Karmia, when you think about
+[07:28] that different medium, how is technology really addressing the market and the moment we're in right
+[07:33] now? I'll go in a little segue because as over here in you and Kate talk about sort of how that
+[07:40] industry has changed is making me giggle because as you know yesterday, we had a Halloween event
+[07:45] in the office and I brought my two-year-old in and I dressed him up as Gordon Gecko from Wall Street,
+[07:52] which is a great costume, by the way. And he had exactly what you guys are describing. He had the
+[07:57] suspenders, hair-slicked back and we made a little dummy phone for him. And this is sort of like the
+[08:06] sign that you are getting old is I was like, how many people are actually going to know who Gordon
+[08:11] Gecko is? So I had a name tag with Gordon Gecko. And as we walked the floors, the younger generation
+[08:18] immediately like, oh my god, is he a finance bro? And I was like, well, yes, actually, I guess
+[08:23] Gordon Gecko is the original finance bro. The noise, I think to your point, Mira, comes in a very
+[08:29] different way. Yes, the trading floors are no longer noisy in an obvious way. But the really noisy
+[08:35] in terms of the input of data that we're getting going back again to that point, like how do you
+[08:39] clean up that data? How do you make sense of that data? That is what you and I, for example, spend
+[08:45] our lives doing today is how do we create the toolkits and the frameworks that help our very
+[08:50] important clients like Kate manage that noise, manage that data, manage the intricacies that come
+[08:57] with that. So like, that's how I think about noise today. And I also think that the noise comes from
+[09:03] the lack of ecosystem development. So the markets that do it really very well are the markets where
+[09:10] individual players in that ecosystem have decided and come to the conclusion that you cannot solve
+[09:17] these problems alone. And I think this is why in the world of financial markets, we see so many
+[09:21] consortiums, we see so many industry bodies. It's really important to have that. But I think we all
+[09:27] know that that plays a really important role in bringing structure. And we need that the structure
+[09:32] that we align to that we collectively agree allows us to make sense of the noise and take progress
+[09:38] in a collective fashion. That makes a lot of sense. If we could double click a little bit more into
+[09:43] the ecosystem development that you just talked about, let's use an industry as an example, right,
+[09:49] or a particular asset class like FX for an exchange. How do you take that concept of ecosystem
+[09:56] development and apply it to something like FX or how does that industry evolve? Like FX is
+[10:05] mostly today electronically traded, right? Took me through that evolution.
+[10:11] So I think one of the simple things that exists is the market participants agreeing to a technology
+[10:17] framework. We talk a lot about something called fix in trading. What is fix? It's a language with
+[10:23] standards and protocols that we have all agreed to. And we hold hands together and they exist
+[10:29] and it's pervasive through what we would call essentially public securities and public markets.
+[10:34] That is one very simple manifesto. And that is how Aladdin, for example, communicates to a network
+[10:39] of hundreds of participants, broker dealers, venues, trading platforms. But in the absence of all of
+[10:46] us agreeing to speak the same language, we either spend and waste a lot of time in translation. And
+[10:52] that is where the errors happen or we just don't progress.
+[10:57] And Kate, as a practitioner who is part of this ecosystem, what's your experience as someone who
+[11:05] sits on the trading floor and it has to make these decisions every day?
+[11:09] So I think we're talking about the noise and the shouting and stopping. What we used to call that
+[11:17] is the concept of dealers is. So from a bank or trading environment, it mattered how close you
+[11:25] were sat next to the spot desk. It mattered how close you were to other sales teams selling
+[11:33] other products, etc. So you're absorbing what's going on around you. When you
+[11:39] electrify that world, you still want to do the same thing. And to Cammy's point, that's where the
+[11:46] data collection, distribution, etc becomes so important. And speaking the same language is
+[11:54] really important, whether you're on the buy or sell side. But what I would say, I kind of thinking
+[12:00] about how we might look at that in the future is that it's also looking at data in terms of
+[12:07] what you don't know. So every time you get a dataset, you're kind of looking almost for
+[12:13] confirmation bias, if that makes sense. The interesting thing about getting your data structure
+[12:19] right is to find something that you didn't know. It could be anything, it could be day dependent,
+[12:25] it could be a particular price action, post pay rolls, it could be no end of different things.
+[12:32] But unless I suppose you're in a situation where you have a dataset that can be mined and explored
+[12:39] by someone that doesn't have bias already, I mean, after 30 years, I'm pretty sure I know my own
+[12:45] biases. But that's the really interesting next leg for how we think about pre-trade analysis,
+[12:54] whether it's FX or any other asset class, and how we do a better job of analyzing our performance
+[13:01] post trade. So proximity matters. Speaking the same language is important.
+[13:08] And we need to find out what you don't know, right? When we look today at signals for trading and
+[13:18] we've talked a lot about data and there's a lot of language processing around passing this data
+[13:25] and analyzing it in real time. You see it through information you get from Twitter or news articles.
+[13:32] I even read somewhere that hedge funds are relying on alternative data, things like satellite
+[13:37] imagery and shipping traffic. It's unfathomable, right? Like 10 years ago, we wouldn't be talking
+[13:41] about this. This is all to generate different trading ideas. So there's a plethora of data
+[13:46] that we need to make sense of. We're now doing more electronically. So people aren't really
+[13:51] speaking to each other that much. Kami, are you talked about information overload?
+[13:57] So when you look at all this data that's out there and these innovative ways to gather information,
+[14:03] to learn what you don't know, how do you actually make sense of this to enable faster and smarter
+[14:10] trading decisions? I think this ultimately boils down to do you have the right talent in the right
+[14:16] seats. And I think that is the critical unlock as we think about how we grow the space. We need
+[14:24] more data scientists. We need more researchers. We need people with the skillset that can understand
+[14:28] and parse that data. But we also need a balance. We need the 30 years of experience where you can
+[14:35] understand what that means for the output you're looking for. That's how we figure out what the
+[14:41] data means. I mean, yes, there's incredible value in alternative data sets. But if you don't know
+[14:47] what that alternative data set is supposed to tell you and you don't have an intuition about that,
+[14:52] that data is meaningless. We also need to think about why. What are you trying to achieve? I'd
+[14:59] completely agree with you in terms of the skillset for today. It's very different from what's gone
+[15:04] before. But there's a difference between that are looking for high frequency trading to generate alpha
+[15:14] different beast to a real money manager like a Viva investors that's mostly concentrating on
+[15:22] trying to get the absolute best result for their clients in that particular point in time
+[15:28] for a trade. But we need to understand what are we trying to achieve, right? Because it has to have
+[15:35] an end game, it has to have a result, it has to have a notable performance impact necessarily.
+[15:42] And I think those high frequency trading model bank or hedge fund is very different from how
+[15:50] asset managers would use data and pre and post trade analysis.
+[15:55] So I want to just touch on the talent comment that Karmia made. We're in a world now where AI is
+[16:02] increasingly embedded into our lives, let alone our day to day work. What does that mean for talent
+[16:10] and in particular for the role of a trader today? How would you think about that? Okay.
+[16:17] The application of technology generally and AI, there's two different things. So for example,
+[16:24] when I think about how the market structure has changed through time, there's definitely a set of
+[16:31] asset classes and execution protocols that lends themselves to what I would describe as low touch
+[16:38] execution. That's the rules based automated and preferably zero touch execution methodology
+[16:47] where you can use technology to get your clients a fab result, but where you also gain efficiency.
+[16:56] When you think about AI, you're thinking about, right, so how if I was a high frequency trader,
+[17:02] how would I create a price making deep learning type machine for one of the better word?
+[17:11] Or within the asset management industry, how do I use tools, AI tools, to mine research,
+[17:19] to mine data to make me more efficient to come up with better decisions? I think those are two
+[17:26] different things. And I think it's always about the so what, right? I'm very conscious that
+[17:32] there are lots of ways in which we could use AI, but we still need to think about what's the outcome
+[17:38] that we're trying to achieve. For our part, we've been using rules based execution, I think now,
+[17:45] coming up a decade. So that's not new news to us. So the next leg is what do we want to achieve
+[17:53] with AI rather than AI for the sake of AI? So Karmia, in your world and where you sit in the
+[18:00] industry and Kate describing the so what, how do you develop the right AI tools to deliver on the so what?
+[18:14] You know, what's very interesting is just even in the last five years, because we're in this moment of
+[18:20] turn of the century change with AI, the problems we need to solve have gotten so complex.
+[18:28] The person or persons that we are trying to solve for it now wears so many different hats. I would
+[18:33] say five or six years ago, the type of questions that we were fielding, the pain points we were fielding
+[18:39] were about this screen is not showing me things in these 15 different ways. And now it is a little
+[18:48] bit of that, but there is a burgeoning community of individuals saying, I need that in the form of an
+[18:54] API. I need that to speak to this. And it is less about the screens they see and more about the
+[19:00] software behind it. And I think that that means now when we think about AI, it is both how do we react
+[19:07] and how do we preempt. And one of the problems that we have is it is very hard now to curate a solution
+[19:14] that fits the needs of a client holistically, because a client now wears so many different hats.
+[19:20] Some of them want to see the data visualized in a certain way. Some of them want to see that just
+[19:25] as components. This is where the unlock I think AI will bring is incredible. The ability to be able
+[19:31] to query the database and have the output come out in the form that you want it to be.
+[19:37] Customization at scale is exactly what we talk about now all the time. And I think this is where
+[19:42] I am very excited about what AI can bring. I think the output and how people want to interact with
+[19:48] it is really important as you're saying, come here, but it's also what you put into it. Otherwise,
+[19:53] it's garbage in, garbage out. I'm going to ask you a bit of a fun question here.
+[19:56] Trading is even in our conversation just now, it's full of jargon, right? But I think we've tried to
+[20:04] stay away from it. I'm going to give you the exam question of how would you describe trading to
+[20:10] your kids? Why don't you go first, Kate?
+[20:13] That is a very good question. My son's 16 and I don't know how, but he seems to be interested in
+[20:21] this field. He's got a great role model.
+[20:24] Father, thank you very much. I'm quite keen to make sure that he understands the people side of it.
+[20:35] So we talk about trading and traders, almost as beings in their own right that it's a very
+[20:42] singular existence. And I think for me, the important thing to emphasize is that it doesn't really matter
+[20:49] which element of trading that you want to be in, whether it's by side, cell side, whatever,
+[20:55] you're actually still going to be working as part of a small team, right? So it's more about
+[21:04] having those interpersonal skills, that confidence, that communication, etc.
+[21:11] So that's one thing that I've spoken to a lot. In terms of financial markets, I guess I'm speaking
+[21:17] to him a lot about basic macroeconomics really, which is the starting point of that.
+[21:24] And really exposing my job now, yes, of course, it's about driving solutions for clients, but a lot of
+[21:30] it is being a good people manager. That's a very important part of my role. So I don't really spend
+[21:37] a lot of time on the actual trading elements, but more on, I suppose, the required softer skills around it.
+[21:47] That's actually a really interesting take, because that is not what you would expect to hear from
+[21:51] someone on the trading floor. I like that a lot. Kamiya, what would you say to your boys?
+[21:58] Okay, my boys are two and one. So apart from giving them one-liners like
+[22:04] Bylo Selahai and Money Never Sleeps, and Mami Never Sleeps either.
+[22:08] To your eldest, you should have said Blue Horse, who loves Anna Cox,
+[22:13] still, that's what you should have said. That's what he should have been wandering around saying.
+[22:18] So we've talked a lot about the past, we've talked about the present, we've talked a little bit
+[22:23] about the future as well. I would say a lot about the future. What excites you about the future the most?
+[22:31] Let's start with you, Kamiya. I'm a little bit of a credit junkie. That's where I think
+[22:36] my subject matter expertise is. It's the part of the market that I find fascinating.
+[22:41] I think it has a lot of character. That's why I love it. But one of the things that really excites
+[22:46] me is when we think about the world of trading investment asset management,
+[22:53] we follow a life cycle that has been very standard for many, many years. With AI, with technology,
+[22:59] I think the lines have already started to blur a lot. And one of the things I love spending time
+[23:06] talking about with my teams, with my colleagues, with professionals, is this concept of shift left,
+[23:11] which is the idea that you can create portfolios instantly that have a view all the way to the
+[23:19] end of the life cycle on how you can very efficiently trade it, get out the door, minimize how long
+[23:24] things stay in the blotter, essentially like turbo charge the speed at which you do this at
+[23:31] a significantly lower level of risk. That is what excites me. And I think that that's going to
+[23:37] allow people to do a little bit more of what they typically used to do and do a lot less
+[23:42] or something that they spend time on. And I do think that it will change dramatically
+[23:46] in the next two to three years. I love that shift left. How about you, Kate?
+[23:52] So I'm less excited about the speed of that process and more excited about the
+[24:00] quality of the decision making. I already think from the asset management community
+[24:06] in fixed income, especially what you actually have is a holy trinity between portfolio managers
+[24:13] analysts and traders. And when the communication between those three distinct groups worked well,
+[24:21] then you're really talking about moving the dial on customer outcomes. So I think that already exists.
+[24:27] I agree with Cammy of the pace of change this time, even though we've been here before with the
+[24:33] introduction of new tech, even though that introduction of technology is the same,
+[24:38] the rate of change could be parabolic. I think that we have to leave that as an open possibility.
+[24:45] So I think what it most excites me is that the union of those three functions become stronger,
+[24:53] much more effective and works at I suppose, as I say, not faster, but better quality outcome
+[25:01] in terms of decision making. I guess more generally for a five year time horizon,
+[25:07] I don't know why I don't know, but I do feel that we're on the precipice of quite significant
+[25:14] market structural change. We've talked about getting a data house in order in order to leverage AI.
+[25:21] There's also a regulatory construct underlying all of this. I think we see that in demand for the
+[25:28] shortening of settlement cycles, we see that in the introduction of digital assets, tokenization,
+[25:36] etc. All of that though is essentially bolted on to an infrastructure, a market structure,
+[25:45] which is older than me. Right? And when we think about financial markets and our ability to leverage
+[25:56] all of that new tech, it's only going to be as good as the strength of our foundations.
+[26:01] And I think for the first time, probably in my career, this degree of change actually will force
+[26:09] some really fundamental changes to market structure. The adoption of tech is largely optional.
+[26:17] The application of reg is never optional. So if those two things coincide, then I think that could
+[26:26] create a market structure that looks very different to the one that we've enjoyed for the last 30 years.
+[26:32] Last question for you both. What's never done for you? Go on, Kamiya. So I am from Singapore,
+[26:42] and I miss going home. I love going home. But as everyone knows, the path to getting from here
+[26:48] to Singapore is a 19 hour flight. How great would it be if I could get from here to there in a
+[26:54] significantly shorter amount of time? And yes, we've had iterations of this with the concord
+[26:59] that came and went and all of that. But it just still baffles me that where we are today,
+[27:04] that is something that takes so long. Maybe there's a trend because again,
+[27:07] I seem to be very focused on speed and efficiency. And so there is a bias here. But to me, it's what's
+[27:13] never done before is just there feels to be a bit of a lag in that where air travel has stayed
+[27:20] still for many, many years now. I like that. How about you, Kate?
+[27:25] I'm trying to think about this answer. I'm trying to sort of give you something
+[27:28] sensible. But the one that immediately springs to mind is my washing.
+[27:33] I love it. By the way, that was my second one. I'm very excited to hear what Kate has to say.
+[27:39] I agree with you on the travel, but I suppose from a market perspective, what's never done as the
+[27:45] theme of what we've really been talking about is change. It's never finishing. Every day is different.
+[27:51] You can never assume that what you did yesterday to get a great result is going to get the same result
+[27:56] today. So I think it's an ongoing process, a constant cycle of evaluation, trying to understand
+[28:06] what's today in this environment right here, right now, what's the right thing to do? So that's
+[28:11] the never done bit for me. Kate, Karmia, thank you so much for joining me today. It was an absolute
+[28:19] pleasure. This was so much fun. Thank you. Thanks very much for having me. It's been fun. Thank you.
+[28:24] Thanks for tuning into this episode. If you want to learn more or hear other episodes,
+[28:31] subscribe on Spotify or Apple. This material is provided for educational purposes only and is not
+[28:46] intended to be an offer or solicitation for any technology products or services. BlackRock's Aladdin
+[28:52] Platform is a financial technology platform designed for institutional, wholesale, qualified,
+[28:57] and professional investor or client use only and is not intended for end investor use. Certain
+[29:04] Aladdin technology products and services may not be offered by BlackRock in your local jurisdiction.

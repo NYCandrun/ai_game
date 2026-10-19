@@ -1,0 +1,170 @@
+[00:15] Good afternoon everyone. My name is Brennan Rosales and I am an AI engineering lead at BlackRock
+[00:20] I'm joined today by my friend and colleague Pedro Vicente Valdez
+[00:25] principal AI engineer
+[00:26] We're extremely excited to be here today to share with you how BlackRock is leveraging AI to really transform the investment management space
+[00:35] We're gonna be focused focusing today on the Aladdin platform and the agent architecture supporting Aladdin co-pilot
+[00:43] So let's start out with just a quick primer on what is BlackRock and what is Aladdin?
+[00:49] BlackRock is one of the world's leading asset managers with over
+[00:54] 11 trillion dollars in AUM and
+[00:57] Ultimately our main goal is to help people experience financial well-being and the Aladdin platform is key
+[01:05] To our ability to be able to deliver on that goal
+[01:08] Aladdin is a proprietary technology platform that unifies the investment management process
+[01:14] It provides asset managers with a whole portfolio solution that gives them access to both public and private markets
+[01:22] And allows them to cover the needs of both institutional and retail investors
+[01:29] This system is built by the industry for the industry
+[01:33] BlackRock is the biggest user of Aladdin, but we also sell and support
+[01:38] hundreds of clients globally across 70 countries all using the Aladdin platform
+[01:44] The Aladdin organization is made up of around 7,000 people with over 4,000 of those being engineers and these engineers build and maintain
+[01:53] They're around 100 Aladdin front-end applications that thousands of people use every day
+[01:59] Now, how do we think about approaching AI and how do we see that actually affecting or changing the way that people experience Aladdin today?
+[02:09] We see kind of three key
+[02:11] Outcomes at the black rock firm level we would really like to increase everyone's productivity
+[02:18] We would love for AI to drive alpha generation and really give people a much more personalized
+[02:25] experience with the platform and one way we're realizing this vision is through the Aladdin co-pilot initiative
+[02:32] The Aladdin co-pilot
+[02:34] application is currently embedded across all of those hundred front-end applications that I referenced earlier and this co-pilot
+[02:41] acts as the connective tissue across the Aladdin platform
+[02:44] Proactively surfacing relevant content for you at the right moment and fostering productivity at each step along the way
+[02:52] We like to think about kind of three core value drivers within the scope of Aladdin co-pilot
+[02:58] The first is that we want every user using the Aladdin software to become an Aladdin expert and we can do that by enabling a much more
+[03:07] intuitive user experience
+[03:09] The second is really has to do with increasing the personalization and customization of this platform and through that
+[03:16] Well, our users will be able to unlock new efficiencies through highly configurable experiences
+[03:22] And the third one is really just to democratize access to all of these insights
+[03:27] If our users if it is much easier for our users to find the data
+[03:31] The data points that they need then they will at the end of the day be much more enabled to make a lot better decisions
+[03:39] So here is a high-level overview of the actual architecture supporting Aladdin co-pilot today
+[03:45] I'll take you through kind of the life cycle of a user query
+[03:48] But before I dive into that I want to point your attention to the top right here in this component we call a plug-in registry
+[03:54] I
+[03:55] referenced this earlier, but there are
+[03:58] Say 50 60 Aladdin engineering teams that cover specific domains throughout the platform
+[04:04] You can think of an example of one of these teams
+[04:06] Maybe the trading team and they own all of the services that serve trading data to all Aladdin applications
+[04:14] Pedro and I are not experts in these
+[04:18] You know business financial domains our job is to make it as easy as possible for these engineers to plug their
+[04:25] functionality that they own into this system and we do that through this plug-in registry
+[04:31] Today we allow these development teams two ways to onboard the first we we come to define a tool as
+[04:39] Kind of mapping one-to-one to an existing Aladdin API already out in production
+[04:45] Kind of the second onboarding path that we give to these development teams for very
+[04:49] Complex workflows is the ability to spin up a custom agent and also plug that into the system
+[04:55] I think one important call out here
+[04:57] We kind of started designing this thing to two and a half years ago and back then we needed to figure out kind of a standardized
+[05:04] Agentic communication protocol and we you know we came up with a very slim very
+[05:11] Specific version of that for Aladdin
+[05:12] But as new more established protocols like lane chains agent protocol and a to a come out
+[05:18] We're kind of actively evaluating those solutions
+[05:21] So now I can point your attention to the left side of the screen
+[05:25] Hopefully I'm not in the way
+[05:27] So we're gonna start out with the query. What is my exposure to aerospace in portfolio one?
+[05:32] At this point in time when the user submits their query we have a lot of very useful and relevant context
+[05:40] Some of those could be which Aladdin application they're asking this question from
+[05:45] What they actually have up on the screen what portfolios what assets what widgets are they actually looking at at that point in time?
+[05:51] And in addition to that there's also kind of this set of predefined global
+[05:56] Settings throughout these Aladdin apps and ideally we are respecting those
+[06:01] Preferences as we make all these calls on behalf of the user
+[06:05] So once a query gets submitted we enter our orchestration graph
+[06:09] From day one it's been built using using lane chain. So the first node in that graph is an input guard real node
+[06:16] And it covers a lot of the the needs for our responsible AI moderation at this point in the graph. We're trying to
+[06:25] Find off topic and toxic content and and deal with them appropriately
+[06:30] We would also at this point in time like to identify all of the relevant PII and make sure that we're handling that as carefully as possible
+[06:38] So once we get to that node we go into this filtering and access control node
+[06:42] And at that that's the point in time where we have this you know set of agents and tools a couple thousands agents and tools that are registered in the plug-in registry
+[06:51] When teams onboard this this functionality to the registry they have complete control over which environment
+[06:58] Environments this plug-in is enabled in which user groups have access to this and even which which Aladdin apps can even access these plugins
+[07:06] Within this node we also it's important for us to try our best to
+[07:11] Decrease the kind of searchable universe of all these plugins because once we get to our planning step
+[07:16] You know if we're sending more than 4050 tools
+[07:20] We probably won't have that good of a performance
+[07:22] So we leave that filtering and access control node with some set of say 20 to 30 30 tools and agents and we enter our orchestration node
+[07:31] There we're very reliant on GPT 4
+[07:34] Function calling today. We essentially just iterate over a planning and action node
+[07:39] We go through that as many times as possible and at some point
+[07:42] You know GPT 4 says hey you got the answer go give it back to the user or you know
+[07:46] I'm unable to find this answer
+[07:48] So we get that final answer we pass back out to our output guard rail nodes
+[07:53] Try to detect hallucinations as best as we can and then we end up on the left side and
+[07:58] And tell the user that their exposure to the aerospace and defense sector in this portfolio is 5%
+[08:05] So that's a bit of high-level
+[08:07] Information on the the architecture of the system. I'm gonna pass it to Pedro here to talk about how we think about evaluating the system
+[08:14] Yeah, so I think like one one thing
+[08:18] It's obvious from the presentations that we've been seeing like we're all using supervisor
+[08:21] I think like I've seen very little agent to agent autonomous
+[08:26] Conversations and we are just one more of those presentations using supervisor why because it's very easy to
+[08:31] Built it's very easy to release is very easy to test. So hopefully hopefully next year
+[08:36] We are here doing autonomous agents, but how do we evaluate the system that we just presented?
+[08:41] So Brendan walking through the lifecycle of a query. There's many places where you can
+[08:48] Make a wrong decision it can be in the initial moderation and the card rails the individual components of the card rails on the
+[08:55] Filtering that we'd not reduce the universe correctly that we did the orchestration took a wrong turn at some point
+[09:01] And all the way back to the hallucination block something that was not actually hallucination. So so much so much
+[09:07] So many systems in place. So how exactly do we gain confidence this this all adding a pilot is a ploy and all our clients
+[09:14] So this is actually production
+[09:18] Orchestration built on land-graph like like Brendan said
+[09:21] So this is just an example of a land-smith's trace just for one single tool call right like we go to input guard rails filtering planning
+[09:29] The actual tool calling communicating with the other agents coming back
+[09:33] Planning let's see if we answer the question some output guard rails custom to our domain and hallucination checks
+[09:41] We first start with system prompts and I know we've been hearing about evaluation. We're gonna keep telling you
+[09:48] I think the same lessons are learned across all of us
+[09:51] I think it's very evident that similar to having traditional coding you are doing test-driven development
+[09:56] It's no different in the world of LMS you have to do evaluation driven development
+[10:02] So one of the things where we start is the LMS. Where are we calling LMS? We have a system prompt
+[10:08] Why are we writing what we are writing in that system prompt to begin with?
+[10:11] So what we do is we are in finance after all so we are very paranoid about telling the user the wrong thing
+[10:19] So we toss
+[10:20] Start by testing every single
+[10:23] behavior that we
+[10:25] Are intending by writing that in the system prompt. So for example if I write you're a lot in copilot
+[10:30] You must never provide investment advice. What is investment advice?
+[10:33] I need to generate a lot of synthetic data. I need to generate a lot of data with the subject matter experts
+[10:37] I need to call it all of that and build an evaluation pilot and make sure that we are never gonna give investment advice
+[10:44] And again, this is a very dummy example, but we do this for every system problem
+[10:48] We do this for every intended behavior we code into our system prompts
+[10:52] Paranoid yes, but we don't want to have a Chevrolet or something right so
+[10:57] For that we have a lot of LMS as a judge to about to specifically
+[11:02] Evaluate that we were doing the right thing so we do this for every every system prompt that we have at the end of the day
+[11:07] We have a report this is very important part of our CI C. I. C. V. pipelines. It runs every day
+[11:12] It runs on every PR why because we are a bunch of developers every day. We are improving the system every day
+[11:18] We are releasing to our development environment and you want to know if you're breaking stuff
+[11:23] You want to know if you're reducing the performance of the system
+[11:26] I know it's very easy to chase your own tail with LLM. So this is exactly what lets us move
+[11:32] Really fast in the area now. This is only the system prompts
+[11:36] When we talk about the orchestration agent to agent communication agent to API
+[11:40] How do we make sure that we fill out the right parameters into those API calls that we send the right phrasing to the other agents in
+[11:48] That communication then is when we give this end to end
+[11:52] testing capability to the all the Aladdin developers and engineers that we have so we start with the configuration layer and
+[11:59] This is where we allow developers to basically configure the testing scenario
+[12:04] We have a lot of applications like Brennan said what a lot of application are you in?
+[12:08] What is the user seeing in that screen context? What portfolios are loaded? What assets are loaded?
+[12:13] What widgets are enabled then in the application context they often have some
+[12:18] Settings in the system that they one respected we need to make sure that we take those into account during the planning phase when calling those API's
+[12:26] And of course we allow them to customize multi-turn scenarios for that testing like for example
+[12:31] Here's a little bit of history the query and the final response
+[12:35] So this is for the configuration layer the query the response the chat history and in the next step
+[12:41] We asked them to provide us the solution layer now for every plugin that comes into a system
+[12:46] We asked them for ground truth. That's basically how me and Brennan are able to guarantee that Aladdin compiler is going to be
+[12:51] Performing then be able to route in whatever scenario and whatever context
+[12:55] So we are very dependent on that ground truth data and in the solution layer is where they give us
+[13:01] How are we supposed to solve the user query that you're giving us in that ground truth?
+[13:04] It might take separate threats it might take separate
+[13:08] Unrelated threats so for example in threat one I need to get an exposure in threat to any to get how much can I actually let's say by
+[13:16] I want to know how much of black rock I can buy in portfolio X
+[13:19] I need to know how many shares I can buy to be compliant and that I need to know how much cash I
+[13:24] Have in that particular portfolio. So this
+[13:28] Structure allows us to test those interactions multi step multi turn and have some confidence in our system that we're doing the right thing
+[13:38] and
+[13:40] There's like a little apple account is being used to sign into a new device thing here
+[13:47] So it's not letting me change but anyway
+[13:51] The next slide is basically just a lesson like this and to end about we run this every day every night to make sure we're routing correctly
+[13:59] To make sure that we are
+[14:01] Solving the queries correctly we tell the teams. Hey, this is how we're performing for you
+[14:06] This is how we're performing for you. So we're we're working in a federating the agent development. Okay, they I think they fix it. Yes
+[14:13] so
+[14:14] All of this is just to say as many of us have been saying that evaluation driven development is very important because
+[14:20] Especially when you're trying to federate in large enterprise. Otherwise, hey my individual queries not working
+[14:26] Hey, this other queries not working unit a statistical way of saying that your
+[14:30] System is working is improving is not deteriorating so that you can continue to build the scalable products. Otherwise, it's it's very hard
+[14:39] so
+[14:40] Again, I think like the biggest lesson I have as an engineering lead and in the organization is that
+[14:45] Having this as part of your having this end-to-end evaluation as part of your CICD processes is very important for you to know
+[14:52] When you're improving the system
+[14:54] That being said, yeah, thank you so much

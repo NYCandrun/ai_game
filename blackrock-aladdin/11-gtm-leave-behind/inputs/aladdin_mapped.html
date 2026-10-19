@@ -1,0 +1,1192 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Aladdin, Mapped</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800&family=Source+Sans+3:ital,wght@0,400;0,600;0,700;1,400&family=JetBrains+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: three sheets (what it is and how it's built, what using it is like, for engineers) plus sources.
+   Grammar, used the same way everywhere: hue = business area (blue front office, orange oversight, green operations
+   and accounting, slate platform, violet Copilot); solid outline = shown in sources; dashed = our inference;
+   hatched = announced, not live; circled numbers = steps of the main trade flow. */
+:root {
+  --bg: #eef0f2; --sheet: #ffffff; --ink: #16202b; --muted: #5b6672; --rule: #d5dadf; --soft: #f4f6f8; --hatch: #c9d0d8;
+  --front: #2563a6; --front-bg: #e7eff8;
+  --over: #b35c1e;  --over-bg: #fbeee4;
+  --ops: #2f7d57;   --ops-bg: #e5f3ec;
+  --plat: #5d6470;  --plat-bg: #eceef1;
+  --cop: #7b3fbf;   --cop-bg: #f1eafb;
+  --warn: #8a5f00;  --bad: #b3372b;
+  --m-alpha: #8a95a3; --m-beta: #5b6573; --m-stable: #252c36; --m-sunset: #c0574b;
+  --display: "Archivo", "Helvetica Neue", Arial, sans-serif;
+  --body: "Source Sans 3", "Segoe UI", system-ui, sans-serif;
+  --mono: "JetBrains Mono", ui-monospace, Menlo, Consolas, monospace;
+}
+@media (prefers-color-scheme: dark) { :root:not([data-theme="light"]) {
+  --bg: #0f141a; --sheet: #171e26; --ink: #e4e9ee; --muted: #9aa6b2; --rule: #2c3640; --soft: #1d252e; --hatch: #3a4550;
+  --front: #7fb0ea; --front-bg: #1b2a3b; --over: #ee9c62; --over-bg: #36251a; --ops: #74c79c; --ops-bg: #18302a;
+  --plat: #aab3bf; --plat-bg: #232b34; --cop: #c4a2f0; --cop-bg: #2b2140; --warn: #e2b54a; --bad: #f08a7e;
+  --m-alpha: #7d8896; --m-beta: #a9b3bf; --m-stable: #e4e9ee; --m-sunset: #e08a7f; color-scheme: dark } }
+:root[data-theme="dark"] {
+  --bg: #0f141a; --sheet: #171e26; --ink: #e4e9ee; --muted: #9aa6b2; --rule: #2c3640; --soft: #1d252e; --hatch: #3a4550;
+  --front: #7fb0ea; --front-bg: #1b2a3b; --over: #ee9c62; --over-bg: #36251a; --ops: #74c79c; --ops-bg: #18302a;
+  --plat: #aab3bf; --plat-bg: #232b34; --cop: #c4a2f0; --cop-bg: #2b2140; --warn: #e2b54a; --bad: #f08a7e;
+  --m-alpha: #7d8896; --m-beta: #a9b3bf; --m-stable: #e4e9ee; --m-sunset: #e08a7f; color-scheme: dark }
+
+* { box-sizing: border-box }
+body { background: var(--bg); color: var(--ink); font-family: var(--body); font-size: 15px; line-height: 1.45;
+  padding-left: max(16px, env(safe-area-inset-left, 0px)); padding-right: max(16px, env(safe-area-inset-right, 0px)); padding-block: 28px 48px }
+a { color: var(--ink); text-decoration-color: var(--muted); text-underline-offset: 2px }
+a:hover { text-decoration-color: var(--ink) }
+a:focus-visible, button:focus-visible { outline: 2px solid var(--ink); outline-offset: 2px; border-radius: 2px }
+p { margin: 0 }
+h1, h2, h3, h4 { font-family: var(--display); margin: 0; text-wrap: balance; letter-spacing: -.01em }
+h1 { font-size: clamp(28px, 4.4vw, 42px); font-weight: 800; line-height: 1.05 }
+h2 { font-size: clamp(19px, 2.4vw, 23px); font-weight: 700 }
+h3 { font-size: 15px; font-weight: 700 }
+h4 { font-size: 13.5px; font-weight: 700 }
+.wrap { max-width: 1140px; margin: 0 auto; display: grid; grid-template-columns: minmax(0, 1fr); gap: 28px }
+.sheet { background: var(--sheet); border: 1px solid var(--rule); border-radius: 6px; padding: clamp(18px, 3.2vw, 40px);
+  display: grid; grid-template-columns: minmax(0, 1fr); gap: 34px; min-width: 0 }
+.sheet-head { display: grid; grid-template-columns: minmax(0, 1fr) auto; align-items: end; gap: 10px 32px; border-bottom: 2px solid var(--ink); padding-bottom: 14px }
+.sec { display: grid; grid-template-columns: minmax(0, 1fr); gap: 12px; min-width: 0 }
+.sec-head { display: grid; gap: 4px; max-width: 78ch }
+.sec-head p { color: var(--muted) }
+.folio { font-family: var(--mono); font-size: 12px; color: var(--muted); letter-spacing: .04em }
+.lede { max-width: 70ch; margin-top: 6px; color: var(--muted); font-size: 16px }
+.eyebrow { font-family: var(--display); font-size: 11.5px; font-weight: 700; letter-spacing: .12em; text-transform: uppercase; color: var(--muted) }
+.caption { font-size: 12.5px; color: var(--muted); max-width: 100ch }
+.mono, code { font-family: var(--mono); font-size: 11.5px }
+.code { font-family: var(--mono); font-size: 10.5px; color: var(--muted); overflow-wrap: anywhere }
+abbr[title] { text-decoration: underline dotted var(--muted); text-underline-offset: 2px; cursor: help }
+sup.r { font-size: 9.5px; line-height: 0; vertical-align: super; margin-left: 1px }
+sup.r a { font-family: var(--mono); color: var(--muted); text-decoration: none; padding: 0 1px }
+sup.r a:hover { color: var(--ink); text-decoration: underline }
+
+/* legend */
+.legend { display: flex; flex-wrap: wrap; justify-content: flex-end; gap: 6px 14px; font-size: 12.5px; color: var(--muted); align-items: center }
+.legend i { display: inline-block; width: 22px; height: 12px; border-radius: 2px; vertical-align: -1px; margin-right: 5px }
+.k-seen { border: 1.5px solid var(--ink) } .k-inf { border: 1.5px dashed var(--ink) }
+.k-plan { border: 1.5px solid var(--ink); background-image: repeating-linear-gradient(135deg, var(--hatch) 0 2px, transparent 2px 6px) }
+.inf { border-style: dashed !important }
+.planned { background-image: repeating-linear-gradient(135deg, var(--hatch) 0 2px, transparent 2px 7px) }
+.tag-inf { font-size: 11px; color: var(--muted); font-style: italic }
+.hue-front { --h: var(--front); --hb: var(--front-bg) } .hue-over { --h: var(--over); --hb: var(--over-bg) }
+.hue-ops { --h: var(--ops); --hb: var(--ops-bg) } .hue-plat { --h: var(--plat); --hb: var(--plat-bg) } .hue-cop { --h: var(--cop); --hb: var(--cop-bg) }
+.n { display: inline-grid; place-items: center; min-width: 19px; height: 19px; padding: 0 4px; border-radius: 10px; background: var(--ink); color: var(--sheet); font-family: var(--mono); font-size: 10.5px; font-weight: 500; vertical-align: 1px }
+
+/* ---------- 30-second view ---------- */
+.tldr { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 0; border: 1px solid var(--rule); border-radius: 6px }
+.tldr > div { padding: 14px 16px; display: grid; gap: 6px; align-content: start; min-width: 0 }
+.tldr > div + div { border-left: 1px solid var(--rule) }
+.tldr p { font-size: 14.5px }
+.tldr > .scale { display: flex; border-left: 0; flex-wrap: wrap; gap: 8px 28px; padding: 12px 16px; border-top: 1px solid var(--rule); grid-column: 1 / -1; background: var(--soft); border-radius: 0 0 6px 6px }
+.scale div { display: grid; gap: 0 }
+.scale b { font-family: var(--display); font-size: 22px; font-weight: 800; font-variant-numeric: tabular-nums; line-height: 1.1 }
+.scale span { font-size: 12.5px; color: var(--muted) }
+
+/* ---------- swimlane ---------- */
+.status { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; font-size: 12.5px }
+.status .st { border: 1px solid var(--rule); border-radius: 999px; padding: 1px 10px; background: var(--soft); white-space: nowrap }
+.status .ar { color: var(--muted) }
+.diagram { overflow-x: auto; border: 1px solid var(--rule); border-radius: 6px; background: var(--soft); padding: 10px }
+.diagram svg { display: block; width: 100%; height: auto; min-width: 900px }
+svg text { fill: var(--ink); font-family: var(--body); font-size: 12px }
+svg .t { font-family: var(--display); font-weight: 700; font-size: 12.5px }
+svg .s { fill: var(--muted); font-size: 11px }
+svg .cap { fill: var(--muted); font-family: var(--display); font-size: 10.5px; font-weight: 700; letter-spacing: .1em }
+svg .tc { text-anchor: middle } svg .te { text-anchor: end }
+svg .lane-a { fill: var(--sheet) } svg .lane-b { fill: var(--soft) }
+svg .bx { stroke-width: 1.4 }
+svg .bx.front { fill: var(--front-bg); stroke: var(--front) } svg .bx.over { fill: var(--over-bg); stroke: var(--over) }
+svg .bx.ops { fill: var(--ops-bg); stroke: var(--ops) }
+svg .pill { fill: var(--sheet); stroke: var(--ink); stroke-width: 1 } svg .pill.inf { stroke-dasharray: 3 2.5 }
+svg .pt { font-size: 10.5px }
+svg .arr { stroke: var(--ink); stroke-width: 1.5; fill: none } svg .arr.bad { stroke: var(--bad) }
+svg .hd { fill: var(--ink) } svg .hd-bad { fill: var(--bad) }
+svg .booked { stroke: var(--ink); stroke-width: 3 }
+svg .bad-t { fill: var(--bad); font-size: 10.5px; font-weight: 600 }
+svg .sep { stroke: var(--rule); stroke-width: 1 }
+.lanes-phone { display: none; list-style: none; margin: 0; padding: 0; gap: 14px }
+.lanes-phone h4 { font-size: 12px; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); margin-top: 4px }
+.lanes-phone ol { list-style: none; margin: 6px 0 0; padding: 0; display: grid; gap: 6px }
+.lanes-phone li li { display: grid; grid-template-columns: 26px minmax(0, 1fr); gap: 8px; border-left: 4px solid var(--h); background: var(--hb); border-radius: 4px; padding: 6px 8px; font-size: 13.5px }
+.lanes-phone .who { font-size: 11.5px; color: var(--muted) }
+
+/* ---------- architecture ---------- */
+.arch { display: grid; grid-template-columns: minmax(0, 1fr) 220px; gap: 12px; align-items: stretch }
+.arch-main { display: grid; gap: 0; min-width: 0 }
+.band { border: 1.5px solid var(--rule); border-radius: 6px; padding: 10px 12px; background: var(--sheet); display: grid; gap: 8px; min-width: 0 }
+.band-h { display: flex; flex-wrap: wrap; gap: 4px 10px; align-items: baseline }
+.band-h b { font-family: var(--display); font-size: 13.5px }
+.band-h span { font-size: 12.5px; color: var(--muted) }
+.down { height: 18px; position: relative }
+.down::before { content: ""; position: absolute; left: 50%; top: 2px; bottom: 6px; width: 1.5px; background: var(--ink) }
+.down::after { content: ""; position: absolute; left: calc(50% - 4.5px); bottom: 1px; border: 5px solid transparent; border-top: 6px solid var(--ink); border-bottom: 0 }
+.tiles { display: flex; flex-wrap: wrap; gap: 6px }
+.tile { border: 1.5px solid var(--ink); border-radius: 4px; padding: 4px 9px; font-size: 12.5px; line-height: 1.25; background-color: var(--sheet); min-width: 0 }
+.tile b { display: block; font-size: 13px }
+.tile small { color: var(--muted); font-size: 11.5px }
+.tile.more { border-color: var(--rule); color: var(--muted); display: grid; place-items: center }
+.band.cop { border-color: var(--cop); background: var(--cop-bg) }
+.band.cop .band-h b { color: var(--cop) }
+.band.api { border-color: var(--plat); background: var(--plat-bg) }
+.groups { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 8px }
+.grp { border: 1.5px dashed var(--h); border-radius: 6px; padding: 8px; display: grid; gap: 5px; align-content: start; min-width: 0 }
+.grp h4 { font-size: 11.5px; letter-spacing: .08em; text-transform: uppercase; color: var(--h) }
+.chip-d { border: 1.5px solid var(--h); background: var(--hb); border-radius: 4px; padding: 2px 7px; font-size: 12.5px }
+.dbs { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 8px }
+.db { display: grid; justify-items: center; gap: 2px; text-align: center; font-size: 12.5px; min-width: 0 }
+.db svg { width: 46px; height: 36px }
+.db svg .cyl { fill: var(--sheet); stroke: var(--ink); stroke-width: 1.4 }
+.db small { color: var(--muted); font-size: 11.5px; line-height: 1.25 }
+.runs { display: flex; flex-wrap: wrap; gap: 6px; align-items: stretch }
+.runs .tile { display: grid; align-content: center }
+.studio { border: 1.5px solid var(--plat); border-radius: 6px; background: var(--plat-bg); padding: 10px; display: grid; gap: 8px; align-content: start; min-width: 0 }
+.studio .tile { border-color: var(--plat) }
+.studio .link { font-size: 11.5px; color: var(--muted); display: block }
+.studio .link::before { content: "↔ "; color: var(--ink) }
+
+
+/* architecture map (desktop) */
+.diagram.arch-desk svg { min-width: 0 }
+svg.map text { font-size: 13px }
+svg.map .s { font-size: 12px }
+svg.map .cap { font-size: 11px }
+svg .tt { font-family: var(--display); font-weight: 700; font-size: 13.5px }
+svg .ic { fill: none; stroke: var(--ink); stroke-width: 1.5 }
+svg .ln { stroke: var(--muted); stroke-width: 1.4; fill: none }
+svg .band { fill: var(--sheet); stroke: var(--rule); stroke-width: 1.2 }
+svg .tile { fill: var(--sheet); stroke: var(--ink); stroke-width: 1.4 }
+svg .tile.more { stroke: var(--rule) }
+svg .tile.inf { stroke-dasharray: 5 4 }
+svg .tile.hatch { fill: url(#hatch) }
+svg .cop { fill: var(--cop-bg); stroke: var(--cop); stroke-width: 1.6 }
+svg .api { fill: var(--plat-bg); stroke: var(--plat); stroke-width: 1.6 }
+svg .studio { fill: var(--plat-bg); stroke: var(--plat); stroke-width: 1.6 }
+svg .grp { fill: none; stroke-width: 1.5; stroke-dasharray: 6 4 }
+svg .grp.front { stroke: var(--front) } svg .grp.over { stroke: var(--over) } svg .grp.plat { stroke: var(--plat) } svg .grp.ops { stroke: var(--ops) }
+svg .chip { stroke-width: 1.3 }
+svg .chip.front { fill: var(--front-bg); stroke: var(--front) } svg .chip.over { fill: var(--over-bg); stroke: var(--over) }
+svg .chip.plat { fill: var(--plat-bg); stroke: var(--plat) } svg .chip.ops { fill: var(--ops-bg); stroke: var(--ops) }
+svg .stp { fill: var(--ink) } svg .stt { fill: var(--sheet); font-family: var(--mono); font-size: 10.5px }
+svg .cyl { fill: var(--sheet); stroke: var(--ink); stroke-width: 1.4 }
+svg .ctrl { stroke: var(--ink); stroke-width: 3 }
+.arch { display: none }
+@media (max-width: 720px) { .arch-desk { display: none } .arch { display: grid } }
+/* ---------- two books (grid areas; Trade forks to IBOR and ABOR, NAV only from ABOR) ---------- */
+.books2 { display: grid; grid-template-columns: minmax(0, 1fr) 28px minmax(0, 1fr) 46px minmax(0, 1.2fr) 28px minmax(0, 1fr);
+  grid-template-areas: "ord a1 trd fork ibor ibor ibor" "ord a1 trd fork rec rec rec" "ord a1 trd fork abor a3 nav"; row-gap: 6px; align-items: center }
+.books2 .ord { grid-area: ord } .books2 .a1 { grid-area: a1 } .books2 .trd { grid-area: trd } .books2 .fk { grid-area: fork; align-self: stretch }
+.books2 .ibor { grid-area: ibor } .books2 .rec { grid-area: rec } .books2 .abor { grid-area: abor } .books2 .a3 { grid-area: a3 } .books2 .nav { grid-area: nav }
+.books2 .fk svg { width: 100%; height: 100%; display: block }
+.books2 .fk path { fill: none; stroke: var(--ink); stroke-width: 1.6 }
+.books2 .fk .hd { fill: var(--ink) }
+.rec { font-size: 11.5px; color: var(--muted); display: flex; align-items: center; gap: 6px; padding-left: 14px }
+.rec::before { content: "↕"; color: var(--ink); font-size: 14px }
+.rec span { border: 1.5px dashed var(--ink); border-radius: 4px; padding: 1px 7px }
+.splits { display: none; font-size: 12px; color: var(--muted); grid-area: fork }
+@media (max-width: 860px) {
+  .books2 { grid-template-columns: minmax(0, 1fr); grid-template-areas: "ord" "a1" "trd" "fork" "ibor" "rec" "abor" "a3" "nav" }
+  .books2 .a1, .books2 .a3 { transform: rotate(90deg); height: 24px; line-height: 24px; text-align: center }
+  .books2 .fk { display: none } .splits { display: block; text-align: center }
+  .books2 .ibor, .books2 .abor { margin-left: 18px } .rec { margin-left: 18px }
+}
+/* ---------- two books ---------- */
+.books { display: grid; grid-template-columns: minmax(0, 1fr) 30px minmax(0, 1fr) 30px minmax(0, 1.25fr) 30px minmax(0, 1fr); gap: 0; align-items: center }
+.bk { border: 1.5px solid var(--h, var(--ink)); background: var(--hb, var(--sheet)); border-radius: 6px; padding: 8px 10px; display: grid; gap: 3px; min-width: 0 }
+.bk p { font-size: 12.5px; color: var(--muted) }
+.bk h4 { display: flex; gap: 6px; align-items: center }
+.arw { text-align: center; font-size: 18px; color: var(--ink) }
+.fork { display: grid; gap: 10px }
+.fork-note { font-size: 11.5px; color: var(--muted); border: 1.5px dashed var(--ink); border-radius: 4px; padding: 3px 7px; justify-self: center }
+.masters, .controls { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 8px }
+.masters { grid-template-columns: repeat(2, minmax(0, 1fr)) }
+.lbl-row { font-size: 11.5px; color: var(--muted); display: flex; gap: 8px; align-items: center }
+.lbl-row::after { content: ""; flex: 1; height: 1px; background: var(--rule) }
+
+/* ---------- family + timeline + glossary ---------- */
+.fam { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px }
+.fam > div { display: grid; gap: 8px; align-content: start; min-width: 0 }
+.fam dl { margin: 0; display: grid; gap: 6px }
+.fam dt { font-weight: 700; font-size: 13.5px }
+.fam dd { margin: 0; font-size: 12.5px; color: var(--muted) }
+.fam .box { border: 1.5px solid var(--ink); border-radius: 6px; padding: 10px 12px; display: grid; gap: 8px }
+.tracks { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 24px }
+.tl { list-style: none; margin: 0; padding: 0; display: grid }
+.tl li { display: grid; grid-template-columns: 74px 16px minmax(0, 1fr); gap: 8px; font-size: 13px; min-height: 36px }
+.tl .when { font-family: var(--mono); font-size: 11px; color: var(--muted); text-align: right; padding-top: 2px }
+.tl .dot { position: relative }
+.tl .dot::before { content: ""; position: absolute; left: 7px; top: 0; bottom: 0; width: 2px; background: var(--rule) }
+.tl .dot::after { content: ""; position: absolute; left: 1px; top: 4px; width: 14px; height: 14px; border-radius: 50%; background: var(--sheet); border: 2px solid var(--ink) }
+.tl li:last-child .dot::before { bottom: auto; height: 10px }
+.tl li.plan .dot::after { background-image: repeating-linear-gradient(135deg, var(--hatch) 0 2px, transparent 2px 5px) }
+.gloss { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 10px 24px; margin: 0 }
+.gloss div { display: grid; gap: 1px; font-size: 13px; min-width: 0 }
+.gloss dt { font-weight: 700 }
+.gloss dd { margin: 0; color: var(--muted) }
+
+/* ---------- personas ---------- */
+.personas { display: grid; grid-template-columns: repeat(7, minmax(0, 1fr)); gap: 8px }
+.persona { border-top: 4px solid var(--h); background: var(--hb); border-radius: 4px; padding: 8px 9px; display: grid; gap: 4px; align-content: start; font-size: 12.5px; min-width: 0 }
+.persona b { font-family: var(--display); font-size: 13px }
+.persona .opens { font-size: 11.5px }
+.persona .owns { color: var(--muted) }
+
+/* ---------- mini app frames (day in the life) ---------- */
+.day { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 0; align-items: stretch }
+.step-col { display: grid; grid-template-rows: auto 1fr auto; gap: 6px; min-width: 0; padding-right: 22px; position: relative }
+.step-col:not(:last-child)::after { content: "→"; position: absolute; right: 4px; top: 46%; font-size: 18px }
+.time { font-family: var(--mono); font-size: 11px; color: var(--muted) }
+.frame { border: 1.5px solid var(--ink); border-radius: 6px; overflow: hidden; background: var(--sheet); display: grid; grid-template-rows: auto auto 1fr; font-size: 11.5px; min-width: 0 }
+.frame.inf { border-style: dashed }
+.fbar { display: flex; align-items: center; gap: 5px; padding: 4px 6px; background: var(--soft); border-bottom: 1px solid var(--rule); min-width: 0 }
+.tb { width: 12px; height: 12px; border-radius: 3px; background: var(--ink); flex: none }
+.cop-btn { width: 14px; height: 14px; border-radius: 50%; background: var(--cop); flex: none; display: inline-grid; place-items: center; color: var(--sheet); font-size: 9px; font-weight: 700 }
+.fname { font-weight: 700; font-size: 11.5px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; flex: 1; min-width: 0 }
+.fctx { padding: 4px 6px; border-bottom: 1px solid var(--rule); display: flex; gap: 4px; flex-wrap: wrap }
+.pchip { border: 1.5px solid var(--ink); border-radius: 999px; padding: 0 7px; font-size: 10.5px; font-weight: 600 }
+.fbody { padding: 7px; display: grid; gap: 5px; align-content: start }
+.alert { border-left: 3px solid var(--warn); padding: 3px 6px; background: var(--soft) }
+.sbar { display: grid; grid-template-columns: 62px 1fr 36px; gap: 4px; align-items: center; font-variant-numeric: tabular-nums; color: var(--muted) }
+.sbar i { display: block; height: 6px; border-radius: 2px; background: var(--ink) }
+.sbar i.mod { background: var(--muted) }
+.q { background: var(--soft); border: 1px solid var(--rule); border-radius: 6px; padding: 4px 6px; justify-self: end; max-width: 95% }
+.ans { background: var(--cop-bg); border: 1px solid var(--cop); border-radius: 6px; padding: 4px 6px; max-width: 95%; display: grid; gap: 2px }
+.ostatus { display: flex; flex-wrap: wrap; gap: 3px; align-items: center; font-size: 10.5px }
+.ostatus span { border: 1px solid var(--rule); border-radius: 999px; padding: 0 6px }
+.ostatus span.cur { border-color: var(--ink); font-weight: 700 }
+.res { font-size: 11px }
+.res.ok::before { content: "✓ "; font-weight: 700 }
+.res.warn { color: var(--warn) } .res.warn::before { content: "⚠ " }
+.step-note { font-size: 12px; color: var(--muted) }
+
+/* ---------- Explore wireframe ---------- */
+.inferred-ui { border-style: dashed !important }
+@media (max-width: 640px) {
+  .copilot.sheetish { border: 2px dashed var(--cop) !important; border-radius: 14px 14px 0 0; margin: 0 6px; box-shadow: 0 -6px 16px rgba(0,0,0,.12) }
+  .copilot.sheetish::before { content: "opens from ✦ as a panel"; font-size: 10.5px; color: var(--muted) }
+}
+.ex-grid { display: grid; grid-template-columns: minmax(0, 1.6fr) minmax(0, 1fr); gap: 26px; align-items: start }
+.window { border: 1.5px solid var(--ink); border-radius: 6px; overflow: hidden; background: var(--sheet); font-size: 12.5px; min-width: 0 }
+.win-bar { display: flex; align-items: center; gap: 8px; padding: 6px 10px; background: var(--soft); border-bottom: 1px solid var(--rule); min-width: 0 }
+.url { font-family: var(--mono); font-size: 11px; color: var(--muted); background: var(--sheet); border: 1px solid var(--rule); border-radius: 3px; padding: 2px 8px; flex: 1; min-width: 0; overflow: hidden; text-overflow: ellipsis; white-space: nowrap }
+.win-body { display: grid; grid-template-columns: minmax(0, 1fr) 210px; min-height: 300px }
+.main-pane { padding: 10px; display: grid; gap: 8px; align-content: start; min-width: 0; position: relative }
+.ctx { display: flex; flex-wrap: wrap; gap: 5px; align-items: center; font-size: 11.5px }
+.sel { border: 1px solid var(--rule); border-radius: 3px; padding: 1px 7px; background: var(--soft); white-space: nowrap }
+.sel.on { border: 1.5px solid var(--ink); font-weight: 600; background: var(--sheet) }
+.tabs { display: flex; gap: 2px; border-bottom: 1px solid var(--rule); overflow-x: auto; align-items: center }
+.tabs span { padding: 4px 9px; font-size: 11.5px; color: var(--muted); white-space: nowrap }
+.tabs span.on { color: var(--ink); font-weight: 700; border-bottom: 2px solid var(--ink) }
+.widgets { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 8px }
+.widget { border: 1px solid var(--rule); border-radius: 4px; padding: 6px 8px; display: grid; gap: 5px; min-width: 0 }
+.widget.span { grid-column: 1 / -1 }
+.wh { display: flex; justify-content: space-between; align-items: center; font-weight: 700; font-size: 12px; gap: 6px }
+.gear { width: 13px; height: 13px; flex: none }
+.gear path, .gear circle { fill: none; stroke: var(--ink); stroke-width: 1.6 }
+.bars { display: grid; gap: 3px }
+.bar { display: grid; grid-template-columns: 74px 1fr 34px; gap: 6px; align-items: center; font-size: 11px; color: var(--muted); font-variant-numeric: tabular-nums }
+.bar i { display: block; height: 7px; border-radius: 2px; background: var(--ink) }
+.tbl { width: 100%; border-collapse: collapse; font-size: 11px; font-variant-numeric: tabular-nums }
+.tbl th, .tbl td { text-align: left; padding: 2px 4px; border-bottom: 1px solid var(--rule) }
+.tbl th { color: var(--muted); font-weight: 600 }
+.tbl td:not(:first-child), .tbl th:not(:first-child) { text-align: right }
+.popover { border: 1.5px solid var(--ink); border-radius: 6px; background: var(--sheet); padding: 6px 8px; display: grid; gap: 5px; font-size: 11px; box-shadow: 0 4px 14px rgba(0,0,0,.12) }
+.popover .ptabs { display: flex; gap: 8px; border-bottom: 1px solid var(--rule); padding-bottom: 3px }
+.popover .ptabs span.on { font-weight: 700; border-bottom: 2px solid var(--ink) }
+.popover .cols { display: grid; grid-template-columns: 1fr 1fr; gap: 2px 10px }
+.copilot { border-left: 2px solid var(--cop); background: var(--cop-bg); padding: 10px; display: grid; gap: 7px; align-content: start; min-width: 0 }
+.copilot .hd { display: flex; gap: 6px; align-items: center; font-family: var(--display); font-weight: 700; font-size: 12.5px; color: var(--cop) }
+.sees { font-size: 10.5px; color: var(--muted); border: 1px solid var(--rule); border-radius: 4px; padding: 3px 5px; background: var(--sheet) }
+.bubble { border-radius: 8px; padding: 6px 8px; font-size: 12px; line-height: 1.35 }
+.bubble.q { background: var(--sheet); border: 1px solid var(--rule); justify-self: end; max-width: 92% }
+.bubble.a { background: var(--sheet); border: 1.5px solid var(--cop); max-width: 92% }
+.callout { display: inline-grid; place-items: center; width: 17px; height: 17px; border-radius: 3px; background: var(--ink); color: var(--sheet); font-family: var(--mono); font-size: 10px; font-weight: 500; flex: none; font-style: normal }
+.callout.cop { background: var(--cop) }
+.anno { margin: 0; padding: 0; display: grid; gap: 7px; font-size: 13.5px }
+.anno li { display: grid; grid-template-columns: 22px 1fr; gap: 6px; list-style: none }
+
+/* ---------- what-if + pipeline ---------- */
+.thumbs { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 0; list-style: none; margin: 0; padding: 0 }
+.thumbs li { display: grid; gap: 6px; align-content: start; padding-right: 20px; position: relative; min-width: 0; font-size: 12.5px }
+.thumbs li:not(:last-child)::after { content: "→"; position: absolute; right: 3px; top: 30px; font-size: 16px }
+.thumb { border: 1.5px solid var(--ink); border-radius: 4px; background: var(--sheet); padding: 6px; height: 74px; display: grid; gap: 4px; align-content: start; font-size: 10.5px; overflow: hidden }
+.thumb .btn { border: 1.5px solid var(--ink); border-radius: 3px; padding: 1px 6px; justify-self: end; font-weight: 600 }
+.thumb .opt { border: 1px solid var(--rule); border-radius: 3px; padding: 2px 5px }
+.thumb .opt.on { border: 1.5px solid var(--ink); font-weight: 600 }
+.thumb .cmp { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 2px; font-variant-numeric: tabular-nums }
+.thumb .cmp b { font-weight: 700 }
+.thumbs .note { font-size: 12px; color: var(--muted) }
+.pipe { display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 0; align-items: stretch }
+.pipe > div { position: relative; padding-right: 22px; display: grid; min-width: 0 }
+.pipe > div:not(:last-child)::after { content: "→"; position: absolute; right: 4px; top: 38%; font-size: 18px }
+.pstage { border: 1.5px solid var(--cop); border-radius: 6px; padding: 8px 10px; display: grid; gap: 2px; align-content: start; background: var(--sheet) }
+.pstage b { font-family: var(--display); font-size: 22px; font-weight: 800; font-variant-numeric: tabular-nums; line-height: 1.1 }
+.pstage span { font-size: 12.5px; color: var(--muted) }
+.pstage.final { background: var(--cop-bg) }
+
+/* ---------- user-view flows ---------- */
+.flows { display: grid; gap: 26px }
+.fhead { display: flex; flex-wrap: wrap; gap: 4px 10px; align-items: baseline; margin-bottom: 8px }
+.role { font-family: var(--mono); font-size: 10.5px; padding: 1px 6px; border-radius: 3px; background: var(--hb); color: var(--h) }
+.fhead small { color: var(--muted); font-size: 12.5px }
+.line { list-style: none; margin: 0; padding: 0; display: grid; grid-auto-flow: column; grid-auto-columns: minmax(0, 1fr); gap: 0 }
+.line > li { display: grid; grid-template-rows: 26px auto; gap: 6px; position: relative; padding: 0 5px; min-width: 0 }
+.line > li::before { content: ""; position: absolute; top: 11px; left: 0; right: 0; height: 4px; background: var(--h) }
+.line > li:first-child::before { left: 50% } .line > li:last-child::before { right: 50% }
+.stn { width: 22px; height: 22px; border-radius: 50%; background: var(--sheet); border: 4px solid var(--h); position: relative; z-index: 1; justify-self: center; margin-top: 2px }
+.stn.gate { border-radius: 3px; transform: rotate(45deg) scale(.82); background: var(--h) }
+.card { border: 1.5px solid var(--rule); border-radius: 6px; padding: 7px 8px; display: grid; gap: 4px; align-content: start; font-size: 12px; background: var(--sheet); min-width: 0 }
+.card h4 { font-size: 13px }
+.card .who { font-size: 11px; color: var(--h); font-weight: 600 }
+.card .row { display: grid; grid-template-columns: 50px minmax(0, 1fr); gap: 4px }
+.card .row > span:first-child { font-size: 10px; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); padding-top: 2px }
+.card.inf { border-style: dashed; border-color: var(--ink) }
+.card .code { border-top: 1px solid var(--rule); padding-top: 3px }
+
+/* ---------- shifts ---------- */
+.shifts { display: grid; gap: 10px }
+.shift { display: grid; grid-template-columns: minmax(0, 1fr) 28px minmax(0, 1fr) minmax(0, 1.7fr); gap: 10px; align-items: center; font-size: 13px }
+.pill { border: 1.5px solid var(--rule); border-radius: 999px; padding: 4px 12px; text-align: center; font-weight: 600 }
+.pill.from { color: var(--muted); background: var(--soft) }
+.pill.to { border-color: var(--ink) }
+.shift .arw2 { text-align: center; font-size: 18px }
+.qt { color: var(--muted); font-style: italic; font-size: 12.5px }
+
+/* ---------- engineers ---------- */
+.chart { display: grid; gap: 5px }
+.crow { display: grid; grid-template-columns: 160px minmax(0, 1fr) 112px; gap: 10px; align-items: center; font-size: 12.5px }
+.crow a { text-decoration: none; color: var(--ink) }
+.crow a:hover { text-decoration: underline }
+.track { display: flex; gap: 2px; height: 14px }
+.seg { height: 100% }
+.seg:first-child { border-radius: 4px 0 0 4px } .seg:last-child { border-radius: 0 4px 4px 0 } .seg:only-child { border-radius: 4px }
+.seg.a { background: var(--m-alpha) } .seg.b { background: var(--m-beta) } .seg.s { background: var(--m-stable) } .seg.x { background: var(--m-sunset) }
+.seg:hover { outline: 2px solid var(--ink); outline-offset: 1px }
+.crow .cnt { text-align: right; font-family: var(--mono); font-size: 11px; color: var(--muted); font-variant-numeric: tabular-nums; white-space: nowrap }
+.ckey { display: flex; flex-wrap: wrap; gap: 6px 14px; font-size: 12px; color: var(--muted) }
+.ckey i { display: inline-block; width: 12px; height: 12px; border-radius: 3px; vertical-align: -2px; margin-right: 5px }
+.tip { position: fixed; pointer-events: none; background: var(--ink); color: var(--sheet); font-size: 12px; padding: 4px 8px; border-radius: 4px; z-index: 20; white-space: nowrap }
+.eng { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 28px; align-items: start }
+.mech { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px }
+.mcard { border: 1.5px solid var(--rule); border-radius: 6px; padding: 9px 11px; display: grid; gap: 6px; align-content: start; min-width: 0 }
+.mcard p { font-size: 12.5px; color: var(--muted) }
+.mcard .see { font-size: 12.5px; border: 1.5px dashed var(--ink); border-radius: 4px; padding: 3px 7px }
+.mcard .see b { font-weight: 700 }
+.chips { display: flex; flex-wrap: wrap; gap: 4px; align-items: center; font-size: 11.5px }
+.chip { border: 1px solid var(--rule); border-radius: 999px; padding: 1px 8px; background: var(--soft); white-space: nowrap }
+.chips .ar { color: var(--muted) }
+.vers { display: grid; gap: 3px; font-family: var(--mono); font-size: 10.5px }
+.vers div { display: grid; grid-template-columns: 22px 1fr; gap: 6px; align-items: center }
+.vers i { display: block; height: 10px; border: 1.5px solid var(--ink); border-radius: 2px }
+.conv { margin: 0; padding-left: 18px; display: grid; gap: 6px; font-size: 13px }
+
+/* ---------- sources ---------- */
+.sources { columns: 2 360px; column-gap: 32px; font-size: 13px; margin: 0; padding: 0; list-style: none }
+.sources li { break-inside: avoid; display: grid; grid-template-columns: 26px 1fr; gap: 6px; margin-bottom: 10px }
+.sources .num { font-family: var(--mono); font-size: 11px; color: var(--muted); padding-top: 2px }
+.sources .kind { color: var(--muted); font-size: 11.5px }
+.sources .ts { display: flex; flex-wrap: wrap; gap: 4px; margin-top: 4px }
+.sources .ts a { font-family: var(--mono); font-size: 10.5px; text-decoration: none; border: 1px solid var(--rule); border-radius: 3px; padding: 0 5px; color: var(--ink) }
+.sources .ts a:hover { border-color: var(--ink) }
+.sources a { overflow-wrap: anywhere }
+
+/* ---------- responsive ---------- */
+@media (max-width: 1000px) {
+  .personas { grid-template-columns: repeat(4, minmax(0, 1fr)) }
+  .groups { grid-template-columns: repeat(2, minmax(0, 1fr)) }
+}
+@media (max-width: 860px) {
+  .sheet-head { grid-template-columns: minmax(0, 1fr) } .sheet-head .meta { justify-items: start } .legend { justify-content: flex-start }
+  .tldr { grid-template-columns: minmax(0, 1fr) } .tldr > div + div { border-left: 0; border-top: 1px solid var(--rule) }
+  .arch { grid-template-columns: minmax(0, 1fr) }
+  .ex-grid, .eng, .tracks { grid-template-columns: minmax(0, 1fr) }
+  .fam { grid-template-columns: minmax(0, 1fr) }
+  .gloss { grid-template-columns: repeat(2, minmax(0, 1fr)) }
+  .books { grid-template-columns: minmax(0, 1fr) }
+  .books .arw { transform: rotate(90deg); height: 26px; line-height: 26px }
+  .day { grid-template-columns: repeat(2, minmax(0, 1fr)); row-gap: 18px }
+  .step-col:nth-child(2)::after { content: "↓"; right: auto; left: 50%; top: auto; bottom: -18px }
+  .thumbs { grid-template-columns: repeat(3, minmax(0, 1fr)); row-gap: 16px }
+  .pipe { grid-template-columns: minmax(0, 1fr); gap: 6px }
+  .pipe > div { padding-right: 0; padding-bottom: 18px }
+  .pipe > div:not(:last-child)::after { content: "↓"; right: auto; left: 50%; top: auto; bottom: -4px }
+  .shift { grid-template-columns: minmax(0, 1fr) 24px minmax(0, 1fr) } .shift .qt { grid-column: 3 / 4 }
+}
+@media (max-width: 720px) {
+  .lanes-desk { display: none } .lanes-phone { display: grid }
+}
+@media (max-width: 640px) {
+  .personas { grid-template-columns: repeat(2, minmax(0, 1fr)) }
+  .groups, .dbs, .masters, .controls, .mech, .gloss { grid-template-columns: minmax(0, 1fr) }
+  .dbs .db { grid-template-columns: 46px 1fr; justify-items: start; text-align: left; align-items: center; column-gap: 10px }
+  .dbs .db svg { grid-row: span 2 }
+  .day { grid-template-columns: minmax(0, 1fr) }
+  .step-col { padding-right: 0; padding-bottom: 20px } .step-col:not(:last-child)::after { content: "↓"; right: auto; left: 50%; top: auto; bottom: 0 }
+  .win-body { grid-template-columns: minmax(0, 1fr) }
+  .copilot { border-left: 0; border-top: 2px solid var(--cop) }
+  .widgets { grid-template-columns: minmax(0, 1fr) }
+  .thumbs { grid-template-columns: minmax(0, 1fr) }
+  .thumbs li { padding-right: 0; padding-bottom: 18px } .thumbs li:not(:last-child)::after { content: "↓"; right: auto; left: 50%; top: auto; bottom: 0 }
+  .line { grid-auto-flow: row; grid-auto-columns: auto; gap: 0 }
+  .line > li { grid-template-columns: 26px minmax(0, 1fr); grid-template-rows: auto; column-gap: 10px; padding: 0 0 12px 0 }
+  .line > li::before { top: 0; bottom: 0; left: 9px; right: auto; width: 4px; height: auto }
+  .line > li:first-child::before { left: 9px; top: 12px } .line > li:last-child::before { right: auto; bottom: auto; height: 12px }
+  .stn { justify-self: start; margin-top: 2px }
+  .crow { grid-template-columns: minmax(0, 1fr) 118px; row-gap: 3px } .crow .track { grid-column: 1 / -1; grid-row: 2 }
+  .shift { grid-template-columns: minmax(0, 1fr) 20px minmax(0, 1fr) } .shift .qt { grid-column: 1 / -1; padding-left: 12px; border-left: 2px solid var(--rule) }
+}
+</style>
+</head>
+<body>
+
+
+<div class="wrap">
+
+<!-- ======================================================= SHEET 1 -->
+<section class="sheet" aria-labelledby="s1">
+  <header class="sheet-head">
+    <div>
+      <p class="eyebrow">BlackRock Aladdin · an independent reconstruction from public sources</p>
+      <h1 id="s1">What Aladdin is and how it's built</h1>
+      <p class="lede">Aladdin is the software big investors use to run their whole investment process on one system: deciding, trading, checking, settling and accounting. This brief shows the flow first, then the system that makes it possible.</p>
+    </div>
+    <div class="meta" style="display:grid;gap:8px;justify-items:end;text-align:right">
+      <span class="folio">PAGE 1 / 2</span>
+      <div class="legend"><span><i class="k-seen"></i>shown in sources</span><span><i class="k-inf"></i>our inference</span><span><i class="k-plan"></i>announced, not live</span><span><b class="n">1</b> trade step</span><span>◆ control point</span></div>
+      <span class="caption">Small grey numbers open the exact source.</span>
+    </div>
+  </header>
+
+  <!-- 30 seconds -->
+  <div class="sec">
+    <p class="eyebrow">Aladdin in 30 seconds</p>
+    <div class="tldr">
+      <div><h3>Who uses it</h3><p>Institutional investors: asset managers, banks, insurers, pension plans and corporations<sup class="r"><a href="https://www.blackrock.com/aladdin/view-whole-portfolio#:~:text=designed%20for%20asset%20managers" target="_blank" rel="noopener" title="Whole Portfolio">16</a></sup>. BlackRock runs its own money on it too<sup class="r"><a href="https://www.blackrock.com/aladdin/discover" target="_blank" rel="noopener" title="Best Overall Technology Provider for 2023">29</a></sup>.</p></div>
+      <div><h3>What it replaces</h3><p>A patchwork of separate order, risk, compliance and accounting systems. Clients describe moving away from "a number of different disparate systems"<sup class="r"><a href="https://www.blackrock.com/aladdin/discover/expertise/webinars/unifying-the-whole-portfolio-across-public-and-private-markets" target="_blank" rel="noopener" title="Unifying the Whole Portfolio Across Public and Private Markets">14</a></sup>.</p></div>
+      <div><h3>Why that matters</h3><p>Everyone works from one shared record of every portfolio, "a common language for portfolios"<sup class="r"><a href="https://www.blackrock.com/aladdin/discover/expertise/events/aladdin-client-forum-2026" target="_blank" rel="noopener" title="Aladdin Client Forum 2026">15</a></sup>. A trade is entered once and every team's view updates.</p></div>
+      <div class="scale">
+        <div><b>≈100</b><span>apps for different jobs<sup class="r"><a href="https://www.youtube.com/watch?v=oyqeCHFM5U4&amp;t=114s" target="_blank" rel="noopener" title="How BlackRock Built Production AI Agents (LangChain Interrupt 2025) at 1:54">1</a></sup></span></div>
+        <div><b>≈4,000</b><span>engineers building it<sup class="r"><a href="https://www.youtube.com/watch?v=oyqeCHFM5U4&amp;t=106s" target="_blank" rel="noopener" title="How BlackRock Built Production AI Agents (LangChain Interrupt 2025) at 1:46">1</a></sup></span></div>
+        <div><b>$1bn+</b><span>a year, BlackRock's technology business<sup class="r"><a href="https://careers.blackrock.com/job/new-york/senior-product-director-aladdin-studio-developer/45831/96232273856" target="_blank" rel="noopener" title="Senior Product Director, Aladdin Studio Developer">30</a></sup></span></div>
+        <div><b>9</b><span>of the largest asset servicers connected<sup class="r"><a href="https://www.blackrock.com/aladdin/discover/client-story/client-story-jpm" target="_blank" rel="noopener" title="Technology transforming the asset servicer and asset manager relationship">17</a></sup></span></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- glossary -->
+  <div class="sec">
+    <div class="sec-head"><h2>Words you will meet</h2></div>
+    <dl class="gloss">
+      <div><dt>IBOR</dt><dd>Investment book of record: the investment team's live view of what they hold.</dd></div>
+      <div><dt>ABOR</dt><dd>Accounting book of record: the official books the NAV is struck from.</dd></div>
+      <div><dt>NAV</dt><dd>Net asset value: a fund's value per share, published daily.</dd></div>
+      <div><dt>Block, allocation</dt><dd>One trade executed in bulk, then split across portfolios.</dd></div>
+      <div><dt>Cash ladder</dt><dd>Expected cash per currency for each coming settlement date.</dd></div>
+      <div><dt>Blotter</dt><dd>A trader's working list of orders.</dd></div>
+      <div><dt>Custodian</dt><dd>The bank that holds the assets and settles trades.</dd></div>
+      <div><dt>Corporate action, entitlement</dt><dd>A company event (dividend, merger, rights issue); the entitlement is what each portfolio is owed.</dd></div>
+      <div><dt>Warning vs restriction</dt><dd>A compliance warning passes but flags a rule; a restriction means the rule is breached.</dd></div>
+      <div><dt>VaR</dt><dd>Value at risk: the loss a portfolio should not exceed on most days.</dd></div>
+      <div><dt>Attribution</dt><dd>Explaining a return: how much came from sector choices and how much from picking securities.</dd></div>
+      <div><dt>Widget, workspace</dt><dd>A widget is one report on screen; a workspace is a saved layout of widgets.</dd></div>
+      <div><dt>Four-eyes</dt><dd>A change needs a second person's approval before it takes effect.</dd></div>
+      <div><dt>API</dt><dd>A programmatic way for software to read or change Aladdin data.</dd></div>
+      <div><dt>Tenant</dt><dd>One client's own separate copy of the system.</dd></div>
+    </dl>
+  </div>
+
+  <!-- Main flow -->
+  <div class="sec">
+    <div class="sec-head">
+      <h2>One trade, start to finish</h2>
+      <p>Five teams touch every trade. The order moves left to right; once it is booked, four things happen at once from that same record. Step numbers are reused across the brief.</p>
+    </div>
+    <div class="status" aria-label="Order status as it moves"><span class="eyebrow" style="margin-right:6px">Order status</span>
+      <span class="st">Open · step <span class="n">4</span></span><span class="ar">→</span><span class="st">Compliance pending · step <span class="n">5</span></span><span class="ar">→</span><span class="st">Authorized, if step 5 passes</span><span class="ar">→</span><span class="st">Active · step <span class="n">6</span></span><span class="ar">→</span><span class="st">Booked · step <span class="n">7</span></span>
+      <span class="caption" style="margin-left:4px">the order API's own statuses<sup class="r"><a href="https://pypi.org/project/asdk_plugin_trading/" target="_blank" rel="noopener" title="asdk_plugin_* packages, v2.0.0b3">22</a></sup></span></div>
+
+    <div class="diagram lanes-desk" role="img" aria-label="Swimlane with five teams. Portfolio manager: 1 spot an idea, 2 test it in Explore, 3 check cash, 4 raise the order. Compliance: 5 automatic pre-trade check; a restriction sends the order back to the portfolio manager. Trader: 6 execute and allocate. 7 the trade is booked on trade date. Then in parallel: 8 positions update for the portfolio manager, 9 post-trade compliance check, 10 confirm with the broker then 11 settle and reconcile, 12 an accounting lot opens then 13 the daily NAV is checked, signed off and published.">
+      <svg viewBox="0 0 1100 430" xmlns="http://www.w3.org/2000/svg">
+        <defs>
+          <marker id="a1" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" class="hd"/></marker>
+          <marker id="a2" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" class="hd-bad"/></marker>
+        </defs>
+        <rect x="0" y="40" width="1100" height="76" class="lane-a"/><rect x="0" y="116" width="1100" height="76" class="lane-b"/>
+        <rect x="0" y="192" width="1100" height="76" class="lane-a"/><rect x="0" y="268" width="1100" height="76" class="lane-b"/>
+        <rect x="0" y="344" width="1100" height="76" class="lane-a"/>
+        <path d="M132 40 V 420" class="sep"/>
+        <text x="12" y="28" class="cap">TEAM</text><text x="142" y="28" class="cap">BEFORE THE TRADE</text><text x="1093" y="28" class="cap te">AFTER BOOKING, IN PARALLEL</text>
+        <text x="12" y="76" class="t">Portfolio</text><text x="12" y="91" class="t">manager</text>
+        <text x="12" y="152" class="t">Compliance</text><text x="12" y="167" class="s">mostly automatic</text>
+        <text x="12" y="234" class="t">Trader</text>
+        <text x="12" y="310" class="t">Operations</text>
+        <text x="12" y="386" class="t">Accounting</text>
+
+        <!-- PM lane -->
+        <rect x="142" y="50" width="108" height="56" rx="5" class="bx front"/>
+        <rect x="150" y="55" width="16" height="16" rx="8" class="stp"/><text x="158" y="67" class="stt tc">1</text><text x="171" y="67" class="t">Spot an idea</text><text x="150" y="83" class="s">research note or</text><text x="150" y="97" class="s">screening alert</text>
+        <rect x="261" y="50" width="108" height="56" rx="5" class="bx front"/>
+        <rect x="269" y="55" width="16" height="16" rx="8" class="stp"/><text x="277" y="67" class="stt tc">2</text><text x="290" y="67" class="t">Test it</text><rect x="268" y="74" width="94" height="16" rx="3" class="pill"/><text x="315" y="86" class="pt tc">Explore what-if</text><text x="269" y="101" class="s">risk before trading</text>
+        <rect x="380" y="50" width="108" height="56" rx="5" class="bx front"/>
+        <rect x="388" y="55" width="16" height="16" rx="8" class="stp"/><text x="396" y="67" class="stt tc">3</text><text x="409" y="67" class="t">Check cash</text><text x="388" y="83" class="s">cash ladder by</text><text x="388" y="97" class="s">currency and date</text>
+        <rect x="499" y="50" width="108" height="56" rx="5" class="bx front"/>
+        <rect x="507" y="55" width="16" height="16" rx="8" class="stp"/><text x="515" y="67" class="stt tc">4</text><text x="528" y="67" class="t">Raise order</text><rect x="506" y="74" width="94" height="16" rx="3" class="pill"/><text x="553" y="86" class="pt tc">Order Monitor</text><text x="507" y="101" class="s">sized per portfolio</text>
+        <path d="M250 78 H 259" class="arr" marker-end="url(#a1)"/>
+        <path d="M369 78 H 378" class="arr" marker-end="url(#a1)"/>
+        <path d="M488 78 H 497" class="arr" marker-end="url(#a1)"/>
+
+        <!-- compliance diamond -->
+        <path d="M672 124 L728 154 L672 184 L616 154 Z" class="bx over"/>
+        <circle cx="672" cy="124" r="9" class="stp"/><text x="672" y="128" class="stt tc">5</text><text x="672" y="153" class="t tc">Pre-trade</text><text x="672" y="168" class="t tc">check</text>
+        <path d="M600 106 L 645 134" class="arr" marker-end="url(#a1)"/>
+        <path d="M624 148 L 572 109" class="arr bad" style="stroke-dasharray:5 4" marker-end="url(#a2)"/>
+        <text x="592" y="138" class="bad-t te">restriction: back to the PM (inferred)</text>
+<text x="732" y="214" class="s te">passed, or warning flagged</text>
+
+        <!-- trader -->
+        <rect x="737" y="202" width="100" height="56" rx="5" class="bx front"/>
+        <rect x="745" y="207" width="16" height="16" rx="8" class="stp"/><text x="753" y="219" class="stt tc">6</text><text x="766" y="219" class="t">Execute,</text><text x="766" y="233" class="t">allocate</text><rect x="744" y="238" width="86" height="15" rx="3" class="pill inf"/><text x="787" y="249" class="pt tc">trader blotter</text>
+        <path d="M686 180 L 748 200" class="arr" marker-end="url(#a1)"/>
+        <path d="M837 230 H 848" class="arr" marker-end="url(#a1)"/>
+
+        <!-- booked line -->
+        <path d="M851 36 V 420" class="booked"/>
+        <rect x="806" y="34" width="90" height="18" rx="9" style="fill:var(--ink)"/><circle cx="822" cy="43" r="7" style="fill:var(--sheet)"/><text x="822" y="47" class="tc" style="fill:var(--ink);font-family:var(--mono);font-size:10px">7</text><text x="858" y="47" class="tc" style="fill:var(--sheet);font-weight:700;font-size:11px">BOOKED</text>
+        <text x="856" y="64" class="s">on trade date</text>
+
+        <!-- fan out -->
+        <path d="M853 86 H 864" class="arr" marker-end="url(#a1)"/>
+        <path d="M853 154 H 864" class="arr" marker-end="url(#a1)"/>
+        <path d="M853 306 H 864" class="arr" marker-end="url(#a1)"/>
+        <path d="M853 382 H 864" class="arr" marker-end="url(#a1)"/>
+
+        <rect x="866" y="70" width="227" height="38" rx="5" class="bx front"/>
+        <rect x="874" y="74" width="16" height="16" rx="8" class="stp"/><text x="882" y="86" class="stt tc">8</text><text x="895" y="86" class="t">Positions update</text><rect x="1030" y="76" width="56" height="16" rx="3" class="pill"/><text x="1058" y="88" class="pt tc">Explore</text><text x="874" y="101" class="s">the investment team's live book (IBOR)</text>
+        <rect x="866" y="132" width="227" height="44" rx="5" class="bx over"/>
+        <rect x="874" y="138" width="16" height="16" rx="8" class="stp"/><text x="882" y="150" class="stt tc">9</text><text x="895" y="150" class="t">Post-trade check</text><text x="874" y="166" class="s">rules re-run on the booked trade, intraday too</text>
+
+        <rect x="866" y="278" width="108" height="56" rx="5" class="bx ops"/>
+        <rect x="874" y="283" width="22" height="16" rx="8" class="stp"/><text x="885" y="295" class="stt tc">10</text><text x="901" y="295" class="t">Confirm</text><text x="874" y="311" class="s">trade details sent to</text><text x="874" y="325" class="s">the broker desk</text>
+        <rect x="985" y="278" width="108" height="56" rx="5" class="bx ops" style="stroke-dasharray:5 4"/>
+        <rect x="993" y="283" width="22" height="16" rx="8" class="stp"/><text x="1004" y="295" class="stt tc">11</text><text x="1020" y="295" class="t">Settle,</text><text x="1020" y="309" class="t">reconcile</text><text x="993" y="325" class="s">with the custodian</text>
+        <path d="M974 306 H 983" class="arr" marker-end="url(#a1)"/>
+
+        <rect x="866" y="354" width="108" height="56" rx="5" class="bx ops"/>
+        <rect x="874" y="359" width="22" height="16" rx="8" class="stp"/><text x="885" y="371" class="stt tc">12</text><text x="901" y="371" class="t">Lot opens</text><text x="874" y="387" class="s">official accounting</text><text x="874" y="401" class="s">book (ABOR)</text>
+        <rect x="985" y="354" width="108" height="56" rx="5" class="bx ops"/>
+        <rect x="993" y="359" width="22" height="16" rx="8" class="stp"/><text x="1004" y="371" class="stt tc">13</text><text x="1020" y="371" class="t">NAV</text><text x="993" y="387" class="s">check exceptions,</text><text x="993" y="401" class="s">sign off, publish</text>
+        <path d="M974 382 H 983" class="arr" marker-end="url(#a1)"/>
+      </svg>
+    </div>
+
+    <ol class="lanes-phone" aria-label="The trade flow, step by step">
+      <li><h4>Before the trade</h4><ol>
+        <li class="hue-front"><span class="n">1</span><span>Spot an idea <span class="who">· portfolio manager · research note or alert</span></span></li>
+        <li class="hue-front"><span class="n">2</span><span>Test it in Explore what-if <span class="who">· portfolio manager</span></span></li>
+        <li class="hue-front"><span class="n">3</span><span>Check cash on the cash ladder <span class="who">· portfolio manager</span></span></li>
+        <li class="hue-front"><span class="n">4</span><span>Raise the order in Order Monitor <span class="who">· portfolio manager · Open</span></span></li>
+        <li class="hue-over"><span class="n">5</span><span>Pre-trade check: passed → Authorized; warning flagged; a restriction stops the order (back to the PM is our inference) <span class="who">· automatic</span></span></li>
+        <li class="hue-front"><span class="n">6</span><span>Execute and allocate <span class="who">· trader · Active · screen name inferred</span></span></li>
+      </ol></li>
+      <li><h4>Booked on trade date</h4><ol><li class="hue-plat"><span class="n">7</span><span>The trade is booked. Everything below starts from this one record.</span></li></ol></li>
+      <li><h4>After booking, in parallel</h4><ol>
+        <li class="hue-front"><span class="n">8</span><span>Positions update in the live book (IBOR) <span class="who">· portfolio manager</span></span></li>
+        <li class="hue-over"><span class="n">9</span><span>Post-trade compliance check <span class="who">· automatic</span></span></li>
+        <li class="hue-ops"><span class="n">10</span><span>Confirm with the broker desk <span class="who">· operations</span></span></li>
+        <li class="hue-ops"><span class="n">11</span><span>Settle and reconcile with the custodian <span class="who">· operations · reconciliation is our inference</span></span></li>
+        <li class="hue-ops"><span class="n">12</span><span>A lot opens in the official books (ABOR) <span class="who">· accounting</span></span></li>
+        <li class="hue-ops"><span class="n">13</span><span>NAV: exceptions, sign-off, publish <span class="who">· accounting</span></span></li>
+      </ol></li>
+    </ol>
+    <p class="caption">Steps and statuses come from the public API specs<sup class="r"><a href="https://pypi.org/search/?q=asdk_plugin" target="_blank" rel="noopener" title="asdk_plugin_* packages, v2.0.0b3">22</a></sup>. Explore<sup class="r"><a href="https://www.youtube.com/watch?v=BahCi45_BTc&amp;t=576s" target="_blank" rel="noopener" title="Aladdin Explore: Intro (Aladdin classroom) at 9:36">2</a></sup> and Order Monitor are named screens. The trader's screen is not named in any source. BlackRock describes the whole run as going "from that first order … into accounting without lifting up the pencil"<sup class="r"><a href="https://www.blackrock.com/aladdin/discover/expertise/big-little-questions" target="_blank" rel="noopener" title="Big Little Questions: How can tech transform numbers into insightful narratives?">9</a></sup>.</p>
+  </div>
+
+  <!-- Architecture -->
+  <div class="sec">
+    <div class="sec-head">
+      <h2>What makes that possible</h2>
+      <p>Every app, Copilot and client code go through one shared set of APIs to the same domain services and the same data. That is why step 7 can update everything at once.</p>
+    </div>
+    <div class="diagram arch-desk" role="img" aria-label="Architecture map. Left: the people who use Aladdin. Top: about 100 apps such as Explore, Dashboard and Risk Radar, with Aladdin Copilot inside every app. Both call one shared API layer, which reaches domain services in four groups: front office, oversight, data and platform, operations and accounting. Domains read and write one shared data model: portfolios, securities, orders and trades, positions, and the accounting books. Each client runs in its own identical environment on Azure, with AWS announced. Right: Aladdin Studio lets developers use notebooks and the SDK against the same APIs, and Aladdin Data Cloud receives a copy of the shared data. Operations connect out to brokers, custodians, data vendors and client systems.">
+      <svg viewBox="0 0 1200 720" xmlns="http://www.w3.org/2000/svg" class="map">
+        <defs>
+          <marker id="m1" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto"><path d="M0,0 L10,5 L0,10 z" class="hd"/></marker>
+          <pattern id="hatch" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="2" height="6" style="fill:var(--hatch)"/></pattern>
+          <symbol id="person" viewBox="0 0 20 20"><circle cx="10" cy="6" r="3.6" class="ic"/><path d="M3 18 C3 12.5 17 12.5 17 18" class="ic"/></symbol>
+        </defs>
+
+        <!-- people -->
+        <text x="10" y="40" class="cap">PEOPLE</text>
+        <use href="#person" x="10" y="54" width="22" height="22"/><text x="38" y="70">Portfolio manager</text>
+        <use href="#person" x="10" y="92" width="22" height="22"/><text x="38" y="108">Trader</text>
+        <use href="#person" x="10" y="130" width="22" height="22"/><text x="38" y="146">Compliance, risk</text>
+        <use href="#person" x="10" y="168" width="22" height="22"/><text x="38" y="184">Operations</text>
+        <use href="#person" x="10" y="206" width="22" height="22"/><text x="38" y="222">Accountant</text>
+        <use href="#person" x="10" y="244" width="22" height="22"/><text x="38" y="260">Performance analyst</text>
+        <path d="M160 56 V 262" class="ln"/>
+        <path d="M160 80 H 168" class="arr" marker-end="url(#m1)"/>
+
+        <!-- apps -->
+        <rect x="170" y="20" width="760" height="154" rx="6" class="band"/>
+        <text x="182" y="40" class="cap">APPS · ≈100 FRONT-END APPLICATIONS, WITH COPILOT INSIDE EVERY ONE</text>
+        <g>
+          <rect x="182" y="52" width="100" height="56" rx="4" class="tile"/><text x="232" y="74" class="tt tc">Explore</text><text x="232" y="92" class="s tc">analysis, what-if</text>
+          <rect x="288" y="52" width="100" height="56" rx="4" class="tile"/><text x="338" y="74" class="tt tc">Dashboard</text><text x="338" y="92" class="s tc">orders, events</text>
+          <rect x="394" y="52" width="100" height="56" rx="4" class="tile"/><text x="444" y="74" class="tt tc">Risk Radar</text><text x="444" y="92" class="s tc">risk breaches</text>
+          <rect x="500" y="52" width="100" height="56" rx="4" class="tile"/><text x="550" y="74" class="tt tc">CashMaster</text><text x="550" y="92" class="s tc">cash</text>
+          <rect x="606" y="52" width="100" height="56" rx="4" class="tile"/><text x="656" y="74" class="tt tc">FX Center</text><text x="656" y="92" class="s tc">currency trades</text>
+          <rect x="712" y="52" width="100" height="56" rx="4" class="tile"/><text x="762" y="74" class="tt tc">CID Manager</text><text x="762" y="92" class="s tc">clients' own data</text>
+          <rect x="818" y="52" width="100" height="56" rx="4" class="tile more"/><text x="868" y="74" class="tt tc" style="fill:var(--muted)">≈90 more</text><text x="868" y="92" class="s tc">collateral, data…</text>
+        </g>
+
+        <!-- copilot -->
+        <rect x="182" y="120" width="736" height="42" rx="5" class="cop"/>
+        <text x="196" y="146"><tspan class="tt" style="fill:var(--cop)">Aladdin Copilot</tspan><tspan dx="10">a chat panel in each app · reads what is on screen · answers through the same APIs</tspan></text>
+
+        <!-- api -->
+        <path d="M550 176 V 186" class="arr" marker-end="url(#m1)"/><rect x="170" y="188" width="760" height="34" rx="6" class="api"/>
+        <text x="184" y="210"><tspan class="tt">Shared API layer</tspan><tspan dx="10">apps, Copilot and client code all call it · access checked on every call</tspan></text>
+        <path d="M262 224 V 238" class="arr" marker-end="url(#m1)"/>
+        <path d="M454 224 V 238" class="arr" marker-end="url(#m1)"/>
+        <path d="M646 224 V 238" class="arr" marker-end="url(#m1)"/>
+        <path d="M838 224 V 238" class="arr" marker-end="url(#m1)"/>
+
+        <!-- domains -->
+        <text x="182" y="254" class="cap">DOMAIN SERVICES · THE FOUR GROUPS ARE OURS</text>
+        <rect x="170" y="260" width="184" height="158" rx="6" class="grp front"/><text x="180" y="278" class="cap" style="fill:var(--front)">FRONT OFFICE</text>
+        <rect x="180" y="288" width="164" height="20" rx="3" class="chip front"/><text x="188" y="302">Research, watchlists</text><rect x="320" y="290" width="20" height="16" rx="8" class="stp"/><text x="330" y="302" class="stt tc">1</text>
+        <rect x="180" y="313" width="164" height="20" rx="3" class="chip front"/><text x="188" y="327">Portfolio setup</text>
+        <rect x="180" y="338" width="164" height="20" rx="3" class="chip front"/><text x="188" y="352">Cash, targets</text><rect x="320" y="340" width="20" height="16" rx="8" class="stp"/><text x="330" y="352" class="stt tc">3</text>
+        <rect x="180" y="363" width="164" height="20" rx="3" class="chip front"/><text x="188" y="377">Orders, trades</text><rect x="306" y="365" width="34" height="16" rx="8" class="stp"/><text x="323" y="377" class="stt tc">4–7</text>
+
+        <rect x="362" y="260" width="184" height="158" rx="6" class="grp over"/><text x="372" y="278" class="cap" style="fill:var(--over)">OVERSIGHT</text>
+        <rect x="372" y="288" width="164" height="20" rx="3" class="chip over"/><text x="380" y="302">Compliance rules</text><rect x="498" y="290" width="34" height="16" rx="8" class="stp"/><text x="515" y="302" class="stt tc">5, 9</text>
+        <rect x="372" y="313" width="164" height="20" rx="3" class="chip over"/><text x="380" y="327">Risk limits</text>
+
+        <rect x="554" y="260" width="184" height="158" rx="6" class="grp plat"/><text x="564" y="278" class="cap" style="fill:var(--plat)">DATA, PLATFORM</text>
+        <rect x="564" y="288" width="164" height="20" rx="3" class="chip plat"/><text x="572" y="302">Security master</text>
+        <rect x="564" y="313" width="164" height="20" rx="3" class="chip plat"/><text x="572" y="327">Climate, ESG data</text>
+        <rect x="564" y="338" width="164" height="20" rx="3" class="chip plat"/><text x="572" y="352">Users, permissions</text>
+        <rect x="564" y="363" width="164" height="20" rx="3" class="chip plat"/><text x="572" y="377">Dataset registry</text>
+
+        <rect x="746" y="260" width="184" height="158" rx="6" class="grp ops"/><text x="756" y="278" class="cap" style="fill:var(--ops)">OPS, ACCOUNTING</text>
+        <rect x="756" y="288" width="164" height="20" rx="3" class="chip ops"/><text x="764" y="302">Corporate actions</text>
+        <rect x="756" y="313" width="164" height="20" rx="3" class="chip ops"/><text x="764" y="327">Settlement</text><rect x="866" y="315" width="50" height="16" rx="8" class="stp"/><text x="891" y="327" class="stt tc">10, 11</text>
+        <rect x="756" y="338" width="164" height="20" rx="3" class="chip ops"/><text x="764" y="352">Collateral</text>
+        <rect x="756" y="363" width="164" height="20" rx="3" class="chip ops"/><text x="764" y="377">Money in, out of funds</text>
+        <rect x="756" y="388" width="164" height="20" rx="3" class="chip ops"/><text x="764" y="402">Accounting, NAV</text><rect x="866" y="390" width="50" height="16" rx="8" class="stp"/><text x="891" y="402" class="stt tc">12, 13</text>
+
+        <path d="M262 420 V 436" class="arr" marker-end="url(#m1)"/>
+        <path d="M454 420 V 436" class="arr" marker-end="url(#m1)"/>
+        <path d="M646 420 V 436" class="arr" marker-end="url(#m1)"/>
+        <path d="M838 420 V 436" class="arr" marker-end="url(#m1)"/>
+
+        <!-- shared data -->
+        <rect x="170" y="440" width="760" height="92" rx="6" class="band"/>
+        <text x="182" y="458" class="cap">SHARED DATA · ONE MODEL EVERY DOMAIN READS AND WRITES</text>
+        <g>
+          <ellipse cx="252" cy="478" rx="62" ry="8" class="cyl"/><path d="M190 478 v36 a62 8 0 0 0 124 0 v-36" class="cyl"/><text x="252" y="504" class="tt tc">Portfolios</text>
+          <ellipse cx="402" cy="478" rx="62" ry="8" class="cyl"/><path d="M340 478 v36 a62 8 0 0 0 124 0 v-36" class="cyl"/><text x="402" y="504" class="tt tc">Securities</text>
+          <ellipse cx="552" cy="478" rx="62" ry="8" class="cyl"/><path d="M490 478 v36 a62 8 0 0 0 124 0 v-36" class="cyl"/><text x="552" y="504" class="tt tc">Orders, trades</text>
+          <ellipse cx="702" cy="478" rx="62" ry="8" class="cyl"/><path d="M640 478 v36 a62 8 0 0 0 124 0 v-36" class="cyl"/><text x="702" y="499" class="tt tc">Positions</text><text x="702" y="513" class="s tc">IBOR</text>
+          <ellipse cx="852" cy="478" rx="62" ry="8" class="cyl"/><path d="M790 478 v36 a62 8 0 0 0 124 0 v-36" class="cyl"/><text x="852" y="499" class="tt tc">Accounting</text><text x="852" y="513" class="s tc">ABOR, NAV</text>
+        </g>
+
+        <!-- where it runs -->
+        <rect x="170" y="546" width="760" height="100" rx="6" class="band"/>
+        <text x="182" y="564" class="cap">WHERE IT RUNS · ONE COPY PER CLIENT, ALL BUILT THE SAME WAY</text>
+        <rect x="182" y="576" width="128" height="32" rx="4" class="tile"/><text x="246" y="597" class="tc">Client A</text>
+        <rect x="318" y="576" width="128" height="32" rx="4" class="tile"/><text x="382" y="597" class="tc">Client B</text>
+        <rect x="454" y="576" width="128" height="32" rx="4" class="tile"/><text x="518" y="597" class="tc">Client C …</text>
+        <path d="M182 620 H 582" class="ctrl"/><text x="382" y="637" class="s tc">one code base, one control plane</text>
+        <rect x="606" y="576" width="100" height="32" rx="4" class="tile"/><text x="656" y="597" class="tc">Azure today</text>
+        <rect x="714" y="576" width="100" height="32" rx="4" style="fill:var(--sheet)"/><rect x="714" y="576" width="100" height="32" rx="4" class="tile hatch"/><text x="764" y="597" class="tc">AWS, H2 2026</text>
+
+        <!-- studio -->
+        <use href="#person" x="956" y="30" width="22" height="22"/><text x="984" y="46">Client developers,</text><text x="984" y="62">quants</text>
+        <path d="M1070 70 V 126" class="arr" marker-end="url(#m1)"/>
+        <rect x="950" y="128" width="240" height="404" rx="6" class="studio"/>
+        <text x="962" y="150" class="cap">ALADDIN STUDIO</text><text x="962" y="166" class="s">for clients who build on Aladdin</text>
+        <rect x="962" y="178" width="216" height="40" rx="4" class="tile"/><text x="972" y="195" class="tt">Research sandboxes</text><text x="972" y="210" class="s">hosted places to explore and build</text>
+        <rect x="962" y="226" width="216" height="40" rx="4" class="tile"/><text x="972" y="243" class="tt">AladdinSDK</text><text x="972" y="258" class="s">open-source Python library</text>
+        <rect x="962" y="274" width="216" height="40" rx="4" class="tile"/><text x="972" y="291" class="tt">Excel tools, data feeds</text><text x="972" y="306" class="s">events and files for other systems</text>
+        <path d="M950 205 H 933" class="arr" marker-end="url(#m1)"/><text x="941" y="236" class="s te" style="font-size:11px">Studio calls the</text><text x="941" y="250" class="s te" style="font-size:11px">same APIs</text>
+        <text x="1070" y="436" class="s tc">filled from shared data by</text><text x="1070" y="450" class="s tc">the "analytics factory"</text>
+        <ellipse cx="1070" cy="466" rx="92" ry="9" class="cyl"/><path d="M978 466 v44 a92 9 0 0 0 184 0 v-44" class="cyl"/>
+        <text x="1070" y="490" class="tt tc">Aladdin Data Cloud</text><text x="1070" y="507" class="s tc">Snowflake, one per client</text>
+        <path d="M931 486 H 976" class="arr" marker-end="url(#m1)"/>
+
+        <!-- outside -->
+        <rect x="950" y="546" width="240" height="166" rx="6" class="band"/>
+        <text x="962" y="564" class="cap">OUTSIDE ALADDIN</text>
+        <rect x="962" y="574" width="104" height="60" rx="4" class="tile"/><text x="970" y="592" class="tt">Brokers</text><text x="970" y="608" class="s">orders, trade</text><text x="970" y="622" class="s">confirmations</text>
+        <rect x="1074" y="574" width="104" height="60" rx="4" class="tile"/><text x="1082" y="592" class="tt">Custodians</text><text x="1082" y="608" class="s">settlement,</text><text x="1082" y="622" class="s">reconciliation</text>
+        <rect x="962" y="642" width="104" height="60" rx="4" class="tile"/><text x="970" y="660" class="tt">Data vendors</text><text x="970" y="676" class="s">prices, ESG,</text><text x="970" y="690" class="s">Preqin</text>
+        <rect x="1074" y="642" width="104" height="60" rx="4" class="tile"/><text x="1082" y="660" class="tt">Client systems</text><text x="1082" y="676" class="s">via events and</text><text x="1082" y="690" class="s">file feeds</text>
+        <path d="M930 360 H 940 V 604 H 960" class="arr" marker-end="url(#m1)"/>
+      </svg>
+    </div>
+    <div class="arch">
+      <div class="arch-main">
+        <div class="band">
+          <div class="band-h"><b>Apps people use</b><span>about 100 front-end applications</span></div>
+          <div class="tiles">
+            <div class="tile"><b>Explore</b><small>analysis, what-if</small></div>
+            <div class="tile"><b>Dashboard</b><small>orders, events</small></div>
+            <div class="tile"><b>Risk Radar</b><small>risk breaches</small></div>
+            <div class="tile"><b>CashMaster</b><small>cash</small></div>
+            <div class="tile more">≈90 more</div>
+          </div>
+          <div class="band cop"><div class="band-h"><b>Aladdin Copilot</b><span>a chat panel inside each app</span></div></div>
+        </div>
+        <div class="down"></div>
+        <div class="band api"><div class="band-h"><b>Shared API layer</b><span>apps, Copilot, Studio and client code all call it</span></div></div>
+        <div class="down"></div>
+        <div class="band">
+          <div class="band-h"><b>Domain services</b><span>groups are ours</span></div>
+          <div class="groups">
+            <div class="grp hue-front"><h4>Front office</h4><span class="chip-d">Research <span class="n">1</span></span><span class="chip-d">Cash, targets <span class="n">3</span></span><span class="chip-d">Orders, trades <span class="n">4–7</span></span></div>
+            <div class="grp hue-over"><h4>Oversight</h4><span class="chip-d">Compliance <span class="n">5, 9</span></span><span class="chip-d">Risk limits</span></div>
+            <div class="grp hue-plat"><h4>Data, platform</h4><span class="chip-d">Security master</span><span class="chip-d">Users, permissions</span></div>
+            <div class="grp hue-ops"><h4>Ops, accounting</h4><span class="chip-d">Settlement <span class="n">10, 11</span></span><span class="chip-d">Accounting, NAV <span class="n">12, 13</span></span><span class="chip-d">Corporate actions</span></div>
+          </div>
+        </div>
+        <div class="down"></div>
+        <div class="band"><div class="band-h"><b>Shared data</b><span>portfolios, securities, orders and trades, positions (IBOR), accounting (ABOR)</span></div></div>
+        <div class="band" style="margin-top:10px"><div class="band-h"><b>Where it runs</b><span>one identical copy per client</span></div>
+          <div class="runs"><div class="tile">Azure today</div><div class="tile planned">AWS, H2 2026</div></div></div>
+      </div>
+      <aside class="studio" aria-label="Aladdin Studio">
+        <div class="band-h"><b>Aladdin Studio</b><span>notebooks and the SDK call the same APIs; Data Cloud gets a copy of the shared data in Snowflake</span></div>
+      </aside>
+      <div class="band"><div class="band-h"><b>Outside Aladdin</b><span>brokers, custodians, data vendors, client systems</span></div></div>
+    </div>
+    <p class="caption">About 100 apps with Copilot embedded in all of them<sup class="r"><a href="https://www.youtube.com/watch?v=oyqeCHFM5U4&amp;t=155s" target="_blank" rel="noopener" title="How BlackRock Built Production AI Agents (LangChain Interrupt 2025) at 2:35">1</a></sup>. App names other than Explore come from field descriptions in the API specs<sup class="r"><a href="https://pypi.org/search/?q=asdk_plugin" target="_blank" rel="noopener" title="asdk_plugin_* packages, v2.0.0b3">22</a></sup>, so their screens are not drawn. Studio<sup class="r"><a href="https://www.youtube.com/watch?v=Me_H_-E6lSg&amp;t=289s" target="_blank" rel="noopener" title="From Analytics to Intelligence: BlackRock&#x27;s Journey to Data Productization at 4:49">4</a>,<a href="https://www.youtube.com/watch?v=Me_H_-E6lSg&amp;t=324s" target="_blank" rel="noopener" title="From Analytics to Intelligence: BlackRock&#x27;s Journey to Data Productization at 5:24">4</a></sup>, Excel tools and data feeds<sup class="r"><a href="https://www.blackrock.com/aladdin/products/apis" target="_blank" rel="noopener" title="Aladdin APIs">25</a></sup>, Data Cloud and the "analytics factory"<sup class="r"><a href="https://www.youtube.com/watch?v=Me_H_-E6lSg&amp;t=98s" target="_blank" rel="noopener" title="From Analytics to Intelligence: BlackRock&#x27;s Journey to Data Productization at 1:38">4</a>,<a href="https://www.youtube.com/watch?v=Me_H_-E6lSg&amp;t=289s" target="_blank" rel="noopener" title="From Analytics to Intelligence: BlackRock&#x27;s Journey to Data Productization at 4:49">4</a>,<a href="https://www.blackrock.com/aladdin/products/aladdin-data-cloud" target="_blank" rel="noopener" title="Aladdin Data Cloud">20</a></sup>, hosting<sup class="r"><a href="https://www.microsoft.com/en-us/microsoft-cloud/blog/2024/12/11/how-blackrock-is-finding-new-alpha-as-ai-transformation-becomes-a-critical-business-driver/" target="_blank" rel="noopener" title="How BlackRock is finding new alpha as AI transformation becomes a critical business driver">23</a>,<a href="https://press.aboutamazon.com/aws/2025/12/blackrock-partners-with-aws-to-deliver-aladdin-on-secure-scalable-cloud-infrastructure" target="_blank" rel="noopener" title="BlackRock partners with AWS to deliver Aladdin">24</a></sup>, one control plane<sup class="r"><a href="https://www.blackrock.com/aladdin/discover/podcast/engineering-story-podcast-episode#:~:text=single%20control%20plane" target="_blank" rel="noopener" title="Principles of Design podcast">5</a></sup>, nine servicers<sup class="r"><a href="https://www.blackrock.com/aladdin/discover/client-story/client-story-jpm" target="_blank" rel="noopener" title="Technology transforming the asset servicer and asset manager relationship">17</a></sup>.</p>
+  </div>
+
+  <!-- Two books -->
+  <div class="sec">
+    <div class="sec-head">
+      <h2>One trade, two books</h2>
+      <p>The booked trade feeds two books at once. The <abbr title="investment book of record">IBOR</abbr> is the investment team's live view of what they hold. The <abbr title="accounting book of record">ABOR</abbr> is accounting's official book, and the daily <abbr title="net asset value per share">NAV</abbr> is calculated from it.</p>
+    </div>
+    <div class="lbl-row">Every record points back to two master lists</div>
+    <div class="masters">
+      <div class="bk"><h4>Portfolio</h4><p>Mandate, benchmark, regulations and cash rules, with portfolios grouped into a hierarchy.</p></div>
+      <div class="bk"><h4>Security</h4><p>One Aladdin ID per instrument, mapped to CUSIP, ISIN, SEDOL and others.</p></div>
+    </div>
+    <div class="lbl-row">The trade's life</div>
+    <div class="books2">
+      <div class="bk hue-front ord"><h4><span class="n">4</span>Order</h4><p>The PM's instruction: buy this much of X for these portfolios.</p></div>
+      <div class="arw a1" aria-hidden="true">→</div>
+      <div class="bk hue-front trd"><h4><span class="n">6</span>Trade</h4><p>What actually executed, one block split across portfolios.</p></div>
+      <div class="fk" aria-hidden="true"><svg viewBox="0 0 46 200" preserveAspectRatio="none"><defs><marker id="fk" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0,0 L10,5 L0,10 z" class="hd"/></marker></defs><path d="M2 100 C 22 100, 18 30, 42 30" marker-end="url(#fk)"/><path d="M2 100 C 22 100, 18 170, 42 170" marker-end="url(#fk)"/></svg></div>
+      <p class="splits">↓ feeds both books at once</p>
+      <div class="bk hue-front ibor"><h4><span class="n">8</span>Position · IBOR</h4><p>Live holdings that Explore, risk, compliance checks and the cash ladder read.</p></div>
+      <div class="rec"><span>the two books are kept in step by reconciliation (our inference)</span></div>
+      <div class="bk hue-ops abor"><h4><span class="n">12</span>Lot · ABOR</h4><p>Accounting's official record of what was bought, when and at what cost.</p></div>
+      <div class="arw a3" aria-hidden="true">→</div>
+      <div class="bk hue-ops nav"><h4><span class="n">13</span>NAV</h4><p>Calculated per portfolio from the ABOR, then checked, signed off and published.</p></div>
+    </div>
+    <div class="lbl-row">Checks attached along the way</div>
+    <div class="controls">
+      <div class="bk hue-over"><h4>Compliance</h4><p>Rules checked on the order <span class="n">5</span>, again on the trade <span class="n">9</span>, and at start of day and intraday. Results: passed, warning or restriction.</p></div>
+      <div class="bk hue-over"><h4>Risk limits</h4><p>A separate rulebook owned by the risk team, run on positions and analytics. See the risk-breach flow on page 2.</p></div>
+      <div class="bk hue-front"><h4>Cash</h4><p>Orders, trades and client money moving in or out of funds all feed the cash ladder used in step <span class="n">3</span>.</p></div>
+    </div>
+    <p class="caption">Read off the public API specs<sup class="r"><a href="https://pypi.org/search/?q=asdk_plugin" target="_blank" rel="noopener" title="asdk_plugin_* packages, v2.0.0b3">22</a></sup>. The IBOR is described in BlackRock's own material<sup class="r"><a href="https://www.blackrock.com/aladdin/discover/podcast/snowflake-podcast-data-the-key-ingredient#:~:text=core%20IBOR%20and%20ABOR" target="_blank" rel="noopener" title="Data: The key ingredient">6</a>,<a href="https://www.blackrock.com/aladdin/view-whole-portfolio#:~:text=unified%20IBOR" target="_blank" rel="noopener" title="Whole Portfolio">16</a></sup>.</p>
+  </div>
+
+  <!-- Family + timeline -->
+  <div class="sec">
+    <div class="sec-head"><h2>The product family</h2><p>Platforms and solutions are grouped as BlackRock's own site menu groups them<sup class="r"><a href="https://www.blackrock.com/aladdin/platforms/products/aladdin-copilot" target="_blank" rel="noopener" title="Aladdin Copilot">18</a></sup>; the network group is ours.</p></div>
+    <div class="fam">
+      <div class="box"><p class="eyebrow">Separate platforms</p><dl>
+        <div><dt>Aladdin</dt><dd>The institutional platform this brief describes.</dd></div>
+        <div><dt>Aladdin Wealth</dt><dd>For wealth managers and their advisers, built into the firm's own branded tools.</dd></div>
+        <div><dt>eFront</dt><dd>Software for private-markets investing, now part of BlackRock.</dd></div>
+        <div><dt>Preqin</dt><dd>Private-markets data, now available in Explore and Aladdin Data Cloud<sup class="r"><a href="https://www.blackrock.com/aladdin/discover/expertise/webinars/unifying-the-whole-portfolio-across-public-and-private-markets" target="_blank" rel="noopener" title="Unifying the Whole Portfolio Across Public and Private Markets">14</a></sup>, and linked into eFront workflows<sup class="r"><a href="https://www.preqin.com/news/blackrock-aladdin-launches-end-to-end-private-markets-workflow" target="_blank" rel="noopener" title="Aladdin launches end-to-end private markets workflow">27</a></sup>.</dd></div>
+      </dl></div>
+      <div class="box"><p class="eyebrow">Solutions on top of Aladdin</p><dl>
+        <div><dt>Aladdin Copilot</dt><dd>The chat assistant inside every app.</dd></div>
+        <div><dt>Aladdin Studio, Data Cloud</dt><dd>Tools and data for clients who build their own.</dd></div>
+        <div><dt>Accounting</dt><dd>The official books and NAV, steps 12 and 13.</dd></div>
+        <div><dt>Risk, Climate, Whole Portfolio</dt><dd>Risk analytics, climate scenarios, and public plus private holdings in one view.</dd></div>
+      </dl></div>
+      <div class="box"><p class="eyebrow">Network</p><dl>
+        <div><dt>Provider network</dt><dd>Connects Aladdin to nine of the largest asset servicers (custodians and fund administrators)<sup class="r"><a href="https://www.blackrock.com/aladdin/discover/client-story/client-story-jpm" target="_blank" rel="noopener" title="Technology transforming the asset servicer and asset manager relationship">17</a></sup>.</dd></div>
+        <div><dt>Partners</dt><dd>Cloud and data partners such as Microsoft, AWS and Snowflake<sup class="r"><a href="https://www.microsoft.com/en-us/microsoft-cloud/blog/2024/12/11/how-blackrock-is-finding-new-alpha-as-ai-transformation-becomes-a-critical-business-driver/" target="_blank" rel="noopener" title="How BlackRock is finding new alpha as AI transformation becomes a critical business driver">23</a>,<a href="https://press.aboutamazon.com/aws/2025/12/blackrock-partners-with-aws-to-deliver-aladdin-on-secure-scalable-cloud-infrastructure" target="_blank" rel="noopener" title="BlackRock partners with AWS to deliver Aladdin">24</a>,<a href="https://www.blackrock.com/corporate/newsroom/media/press-releases/aladdin-data-cloud-powered-by-snowflake" target="_blank" rel="noopener" title="Aladdin Data Cloud, powered by Snowflake">26</a></sup>.</dd></div>
+      </dl></div>
+    </div>
+  </div>
+
+  <div class="sec">
+    <div class="sec-head"><h2>How it got here</h2></div>
+    <div class="tracks">
+      <div><p class="eyebrow" style="margin-bottom:8px">The core, in order (undated)</p>
+        <ol class="tl">
+          <li><span class="when">first</span><span class="dot"></span><span>"One database" held everything, a Sybase core<sup class="r"><a href="https://www.blackrock.com/aladdin/discover/podcast/engineering-story-podcast-episode#:~:text=one%20database" target="_blank" rel="noopener" title="Principles of Design podcast">5</a></sup></span></li>
+          <li><span class="when">then</span><span class="dot"></span><span>Trading data moved to Cassandra to scale<sup class="r"><a href="https://www.blackrock.com/aladdin/discover/podcast/engineering-story-podcast-episode#:~:text=we%20leveraged%20Cassandra" target="_blank" rel="noopener" title="Principles of Design podcast">5</a></sup></span></li>
+          <li><span class="when">today</span><span class="dot"></span><span>Starting to give each domain ownership of its own data<sup class="r"><a href="https://www.blackrock.com/aladdin/discover/podcast/engineering-story-podcast-episode#:~:text=starting%20to%20introduce" target="_blank" rel="noopener" title="Principles of Design podcast">5</a></sup></span></li>
+        </ol></div>
+      <div><p class="eyebrow" style="margin-bottom:8px">Dated milestones</p>
+        <ol class="tl">
+          <li><span class="when">2021</span><span class="dot"></span><span>Aladdin Data Cloud launches on Snowflake<sup class="r"><a href="https://www.blackrock.com/corporate/newsroom/media/press-releases/aladdin-data-cloud-powered-by-snowflake" target="_blank" rel="noopener" title="Aladdin Data Cloud, powered by Snowflake">26</a></sup></span></li>
+          <li><span class="when">2024</span><span class="dot"></span><span>By now, Aladdin runs on Microsoft Azure<sup class="r"><a href="https://www.microsoft.com/en-us/microsoft-cloud/blog/2024/12/11/how-blackrock-is-finding-new-alpha-as-ai-transformation-becomes-a-critical-business-driver/" target="_blank" rel="noopener" title="How BlackRock is finding new alpha as AI transformation becomes a critical business driver">23</a></sup></span></li>
+          <li><span class="when">2025</span><span class="dot"></span><span>Copilot is in all of the ≈100 apps<sup class="r"><a href="https://www.youtube.com/watch?v=oyqeCHFM5U4&amp;t=155s" target="_blank" rel="noopener" title="How BlackRock Built Production AI Agents (LangChain Interrupt 2025) at 2:35">1</a></sup></span></li>
+          <li><span class="when">Dec 2025</span><span class="dot"></span><span>AWS partnership announced<sup class="r"><a href="https://press.aboutamazon.com/aws/2025/12/blackrock-partners-with-aws-to-deliver-aladdin-on-secure-scalable-cloud-infrastructure" target="_blank" rel="noopener" title="BlackRock partners with AWS to deliver Aladdin">24</a></sup></span></li>
+          <li class="plan"><span class="when">H2 2026</span><span class="dot"></span><span>AWS hosting option due<sup class="r"><a href="https://press.aboutamazon.com/aws/2025/12/blackrock-partners-with-aws-to-deliver-aladdin-on-secure-scalable-cloud-infrastructure" target="_blank" rel="noopener" title="BlackRock partners with AWS to deliver Aladdin">24</a></sup></span></li>
+        </ol></div>
+    </div>
+  </div>
+
+</section>
+
+<!-- ======================================================= SHEET 2 -->
+<section class="sheet" aria-labelledby="s2">
+  <header class="sheet-head">
+    <div>
+      <p class="eyebrow">What people see and do</p>
+      <h1 id="s2">What using Aladdin is like</h1>
+      <p class="lede">You start by choosing a portfolio or loading a saved workspace. Apps are grids of configurable reports you can save and share. Rules run in the background and hand people a short list of exceptions, and Copilot lets you ask instead of click.</p>
+    </div>
+    <div class="meta" style="display:grid;gap:8px;justify-items:end;text-align:right">
+      <span class="folio">PAGE 2 / 2</span>
+      <div class="legend"><span><i class="k-seen"></i>shown in sources</span><span><i class="k-inf"></i>our inference</span><span><i class="k-plan"></i>announced, not live</span><span><b class="n">1</b> trade step</span><span>◆ control point</span></div>
+    </div>
+  </header>
+
+  <!-- personas -->
+  <div class="sec">
+    <div class="sec-head"><h2>Who does what</h2><p>The roles on these pages, the app each one opens first, and what they own.</p></div>
+    <div class="personas">
+      <div class="persona hue-front"><b>Portfolio manager</b><span class="opens">Explore, Order Monitor</span><span class="owns">the investment decision</span></div>
+      <div class="persona hue-front"><b>Trader</b><span class="opens">Order Monitor, <span class="tag-inf">a blotter (inferred)</span></span><span class="owns">getting the order done</span></div>
+      <div class="persona hue-over"><b>Compliance, risk</b><span class="opens">Risk Radar, compliance results</span><span class="owns">limits and breaches</span></div>
+      <div class="persona hue-ops"><b>Operations</b><span class="opens">Events Monitor</span><span class="owns">confirming, settling, corporate actions</span></div>
+      <div class="persona hue-ops"><b>Accountant</b><span class="opens">valuation workflow</span><span class="owns">the official books and NAV</span></div>
+      <div class="persona hue-front"><b>Performance analyst</b><span class="opens">Explore</span><span class="owns">returns and why they happened</span></div>
+      <div class="persona hue-plat"><b>Client developer</b><span class="opens">Aladdin Studio</span><span class="owns">custom tools and data</span></div>
+    </div>
+  </div>
+
+  <!-- day in the life -->
+  <div class="sec">
+    <div class="sec-head"><h2>A morning for a portfolio manager</h2><p>Three apps and one question to Copilot, all about Portfolio 1. Deep links can open an app straight on a given portfolio<sup class="r"><a href="https://www.blackrock.com/aladdin/discover/expertise/big-little-questions" target="_blank" rel="noopener" title="Big Little Questions: How is emerging tech reshaping the user experience?">10</a></sup>. Frames with dashed borders are our drawing of screens no source shows.</p></div>
+    <div class="day">
+      <div class="step-col">
+        <span class="time">08:00</span>
+        <div class="frame inf"><div class="fbar"><span class="tb"></span><span class="fname">Aladdin Dashboard</span></div>
+          <div class="fctx"><span class="pchip">Portfolio 1</span></div>
+          <div class="fbody"><div class="alert">Aerospace exposure now 5% of Portfolio 1</div><div class="alert">2 orders awaiting authorization</div></div></div>
+        <p class="step-note">Start the day from alerts. The Dashboard is named in the specs; this layout is ours.</p>
+      </div>
+      <div class="step-col">
+        <span class="time">08:10</span>
+        <div class="frame"><div class="fbar"><span class="tb"></span><span class="fname">Explore · what-if, through time</span></div>
+          <div class="fctx"><span class="pchip">Portfolio 1</span></div>
+          <div class="fbody">
+            <div class="sbar"><span>Aerospace</span><i style="width:40%"></i><span>5.0%</span></div>
+            <div class="sbar"><span>modified</span><i class="mod" style="width:56%"></i><span>7.0%</span></div>
+            <span class="res">New risk and attribution shown</span></div></div>
+        <p class="step-note">Model adding 2% to the aerospace sector, funded from cash<sup class="r"><a href="https://www.youtube.com/watch?v=BahCi45_BTc&amp;t=576s" target="_blank" rel="noopener" title="Aladdin Explore: Intro (Aladdin classroom) at 9:36">2</a></sup>.</p>
+      </div>
+      <div class="step-col">
+        <span class="time">08:20</span>
+        <div class="frame"><div class="fbar"><span class="tb"></span><span class="fname">Explore</span><span class="cop-btn" title="Aladdin Copilot">✦</span></div>
+          <div class="fctx"><span class="pchip">Portfolio 1</span></div>
+          <div class="fbody" style="border-left:2px dashed var(--cop);background:var(--cop-bg)">
+            <span style="font-weight:700;color:var(--cop)">Aladdin Copilot</span>
+            <div class="q">How much X can I buy and stay compliant? How much cash do I have?</div>
+            <div class="ans"><span>Exposure now: 5.0%</span><span>Compliant up to: 2.4% more</span><span>Cash available: $18m</span></div></div></div>
+        <p class="step-note">She asks Copilot from inside Explore and decides to buy 2%. BlackRock tests Copilot with this kind of multi-step question<sup class="r"><a href="https://www.youtube.com/watch?v=oyqeCHFM5U4&amp;t=793s" target="_blank" rel="noopener" title="How BlackRock Built Production AI Agents (LangChain Interrupt 2025) at 13:13">1</a></sup>; the numbers are illustrative.</p>
+      </div>
+      <div class="step-col">
+        <span class="time">08:30</span>
+        <div class="frame inf"><div class="fbar"><span class="tb"></span><span class="fname">Order Monitor</span></div>
+          <div class="fctx"><span class="pchip">Portfolio 1</span></div>
+          <div class="fbody"><span>Buy X · 2% of Portfolio 1</span>
+            <div class="ostatus"><span>Open</span><i>→</i><span class="cur">Compliance pending</span><i>→</i><span>Authorized</span></div>
+            <span class="res warn">Warning: issuer limit at 90%</span></div></div>
+        <p class="step-note">She raises the order; the compliance result appears on it. Steps <span class="n">4</span> and <span class="n">5</span>.</p>
+      </div>
+    </div>
+    <p class="caption">Order Monitor sits inside Aladdin Dashboard per the specs<sup class="r"><a href="https://pypi.org/project/asdk_plugin_trading/" target="_blank" rel="noopener" title="asdk_plugin_* packages, v2.0.0b3">22</a></sup>, and the order statuses are real. The Copilot panel's position and the ✦ button are our drawing; BlackRock says Copilot is embedded in every app and reads what is on screen<sup class="r"><a href="https://www.youtube.com/watch?v=oyqeCHFM5U4&amp;t=155s" target="_blank" rel="noopener" title="How BlackRock Built Production AI Agents (LangChain Interrupt 2025) at 2:35">1</a>,<a href="https://www.youtube.com/watch?v=oyqeCHFM5U4&amp;t=345s" target="_blank" rel="noopener" title="How BlackRock Built Production AI Agents (LangChain Interrupt 2025) at 5:45">1</a></sup>.</p>
+  </div>
+
+  <!-- Explore -->
+  <div class="sec">
+    <div class="sec-head"><h2>Inside Explore, the flagship app</h2><p>BlackRock calls Explore "a marquee application"<sup class="r"><a href="https://www.blackrock.com/aladdin/discover/expertise/webinars/assessing-the-impact-of-trade-escalations" target="_blank" rel="noopener" title="Assessing the impact of escalating trade tensions">13</a></sup>. Analysts call it "a one-stop shop for reporting and portfolio analysis"<sup class="r"><a href="https://www.youtube.com/watch?v=nFwJlw0Ut9k&amp;t=55s" target="_blank" rel="noopener" title="Aladdin: Fixed Income Performance Analyst at 0:55">3</a></sup>.</p></div>
+    <div class="ex-grid">
+      <div style="display:grid;gap:8px;min-width:0">
+        <div class="window" role="img" aria-label="Wireframe of Explore: toolbar with Copilot button, context bar with portfolio, date, currency, benchmark and settings; report tabs for a fixed income portfolio; widgets with gear menus, one open showing column choices; Aladdin Copilot panel on the right.">
+          <div class="win-bar"><span class="tb" style="width:16px;height:16px" title="Aladdin toolbar"></span><span class="callout">A</span><span class="url">client-site / app / Explore</span><span class="cop-btn" style="width:18px;height:18px;font-size:11px;outline:1.5px dashed var(--cop);outline-offset:2px" title="Aladdin Copilot (our drawing)">✦</span><span class="callout cop">H</span></div>
+          <div class="win-body">
+            <div class="main-pane">
+              <div class="ctx"><span class="callout">B</span><span class="sel">Workspace: Team daily risk ▾</span><span class="sel on">Portfolio 1</span><span class="sel">18 Oct 2026</span><span class="sel">USD</span><span class="sel">Benchmark: primary ▾</span><span class="sel">Portfolio settings ▾</span><span class="sel">Save ▾</span><span class="sel">Export ▾</span><span class="callout">G</span></div>
+              <div class="tabs"><i class="callout" style="margin:0 4px 0 0">C</i><span class="on">FI portfolio summary</span><span>FI risk summary</span><span>FI comparison</span><span>+ Add widget</span></div>
+              <div class="widgets">
+                <div class="widget"><div class="wh"><span>Sector exposure</span><span style="display:flex;gap:4px;align-items:center"><span class="callout">D</span><svg class="gear" viewBox="0 0 16 16" aria-label="settings"><circle cx="8" cy="8" r="2.4"/><path d="M8 1.5v2.2M8 12.3v2.2M1.5 8h2.2M12.3 8h2.2M3.4 3.4l1.6 1.6M11 11l1.6 1.6M3.4 12.6L5 11M11 5l1.6-1.6"/></svg></span></div>
+                  <div class="bars">
+                    <div class="bar"><span>Technology</span><i style="width:88%"></i><span>22%</span></div>
+                    <div class="bar"><span>Financials</span><i style="width:64%"></i><span>16%</span></div>
+                    <div class="bar"><span>Aerospace</span><i style="width:20%"></i><span>5%</span></div>
+                  </div></div>
+                <div class="popover"><div class="wh"><span>Risk and exposure · settings</span><span class="callout">E</span></div>
+                  <div class="ptabs"><span class="on">Columns</span><span>Breakdowns</span><span>Filters</span><span>Format</span></div>
+                  <div class="cols"><span>☑ VaR</span><span>☑ Duration</span><span>☐ Stress P&amp;L</span><span>☐ Spread</span></div>
+                  <span style="color:var(--muted)">Search columns · Preview · Quick column set ▾</span></div>
+                <div class="widget span"><div class="wh"><span>Holdings · public and private</span><span style="display:flex;gap:4px;align-items:center"><span class="callout">F</span><svg class="gear" viewBox="0 0 16 16" aria-hidden="true"><circle cx="8" cy="8" r="2.4"/><path d="M8 1.5v2.2M8 12.3v2.2M1.5 8h2.2M12.3 8h2.2M3.4 3.4l1.6 1.6M11 11l1.6 1.6M3.4 12.6L5 11M11 5l1.6-1.6"/></svg></span></div>
+                  <table class="tbl"><thead><tr><th>Asset</th><th>Weight</th><th>Active</th><th>Risk contrib.</th></tr></thead><tbody>
+                    <tr><td>US Treasury 4.25% 2034</td><td>8.1%</td><td>+1.2%</td><td>4 bp</td></tr>
+                    <tr><td>Private credit fund III</td><td>3.4%</td><td>+3.4%</td><td>11 bp</td></tr></tbody></table></div>
+              </div>
+            </div>
+            <aside class="copilot sheetish inferred-ui" style="border-left-style:dashed">
+              <span class="hd"><span class="cop-btn">✦</span>Aladdin Copilot</span>
+              <div class="sees">Sees: Explore · Portfolio 1 · Sector exposure widget · your settings</div>
+              <div class="bubble q">What is my exposure to aerospace in Portfolio 1?</div>
+              <div class="bubble a">5%</div>
+              <span class="caption">Only tools you are entitled to. No investment advice.</span>
+            </aside>
+          </div>
+        </div>
+        <p class="caption">Rebuilt from a recorded training session<sup class="r"><a href="https://www.youtube.com/watch?v=BahCi45_BTc" target="_blank" rel="noopener" title="Aladdin Explore: Intro (Aladdin classroom)">2</a></sup> and an analyst walkthrough<sup class="r"><a href="https://www.youtube.com/watch?v=nFwJlw0Ut9k" target="_blank" rel="noopener" title="Aladdin: Fixed Income Performance Analyst">3</a></sup>, both third-party uploads. Not a screenshot. Numbers are illustrative except the Copilot example<sup class="r"><a href="https://www.youtube.com/watch?v=oyqeCHFM5U4&amp;t=330s" target="_blank" rel="noopener" title="How BlackRock Built Production AI Agents (LangChain Interrupt 2025) at 5:30">1</a></sup>. The Copilot panel's placement and the ✦ button are our drawing (dashed).</p>
+      </div>
+      <div style="display:grid;gap:10px;align-content:start">
+        <ol class="anno">
+          <li><span class="callout">A</span><span><b>Launch</b> from the toolbar shared by every app, or deep-link to <span class="mono">/app/Explore</span><sup class="r"><a href="https://www.youtube.com/watch?v=BahCi45_BTc&amp;t=19s" target="_blank" rel="noopener" title="Aladdin Explore: Intro (Aladdin classroom) at 0:19">2</a></sup>.</span></li>
+          <li><span class="callout">B</span><span><b>Set the context first:</b> load a saved workspace, yours or a teammate's<sup class="r"><a href="https://www.youtube.com/watch?v=BahCi45_BTc&amp;t=44s" target="_blank" rel="noopener" title="Aladdin Explore: Intro (Aladdin classroom) at 0:44">2</a></sup>, or pick the portfolio, date, currency, benchmark and portfolio settings<sup class="r"><a href="https://www.youtube.com/watch?v=BahCi45_BTc&amp;t=122s" target="_blank" rel="noopener" title="Aladdin Explore: Intro (Aladdin classroom) at 2:02">2</a>,<a href="https://www.youtube.com/watch?v=BahCi45_BTc&amp;t=135s" target="_blank" rel="noopener" title="Aladdin Explore: Intro (Aladdin classroom) at 2:15">2</a></sup>.</span></li>
+          <li><span class="callout">C</span><span><b>Report tabs depend on the asset class.</b> This is a fixed-income portfolio; an equity one opens a different layout<sup class="r"><a href="https://www.youtube.com/watch?v=BahCi45_BTc&amp;t=70s" target="_blank" rel="noopener" title="Aladdin Explore: Intro (Aladdin classroom) at 1:10">2</a></sup>.</span></li>
+          <li><span class="callout">D</span><span><b>Every report is a widget</b> with its own gear menu<sup class="r"><a href="https://www.youtube.com/watch?v=BahCi45_BTc&amp;t=161s" target="_blank" rel="noopener" title="Aladdin Explore: Intro (Aladdin classroom) at 2:41">2</a></sup>.</span></li>
+          <li><span class="callout">E</span><span><b>The gear opens the widget's settings:</b> columns, breakdowns and filters, with search, preview and quick column sets for VaR or stress views<sup class="r"><a href="https://www.youtube.com/watch?v=BahCi45_BTc&amp;t=478s" target="_blank" rel="noopener" title="Aladdin Explore: Intro (Aladdin classroom) at 7:58">2</a></sup>.</span></li>
+          <li><span class="callout">F</span><span><b>Right-click a row</b> for a price chart, comparison or time series<sup class="r"><a href="https://www.youtube.com/watch?v=BahCi45_BTc&amp;t=364s" target="_blank" rel="noopener" title="Aladdin Explore: Intro (Aladdin classroom) at 6:04">2</a>,<a href="https://www.youtube.com/watch?v=nFwJlw0Ut9k&amp;t=432s" target="_blank" rel="noopener" title="Aladdin: Fixed Income Performance Analyst at 7:12">3</a></sup>.</span></li>
+          <li><span class="callout">G</span><span><b>Save and share:</b> workspaces have their own link; export to Excel or PDF<sup class="r"><a href="https://www.youtube.com/watch?v=nFwJlw0Ut9k&amp;t=498s" target="_blank" rel="noopener" title="Aladdin: Fixed Income Performance Analyst at 8:18">3</a>,<a href="https://www.youtube.com/watch?v=nFwJlw0Ut9k&amp;t=504s" target="_blank" rel="noopener" title="Aladdin: Fixed Income Performance Analyst at 8:24">3</a></sup>; report groups reuse a layout across portfolios<sup class="r"><a href="https://www.youtube.com/watch?v=BahCi45_BTc&amp;t=742s" target="_blank" rel="noopener" title="Aladdin Explore: Intro (Aladdin classroom) at 12:22">2</a></sup>.</span></li>
+          <li><span class="callout cop">H</span><span><b>Ask Aladdin Copilot instead of clicking.</b> Copilot is embedded in every app<sup class="r"><a href="https://www.youtube.com/watch?v=oyqeCHFM5U4&amp;t=155s" target="_blank" rel="noopener" title="How BlackRock Built Production AI Agents (LangChain Interrupt 2025) at 2:35">1</a></sup>, sees the app, portfolio and widgets on screen<sup class="r"><a href="https://www.youtube.com/watch?v=oyqeCHFM5U4&amp;t=345s" target="_blank" rel="noopener" title="How BlackRock Built Production AI Agents (LangChain Interrupt 2025) at 5:45">1</a></sup>, uses only the tools you are entitled to<sup class="r"><a href="https://www.youtube.com/watch?v=oyqeCHFM5U4&amp;t=447s" target="_blank" rel="noopener" title="How BlackRock Built Production AI Agents (LangChain Interrupt 2025) at 7:27">1</a></sup> and never gives investment advice<sup class="r"><a href="https://www.youtube.com/watch?v=oyqeCHFM5U4&amp;t=630s" target="_blank" rel="noopener" title="How BlackRock Built Production AI Agents (LangChain Interrupt 2025) at 10:30">1</a></sup>.</span></li>
+        </ol>
+      </div>
+    </div>
+  </div>
+
+  <!-- what-if -->
+  <div class="sec">
+    <div class="sec-head"><h2>Testing a trade before making it</h2><p>Step <span class="n">2</span> of the trade, as in the 08:10 frame: add 2% to aerospace, funded from cash.</p></div>
+    <ol class="thumbs">
+      <li><div class="thumb"><span class="btn">New what-if model</span><span style="color:var(--muted)">opens a choice of two modes</span></div><b>Start a model</b><span class="note">A button at the top right of Explore<sup class="r"><a href="https://www.youtube.com/watch?v=BahCi45_BTc&amp;t=576s" target="_blank" rel="noopener" title="Aladdin Explore: Intro (Aladdin classroom) at 9:36">2</a></sup>.</span></li>
+      <li><div class="thumb"><span class="opt on">Through time · sectors or the total</span><span class="opt">Point in time · any level, down to single securities</span></div><b>Pick the mode</b><span class="note">A sector change, so through time<sup class="r"><a href="https://www.youtube.com/watch?v=BahCi45_BTc&amp;t=584s" target="_blank" rel="noopener" title="Aladdin Explore: Intro (Aladdin classroom) at 9:44">2</a>,<a href="https://www.youtube.com/watch?v=BahCi45_BTc&amp;t=587s" target="_blank" rel="noopener" title="Aladdin Explore: Intro (Aladdin classroom) at 9:47">2</a></sup>.</span></li>
+      <li><div class="thumb"><div class="cmp"><span></span><b>Original</b><b>Modified</b><span>Aerospace</span><span>5.0%</span><b>7.0%</b><span>Cash</span><span>3.0%</span><b>1.0%</b></div></div><b>Edit the weights</b><span class="note">A Modified column sits beside the Original<sup class="r"><a href="https://www.youtube.com/watch?v=BahCi45_BTc&amp;t=620s" target="_blank" rel="noopener" title="Aladdin Explore: Intro (Aladdin classroom) at 10:20">2</a></sup>.</span></li>
+      <li><div class="thumb"><span>Risk report: <b>available</b></span><span>Attribution report: <b>available</b></span><span style="color:var(--muted)">single-security edit: risk only</span></div><b>Read the result</b><span class="note">Security-level edits lose attribution<sup class="r"><a href="https://www.youtube.com/watch?v=BahCi45_BTc&amp;t=690s" target="_blank" rel="noopener" title="Aladdin Explore: Intro (Aladdin classroom) at 11:30">2</a></sup>; compare side by side<sup class="r"><a href="https://www.youtube.com/watch?v=BahCi45_BTc&amp;t=654s" target="_blank" rel="noopener" title="Aladdin Explore: Intro (Aladdin classroom) at 10:54">2</a></sup>.</span></li>
+      <li><div class="thumb"><span class="btn">Save as portfolio</span><span style="color:var(--muted)">name it, reload it later</span></div><b>Keep it</b><span class="note">Saved models load like real portfolios<sup class="r"><a href="https://www.youtube.com/watch?v=BahCi45_BTc&amp;t=707s" target="_blank" rel="noopener" title="Aladdin Explore: Intro (Aladdin classroom) at 11:47">2</a></sup>.</span></li>
+    </ol>
+  </div>
+
+  <!-- user-view flows -->
+  <div class="sec">
+    <div class="sec-head"><h2>Four more jobs, from the user's side</h2><p>Each step shows what the person sees and decides, and what gets recorded. ◆ marks a control point and names who has to agree. Dashed cards are our inference.</p></div>
+    <div class="flows">
+      <div class="hue-over">
+        <div class="fhead"><span class="role">Risk team</span><h3>Handle a risk-limit breach</h3><small>Exception-based: the system finds it, people decide<sup class="r"><a href="https://www.blackrock.com/aladdin/discover/podcast/reducing-time-to-insight-how-ai-is-reshaping-risk-management" target="_blank" rel="noopener" title="Reducing time to insight: how AI reshapes risk management">11</a>,<a href="https://pypi.org/project/asdk_plugin_analytics/" target="_blank" rel="noopener" title="asdk_plugin_* packages, v2.0.0b3">22</a></sup></small></div>
+        <ol class="line">
+          <li><span class="stn gate"></span><div class="card"><h4>Set a limit</h4><span class="who">risk manager drafts; a named approver gives final sign-off</span><div class="row"><span>Sees</span><span>rule editor in Risk Radar</span></div><div class="row"><span>Decides</span><span>metric, limit, which portfolios</span></div><span class="code">rule: draft → approved; any edit starts a new draft</span></div></li>
+          <li><span class="stn"></span><div class="card"><h4>Run the check</h4><span class="who">risk manager, or an automatic trigger</span><div class="row"><span>Sees</span><span>portfolio and as-of date</span></div><div class="row"><span>Decides</span><span>when to check</span></div><span class="code">result: breach, warning or OK</span></div></li>
+          <li><span class="stn"></span><div class="card"><h4>Breach arrives</h4><span class="who">risk manager</span><div class="row"><span>Sees</span><span>rule, portfolio, priority</span></div><div class="row"><span>Decides</span><span>who owns it</span></div><span class="code">an exception and a work item, high, medium or low priority</span></div></li>
+          <li><span class="stn"></span><div class="card"><h4>Investigate</h4><span class="who">assignee</span><div class="row"><span>Sees</span><span>comments and history</span></div><div class="row"><span>Decides</span><span>assign, comment, set priority</span></div><span class="code">workflow updates kept 12 months</span></div></li>
+          <li><span class="stn gate"></span><div class="card"><h4>Resolve</h4><span class="who">assignee; a limit override is its own record, drafted then signed off</span><div class="row"><span>Sees</span><span>available actions</span></div><div class="row"><span>Decides</span><span>resolution reason, or a limit override</span></div><span class="code">closed with a reason; a later OK result closes it automatically</span></div></li>
+        </ol>
+      </div>
+
+      <div class="hue-ops">
+        <div class="fhead"><span class="role">Operations</span><h3>Act on a corporate action</h3><small>Each election is compliance-checked before it reaches the custodian<sup class="r"><a href="https://pypi.org/project/asdk_plugin_investment_operations/" target="_blank" rel="noopener" title="asdk_plugin_* packages, v2.0.0b3">22</a></sup></small></div>
+        <ol class="line">
+          <li><span class="stn gate"></span><div class="card"><h4>Check the event</h4><span class="who">operations reviewer approves the event data</span><div class="row"><span>Sees</span><span>new event in Events Monitor, with dates and deadline</span></div><div class="row"><span>Decides</span><span>approve the event data</span></div><span class="code">new / unreviewed → approved</span></div></li>
+          <li><span class="stn"></span><div class="card"><h4>See who is entitled</h4><span class="who">operations</span><div class="row"><span>Sees</span><span>entitlement per portfolio</span></div><div class="row"><span>Decides</span><span>which portfolios need a choice</span></div><span class="code">entitlement per portfolio</span></div></li>
+          <li><span class="stn gate"></span><div class="card"><h4>Elect</h4><span class="who">elector; compliance checks the choice automatically</span><div class="row"><span>Sees</span><span>options and amounts</span></div><div class="row"><span>Decides</span><span>option, amount; may override compliance</span></div><span class="code">proposed → elected (or pending)</span></div></li>
+          <li><span class="stn gate"></span><div class="card inf"><h4>Authorise</h4><span class="who">authoriser, probably a second person</span><div class="row"><span>Sees</span><span>the election</span></div><div class="row"><span>Decides</span><span>approve it</span></div><span class="code">authorizer + time recorded</span></div></li>
+          <li><span class="stn"></span><div class="card"><h4>Instruct, confirm</h4><span class="who">instructor: a person or a method</span><div class="row"><span>Sees</span><span>instruction to the custodian</span></div><div class="row"><span>Decides</span><span>send, then confirm</span></div><span class="code">instructor, confirmer recorded</span></div></li>
+          <li><span class="stn"></span><div class="card"><h4>Book it</h4><span class="who">system</span><div class="row"><span>Sees</span><span>processing result</span></div><div class="row"><span>Decides</span><span>fix failures</span></div><span class="code">not processed → processed or failed</span></div></li>
+        </ol>
+      </div>
+
+      <div class="hue-front">
+        <div class="fhead"><span class="role">Performance analyst</span><h3>Explain last month's returns</h3><small>All in Explore<sup class="r"><a href="https://www.youtube.com/watch?v=nFwJlw0Ut9k&amp;t=55s" target="_blank" rel="noopener" title="Aladdin: Fixed Income Performance Analyst at 0:55">3</a></sup></small></div>
+        <ol class="line">
+          <li><span class="stn"></span><div class="card"><h4>Split the P&amp;L</h4><span class="who">analyst</span><div class="row"><span>Sees</span><span>price, income, paydown, FX and trade P&amp;L per security<sup class="r"><a href="https://www.youtube.com/watch?v=nFwJlw0Ut9k&amp;t=115s" target="_blank" rel="noopener" title="Aladdin: Fixed Income Performance Analyst at 1:55">3</a></sup></span></div><div class="row"><span>Decides</span><span>sector scheme to roll up by</span></div></div></li>
+          <li><span class="stn"></span><div class="card"><h4>Attribute it</h4><span class="who">analyst</span><div class="row"><span>Sees</span><span>allocation vs selection effects<sup class="r"><a href="https://www.youtube.com/watch?v=nFwJlw0Ut9k&amp;t=209s" target="_blank" rel="noopener" title="Aladdin: Fixed Income Performance Analyst at 3:29">3</a></sup></span></div><div class="row"><span>Decides</span><span>method, weighting, breakdown</span></div></div></li>
+          <li><span class="stn"></span><div class="card"><h4>Look over time</h4><span class="who">analyst</span><div class="row"><span>Sees</span><span>daily time series, by right-click<sup class="r"><a href="https://www.youtube.com/watch?v=nFwJlw0Ut9k&amp;t=432s" target="_blank" rel="noopener" title="Aladdin: Fixed Income Performance Analyst at 7:12">3</a></sup></span></div><div class="row"><span>Decides</span><span>which periods matter</span></div></div></li>
+          <li><span class="stn"></span><div class="card"><h4>Build the fact sheet</h4><span class="who">analyst</span><div class="row"><span>Sees</span><span>1 to 10 year stats vs benchmark<sup class="r"><a href="https://www.youtube.com/watch?v=nFwJlw0Ut9k&amp;t=444s" target="_blank" rel="noopener" title="Aladdin: Fixed Income Performance Analyst at 7:24">3</a></sup></span></div><div class="row"><span>Decides</span><span>measures to show</span></div></div></li>
+          <li><span class="stn"></span><div class="card"><h4>Share it</h4><span class="who">analyst</span><div class="row"><span>Sees</span><span>workspace link, Excel, PDF, batch<sup class="r"><a href="https://www.youtube.com/watch?v=nFwJlw0Ut9k&amp;t=498s" target="_blank" rel="noopener" title="Aladdin: Fixed Income Performance Analyst at 8:18">3</a></sup></span></div><div class="row"><span>Decides</span><span>who gets what</span></div></div></li>
+        </ol>
+      </div>
+
+      <div class="hue-plat">
+        <div class="fhead"><span class="role">Client developer</span><h3>Build on Studio</h3><small>Studio takes Aladdin "beyond the user interface"<sup class="r"><a href="https://www.blackrock.com/aladdin/discover/resources/aladdin-studio-for-aladdin-risk-management#:~:text=beyond%20the%20user%20interface" target="_blank" rel="noopener" title="Aladdin Studio for Aladdin Risk">19</a>,<a href="https://github.com/blackrock/aladdinsdk" target="_blank" rel="noopener" title="blackrock/aladdinsdk">21</a></sup></small></div>
+        <ol class="line">
+          <li><span class="stn"></span><div class="card inf"><h4>Open a project</h4><span class="who">developer</span><div class="row"><span>Sees</span><span>a Studio project, personal or shared</span></div><div class="row"><span>Decides</span><span>who on the team joins</span></div><span class="code">named in the SDK README</span></div></li>
+          <li><span class="stn"></span><div class="card"><h4>Get access</h4><span class="who">developer</span><div class="row"><span>Sees</span><span>an API key and app credentials</span></div><div class="row"><span>Decides</span><span>which data the app may touch</span></div><span class="code">read or write access, per kind of data</span></div></li>
+          <li><span class="stn"></span><div class="card"><h4>Explore data</h4><span class="who">developer</span><div class="row"><span>Sees</span><span>notebooks and the data dictionary<sup class="r"><a href="https://www.blackrock.com/aladdin/products/apis" target="_blank" rel="noopener" title="Aladdin APIs">25</a></sup></span></div><div class="row"><span>Decides</span><span>what to build</span></div></div></li>
+          <li><span class="stn"></span><div class="card"><h4>Build</h4><span class="who">developer</span><div class="row"><span>Sees</span><span>SDK calling the APIs and Data Cloud</span></div><div class="row"><span>Decides</span><span>logic, schedule</span></div></div></li>
+          <li><span class="stn"></span><div class="card"><h4>Register a dataset</h4><span class="who">developer with Studio admin rights</span><div class="row"><span>Sees</span><span>the dataset listed in Data Cloud</span></div><div class="row"><span>Decides</span><span>register it for the team</span></div><span class="code">registered datasets go straight to released; datasets edited in Admin Center pass draft → review (four-eyes) → approved → released</span></div></li>
+        </ol>
+      </div>
+    </div>
+  </div>
+
+  <!-- shifts -->
+  <div class="sec">
+    <div class="sec-head"><h2>Where the experience is heading</h2></div>
+    <div class="shifts">
+      <div class="shift"><span class="pill from">Click through screens</span><span class="arw2">→</span><span class="pill to">Ask in plain language</span><span class="qt">"We start to prompt more than click, navigate, pulldown"<sup class="r"><a href="https://www.blackrock.com/aladdin/discover/podcast/the-way-forward-2-podcast#:~:text=prompt%20more%20than%20click" target="_blank" rel="noopener" title="The Way Forward, part 2">8</a></sup>; a CIO can ask with "no need to navigate screens"<sup class="r"><a href="https://www.blackrock.com/aladdin/discover/expertise/webinars/accelerating-innovation-to-transform-investment-management" target="_blank" rel="noopener" title="Accelerating Innovation to Transform Investment Management">12</a></sup></span></div>
+      <div class="shift"><span class="pill from">A new app per need</span><span class="arw2">→</span><span class="pill to">Copilot plug-ins</span><span class="qt">"From I need a UI to I need a copilot"<sup class="r"><a href="https://www.blackrock.com/aladdin/discover/podcast/microsoft-part-2-podcast#:~:text=I%20need%20a%20copilot" target="_blank" rel="noopener" title="Humans in the loop, robots on the team, part 2">7</a></sup></span></div>
+      <div class="shift"><span class="pill from">Watch spreadsheets</span><span class="arw2">→</span><span class="pill to">Work through exceptions</span><span class="qt">"Beyond the spreadsheet into the more exception based workflows"<sup class="r"><a href="https://www.blackrock.com/aladdin/discover/podcast/reducing-time-to-insight-how-ai-is-reshaping-risk-management" target="_blank" rel="noopener" title="Reducing time to insight: how AI reshapes risk management">11</a></sup></span></div>
+      <div class="shift"><span class="pill from">Same screen for all</span><span class="arw2">→</span><span class="pill to">Adapts to the user</span><span class="qt">"Contextual personalization which we applied in all of our apps," plus deep links<sup class="r"><a href="https://www.blackrock.com/aladdin/discover/expertise/big-little-questions" target="_blank" rel="noopener" title="Big Little Questions: How is emerging tech reshaping the user experience?">10</a></sup></span></div>
+      <div class="shift"><span class="pill from">Java desktop apps</span><span class="arw2">→</span><span class="pill to">Web apps</span><span class="qt">Explore is web-based, avoiding "a lot of Java issues"<sup class="r"><a href="https://www.youtube.com/watch?v=BahCi45_BTc&amp;t=397s" target="_blank" rel="noopener" title="Aladdin Explore: Intro (Aladdin classroom) at 6:37">2</a></sup></span></div>
+      <div class="shift"><span class="pill from">Excel</span><span class="arw2">→</span><span class="pill to">Python, then language</span><span class="qt">Python and R passed Excel; 3,000 people code inside BlackRock<sup class="r"><a href="https://www.youtube.com/watch?v=Me_H_-E6lSg&amp;t=520s" target="_blank" rel="noopener" title="From Analytics to Intelligence: BlackRock&#x27;s Journey to Data Productization at 8:40">4</a>,<a href="https://www.youtube.com/watch?v=Me_H_-E6lSg&amp;t=579s" target="_blank" rel="noopener" title="From Analytics to Intelligence: BlackRock&#x27;s Journey to Data Productization at 9:39">4</a></sup></span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ======================================================= ENGINEERS -->
+<section class="sheet" aria-labelledby="s3">
+  <header class="sheet-head">
+    <div><p class="eyebrow">Appendix</p><h1 id="s3" style="font-size:clamp(24px,3.2vw,32px)">For engineers</h1>
+      <p class="lede">How the public APIs are built, and what each design choice means for someone using the apps.</p></div>
+  </header>
+  <div class="eng">
+    <div class="sec">
+      <div class="sec-head"><h3>Public APIs per domain, by maturity</h3><p class="caption">54 APIs and 301 operations in 11 packages, v2.0.0b3<sup class="r"><a href="https://pypi.org/search/?q=asdk_plugin" target="_blank" rel="noopener" title="asdk_plugin_* packages, v2.0.0b3">22</a></sup>. The full catalog is behind a client login<sup class="r"><a href="https://www.blackrock.com/aladdin/products/apis" target="_blank" rel="noopener" title="Aladdin APIs">25</a></sup>.</p></div>
+      <div class="chart" id="apichart"></div>
+      <div class="ckey"><span><i style="background:var(--m-stable)"></i>stable</span><span><i style="background:var(--m-beta)"></i>beta</span><span><i style="background:var(--m-alpha)"></i>alpha</span><span><i style="background:var(--m-sunset)"></i>sunset</span></div>
+      <div class="sec-head" style="margin-top:12px"><h3>Conventions in every spec</h3></div>
+      <ul class="conv">
+        <li>Defined in protobuf and served as REST, with Google-style methods such as <code>:filter</code> and <code>:batchCreate</code>.</li>
+        <li>Two locks on each call: an OAuth scope such as <code>trading…Order:write</code>, then an Aladdin permission inside the service. Permissions attach only to user groups.</li>
+        <li>Each API is labelled alpha, beta, stable or sunset and versioned on its own.</li>
+        <li>Job postings describe a Kubernetes-based container platform underneath<sup class="r"><a href="https://careers.blackrock.com/job/gurgaon/studio-developer-operations-vice-president/45831/72781824544" target="_blank" rel="noopener" title="Studio Developer Operations, Vice President">28</a></sup> (our inference that it hosts Aladdin itself).</li>
+        <li>190 of 301 operations are POST: filters travel in the body, batches are capped and long jobs return a task ID to poll.</li>
+      </ul>
+    </div>
+    <div class="sec">
+      <div class="sec-head"><h3>How records behave, and what users notice</h3><p class="caption">Behaviour read off the specs<sup class="r"><a href="https://pypi.org/search/?q=asdk_plugin" target="_blank" rel="noopener" title="asdk_plugin_* packages, v2.0.0b3">22</a></sup>. The "you see" lines are our inference.</p></div>
+      <div class="mech">
+        <div class="mcard"><h4>History is kept</h4>
+          <div class="vers" aria-hidden="true"><div><span>v1</span><i style="width:40%"></i></div><div><span>v2</span><i style="width:30%;margin-left:40%"></i></div><div><span>v3</span><i style="width:30%;margin-left:70%;background:var(--soft)"></i></div></div>
+          <p>Rows carry entry and expiry times plus business dates, so any past state can be read back.</p>
+          <div class="see"><b>You see:</b> an as-of date picker</div></div>
+        <div class="mcard"><h4>Approval lives in the record</h4>
+          <div class="chips"><span class="chip">draft</span><span class="ar">→</span><span class="chip">review</span><span class="ar">→</span><span class="chip">approved</span></div>
+          <p>Rules, datasets and payments carry their own approval state; some need a second person.</p>
+          <div class="see"><b>You see:</b> status chips and an approve button</div></div>
+        <div class="mcard"><h4>Edits carry a version</h4>
+          <div class="chips"><span class="chip">A saves v5 ✓</span><span class="chip">B saves stale v4 ✕</span></div>
+          <p>Orders and trades carry a touch count that rises with every edit; fund-flow records use it to reject stale updates.</p>
+          <div class="see"><b>You see:</b> "someone else changed this"</div></div>
+        <div class="mcard"><h4>Access by group</h4>
+          <div class="chips"><span class="chip">OAuth scope</span><span class="ar">→</span><span class="chip">Aladdin permission</span></div>
+          <p>Both must pass; Copilot's tools are filtered by user group the same way.</p>
+          <div class="see"><b>You see:</b> only your portfolios and tools</div></div>
+      </div>
+    </div>
+  </div>
+  <div class="sec" style="grid-column:1/-1">
+    <div class="sec-head" style="grid-column:1/-1"><h3>How Aladdin Copilot answers</h3><p>Copilot is "the connective tissue" across the apps<sup class="r"><a href="https://www.youtube.com/watch?v=oyqeCHFM5U4&amp;t=162s" target="_blank" rel="noopener" title="How BlackRock Built Production AI Agents (LangChain Interrupt 2025) at 2:42">1</a></sup>. Each question is narrowed from thousands of possible tools to a handful.</p></div>
+    <div class="pipe">
+      <div><div class="pstage"><b>1</b><span>question, plus the app, portfolio and widgets on screen<sup class="r"><a href="https://www.youtube.com/watch?v=oyqeCHFM5U4&amp;t=345s" target="_blank" rel="noopener" title="How BlackRock Built Production AI Agents (LangChain Interrupt 2025) at 5:45">1</a></sup></span></div></div>
+      <div><div class="pstage"><b>1,000s</b><span>registered tools from 50–60 domain teams<sup class="r"><a href="https://www.youtube.com/watch?v=oyqeCHFM5U4&amp;t=238s" target="_blank" rel="noopener" title="How BlackRock Built Production AI Agents (LangChain Interrupt 2025) at 3:58">1</a></sup></span></div></div>
+      <div><div class="pstage"><b>20–30</b><span>kept, by environment, user group and app<sup class="r"><a href="https://www.youtube.com/watch?v=oyqeCHFM5U4&amp;t=447s" target="_blank" rel="noopener" title="How BlackRock Built Production AI Agents (LangChain Interrupt 2025) at 7:27">1</a></sup></span></div></div>
+      <div><div class="pstage"><b>plan, call</b><span>the chosen APIs, then guardrails check the answer<sup class="r"><a href="https://www.youtube.com/watch?v=oyqeCHFM5U4&amp;t=460s" target="_blank" rel="noopener" title="How BlackRock Built Production AI Agents (LangChain Interrupt 2025) at 7:40">1</a></sup></span></div></div>
+      <div><div class="pstage final"><b>1</b><span>answer, never investment advice<sup class="r"><a href="https://www.youtube.com/watch?v=oyqeCHFM5U4&amp;t=630s" target="_blank" rel="noopener" title="How BlackRock Built Production AI Agents (LangChain Interrupt 2025) at 10:30">1</a></sup></span></div></div>
+    </div>
+  </div>
+
+</section>
+
+<!-- ======================================================= SOURCES -->
+<section class="sheet" aria-labelledby="src">
+  <header class="sheet-head">
+    <div><p class="eyebrow">Every small number links to its exact source</p><h1 id="src" style="font-size:clamp(22px,3vw,28px)">Sources</h1>
+      <p class="lede">YouTube links jump to the timestamp. Quoted chips on BlackRock pages with a written transcript jump to the words (Chrome, Edge and Safari). Other BlackRock pages host audio or video, so the link opens the episode. Independent analysis of public material, not affiliated with or reviewed by BlackRock.</p></div>
+  </header>
+  <ol class="sources">
+<li id="src1"><span class="num">1</span><span><a href="https://www.youtube.com/watch?v=oyqeCHFM5U4" target="_blank" rel="noopener">How BlackRock Built Production AI Agents (LangChain Interrupt 2025)</a> <span class="kind">· YouTube talk by BlackRock&#x27;s AI engineering team</span><span class="ts"><a href="https://www.youtube.com/watch?v=oyqeCHFM5U4&amp;t=106s" target="_blank" rel="noopener">1:46 4,000 engineers</a><a href="https://www.youtube.com/watch?v=oyqeCHFM5U4&amp;t=114s" target="_blank" rel="noopener">1:54 ≈100 apps</a><a href="https://www.youtube.com/watch?v=oyqeCHFM5U4&amp;t=155s" target="_blank" rel="noopener">2:35 in every app</a><a href="https://www.youtube.com/watch?v=oyqeCHFM5U4&amp;t=162s" target="_blank" rel="noopener">2:42 connective tissue</a><a href="https://www.youtube.com/watch?v=oyqeCHFM5U4&amp;t=238s" target="_blank" rel="noopener">3:58 50–60 teams</a><a href="https://www.youtube.com/watch?v=oyqeCHFM5U4&amp;t=330s" target="_blank" rel="noopener">5:30 aerospace</a><a href="https://www.youtube.com/watch?v=oyqeCHFM5U4&amp;t=345s" target="_blank" rel="noopener">5:45 what&#x27;s on screen</a><a href="https://www.youtube.com/watch?v=oyqeCHFM5U4&amp;t=447s" target="_blank" rel="noopener">7:27 20–30 tools</a><a href="https://www.youtube.com/watch?v=oyqeCHFM5U4&amp;t=460s" target="_blank" rel="noopener">7:40 guardrails</a><a href="https://www.youtube.com/watch?v=oyqeCHFM5U4&amp;t=630s" target="_blank" rel="noopener">10:30 no advice</a><a href="https://www.youtube.com/watch?v=oyqeCHFM5U4&amp;t=793s" target="_blank" rel="noopener">13:13 multi-step test</a></span></span></li>
+<li id="src2"><span class="num">2</span><span><a href="https://www.youtube.com/watch?v=BahCi45_BTc" target="_blank" rel="noopener">Aladdin Explore: Intro (Aladdin classroom)</a> <span class="kind">· third-party YouTube upload of a training session</span><span class="ts"><a href="https://www.youtube.com/watch?v=BahCi45_BTc&amp;t=19s" target="_blank" rel="noopener">0:19 toolbar</a><a href="https://www.youtube.com/watch?v=BahCi45_BTc&amp;t=44s" target="_blank" rel="noopener">0:44 workspace</a><a href="https://www.youtube.com/watch?v=BahCi45_BTc&amp;t=70s" target="_blank" rel="noopener">1:10 tabs by asset class</a><a href="https://www.youtube.com/watch?v=BahCi45_BTc&amp;t=122s" target="_blank" rel="noopener">2:02 date, currency, benchmark</a><a href="https://www.youtube.com/watch?v=BahCi45_BTc&amp;t=135s" target="_blank" rel="noopener">2:15 portfolio settings</a><a href="https://www.youtube.com/watch?v=BahCi45_BTc&amp;t=161s" target="_blank" rel="noopener">2:41 widgets, gear</a><a href="https://www.youtube.com/watch?v=BahCi45_BTc&amp;t=364s" target="_blank" rel="noopener">6:04 price chart</a><a href="https://www.youtube.com/watch?v=BahCi45_BTc&amp;t=397s" target="_blank" rel="noopener">6:37 Java</a><a href="https://www.youtube.com/watch?v=BahCi45_BTc&amp;t=478s" target="_blank" rel="noopener">7:58 column sets</a><a href="https://www.youtube.com/watch?v=BahCi45_BTc&amp;t=576s" target="_blank" rel="noopener">9:36 new what-if</a><a href="https://www.youtube.com/watch?v=BahCi45_BTc&amp;t=584s" target="_blank" rel="noopener">9:44 through time</a><a href="https://www.youtube.com/watch?v=BahCi45_BTc&amp;t=587s" target="_blank" rel="noopener">9:47 point in time</a><a href="https://www.youtube.com/watch?v=BahCi45_BTc&amp;t=620s" target="_blank" rel="noopener">10:20 modified column</a><a href="https://www.youtube.com/watch?v=BahCi45_BTc&amp;t=654s" target="_blank" rel="noopener">10:54 compare</a><a href="https://www.youtube.com/watch?v=BahCi45_BTc&amp;t=690s" target="_blank" rel="noopener">11:30 risk only</a><a href="https://www.youtube.com/watch?v=BahCi45_BTc&amp;t=707s" target="_blank" rel="noopener">11:47 save as portfolio</a><a href="https://www.youtube.com/watch?v=BahCi45_BTc&amp;t=742s" target="_blank" rel="noopener">12:22 report groups</a></span></span></li>
+<li id="src3"><span class="num">3</span><span><a href="https://www.youtube.com/watch?v=nFwJlw0Ut9k" target="_blank" rel="noopener">Aladdin: Fixed Income Performance Analyst</a> <span class="kind">· third-party YouTube upload of a workflow walkthrough</span><span class="ts"><a href="https://www.youtube.com/watch?v=nFwJlw0Ut9k&amp;t=55s" target="_blank" rel="noopener">0:55 one-stop shop</a><a href="https://www.youtube.com/watch?v=nFwJlw0Ut9k&amp;t=97s" target="_blank" rel="noopener">1:37 security-level returns</a><a href="https://www.youtube.com/watch?v=nFwJlw0Ut9k&amp;t=115s" target="_blank" rel="noopener">1:55 P&amp;L split</a><a href="https://www.youtube.com/watch?v=nFwJlw0Ut9k&amp;t=209s" target="_blank" rel="noopener">3:29 Brinson</a><a href="https://www.youtube.com/watch?v=nFwJlw0Ut9k&amp;t=432s" target="_blank" rel="noopener">7:12 time series</a><a href="https://www.youtube.com/watch?v=nFwJlw0Ut9k&amp;t=444s" target="_blank" rel="noopener">7:24 fact sheet</a><a href="https://www.youtube.com/watch?v=nFwJlw0Ut9k&amp;t=498s" target="_blank" rel="noopener">8:18 workspace, URL</a><a href="https://www.youtube.com/watch?v=nFwJlw0Ut9k&amp;t=504s" target="_blank" rel="noopener">8:24 Excel, PDF</a></span></span></li>
+<li id="src4"><span class="num">4</span><span><a href="https://www.youtube.com/watch?v=Me_H_-E6lSg" target="_blank" rel="noopener">From Analytics to Intelligence: BlackRock&#x27;s Journey to Data Productization</a> <span class="kind">· Snowflake Data Cloud podcast, YouTube</span><span class="ts"><a href="https://www.youtube.com/watch?v=Me_H_-E6lSg&amp;t=54s" target="_blank" rel="noopener">0:54 language of the portfolio</a><a href="https://www.youtube.com/watch?v=Me_H_-E6lSg&amp;t=98s" target="_blank" rel="noopener">1:38 analytics factory</a><a href="https://www.youtube.com/watch?v=Me_H_-E6lSg&amp;t=289s" target="_blank" rel="noopener">4:49 APIs and events</a><a href="https://www.youtube.com/watch?v=Me_H_-E6lSg&amp;t=324s" target="_blank" rel="noopener">5:24 sandboxes, research environments</a><a href="https://www.youtube.com/watch?v=Me_H_-E6lSg&amp;t=520s" target="_blank" rel="noopener">8:40 Excel</a><a href="https://www.youtube.com/watch?v=Me_H_-E6lSg&amp;t=579s" target="_blank" rel="noopener">9:39 3,000 developers</a><a href="https://www.youtube.com/watch?v=Me_H_-E6lSg&amp;t=912s" target="_blank" rel="noopener">15:12 single symbology</a></span></span></li>
+<li id="src5"><span class="num">5</span><span><a href="https://www.blackrock.com/aladdin/discover/podcast/engineering-story-podcast-episode" target="_blank" rel="noopener">Principles of Design podcast</a> <span class="kind">· BlackRock, published transcript</span><span class="ts"><a href="https://www.blackrock.com/aladdin/discover/podcast/engineering-story-podcast-episode#:~:text=one%20database" target="_blank" rel="noopener">“one database”</a><a href="https://www.blackrock.com/aladdin/discover/podcast/engineering-story-podcast-episode#:~:text=we%20leveraged%20Cassandra" target="_blank" rel="noopener">“we leveraged Cassandra”</a><a href="https://www.blackrock.com/aladdin/discover/podcast/engineering-story-podcast-episode#:~:text=starting%20to%20introduce" target="_blank" rel="noopener">“starting to introduce”</a><a href="https://www.blackrock.com/aladdin/discover/podcast/engineering-story-podcast-episode#:~:text=single%20control%20plane" target="_blank" rel="noopener">“single control plane”</a></span></span></li>
+<li id="src6"><span class="num">6</span><span><a href="https://www.blackrock.com/aladdin/discover/podcast/snowflake-podcast-data-the-key-ingredient" target="_blank" rel="noopener">Data: The key ingredient</a> <span class="kind">· BlackRock podcast, published transcript</span><span class="ts"><a href="https://www.blackrock.com/aladdin/discover/podcast/snowflake-podcast-data-the-key-ingredient#:~:text=which%20is%20part%20of%20Studio" target="_blank" rel="noopener">“which is part of Studio”</a><a href="https://www.blackrock.com/aladdin/discover/podcast/snowflake-podcast-data-the-key-ingredient#:~:text=core%20IBOR%20and%20ABOR" target="_blank" rel="noopener">“core IBOR and ABOR”</a></span></span></li>
+<li id="src7"><span class="num">7</span><span><a href="https://www.blackrock.com/aladdin/discover/podcast/microsoft-part-2-podcast" target="_blank" rel="noopener">Humans in the loop, robots on the team, part 2</a> <span class="kind">· BlackRock podcast with Microsoft</span><span class="ts"><a href="https://www.blackrock.com/aladdin/discover/podcast/microsoft-part-2-podcast#:~:text=I%20need%20a%20copilot" target="_blank" rel="noopener">“I need a copilot”</a></span></span></li>
+<li id="src8"><span class="num">8</span><span><a href="https://www.blackrock.com/aladdin/discover/podcast/the-way-forward-2-podcast" target="_blank" rel="noopener">The Way Forward, part 2</a> <span class="kind">· BlackRock podcast, published transcript</span><span class="ts"><a href="https://www.blackrock.com/aladdin/discover/podcast/the-way-forward-2-podcast#:~:text=prompt%20more%20than%20click" target="_blank" rel="noopener">“prompt more than click”</a></span></span></li>
+<li id="src9"><span class="num">9</span><span><a href="https://www.blackrock.com/aladdin/discover/expertise/big-little-questions" target="_blank" rel="noopener">Big Little Questions: How can tech transform numbers into insightful narratives?</a> <span class="kind">· BlackRock video, Aladdin Accounting episode, on the series page</span></span></li>
+<li id="src10"><span class="num">10</span><span><a href="https://www.blackrock.com/aladdin/discover/expertise/big-little-questions" target="_blank" rel="noopener">Big Little Questions: How is emerging tech reshaping the user experience?</a> <span class="kind">· BlackRock video on the series page</span></span></li>
+<li id="src11"><span class="num">11</span><span><a href="https://www.blackrock.com/aladdin/discover/podcast/reducing-time-to-insight-how-ai-is-reshaping-risk-management" target="_blank" rel="noopener">Reducing time to insight: how AI reshapes risk management</a> <span class="kind">· BlackRock podcast audio</span></span></li>
+<li id="src12"><span class="num">12</span><span><a href="https://www.blackrock.com/aladdin/discover/expertise/webinars/accelerating-innovation-to-transform-investment-management" target="_blank" rel="noopener">Accelerating Innovation to Transform Investment Management</a> <span class="kind">· BlackRock webinar</span></span></li>
+<li id="src13"><span class="num">13</span><span><a href="https://www.blackrock.com/aladdin/discover/expertise/webinars/assessing-the-impact-of-trade-escalations" target="_blank" rel="noopener">Assessing the impact of escalating trade tensions</a> <span class="kind">· BlackRock webinar demoing Explore</span></span></li>
+<li id="src14"><span class="num">14</span><span><a href="https://www.blackrock.com/aladdin/discover/expertise/webinars/unifying-the-whole-portfolio-across-public-and-private-markets" target="_blank" rel="noopener">Unifying the Whole Portfolio Across Public and Private Markets</a> <span class="kind">· BlackRock webinar</span></span></li>
+<li id="src15"><span class="num">15</span><span><a href="https://www.blackrock.com/aladdin/discover/expertise/events/aladdin-client-forum-2026" target="_blank" rel="noopener">Aladdin Client Forum 2026</a> <span class="kind">· BlackRock event video</span></span></li>
+<li id="src16"><span class="num">16</span><span><a href="https://www.blackrock.com/aladdin/view-whole-portfolio" target="_blank" rel="noopener">Whole Portfolio</a> <span class="kind">· BlackRock product page</span><span class="ts"><a href="https://www.blackrock.com/aladdin/view-whole-portfolio#:~:text=designed%20for%20asset%20managers" target="_blank" rel="noopener">“designed for asset managers”</a><a href="https://www.blackrock.com/aladdin/view-whole-portfolio#:~:text=unified%20IBOR" target="_blank" rel="noopener">“unified IBOR”</a></span></span></li>
+<li id="src17"><span class="num">17</span><span><a href="https://www.blackrock.com/aladdin/discover/client-story/client-story-jpm" target="_blank" rel="noopener">Technology transforming the asset servicer and asset manager relationship</a> <span class="kind">· BlackRock client story video</span></span></li>
+<li id="src18"><span class="num">18</span><span><a href="https://www.blackrock.com/aladdin/platforms/products/aladdin-copilot" target="_blank" rel="noopener">Aladdin Copilot</a> <span class="kind">· BlackRock product page; its site menu lists the platforms and solutions</span></span></li>
+<li id="src19"><span class="num">19</span><span><a href="https://www.blackrock.com/aladdin/discover/resources/aladdin-studio-for-aladdin-risk-management" target="_blank" rel="noopener">Aladdin Studio for Aladdin Risk</a> <span class="kind">· BlackRock resource page</span><span class="ts"><a href="https://www.blackrock.com/aladdin/discover/resources/aladdin-studio-for-aladdin-risk-management#:~:text=beyond%20the%20user%20interface" target="_blank" rel="noopener">“beyond the user interface”</a></span></span></li>
+<li id="src20"><span class="num">20</span><span><a href="https://www.blackrock.com/aladdin/products/aladdin-data-cloud" target="_blank" rel="noopener">Aladdin Data Cloud</a> <span class="kind">· BlackRock product page</span></span></li>
+<li id="src21"><span class="num">21</span><span><a href="https://github.com/blackrock/aladdinsdk" target="_blank" rel="noopener">blackrock/aladdinsdk</a> <span class="kind">· GitHub, open-source Python SDK and README</span></span></li>
+<li id="src22"><span class="num">22</span><span><a href="https://pypi.org/search/?q=asdk_plugin" target="_blank" rel="noopener">asdk_plugin_* packages, v2.0.0b3</a> <span class="kind">· PyPI; each package ships its domain&#x27;s Swagger specs</span><span class="ts"><a href="https://pypi.org/project/asdk_plugin_trading/" target="_blank" rel="noopener">trading</a><a href="https://pypi.org/project/asdk_plugin_portfolio/" target="_blank" rel="noopener">portfolio</a><a href="https://pypi.org/project/asdk_plugin_portfolio_management/" target="_blank" rel="noopener">portfolio_management</a><a href="https://pypi.org/project/asdk_plugin_compliance/" target="_blank" rel="noopener">compliance</a><a href="https://pypi.org/project/asdk_plugin_analytics/" target="_blank" rel="noopener">analytics</a><a href="https://pypi.org/project/asdk_plugin_investment_operations/" target="_blank" rel="noopener">investment_operations</a><a href="https://pypi.org/project/asdk_plugin_accounting/" target="_blank" rel="noopener">accounting</a><a href="https://pypi.org/project/asdk_plugin_investment_research/" target="_blank" rel="noopener">investment_research</a><a href="https://pypi.org/project/asdk_plugin_data/" target="_blank" rel="noopener">data</a><a href="https://pypi.org/project/asdk_plugin_clients/" target="_blank" rel="noopener">clients</a><a href="https://pypi.org/project/asdk_plugin_platform/" target="_blank" rel="noopener">platform</a></span></span></li>
+<li id="src23"><span class="num">23</span><span><a href="https://www.microsoft.com/en-us/microsoft-cloud/blog/2024/12/11/how-blackrock-is-finding-new-alpha-as-ai-transformation-becomes-a-critical-business-driver/" target="_blank" rel="noopener">How BlackRock is finding new alpha as AI transformation becomes a critical business driver</a> <span class="kind">· Microsoft Cloud blog, Dec 2024</span></span></li>
+<li id="src24"><span class="num">24</span><span><a href="https://press.aboutamazon.com/aws/2025/12/blackrock-partners-with-aws-to-deliver-aladdin-on-secure-scalable-cloud-infrastructure" target="_blank" rel="noopener">BlackRock partners with AWS to deliver Aladdin</a> <span class="kind">· Amazon press release, Dec 2025</span></span></li>
+<li id="src25"><span class="num">25</span><span><a href="https://www.blackrock.com/aladdin/products/apis" target="_blank" rel="noopener">Aladdin APIs</a> <span class="kind">· BlackRock product page</span></span></li>
+<li id="src26"><span class="num">26</span><span><a href="https://www.blackrock.com/corporate/newsroom/media/press-releases/aladdin-data-cloud-powered-by-snowflake" target="_blank" rel="noopener">Aladdin Data Cloud, powered by Snowflake</a> <span class="kind">· BlackRock press release, 2021</span></span></li>
+<li id="src27"><span class="num">27</span><span><a href="https://www.preqin.com/news/blackrock-aladdin-launches-end-to-end-private-markets-workflow" target="_blank" rel="noopener">Aladdin launches end-to-end private markets workflow</a> <span class="kind">· Preqin news</span></span></li>
+<li id="src28"><span class="num">28</span><span><a href="https://careers.blackrock.com/job/gurgaon/studio-developer-operations-vice-president/45831/72781824544" target="_blank" rel="noopener">Studio Developer Operations, Vice President</a> <span class="kind">· BlackRock job posting</span></span></li>
+<li id="src29"><span class="num">29</span><span><a href="https://www.blackrock.com/aladdin/discover" target="_blank" rel="noopener">Best Overall Technology Provider for 2023</a> <span class="kind">· BlackRock video on the Aladdin Discover page; “we eat our own cooking”</span></span></li>
+<li id="src30"><span class="num">30</span><span><a href="https://careers.blackrock.com/job/new-york/senior-product-director-aladdin-studio-developer/45831/96232273856" target="_blank" rel="noopener">Senior Product Director, Aladdin Studio Developer</a> <span class="kind">· BlackRock job posting describing Aladdin as a “$1BN+ technology business”</span></span></li>
+</ol>
+</section>
+
+</div>
+<div class="tip" id="tip" hidden></div>
+
+<script>
+(function () {
+  var data = [
+    ["investment_operations", 9, 4, 2, 0, 74], ["analytics", 0, 0, 8, 1, 53], ["platform", 2, 0, 4, 0, 29],
+    ["investment_research", 5, 0, 0, 0, 41], ["accounting", 2, 2, 0, 0, 8], ["compliance", 3, 0, 1, 0, 9],
+    ["portfolio_management", 1, 0, 3, 0, 28], ["portfolio", 1, 0, 2, 0, 23], ["trading", 1, 0, 1, 0, 14],
+    ["clients", 0, 0, 1, 0, 7], ["data", 0, 0, 1, 0, 15]
+  ];
+  var host = document.getElementById("apichart"), tip = document.getElementById("tip");
+  if (!host) return;
+  var order = [["s", 3, "stable"], ["b", 2, "beta"], ["a", 1, "alpha"], ["x", 4, "sunset"]];
+  data.forEach(function (d) {
+    var total = d[1] + d[2] + d[3] + d[4], name = d[0].replace(/_/g, " ");
+    var row = document.createElement("div"); row.className = "crow";
+    var a = document.createElement("a"); a.href = "https://pypi.org/project/asdk_plugin_" + d[0] + "/";
+    a.target = "_blank"; a.rel = "noopener"; a.textContent = name; a.title = "asdk_plugin_" + d[0] + " on PyPI";
+    var track = document.createElement("div"); track.className = "track";
+    order.forEach(function (o) {
+      var n = d[o[1]]; if (!n) return;
+      var s = document.createElement("span"); s.className = "seg " + o[0];
+      s.style.width = (n / 15 * 100) + "%";
+      s.setAttribute("aria-label", name + ": " + n + " " + o[2]);
+      s.dataset.tip = name + " · " + n + " " + o[2] + " of " + total + " APIs";
+      track.appendChild(s);
+    });
+    var c = document.createElement("span"); c.className = "cnt"; c.textContent = total + (total === 1 ? " API · " : " APIs · ") + d[5] + " ops";
+    row.appendChild(a); row.appendChild(track); row.appendChild(c); host.appendChild(row);
+  });
+  host.addEventListener("mousemove", function (e) {
+    var t = e.target.closest(".seg");
+    if (!t) { tip.hidden = true; return; }
+    tip.textContent = t.dataset.tip; tip.hidden = false;
+    tip.style.left = Math.min(e.clientX + 12, window.innerWidth - tip.offsetWidth - 8) + "px";
+    tip.style.top = (e.clientY - 30) + "px";
+  });
+  host.addEventListener("mouseleave", function () { tip.hidden = true; });
+})();
+</script>
+
+</body>
+</html>

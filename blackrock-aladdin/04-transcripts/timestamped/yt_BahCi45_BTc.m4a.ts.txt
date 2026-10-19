@@ -1,0 +1,126 @@
+[00:05] Hello everyone and welcome to this Aladdin classroom.
+[00:09] Today we're going to be talking about the risk and reporting functionalities within our new application explorer.
+[00:15] To begin there's a couple ways of launching Explorer.
+[00:18] One would be through your genie toolbar, through this blue icon you see right here on the right side.
+[00:23] And the other would be through going to your Aladdin client site, the top left here in my URL,
+[00:29] and adding slash app slash explorer to the end of your link.
+[00:33] Once you have an Explorer, the launching page will look like this and you'll have a couple options.
+[00:38] You can first search through any of the portfolios in your environment or benchmarks,
+[00:43] or you can load a workspace here on the left side.
+[00:46] In order to load a workspace you can hit the down facing arrow next to my workspace and hit load workspace.
+[00:54] This would allow you to see all of your own workspaces or those workspaces that have been created by other members of your team.
+[01:05] In this case I'm going to load a test portfolio here since we are in our test environment.
+[01:10] And that would launch a page that looks like this.
+[01:17] The way the page looks depends on the type of portfolio or the asset classes in your portfolio.
+[01:22] In this case this is a fixed income portfolio so it'll launch a page that looks like this,
+[01:26] but this could look different if you're launching say an equity portfolio.
+[01:30] What we see here is a list of reports, three reports on the tops on the top side of the page,
+[01:37] one called fixed income portfolio summary, one called fixed income risk summary,
+[01:41] and one called fixed income comparison and we'll go through each one of those.
+[01:45] We then have all our widgets coming downwards this way,
+[01:49] and we could see that the widgets are different.
+[01:51] We have some line charts, bar charts, and we have our risk and exposure widget in the far bottom.
+[01:59] You can see the portfolio name, you can select the date, currency, and benchmark.
+[02:05] The benchmarks you'll have the primary or secondary benchmarks of your portfolio,
+[02:08] but you can also select other and type in any benchmark name in your environment.
+[02:12] If you go into portfolio settings, you'll have settings like split positions in case you wanted to see both
+[02:20] legs of say an FX forward.
+[02:22] You have look through securities in case you wanted to see every security held within a fund in your portfolio,
+[02:28] and then you have filter risk settings and performance settings that we'll talk about a little later.
+[02:33] Each report here is called a widget.
+[02:38] These widgets can be configured here by going to add widget, where you can select each one of the widgets
+[02:43] that you see below.
+[02:45] In this case, we have the bar chart, the risk and exposure, and some line charts.
+[02:53] Each widget itself is configured individually.
+[02:57] You can configure them by going to the gear icon on the top right corner of each widget.
+[03:01] We can start here by going to this risk and exposure widget and seeing some of the options.
+[03:08] When you click on the gear icon on the top right corner, you can see all the columns that are available to you for your report.
+[03:15] In this case, the risk and exposure widget will default to these columns that you see right here,
+[03:19] but you can change those.
+[03:21] You can delete them all by hitting this trash can right here in the top right corner,
+[03:25] or you can select others by clicking in the search column.
+[03:29] In case you wanted to see market value instead of market value percentage,
+[03:32] you would be able to simply type that in and pull it over to your selected columns.
+[03:41] On the right side, you'll see that you have a preview, which will show you what the chart would look like
+[03:46] before without having to actually load it.
+[03:49] But if you did not want to see the preview, you can hit hide preview, in which case it would give you more space to look at simply your options.
+[03:57] If you select any of the columns, you can see the options for that individual column pop up on the right hand side.
+[04:04] The options could be something like display settings in case you wanted to change that to say, instead of market value,
+[04:10] you can have the column be called nav, for example.
+[04:13] You can add a format, so decide how many decimal places you want to see in the column.
+[04:18] Highlight, which would let you color different columns depending on different rules.
+[04:23] Column level breakdown, which would be a breakdown on the x-axis as opposed to a breakdown on the y-axis,
+[04:31] which will show also a little later.
+[04:34] And things like aggregation and date override.
+[04:38] The next options for the columns are these breakdown options, right here in the second tab.
+[04:44] The breakdown options will decide how you're going to group your securities.
+[04:47] In this case, we have a Barclays 4-pillar sectors breakdown.
+[04:51] Filters are defined by these custom sectors.
+[04:55] So in order to define the filters, you can double click on this blue line item, which would let you define it.
+[05:01] Say I wanted to just find a filter that only showed me my securities that were within a list of countries.
+[05:10] I could define that that way.
+[05:16] And then display settings that are just a few settings.
+[05:18] If you wanted to aggregate benchmark securities into one collapsed group, portfolio securities or closed securities,
+[05:24] you'd be able to do that here.
+[05:32] Each widget will have different options.
+[05:35] So if I went into a bar chart, for example, I would see that my options are a little different
+[05:40] than what I see in risk and exposure widget.
+[05:43] In this case, you could select the measures the same way that you would select columns in risk and exposure,
+[05:48] the breakdown, the filter, and the chart settings that are a little different.
+[05:52] In risk and exposure, in Explorer, we have released a functionality that will allow you to see a price chart on the securities in your portfolio.
+[06:09] So if you right-click on a single security line item, you would be able to see this open price chart option
+[06:16] that would show you a time series of the price changes in that security throughout time.
+[06:20] It would also show you if you had purchased or sold that security within the time period selected.
+[06:26] A key functionality to explore is that it is web-based, which allows us to save time on a lot of Java issues that we have been facing with other applications.
+[06:42] It also allows us to save URLs.
+[06:45] So if you save this workspace under any name, which I could show right here, demo, workspace 2,
+[06:51] I would then be able to share this URL with any member of my team or save it myself,
+[07:00] and they would be able to load the exact workspace that I'm looking at by just typing this URL into their Chrome.
+[07:05] Moving on to the next tab, we have our Fixed Income Risk Summary tab.
+[07:14] This tab will be pulling straight from PRT, so you can see here if I expand my risk broken down by risk factors.
+[07:19] This is broken down by risk factor as I would in a PRT report.
+[07:22] This widget is also configured using the gear icon in the top right corner, where I would be able to select all the columns,
+[07:31] the breakdowns the same way as risk and exposure, but then I would also be able to select all my risk settings.
+[07:36] That would be a little different.
+[07:37] So in case I wanted to see my analytical var as a 95% instead of an 84%, I'd be able to change that right here.
+[07:44] I could select the economy date, the risk model, and the waiting scheme is also right here, and the time horizon, the risk horizon.
+[07:54] If I go back to columns, this functionality of Quick Column Set is also very useful, as it allows you to change from analytical var columns to stress P&L columns super easily.
+[08:07] If I wanted to see a report with stress P&L columns, I could change this to stress P&L, which would change all the columns I have selected here in my selected column sets.
+[08:17] If I hide the preview real quick, you'll see that each one of these selected stress P&L columns can be changed individually to select a different scenario.
+[08:28] So if I select a stress P&L column and wanted to see a specific stress scenario, I would be able to select that here,
+[08:36] pull that over to the right side, and have that column be that scenario.
+[08:42] I can also name each column differently, so if I wanted to ensure that I knew that this was the stock market drop global column, I could change that to stock market drop, in which case I would know that this stress P&L column is my stock market drop.
+[09:06] I can also then add more stress P&L columns and have each one of them be a different scenario by changing each one of their individual scenarios in the options.
+[09:21] I then have the Fixing and Comparison tab up here.
+[09:25] This tab I wanted to show a different functionality that we have released and explore, which is the comparison functionality.
+[09:34] If you go to the New What If model button in the top right corner of Explore, you'll have a couple options pop up.
+[09:44] You'll first have Through Time Analysis, and then you'll have Point and Time Analysis.
+[09:49] The difference is that in Through Time Analysis you can make sector allocation changes at the sector level or at the total level, but not at the individual security level.
+[09:58] In Point and Time Analysis you'll be able to do allocation changes or weight changes in your portfolio at any level, including at the individual security level.
+[10:08] If we walk through an option, I'm going to go to Security Selection, in which case I would be able to see each of the securities in my portfolio.
+[10:16] I'll see an original column for my original market value and then a modified column for any changes that I've been making.
+[10:23] If I drill down into my Treasuries and save this first treasury right here, I change the weight to 1% just to make a large change so that we can see the difference.
+[10:32] I'll be able to see the changes in my market value columns side by side.
+[10:36] When I hit Reload, I'll see that now the changes in the reports that I had before are now going to be seen for the new portfolio that I've created.
+[10:45] If I wanted to see the portfolio side by side, the portfolio is being my original portfolio and this new portfolio that I've created with Change Weights, I'd be able to go to this Compare 2 button in the top right corner.
+[10:57] Once going to the Compare 2, I can click the two Compare buttons and hit Done.
+[11:03] That'll then show me each portfolio, my original portfolio, and my new What If portfolio side by side in each one of the metrics that I had created in my Fixed Income Comparison report.
+[11:15] We can see the market value changes, the duration contribution changes, oh yes, etc.
+[11:21] You'd be able to see any of your risk analytics in this method.
+[11:26] It's important to note that if you'd made changes at the security level, you will only be able to see risk reports and not attribution reports.
+[11:33] If you make changes at the sector level, you would be able to see performance and risk reports.
+[11:39] If you wanted to save this portfolio, this new What If portfolio in order to load it at a later point in time, you would be able to do so by going to Save As portfolio.
+[11:49] By going to Save As portfolio, you could name this What If portfolio whatever you wanted to and save it with Save button.
+[11:58] You would then be able to load it at any other point in time with Explore by just typing in that name.
+[12:10] Another functionality that I wanted to show is that of report groups.
+[12:14] If you wanted to see all the reports for two portfolios but you've created them for one, you wouldn't have to create them all over again.
+[12:21] You could use the functionality of Create a Report group right here, in which case you'd be able to add different portfolios to the same report group and see all of the reports that you've created for any other portfolios in that report group.
+[12:34] If I drag them both in here, I can now see that I can see all the reports that I had for BRS Core 4.
+[12:39] I can now see them also for BRS Core 1.
+[12:42] One last functionality that I wanted to show here is the ability to create to break down risk contribution columns by risk factor in a risk and exposure widget.
+[13:03] So I'm going to erase all my columns and pull in a risk contribution column.
+[13:07] I can select a risk contribution column and use the risk contribution options on the right side to break them down by factor breakdown instead of by sector breakdown.
+[13:38] If I break it down by factor breakdown and hit Done, I'll see the risk of my portfolio broken down by risk factor on the x-axis and broken down by whatever breakdown I selected on the y-axis.
+[13:52] This allows me to see the risk of each one of my individual securities broken down by risk factor but also use any risk and exposure or GP breakdown on the y-axis.
+[14:06] With that, I'd like to conclude the demo of risk in reporting on Explorer.
+[14:11] And feel free to reach out to Aladdin Client Services if you have any further questions on your reporting.

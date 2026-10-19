@@ -1,0 +1,286 @@
+[00:00] Our world is changing. Markets are transforming and technology is underpinning all of it.
+[00:07] Making a future of unknowns more noble. Today, technology is truly never done.
+[00:13] I'm your host, Mira Jessa, and this is the Never Done podcast by Aladdin. Now let's get into it.
+[00:26] All right, two of my faves from Blackrock. I am pumped to have this chat with you guys.
+[00:34] But before we get into it, because, Pavan, you literally sent me this like 30 seconds ago,
+[00:41] but you're a gardener? Yeah. What? Grow your own vegetables? Yeah. Tell us about that.
+[00:47] So I got into gardening back in 2010 when I started to understand when I was in Phoenix,
+[00:52] Arizona, the access to some of it. Things grow in Phoenix, and I was like,
+[00:56] absolutely. All right. So I saw one of my neighbor trying to go into his backyard and get
+[01:04] farm to produce to the kitchen and everyday basis. I think this is so fun. I want to try it as an
+[01:09] experimental basis for the first one or two seasons I failed miserably. Then I hadn't come over and
+[01:15] think, teach me how to do it. From then on, I've become more self-sufficient during the fall season.
+[01:20] From June to October, I really don't have to go to a grocery shopping anymore.
+[01:24] I love that. I've only gotten to know you in the last couple of months, but this is so telling
+[01:29] of why you're in the role you're in right now leading our AI strategy. But gardening is something
+[01:34] that's so tangible. You grow your vegetables, you dig the dirt, you got to water the plants,
+[01:40] and AI is just so intangible. And when you think about AI and risk, I think risk is tangible in some
+[01:49] regard. Physical risk definitely is. But what does AI actually have to do with risk?
+[01:56] Risk, I think, is no longer about what you know and how you get to it. I think AI is trying to shape
+[02:01] it to be how fast can you act on it. In these changing markets that we see right now, it's no
+[02:07] longer about how do you get to an insight, how fast can you distill the data from different sources
+[02:13] of data that you have, and creating and augmenting the firm with making decisions faster. And that's
+[02:19] where AI can make a real big impact in the regard. Jess, you live in breathe risk, which I'm sure you
+[02:25] love. But when you think about how risk and risk managers have operated in the last 30 years,
+[02:33] they're now in this environment that is constantly changing. The geopolitics on the day-to-day basis,
+[02:40] I mean, you don't know what you're going to wake up to in the morning. In the backdrop of AI and
+[02:44] what Pavan just talked about, how are risk professionals managing today?
+[02:49] It can be overwhelming. I think the risk that you're talking about where we can't necessarily know
+[02:55] what's coming around the corner or what we're going to wake up to, putting the focus on being
+[03:02] able to react to that in new ways is incredibly important. And AI is playing an active role in
+[03:09] being one of the mega forces that is shaping risk and how industries are changing, how even
+[03:16] geopolitically we're thinking about what's changing in our own country, what's changing
+[03:20] across the globe. But the ability to adapt to that, going back 30 years, we've gone from
+[03:27] reports to tech-enabled workflows to apps, UIs, moving data into more centralized systems,
+[03:36] ways that we can really start to manage the scale that's needed. And then with AI, moving into a
+[03:43] place where the time to insight is just greatly reduced, which is so important when we don't know
+[03:50] what we're going to wake up to. And we're not sure what our exposure might be to what has come
+[03:56] around the corner and is staring us in the face. So I think really taking not only a tech-enabled
+[04:01] approach to managing risk, but also where AI can really accelerate the workflows and reduce
+[04:08] that time to insight into something that's really manageable given the volatility.
+[04:13] When you say time to insight, what does that mean?
+[04:15] So coming from a career working in technology and specifically financial technology, the way I think
+[04:21] about it is really what's in the hands of a user and how fast are we able to access the information
+[04:28] that we need in order to make a decision or to draw an insight about what is happening in a
+[04:33] portfolio, what's happening with investments, what's happening in the markets. And so I define time to
+[04:39] insight through the technology lens of think about coming into the office, sitting in front of your
+[04:46] computer, opening the applications that are important to you, or you can do portfolio analysis, you can
+[04:51] do risk analysis, you can choose your portfolio or set up portfolios, you can look for the content
+[04:56] that is driving how you're thinking about what the news and media is reporting that day
+[05:01] to a lot less friction and getting to the insight. So whether it's through natural language,
+[05:09] conversations with agents or it's more autonomous agents that are surfacing something that you
+[05:15] should be paying attention to, it's really changing the way that we interact with the technology that
+[05:21] allows us to do risk management.
+[05:22] As someone who's sitting in the AI world, probably encountering people that are equally excited and
+[05:29] equally anxious about this whole new era, Larry's even said this is as fundamental as the computer.
+[05:35] Talk to me about this concept of AI shifting how we think about decision making.
+[05:41] That's a great question, Mira. When you step back and think about it from six months ago,
+[05:45] was this even possible? If we don't have been thought through possible, right?
+[05:50] The AI, there's two worlds that we live in right now. The AI that we did so far was about
+[05:55] generating the next best text or token or predictive analytics saying what's the next best right decision
+[06:00] based on structured data. Now we are evolving into a situation where we are talking about
+[06:06] agents doing the work and augmenting the workforce right now. And that world that we live in right
+[06:11] now, there is a set of tasks that can be delegated to these agents and with the right
+[06:16] appropriate guardrails in the trigger, the fundamental context in which we are trying to
+[06:21] build right now is the memory module. How do you feed your preferences, your choices into these
+[06:26] agents right now, that they can act on your behalf. You go home before end of day, you say,
+[06:32] here's my basket of portfolios. Here are my preferences, delegate the task to these agents.
+[06:38] So the agents like a pseudo you? Yeah. Isn't that creepy?
+[06:43] It feels that way. But I think with the right appropriate guardrails and evaluation
+[06:47] restrictions that you apply on it, think about it. You're actually autonomizing the day to day jobs
+[06:53] that we do. We're actually reducing the time to make decision to what Jess was saying about,
+[06:58] the distance between the signal generation to the time you take action is greatly reduced. So,
+[07:04] you're actually taking more decisions, higher quality, higher fidelity decisions,
+[07:09] all grounded in our own data in the trigger. So that's the thing is the unlock where you are able
+[07:14] to react to different signals that are coming in more proactively instead of reactively.
+[07:19] You're building a reflexive muzzle into the research analyst and that's the key unlock
+[07:24] that AI is providing for us. And now I talked about this earlier, like equally excited and equally
+[07:29] anxious where I just said a minute ago, it's creepy. But then as you were talking, I was like,
+[07:34] as a busy working mum and the thousands of decisions, I feel like I need to make all the time.
+[07:40] Is it this pyjama or that pyjama, you know, or whatever it is, it is actually pretty excited.
+[07:45] If we can take the more repetitive mundane tasks out of our day to day.
+[07:51] And we are not there yet where we can let the agents do the decisions on our behalf,
+[07:55] but we are more in a situation where we are enabling the agents to do the grant work on our
+[08:01] behalf so we can use the time more from doing the work to directing the work.
+[08:06] I think that's the pivot that we're going through is humans are more directing the work to the agents
+[08:11] and the agents are doing it on behalf of us. I think that's right. And I think that reducing
+[08:16] the creepiness factor, Mira, comes into play because we need to design the agents to understand
+[08:25] that an insight that is relevant to you in your role and is relevant to Pavan and his role
+[08:34] look very different. And so while there's this automation or autonomous element to it,
+[08:40] it's still very critical that your example of your children not wanting the same pyjama
+[08:48] is almost a way to think about it in the risk context of an insight on an index portfolio.
+[08:55] It's not that interesting to an active portfolio manager. The context is incredibly important.
+[09:01] And so it's not a one size fits all. It's not a complete trust and keeping the human in the loop
+[09:08] in order to guide and advise and course correct is incredibly important. And that has to be factored
+[09:15] in to the prioritization of the insight, the prioritization of even the data and what's been
+[09:21] considered relevant when we think about building product that reduces that time to insight.
+[09:26] We were just talking about decision making. If you're a risk manager and you're using these
+[09:33] models and AI to help you make these decisions, one, how much do you trust it? And two, what's
+[09:40] the right control and governance to put around that to ensure you're working in the right parameters?
+[09:46] Well, I think what we hear from our clients is engaging with agent workflows in a way that
+[09:54] allows for scale to become a reality and scale in a new way. Again, going through the evolution
+[10:00] of technology and tech enabled risk management, we've moved beyond the spreadsheet into the more
+[10:07] exception based workflows and now we're moving into beyond exception based workflows. There is
+[10:13] this prioritization element and understanding of how to bring an insight to the forefront.
+[10:20] That is the most relevant or what the believes is the most relevant. But that's getting us to a point
+[10:28] to then bring in human judgment, to bring in oversight to again, go back to is this model really
+[10:36] able to surface what is relevant and if not, how are we going to use our own configurations
+[10:43] and our own implementations of the models alongside the data and the signals to bring more accuracy
+[10:50] to life? We're not at a point of the agents making decisions. It's human in the loop. It's a continuous
+[10:59] feedback loop as well in order to improve and to stay within the guardrails that are needed.
+[11:04] Whatever that to that, I think is also helping and augmenting the form from knowing to doing.
+[11:10] We know a lot of data. We know a lot of insights but how do you pivot from knowing to doing?
+[11:15] And that's where personalization, just the way you're working on is going to come to the
+[11:19] place. Like you mentioned about prioritization that's contextualized to the individual researcher,
+[11:25] individual portfolio manager in the tree guard. How do we create a preferential profile and curate the
+[11:32] insight based on who you are and reducing the distance of time it takes for them to individualize
+[11:38] and personalize to their portfolio? I think that's the area of reducing the friction and pivoting
+[11:42] from knowing to doing proactively is where AI can greatly accelerate this journey for us.
+[11:48] And what are you seeing are like the biggest shifts firms need to make to actually
+[11:55] realize that knowing to doing concept? In my seat, every day conversations I have with clients,
+[12:02] everyone wants to talk about AI all the time. But like, how do you actually shift into making
+[12:08] AI meaningful? The knowing to doing feels like the meaningful part. Yeah, historically, most of the
+[12:15] insight generation is more like a calendarized even when there is a learning scholar is there.
+[12:20] But now it is shifting to be portfolio becomes a living system. When you're portfolio becomes a
+[12:26] living system, you're subscribing to market forces, you're subscribing to a chain of events,
+[12:32] because if you're looking at an isolated event or an incident, then you're not able to do insights
+[12:37] at scale. But sometimes small set of events can cascade into becoming a major event, having a
+[12:43] common data platform, ability to do analytics and insights generation at scale and making this as
+[12:49] a portfolio as a reinforcement of learning how this portfolio is evolving over time, like understanding
+[12:55] the trends, upward the portfolio, what are the drivers of the underlying shifts that are happening,
+[13:00] and able to forecast what can happen, shaping the way the portfolio is going to go. That would be
+[13:05] the intelligence that the portfolio managers and clients are going to subscribe to, and that will
+[13:10] potentially become our mode going forward. Everything Pavan described, how would you just look at that
+[13:16] from like a risk manager angle? Yeah, I think what we hear from many of the risk managers and
+[13:21] risk teams that we work with is that the models themselves are as powerful as the access to data
+[13:32] that they have. So I remember having a conversation recently where a group of risk managers have
+[13:40] some great use cases and theories and hypotheses that they are working with LLMs and models to test
+[13:47] out the very first question. The response from the model is yes, I can do that. Where's your data?
+[13:53] How do I get access to the data in order to do this analysis and in order to bring this
+[13:59] insight or this hypothesis to life? So the common centralized source of data is incredibly
+[14:07] important. And it goes back to some of the more basics of enterprise technology, which is the more
+[14:13] times that we're replicating data when we have to extract the data and put it into another data
+[14:18] silo in order to achieve a workflow that fragmentation can be very limiting. I think solving that challenge
+[14:25] and looking for ways to either design our own infrastructure and software in order to enable
+[14:33] these agentic workflows without data transfer, without needing to duplicate data is just as important
+[14:40] as it's ever been. I think you use the term Pavan, structured data. We can debate this. Data is such
+[14:46] a nebulous term sometimes because right now, all anyone wants to talk about is AI, but you can't
+[14:51] really talk about AI without talking about data. If you look at the entire investment lifecycle,
+[14:56] the ecosystem is vast. It's broad. If you really think about it, you need partners,
+[15:01] you need custodians, you need everybody in the mix and there's a lot of players. So how do we
+[15:07] structure this data? How should firms be thinking about this? Absolutely. I think fundamental to
+[15:14] success of AI or agentic workflows is having high fidelity, high quality data in the trigger. But
+[15:19] what I also want to pull out on this conversation is the nature of the data is also changing.
+[15:24] At one point, so let me explain on that. When we started doing predictive models,
+[15:30] mostly relational data was good and we were able to build high quality models, then came our
+[15:35] unstructured data, which is the web traffic, all these documents and things like that. That
+[15:41] itself was good enough to do certain problems. But now the nature of the data became, they are
+[15:45] talking about audio being the next frontier, video being the next frontier, social media being the
+[15:51] next frontier in the trigger. The structure of the data has completely become multimodal right now.
+[15:56] Images, videos, social media feeds coming at real time. So the latency and dynamics of the data
+[16:03] is changing at a faster pace. The narrative in the market is being shaped by what is being
+[16:07] discussed in the social media right now. So at that point, the customer is no longer on our assets
+[16:13] and our properties anymore. So how do you get access to the data and understand and distill
+[16:19] the sentiment of what they're experiencing and the intent that they're expressing in these
+[16:23] different channels of distribution becomes the critical intelligence for us to focus on.
+[16:29] So if the data fragmentation leads to distortion of reality element that will lead to inconsistent
+[16:35] results or representation of the data across different portfolio assets in the trigger.
+[16:42] So how do we get access to data faster, cheaper and high quality becomes a critical
+[16:48] differentiator for us in the market and we are focused on that right now.
+[16:51] We're spending a lot more time with our engineers and database engineers really understanding at
+[16:59] a deeper level of what Pavana is speaking to. I think the technology industry is becoming much
+[17:07] more aware of how data is stored, how it is mastered, how it is indexed in a way that's really
+[17:16] starting to become critical to the user experience that we're bringing to life through
+[17:23] agentic workflows or through aspects of AI that are embedded throughout the products, digital products,
+[17:30] UIs that are coming to life. So I think that that's changed almost the value chain of how
+[17:37] software is developed where there's much more of a focus on ensuring that the data model itself
+[17:44] is structured for agentic use cases and we're even changing the way that we
+[17:49] refactor the way that our products are built in order to achieve that.
+[17:53] Ona Polanda, the way I would simplify that right data for the right job for the right outcome
+[17:59] is the mindset. Are we taking and inputting the right data to the model at the right time for
+[18:04] the problem that you're trying to solve for to achieve the right outcome?
+[18:07] The beginning of your sentence is talking about right data. But if I shift the conversation slightly,
+[18:12] you're assuming that the data exists and you have transparency into the data.
+[18:18] But if you think about what our clients or end clients of BlackRock are wanting more and more
+[18:24] from us, it's access to private markets. It's the whole portfolio. And we know transparency
+[18:31] around data in private markets is a topic of conversation.
+[18:36] Yes, I think we mean the same thing. So if you don't have that and actually scarcity
+[18:42] is what was valued to some regard, how do you think about what that means for the whole portfolio,
+[18:50] for example, Jess, as far as a risk professional that sat in private markets,
+[18:56] how am I assessing the risk? Hello, I'm trying to AI it.
+[19:02] Well, and from what framing are you able to assess the risk because when private and
+[19:09] public markets are fragmented and you and I've talked extensively about this in the past,
+[19:15] if we're taking a public markets approach to bringing private markets into the fold,
+[19:21] or are we looking to private markets and we're needing to retain some of the uniqueness and
+[19:29] aspects of private markets, whether that be liquidity or KPIs or different fundamentals on that side,
+[19:36] how do we then merge that into a cohesive view that allows us to measure and manage liquidity risk
+[19:44] or commitment risk or choose your flavor. Again, from a technology perspective, I think
+[19:51] we are really rethinking the way that we store and master and bring data together. And that has to
+[19:59] be at an earlier point than the point of reporting or the point of doing analytical report that
+[20:06] helps us understand the different asset classes. It has to be deeper into the tech stack so that
+[20:12] we have a greater sense of the data, even with its uniqueness, and moving from a data aggregation
+[20:21] concept where it's a most pieced together at the end to really finding ways to cohesively
+[20:29] understand the fundamentals of private markets and the fundamentals of public markets to bring a
+[20:34] whole portfolio of you to life. If we were to break this down for our audience, if you look at AI
+[20:41] and you look at risk management, if you're a firm trying to figure this out, where do you
+[20:46] actually start? Good question. I mean, it's not an easy question. I think we talk a lot in concept.
+[20:54] But if you were talking to a chief risk officer or a chief investment officer and they were like,
+[20:59] all right, how do I execute on this? How do I engage? Like, where do I start?
+[21:06] I think about FMA-CIO or CRO right now. The first place that I start is map your existing
+[21:11] process flow and see what's the weakest link. You're as fast as your weakest link right now.
+[21:15] How would you have to define the weakest link? So in the previous discussion, I talked about
+[21:20] knowing to doing. So what is coming in the way from converting that decision of knowing to doing?
+[21:27] You know the insight, but in order to act on the insight, you need to look at the organizational
+[21:31] bureaucracy, the multiple systems that exist in the system. Orchestration becomes your weakest link.
+[21:38] So do you have your data in a proper place, which is properly cataloged, searchable, and discoverable?
+[21:44] Then you understand what problems are you trying to apply this data to from a model hypothesis standpoint.
+[21:50] Then do you understand the client needs from that point of view on what kind of analytics and
+[21:56] insights are they trying to generate in that regard? If you layer it into data, the business
+[21:59] capabilities, and the client voice of the customer here right now, how do you stitch that together?
+[22:05] We have multiple organizations trying to solve for it. Streamlining the operating model for
+[22:10] orchestration is a good starting point in my mind for any art. I like the way that sounds,
+[22:14] streamlining the operating model for orchestration. I'm going to put that on a mug or a t-shirt.
+[22:20] Joking aside, we talk about risk management in terms of numbers, but risk management can be
+[22:30] anything. It's also the institutional knowledge risk too. Associates employees leave the firm.
+[22:37] There's a ton of knowledge that's leaving the firm too. So AI is actually helping us institutionalize
+[22:42] that through the agent workflows where we are capturing that knowledge right now. So we're actually
+[22:48] risking the company brand-fed in the figure. If you were to hire an agent and you were a risk
+[22:54] manager, what would your agent do, Jess? Our roles are blurring so quickly. So whether that's
+[23:04] a new hire into your firm or it's an addition to your team in risk management,
+[23:13] I think taking a really holistic approach of what AI enables us to round out has been changing so
+[23:22] quickly. I have people on my team who historically were very much in the product domain. And we had
+[23:33] designers sitting alongside us and engineers very engaged with relationship managers and
+[23:39] understanding client needs. And the ability to blur how they're spending their day is changed so
+[23:47] quickly. And the empowerment that the agents are bringing in order to play around with a prototype,
+[23:55] whether that be a UI prototype or whether that be even a change to a model that historically would
+[24:03] have sat in a very hardcore analytics team. Those roles are blurring in all the ways. And so I think
+[24:12] when we look forward and think about skills like critical thinking or creativity or ability to
+[24:20] dynamically understand how product is built or risk is managed or the investment process,
+[24:26] I think finding ways to really round out what historically has been the definition of a role
+[24:32] is going to change. And I think to more directly answer your question about adding somebody to
+[24:37] the risk team, they think really finding ways to proactively surface and assess at scale what would
+[24:47] have been a much more arduous and manual approach to risk management has been a game changer. But I
+[24:53] think again, going back to decision making and even the longer term thought process of how we will
+[25:01] scale this business as assets grow as clients expand, I think it's really more about finding
+[25:08] the operational workflow in the areas that can really be accelerated along that path.
+[25:13] How many agents work for you, Pava? He's probably already got 300 agents employees.
+[25:20] I'll answer first, I think is my own personal side at work right now is my own personal philosophy
+[25:26] called NVA score, NVA's non-value at score. I look at my own calendar and see, I put an agent
+[25:32] say, I love this. Do I really need to be in this meeting and what value am I adding into this
+[25:37] thing that way I can order to decline some of these meetings. There's an agent always looking
+[25:42] at my calendar and I sit down with my admin, and say, okay, these things do not even bother
+[25:48] about it. It's freed up my calendar significantly. Actually, over the last two weeks, I actually got back
+[25:54] into coding again, which I have not done in 20 years. I'm building product management tooling.
+[25:59] So at the moment, with only one person of my own code and 99% of generated code, we are actually
+[26:08] automating how product management discipline should work within Aladdin right now.
+[26:15] Which is too algumad. I should ask, how do we drive efficiency in our own software and product
+[26:22] development lifecycle? I think it's an area where we are going to apply AI with proper guardrails,
+[26:26] proper evaluation. But on the business side, though, I think our goal should be if I have an augmented
+[26:31] agent and what are the repeatable tasks, automate them and guide and suggest and summarize those
+[26:37] insights to what Jess mentioned is a ripe opportunity right now. So the decision making is still with
+[26:42] the human. Over time, we build confidence into the decision making process and automate those two
+[26:48] over time with proper guardrails. I see 12 to 18 month time frame. I think I definitely see
+[26:53] high confidence, low risk actions can potentially be automated from us.
+[26:58] So Jess, what's never done for you? At the moment, running. Running.
+[27:04] Tell us more. I would say literally and metaphorically, I'm running a half marathon this weekend.
+[27:14] Which one are you doing? The Brooklyn experience.
+[27:18] They've also run a number of half marathons. I think I'm at 10 maybe. This will be my 10th.
+[27:24] And there's always something to chase whether that's a PR or a slightly better piece.
+[27:32] And I think metaphorically, as I was preparing for this, we are all running all of the time
+[27:38] at the pace of AI. That's right. I was really like to say, not sure where the finish line is.
+[27:44] Is there a finish line? I don't think so. I think we can all get comfortable with that.
+[27:49] I'm on the other side of the spectrum where I'm running is not my thing. I tried. I can run
+[27:53] five kittin k where I get bored after like a mile or two. What am I doing here right now? So
+[27:58] I'm never done trying to get better at golf. One shot, you're really good at it. One hole,
+[28:04] really good at it. The next hole, you suck and you want to break your claps and go away.
+[28:08] But I'm never give up. So show up every week to try to see if I can get better at it. But to me,
+[28:13] it's a consistent perceiver instead. I'm trying to show that right now.
+[28:16] I love that. You both went with a sport. Well, Pavan just, thank you so much. This is really
+[28:23] fun. I really enjoyed this chat with you both. I really appreciate you both joining us today.
+[28:28] Thank you for having us. We enjoyed having this conversation.
+[28:33] Thanks for tuning into this episode. If you want to learn more or hear other episodes,
+[28:38] subscribe on Spotify or Apple. This material is provided for educational purposes only and is not
+[28:53] intended to be an offer or solicitation for any technology products or services. BlackRock's
+[28:58] Aladdin platform is a financial technology platform designed for institutional, wholesale, qualified,
+[29:04] and professional investor or client use only and is not intended for end investor use. Certain
+[29:11] Aladdin technology products and services may not be offered by BlackRock in your local jurisdiction.
