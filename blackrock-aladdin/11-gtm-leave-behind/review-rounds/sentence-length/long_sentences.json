@@ -1,0 +1,107 @@
+[
+ [
+  "Part 1What the public record shows",
+  40,
+  "“BlackRock is the biggest user of Aladdin, but we also sell and support hundreds of clients globally across 70 countries.” The organization is “around 7,000 people, with over 4,000 of those being engineers.” They maintain “around 100 Aladdin front-end applications”."
+ ],
+ [
+  "Part 1What the public record shows",
+  243,
+  "THE ALADDIN PLATFORM · INSTITUTIONAL PEOPLE Portfolio manager Trader Compliance, risk Operations Accountant Performance analyst use the apps Client developers, quants Client systems the client’s own tools APPS · ABOUT 100 FRONT-END APPLICATIONS Explore analyse portfolios, test trades Dashboard monitor orders and events Risk Radar work through risk breaches about 95 more cash, FX, collateral, data Aladdin Copilot a chat panel inside each app · reads what is on screen · answers through the same APIs Shared API layer every app, Copilot and Studio call it · access checked on every call DOMAIN SERVICES · THE 11 PUBLIC API DOMAINS investment-research notes, coverage, watchlists portfolio setup, groups, restrictions portfolio-management cash ladder, strategy, data investment-operations settlement, corp. actions trading orders, trades compliance rules, levels, violations analytics risk limits, climate, ESG accounting lots, valuations, NAV data security master platform users, permissions, datasets clients fund flows in and out Aladdin Analytics the risk engine every domain uses · turns positions and market data into risk numbers SHARED DATA · EVERY DOMAIN READS AND WRITES IT Orders, trades Positions IBOR, the live book Accounting ABOR, NAV Portfolios Securities HOSTING Azure today AWS option, H2 2026 ALADDIN STUDIO for clients who build on Aladdin AladdinSDK calls the shared APIs Research sandboxes hosted places to build Excel tools, feeds events and files out fed by Aladdin data and analytics Aladdin Data Cloud Snowflake, this client’s own OUTSIDE ALADDIN Brokers orders, confirms Custodians settle, reconcile Data vendors prices, ESG, Preqin"
+ ],
+ [
+  "Part 1What the public record shows",
+  44,
+  "The SDK’s dependencies also conflict with the official MCP toolkit . (MCP, the Model Context Protocol, is the standard AI assistants use to pull data from other systems.) An outside contributor’s fix for the conflict was merged in August 2026 and has not shipped."
+ ],
+ [
+  "Part 1What the public record shows",
+  42,
+  "For the AI connector score: 2 means a connector that outside AI tools can use, such as an MCP server. 1 means one announced or in limited release. 0 means none, or an assistant that works only inside the vendor’s own platform."
+ ],
+ [
+  "Part 1What the public record shows",
+  34,
+  "Quotations are verbatim; Khara, Goel and Woodhead are machine or auto-caption transcriptions, marked as such in the Sources section at the end of this document. – means the speaker does not name that part."
+ ],
+ [
+  "1. Public proof that clients use Aladdin already exists, and",
+  38,
+  "0 5 10 15 20 25 30 $ millions 2016 2017 2018 2019 2020 2021 2022 2023 2024 2025 4.4 7.6 14.7 25.6 Source: JPMorgan Chase proxy statements (DEF 14A), filed 2017 to 2026, by year of payment."
+ ],
+ [
+  "1. Public proof that clients use Aladdin already exists, and",
+  32,
+  "In December 2025 a Janus Henderson engineer submitted two changes to the open-source SDK : URL rewriting and custom headers , both for firms that route Aladdin calls through an enterprise gateway."
+ ],
+ [
+  "1. Public proof that clients use Aladdin already exists, and",
+  31,
+  "Adoption is growing among client types whose records are public: between 2023 and 2025, a bank’s proxy statement, an asset manager’s 10-K and three public pension buyers’ notices all record Aladdin."
+ ],
+ [
+  "2. BlackRock tells investors growth will come from API calls",
+  31,
+  "On 26 earnings calls from Q1 2020 to Q2 2026, no BlackRock executive said “Studio”, “citizen developer” or “agent”; Data Cloud, API and Copilot came up about four times in total"
+ ],
+ [
+  "3. BlackRock keeps its AI front door inside the platform; da",
+  37,
+  "Prospects can find it; developers adopt it on their own; it signals an ecosystem; a ready answer to the RFP question about connectors; and it matches what FactSet, LSEG and MSCI now offer, the comparison buyers make"
+ ],
+ [
+  "3. BlackRock keeps its AI front door inside the platform; da",
+  32,
+  "Prospects cannot see it, and nor can the AI tools that buyers already run; rivals set the terms of comparison; the only public description of the plugin model is one conference talk"
+ ],
+ [
+  "3. BlackRock keeps its AI front door inside the platform; da",
+  34,
+  "More to secure and more to support; buyers would read a partial catalog as the whole catalog; and the regulatory optics of outside AI tools drawing on a platform that will not give advice"
+ ],
+ [
+  "4. Buyers at BlackRock’s own webinar said they want a core p",
+  34,
+  "The first poll asked where firms sit today. 37 percent said they run “mostly vendor platforms,” 30 percent run a “hybrid,” 18 percent are “actively reevaluating,” and 15 percent are “mostly built in house”."
+ ],
+ [
+  "4. Buyers at BlackRock’s own webinar said they want a core p",
+  62,
+  "The shift of the last two years is “to more of a modular approach where clients are looking for that backbone foundational data that supports both publics and privates workflows.” That comes, she said, with “very, very robust APIs that manage the end to end life cycle of a transaction,” so that clients can build “their secret sauce rebalancing tools” on top."
+ ],
+ [
+  "4. Buyers at BlackRock’s own webinar said they want a core p",
+  34,
+  "On AI, she said, “you need that system of record that underpins anything that AI is built upon,” and “the other layer that is almost equally important is a really defined system of work”."
+ ],
+ [
+  "About this document",
+  33,
+  "This is an independent analysis compiled from public sources: BlackRock product pages, SEC filings, procurement notices, public code and packages on GitHub and PyPI, press releases, job postings, and transcripts of BlackRock recordings."
+ ],
+ [
+  "Sources",
+  37,
+  "Dave Woodhead, Managing Director and Head of Engineering for Aladdin Studio, BlackRock, published November 11, 2025 (episode date from the podcast RSS feed, feeds.simplecast.com/eoH3iEB8). https://www.youtube.com/watch?v=Me_H_-E6lSg Quoted at 4:36, 4:46, 4:49, 4:58, 8:48, 9:39, 9:43, 9:51, 18:37, 18:44."
+ ],
+ [
+  "Sources",
+  47,
+  "Melissa Faraz, Global Head of Business Development for Private Markets Analytics Platforms and Head of Preqin London; Paul McGaugh, Managing Director, Aladdin Private Markets Product; Cameron Skinner, Managing Director and Global Head of Solutions Engineering, BlackRock, September 2025. https://www.blackrock.com/aladdin/discover/expertise/webinars/unifying-the-whole-portfolio-across-public-and-private-markets Quoted at 17:36, 19:21 (McGaugh), 20:51, 21:21 (Faraz)."
+ ],
+ [
+  "Sources",
+  48,
+  "Michael Campos, US asset manager coverage, and Alisha Sewdass, Head of Aladdin Solutions Engineering, Americas, BlackRock, with Clark Schafer, Partner, Alpha FMC, replay page undated. https://www.blackrock.com/aladdin/discover/expertise/webinars/build-vs-buy-how-asset-managers-are-rethinking-key-decisions Quoted at 4:37, 4:40, 14:46, 24:34, 31:56, 32:01, 39:15, 39:42, 42:22, 47:41 (Sewdass at 31:56, 32:01, 39:15 and 39:42; Schafer at 42:22)."
+ ],
+ [
+  "Sources",
+  32,
+  "Hans Georgeson, Chief Executive, Royal London Asset Management, with Tarek Chouman, Global Head of the Aladdin Client Business, recorded November 2024. https://www.blackrock.com/aladdin/discover/client-story/client-testimonial-royal-london-asset-management Not quoted; the Snowflake passage referred to begins at 5:21."
+ ],
+ [
+  "Sources",
+  32,
+  "The episode also features Jess Fitzgibbon, Head of Product for Aladdin Risk; the recording does not label speakers, so the 10:00 passage is not attributed to either by name in this document."
+ ]
+]
