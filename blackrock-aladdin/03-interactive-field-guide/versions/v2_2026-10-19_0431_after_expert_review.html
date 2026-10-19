@@ -1,0 +1,722 @@
+<title>Aladdin Field Guide</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wght@500;600;700;800&family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&family=IBM+Plex+Mono:wght@400;500&display=swap">
+<style>
+/* Layout: a slim sticky tab bar over one visible lesson at a time; each lesson has one interactive figure and a detail panel below it. */
+:root{
+  --bg:#F3F5F8; --surface:#FFFFFF; --surface-2:#E9EDF2; --fg:#17212B; --muted:#5B6B7B; --line:#D5DCE5;
+  --accent:#1F5FBF; --accent-ink:#FFFFFF; --accent-soft:#E3ECFA;
+  --front:#1F5FBF; --middle:#8F5710; --back:#1E6E52; --platform:#5E5296;
+  --front-soft:#E3ECFA; --middle-soft:#FBEEDB; --back-soft:#DDF2EA; --platform-soft:#E9E5F6;
+  --ok:#1E6E52; --warn:#8F5710; --bad:#B23B3B;
+  --display:"Archivo",system-ui,sans-serif; --body:"IBM Plex Sans",system-ui,sans-serif; --mono:"IBM Plex Mono",ui-monospace,Menlo,monospace;
+  --radius:10px;
+}
+@media (prefers-color-scheme: dark){ :root:not([data-theme="light"]){
+  --bg:#0F151C; --surface:#161E27; --surface-2:#243040; --fg:#E6ECF2; --muted:#9AA9B8; --line:#2E3B4A;
+  --accent:#6FA3F2; --accent-ink:#0F151C; --accent-soft:#1B2B44;
+  --front:#6FA3F2; --middle:#E0A24A; --back:#5CC49A; --platform:#A79BE0;
+  --front-soft:#1B2B44; --middle-soft:#3A2A14; --back-soft:#143327; --platform-soft:#262040;
+  --ok:#5CC49A; --warn:#E0A24A; --bad:#E07070;
+  color-scheme:dark } }
+:root[data-theme="dark"]{
+  --bg:#0F151C; --surface:#161E27; --surface-2:#243040; --fg:#E6ECF2; --muted:#9AA9B8; --line:#2E3B4A;
+  --accent:#6FA3F2; --accent-ink:#0F151C; --accent-soft:#1B2B44;
+  --front:#6FA3F2; --middle:#E0A24A; --back:#5CC49A; --platform:#A79BE0;
+  --front-soft:#1B2B44; --middle-soft:#3A2A14; --back-soft:#143327; --platform-soft:#262040;
+  --ok:#5CC49A; --warn:#E0A24A; --bad:#E07070;
+  color-scheme:dark }
+
+*{box-sizing:border-box}
+body{background:var(--bg);color:var(--fg);font-family:var(--body);font-size:16px;line-height:1.55;margin:0}
+body::before{content:"";position:fixed;inset:0 0 auto;height:env(safe-area-inset-top,0px);z-index:10;background:var(--surface)}
+a{color:var(--accent)}
+h1,h2,h3,h4{font-family:var(--display);line-height:1.15;text-wrap:balance;margin:0}
+h2{font-size:clamp(1.5rem,2.8vw,2.1rem);font-weight:800;letter-spacing:-.01em}
+h2:focus{outline:none}
+h3{font-size:1.1rem;font-weight:700}
+p{margin:0}
+code,.mono{font-family:var(--mono);font-size:.86em}
+.eyebrow{font-family:var(--display);font-size:.72rem;font-weight:600;letter-spacing:.09em;text-transform:uppercase;color:var(--muted)}
+.wrap{max-width:1120px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+
+/* header + tabs */
+header.top{background:var(--surface);border-bottom:1px solid var(--line);position:sticky;top:env(safe-area-inset-top,0px);z-index:9}
+.brand{display:flex;align-items:baseline;justify-content:space-between;gap:12px;padding-block:9px 2px}
+.brand .name{font-family:var(--display);font-weight:800;font-size:1rem;letter-spacing:-.01em;white-space:nowrap}
+.brand .name span{color:var(--accent)}
+.brand .count{font:500 .74rem var(--mono);color:var(--muted);white-space:nowrap}
+.tabwrap{position:relative}
+nav.tabs{display:flex;gap:4px;overflow-x:auto;padding-block:4px 8px;scrollbar-width:none}
+nav.tabs::-webkit-scrollbar{display:none}
+.tabwrap.scrollable::after{content:"";position:absolute;right:0;top:0;bottom:8px;width:40px;background:linear-gradient(90deg,transparent,var(--surface));pointer-events:none}
+nav.tabs button{flex:0 0 auto;border:1px solid transparent;background:transparent;color:var(--muted);font:600 .82rem var(--display);padding:5px 10px;border-radius:999px;cursor:pointer;white-space:nowrap}
+nav.tabs button:hover{background:var(--surface-2);color:var(--fg)}
+nav.tabs button[aria-selected="true"]{background:var(--fg);color:var(--bg)}
+nav.tabs button:focus-visible,button:focus-visible,input:focus-visible,select:focus-visible,[tabindex]:focus-visible{outline:2px solid var(--accent);outline-offset:2px}
+.progress{height:3px;background:var(--line)}
+.progress i{display:block;height:100%;background:var(--accent);transition:width .3s}
+
+/* panels */
+main{padding-block:26px 48px}
+section.panel{display:none}
+section.panel.active{display:block}
+.lead{font-size:1.1rem;max-width:68ch}
+.lead strong{font-weight:600}
+.grid{display:grid;gap:14px}
+.g2{grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr))}
+.g3{grid-template-columns:repeat(auto-fit,minmax(min(100%,240px),1fr))}
+.g4{grid-template-columns:repeat(auto-fit,minmax(min(100%,230px),1fr))}
+.card{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:16px;min-width:0}
+.card h3{margin-bottom:6px}
+.card p{color:var(--muted);font-size:.95rem}
+.card p+p{margin-top:8px}
+.primer{background:var(--surface);border:1px solid var(--line);border-left:4px solid var(--fg);border-radius:var(--radius);padding:16px 18px;max-width:78ch}
+.primer h3{margin-bottom:8px}
+.primer dfn{font-style:normal;font-weight:600;border-bottom:1.5px dotted var(--muted)}
+.stack{display:grid;gap:22px}
+.row{display:flex;gap:14px;flex-wrap:wrap;align-items:center}
+/* identifiers: mono, square. categories: display face, round. */
+.pill{display:inline-flex;align-items:center;gap:5px;font:500 .74rem var(--mono);padding:2px 7px;border-radius:6px;border:1px solid var(--line);color:var(--muted);background:var(--surface);white-space:nowrap}
+.cat{display:inline-flex;align-items:center;gap:6px;font:600 .72rem var(--display);letter-spacing:.02em;padding:2px 9px;border-radius:999px;border:1px solid var(--line);color:var(--fg);background:var(--surface);white-space:nowrap}
+.cat.t-front{border-color:var(--front);background:var(--front-soft)}
+.cat.t-middle{border-color:var(--middle);background:var(--middle-soft)}
+.cat.t-back{border-color:var(--back);background:var(--back-soft)}
+.cat.t-platform{border-color:var(--platform);background:var(--platform-soft)}
+.cat.stab::before{content:"";width:8px;height:8px;border-radius:50%;background:var(--muted)}
+.cat.s-stable::before{background:var(--ok)} .cat.s-beta::before{background:var(--accent)} .cat.s-alpha::before{background:var(--warn)} .cat.s-sunset{border-color:var(--bad);color:var(--bad)} .cat.s-sunset::before{background:var(--bad)}
+.stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,150px),1fr));gap:10px}
+.stat{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:12px 14px}
+.stat b{display:block;font:700 1.5rem var(--display);font-variant-numeric:tabular-nums;letter-spacing:-.01em}
+.stat span{font-size:.8rem;color:var(--muted)}
+figure{margin:0;background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:14px;min-width:0}
+figure svg{max-width:100%;height:auto;display:block}
+figcaption{font-size:.85rem;color:var(--muted);margin-top:8px}
+.fig-scroll{overflow-x:auto}
+.scrollhint{display:none;font:600 .7rem var(--display);letter-spacing:.06em;text-transform:uppercase;color:var(--accent)}
+@media (max-width:720px){.fig-scroll svg{min-width:760px}.fig-scroll svg.hub{min-width:600px}.scrollhint{display:inline-block;margin-right:8px}}
+.btn{border:1px solid var(--line);background:var(--surface);color:var(--fg);font:600 .85rem var(--display);padding:8px 14px;border-radius:8px;cursor:pointer}
+.btn:hover{background:var(--surface-2)}
+.btn:disabled{opacity:.4;cursor:default}
+.btn.primary{background:var(--accent);color:var(--accent-ink);border-color:var(--accent)}
+.btn.primary:hover{filter:brightness(1.08)}
+.pager{display:flex;justify-content:space-between;gap:10px;margin-top:30px;padding-top:16px;border-top:1px solid var(--line)}
+.note{border-left:3px solid var(--accent);background:var(--accent-soft);padding:10px 14px;border-radius:0 8px 8px 0;font-size:.95rem}
+.kv{display:grid;grid-template-columns:max-content 1fr;gap:6px 14px;font-size:.93rem;margin:0}
+.kv dt{color:var(--muted)} .kv dd{margin:0;min-width:0}
+ul.plain,ol.plain{margin:0;padding-left:18px} .plain li{margin-bottom:5px}
+svg .lbl{font:500 10px var(--mono);fill:var(--muted);paint-order:stroke;stroke:var(--surface);stroke-width:4px;stroke-linejoin:round}
+svg .arrow{stroke:currentColor;stroke-width:1.3;fill:none}
+svg .box{fill:var(--surface-2);stroke:var(--line);stroke-width:1.2}
+svg .bt{fill:var(--fg);font:600 12px var(--display)}
+svg .bs{fill:var(--muted);font:400 10px var(--body)}
+
+/* lifecycle */
+.lc-node{cursor:pointer}
+.lc-node rect.b{fill:var(--surface-2);stroke:var(--line);stroke-width:1.2;transition:fill .15s}
+.lc-node text{fill:var(--fg);font:600 12px var(--display);pointer-events:none}
+.lc-node .dom{font:500 9.5px var(--mono);fill:var(--muted)}
+.lc-node:hover rect.b{fill:var(--accent-soft)}
+.lc-node.on rect.b{fill:var(--fg);stroke:var(--fg)}
+.lc-node.on text{fill:var(--bg)}
+.lc-node.on .dom{fill:var(--bg);opacity:.8}
+.stagechips{display:none;gap:6px;flex-wrap:wrap}
+@media (max-width:720px){.stagechips{display:flex}}
+.detail{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:18px;display:grid;gap:12px;grid-template-columns:1fr;min-width:0}
+@media (min-width:760px){.detail.two{grid-template-columns:1.3fr 1fr}}
+.detail .apis{display:flex;flex-wrap:wrap;gap:6px}
+.detail .apis code{background:var(--surface-2);padding:2px 7px;border-radius:6px;font-size:.78rem}
+.states{display:flex;flex-wrap:wrap;gap:6px;align-items:center;font:500 .76rem var(--mono)}
+.states span{background:var(--surface-2);border:1px solid var(--line);padding:2px 8px;border-radius:6px}
+.states i{color:var(--muted);font-style:normal}
+.why{border-left:3px solid var(--line);padding-left:12px;color:var(--muted);font-size:.95rem}
+.why b{color:var(--fg);font-weight:600}
+
+/* domain explorer */
+.explorer{display:grid;gap:14px;grid-template-columns:1fr}
+@media (min-width:860px){.explorer{grid-template-columns:250px 1fr}}
+.filters{display:flex;gap:8px;flex-wrap:wrap;align-items:center}
+.chip{border:1px solid var(--line);background:var(--surface);color:var(--muted);font:600 .8rem var(--display);padding:6px 11px;border-radius:999px;cursor:pointer}
+.chip[aria-pressed="true"]{background:var(--fg);color:var(--bg);border-color:var(--fg)}
+.chip.c-front[aria-pressed="true"]{background:var(--front-soft);border-color:var(--front);color:var(--fg)}
+.chip.c-middle[aria-pressed="true"]{background:var(--middle-soft);border-color:var(--middle);color:var(--fg)}
+.chip.c-back[aria-pressed="true"]{background:var(--back-soft);border-color:var(--back);color:var(--fg)}
+.chip.c-platform[aria-pressed="true"]{background:var(--platform-soft);border-color:var(--platform);color:var(--fg)}
+input.search,select.search{width:100%;max-width:360px;border:1px solid var(--line);background:var(--surface);color:var(--fg);padding:8px 12px;border-radius:8px;font:400 .95rem var(--body)}
+.domlist{display:grid;gap:6px;align-content:start}
+@media (max-width:859px){.domlist{display:flex;overflow-x:auto;gap:6px;padding-bottom:4px}.domlist .dom{flex:0 0 auto}}
+.dom{display:flex;justify-content:space-between;align-items:center;gap:8px;border:1px solid var(--line);background:var(--surface);border-radius:8px;padding:9px 11px;cursor:pointer;text-align:left;font:500 .9rem var(--body);color:var(--fg);border-left-width:4px}
+.dom small{color:var(--muted);font-family:var(--mono);font-size:.72rem;white-space:nowrap}
+.dom[aria-pressed="true"]{background:var(--surface-2);box-shadow:inset 0 0 0 1px var(--fg)}
+.dom.d-front{border-left-color:var(--front)} .dom.d-middle{border-left-color:var(--middle)} .dom.d-back{border-left-color:var(--back)} .dom.d-platform{border-left-color:var(--platform)}
+.apilist{display:grid;gap:10px;align-content:start;grid-template-columns:repeat(auto-fill,minmax(min(100%,340px),1fr))}
+.api{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:12px 14px;display:grid;gap:6px;min-width:0;align-content:start}
+.api .head{display:flex;flex-wrap:wrap;gap:6px;align-items:center;min-width:0}
+.api .head b{font-family:var(--mono);font-weight:500;font-size:.95rem;overflow-wrap:anywhere;min-width:0}
+.api .path{font-family:var(--mono);font-size:.72rem;color:var(--muted);overflow-wrap:anywhere}
+.api p{font-size:.9rem;color:var(--muted)}
+.domhead{display:flex;flex-wrap:wrap;gap:10px;align-items:baseline;justify-content:space-between}
+.domhead p{color:var(--muted);font-size:.93rem;max-width:70ch}
+.domhead h3{display:flex;gap:8px;align-items:center;flex-wrap:wrap}
+.empty{color:var(--muted);padding:20px;text-align:center;display:grid;gap:10px;justify-items:center;grid-column:1/-1}
+
+/* architecture */
+.layer{cursor:pointer}
+.layer rect.b{fill:var(--surface-2);stroke:var(--line);stroke-width:1.2}
+.layer:hover rect.b{fill:var(--accent-soft)}
+.layer.on rect.b{stroke:var(--fg);stroke-width:2;fill:var(--accent-soft)}
+.layer text{fill:var(--fg);font:600 12.5px var(--display);pointer-events:none}
+.layer .sub{font:400 10.5px var(--body);fill:var(--muted)}
+.layer.on .sub{fill:var(--fg)}
+
+/* request */
+.steps{display:flex;gap:6px;flex-wrap:wrap}
+.steps button{border:1px solid var(--line);background:var(--surface);color:var(--muted);font:600 .8rem var(--display);padding:6px 10px;border-radius:8px;cursor:pointer}
+.steps button[aria-current="step"]{background:var(--fg);border-color:var(--fg);color:var(--bg)}
+.hop{opacity:.55;transition:opacity .2s}
+.hop.on{opacity:1}
+.hop rect{fill:var(--surface-2);stroke:var(--line)}
+.hop.cur rect{fill:var(--accent-soft);stroke:var(--fg);stroke-width:2}
+.hop text{fill:var(--fg);font:600 11.5px var(--display)}
+.hop .sub{font:400 10px var(--body);fill:var(--muted)}
+.sync{font:500 .72rem var(--mono);color:var(--muted)}
+.codebox{background:var(--surface-2);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font:400 .8rem var(--mono);white-space:pre-wrap;overflow-wrap:anywhere;margin:0}
+
+/* conventions */
+.conv{display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));align-items:start}
+.conv details{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:0;min-width:0}
+.conv summary{cursor:pointer;padding:14px 16px;font:700 1rem var(--display);list-style:none;display:flex;justify-content:space-between;gap:10px;align-items:center}
+.conv summary::-webkit-details-marker{display:none}
+.conv summary::after{content:"+";font-weight:500;color:var(--muted)}
+.conv details[open] summary::after{content:"−"}
+.conv .body{padding:0 16px 16px;display:grid;gap:8px;font-size:.93rem}
+.conv .body .lab{font:600 .7rem var(--display);letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+
+/* glossary */
+.gloss{display:grid;gap:8px;grid-template-columns:repeat(auto-fit,minmax(min(100%,300px),1fr));align-items:start}
+.term{background:var(--surface);border:1px solid var(--line);border-radius:8px;padding:10px 12px;font-size:.92rem;min-width:0}
+.term b{font-family:var(--mono);font-weight:500;color:var(--accent)}
+.term span{color:var(--muted);display:block}
+
+/* quiz */
+.cards{display:grid;gap:12px;grid-template-columns:repeat(auto-fit,minmax(min(100%,280px),1fr));align-items:start}
+.flash{background:var(--surface);border:1px solid var(--line);border-radius:var(--radius);padding:16px;cursor:pointer;display:grid;gap:10px;min-width:0}
+.flash:hover{border-color:var(--accent)}
+.flash .q{font:600 1rem var(--display)}
+.flash .a{color:var(--muted);font-size:.92rem}
+.flash .hint{font:600 .72rem var(--display);letter-spacing:.08em;text-transform:uppercase;color:var(--accent)}
+.flash .hint::after{content:" ▾"} .flash.open .hint::after{content:" ▴"}
+.flash.open{border-color:var(--accent)}
+
+@media (prefers-reduced-motion:reduce){*{transition:none!important}}
+</style>
+
+<header class="top">
+  <div class="wrap">
+    <div class="brand"><div class="name">Aladdin <span>Field Guide</span></div><div class="count" id="lessonCount">1 / 11</div></div>
+    <div class="tabwrap" id="tabwrap"><nav class="tabs" role="tablist" aria-label="Lessons" id="tabs"></nav></div>
+  </div>
+  <div class="progress"><i id="prog" style="width:9%"></i></div>
+</header>
+
+<main class="wrap">
+
+<!-- OVERVIEW -->
+<section class="panel active" id="overview" role="tabpanel" aria-labelledby="h-overview">
+  <div class="stack">
+    <div><div class="eyebrow lesson-no"></div><h2 id="h-overview" tabindex="-1">What Aladdin is</h2></div>
+    <p class="lead">Aladdin is the software BlackRock built to run its own investment business, then sold to other institutions. One system holds what each portfolio owns, every order and trade, the rules each portfolio must obey, the cash it has available, its accounting records and its risk numbers. <strong>The product's value is that one booked trade updates every one of those views at once.</strong></p>
+    <div class="primer">
+      <h3>The investment process in six roles</h3>
+      <p>A client hands money and a <dfn title="The client's written rules on what the portfolio may hold">mandate</dfn> to an asset manager. A <dfn title="Decides what to buy or sell">portfolio manager</dfn> decides what to buy or sell and raises an <dfn title="An instruction to the trading desk">order</dfn>. A <dfn title="Executes the order in the market">trader</dfn> executes it with a <dfn title="The outside firm that deals in the market">broker</dfn>. A day or two later the trade <dfn title="Cash and securities change hands">settles</dfn>: cash and securities change hands at the <dfn title="The bank that holds the client's assets">custodian</dfn>, the bank that holds the client's assets. <dfn title="Record each purchase and compute the fund's price">Accountants</dfn> record each purchase as a <dfn title="One purchase tracked separately for cost">lot</dfn> and compute the fund's daily price, the <dfn title="Net asset value">NAV</dfn>. <dfn title="Check every step against mandate and regulation">Compliance and risk teams</dfn> check every step against the mandate and regulation. Aladdin is the one system all six roles share.</p>
+    </div>
+    <figure class="fig-scroll">
+      <svg class="hub" viewBox="0 0 790 340" role="img" aria-label="A booked trade creates positions. Those positions are read by compliance levels, the cash ladder, collateral exposure, accounting lots and risk exceptions. The trade is also confirmed via the broker and lands in the client's data cloud.">
+        <defs><marker id="ah" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="currentColor"/></marker></defs>
+        <g class="arrow" marker-end="url(#ah)">
+          <line x1="190" y1="170" x2="258" y2="170"/>
+          <line x1="120" y1="140" x2="120" y2="86"/><line x1="120" y1="200" x2="120" y2="254"/>
+          <line x1="400" y1="170" x2="558" y2="40"/><line x1="400" y1="170" x2="558" y2="105"/><line x1="400" y1="170" x2="558" y2="170"/><line x1="400" y1="170" x2="558" y2="235"/><line x1="400" y1="170" x2="558" y2="300"/>
+        </g>
+        <rect x="40" y="140" width="150" height="60" rx="10" fill="var(--fg)"/>
+        <text x="115" y="166" text-anchor="middle" fill="var(--bg)" font-family="Archivo,sans-serif" font-weight="800" font-size="15">Booked trade</text>
+        <text x="115" y="184" text-anchor="middle" fill="var(--bg)" font-family="IBM Plex Mono,monospace" font-size="9.5" opacity=".85">trading · Trade API</text>
+        <rect x="260" y="140" width="140" height="60" rx="10" fill="var(--accent-soft)" stroke="var(--accent)" stroke-width="1.5"/>
+        <text x="330" y="166" class="bt" text-anchor="middle" font-size="14">Positions</text>
+        <text x="330" y="184" class="bs" text-anchor="middle">what each portfolio holds</text>
+        <g>
+          <rect x="40" y="42" width="150" height="44" rx="8" class="box"/><rect x="40" y="42" width="150" height="5" rx="2" fill="var(--back)"/><text x="115" y="70" class="bt" text-anchor="middle">Broker confirm</text>
+          <rect x="40" y="254" width="150" height="44" rx="8" class="box"/><rect x="40" y="254" width="150" height="5" rx="2" fill="var(--platform)"/><text x="115" y="282" class="bt" text-anchor="middle">Data Cloud</text>
+          <rect x="560" y="18" width="160" height="44" rx="8" class="box"/><rect x="560" y="18" width="160" height="5" rx="2" fill="var(--middle)"/><text x="640" y="46" class="bt" text-anchor="middle">Compliance levels</text>
+          <rect x="560" y="83" width="160" height="44" rx="8" class="box"/><rect x="560" y="83" width="160" height="5" rx="2" fill="var(--front)"/><text x="640" y="111" class="bt" text-anchor="middle">Cash ladder</text>
+          <rect x="560" y="148" width="160" height="44" rx="8" class="box"/><rect x="560" y="148" width="160" height="5" rx="2" fill="var(--back)"/><text x="640" y="176" class="bt" text-anchor="middle">Collateral exposure</text>
+          <rect x="560" y="213" width="160" height="44" rx="8" class="box"/><rect x="560" y="213" width="160" height="5" rx="2" fill="var(--back)"/><text x="640" y="241" class="bt" text-anchor="middle">Accounting lots</text>
+          <rect x="560" y="278" width="160" height="44" rx="8" class="box"/><rect x="560" y="278" width="160" height="5" rx="2" fill="var(--middle)"/><text x="640" y="306" class="bt" text-anchor="middle">Risk exceptions</text>
+        </g>
+        <g class="lbl" text-anchor="middle">
+          <text x="224" y="162">creates</text>
+          <text x="120" y="118">confirms via</text><text x="120" y="232">lands in</text>
+          <text x="479" y="100">room to limit</text><text x="479" y="134">cash by settle date</text><text x="479" y="164">margin owed</text><text x="479" y="208">lots and NAV</text><text x="479" y="242">breach or OK</text>
+        </g>
+        <g class="lbl" text-anchor="start"><text x="728" y="46">middle</text><text x="728" y="111">front</text><text x="728" y="176">back</text><text x="728" y="241">back</text><text x="728" y="306">middle</text></g>
+      </svg>
+      <figcaption><span class="scrollhint">scroll sideways →</span>One trade, six consequences. The holdings it changes are read by the compliance check (how close each rule is to its limit), the cash forecast by settlement day, the collateral owed on derivatives, the accounting lots and NAV, and the risk rules. The trade is also confirmed with the broker and copied to the client's Data Cloud. Each arrow is a dependency visible in the API specs; the coloured bands are the office tier that owns each view.</figcaption>
+    </figure>
+    <div class="stats">
+      <div class="stat"><b>54 / 301</b><span>public APIs and operations this guide is built from</span></div>
+      <div class="stat"><b>11</b><span>API domains, one per business function</span></div>
+      <div class="stat"><b>~100</b><span>front-end apps on the platform</span></div>
+      <div class="stat"><b>~4,000</b><span>engineers maintaining it</span></div>
+      <div class="stat"><b>$1BN+</b><span>technology business, revenue up 13% in Q2 2026</span></div>
+    </div>
+    <div class="grid g3">
+      <div class="card"><h3>Who uses it</h3><p>Asset managers, insurers, pension funds, wealth managers, banks and corporate treasuries. Institutional clients only; no retail investors.</p></div>
+      <div class="card"><h3>How it is delivered</h3><p>Hosted software. Each client gets its own Aladdin environment (a tenant), and BlackRock staff can be granted access into it as "provider" users. Hosted on Microsoft Azure today, with an AWS option expected in late 2026.</p></div>
+      <div class="card"><h3>How this guide reads it</h3><p>From the 54 machine-readable API descriptions (OpenAPI specs) in BlackRock's public SDK packages. Every field, state and internal name here comes from those documents.</p></div>
+    </div>
+    <div class="note"><b>How to read this.</b> Lessons 2 to 3 explain what the platform does. Lessons 4 to 6 explain how it is built and are written for engineers and technical product people; a non-engineer can skim them. Move between lessons with the tabs, the arrow keys, or the buttons at the foot of each lesson. Click the nodes in the diagrams.</div>
+  </div>
+</section>
+
+<!-- LIFECYCLE -->
+<section class="panel" id="lifecycle" role="tabpanel" aria-labelledby="h-lifecycle">
+  <div class="stack">
+    <div><div class="eyebrow lesson-no"></div><h2 id="h-lifecycle" tabindex="-1">The investment lifecycle Aladdin covers</h2></div>
+    <p class="lead">Each stage hands a record to the next, and the hand-off is a state change on that record. Click a stage to see the record it owns, the states it moves through, and the APIs that move it.</p>
+    <div class="stagechips" id="stageChips"></div>
+    <figure class="fig-scroll">
+      <svg id="lcsvg" viewBox="0 0 1000 118" role="img" aria-label="Nine stages from research to oversight. The label under each arrow is what is handed to the next stage: idea, mandate, order, verdict, trade, settled trade, income, NAV."></svg>
+      <figcaption><span class="scrollhint">scroll sideways →</span>The coloured band on each stage is its office tier: blue front office (decides and acts), amber middle office (controls), green back office (settles and accounts). The word under each arrow is what one stage hands to the next.</figcaption>
+    </figure>
+    <div class="row" style="justify-content:space-between"><button class="btn" id="lcPrev">← Previous stage</button><button class="btn" id="lcNext">Next stage →</button></div>
+    <div class="detail two" id="lcDetail" aria-live="polite"></div>
+  </div>
+</section>
+
+<!-- DOMAINS -->
+<section class="panel" id="domains" role="tabpanel" aria-labelledby="h-domains">
+  <div class="stack">
+    <div><div class="eyebrow lesson-no"></div><h2 id="h-domains" tabindex="-1">Domain explorer</h2></div>
+    <p class="lead">The API layer is called Aladdin Graph, and every API in it has an address of the form <code>agraph.&lt;domain&gt;.&lt;segment&gt;.&lt;group&gt;.&lt;version&gt;.&lt;API&gt;</code>. The domain is the business function that owns it. Pick a tier or a domain, filter by stability, or search all 54 public APIs.</p>
+    <div class="filters">
+      <button class="chip" data-tier="all" aria-pressed="true">All tiers</button>
+      <button class="chip c-front" data-tier="front" aria-pressed="false">Front office</button>
+      <button class="chip c-middle" data-tier="middle" aria-pressed="false">Middle office</button>
+      <button class="chip c-back" data-tier="back" aria-pressed="false">Back office</button>
+      <button class="chip c-platform" data-tier="platform" aria-pressed="false">Platform</button>
+    </div>
+    <div class="filters">
+      <label for="apiSearch" class="eyebrow">Search</label><input class="search" id="apiSearch" type="search" placeholder="order, cash, broker, risk…">
+      <label for="stab" class="eyebrow">Stability</label>
+      <select id="stab" class="search" style="max-width:160px"><option value="">any</option><option>stable</option><option>beta</option><option>alpha</option><option>sunset</option></select>
+    </div>
+    <div class="explorer">
+      <div class="domlist" id="domList"></div>
+      <div class="stack" style="gap:12px">
+        <div class="domhead" id="domHead" aria-live="polite"></div>
+        <div class="apilist" id="apiList"></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ARCHITECTURE -->
+<section class="panel" id="architecture" role="tabpanel" aria-labelledby="h-architecture">
+  <div class="stack">
+    <div><div class="eyebrow lesson-no"></div><h2 id="h-architecture" tabindex="-1">How it is layered</h2></div>
+    <p class="lead">Every caller, whether a BlackRock app, a client script or Copilot, enters through the same gateway and the same domain services. There is no privileged path. Click a layer to see what the specs say about it.</p>
+    <figure class="fig-scroll">
+      <svg id="archsvg" viewBox="0 0 900 430" role="img" aria-label="Five layers: consumers, gateway and identity, Aladdin Graph domain services, data and engines, and hosting."></svg>
+      <figcaption><span class="scrollhint">scroll sideways →</span>The specs describe the middle three layers directly. The top and bottom come from BlackRock's announcements and job postings.</figcaption>
+    </figure>
+    <div class="detail" id="archDetail" aria-live="polite"></div>
+  </div>
+</section>
+
+<!-- REQUEST -->
+<section class="panel" id="request" role="tabpanel" aria-labelledby="h-request">
+  <div class="stack">
+    <div><div class="eyebrow lesson-no"></div><h2 id="h-request" tabindex="-1">Anatomy of one request</h2></div>
+    <p class="lead">Follow a portfolio manager's order from a Python script to a booked order with a compliance verdict. Watch for three things: two separate permission checks, compliance running inside the order post rather than as its own call, and the HTTP response coming back before the work is done.</p>
+    <div class="steps" id="reqSteps"></div>
+    <figure class="fig-scroll">
+      <svg id="reqsvg" viewBox="0 0 960 150" role="img" aria-label="Six hops: SDK, gateway, Order API, compliance engine, long-running operation store, poll for result."></svg>
+      <figcaption><span class="scrollhint">scroll sideways →</span><span id="reqCap"></span></figcaption>
+    </figure>
+    <div class="detail" id="reqDetail" aria-live="polite"></div>
+  </div>
+</section>
+
+<!-- CONVENTIONS -->
+<section class="panel" id="conventions" role="tabpanel" aria-labelledby="h-conventions">
+  <div class="stack">
+    <div><div class="eyebrow lesson-no"></div><h2 id="h-conventions" tabindex="-1">Design conventions you can see in every spec</h2></div>
+    <p class="lead">The same dozen patterns repeat across all 54 APIs, which is itself the finding: the platform is governed, not grown. Each card gives the pattern, the evidence in the documents, and why it matters to someone building on or running the platform.</p>
+    <div class="conv" id="convGrid"></div>
+  </div>
+</section>
+
+<!-- PRODUCTS -->
+<section class="panel" id="products" role="tabpanel" aria-labelledby="h-products">
+  <div class="stack">
+    <div><div class="eyebrow lesson-no"></div><h2 id="h-products" tabindex="-1">The product family</h2></div>
+    <p class="lead">The products are entry points onto one set of positions and portfolios, not separate systems. A client that buys Aladdin Risk and later adds the full platform does not reload its data. The APIs in this guide belong to the core; Studio is how clients build on it.</p>
+    <div class="grid g4" id="prodGrid"></div>
+  </div>
+</section>
+
+<!-- AI -->
+<section class="panel" id="ai" role="tabpanel" aria-labelledby="h-ai">
+  <div class="stack">
+    <div><div class="eyebrow lesson-no"></div><h2 id="h-ai" tabindex="-1">Where AI plugs in</h2></div>
+    <p class="lead">Aladdin Copilot is an assistant embedded across the apps. When it needs data or wants to act, it calls Aladdin APIs as "tools", the same governed APIs Studio exposes to clients. That is why API quality and AI readiness are one problem for the platform team.</p>
+    <figure class="fig-scroll">
+      <svg viewBox="0 0 960 230" role="img" aria-label="Copilot pipeline: a prompt passes context collection, input guardrails, tool filtering to 20 to 30 tools, a plan and act loop that calls Aladdin APIs, output guardrails, then an answer.">
+        <defs><marker id="ah2" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" fill="currentColor"/></marker></defs>
+        <g text-anchor="middle">
+          <rect x="10" y="60" width="130" height="56" rx="8" class="box"/><text x="75" y="84" class="bt">Context</text><text x="75" y="100" class="bs">app, screen, user</text>
+          <rect x="170" y="60" width="130" height="56" rx="8" class="box"/><text x="235" y="84" class="bt">Input guardrails</text><text x="235" y="100" class="bs">off-topic, PII, toxicity</text>
+          <rect x="330" y="60" width="130" height="56" rx="8" class="box"/><text x="395" y="84" class="bt">Tool filter</text><text x="395" y="100" class="bs">thousands → 20–30</text>
+          <rect x="490" y="50" width="150" height="76" rx="8" fill="var(--fg)"/><text x="565" y="80" fill="var(--bg)" font-family="Archivo,sans-serif" font-weight="700" font-size="12">Plan + act loop</text><text x="565" y="98" fill="var(--bg)" font-family="IBM Plex Sans,sans-serif" font-size="10" opacity=".85">LangGraph supervisor</text><text x="565" y="112" fill="var(--bg)" font-family="IBM Plex Sans,sans-serif" font-size="10" opacity=".85">GPT-4 function calling</text>
+          <rect x="670" y="60" width="130" height="56" rx="8" class="box"/><text x="735" y="84" class="bt">Output guardrails</text><text x="735" y="100" class="bs">hallucination checks</text>
+          <rect x="830" y="60" width="120" height="56" rx="8" class="box"/><text x="890" y="92" class="bt">Answer</text>
+          <rect x="430" y="165" width="270" height="50" rx="8" fill="var(--surface-2)" stroke="var(--accent)" stroke-dasharray="4 3"/><text x="565" y="186" class="bt">Plugin registry</text><text x="565" y="202" class="bs">50–60 domain teams register tools = Aladdin APIs</text>
+        </g>
+        <g class="arrow" marker-end="url(#ah2)"><line x1="140" y1="88" x2="168" y2="88"/><line x1="300" y1="88" x2="328" y2="88"/><line x1="460" y1="88" x2="488" y2="88"/><line x1="640" y1="88" x2="668" y2="88"/><line x1="800" y1="88" x2="828" y2="88"/><line x1="565" y1="164" x2="565" y2="128"/></g>
+        <g class="lbl" text-anchor="middle"><text x="154" y="50">prompt</text><text x="314" y="50">cleared prompt</text><text x="474" y="50">20–30 tools</text><text x="654" y="50">draft answer</text><text x="814" y="50">checked</text></g>
+        <text x="585" y="150" class="lbl">calls tools</text>
+      </svg>
+      <figcaption><span class="scrollhint">scroll sideways →</span>From a 2025 BlackRock AI engineering talk. Tool access is filtered by environment, user group and application before planning, because more than 40 to 50 tools degrades the planner.</figcaption>
+    </figure>
+    <div class="grid g3">
+      <div class="card"><h3>Federated ownership</h3><p>The central AI team owns orchestration, guardrails and evaluation. Domain teams onboard by registering existing production APIs as tools or by building custom agents. That mirrors the domain split in the API namespace.</p></div>
+      <div class="card"><h3>Evaluation-driven development</h3><p>Synthetic data, subject-matter-expert cases and model-graded pipelines run on every pull request and nightly, with reports per plugin owner. The team compares it to test-driven development.</p></div>
+      <div class="card"><h3>Why it matters for Studio</h3><p>An agent can only use an API that describes itself well: clear metadata, consistent methods, fine-grained scopes. The Studio Developer product postings list AI-assisted developer tooling among the role's concerns.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- GLOSSARY -->
+<section class="panel" id="glossary" role="tabpanel" aria-labelledby="h-glossary">
+  <div class="stack">
+    <div><div class="eyebrow lesson-no"></div><h2 id="h-glossary" tabindex="-1">Names that leak through the docs</h2></div>
+    <p class="lead">Internal systems, modules and jargon the API descriptions mention by name. They appear in the API text itself, so an interviewer will recognise them.</p>
+    <input class="search" id="glossSearch" type="search" placeholder="Filter terms…" aria-label="Filter glossary">
+    <div class="gloss" id="glossGrid"></div>
+  </div>
+</section>
+
+<!-- QUIZ -->
+<section class="panel" id="quiz" role="tabpanel" aria-labelledby="h-quiz">
+  <div class="stack">
+    <div><div class="eyebrow lesson-no"></div><h2 id="h-quiz" tabindex="-1">Test yourself</h2></div>
+    <p class="lead">Click a card to reveal the answer. Then use the questions at the bottom in the interview; each one comes from something in the specs.</p>
+    <div class="cards" id="quizGrid"></div>
+    <div class="card">
+      <h3>Questions worth asking them</h3>
+      <ol class="plain">
+        <li>Of the public APIs, nearly half are alpha. How does an API graduate to stable, and how do you handle clients who built on alpha when it changes?</li>
+        <li>Compliance and Risk Governance are two limit frameworks with separate rules, exceptions and workflows. Are they converging?</li>
+        <li>What share of Studio usage is BlackRock's own teams versus clients, and what is the path from internal success to external adoption?</li>
+        <li>Is the Copilot plugin registry fed from the same catalog as the Studio developer portal, or are they separate?</li>
+        <li>Where is the line between exposing something as an API, as a Data Cloud dataset, or as an event stream?</li>
+        <li>The specs still cite legacy permission codes under OAuth scopes. Is the goal to retire those, or to keep two layers?</li>
+        <li>What changes for Studio when a client is hosted on AWS rather than Azure?</li>
+      </ol>
+    </div>
+  </div>
+</section>
+
+<!-- SOURCES -->
+<section class="panel" id="sources" role="tabpanel" aria-labelledby="h-sources">
+  <div class="stack">
+    <div><div class="eyebrow lesson-no"></div><h2 id="h-sources" tabindex="-1">Sources and caveats</h2></div>
+    <div class="grid g2">
+      <div class="card"><h3>Primary evidence</h3><ul class="plain">
+        <li>The 11 <code>asdk_plugin_*</code> packages on PyPI, version 2.0.0b3: 54 Swagger 2.0 specs, 301 operations, read in full.</li>
+        <li><a href="https://github.com/blackrock/aladdinsdk">blackrock/aladdinsdk</a> and <a href="https://github.com/blackrock/aladdinsdk-plugin-builder">aladdinsdk-plugin-builder</a> on GitHub.</li>
+        <li><a href="https://www.blackrock.com/aladdin/products/aladdin-studio">BlackRock Aladdin Studio</a> and <a href="https://www.blackrock.com/aladdin/products/apis">APIs</a> pages.</li>
+        <li><a href="https://www.blackrock.com/corporate/newsroom/media/press-releases/aladdin-data-cloud-powered-by-snowflake">Aladdin Data Cloud press release</a>, 2021.</li>
+      </ul></div>
+      <div class="card"><h3>Secondary evidence</h3><ul class="plain">
+        <li><a href="https://press.aboutamazon.com/aws/2025/12/blackrock-partners-with-aws-to-deliver-aladdin-on-secure-scalable-cloud-infrastructure">AWS partnership announcement</a>, December 2025.</li>
+        <li><a href="https://www.microsoft.com/en/customers/story/1440789172879911572-blackrock-capital-markets-azure">Microsoft customer story</a> on the Azure migration.</li>
+        <li><a href="https://www.zenml.io/llmops-database/agentic-ai-architecture-for-investment-management-platform">Summary of a 2025 BlackRock AI engineering talk</a> (third party).</li>
+        <li>BlackRock careers postings for Studio Developer product and engineering roles, 2025 and 2026.</li>
+        <li><a href="https://www.fundssociety.com/en/news/business/blackrocks-aladdin-revenues-increase-by-13-driven-by-public-and-private-market-tech-solutions/">Q2 2026 results coverage</a>.</li>
+      </ul></div>
+    </div>
+    <div class="note">What is not here: positions, risk analytics outputs, performance, pricing, benchmarks, execution connectivity, settlement messaging, eFront and wealth APIs. They sit behind the client login to the Studio developer portal. Inferences about gRPC, the linter and internal system names come from field names and comments inside the specs, not from BlackRock architecture documents.</div>
+  </div>
+</section>
+
+</main>
+
+<script>
+/* ---------- data ---------- */
+const TIER={accounting:'back',analytics:'middle',clients:'middle',compliance:'middle',data:'front',investment_operations:'back',investment_research:'front',platform:'platform',portfolio:'front',portfolio_management:'front',trading:'front'};
+const TIERNAME={front:'Front office',middle:'Middle office',back:'Back office',platform:'Platform'};
+const DOMLABEL={accounting:'accounting',analytics:'analytics',clients:'clients',compliance:'compliance',data:'data',investment_operations:'investment operations',investment_research:'investment research',platform:'platform',portfolio:'portfolio',portfolio_management:'portfolio management',trading:'trading'};
+const DOMDESC={
+ accounting:'"Aladdin Accounting": the accounting book of record. Lots (each purchase tracked separately for cost) with a parallel investment-book lot id, the NAV valuation workflow with sign-off and exceptions, membership of performance composites, and per-portfolio accounting configuration.',
+ analytics:'Two things live here. Sustainability data feeds (Climate and multi-vendor ESG), and Risk Governance, the risk team\'s limit framework, which lives in an app called Risk Radar: rules, subscriptions of portfolios to rules, overrides, custom metrics, exceptions and the workflows that resolve them.',
+ clients:'Capital flows: money moving into and out of funds as subscriptions and redemptions, in cash or in kind, estimated or actual. Records move through authorise and confirm actions and a true-up against the fund accountant\'s prices. The specs call the underlying module newcash.',
+ compliance:'Rule-based checking that each portfolio obeys regulation, its mandate and internal guidelines. Rule types (prohibition, concentration, value at risk, disclosure, scripted, counterparty), assignments of rules to portfolios with four-eyes review, intraday "room to limit" levels, and violations that name the positions responsible.',
+ data:'The security master write interface. One API creates the instruments Aladdin can price and book: credit default swaps and indices, equities, options, futures, FX spot, forward, swap, non-deliverable forward and options, interest rate and total return swaps, swaptions, time deposits, repo and mortgage TBAs.',
+ investment_operations:'The largest domain, and where the write-heavy operational work lives: corporate actions and the elections sent to custodians, floating-rate coupon resets, mortgage factors, cash payments with settlement instructions and transmission, daily collateral statements, and the broker, desk, settlement-instruction and contact reference data.',
+ investment_research:'A research management system: templated notes, logged meetings with companies, which analyst covers which issuer, watchlists with pre-trade notes, and stored screening expressions that evaluate over securities and alert on a schedule.',
+ platform:'Identity and administration (users, hierarchical groups, graded permissions) plus the dataset registry behind Aladdin Data Cloud, which shows per-client Snowflake databases with draft, review and released states.',
+ portfolio:'The portfolio master. The Portfolio entity has 850 attributes because the portfolio is where every other domain\'s configuration meets: compliance reads the mandate, trading reads the routing, accounting reads the valuation rules, risk reads the benchmark. One entity shared by all of them is the price of "one booked trade updates every view". Groups form a hierarchy; restricted assets block trading per portfolio.',
+ portfolio_management:'Tools the portfolio manager works with between deciding and ordering: strategies that tag orders and trades with intent, a settlement-date cash ladder that folds in open orders and collateral, and CIDS. Clients have proprietary inputs such as internal ratings or scores that they want screens, rules and reports to use. Without CIDS they export positions to Excel to join them; with CIDS the join happens inside Aladdin, and BlackRock never has to understand or transform the client\'s data.',
+ trading:'Order (a portfolio manager\'s instruction to the desk, with dry-run and compliance flags on post) and BlockTrade (one execution split across the portfolios that ordered, with the broker quotes received in competition, settlement currency details and, for repo and FX, the extra legs).'};
+const APIS=[{"d":"accounting","seg":"configuration.attribute.portfolio.records","n":"PortfolioConfiguration","v":"v1","s":"beta","o":3,"lro":true,"t":"Configurations API for Aladdin Accounting allows you to access accounting configuration attributes for process types that portfolios are setup on. Data can be sourced in aggregate and…"},{"d":"accounting","seg":"configuration.composite_membership","n":"CompositeMembership","v":"v1","s":"alpha","o":1,"lro":false,"t":"Membership of portfolios in performance composites, with entry and exit dates and reasons."},{"d":"accounting","seg":"transactions.abor_lot","n":"AborLot","v":"v1","s":"alpha","o":1,"lro":false,"t":"Accounting-book-of-record lots, retrieved from the ledger summary table, with the parallel OBOR lot id and open and close transaction ids."},{"d":"accounting","seg":"workflow.valuations","n":"Valuations","v":"v1","s":"beta","o":3,"lro":false,"t":"In an accounting workflow, valuations are generated for various processes at the portfolio/portfolio group level. This service can be used to retrieve and filter for accounting…"},{"d":"analytics","seg":"data.climate","n":"Climate","v":"v1","s":"stable","o":2,"lro":false,"t":"The Aladdin Climate Data API exposes physical, transition, and temperature alignment analytics as of a given date. Users can retrieve data for selected entity types by specifying the…"},{"d":"analytics","seg":"data.esg","n":"EsgData","v":"v1","s":"stable","o":3,"lro":false,"t":"The ESG Data API offers a centralized source of ESG data and meta data across multiple vendors. The API retrieves ESG data by asset and issuer from multiple vendors, providing the data…"},{"d":"analytics","seg":"oversight.governance","n":"EvaluatorAnalytics","v":"v1","s":"stable","o":4,"lro":true,"t":"Trigger Rule evaluations for Rules created and subscribed to within Risk Radar."},{"d":"analytics","seg":"oversight.governance","n":"RiskConfig","v":"v1","s":"stable","o":5,"lro":false,"t":"Retrieve, update, and create configurations which drive Risk Governance behaviours and Risk Radar UI choices."},{"d":"analytics","seg":"oversight.governance","n":"RiskCustomEvaluationMetric","v":"v1","s":"stable","o":4,"lro":true,"t":"Upload or retrieve custom evaluation metrics to be used for rule evaluation in Risk Radar."},{"d":"analytics","seg":"oversight.governance","n":"RiskException","v":"v1","s":"stable","o":6,"lro":true,"t":"Retrieve, update, or create Exceptions as surfaced in Risk Radar."},{"d":"analytics","seg":"oversight.governance","n":"RiskRule","v":"v1","s":"stable","o":20,"lro":true,"t":"Retrieve, update, and create Rules and Rule Subscriptions as surfaced in Risk Radar."},{"d":"analytics","seg":"oversight.governance","n":"RiskTask","v":"v1","s":"sunset","o":1,"lro":false,"t":"Retrieve Tasks, as surfaced in Risk Radar, which are aggregates that comprise of related Exceptions, Rules, and Workflow items."},{"d":"analytics","seg":"oversight.governance","n":"RiskWorkflow","v":"v1","s":"stable","o":8,"lro":true,"t":"Retrieve, update, and transition Workflow items as surfaced in Risk Radar."},{"d":"clients","seg":"capital_flows.enriched_capital_flow","n":"EnrichedCapitalFlow","v":"v1","s":"stable","o":7,"lro":false,"t":"Capital flows are the cash and asset subscriptions coming into a fund and the cash and asset redemptions going out of a fund (e.g., client contributions, withdrawals, and initial funding…"},{"d":"compliance","seg":"state.compliance_rule","n":"ComplianceRule","v":"v1","s":"alpha","o":1,"lro":false,"t":"Compliance Rules are used to automatically monitor whether a fund adheres to a regulation, client mandate, or internal guideline."},{"d":"compliance","seg":"state.compliance_rule_assignment","n":"ComplianceRuleAssignment","v":"v1","s":"alpha","o":4,"lro":false,"t":"Rule assignment assigns compliance rules for portfolio."},{"d":"compliance","seg":"state.level","n":"Level","v":"v1","s":"stable","o":1,"lro":false,"t":"Retrieves start-of-day and intraday Compliance levels across portfolio and portfolio groups."},{"d":"compliance","seg":"state.violation","n":"Violation","v":"v1","s":"alpha","o":3,"lro":false,"t":"Retrieve and Create Compliance Violations"},{"d":"data","seg":"reference_data.asset.asset_creation","n":"SecurityCreation","v":"v1","s":"stable","o":15,"lro":false,"t":"This service is used to create CDS, CDX, Equity Equity, Equity Option, Futures, FX NDF, FX SPOT, FX FWRD, FX CSWAP, FX Option, Swap, Swaption, CASH/TD, CASH/REPO, ARM/TBA and MBS/TBA…"},{"d":"investment_operations","seg":"asset_lifecycle.corporate_action","n":"CorporateAction","v":"v1","s":"beta","o":2,"lro":false,"t":"A corporate action is an event triggered by a public company that changes an equity or fixed income security issued by the company. There are two main categories - Mandatory and Voluntary."},{"d":"investment_operations","seg":"asset_lifecycle.corporate_action","n":"CorporateActionEntitlement","v":"v1","s":"beta","o":3,"lro":false,"t":"Per-portfolio entitlements on a corporate action, with elections that are instructed to the custodian and checked against compliance."},{"d":"investment_operations","seg":"asset_lifecycle.coupon_reset","n":"CouponReset","v":"v1","s":"stable","o":7,"lro":false,"t":"Coupon in Aladdin are generated internally by Aladdin's Bulk Rate Mechanism (BRM) module or sourced from external vendors. This API allows for retrieval of coupon reset records based on…"},{"d":"investment_operations","seg":"asset_lifecycle.principal_interest_factor","n":"PrincipalInterestFactor","v":"v1","s":"stable","o":9,"lro":false,"t":"Principal and Interest Factors (PIFs) generally represent the amount of payment per 1000 of Original Face currency units value you currently hold in the given asset, and are used in…"},{"d":"investment_operations","seg":"cash_flows.miscellaneous_cashflow","n":"MiscellaneousCashflow","v":"v1","s":"beta","o":8,"lro":false,"t":"Create, update and cancel miscellaneous cash, with or without a standard settlement instruction, and send money out through the transmission framework once confirmed and reviewed."},{"d":"investment_operations","seg":"collateral_management.collateral_statement","n":"CollateralStatement","v":"v1","s":"beta","o":3,"lro":true,"t":"Collateral statements in Aladdin are generated on a daily basis by Aladdin's margin calculators referencing legal agreement set up in DECO, security details, pricing and position data.…"},{"d":"investment_operations","seg":"reference_data.account_info","n":"AccountInfo","v":"v1","s":"alpha","o":2,"lro":false,"t":"Account types of an organisation, filterable and searchable by name."},{"d":"investment_operations","seg":"reference_data.broker","n":"Audit","v":"v1","s":"alpha","o":1,"lro":false,"t":"Operations to retrieve audit data for broker entities."},{"d":"investment_operations","seg":"reference_data.broker","n":"Broker","v":"v1","s":"alpha","o":7,"lro":false,"t":"The other party to a trade. Brokers carry a ticker, type, issuer id, legal entity and business purpose; batch create, update and validate up to 100 at a time."},{"d":"investment_operations","seg":"reference_data.broker","n":"BrokerConfirmRouting","v":"v1","s":"alpha","o":5,"lro":false,"t":"Instructions for delivering trade information to a broker desk after a trade is booked, so it can be confirmed."},{"d":"investment_operations","seg":"reference_data.broker","n":"BrokerDesk","v":"v1","s":"alpha","o":6,"lro":false,"t":"Each broker has at least one desk; the desk on a trade designates the group and contact the transaction was done with."},{"d":"investment_operations","seg":"reference_data.broker","n":"BrokerExternalAlias","v":"v1","s":"alpha","o":6,"lro":false,"t":"Maps an Aladdin broker to the aliases by which it is known outside Aladdin."},{"d":"investment_operations","seg":"reference_data.broker","n":"CounterPartySettlementInstruction","v":"v1","s":"alpha","o":9,"lro":false,"t":"Settlement instructions for a broker or account, with settlement parties, review state and soft delete."},{"d":"investment_operations","seg":"reference_data.broker","n":"CounterPartySettlementInstructionTemplate","v":"v1","s":"alpha","o":1,"lro":false,"t":"Settlement instruction templates by delivery method."},{"d":"investment_operations","seg":"reference_data.contact","n":"Contact","v":"v1","s":"alpha","o":5,"lro":false,"t":"Contact defines the Recipient details to which we want to communicate with external parties like Custodians/Brokers"},{"d":"investment_research","seg":"analyst.coverage","n":"AnalystCoverage","v":"v1","s":"alpha","o":9,"lro":false,"t":"The Analyst Coverage API enables users to assign, transfer, or remove analyst coverage assignments for one or more entities. It also support discovery of coverage for an analyst or…"},{"d":"investment_research","seg":"content.engagement","n":"Engagement","v":"v1","s":"alpha","o":6,"lro":false,"t":"Records of meetings with companies and issuers: attendees, topics, momentum, KPIs, draft and published states."},{"d":"investment_research","seg":"content.research_note","n":"ResearchNote","v":"v2","s":"alpha","o":8,"lro":false,"t":"Templated research notes with custom fields, permission groups with expiry, and tags to issuers, assets and strategies."},{"d":"investment_research","seg":"surveillance.criterion","n":"Criterion","v":"v1","s":"alpha","o":9,"lro":false,"t":"Stored screening expressions, for example ((price > 55 OR oas = 75) AND market_cap < 1mm), evaluated against securities with scheduled alerts."},{"d":"investment_research","seg":"surveillance.watchlist","n":"Watchlist","v":"v1","s":"alpha","o":9,"lro":false,"t":"Create, modify, delete, and retrieve watchlists; Add and remove securities from watchlist."},{"d":"platform","seg":"access.permission","n":"Permission","v":"v1","s":"stable","o":2,"lro":false,"t":"Permissions have a functional area, action and sensitivity grade. They attach to user groups, never directly to users. Not intended for runtime authorisation."},{"d":"platform","seg":"access.permission","n":"UserGroupPermission","v":"v1","s":"stable","o":3,"lro":false,"t":"Add and remove permissions on a user group."},{"d":"platform","seg":"access.user_group","n":"UserGroup","v":"v1","s":"stable","o":5,"lro":false,"t":"Hierarchical user groups with node types for groups that hold users and internal groups that hold other groups."},{"d":"platform","seg":"access.user_group","n":"UserGroupMember","v":"v1","s":"stable","o":3,"lro":false,"t":"Add and remove users from a user group."},{"d":"platform","seg":"identity.user","n":"User","v":"v1","s":"alpha","o":5,"lro":false,"t":"An Aladdin user is a person or system account: client employees, provider (BlackRock) employees granted access, and bot accounts, with alternate ids mapped to the client's own HR identifiers."},{"d":"platform","seg":"studio.adc.adc_dataset","n":"AdcDataset","v":"v1","s":"alpha","o":11,"lro":true,"t":"Manages Datasets in Aladdin Data Cloud (ADC). Used by Studio's ADC Admin Center."},{"d":"portfolio","seg":"configuration.portfolio_group","n":"PortfolioGroup","v":"v1","s":"stable","o":11,"lro":false,"t":"The portfolio group hierarchy, with ancestor, descendant, parent and child queries and permissioned membership changes."},{"d":"portfolio","seg":"configuration.restricted_asset","n":"RestrictedAsset","v":"v1","s":"alpha","o":6,"lro":false,"t":"Restricted assets serve as a safeguard and are used prevent assets from being traded in Aladdin. The Restricted Assets API can be used to list, create, update, upsert, filter and…"},{"d":"portfolio","seg":"setup.portfolio_toolkit","n":"PortfolioToolkit","v":"v1","s":"stable","o":6,"lro":false,"t":"Retrieve, filter and search portfolios and portfolio slices. The full Portfolio entity carries 850 attributes; slices expose summaries and dynamic attributes."},{"d":"portfolio_management","seg":"cash.cash_ladder","n":"CashLadder","v":"v2","s":"stable","o":2,"lro":false,"t":"Cash Ladder provides a settlement date based ladder of cash balances for all the exposure currencies for a given portfolio group and cash date."},{"d":"portfolio_management","seg":"setup.cids","n":"CIDReader","v":"v1","s":"stable","o":7,"lro":false,"t":"Read custom investment dataset definitions, schemas, hierarchies and entities. CIDS does not transform the data; the writer owns it."},{"d":"portfolio_management","seg":"setup.cids","n":"CIDWriter","v":"v1","s":"stable","o":10,"lro":false,"t":"Create and activate dataset definitions and schemas, then load entities under approved leaf datasets, up to a configured maximum."},{"d":"portfolio_management","seg":"target.strategy","n":"Strategy","v":"v1","s":"alpha","o":9,"lro":false,"t":"Named investment strategies referred to by orders and trades, with soft delete by expiry date and wildcard search."},{"d":"trading","seg":"order_management.order","n":"Order","v":"v1","s":"stable","o":7,"lro":true,"t":"Filter, post or cancel orders. An order is a directive from a portfolio manager to the trading desk to execute a particular investment decision."},{"d":"trading","seg":"trade_processing.trade","n":"Trade","v":"v2","s":"alpha","o":7,"lro":true,"t":"Post, cancel, filter and retrieve block trades with their allocations, broker quotes, settlement details and trade relationships."}];
+
+const STAGES=[
+ {id:'research',short:'Research',dshort:'research',tier:'front',name:'Research',dom:'investment_research',what:'Analysts record their thinking: templated notes, logged meetings with companies, who covers which issuer, watchlists, and stored screening rules that alert when a security meets them.',entity:'ResearchNote, Engagement, Watchlist, Criterion',apis:['ResearchNote v2','Engagement','AnalystCoverage','Watchlist','Criterion'],states:['draft','published'],why:'Research is where an idea starts, and the platform keeps it attached to the issuer or security it is about, so a later order can be traced back to the note that justified it.',detail:'Screening criteria are real expressions evaluated over security identifiers, such as ((price > 55 OR oas = 75) AND market_cap < 1mm). Notes carry permission groups that expire, so research can be shared for a bounded time.'},
+ {id:'setup',short:'Setup',dshort:'portfolio',tier:'front',name:'Portfolio setup',dom:'portfolio',what:'A portfolio is created with its mandate (the client\'s rules on what it may hold), the index it is measured against, cash and sweep rules per currency, routing of trade confirmations to its custodian, and its legal and regulatory classification.',entity:'Portfolio (850 attributes), PortfolioGroup, RestrictedAsset',apis:['PortfolioToolkit','PortfolioGroup','RestrictedAsset','CIDReader / CIDWriter'],states:['inception','active','terminated'],why:'Every other stage reads this record. The 850 attributes exist because compliance, trading, accounting and risk each keep their configuration on the same portfolio rather than in their own copies.',detail:'Relationship types show the fund structures the platform models natively: master-sleeve, master-feeder, create-redeem, common pool and model suites. Clients add their own data through CIDS.'},
+ {id:'order',short:'Order',dshort:'trading',tier:'front',name:'Order',dom:'trading',what:'The portfolio manager (who decides what to buy) raises an order, an instruction to the trading desk (who buys it in the market). It records the strategy behind the decision, price limits, and the benchmark the execution will be judged against.',entity:'Order (PM order, then trader order)',apis:['Order v1','Strategy','CashLadder v2'],states:['Open','Compl Pending','Authorized','Active','Booked'],why:'Separating the decision (order) from the execution (trade) is what lets compliance run on intent before any money moves, and lets one trade later be split across many orders.',detail:'Posting an order accepts a dry-run flag and a run-compliance flag, so a manager can test a rebalance without booking it. The cash ladder shows the cash the order will consume on its settlement date, counting other open orders and collateral already committed.'},
+ {id:'compliance',short:'Compliance',dshort:'compliance',tier:'middle',name:'Pre-trade compliance',dom:'compliance',what:'Rules assigned to the portfolio run against the order before it is accepted. Each violation comes back with a severity, warning or restriction, and the positions that caused it.',entity:'ComplianceRule, ComplianceRuleAssignment, Level, Violation',apis:['ComplianceRule','ComplianceRuleAssignment','Level','Violation'],states:['passed','warning','restriction'],why:'Compliance asks whether a trade is allowed by law or mandate, so it has to answer before the order leaves. That is why it runs inside the order post and can block it, rather than reporting afterwards.',detail:'Rule types: prohibition, concentration, value at risk, disclosure, scripted, counterparty. A rule itself moves through draft, ready for testing, review required and approved before it can be assigned. Levels show intraday "room to limit" per rule.'},
+ {id:'trade',short:'Execute',dshort:'trading',tier:'front',name:'Execution and allocation',dom:'trading',what:'The desk executes with a broker, the outside firm that deals in the market, as one block trade. The block is then allocated (split) across the portfolios whose orders it filled, with the quotes received from competing brokers recorded.',entity:'BlockTrade, then one Trade per portfolio',apis:['Trade v2','Broker','BrokerDesk','SecurityCreation'],states:['entered','authorised','confirmed','settled'],why:'One execution for many portfolios gets a better price and one confirmation; allocating it afterwards is what keeps each portfolio\'s records separate.',detail:'A trade is identified by portfolio, investment number and trade number, with a touch count and version so two users cannot overwrite each other. Quote outcomes recorded include covered, tied, done away and did not trade.'},
+ {id:'settle',short:'Settle',dshort:'inv. ops',tier:'back',name:'Settlement and cash',dom:'investment_operations',what:'The trade is confirmed with the broker\'s desk, settlement instructions say which accounts cash and securities move between, and payments go out through a transmission framework once two people have signed off.',entity:'BrokerConfirmRouting, CounterPartySettlementInstruction, MiscellaneousCashflow',apis:['BrokerConfirmRouting','CounterPartySettlementInstruction','Contact','MiscellaneousCashflow'],states:['entered','confirmed','reviewed','transmitted'],why:'Settlement is where mistakes cost real money, so the platform models the reference data (who to confirm with, where to send cash) as governed records with review states, not free text on a trade.',detail:'Sending money out requires both a confirmer and a reviewer on the record. Settlement instructions carry approved and review states and a soft delete so history is never lost.'},
+ {id:'lifecycle',short:'Lifecycle',dshort:'inv. ops',tier:'back',name:'Asset lifecycle',dom:'investment_operations',what:'Holdings generate events over time. A corporate action (a dividend, split or takeover offer) creates an entitlement for every portfolio that holds the security, which must be elected and instructed to the custodian. Floating coupons reset, mortgage factors arrive, and collateral statements are generated daily for derivatives.',entity:'CorporateAction, Entitlement, CouponReset, PrincipalInterestFactor, CollateralStatement',apis:['CorporateAction','CorporateActionEntitlement','CouponReset','PrincipalInterestFactor','CollateralStatement'],states:['elected','authorised','instructed','processed'],why:'None of this is a trade, yet all of it changes what a portfolio holds and is owed. Modelling these events as first-class records is what keeps positions correct between trades.',detail:'Elections are checked against compliance before instruction. Collateral statements come from margin calculators reading the legal agreements (ISDA and credit support annexes) set up in a tool called DECO.'},
+ {id:'accounting',short:'Accounting',dshort:'accounting',tier:'back',name:'Accounting and NAV',dom:'accounting',what:'Trades become lots in an accounting book of record. A valuation workflow prices the portfolio, lists exceptions, and after sign-off publishes the NAV, the fund\'s daily per-share value.',entity:'AborLot, Valuation, ValuationException, CompositeMembership',apis:['AborLot','Valuations','CompositeMembership','PortfolioConfiguration'],states:['snapshot','exceptions','signed off','published'],why:'The investment book and the accounting book answer different questions and are kept separately; carrying both lot ids on one record is how they are reconciled without a nightly file.',detail:'Valuations record Dietz and total return fields and a NAV impact per exception. Composite membership tracks which portfolios count toward a published performance record.'},
+ {id:'oversight',short:'Oversight',dshort:'analytics',tier:'middle',name:'Oversight and client flows',dom:'analytics',dom2:'clients',what:'Risk teams subscribe portfolios to metric rules in Risk Governance (the rules) within Risk Radar (the app), evaluate them, and work breaches through assigned workflows. Separately, client money arrives and leaves as capital flows.',entity:'RiskRule, RiskException, RiskWorkflow, EnrichedCapitalFlow',apis:['RiskRule','EvaluatorAnalytics','RiskException','RiskWorkflow','EnrichedCapitalFlow','Climate','EsgData'],states:['OK','warning','breach','workflow resolved'],why:'This is a second limit framework next to compliance, and they are separate because they answer different questions. Compliance asks whether a trade is allowed and must block it in time. Risk Governance asks whether modelled exposure (tracking error, value at risk) is where the risk team wants it, which can only be judged after analytics run and is resolved by discussion, not by rejecting a trade.',detail:'Limits can be absolute (250 basis points of tracking error) or relative to a benchmark, with look-through into funds the portfolio holds. Capital flows live in the clients domain.'}
+];
+
+const PRODUCTS=[
+ {n:'Aladdin Enterprise',t:'The core platform: portfolio management, risk analytics, trading, compliance, operations and accounting across public markets. The 11 API domains in this guide belong here.'},
+ {n:'Aladdin Risk',t:'The risk analytics engine offered on its own: factor exposures, value at risk, scenario and stress testing. Its outputs are the metric source for the Risk Governance rules in the analytics domain.'},
+ {n:'Aladdin Studio',t:'The data and developer platform: the Aladdin Graph APIs with a login-only developer portal, the open-source Python SDK and plugins, Aladdin Data Cloud, hosted Compute for Python, and Excel and data-exchange tools. Studio Developer is its developer-facing half, which BlackRock\'s product postings describe as the platform\'s extensibility layer.'},
+ {n:'Aladdin Data Cloud',t:'Each client gets its own Snowflake database preloaded with front-to-back Aladdin data, to join with their own and third-party data. The AdcDataset API shows draft, review and released dataset states and ETL configuration.'},
+ {n:'Aladdin Copilot',t:'Generative AI assistant across the apps, launched 2023 on Azure OpenAI. A supervisor agent with a federated plugin registry where domain teams register existing APIs as tools. See the AI lesson.'},
+ {n:'Aladdin Wealth',t:'Portfolio analytics and proposals for wealth managers and advisers, with an AI commentary tool added in October 2025.'},
+ {n:'Aladdin Climate',t:'Physical, transition and temperature-alignment risk analytics. The Climate API returns metrics per security, deal or issuer under named scenarios and timeframes.'},
+ {n:'eFront and Preqin',t:'Private markets: eFront (acquired 2019) for post-investment workflow and risk, Preqin (acquired March 2025) for pre-investment data. Combined as eFront Insight in February 2026.'}
+];
+
+const LAYERS=[
+ {id:'consumers',y:20,h:62,name:'Consumers',sub:'~100 Aladdin apps · Studio (SDK, notebooks, Compute) · Copilot tools · client systems',
+  body:'<h3>Who calls the APIs</h3><p>BlackRock\'s own front-end applications (Risk Radar, DECO, CID Manager, the ADC Admin Center and about a hundred others), client code written against the Studio SDK or raw REST, notebooks running in Aladdin Compute, and Copilot, whose registered tools map to these same APIs. The SDK generates its clients from the published specs and adds retries, rate limiting, pagination and polling of long-running operations.</p>'},
+ {id:'gateway',y:98,h:62,name:'Gateway and identity',sub:'application key · OAuth 2.0 token with per-resource scopes · per-client environment',
+  body:'<h3>How a call is admitted</h3><p>Every request carries an application key registered in Studio (<code>VND.com.blackrock.API-Key</code>), which identifies the calling app. The user behind the call is identified by one of: an OAuth 2.0 token (authorization code or client credentials flow), a client key header, or basic auth. A scope is a permission string attached to the token, and here scopes are per resource, for example <code>trading.order_management.order.v1.Order:write</code>. OAuth endpoints sit at <code>client.blackrock.com</code>. Inside the service a second layer applies: Aladdin permission codes such as <code>brkrMaint</code> or <code>PortGroupMOD</code> that the user\'s group must hold.</p>'},
+ {id:'graph',y:176,h:110,name:'Aladdin Graph domain services',sub:'11 domains · defined in protobuf, served over gRPC, translated to REST · Google API conventions, linted',
+  body:'<h3>The service layer the specs describe</h3><p>Protobuf is Google\'s schema language for describing messages and services; gRPC is the binary protocol that serves them. Every Aladdin spec carries the fingerprints of both (gRPC status types, update masks, page tokens, LongrunningOperation, enums named <code>FOO_UNSPECIFIED</code>), which means the services are defined once in protobuf and translated to ordinary REST and JSON at the edge. URLs follow <code>/api/&lt;domain&gt;/&lt;segment&gt;/&lt;group&gt;/v1/</code>. Inline comments such as <code>api-linter: aladdin::9016 … aip.dev/not-precedent</code> show BlackRock runs Google\'s API linter plus its own rule set, and that exceptions need a written reason. The commonest reason given is that changing a URI "will break all citizen developers code", BlackRock\'s term for finance staff who write some code.</p>'},
+ {id:'data',y:302,h:62,name:'Data and engines',sub:'positions and ledgers · ADL data layer · compliance engine · margin calculators · Aladdin Analytics · Snowflake (ADC)',
+  body:'<h3>What the services read and write</h3><p>Positions, lots and ledgers come first; the specs cite a ledger summary table and an accounting system whose fields are prefixed "alpha". A data layer the specs call ADL holds dataset repositories and portfolio search. The compliance engine runs in parallel or live mode. Margin calculators read DECO agreements. Aladdin Analytics is the metric source for risk rules. Aladdin Data Cloud is a Snowflake database per client. A BQL expression language appears in filters and routing rules.</p>'},
+ {id:'hosting',y:380,h:28,name:'Hosting',sub:'Microsoft Azure today · AWS option announced Dec 2025, GA H2 2026 · Kubernetes container platform',
+  body:'<h3>Where it runs</h3><p>Hosted on Microsoft Azure after a client-by-client migration from BlackRock\'s own data centres; Microsoft Treasury was the first environment moved. A December 2025 AWS partnership adds AWS hosting, with general availability expected in the second half of 2026 and Amazon Treasury as an early adopter. Job postings describe an Aladdin Container Platform on Kubernetes with a Go control plane and Prometheus and Grafana observability. The specs themselves are hosting-neutral.</p>'}
+];
+
+const HOPS=[
+ {name:'Python script',sub:'AladdinSDK',cap:'A portfolio manager\'s script posts a batch of orders through the SDK.',body:'<h3>1. The call</h3><p class="sync">synchronous</p><p>The SDK validates the request body, attaches the application key and an OAuth bearer token, and sends one HTTP request. Configuration comes from layered settings files; run mode is local, compute or test.</p><pre class="codebox">POST /api/trading/order-management/order/v1/orders:batchPost\nVND.com.blackrock.API-Key: &lt;app key from Studio&gt;\nAuthorization: Bearer &lt;token with scope …Order:write&gt;\n\n{"postOrderConfig":{"whatIf":false,"runCompliance":true,"complianceTimeout":"30s"},\n "orders":[{"assetReference":{"isin":"US0378331005"},"transactionType":"BUY",\n   "orderDetails":[{"portfolioReference":{"portfolioTicker":"EQ_CORE"},"quantity":10000,"strategyName":"Q4 rebalance"}]}]}</pre>'},
+ {name:'Gateway',sub:'client.blackrock.com',cap:'The gateway checks the app key, the token and its scope for this client\'s environment.',body:'<h3>2. Admission (first permission check)</h3><p class="sync">synchronous</p><p>The application key identifies the registered Studio app. The token must carry the resource scope <code>trading.order_management.order.v1.Order:write</code>. Rate limits and the client environment are resolved here. Nothing about the order itself has been examined yet.</p>'},
+ {name:'Order API',sub:'trading domain service',cap:'The order service resolves references, checks the user\'s Aladdin permissions, and acknowledges at once with an operation id.',body:'<h3>3. The domain service (second permission check)</h3><p class="sync">synchronous, then hands off</p><p>Asset references resolve by ISIN, CUSIP, SEDOL, RIC or a client alias; portfolio references by ticker or id. The user behind the token must hold the order-raising permission in their Aladdin user group. Because this is a batch post, the service does not wait for the work: it returns an operation id immediately and continues in the background.</p><pre class="codebox">202 Accepted\n{"id":"9f1c…","done":false}</pre>'},
+ {name:'Compliance',sub:'rules bound to EQ_CORE',cap:'In the background, the rules assigned to the portfolio run against each order.',body:'<h3>4. Pre-trade compliance</h3><p class="sync">asynchronous, inside the service</p><p>Rule assignments for the portfolio fire: prohibition, concentration, counterparty and scripted rules, each with warning or restriction severity. Violations list the contributing positions. A restriction stops the order; a warning rides along in the result. The flags on the request control this step: <code>runCompliance</code> defaults to true; <code>whatIf</code> runs the same checks without booking, which is how a manager tests a rebalance; <code>complianceTimeout</code> caps how long to wait, and if it expires the order is posted in a "Compl Pending" status regardless of outcome.</p>'},
+ {name:'LRO store',sub:'longrunningoperations/{id}',cap:'When the batch finishes, the result is written to the long-running operation record.',body:'<h3>5. Long-running operation</h3><p class="sync">asynchronous</p><p>A batch post can carry hundreds of orders, and each one runs every rule assigned to its portfolio. Holding an HTTP connection open for that long would time out at the gateway and tie up a worker, so the service acknowledges at once and does the work behind an operation id the caller can come back for. The record carries done, error and response fields. Ten public APIs expose this pattern and 35 operations are flagged as long-running.</p>'},
+ {name:'Poll and result',sub:'SDK polls, returns result',cap:'The SDK polls the operation until done and hands back order ids, versions and any violations.',body:'<h3>6. Back to the script</h3><p class="sync">synchronous polling</p><pre class="codebox">GET /api/trading/order-management/order/v1/longrunningoperations/9f1c…\n{"id":"9f1c…","done":true,\n "response":{"results":[{"output":{"order":{"id":"8812345","orderStatus":"Open","version":1},\n   "complianceViolations":[{"complianceSeverity":"COMPLIANCE_SEVERITY_WARNING","ruleAssignmentName":"Max 5% single issuer"}]}}]}}</pre><p>The SDK deserialises the response and can convert it to a pandas table or export it. From here the order appears in the cash ladder as an open order and in compliance levels as as-traded exposure. Once executed it becomes a trade with allocations, and the fan-out in the Overview figure begins.</p>'}
+];
+
+const CONV=[
+ {t:'Resources plus custom methods',p:'Google-style URIs: a collection, then a colon verb for anything that is not plain create, read, update or delete.',e:'POST /orders:filter, /orders:batchPost, /order:cancel, /brokerDesks:undelete, /workflows:listRevisions. 36 filter, 17 batchCreate and 13 batchUpdate methods across the public set.',w:'A client learns one grammar once and can guess the shape of an API they have never seen. Filtering by POST with a criteria body allows large, structured queries that would not fit in a URL.'},
+ {t:'Long-running operations',p:'Bulk and heavy calls return an operation id; the caller polls for done, error and response.',e:'GET /longrunningoperations/{id} in 10 APIs, 35 operations flagged x-aladdin-lro. Order and trade batch posts, risk evaluation, ADC dataset registration.',w:'A request that would take minutes does not hold a connection open or time out at the gateway. The cost is that callers must handle "not yet", and retries have to be safe to repeat.'},
+ {t:'Stability labels and independent versions',p:'Every API is stamped alpha, beta, stable or sunset and versioned on its own.',e:'x-aladdin-api-stability: 24 alpha, 6 beta, 23 stable, 1 sunset. Order v1 beside Trade v2; CashLadder v2 keeps a GET "solely for backward compatibility".',w:'Clients can see how much to trust an endpoint, and BlackRock can evolve one domain without re-versioning the whole catalog. Nearly half the public surface being alpha is the product problem that follows.'},
+ {t:'Linter-enforced design with written exceptions',p:'Google\'s API linter plus BlackRock\'s own aladdin:: rules run on every spec, and deviations must be justified inline.',e:'api-linter: aladdin::9016::query-custom-method-http=disabled aip.dev/not-precedent: "changing existing URI will break all citizen developers code".',w:'Consistency is a review gate, and each exception is written down. The recurring justification tells you that not breaking existing client code outranks design purity.'},
+ {t:'Protobuf under REST',p:'Services are defined once in protobuf (Google\'s schema language) and exposed over REST by translation.',e:'rpcStatus (google.rpc.Status), Any with @type, google.type.DateTime, updateMask, pageToken, enums named FOO_UNSPECIFIED, request messages like v1FilterOrdersRequest.',w:'The contract for each service is written once. BlackRock\'s own apps and client scripts both read from it, and the Python SDK is generated from it rather than typed by hand, so the public API and the internal one cannot drift apart. For a product manager that means a new field reaches clients the day it ships, not after a documentation sprint.'},
+ {t:'Governance in the data model',p:'Maker-checker approval (one person proposes, another approves) and lifecycle states are fields on the records themselves.',e:'Compliance rules: draft, testing, review, approved. ADC datasets: draft, review, released with four-eyes. Cash transmissions need confirmedBy and reviewedBy. Elections: elected, authorised, instructed, processed.',w:'Control evidence is produced by normal operation. Regulated clients audit exactly this, and it means no separate workflow tool has to be kept in sync.'},
+ {t:'Bitemporal records and audit',p:'Records carry two timelines, when something was true and when it was entered, plus a touch count and version.',e:'validBeginDate and validEndDate, entryTime and expiryTime, asOfDate on queries, touchCount and version on trades and orders, Audit APIs for brokers and factors, listRevisions on rules and workflows.',w:'Supports as-was reporting ("what did we know on the 3rd"), and lets two users edit without locks because a stale version is rejected.'},
+ {t:'Two-layer authorisation',p:'OAuth scopes at the gateway, Aladdin permission codes inside the service.',e:'Scope trading.order_management.order.v1.Order:read; spec text "Users needs to have permissions under permType=\'brkrMaint\'", "You must have the Aladdin Permission PERMS_GROUP_MOD".',w:'Modern API security sits on top of a pre-OAuth entitlement model that the hundred internal apps still use. Any change to permissions has to respect both layers.'},
+ {t:'Bulk by default, with dry runs',p:'Most writes are batches with caps, and many offer validate-only.',e:'190 of 301 operations are POST. Caps of 100 per request for brokers, 1,000 for restricted assets, 10,000 rows per page. :batchValidate on brokers, desks and capital flows; validateOnly on cashflows; whatIf on orders.',w:'Operations teams load reference data in files, and the API matches how they work: check the whole file first, then commit it.'},
+ {t:'Multi-tenant by construction',p:'Each client is its own environment, and the model carries the tenant everywhere.',e:'clientAbbreviation on datasets, accountCode on external references, a per-client ADC database, reconciliation of one client against a "gold-copy" client, provider users granted into a client.',w:'This is why hosting can move one client at a time, and why offering a second cloud is feasible without re-architecting.'},
+ {t:'Client extensibility in the schema',p:'The data model expects clients to bring their own data and logic.',e:'CIDS datasets, custom evaluation metrics for risk rules, custom fields on orders, trades and research notes, scripted compliance rules, research criteria expressions, user-defined fields on portfolios.',w:'Clients can adapt the platform without asking BlackRock for a change. Studio extends the same principle from data fields to code.'},
+ {t:'Internal expression languages',p:'Filters and routing rules are written in platform query languages as well as JSON.',e:'bqlExpression, bqlFilter, skipBqlValidation, "refer to BQL ord_flags", jql on trade routing, scripted compliance rules.',w:'These APIs are doors into tools BlackRock\'s desks have used for years. The client gets the real thing, but filtering may require a query language never designed for outsiders, and BlackRock cannot simplify it without breaking its own apps. Expect this to be where Studio onboarding is hardest.'}
+];
+
+const GLOSS=[
+ ['Aladdin Graph (AGraph)','The unified API layer. Spec ids start agraph.<domain>…; the "agraph team" agrees naming.'],
+ ['Studio','The data and developer platform: APIs, portal, SDK, Data Cloud, Compute. Studio Developer is its developer-facing half.'],
+ ['ADC','Aladdin Data Cloud: per-client Snowflake databases of Aladdin data, managed through an Admin Center.'],
+ ['ADL','A data layer the specs reference as the store for ADC dataset repositories and for portfolio search.'],
+ ['Risk Radar','The oversight application where Risk Governance rules, exceptions and workflows are surfaced. The analytics/oversight APIs serve it.'],
+ ['Risk Governance','The risk team\'s limit framework (rules, subscriptions, exceptions, workflows), distinct from compliance.'],
+ ['DECO','The tool where collateral legal agreements (ISDA, CSA) are set up. Margin calculators read it to generate collateral statements.'],
+ ['Abacus','A compliance engine mode on rules: parallel or live. Suggests shadow evaluation of a new engine.'],
+ ['newcash','The capital flows module. Its permissions (VIEW_NEWCASH, CASH_PAY, CASH_CONF…) gate the EnrichedCapitalFlow API.'],
+ ['CIDS','Custom Investment Datasets: client-owned data loaded into Aladdin in a Category.Class.Group.Dataset hierarchy for use in portfolio management tools.'],
+ ['BRM','Bulk Rate Mechanism, the internal module that generates floating-rate coupon resets.'],
+ ['BQL','An expression language used in filters, order flags and routing rules (bqlExpression, bqlFilter). JQL appears on trade routing.'],
+ ['ABOR / OBOR','Accounting book of record and the other (investment) book of record. ABOR lots carry a parallel OBOR lot id.'],
+ ['PIF','Principal and Interest Factor: payment per 1,000 of original face on mortgage and asset-backed securities, used with positions to generate cash flows.'],
+ ['SSI','Standard Settlement Instruction. Cashflows can default an SSI from the broker and then be transmitted.'],
+ ['Transmission framework','The mechanism that sends money out once a cashflow has a confirmer and reviewer.'],
+ ['LRO','Long-running operation. Returned by batch and heavy calls; polled at /longrunningoperations/{id}.'],
+ ['Four eyes','Maker-checker approval: one person proposes, a second approves. Named on ADC dataset review and compliance rule assignments.'],
+ ['Portfolio group','A hierarchy of portfolios and sub-groups. Most APIs accept a group ticker as scope.'],
+ ['invnum','Investment number, part of the trade key with portfolio and trade number.'],
+ ['touchCount','A per-record modification counter used for optimistic concurrency alongside version.'],
+ ['Provider user','A BlackRock employee granted access into a client\'s Aladdin environment. Users are client employees, providers or system accounts.'],
+ ['Citizen developer','BlackRock\'s term for finance professionals with some programming skill, the primary audience for Studio and the SDK.'],
+ ['TBA','To-be-announced: a forward trade in agency mortgage bonds where the exact pools are assigned later.'],
+ ['ISDA / CSA','The master agreement for over-the-counter derivatives and its credit support annex, which sets collateral terms.'],
+ ['Access.Internal','A tag on every public spec. Appears to be a visibility classification; its exact meaning is not documented publicly.'],
+ ['Alpha (accounting)','Fields prefixed alpha (alphaLedgerTable, alphaStartDate, alphaPriceGroup) point to the accounting engine behind Aladdin Accounting.']
+];
+
+const QUIZ=[
+ ['What is an Order, in Aladdin\'s own words?','"A directive from a portfolio manager to the trading desk to execute a particular investment decision." A PM order becomes a trader order when the desk picks it up.'],
+ ['How does pre-trade compliance reach a client script?','Pre-trade compliance runs inside the order post: runCompliance defaults to true and violations come back in the response. The Compliance APIs manage rules and read levels; they do not check an order.'],
+ ['Name the two limit frameworks and who owns them.','Compliance (regulatory and mandate rules, run on orders and trades, owned by compliance) and Risk Governance in Risk Radar (metric thresholds on analytics, owned by risk, with its own exceptions and workflows).'],
+ ['What does the Cash Ladder include beyond settled cash?','Intraday trades, authorised and open orders, confirmed and estimated capital flows, and collateral pledged and held, laid out by settlement date and currency.'],
+ ['How is Aladdin Data Cloud structured per client?','Each client gets its own Snowflake database. Datasets are tables, views or history views, moving through draft, review (four eyes) and released, with ETL config and reconciliation against a gold-copy client.'],
+ ['What tells you the services are protobuf and gRPC underneath?','google.rpc.Status, Any with @type, google.type.DateTime, updateMask, pageToken, LongrunningOperation and FOO_UNSPECIFIED enums in every spec.'],
+ ['How many public APIs are alpha, and why does that matter?','24 of 54. Nearly half the public surface can still change, so graduation criteria and client migration are live product problems.'],
+ ['What are the two layers of authorisation?','OAuth scopes per resource at the gateway, then Aladdin permission codes (brkrMaint, PortGroupMOD, VIEW_NEWCASH) checked inside the service.'],
+ ['How does Copilot get its tools?','A federated plugin registry: 50 to 60 domain teams register existing production APIs as tools or build custom agents. The central team filters to 20 to 30 tools per query by environment, user group and app.'],
+ ['What does "one booked trade updates every view" mean concretely?','Level reads positions for room to limit, CashLadder folds in open orders and collateral, CollateralStatement reads positions for margin, AborLot is created from the trade, and RiskRule evaluates analytics computed on the same positions.'],
+ ['What is CIDS for?','Letting clients load their own datasets (scores, targets, classifications) into Aladdin so screens, rules and reports can use them without exporting to Excel. Aladdin does not transform the data; the writer owns it.'],
+ ['Which cloud, and what changed in December 2025?','Azure today, after a client-by-client migration. BlackRock and AWS announced an AWS hosting option with general availability expected in the second half of 2026.']
+];
+
+/* ---------- tabs ---------- */
+const PANELS=[['overview','Overview'],['lifecycle','Lifecycle'],['domains','Domain explorer'],['architecture','Architecture'],['request','One request'],['conventions','Conventions'],['products','Products'],['ai','AI'],['glossary','Glossary'],['quiz','Quiz'],['sources','Sources']];
+const tabs=document.getElementById('tabs');
+PANELS.forEach(([id,label],i)=>{const b=document.createElement('button');b.setAttribute('role','tab');b.id='tab-'+id;b.setAttribute('aria-controls',id);b.textContent=label;b.dataset.id=id;b.setAttribute('aria-selected',i===0);b.tabIndex=i===0?0:-1;b.addEventListener('click',()=>show(id,true));b.addEventListener('keydown',e=>{if(e.key==='ArrowRight'||e.key==='ArrowLeft'){e.preventDefault();const j=(i+(e.key==='ArrowRight'?1:-1)+PANELS.length)%PANELS.length;show(PANELS[j][0],true);tabs.children[j].focus();}});tabs.appendChild(b);
+  const sec=document.getElementById(id);sec.querySelector('.lesson-no').textContent=`Lesson ${i+1} of ${PANELS.length}`;});
+function show(id,push,focus){
+  if(!PANELS.some(p=>p[0]===id)) id='overview';
+  document.querySelectorAll('section.panel').forEach(s=>s.classList.toggle('active',s.id===id));
+  tabs.querySelectorAll('button').forEach(b=>{const on=b.dataset.id===id;b.setAttribute('aria-selected',on);b.tabIndex=on?0:-1;});
+  const i=PANELS.findIndex(p=>p[0]===id);
+  document.getElementById('prog').style.width=((i+1)/PANELS.length*100)+'%';
+  document.getElementById('lessonCount').textContent=`${i+1} / ${PANELS.length}`;
+  tabs.querySelector(`[data-id="${id}"]`).scrollIntoView({block:'nearest',inline:'center'});
+  if(push){try{history.replaceState(null,'','#'+id);}catch(e){}}
+  window.scrollTo({top:0});
+  if(focus!==false){const h=document.getElementById('h-'+id);if(h)h.focus({preventScroll:true});}
+}
+document.addEventListener('keydown',e=>{
+  if(e.target!==document.body&&!e.target.matches('h2[tabindex]'))return;
+  const i=PANELS.findIndex(p=>p[0]===document.querySelector('section.panel.active').id);
+  if(e.key==='ArrowRight'&&i<PANELS.length-1)show(PANELS[i+1][0],true);
+  if(e.key==='ArrowLeft'&&i>0)show(PANELS[i-1][0],true);
+});
+function checkTabScroll(){document.getElementById('tabwrap').classList.toggle('scrollable',tabs.scrollWidth>tabs.clientWidth+4);}
+window.addEventListener('resize',checkTabScroll);
+/* pagers */
+PANELS.forEach(([id],i)=>{
+  const s=document.getElementById(id);const p=document.createElement('div');p.className='pager';
+  const prev=document.createElement('button');prev.className='btn';prev.textContent=i>0?'← '+PANELS[i-1][1]:'';prev.hidden=i===0;prev.onclick=()=>show(PANELS[i-1][0],true);
+  const next=document.createElement('button');next.className='btn primary';next.textContent=i<PANELS.length-1?PANELS[i+1][1]+' →':'';next.hidden=i===PANELS.length-1;next.onclick=()=>show(PANELS[i+1][0],true);
+  p.append(prev,next);s.appendChild(p);
+});
+
+/* ---------- lifecycle ---------- */
+const lcsvg=document.getElementById('lcsvg');let lcIdx=0;
+const HANDOFF=['idea','mandate','order','verdict','trade','settled trade','income','NAV'];
+(function buildLC(){
+  const W=1000,n=STAGES.length,gap=34,bw=(W-20-gap*(n-1))/n;
+  let s=`<defs><marker id="lca" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="currentColor"/></marker></defs>`;
+  STAGES.forEach((st,i)=>{const x=10+i*(bw+gap);
+    s+=`<g class="lc-node" data-i="${i}" tabindex="0" role="button" aria-pressed="false" aria-label="${st.name}"><rect class="b" x="${x}" y="16" width="${bw}" height="64" rx="9"/><rect x="${x}" y="16" width="${bw}" height="5" rx="2" fill="var(--${st.tier})"/><text x="${x+bw/2}" y="48" text-anchor="middle">${st.short}</text><text class="dom" x="${x+bw/2}" y="66" text-anchor="middle">${st.dshort}</text></g>`;
+    if(i<n-1){s+=`<line x1="${x+bw+2}" y1="48" x2="${x+bw+gap-2}" y2="48" stroke="currentColor" stroke-width="1.2" marker-end="url(#lca)"/><text class="lbl" x="${x+bw+gap/2}" y="102" text-anchor="middle">${HANDOFF[i]}</text>`;}
+  });
+  lcsvg.innerHTML=s;
+  lcsvg.querySelectorAll('.lc-node').forEach(g=>{g.addEventListener('click',()=>setLC(+g.dataset.i));g.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();setLC(+g.dataset.i);}});});
+  document.getElementById('stageChips').innerHTML=STAGES.map((st,i)=>`<button class="chip" data-i="${i}" aria-pressed="false">${i+1}. ${st.short}</button>`).join('');
+  document.querySelectorAll('#stageChips .chip').forEach(c=>c.onclick=()=>setLC(+c.dataset.i));
+})();
+function setLC(i){
+  lcIdx=i;const st=STAGES[i];
+  lcsvg.querySelectorAll('.lc-node').forEach(g=>{const on=+g.dataset.i===i;g.classList.toggle('on',on);g.setAttribute('aria-pressed',on);});
+  document.querySelectorAll('#stageChips .chip').forEach(c=>c.setAttribute('aria-pressed',+c.dataset.i===i));
+  document.getElementById('lcPrev').disabled=i===0;document.getElementById('lcNext').disabled=i===STAGES.length-1;
+  const doms=[st.dom].concat(st.dom2?[st.dom2]:[]);
+  document.getElementById('lcDetail').innerHTML=`
+    <div class="stack" style="gap:10px"><div class="row" style="gap:8px"><span class="cat t-${st.tier}">${TIERNAME[st.tier]}</span>${doms.map(d=>'<span class="pill">'+DOMLABEL[d]+'</span>').join('')}</div>
+      <h3>${i+1}. ${st.name}</h3><p>${st.what}</p><div class="why"><b>Why it is built this way.</b> ${st.why}</div><p style="color:var(--muted);font-size:.95rem">${st.detail}</p></div>
+    <div class="stack" style="gap:10px"><dl class="kv"><dt>Record</dt><dd>${st.entity}</dd><dt>States</dt><dd><div class="states">${st.states.map((x,k)=>(k?'<i>→</i>':'')+'<span>'+x+'</span>').join('')}</div></dd></dl>
+      <div><div class="eyebrow" style="margin-bottom:6px">Public APIs</div><div class="apis">${st.apis.map(a=>'<code>'+a+'</code>').join('')}</div></div>
+      <div class="row" style="gap:8px">${doms.map(d=>`<button class="btn" data-dom="${d}">Open ${DOMLABEL[d]} in the explorer →</button>`).join('')}</div></div>`;
+  document.getElementById('lcDetail').querySelectorAll('[data-dom]').forEach(b=>b.onclick=e=>{selectDom(e.target.dataset.dom);show('domains',true);});
+}
+document.getElementById('lcPrev').onclick=()=>{if(lcIdx>0)setLC(lcIdx-1);};
+document.getElementById('lcNext').onclick=()=>{if(lcIdx<STAGES.length-1)setLC(lcIdx+1);};
+setLC(0);
+
+/* ---------- products ---------- */
+document.getElementById('prodGrid').innerHTML=PRODUCTS.map(p=>`<div class="card"><h3>${p.n}</h3><p>${p.t}</p></div>`).join('');
+
+/* ---------- domain explorer ---------- */
+let curTier='all',curDom=null;
+const DOMS=[...new Set(APIS.map(a=>a.d))];
+function selectDom(d){curDom=d;curTier=TIER[d];document.querySelectorAll('.chip[data-tier]').forEach(c=>c.setAttribute('aria-pressed',c.dataset.tier===curTier));renderDoms();renderApis();}
+function renderDoms(){
+  const list=document.getElementById('domList');
+  list.innerHTML=DOMS.filter(d=>curTier==='all'||TIER[d]===curTier).map(d=>{const n=APIS.filter(a=>a.d===d);return `<button class="dom d-${TIER[d]}" data-d="${d}" aria-pressed="${curDom===d}"><span>${DOMLABEL[d]}</span><small>${n.length} APIs · ${n.reduce((s,a)=>s+a.o,0)} ops</small></button>`;}).join('');
+  list.querySelectorAll('.dom').forEach(b=>b.onclick=()=>{curDom=curDom===b.dataset.d?null:b.dataset.d;renderDoms();renderApis();if(window.innerWidth<860)document.getElementById('domHead').scrollIntoView({block:'start',behavior:'smooth'});});
+}
+function stab(a){return `<span class="cat stab s-${a.s}">${a.s}</span>`;}
+function renderApis(){
+  const q=document.getElementById('apiSearch').value.trim().toLowerCase(),st=document.getElementById('stab').value;
+  const match=a=>(!st||a.s===st)&&(!q||(a.n+' '+a.d+' '+a.seg+' '+a.t).toLowerCase().includes(q));
+  let rows=APIS.filter(a=>(curTier==='all'||TIER[a.d]===curTier)&&(!curDom||a.d===curDom)&&match(a));
+  const all=APIS.filter(match).length;
+  const head=document.getElementById('domHead');
+  if(curDom){head.innerHTML=`<div><h3>${DOMLABEL[curDom]} <span class="cat t-${TIER[curDom]}">${TIERNAME[TIER[curDom]]}</span></h3><p>${DOMDESC[curDom]}</p></div><span class="pill">${rows.length} shown</span>`;}
+  else{head.innerHTML=`<div><h3>${curTier==='all'?'All domains':TIERNAME[curTier]}</h3><p>Click a domain on the left for what it covers, or search across everything.</p></div><span class="pill">${rows.length} of ${APIS.length} APIs</span>`;}
+  document.getElementById('apiList').innerHTML=rows.length?rows.map(a=>`<div class="api"><div class="head"><b>${a.n} API</b><span class="pill">${a.v}</span>${stab(a)}<span class="pill">${a.o} op${a.o>1?'s':''}</span>${a.lro?'<span class="pill" title="returns a long-running operation">LRO</span>':''}<span class="cat t-${TIER[a.d]}">${DOMLABEL[a.d]}</span></div><div class="path">/api/${a.d.replace(/_/g,'-')}/${a.seg.replace(/_/g,'-').replace(/\./g,'/')}/${a.v}/</div><p>${a.t}</p></div>`).join('')
+    :`<div class="empty"><div>No APIs match here${(curDom||curTier!=='all')&&all?`, but ${all} match across all domains`:''}.</div><button class="btn" id="clearF">Clear filters</button></div>`;
+  const cf=document.getElementById('clearF');if(cf)cf.onclick=()=>{curTier='all';curDom=null;document.getElementById('apiSearch').value='';document.getElementById('stab').value='';document.querySelectorAll('.chip[data-tier]').forEach(x=>x.setAttribute('aria-pressed',x.dataset.tier==='all'));renderDoms();renderApis();};
+}
+document.querySelectorAll('.chip[data-tier]').forEach(c=>c.onclick=()=>{curTier=c.dataset.tier;curDom=null;document.querySelectorAll('.chip[data-tier]').forEach(x=>x.setAttribute('aria-pressed',x===c));renderDoms();renderApis();});
+document.getElementById('apiSearch').addEventListener('input',renderApis);
+document.getElementById('stab').addEventListener('change',renderApis);
+renderDoms();renderApis();
+
+/* ---------- architecture ---------- */
+const archsvg=document.getElementById('archsvg');
+(function(){
+  let s=`<defs><marker id="aa" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="currentColor"/></marker></defs>`;
+  LAYERS.forEach(l=>{s+=`<g class="layer" data-id="${l.id}" tabindex="0" role="button" aria-pressed="false" aria-label="${l.name}"><rect class="b" x="20" y="${l.y}" width="860" height="${l.h}" rx="9"/><text x="36" y="${l.y+22}">${l.name}</text><text class="sub" x="${l.h>40?36:150}" y="${l.y+(l.h>40?40:22)}">${l.sub}</text></g>`;});
+  const keys=Object.keys(TIER);
+  keys.forEach((d,i)=>{const r=i<6?0:1,c=i<6?i:i-6,x=36+c*140,y=r?254:224;s+=`<rect x="${x}" y="${y}" width="130" height="24" rx="6" fill="var(--${TIER[d]}-soft)" stroke="var(--${TIER[d]})"/><text x="${x+65}" y="${y+16}" text-anchor="middle" font-family="IBM Plex Mono,monospace" font-size="9.5" fill="var(--fg)">${DOMLABEL[d]}</text>`;});
+  s+=`<g class="arrow" marker-end="url(#aa)"><line x1="450" y1="82" x2="450" y2="96"/><line x1="450" y1="160" x2="450" y2="174"/><line x1="450" y1="286" x2="450" y2="300"/><line x1="450" y1="364" x2="450" y2="378"/></g>
+  <g class="lbl"><text x="460" y="93">REST / JSON</text><text x="460" y="171">scoped token</text><text x="460" y="297">reads, writes, evaluates</text><text x="460" y="375">runs on</text></g>
+  <g class="lbl">${['front','middle','back','platform'].map((t,i)=>`<rect x="${36+i*120}" y="414" width="10" height="10" rx="2" fill="var(--${t}-soft)" stroke="var(--${t})"/><text x="${52+i*120}" y="423">${TIERNAME[t].toLowerCase()}</text>`).join('')}</g>`;
+  archsvg.innerHTML=s;
+  archsvg.querySelectorAll('.layer').forEach(g=>{g.onclick=()=>setLayer(g.dataset.id);g.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();setLayer(g.dataset.id);}});});
+})();
+function setLayer(id){archsvg.querySelectorAll('.layer').forEach(g=>{const on=g.dataset.id===id;g.classList.toggle('on',on);g.setAttribute('aria-pressed',on);});document.getElementById('archDetail').innerHTML='<div class="stack" style="gap:8px">'+LAYERS.find(l=>l.id===id).body+'</div>';}
+setLayer('graph');
+
+/* ---------- request ---------- */
+const reqsvg=document.getElementById('reqsvg');let hop=0;
+const HOPLBL=['POST :batchPost','app key + token','resolve, check perms','verdict','operation id'];
+(function(){
+  let s=`<defs><marker id="ra" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto"><path d="M0,0 L10,5 L0,10 z" fill="currentColor"/></marker></defs>`;
+  HOPS.forEach((h,i)=>{const x=10+i*160;s+=`<g class="hop" data-i="${i}"><rect x="${x}" y="16" width="140" height="64" rx="9"/><text x="${x+70}" y="42" text-anchor="middle">${h.name}</text><text class="sub" x="${x+70}" y="62" text-anchor="middle">${h.sub}</text></g>`;if(i<HOPS.length-1)s+=`<line x1="${x+140}" y1="48" x2="${x+158}" y2="48" stroke="currentColor" stroke-width="1.2" marker-end="url(#ra)"/><text class="lbl" x="${x+149}" y="100" text-anchor="middle">${HOPLBL[i]}</text>`;});
+  s+=`<path d="M 880 80 C 880 134, 720 134, 720 82" fill="none" stroke="currentColor" stroke-width="1.2" stroke-dasharray="4 3" marker-end="url(#ra)"/><text x="800" y="143" class="lbl" text-anchor="middle">GET longrunningoperations/{id}, until done</text>`;
+  reqsvg.innerHTML=s;
+  document.getElementById('reqSteps').innerHTML=HOPS.map((h,i)=>`<button data-i="${i}">${i+1}. ${h.name}</button>`).join('');
+  document.querySelectorAll('#reqSteps button').forEach(b=>b.onclick=()=>setHop(+b.dataset.i));
+})();
+function setHop(i){hop=i;reqsvg.querySelectorAll('.hop').forEach(g=>{g.classList.toggle('on',+g.dataset.i<=i);g.classList.toggle('cur',+g.dataset.i===i);});document.querySelectorAll('#reqSteps button').forEach(b=>b.setAttribute('aria-current',+b.dataset.i===i?'step':'false'));document.getElementById('reqCap').textContent=HOPS[i].cap;
+  document.getElementById('reqDetail').innerHTML=`<div class="stack" style="gap:8px">${HOPS[i].body}</div><div class="row" style="justify-content:flex-end"><button class="btn" id="hp" ${i===0?'disabled':''}>← Back</button><button class="btn primary" id="hn">${i===HOPS.length-1?'Start over ↺':'Next hop →'}</button></div>`;
+  document.getElementById('hp').onclick=()=>{if(i>0)setHop(i-1);};document.getElementById('hn').onclick=()=>setHop(i===HOPS.length-1?0:i+1);}
+setHop(0);
+
+/* ---------- conventions ---------- */
+document.getElementById('convGrid').innerHTML=CONV.map((c,i)=>`<details ${i<2?'open':''}><summary>${c.t}</summary><div class="body"><div><div class="lab">Pattern</div>${c.p}</div><div><div class="lab">Evidence in the specs</div><span class="mono" style="font-size:.82rem">${c.e}</span></div><div><div class="lab">Why it matters</div>${c.w}</div></div></details>`).join('');
+
+/* ---------- glossary ---------- */
+function renderGloss(){const q=document.getElementById('glossSearch').value.trim().toLowerCase();document.getElementById('glossGrid').innerHTML=GLOSS.filter(g=>!q||(g[0]+' '+g[1]).toLowerCase().includes(q)).map(g=>`<div class="term"><b>${g[0]}</b><span>${g[1]}</span></div>`).join('')||'<div class="empty">No terms match.</div>';}
+document.getElementById('glossSearch').addEventListener('input',renderGloss);renderGloss();
+
+/* ---------- quiz ---------- */
+document.getElementById('quizGrid').innerHTML=QUIZ.map((q,i)=>`<div class="flash" tabindex="0" role="button" aria-expanded="false" data-i="${i}"><div class="q">${q[0]}</div><div class="a" hidden>${q[1]}</div><div class="hint">Show answer</div></div>`).join('');
+document.querySelectorAll('.flash').forEach(f=>{const t=()=>{const a=f.querySelector('.a');a.hidden=!a.hidden;f.classList.toggle('open',!a.hidden);f.setAttribute('aria-expanded',!a.hidden);f.querySelector('.hint').textContent=a.hidden?'Show answer':'Hide answer';};f.onclick=t;f.addEventListener('keydown',e=>{if(e.key==='Enter'||e.key===' '){e.preventDefault();t();}});});
+
+/* ---------- boot ---------- */
+show((location.hash||'').replace('#','')||'overview',false,false);
+checkTabScroll();
+window.addEventListener('hashchange',()=>show((location.hash||'').replace('#',''),false));
+</script>
