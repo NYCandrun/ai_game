@@ -154,3 +154,7 @@ Exhibit 7 was `exhibit keep` (never split) and did not fit below Exhibit 6, leav
 ## After the before/after meaning check (MEANING_CHECK_titles_applied.md: 142 pairs, 116 same, 23 moved, 3 changed)
 
 Three fixes applied by `fix3.py`: Exhibit 14 title now "Of nine providers a Studio buyer compares, eight have announced AI features or AI access to their data; Aladdin has a job advert" (the applied title had claimed all eight shipped or announced data access, which the SimCorp and Arcesium rows do not say); Exhibit 8 title drops "since 2024" (Miller's video is undated); Exhibit 2's source note regains a pointer to the stability labels ("The labels in brackets are each specification's stability label; Exhibit 5 explains them").
+
+## Speaker count on page 2 (author's choice)
+
+Page 2 said "Five BlackRock speakers have defined it on the record since 2024" while its third direction and Exhibit 9 count four. The author chose to use four on page 2: "Four BlackRock speakers have defined it the same way since 2024" (Khara early 2024, Newman January 2025, Goel 2025, Woodhead November 2025; Miller's undated video is the fifth in Exhibit 8 and does not give the three-part definition). Exhibit 8 keeps five, explained on page 9.
