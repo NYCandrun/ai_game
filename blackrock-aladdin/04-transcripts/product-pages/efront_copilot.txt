@@ -1,0 +1,765 @@
+Introducing: Generative AI by eFront® | eFront | BlackRock 
+
+ Skip to content 
+
+ BlackRock 
+
+ BlackRock 
+
+ iShares 
+
+ iShares 
+
+ Aladdin 
+
+ Aladdin 
+
+ Our company 
+
+ Our company 
+
+ EN 
+
+ FR 
+
+ United States
+
+Institutions 
+
+Platform 
+
+Discover 
+
+About us 
+
+ Institutions
+
+ Asset Managers 
+
+ Asset Owners 
+
+ Asset Servicers 
+
+ Funds of Funds 
+
+ Products
+
+ Insight 
+
+ Invest GP 
+
+ Invest LP 
+
+ Invest AS 
+
+ Investment Café 
+
+ FAIR 
+
+ eFront Provider 
+
+ Asset classes
+
+ Private Equity 
+
+ Private Credit 
+
+ Infrastructure 
+
+ Real Estate 
+
+ Solutions
+
+ Fundraising 
+
+ Deal Flow Management 
+
+ Fund Administration and Accounting 
+
+ Investor Portals 
+
+ Portfolio Monitoring 
+
+ Manager Selection 
+
+ Investment Due Diligence 
+
+ Liquidity Management 
+
+ Portfolio Construction 
+
+ Benchmarking 
+
+ Discover
+
+ Research 
+
+ Brochures 
+
+ Client Testimonials 
+
+ Education Services 
+
+ Events 
+
+ Webinars 
+
+ About us
+
+ Contact us​ 
+
+ About eFront 
+
+ RESET 
+
+ Aladdin launches the AI Adoption Report 2026 based on a global survey of 303 investment firms. 
+
+ Aladdin launches the AI Adoption Report 2026 based on a global survey of 303 investment firms. 
+
+Change location 
+
+Change location 
+
+ Aladdin launches the AI Adoption Report 2026 based on a global survey of 303 investment firms. 
+
+ Aladdin launches the AI Adoption Report 2026 based on a global survey of 303 investment firms. 
+
+ GenAI BY EFRONT®
+
+ A NEW GENERATION OF PRIVATE MARKETS TECHNOLOGY
+
+ From automation to machine learning and natural language processing, artificial intelligence has been a part of BlackRock’s DNA for years—and continues to be applied across eFront® technology.
+
+Now, a new generation of private markets technology is here.
+
+ Request a preview 
+
+ Request a preview 
+
+To view this video please enable JavaScript, and consider upgrading to a
+web browser that supports HTML5 video.
+
+ Introducing eFront Copilot, now available within eFront Insight. By integrating GenAI with the platform’s capabilities—across private markets investment data and analysis—eFront Copilot unlocks new efficiencies for and beyond traditional platform users at your organization—from the analyst to the CIO.
+
+ It’s GenAI for a new generation of private markets data and analytics—all part of the Aladdin Copilot Ecosystem.
+
+ Download the brochure 
+
+ Download the brochure 
+
+ Visualize your portfolio.
+
+ eFront Copilot understands your questions on private market investments. It transforms prompts into powerful data visualizations and usable investment intelligence. Simply ask a question to:
+
+ Access quick analytics to understand key metrics and trends in your portfolios
+
+ Instantaneously visualize exposures, performance, and risk
+
+ Configure layouts efficiently and access existing Insight functionality directly in the chat
+
+ It’s not raw data—it’s usable, real-time knowledge.
+
+ eFront Copilot solves many of the current data challenges faced by private markets investors by eliminating the need to: 
+
+ Manually configure multiple visualizations, charts, and tables
+
+ Navigate between different dashboards to access underlying data
+
+ Perform complex and manual data analyses across multiple reports and Excel files
+
+ Request a preview 
+
+ The same walled-garden standards you’d expect from BlackRock.
+
+ Access eFront Copilot securely on the Insight platform. Your data privacy and risk controls remain our top priority. eFront Copilot: 
+
+ Provides access to eFront Insight analytics in the form of standard visualizations
+
+ Will not give investment advice or respond to questions outside eFront Insight boundaries
+
+ Contains content filtering and parameters to limit risk of hallucination, misinformation or inappropriate outputs
+
+ Is built on the Aladdin-isolated instance of Azure OpenAI-secured connection where all personal information is filtered out
+
+ eFront Copilot combines the power of GenAI and existing Insight functionality to help optimize your workflows. That means more time for creative, differentiating analyses, stronger relationship management, and more informed investment decisions.
+
+ Request a preview 
+
+ BlackRock & Microsoft partnership 
+
+ The Fourth Industrial Revolution 
+
+ Financial Times Coverage 
+
+ Video Player-2
+
+ Audio Player-1
+
+ Paragraph-6
+
+To view this video please enable JavaScript, and consider upgrading to a
+web browser that supports HTML5 video.
+
+ Partnership, governance, and innovation—BlackRock & Microsoft together 
+
+ Aladdin's strategic partnership with Microsoft is a springboard for further innovation—as we develop AI capabilities and enhance our offerings to better serve our clients. Learn more about our "one team" approach.
+
+ Syril Smith, Head of Product for Alpha, Research and AI platforms and Adam Salvatori, Head of AI, Alpha, and Digital Assets Engineering, share more about the combination of humans and machines and the accessibility of new technologies.
+", "epNumber": "", "date": "", "transcript": "" }] }'>
+
+ NEVER DONE podcast
+
+Description 
+
+ NEVER DONE podcast / 
+
+ The Fourth Industrial Revolution 
+
+To view this audio please enable JavaScript, and consider upgrading to a
+web browser that supports HTML5 video.
+
+ Episode description:
+
+ Syril Smith, Head of Product for Alpha, Research and AI platforms and Adam Salvatori, Head of AI, Alpha, and Digital Assets Engineering, share more about the combination of humans and machines and the accessibility of new technologies.
+
+ The Fourth Industrial Revolution 
+
+ Syril Smith, Head of Product for Alpha, Research and AI platforms and Adam Salvatori, Head of AI, Alpha, and Digital Assets Engineering, share more about the combination of humans and machines and the accessibility of new technologies.
+
+ BlackRock to roll out first generative AI tools to clients 
+
+ BlackRock to roll out first generative AI tools to clients “GenAI will change how people interact with technology…[and] likely change our clients’ expectations around the frequency, timeliness, and simplicity of our interactions.” Read the coverage in the Financial Times.
+
+ Read here 
+
+ Read here 
+
+ Explore machine learning and NLP topics
+
+ Data automation 
+
+ Data automation 
+
+ Automation blog 
+
+ Automation blog 
+
+ Contact us
+
+ Please try again 
+
+ First name *
+
+ Please enter a valid first name 
+
+ Last name *
+
+ Please enter a valid last name 
+
+ ()[\]\\.,;:\s@]+(\.[^<>()[\]\\.,;:\s@]+)*))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$"
+type="text"
+required aria-required=true
+class="contact-input mandatory-field" />
+ Email Address *
+
+ Please enter a valid email 
+
+ Company *
+
+ This field is mandatory 
+
+ Afghanistan 
+ Aland Islands 
+ Albania 
+ Algeria 
+ American Samoa 
+ Andorra 
+ Angola 
+ Anguilla 
+ Antarctica 
+ Antigua and Barbuda 
+ Argentina 
+ Armenia 
+ Aruba 
+ Australia 
+ Austria 
+ Azerbaijan 
+ Bahamas 
+ Bahrain 
+ Bangladesh 
+ Barbados 
+ Belarus 
+ Belgium 
+ Belize 
+ Benin 
+ Bermuda 
+ Bhutan 
+ Bolivia 
+ Bonaire 
+ Bosnia and Herzegovina 
+ Botswana 
+ Bouvet Island 
+ Brazil 
+ Brit/Indian Ocean Terr. 
+ Brunei Darussalam 
+ Bulgaria 
+ Burkina Faso 
+ Burundi 
+ Cambodia 
+ Cameroon 
+ Canada 
+ Cape Verde 
+ Cayman Islands 
+ Central African Republic 
+ Chad 
+ Chile 
+ China 
+ Christmas Island 
+ Cocos (Keeling) Islands 
+ Colombia 
+ Comoros 
+ Congo 
+ Congo, The Dem. Republic Of 
+ Cook Islands 
+ Costa Rica 
+ Cote D'Ivoire 
+ Croatia 
+ Cuba 
+ Curacao 
+ Cyprus 
+ Czech Republic 
+ Denmark 
+ Djibouti 
+ Dominica 
+ Dominican Republic 
+ Ecuador 
+ Egypt 
+ El Salvador 
+ Equatorial Guinea 
+ Eritrea 
+ Estonia 
+ Ethiopia 
+ Falkland Islands 
+ Faroe Islands 
+ Fiji 
+ Finland 
+ France 
+ French Guiana 
+ French Polynesia 
+ French Southern Terr. 
+ Gabon 
+ Gambia 
+ Georgia 
+ Germany 
+ Ghana 
+ Gibraltar 
+ Greece 
+ Greenland 
+ Grenada 
+ Guadeloupe 
+ Guam 
+ Guatemala 
+ Guernsey 
+ Guinea 
+ Guinea-Bissau 
+ Guyana 
+ Haiti 
+ Heard/McDonald Isls. 
+ Honduras 
+ Hong Kong 
+ Hungary 
+ Iceland 
+ India 
+ Indonesia 
+ Iran 
+ Iraq 
+ Ireland 
+ Isle of Man 
+ Israel 
+ Italy 
+ Jamaica 
+ Japan 
+ Jersey 
+ Jordan 
+ Kazakhstan 
+ Kenya 
+ Kiribati 
+ Korea (North) 
+ Korea (South) 
+ Kuwait 
+ Kyrgyzstan 
+ Laos 
+ Latvia 
+ Lebanon 
+ Lesotho 
+ Liberia 
+ Libya 
+ Liechtenstein 
+ Lithuania 
+ Luxembourg 
+ Macau 
+ Macedonia 
+ Madagascar 
+ Malawi 
+ Malaysia 
+ Maldives 
+ Mali 
+ Malta 
+ Marshall Islands 
+ Martinique 
+ Mauritania 
+ Mauritius 
+ Mayotte 
+ Mexico 
+ Micronesia 
+ Moldova 
+ Monaco 
+ Mongolia 
+ Montserrat 
+ Morocco 
+ Mozambique 
+ Myanmar 
+ N. Mariana Isls. 
+ Namibia 
+ Nauru 
+ Nepal 
+ Netherlands 
+ Netherlands Antilles 
+ New Caledonia 
+ New Zealand 
+ Nicaragua 
+ Niger 
+ Nigeria 
+ Niue 
+ Norfolk Island 
+ Norway 
+ Oman 
+ Pakistan 
+ Palau 
+ Palestinian Territory, Occupied 
+ Panama 
+ Papua New Guinea 
+ Paraguay 
+ Peru 
+ Philippines 
+ Pitcairn 
+ Poland 
+ Portugal 
+ Puerto Rico 
+ Qatar 
+ Reunion 
+ Romania 
+ Russian Federation 
+ Rwanda 
+ Saint Kitts and Nevis 
+ Saint Lucia 
+ Samoa 
+ San Marino 
+ Sao Tome/Principe 
+ Saudi Arabia 
+ Senegal 
+ Serbia and Montenegro 
+ Seychelles 
+ Sierra Leone 
+ Singapore 
+ Sint Maarten 
+ Slovak Republic 
+ Slovenia 
+ Solomon Islands 
+ Somalia 
+ South Africa 
+ Spain 
+ Sri Lanka 
+ St. Helena 
+ St. Pierre and Miquelon 
+ St. Vincent and Grenadines 
+ Sudan 
+ Suriname 
+ Svalbard/Jan Mayen Isls. 
+ Swaziland 
+ Sweden 
+ Switzerland 
+ Syria 
+ Taiwan 
+ Tajikistan 
+ Tanzania 
+ Thailand 
+ Timor-Leste 
+ Togo 
+ Tokelau 
+ Tonga 
+ Trinidad and Tobago 
+ Tunisia 
+ Turkey 
+ Turkmenistan 
+ Turks/Caicos Isls. 
+ Tuvalu 
+ US Minor Outlying Is. 
+ Uganda 
+ Ukraine 
+ United Arab Emirates 
+ United Kingdom 
+ United States 
+ Uruguay 
+ Uzbekistan 
+ Vanuatu 
+ Vatican City 
+ Venezuela 
+ Viet Nam 
+ Virgin Islands (British) 
+ Virgin Islands (U.S.) 
+ Wallis/Futuna Isls. 
+ Western Sahara 
+ Yemen 
+ Zambia 
+ Zimbabwe 
+
+ Country *
+
+ This field is mandatory 
+
+ Phone Number 
+
+ This field is mandatory 
+
+ General Partner 
+ Other 
+ Venture Capital 
+ Real Estate Firm 
+ Fund of funds 
+ Sovereign Wealth Fund 
+ Government Agency 
+ Pension Fund 
+ Insurance Company 
+ Endowment/Foundation 
+ Family Office 
+ Other Limited Partner 
+ Asset Servicer/Fund Administrator 
+
+ Firm Type 
+
+ This field is mandatory 
+
+ Administrative 
+ Analyst 
+ Analyst/Researcher 
+ Area / Regional Manager 
+ Audit and Accounting 
+ Chief Executive Officer 
+ Chief Financial Officer 
+ Chief Investment Officer 
+ Chief Operating Officer 
+ Client Service 
+ Consultant 
+ Consultant Database Contact 
+ Discretionary Manager 
+ Field Consultant 
+ Finance 
+ Financial Advisor 
+ Fund Selector 
+ Head of Business / channel 
+ Head of Dept/Unit 
+ Head of Marketing 
+ Head of Sales 
+ Internal Wholesale 
+ LandC Officer 
+ Network Coordinator 
+ Opinion Leader 
+ Other 
+ Platform Administrator 
+ Portfolio Manager 
+ Private Banker 
+ Product Management 
+ Quantitative Analyst 
+ Recruiter 
+ Regulatory 
+ Relationship Manager 
+ Research 
+ Retail Banker 
+ Risk Manager 
+ Sales Manager / Desk Head 
+ Trader 
+ Treasurer 
+ Head of Trading 
+ Sales 
+ Equity Finance - Collateral Management RM 
+ Equity Finance - Securities Lending RM 
+ Product Specialist 
+ Securities Lending Trader 
+
+ Primary Role 
+
+ This field is mandatory 
+
+ eFront Invest LP 
+ eFront Invest GP 
+ eFront Invest AS 
+ eFront PEO/VC 
+ eFront PM 
+ eFront Office 
+ eFront Investment Café 
+ eFront Insight 
+ eFront Data Intelligence 
+ eFront Pevara 
+ GP Solutions 
+ LP Solutions 
+ AS/FA Solutions 
+ not sure yet 
+
+ Interested In 
+
+ This field is mandatory 
+
+ Request Demo 
+ Contact Sales 
+ Client Support 
+ HR/Careers 
+ Other 
+
+ Request Type 
+
+ This field is mandatory 
+
+ How can we help you? 
+
+ Please click here to opt-in to receiving insight emails from eFront. Any data collected will be processed according to BlackRock's privacy policy. You may unsubscribe at any time. 
+
+ Please fill in all mandatory fields before submitting this form. 
+
+ address1 
+
+ *Required information |
+ Read our Privacy policy 
+
+ Submit 
+
+ Thank you for contacting us.
+
+ Your information has been submitted successfully.
+
+ Continue learning 
+
+ Continue learning 
+
+Institutions 
+
+ Asset Managers 
+
+ Asset Owners 
+
+ Asset Servicers 
+
+ Funds of Funds 
+
+Platform 
+
+ Insight 
+
+ Invest GP 
+
+ Invest LP 
+
+ Invest AS 
+
+ Investment Café 
+
+ FAIR 
+
+ eFront Provider 
+
+ Private Equity 
+
+ Private Credit 
+
+ Infrastructure 
+
+ Real Estate 
+
+ Fundraising 
+
+ Deal Flow Management 
+
+ Fund Administration and Accounting 
+
+ Investor Portals 
+
+ Portfolio Monitoring 
+
+ Manager Selection 
+
+ Investment Due Diligence 
+
+ Liquidity Management 
+
+ Portfolio Construction 
+
+ Benchmarking 
+
+Discover 
+
+ Research 
+
+ Brochures 
+
+ Client Testimonials 
+
+ Education Services 
+
+ Events 
+
+ Webinars 
+
+About us 
+
+ Contact us​ 
+
+ About eFront 
+
+ Careers 
+
+ Careers 
+
+ UK Corporate Tax Strategy 
+
+ UK Corporate Tax Strategy 
+
+ UK Gender Pay Reporting 
+
+ UK Gender Pay Reporting 
+
+ Terms & Conditions 
+
+ Terms & Conditions 
+
+ Privacy Policy 
+
+ Privacy Policy 
+
+ FINRA BrokerCheck 
+
+ FINRA BrokerCheck 
+
+ Manage cookies 
+
+ © 2025 BlackRock, Inc. All rights reserved.
+
+ ABOUT ALADDIN 
+
+ Aladdin® is a technology platform used by asset managers and owners including banks, financial institutions, pensions, corporations, insurers, and wealth managers. The Aladdin platform unifies the investment management process, providing a common data language within an organization to enable scale, provide insights, and support business transformation. Through eFront® technology, alternative investment data management is covered to meet the needs of alternative investment professionals worldwide and across all major alternative asset classes. From fundraising, fund administration and reporting to data services and analytics, the platform provides capabilities to support decision making and investment oversight.
+
+ Aladdin® and eFront® platforms bring together public and private asset class data to create an industry-recognized whole portfolio solution for investment professionals globally. Find out more at www.blackrock.com/aladdin | request@blackrock.com 
+
+ With eFront Copilot, users will be communicating with an AI-powered chatbot. eFront Copilot is made subject to the terms of your agreement with BlackRock
+
+ or its affiliates with respect to the provision of data or technology services.
+
+ This material is provided for informational purposes only and is not intended to be relied upon as a forecast, research or investment advice, and is not a recommendation, offer or solicitation to buy or sell any securities or to adopt any investment strategy. The opinions expressed are subject to change at any time without notice. The information and opinions contained in this material are derived from proprietary and nonproprietary sources deemed by BlackRock to be reliable, are not necessarily all-inclusive and are not guaranteed as to accuracy. Performance and risk calculations, including those incorporated into Aladdin technology, are based on assumptions, historical correlations, and other factors (such as inputs provided by the Aladdin users) and are not assured to predict future results. All graphs and screenshots are for illustrative purposes only. BlackRock’s Aladdin platform is a financial technology platform designed for institutional, wholesale, qualified, and professional investor/client use only and is not intended for end investor use. Aladdin users undertake sole responsibility and liability for investment or other decisions related to the technology’s calculations and for compliance with applicable laws and regulations. The technology should not be viewed or construed by any Aladdin users, or their customers or clients, as providing investment advice or investment recommendations to any parties. For additional information on any of the descriptions contained herein, please contact your Aladdin Relationship Management representative. BlackRock may modify or discontinue any functionality or service component described herein at any time without prior advance notice to you.
+
+ Certain Aladdin technology products and services may not be offered by BlackRock in your local jurisdiction. 
+
+ In the U.S. and Canada , this material is intended for institutional investors. In the UK , this material is for professional clients (as defined by the Financial Conduct Authority or MiFID Rules) and qualified investors only and should not be relied upon by any other persons. Please refer to the Financial Conduct Authority website for a list of authorised activities conducted by BlackRock. In the EEA , this material is for professional clients, professional investors, qualified clients and qualified investors. For qualified investors in Switzerland: This information is marketing material. This material shall be exclusively made available to, and directed at, qualified investors as defined in Article 10 (3) of the CISA of 23 June 2006, as amended, at the exclusion of qualified investors with an opting-out pursuant to Art. 5 (1) of the Swiss Federal Act on Financial Services ("FinSA"). For information on art. 8 / 9 Financial Services Act (FinSA) and on your client segmentation under art. 4 FinSA, please see the following website: www.blackrock.com/finsa. In Singapore, this is for use only with institutional investors as defined in Section 4A of the Securities and Futures Act, Chapter 289 of Singapore. In the provision of any of the services described herein, neither BlackRock (nor any of its affiliates) will be acting in a capacity as investment adviser or broker-dealer nor will it be performing the functions of an organized market or exchange (and has not been recognized as doing so by the Monetary Authority of Singapore). In Hong Kong , the technology and the material is for distribution to "Professional Investors" (as defined in the Securities and Futures Ordinance (Cap.571 of the laws of Hong Kong) and any rules made under that ordinance.) and should not be relied upon by any other persons or redistributed to retail clients in Hong Kong. In Japan, this is for Professional Investors only (Professional Investor is defined in Financial Instruments and Exchange Act). In Australia, issued by BlackRock Investment Management (Australia) Limited ABN 13 006 165 975 AFSL 230 523 (BIMAL) for the exclusive use of the recipient who warrants by receipt of this material that they are a wholesale client and not a retail client as those terms are defined under the Australian Corporations Act 2001 (Cth). In Brunei, Indonesia, and Malaysia , this material is issued for institutional investors only. In Latin America, for institutional investors and financial intermediaries only (not for public distribution). No securities regulator within Latin America has confirmed the accuracy of any information contained herein. Please note that IN MEXICO , the provision of investment management and investment advisory services (“ Investment Services ”) is a regulated activity, subject to strict rules, and performed under the supervision of the Mexican National Banking and Securities Commission (Comisión Nacional Bancaria y de Valores, the “ CNBV ”). BlackRock does not provide, and it shall not be deemed that it provides through [Aladdin or eFront] technology, any personalized investment advice to the recipient of this document, by reason of its use or otherwise. These materials are shared for information purposes only, do not constitute investment advice, and are being shared in the understanding that the addressee is an Institutional or Qualified investor as defined under Mexican Securities (Ley del Mercado de Valores). Each potential investor shall make its own investment decision based on their own analysis of the available information. Please note that by receiving these materials, it shall be construed as a representation by the receiver that it is an Institutional or Qualified investor as defined under Mexican law. BlackRock México Operadora, S.A. de C.V., Sociedad Operadora de Fondos de Inversión (“ BlackRock México Operadora ”) is a Mexican subsidiary of BlackRock, Inc., authorized by the CNBV as a Mutual Fund Manager (Operadora de Fondos), and as such, authorized to manage Mexican mutual funds, ETFs and provide Investment Services. For more information on the Investment Services offered by BlackRock Mexico, please review our Investment Services Guide available in www.blackrock.com/mx . In South Africa , a provider who provides products or services to a client other than financial products or financial services, must disclose to the client the fact that the additional products or services are not regulated under the Act and therefore the client is not afforded the same protections in respect of those additional products or services that may apply in respect of the provision of financial products or services in terms of the Act. This document is for information purposes only and does not constitute an offer or invitation to anyone to invest in any BlackRock funds and has not been prepared in connection with any such offer. Issued by BlackRock Investment Management (UK) Limited, authorised and regulated by the Financial Conduct Authority. Registered office: 12 Throgmorton Avenue, London, EC2N 2DL. Tel: + 44 (0)20 7743 3000. Registered in England and Wales No. 02020394. For your protection telephone calls are usually recorded. Please refer to the Financial Conduct Authority website for a list of authorised activities conducted by BlackRock. Please be advised that BlackRock Investment Management (UK) Limited is an authorised Financial Services provider with the South African Financial Services Conduct Authority, FSP No. 43288.
+
+ © 2025 BlackRock, Inc. or its affiliates. All rights reserved. BLACKROCK and eFront are trademarks of BlackRock, Inc. or its affiliates. All other marks are the property of their respective owners.
+
+ MKTGH0621U/M-1680176
+ -->

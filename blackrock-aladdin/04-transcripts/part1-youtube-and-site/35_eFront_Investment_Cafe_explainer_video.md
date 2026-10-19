@@ -1,0 +1,13 @@
+# eFront Investment Cafe explainer video (official)
+
+Source page: https://www.efront.com/en/alternative-investment-software-video/efront-investment-cafe-explainer-video  
+Media: eFrontInvestmentCafe-362.mp4 (BlackRock CloudFront)  
+Transcript: local Whisper (base.en), machine-made; names may be mis-heard.
+
+---
+
+You've developed a great investment strategy for your next fund. You're ready to hit the ground running and create value. There's just one thing standing in your way. Fundraising and managing your investors. With unorganized email chains and complex document sharing portals, these processes can leave even the savviest of general partners feeling overwhelmed. Luckily, there's e-front investment cafe, a modern, clean, and easy-to-use cloud-based portal dedicated to alternative investments, offering investors enhanced access to information anytime, anywhere and from any device. Thanks to flexible and fully functional CRM and content management systems, general partners can choose to leverage e-front investment cafe as a standalone system or to sync with any other back office application in order to seamlessly integrate contacts and data.
+
+With just a few clicks, general partners can invite investors to a fully secured virtual data room where they can easily share important information without having to worry about security, availability, or scalability, making raising funds, onboarding, and reporting to investors a straightforward process. And with customizable dashboards and powerful analytics, reporting to investors has never been easier. Investors can gain insight into important metrics on their investments at the funding and holding levels while drilling down on charts and graphs. e-front investment cafe further facilitates exchange through media communication cards, empowering general partners to communicate marketing materials, announcements, and events in order to keep their investors up to date.
+
+And with dedicated administration and auditing tools, general partners can maintain full transparency into and control over their investors' activities within the portal. Specialized emailing and archiving tools greatly simplify compliance procedures and streamline reporting, making investor management so easy that more than 10,000 funds choose to report with e-front investment cafe, securely sharing over 10 million documents through the portal. Join the hundreds of thousands of users around the world accessing e-front investment cafe. Improve communication, strengthen investor relationships, and free up time so that you can focus on what really matters, creating value for your investors.

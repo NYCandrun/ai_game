@@ -1,0 +1,281 @@
+Whole Portfolio Management | Aladdin by BlackRock 
+
+ Sign In 
+
+ Institutions
+
+ Institutions
+
+ Institutions 
+
+ INSTITUTIONS
+ Asset managers 
+ Asset servicers 
+ Banks & brokers 
+ Corporates 
+ Insurers 
+ Pension funds 
+ Private markets 
+ Wealth managers 
+
+ Sign In 
+
+ Platforms
+
+ Platforms
+
+ Platforms 
+
+ Platforms
+ Aladdin 
+ Aladdin Wealth 
+ eFront 
+ Preqin 
+
+ Solutions
+ Accounting 
+ Aladdin Studio 
+ Aladdin Data Cloud 
+ Whole Portfolio 
+ Risk Management 
+ Sustainability 
+ Climate Risk 
+ Aladdin Copilot 
+ Private Markets Data 
+
+ Sign In 
+
+ Discover
+
+ Discover
+
+ Discover 
+
+ RESOURCES
+ Aladdin Partnerships 
+ Aladdin Academy 
+ Implementations 
+
+ EXPERTISE
+ News and Insights 
+ The Never Done by Aladdin podcast 
+ Uncharted Video Series 
+ Big Little Questions 
+ Events 
+ Webinars 
+
+ Sign In 
+
+ About us
+
+ About us
+
+ About us 
+
+ about
+ Contact us 
+ FAQs 
+
+ Sign In 
+
+ Sign In 
+
+ CLEAR 
+
+ For funds, articles, literature or videos 
+
+ Search 
+
+ Strategies & Insights (0) Strategies & Insights (0) 
+ Literature (0) Literature (0) 
+
+ Search results
+
+ No search results found
+ Please double-check your spelling or try a different search term.
+
+ Read BlackRock's Privacy Notice here .
+
+ Request a demo 
+
+ Accelerating transformation
+ We have a history of powering transformation for our clients—bringing a breadth of experience across regions, strategies, and asset classes, as well as an established track record in successfully implementing Aladdin technology.
+
+ Read more 
+
+ Powering scale
+ Shaped by insights from our global client community, including BlackRock, Whole Portfolio continues to evolve—empowering asset allocators to manage risk, rebalance exposures with precision, and scale with confidence across all market conditions.
+
+ 01.
+ Manage assets, performance & risk across markets, seamlessly
+ Whole Portfolio is a connected ecosystem that gives institutional investors an enterprise-wide view across all asset classes—including both direct and indirect investments in private markets—enabling unified risk, exposure, as well as performance analysis and strategic oversight.
+
+ 02.
+ Unlock unique insights through innovative analytics
+ Our solution unlocks unique insights across public and private markets. Clients gain access to institutional-grade analytics, premier private market data, and a pipeline of innovation that continuously evolve with their needs.
+
+ 03.
+ Streamline operations for stronger transparency and growth
+ Optimize and scale operations firm—wide with standardized and fit-for-purpose workflows, an integrated ibor that supports public and private assets, and robust tooling for established and emerging strategies, including expansion into digital assets.
+
+ Pre-Investment IQ Pre-Investment IQ 
+ Enterprise-Wide Oversight Enterprise-Wide Oversight 
+ Exposure Tracking Exposure Tracking 
+ ROI-Driven Analytics ROI-Driven Analytics 
+ Optimized Operations Optimized Operations 
+ Open Architecture Open Architecture 
+
+ For public and private markets
+ Unlock forward-looking insights with Aladdin industry-leading models, expansive data, and advanced analytics to uncover risk and return drivers, test diversification, and model market scenarios. Combine with premier private market fund-level intelligence to evaluate managers by performance, value-creation strategy, and exit track record.
+
+ With a single integrated view
+ Track every asset across public and private markets in one place. Monitor positions and exposures as they evolve, with historical snapshots and real-time views that support stronger portfolio oversight, enterprise risk management, and governance across the organization.
+
+ From enterprise to individual
+ Drill down from top of the enterprise to individual portfolio company, property, or loan-level details—organized by sector, country, or issuer for detailed risk and performance insights.
+
+ To act decisively
+ Unlock institutional-grade analytics and proprietary risk models tailored to your portfolio. Quantify exposures, stress test scenarios, and uncover opportunities with precision.
+
+ With an IBOR to confidently scale
+ Streamline front-to-back workflows with a unified IBOR for public and private assets. Reduce costs, simplify operations, and scale confidently.
+
+ Built on a flexible, AI-ready foundation
+ Leverage an open, API-first platform that adapts to your code and strategy—driving flexibility, extensibility, and interoperability across existing systems, data, workflows, models, and providers.
+
+ Read BlackRock's Privacy Notice here .
+
+ Read BlackRock's Privacy Notice here .
+
+ Download the whole portfolio brochure 
+
+ A Total Portfolio Approach to investment management
+ Whole Portfolio helps institutions support a Total Portfolio Approach by bringing public and private markets data, advanced analytics, and workflows into a shared portfolio view. Teams can assess how allocation changes, new exposures, and private market commitments may affect risk, liquidity, and performance before decisions are made.
+
+ Download the brochure Explore more 
+
+ 6
+ years delivering Whole Portfolio solutions—with 20+ years delivering solutions for private markets
+
+ 50,000
+ unique private markets companies maintained and 2k+ private markets risk factors monitored daily
+
+ Explore eFront 
+
+ Read the client story 
+
+ Read BlackRock's Privacy Notice here .
+
+ Access the full webinar 
+
+ Your strategic partner across the whole portfolio
+
+ Rethinking Systems with Ingka Investments: Staying Ahead of the Game
+
+ Samuel Rundle, Head of Financial Markets Investments at Ingka Investments, and Tarek Chouman, Global Head of the Aladdin Client Business, discuss transparency in diversification, sustainable investing, and how AI can reshape the financial industry.
+
+ Helvetia's Holistic Approach to Portfolio Management
+
+ Dominik Gurtner, CTO at Helvetia Asset Management, shares how tech enables smarter decisions, optimized portfolios, and real-time views to boost transparency in allocation and risk.
+
+ AIA Announces Collaboration with BlackRock and bny
+
+ (July 12, 2024) AIA announces a new agreement with BlackRock and BNY as it transforms its investment platform to support long-term investment programme.
+
+ The Evolving Foundation of the Whole Portfolio
+
+ Public markets investments remain the backbone of portfolios—and this space is becoming more diverse as product offerings evolve, the industry experiences consolidation, and the geopolitical environment remains in flux.
+
+ The Building Blocks of a Private Markets Ecosystem
+
+ To effectively manage private assets as part of the whole portfolio, firms need tech and data that will bring standardization and more efficient workflows to a landscape still predominantly operating on manual workflows and inconsistent data.
+
+ The Way Forward: Tech Trends White Paper
+
+ Transformation in financial services is accelerating, driven by technology. The Aladdin community is reshaping investment management—from creating a shared language for private markets to applying GenAI for operational innovation.
+
+ Frequently asked questions
+
+ Which types of institutions benefit from Whole Portfolio’s multi-asset solutions? 
+
+ Whole Portfolio is designed for asset managers, banks, insurers, pension plans, corporations, and ecosystem partners. Its flexible architecture and scalable infrastructure support a wide range of investment strategies and operational needs.
+
+ What types of risk management solutions are built into the Whole Portfolio platform? 
+
+ Whole Portfolio includes proprietary risk models, stress testing tools, pacing analysis, and real-time analytics. It supports holistic risk assessment across public and private assets, enabling teams to quantify exposures and make informed decisions.
+
+ Can Aladdin work with my existing systems and data providers? 
+
+ Aladdin is an open, API-first platform that adapts to your code and strategy across the investment management process. The platform offers multi-asset solutions and an ecosystem of partners across data vendors, systems integrators, and liquidity providers—providing clients with openness across multiple dimensions to drive flexibility, extensibility, and interoperability.
+
+ How does Whole Portfolio by Aladdin support investment management across public and private markets? 
+
+ Whole Portfolio enables seamless management of both public and private assets by integrating data, workflows, and analytics into a single ecosystem. It models private market cashflows natively and combines them with public market data, allowing for unified oversight and comparability across asset classes.
+
+ How does Whole Portfolio help with asset allocation and portfolio management across multiple asset classes? 
+
+ Whole Portfolio provides a single integrated view of all holdings, enabling precise asset allocation and portfolio rebalancing. It supports real-time monitoring, historical snapshots, and enterprise-level oversight, helping teams act decisively across diverse strategies.
+
+ What does it mean to have a “single integrated view” in portfolio allocation and risk oversight? 
+
+ A single integrated view means that all asset classes—public and private—are visible in one system, allowing for consistent analysis, governance, and decision-making. This eliminates data silos and ensures that risk and performance are assessed holistically across the portfolio.
+
+ Read BlackRock's Privacy Notice here .
+
+ Get in touch to learn more about Aladdin®
+ Discover how Aladdin connects data, services, and technology across public and private markets.
+
+ Contact our team 
+
+ Institutions
+ Asset Managers 
+ Asset Servicers 
+ Banks & Brokers 
+ Corporates 
+ Insurers 
+ Pension Funds 
+ Private Markets 
+ Wealth Managers 
+
+ Platforms
+ Aladdin 
+ Aladdin Wealth 
+ eFront 
+ Preqin 
+ Accounting 
+ Aladdin Studio 
+ Aladdin Data Cloud 
+ Whole Portfolio 
+ Risk 
+ Sustainability 
+ Climate 
+ Aladdin Copilot 
+ Private Markets Data 
+
+ Discover
+ Aladdin Partnerships 
+ Implementations 
+ Aladdin Academy 
+ News and Insights 
+ The Way Forward White Paper 
+ The Never Done by Aladdin podcast 
+ Events 
+ Webinars 
+ Big Little Questions 
+ Uncharted Video Series 
+
+ About us
+ Contact Us 
+ FAQs 
+
+ Fraud protection tips 
+
+ Terms & Conditions 
+
+ Privacy Policy 
+
+ Business Continuity 
+
+ FINRA BrokerCheck 
+
+ Manage cookies

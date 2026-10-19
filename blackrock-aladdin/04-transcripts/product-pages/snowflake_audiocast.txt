@@ -1,0 +1,218 @@
+Data: The key ingredient | Aladdin by BlackRock 
+
+ Sign In 
+
+ Institutions
+
+ Institutions
+
+ Institutions 
+
+ INSTITUTIONS
+ Asset managers 
+ Asset servicers 
+ Banks & brokers 
+ Corporates 
+ Insurers 
+ Pension funds 
+ Private markets 
+ Wealth managers 
+
+ Sign In 
+
+ Platforms
+
+ Platforms
+
+ Platforms 
+
+ Platforms
+ Aladdin 
+ Aladdin Wealth 
+ eFront 
+ Preqin 
+
+ Solutions
+ Accounting 
+ Aladdin Studio 
+ Aladdin Data Cloud 
+ Whole Portfolio 
+ Risk Management 
+ Sustainability 
+ Climate Risk 
+ Aladdin Copilot 
+ Private Markets Data 
+
+ Sign In 
+
+ Discover
+
+ Discover
+
+ Discover 
+
+ RESOURCES
+ Aladdin Partnerships 
+ Aladdin Academy 
+ Implementations 
+
+ EXPERTISE
+ News and Insights 
+ The Never Done by Aladdin podcast 
+ Uncharted Video Series 
+ Big Little Questions 
+ Events 
+ Webinars 
+
+ Sign In 
+
+ About us
+
+ About us
+
+ About us 
+
+ about
+ Contact us 
+ FAQs 
+
+ Sign In 
+
+ Sign In 
+
+ CLEAR 
+
+ For funds, articles, literature or videos 
+
+ Search 
+
+ Strategies & Insights (0) Strategies & Insights (0) 
+ Literature (0) Literature (0) 
+
+ Search results
+
+ No search results found
+ Please double-check your spelling or try a different search term.
+
+ Data: the key ingredient
+
+ Never Done by Aladdin®
+
+ Christopher Napoli, Head of Wealth & Asset Management, Snowflake, and Richard Newman, General Manager, Aladdin Studio, discuss the key role of data and highlight advancements in technology for better data sharing, stressing the importance of data governance and integrity.
+
+ Listen to more episodes 
+
+ Read the full transcript
+ [RICHARD NEWMAN]
+ As we all know, data is critical. Data is a strategic asset for our clients, and clients have been requesting more access, more openness to Aladdin content.
+ We all need technology. And the data opportunities keep growing. You can't do it all yourself. And partnering is sometimes a different muscle for organizations, and where the data cloud and Aladdin data cloud specifically comes in, which is part of Studio, is we recognize that partnering, whether it's with Snowflake, but also with other firms, whether it's firms that do asset servicing, firms that provide other types of data to complement the core IBOR and ABOR information. We're seeing that, and the openness we have to that, I think, is unique.
+ [CHRISTOPHER NAPOLI]
+ Technology was not nearly as advanced in order to share, right? To the open source kind of world that we are heading into now. And that paradigm shift has been noticeable. And similarly, as you have seen, that as well, what that has been able to provide, different operating models to the industry, right? Because now we can collaborate on data. We're both all looking at it.
+ [RICHARD NEWMAN]
+ How do I start using symbology, linking and other data? So eFront’s an obvious example of that, that data coming into the Aladdin Data Cloud. With the announcement of the Prequin acquisition, bringing in that data. The vision’s always been other firms join that ecosystem. So, you know, bringing in, like, firms like London Stock Exchange data into the ecosystem. So the vision is to be, again back to partnering like we talked about before, being an ecosystem driven by what’s our core value? Where’s our starting point? What’s our key?
+ It does start with IBOR. This other IP we have here at Aladdin that we create, data around credit analytics, around mortgage-backed security data, around insurance analytics, things linking that into the Aladdin Data Cloud. This is all happening now by the way. So that's sort of the start of the vision. So that's the data. Then you bring in the API part of it, which is we have these engines that historically were run through interfaces.
+ So we're providing those APIs now. We're releasing soon the ability to actually access those analytic APIs, portfolio analysis, security analysis, things like that. That's all part of the Studio umbrella. But what I also stress always is speed to market doesn't necessarily imply better data. You still have to have the data governance. You still have to make sure that what is provided is correct.
+ So, you know, the joke here today is how many times you’re going to hear the word AI.
+ [CHRISTOPHER NAPOLI]
+ Yeah.
+ [RICHARD NEWMAN]
+ And you're going to hear it a lot. If the data is wrong and you don't have the integrity in the data and the trust in the data, the AI is not going to give you the answers. In fact, it might give you dangerous answers.
+ [CHRISTOPHER NAPOLI]
+ Yeah. Yeah.
+ [RICHARD NEWMAN]
+ So, I think that's a really important part of it. No matter how much things have changed, I still believe the data integrity is sometimes under-appreciated and underestimated. It sounds boring, but it's key.
+ [CHRISTOPHER NAPOLI]
+ Yeah, Rich, it's not boring actually. It’s part of the Snowflake strategy to remind people that in order to have an AI strategy, you first need a data strategy, right? And to that point, the data strategy these days is pretty much dependent on cloud provider strategy, right? It's how to get to the point where you could have this massive data at scale informing models.
+ But more importantly, the thing about having bad data that goes into a computer system is that when you ask the question, it stops. But if you give bad data to a human, they go through their whole life thinking the incorrect answer, right? So, or correct, right, depending on who you ask. But the whole point is that without the proper governance, as you mentioned, without the nomenclature, without someone providing that, there’s the opportunity at the bare minimum, since we all have to do it by industry, by subject matter, over this, the course of everything moving forward, that there’s opportunities for organizations that understand that subject matter, that semantic layer to help empower the other organizations in the ecosystem to use it.
+ And I see that particularly well with what you all are doing with the data cloud. Actually coming out of the financial crisis, one of the more powerful things that came from the regulations there was the requirement for data lineage, for data dictionaries, for systems of record. Those are actually the same building blocks that empower artificial intelligence.
+ So, it's encouraging to see that something that came out as a defensive mechanism now be the proactive ingredient that really gets people to this empowerment. So, there's much, much more advanced tools now.
+ [RICHARD NEWMAN]
+ I'm going to talk about data governance from the practical user perspective, and why that hasn't changed. So, when people talk about the openness of solutions and openness of data, the challenges, what we talked about a little before about with AI even, the data has to be right. So, this is the challenge we're facing now. And I'm very, you know, I look at maybe you'll address this, Chris. Data sharing is industry changing.
+ Now the question is, okay how do we ensure the integrity of that data? My fear and concern is production. Because when you do a data share, you're opening up the world to a lot of users who really aren't necessarily, they’re assuming the data is right.
+ [CHRISTOPHER NAPOLI]
+ Yeah, correct.
+ [RICHARD NEWMAN]
+ So that's probably the biggest challenge I see with data integrity. So, I partner and I guess my role here at Aladdin is to be very much between Commercials and Engineering, because I get the commercial power of data sharing, the ability to give clients access to all this data. It is just opening up opportunities for new analyses. The risk is the data not being correct. So, I'm a big advocate for what you talked about. Some of the tools that are coming out, following those same approaches that have always been there. We cannot lose sight that you cannot lose that data integrity focus, a data governance focus.
+ [CHRISTOPHER NAPOLI]
+ The thing that gets me excited, more than the day-to-day, is really thinking about how to modernize industries. Part of what we look to do at Snowflake, the engineering team, is just build a platform, right? And how people look to use that platform and how it may disrupt legacy industries. That's actually the reason we build the platform.
+ [RICHARD NEWMAN]
+ You have to be neutral, basically.
+ [CHRISTOPHER NAPOLI]
+ So, if people do see an opportunity with more informed subject matter like that's, that's what gets us up. It's like, oh, okay, this gets us out of some processes that I always try to solve. If it's secure, governed, attested, recorded, auditable, I mean, we could move some processes up so we could start doing the more fun things.
+ [RICHARD NEWMAN]
+ I think what happens is there's always this envy that firms feel other firms are revolutionizing and changing everything. The reality, it’s evolutionary. Yes, things move fast and all that, but you can't change legacy systems overnight. Legacy systems are really tough to change, but we can do parts of it and recognize that firms are moving at different paces.
+ AI is the best example. AI is in its early, early stages. It's not going to get rid of everyone's job. It's not going to change the world today. Tomorrow it's going to be an enabling technology that has a lot of power, but that doesn't mean it's, okay, we get rid of our old legacy systems. So, I think the important thing is to talk to others in the community and don't feel like you're an island.
+ I think a lot of firms have this anxiety that they're way behind. Everyone else has moved into this new world, and I see it with Snowflake. I think I'm saying this in a positive way. Snowflake doesn't come in saying, “We’re going to change your whole legacy system, we're going to leverage what you have.” I think that's a really smart strategy and a very realistic strategy. We're just at the beginning, though.
+ [CHRISTOPHER NAPOLI]
+ I'm fortunate enough to be able to see how the industry operates and all of it from growth to maturity. It's evolving so fast that you can't imagine, like, you can't guess what's going to happen. So, the fortunate part, though, is to let people know, hey, there is a roadmap and there are operating models and systems powered by Snowflake, such as yourselves, that will help it. You get there faster.
+ [RICHARD NEWMAN]
+ You got to be flexible and pivot. I mean, yeah, that's my message to everyone. If you said something in 2019, things change. I think humility is the right word. I think when companies slowly, I don't want to say die, but slow down is when they think they have the answer themselves. They don't need to talk to clients, they don't need to see what's coming out.
+ And it's hard to do that because part of the conviction of a company is we are right and we're competitive. But it's being open minded enough to say, I can learn from others. What you’re fighting for now is the ecosystem.
+ [CHRISTOPHER NAPOLI]
+ Correct.
+ [RICHARD NEWMAN]
+ That's the big change. So, I think humility is what is key with an incredible drive and intellectual interest.
+ [CHRISTOPHER NAPOLI]
+ Intellectual curiosity, it’s probably the number one skill I think we all should have, what I look for, because this world is changing, and if you are not curious, it will leave you behind. Things are happening to that rapid pace, and you have to be willing to be humble and continually learning, and perhaps think of a new process when some new solution comes out, or we will get left behind quick.
+ [RICHARD NEWMAN]
+ I've been at this a long time. I've been through doing my own startups to bigger companies. The uniqueness here is we have the machine, but also the creativity and the focus to get it done. So, it's been amazing.
+
+ Read BlackRock's Privacy Notice here .
+
+ Get in touch to learn more about Aladdin®
+ Discover how Aladdin connects data, services, and technology across public and private markets.
+
+ Contact our team 
+
+ Institutions
+ Asset Managers 
+ Asset Servicers 
+ Banks & Brokers 
+ Corporates 
+ Insurers 
+ Pension Funds 
+ Private Markets 
+ Wealth Managers 
+
+ Platforms
+ Aladdin 
+ Aladdin Wealth 
+ eFront 
+ Preqin 
+ Accounting 
+ Aladdin Studio 
+ Aladdin Data Cloud 
+ Whole Portfolio 
+ Risk 
+ Sustainability 
+ Climate 
+ Aladdin Copilot 
+ Private Markets Data 
+
+ Discover
+ Aladdin Partnerships 
+ Implementations 
+ Aladdin Academy 
+ News and Insights 
+ The Way Forward White Paper 
+ The Never Done by Aladdin podcast 
+ Events 
+ Webinars 
+ Big Little Questions 
+ Uncharted Video Series 
+
+ About us
+ Contact Us 
+ FAQs 
+
+ Fraud protection tips 
+
+ Terms & Conditions 
+
+ Privacy Policy 
+
+ Business Continuity 
+
+ FINRA BrokerCheck 
+
+ Manage cookies

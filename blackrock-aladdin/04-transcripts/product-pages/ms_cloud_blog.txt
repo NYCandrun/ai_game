@@ -1,0 +1,225 @@
+How BlackRock is finding new alpha as AI Transformation becomes a critical business driver | The Microsoft Cloud Blog 
+
+ Skip to content 
+
+ Skip to main content 
+
+ Microsoft AI 
+
+ Frontier Transformation 
+ Customer impact 
+ Frontier Accelerate 
+ AI for business 
+ Use cases 
+
+ Consumer goods 
+ Digital sovereignty 
+ Education 
+
+ Overview 
+ Power and utilities 
+ Oil and gas 
+ Mining 
+
+ Overview 
+ Banking 
+ Capital markets 
+ Insurance 
+
+ Overview 
+ Defense and intelligence 
+ Transportation and urban infrastructure 
+ Social services and public health 
+ Public safety and justice 
+ Public finance 
+
+ Overview 
+ Defense and intelligence 
+ Federal civilian 
+ State and local governments 
+ Cloud for US government 
+ AI for US government 
+
+ Overview 
+ Providers 
+ Payors 
+ Life sciences 
+ Health solutions 
+
+ Overview 
+ Industrial transformation 
+ Media and entertainment 
+
+ Overview 
+ Automotive 
+ Travel and transportation 
+ Retail 
+ Telecommunications 
+
+ Explore Copilot 
+ Agents 
+ Microsoft IQ 
+ Download the app 
+
+ Agent 365 
+ Security for AI 
+
+ Copilot Studio 
+ Microsoft Foundry 
+ Microsoft Agent Factory 
+ Azure AI apps and agents 
+
+ Microsoft Marketplace 
+
+ Copilot+ PCs 
+
+ Microsoft responsible AI 
+ Principles and approach 
+ Tools and practices 
+
+ Advancing sustainability 
+
+ Securing AI 
+ Data protection and privacy 
+
+ AI 101 
+ AI learning hub 
+ Industry blog 
+ Microsoft Cloud blog 
+
+ Support for business 
+ Industry documentation 
+
+ Discover what’s coming to Microsoft Ignite, Nov 17-20, 2026. Register now. 
+
+ Search 
+
+ Customer stories 
+
+ December 11, 2024 
+
+ 4 min read 
+
+ How BlackRock is finding new alpha as AI Transformation becomes a critical business driver 
+
+ By Judson Althoff , view all posts by this author , Executive Vice President and Chief Commercial Officer 
+
+ Share
+
+ Link copied to clipboard! 
+
+ Tags
+ AI transformation 
+ Microsoft Ignite 
+
+ Content types
+ Customer stories 
+ Events 
+
+ Topics
+ Frontier Transformation 
+
+ At our Microsoft Ignite conference in Chicago, along with over 80 new product announcements, we highlighted the real business impact and results our customers across industries are experiencing through AI Transformation. I had the honor to talk onstage with Lance Braunstein, head of Aladdin Engineering at BlackRock, who joined me to explain BlackRock’s cloud and AI journey.
+
+ Get the AI use cases for business leaders e-book 
+
+ BlackRock’s move to the cloud
+
+ BlackRock’s tech platform, Aladdin, is a pivotal tool for investors. For years BlackRock had been pouring resources into maintaining its data center operations to support it. 
+
+ Five years ago, we began working on a strategy to move them into the cloud on Microsoft Azure . Today, all BlackRock’s technology platform clients and services are hosted in the Azure cloud, and as Lance shared with me onstage, it has been a profound unlock for the firm’s business processes that has allowed them to work more efficiently and get to market quicker. New rollouts now take weeks instead of quarters to complete . Their operations are secured with data encrypted at rest and in transit. 
+
+ With so much of the firm’s success driven by markets, the ability to manage through stress tests like index rebalances is also critical. With Azure, BlackRock is seeing significant improvements in performance during its most demanding moments. 
+
+ The pillars of AI Transformation
+
+ BlackRock has been developing AI solutions for years with predictive analysis, pattern recognition, and machine learning—even starting an AI Lab in 2018—but with the emergence of generative AI there were hundreds of considerations for how they could transform their business. Like most organizations and companies, the big question was where to begin.
+
+ Both internally at Microsoft and with our customers and partners, we have been using four pillars as the framework for AI Transformation to help prioritize projects that will deliver business outcomes.
+
+ Enriching employee experiences : Will you get more productivity out of your workforce? Will you attract better talent because you have the right assets that help people reach their potential faster? Will your employees feel more satisfied because they are eliminating tedious tasks from their day-to-day work?
+
+ Reinventing customer engagement : Will you generate more top-line revenue? Will your customer experiences be better? Will people come back for more as a result of the AI capability you have released?
+
+ Reshaping business processes : Will you improve your operations with AI-first thinking? How can AI technology make a process go faster? Or even better, how can a process be re-designed?
+
+ Bending the curve on innovation : Will you create products faster, get them to market quicker, respond and refine based on customer feedback, and design your offerings in a more differentiated way because of the AI capability that you are implementing?
+
+ My challenge has been that if the scenario does not fall neatly into one of these pillars with strong ROI justification—and projects can certainly span multiple pillars—then you should probably reconsider. This is the frame that we used together with BlackRock.
+
+ AI Transformation at BlackRock
+
+ According to Lance, BlackRock’s employee experience is being transformed in two key areas: one in productivity and the other in supporting investment signal analysis—what is known in the investing world as “alpha.” 
+
+ Identifying the alpha investment signal is all about driving more data into the investment life cycle with richer models that can find the signal in the data. For relationship managers, this translates to finding the right product for a given client’s investment strategy at the right market moment. Driving that signal is supported by Azure Machine Learning and the firm’s foundation models. 
+
+ On productivity, BlackRock believes that every job family can be supported through AI, helping employees with first drafts of an email, a pitch or code. In that spirit, the company has implemented Microsoft 365 Copilot and GitHub Copilot. BlackRock is now reshaping business processes with bespoke workflows for different functions within the business.
+
+ BlackRock is bending the curve on innovation not just using AI internally with Copilot Studio to build agents and copilots while measuring their Azure consumption, but also using tools like GitHub Copilot to help infuse AI into product capabilities . My favorite example of this is the work they are doing to reinvent customer engagement .
+
+ The company has traditionally delivered its investment platforms through a set of user and application programming interfaces. But with the launches of the Aladdin and eFront copilots, they are now delivering a set of natural language interfaces—meaning customers can now have a conversation within an Aladdin environment with responsible AI safeguards built in.
+
+ Imagine asking your investment software questions like: “What is my exposure to companies building AI processors?” Before, this may have required a lot of searching and ultimately a phone call to the advisor. The ability to ask the Aladdin platform specific operational questions makes inquiries to support investment decisions much more efficient and satisfying. BlackRock technology clients are already using this capability today. 
+
+ Co-innovation with our customers and partners
+
+ I am grateful for Microsoft’s partnership with BlackRock, and Lance and I believe that both Azure and Aladdin are stronger for the collaboration. 
+
+ BlackRock has pushed us to make Azure better for all our customers around the world and that helped us successfully take the Aladdin offerings to market. Microsoft is fueling BlackRock’s internal transformation with solutions like Dynamics 365, customer relationship management business applications, and copilots to improve the work experience for their employees and customers.
+
+ Microsoft is co-innovating with thousands of the world’s most forward-thinking organizations , helping them realize the value and ROI AI is delivering today.
+
+ As companies embrace their own AI Transformation, we are here to help. Recently we’ve launched new resources to help business leaders explore some of the most common and impactful AI use cases , and to help organizations assess their AI readiness .
+
+ Assess your AI readiness 
+
+ Judson Althoff 
+
+ Executive Vice President and Chief Commercial Officer 
+
+ Judson Althoff is executive vice president and chief commercial officer at Microsoft. He is responsible for the sales strategy, execution and revenue growth of the company’s commercial business, which spans enterprise, public sector, small and medium businesses, services, developer and partner communities in more than 120 regional and national subsidiaries globally.
+
+ Althoff is passionate about co-innovating with customers to democratize and scale digital experiences across their organization — from the boardroom to the factory floor — and in the marketplace. Under his leadership, Microsoft has posted uninterrupted commercial cloud revenue growth, powered by close partnerships with customers that are driving business outcomes through digital transformation.
+
+ See Judson Althoff posts 
+
+ Related posts
+
+ Customer stories 
+
+ August 26 
+
+ 4 min read 
+
+ Accelerating Frontier Transformation: Reinvent customer engagement 
+
+ Thought leadership 
+
+ August 25 
+
+ 4 min read 
+
+ Accelerating AI adoption with intelligent discovery in Microsoft Marketplace 
+
+ Thought leadership 
+
+ August 24 
+
+ 7 min read 
+
+ 5 signals of trusted AI: How organizations scale AI with security, governance, and observability 
+
+ Explore
+ Microsoft Cloud solutions 
+
+ Discover how the most trusted and comprehensive cloud can help you meet the challenges of a rapidly changing world.
+
+ Learn more about Microsoft Cloud solutions 
+
+ Connect with us on social
+
+ X 
+
+ YouTube 
+
+ LinkedIn

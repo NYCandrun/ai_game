@@ -1,0 +1,59 @@
+How Fivetran helps power BlackRock’s Aladdin® Data Cloud | Blog | Fivetran 
+
+ Data insights
+
+ How Fivetran helps power BlackRock’s Aladdin® Data Cloud
+
+ August 28, 2024
+
+ Taylor Brown
+ COO
+ ,
+ Fivetran
+
+ Anchor Link 
+
+ Topics
+
+ Snowflake 
+ Finance Analytics 
+ Data Movement 
+
+ Share
+
+ The asset management firm’s tech business discusses how it enables data-driven investment decisions during Snowflake Summit 2024.
+
+ This year’s Snowflake Data Cloud Summit brought together the brightest minds from major enterprises, including leaders from BlackRock’s Aladdin® business — a leading investment management technology provider. I was thrilled to take the stage with Dave Woodhead, BlackRock’s Head of Aladdin Studio Engineering, to share how Fivetran is enabling innovative new products and AI-driven use cases.
+ For over 18 years, Woodhead’s team has been pivotal in maintaining a competitive edge for clients through technological innovation. They’re elevating the value of data, making it one of the biggest differentiators in the modern financial environment . 
+ The primary vehicle for driving that value is its Aladdin® platform. 
+ Aladdin has served as the backbone of BlackRock’s technology and investment operations since the company’s early days, while subsequently serving institutional investors of all types across public and private markets — helping them unify the investment management process. At the summit, Woodhead discussed one of the platform’s recent innovations: Aladdin® Data Cloud (ADC), a next-generation data-as-a-service solution enabled by Fivetran and Snowflake.
+ “From data solutions to new tools powered by AI , the Aladdin® platform team is focused on building new innovations on top of the stable foundation of our data strategy,” Woodhead shared. “We expanded Aladdin® Data Cloud’s data network capabilities, enabling clients to bring their own data into ADC, and to distribute Aladdin data to their own data ecosystems.”
+ Fivetran and Snowflake help bring near real-time data availability to BlackRock’s Aladdin® Data Cloud
+ ADC offers a cloud-based data and analytics platform , allowing users to store, manage, and analyze large volumes of investment and market data. Users can access their Investment Books of Record (IBOR), Accounting Books of Record (ABOR) holdings and other market data — with the ability to ask questions and get quick insights. 
+ ADC is supported by Fivetran for data movement and Snowflake as its cloud data platform. “Fivetran allows us to take data from a single source and move that with low latency into a Snowflake landing zone, where we transform it using our enterprise data platform,” says Woodhead. Fivetran proved so powerful that his team was able to build low-latency pipelines into ADC in just a few months. 
+ Once the data is in Snowflake, analytics services are provided through APIs for reporting and automation opportunities. From there, users have access to dynamic tables for building Snowpark apps and asking cross-dimensional time-series questions. Answers are provided in near real-time which, according to Woodhead, “wasn’t possible without Fivetran.”
+ Fivetran helps address three key issues: disaster recovery, data recoverability, and consolidation of previously siloed data sets into the unified Snowflake environment. 
+ Along with other solutions, BlackRock is leveraging Fivetran and Snowflake as part of a larger strategic stack, enhancing everything from trading strategies to even more comprehensive risk management. Aladdin teams are focused on making data available to any client who needs it.
+ BlackRock's Aladdin® is a financial technology platform designed for institutional use only and is not intended for end investor use. To learn more about ADC, visit: https://www.blackrock.com/aladdin/products/aladdin-data-cloud 
+
+ Topics
+
+ Snowflake 
+ Finance Analytics 
+ Data Movement 
+
+ Share
+
+ Related blog posts
+
+ Heading
+
+ Start for free
+ Join the thousands of companies using Fivetran to centralize and transform their data.
+
+ Email 
+ Thank you! Your submission has been received!
+
+ Oops! Something went wrong while submitting the form.
+
+ Get demo
