@@ -1,0 +1,274 @@
+
+===== PASS 1280 =====
+[1280 overview] scrollWidth=1280 innerWidth=1280 bodyScrollWidth=1280 no overflowers
+tabs: ["Overview","Lifecycle","Products","Domain explorer","Architecture","One request","Conventions","AI","Glossary","Quiz","Sources"]
+tab sizes: Overview:82x31, Lifecycle:79x31, Products:80x31, Domain explorer:126x31, Architecture:100x31, One request:100x31, Conventions:103x31, AI:37x31, Glossary:80x31, Quiz:53x31, Sources:76x31
+nav metrics: {"scrollWidth":1088,"clientWidth":1088,"headerH":110.09375}
+tab 0 Overview -> {"active":"overview","hash":"#overview","prog":"9.09091%","selected":"Overview","scrollY":0}
+tab 1 Lifecycle -> {"active":"lifecycle","hash":"#lifecycle","prog":"18.1818%","selected":"Lifecycle","scrollY":0}
+tab 2 Products -> {"active":"products","hash":"#products","prog":"27.2727%","selected":"Products","scrollY":0}
+tab 3 Domain explorer -> {"active":"domains","hash":"#domains","prog":"36.3636%","selected":"Domain explorer","scrollY":0}
+tab 4 Architecture -> {"active":"architecture","hash":"#architecture","prog":"45.4545%","selected":"Architecture","scrollY":0}
+tab 5 One request -> {"active":"request","hash":"#request","prog":"54.5455%","selected":"One request","scrollY":0}
+tab 6 Conventions -> {"active":"conventions","hash":"#conventions","prog":"63.6364%","selected":"Conventions","scrollY":0}
+tab 7 AI -> {"active":"ai","hash":"#ai","prog":"72.7273%","selected":"AI","scrollY":0}
+tab 8 Glossary -> {"active":"glossary","hash":"#glossary","prog":"81.8182%","selected":"Glossary","scrollY":0}
+tab 9 Quiz -> {"active":"quiz","hash":"#quiz","prog":"90.9091%","selected":"Quiz","scrollY":0}
+tab 10 Sources -> {"active":"sources","hash":"#sources","prog":"100%","selected":"Sources","scrollY":0}
+[1280] #lcsvg {"width":1058,"scale":1.058,"count":21,"min":{"t":"middle office","px":10.1},"max":{"t":"Oversight","px":12.7},"sample":[{"t":"Research","px":12.7},{"t":"front office","px":10.1},{"t":"Setup","px":12.7},{"t":"front office","px":10.1}]}
+lifecycle nodes: 9
+lc node 2 -> {"h3":"3. Order","on":["2"]}
+lc node 3 -> {"h3":"4. Pre-trade compliance","on":["3"]}
+lc node 5 -> {"h3":"6. Settlement and cash","on":["5"]}
+lc node 8 -> {"h3":"9. Oversight and clients","on":["8"]}
+lc colours: {"onRect":"rgb(46, 106, 195)","onText":"rgb(255, 255, 255)","onTier":"rgb(255, 255, 255)","offRect":"rgb(233, 237, 242)","offText":"rgb(23, 33, 43)","offTier":"rgb(91, 107, 123)","cursor":"pointer"}
+after lcNext x2: 2. Portfolio setup
+open-in-explorer -> {"active":"domains","head":"portfolio Front office","pressedChip":"Front office","pressedDom":"portfolio3 APIs · 23 ops","apis":3}
+explorer all -> {"doms":11,"apis":54,"head":"All domainsClick a domain on the left for its description, or search across ever"}
+explorer middle -> {"doms":["analytics","clients","compliance"],"apis":14}
+explorer dom0 -> {"pressed":"analytics9 APIs · 53 ops","apis":9,"head":"analytics Middle office"}
+dom colours: {"on":{"bg":"rgb(233, 237, 242)","shadow":"rgb(23, 33, 43) 0px 0px 0px 1px inset","color":"rgb(23, 33, 43)"},"off":{"bg":"rgb(255, 255, 255)","shadow":"none","color":"rgb(23, 33, 43)"}}
+search cash (middle, dom0) -> {"apis":0,"head":"analytics Middle officeTwo things live here: sustainability data feeds (Climate and multi-vendor ESG) and the Risk Gover","empty":true}
+search cash (all) -> {"apis":4,"headPill":"4 of 54 APIs","searchVal":"cash"}
+search cash + alpha -> {"apis":0,"headPill":"0 of 54 APIs"}
+search zzzz -> {"apis":0,"empty":"No APIs match. Clear a filter.","doms":11}
+ArrowRight while in search -> domains
+[1280] #archsvg {"width":1058,"scale":1.176,"count":24,"min":{"t":"trading","px":11.2},"max":{"t":"Hosting","px":14.7},"sample":[{"t":"Consumers","px":14.7},{"t":"~100 Aladdin apps · ","px":12.3},{"t":"Gateway and identity","px":14.7},{"t":"application key head","px":12.3}]}
+layer boxes: consumers:1011x73, gateway:1011x73, graph:1011x113, data:1011x73, hosting:1011x33
+layer consumers -> {"on":"consumers","h3":"Who calls the APIs"}
+layer gateway -> {"on":"gateway","h3":"How a call is admitted"}
+layer data -> {"on":"data","h3":"What the services read and write"}
+layer hosting -> {"on":"hosting","h3":"Where it runs"}
+layer colours: {"onFill":"rgb(227, 236, 250)","onStroke":"rgb(31, 95, 191)","onSW":"2px","offFill":"rgb(233, 237, 242)","offStroke":"rgb(213, 220, 229)","cursor":"pointer"}
+arch sub text: ["consumers: rect right=880 subtext right=440 ","gateway: rect right=880 subtext right=500 ","graph: rect right=880 subtext right=618 ","data: rect right=880 subtext right=626 ","hosting: rect right=880 subtext right=670 "]
+[1280] #reqsvg {"width":1058,"scale":1.102,"count":13,"min":{"t":"poll until done","px":11},"max":{"t":"Poll and result","px":12.7},"sample":[{"t":"Python script","px":12.7},{"t":"AladdinSDK","px":11},{"t":"Gateway","px":12.7},{"t":"client.blackrock.com","px":11}]}
+step button sizes: 114x28, 88x28, 91x28, 106x28, 95x28, 119x28
+step 3 -> {"cur":"4. Compliance","hopsOn":4,"cap":"With runCompliance set, assigned rules run against the order","h3":"4. Pre-trade compliance"}
+hn -> 5. Long-running operation
+hn at end -> {"h3":"1. The call","hn":true,"hnText":"Next hop →","hnDisabled":false}
+hp at start -> {"h3":"6. Back to the script","hpDisabled":false}
+conventions open before/after click #4: [true,true,false,false,false,false,false,false,false,false,false,false] [true,true,false,false,true,false,false,false,false,false,false,false]
+summary marker: {"after":"\"+\"","listStyle":"outside none none","cursor":"pointer"}
+glossary lot -> {"terms":1,"names":["ABOR / OBOR"]}
+glossary qqq -> No terms match.
+flash 1 click -> {"expanded":"true","hidden":false,"hint":"Hide answer","border":"rgb(31, 95, 191)","cursor":"pointer"}
+flash closed style: {"border":"rgb(213, 220, 229)","bg":"rgb(255, 255, 255)","hintColor":"rgb(31, 95, 191)"}
+contrast samples: [{"sel":".eyebrow","color":"rgb(91, 107, 123)","bg":"rgb(243, 245, 248)","size":"11.52px","weight":"600"},{"sel":".card p","color":"rgb(91, 107, 123)","bg":"rgb(255, 255, 255)","size":"15.2px","weight":"400"},{"sel":".stat span","color":"rgb(91, 107, 123)","bg":"rgb(255, 255, 255)","size":"12.8px","weight":"400"},{"sel":"figcaption","color":"rgb(91, 107, 123)","bg":"rgb(255, 255, 255)","size":"13.6px","weight":"400"},{"sel":"#tabs button:not([aria-selected=\"true\"])","color":"rgb(91, 107, 123)","bg":"rgb(255, 255, 255)","size":"13.44px","weight":"600"},{"sel":"#tabs button[aria-selected=\"true\"]","color":"rgb(243, 245, 248)","bg":"rgb(23, 33, 43)","size":"13.44px","weight":"600"},{"sel":".pill","color":"rgb(91, 107, 123)","bg":"rgb(255, 255, 255)","size":"11.84px","weight":"500"},{"sel":".pill.s-alpha","color":"rgb(184, 115, 26)","bg":"rgb(255, 255, 255)","size":"11.84px","weight":"500"},{"sel":".pill.s-beta","color":"rgb(31, 95, 191)","bg":"rgb(255, 255, 255)","size":"11.84px","weight":"500"},{"sel":".api .path","color":"rgb(91, 107, 123)","bg":"rgb(255, 255, 255)","size":"11.84px","weight":"400"},{"sel":".flash .hint","color":"rgb(31, 95, 191)","bg":"rgb(255, 255, 255)","size":"11.52px","weight":"600"},{"sel":".term b","color":"rgb(31, 95, 191)","bg":"rgb(255, 255, 255)","size":"14.72px","weight":"500"},{"sel":".chip[aria-pressed=\"false\"]","color":"rgb(91, 107, 123)","bg":"rgb(255, 255, 255)","size":"12.8px","weight":"600"},{"sel":".steps button:not([aria-current=\"step\"])","color":"rgb(91, 107, 123)","bg":"rgb(255, 255, 255)","size":"12.8px","weight":"600"},{"sel":".brand .sub","color":"rgb(91, 107, 123)","bg":"rgb(255, 255, 255)","size":"13.6px","weight":"400"},{"sel":".dom small","color":"rgb(91, 107, 123)","bg":"rgb(255, 255, 255)","size":"11.84px","weight":"500"}]
+ArrowRight from overview -> lifecycle
+ArrowRight,ArrowLeft -> lifecycle
+Tab order (lifecycle): ["button[Products] fv=true outline=solid/2px","button[Domain explorer] fv=true outline=solid/2px","button[Architecture] fv=true outline=solid/2px","button[One request] fv=true outline=solid/2px","button[Conventions] fv=true outline=solid/2px","button[AI] fv=true outline=solid/2px","button[Glossary] fv=true outline=solid/2px","button[Quiz] fv=true outline=solid/2px","button[Sources] fv=true outline=solid/2px","g.lc-node[Research] fv=true outline=solid/2px","g.lc-node.on[Portfolio setup] fv=true outline=solid/2px","g.lc-node[Order] fv=true outline=solid/2px","g.lc-node[Pre-trade complian] fv=true outline=solid/2px","g.lc-node[Execution and allo] fv=true outline=solid/2px","g.lc-node[Settlement and cas] fv=true outline=solid/2px","g.lc-node[Asset lifecycle] fv=true outline=solid/2px","g.lc-node[Accounting and NAV] fv=true outline=solid/2px","g.lc-node[Oversight and clie] fv=true outline=solid/2px","button#lcPrev.btn[← Previous stage] fv=true outline=solid/2px","button#lcNext.btn[Next stage →] fv=true outline=solid/2px","button.btn[Open portfolio in ] fv=true outline=solid/2px","button.btn[← Overview] fv=true outline=solid/2px"]
+kbd Enter on lc node 4 -> {"h3":"5. Execution and allocation","focusOutline":"solid","activeFv":true,"active":"lc-node on"}
+roles: {"tablist":11,"tabsWithRole":11,"tabpanels":11,"tabpanelsLabelled":0,"tabsWithControls":0,"lcNodeRoles":9,"flashRoles":12,"chipsAriaPressed":5,"stepsCurrent":6,"domsAriaPressed":11,"svgsRoleImg":5,"liveRegions":0,"stabLabel":true,"lcDetailLive":null,"lcPrevLabel":"← Previous stage","h1count":1,"h2count":10,"pillCursor":"auto","svgTabIndexInside":14}
+[1280 domains] scrollWidth=1280 innerWidth=1280 bodyScrollWidth=1280 no overflowers
+[1280 architecture] scrollWidth=1280 innerWidth=1280 bodyScrollWidth=1280 no overflowers
+[1280 request] scrollWidth=1280 innerWidth=1280 bodyScrollWidth=1280 no overflowers
+[1280 conventions] scrollWidth=1280 innerWidth=1280 bodyScrollWidth=1280 no overflowers
+[1280 lifecycle] scrollWidth=1280 innerWidth=1280 bodyScrollWidth=1280 no overflowers
+fig-scroll overflow: ["lcsvg: scroll=1086 client=1086","archsvg: scroll=0 client=0","reqsvg: scroll=0 client=0","ai: scroll=0 client=0"]
+console errors: none
+
+===== PASS 1280-dark =====
+[1280-dark overview] scrollWidth=1280 innerWidth=1280 bodyScrollWidth=1280 no overflowers
+tabs: ["Overview","Lifecycle","Products","Domain explorer","Architecture","One request","Conventions","AI","Glossary","Quiz","Sources"]
+tab sizes: Overview:82x31, Lifecycle:79x31, Products:80x31, Domain explorer:126x31, Architecture:100x31, One request:100x31, Conventions:103x31, AI:37x31, Glossary:80x31, Quiz:53x31, Sources:76x31
+nav metrics: {"scrollWidth":1088,"clientWidth":1088,"headerH":110.09375}
+tab 0 Overview -> {"active":"overview","hash":"#overview","prog":"9.09091%","selected":"Overview","scrollY":0}
+tab 1 Lifecycle -> {"active":"lifecycle","hash":"#lifecycle","prog":"18.1818%","selected":"Lifecycle","scrollY":0}
+tab 2 Products -> {"active":"products","hash":"#products","prog":"27.2727%","selected":"Products","scrollY":0}
+tab 3 Domain explorer -> {"active":"domains","hash":"#domains","prog":"36.3636%","selected":"Domain explorer","scrollY":0}
+tab 4 Architecture -> {"active":"architecture","hash":"#architecture","prog":"45.4545%","selected":"Architecture","scrollY":0}
+tab 5 One request -> {"active":"request","hash":"#request","prog":"54.5455%","selected":"One request","scrollY":0}
+tab 6 Conventions -> {"active":"conventions","hash":"#conventions","prog":"63.6364%","selected":"Conventions","scrollY":0}
+tab 7 AI -> {"active":"ai","hash":"#ai","prog":"72.7273%","selected":"AI","scrollY":0}
+tab 8 Glossary -> {"active":"glossary","hash":"#glossary","prog":"81.8182%","selected":"Glossary","scrollY":0}
+tab 9 Quiz -> {"active":"quiz","hash":"#quiz","prog":"90.9091%","selected":"Quiz","scrollY":0}
+tab 10 Sources -> {"active":"sources","hash":"#sources","prog":"100%","selected":"Sources","scrollY":0}
+[1280-dark] #lcsvg {"width":1058,"scale":1.058,"count":21,"min":{"t":"middle office","px":10.1},"max":{"t":"Oversight","px":12.7},"sample":[{"t":"Research","px":12.7},{"t":"front office","px":10.1},{"t":"Setup","px":12.7},{"t":"front office","px":10.1}]}
+lifecycle nodes: 9
+lc node 2 -> {"h3":"3. Order","on":["2"]}
+lc node 3 -> {"h3":"4. Pre-trade compliance","on":["3"]}
+lc node 5 -> {"h3":"6. Settlement and cash","on":["5"]}
+lc node 8 -> {"h3":"9. Oversight and clients","on":["8"]}
+lc colours: {"onRect":"rgb(105, 154, 228)","onText":"rgb(15, 21, 28)","onTier":"rgb(15, 21, 28)","offRect":"rgb(31, 41, 51)","offText":"rgb(230, 236, 242)","offTier":"rgb(154, 169, 184)","cursor":"pointer"}
+after lcNext x2: 2. Portfolio setup
+open-in-explorer -> {"active":"domains","head":"portfolio Front office","pressedChip":"Front office","pressedDom":"portfolio3 APIs · 23 ops","apis":3}
+explorer all -> {"doms":11,"apis":54,"head":"All domainsClick a domain on the left for its description, or search across ever"}
+explorer middle -> {"doms":["analytics","clients","compliance"],"apis":14}
+explorer dom0 -> {"pressed":"analytics9 APIs · 53 ops","apis":9,"head":"analytics Middle office"}
+dom colours: {"on":{"bg":"rgb(31, 41, 51)","shadow":"rgb(230, 236, 242) 0px 0px 0px 1px inset","color":"rgb(230, 236, 242)"},"off":{"bg":"rgb(22, 30, 39)","shadow":"none","color":"rgb(230, 236, 242)"}}
+search cash (middle, dom0) -> {"apis":0,"head":"analytics Middle officeTwo things live here: sustainability data feeds (Climate and multi-vendor ESG) and the Risk Gover","empty":true}
+search cash (all) -> {"apis":4,"headPill":"4 of 54 APIs","searchVal":"cash"}
+search cash + alpha -> {"apis":0,"headPill":"0 of 54 APIs"}
+search zzzz -> {"apis":0,"empty":"No APIs match. Clear a filter.","doms":11}
+ArrowRight while in search -> domains
+[1280-dark] #archsvg {"width":1058,"scale":1.176,"count":24,"min":{"t":"trading","px":11.2},"max":{"t":"Hosting","px":14.7},"sample":[{"t":"Consumers","px":14.7},{"t":"~100 Aladdin apps · ","px":12.3},{"t":"Gateway and identity","px":14.7},{"t":"application key head","px":12.3}]}
+layer boxes: consumers:1011x73, gateway:1011x73, graph:1011x113, data:1011x73, hosting:1011x33
+layer consumers -> {"on":"consumers","h3":"Who calls the APIs"}
+layer gateway -> {"on":"gateway","h3":"How a call is admitted"}
+layer data -> {"on":"data","h3":"What the services read and write"}
+layer hosting -> {"on":"hosting","h3":"Where it runs"}
+layer colours: {"onFill":"rgb(27, 43, 68)","onStroke":"rgb(111, 163, 242)","onSW":"2px","offFill":"rgb(31, 41, 51)","offStroke":"rgb(42, 55, 68)","cursor":"pointer"}
+arch sub text: ["consumers: rect right=880 subtext right=440 ","gateway: rect right=880 subtext right=500 ","graph: rect right=880 subtext right=618 ","data: rect right=880 subtext right=626 ","hosting: rect right=880 subtext right=670 "]
+[1280-dark] #reqsvg {"width":1058,"scale":1.102,"count":13,"min":{"t":"poll until done","px":11},"max":{"t":"Poll and result","px":12.7},"sample":[{"t":"Python script","px":12.7},{"t":"AladdinSDK","px":11},{"t":"Gateway","px":12.7},{"t":"client.blackrock.com","px":11}]}
+step button sizes: 114x28, 88x28, 91x28, 106x28, 95x28, 119x28
+step 3 -> {"cur":"4. Compliance","hopsOn":4,"cap":"With runCompliance set, assigned rules run against the order","h3":"4. Pre-trade compliance"}
+hn -> 5. Long-running operation
+hn at end -> {"h3":"1. The call","hn":true,"hnText":"Next hop →","hnDisabled":false}
+hp at start -> {"h3":"6. Back to the script","hpDisabled":false}
+conventions open before/after click #4: [true,true,false,false,false,false,false,false,false,false,false,false] [true,true,false,false,true,false,false,false,false,false,false,false]
+summary marker: {"after":"\"+\"","listStyle":"outside none none","cursor":"pointer"}
+glossary lot -> {"terms":1,"names":["ABOR / OBOR"]}
+glossary qqq -> No terms match.
+flash 1 click -> {"expanded":"true","hidden":false,"hint":"Hide answer","border":"rgb(111, 163, 242)","cursor":"pointer"}
+flash closed style: {"border":"rgb(42, 55, 68)","bg":"rgb(22, 30, 39)","hintColor":"rgb(111, 163, 242)"}
+contrast samples: [{"sel":".eyebrow","color":"rgb(154, 169, 184)","bg":"rgb(15, 21, 28)","size":"11.52px","weight":"600"},{"sel":".card p","color":"rgb(154, 169, 184)","bg":"rgb(22, 30, 39)","size":"15.2px","weight":"400"},{"sel":".stat span","color":"rgb(154, 169, 184)","bg":"rgb(22, 30, 39)","size":"12.8px","weight":"400"},{"sel":"figcaption","color":"rgb(154, 169, 184)","bg":"rgb(22, 30, 39)","size":"13.6px","weight":"400"},{"sel":"#tabs button:not([aria-selected=\"true\"])","color":"rgb(154, 169, 184)","bg":"rgb(22, 30, 39)","size":"13.44px","weight":"600"},{"sel":"#tabs button[aria-selected=\"true\"]","color":"rgb(15, 21, 28)","bg":"rgb(230, 236, 242)","size":"13.44px","weight":"600"},{"sel":".pill","color":"rgb(154, 169, 184)","bg":"rgb(22, 30, 39)","size":"11.84px","weight":"500"},{"sel":".pill.s-alpha","color":"rgb(224, 162, 74)","bg":"rgb(22, 30, 39)","size":"11.84px","weight":"500"},{"sel":".pill.s-beta","color":"rgb(111, 163, 242)","bg":"rgb(22, 30, 39)","size":"11.84px","weight":"500"},{"sel":".api .path","color":"rgb(154, 169, 184)","bg":"rgb(22, 30, 39)","size":"11.84px","weight":"400"},{"sel":".flash .hint","color":"rgb(111, 163, 242)","bg":"rgb(22, 30, 39)","size":"11.52px","weight":"600"},{"sel":".term b","color":"rgb(111, 163, 242)","bg":"rgb(22, 30, 39)","size":"14.72px","weight":"500"},{"sel":".chip[aria-pressed=\"false\"]","color":"rgb(154, 169, 184)","bg":"rgb(22, 30, 39)","size":"12.8px","weight":"600"},{"sel":".steps button:not([aria-current=\"step\"])","color":"rgb(154, 169, 184)","bg":"rgb(22, 30, 39)","size":"12.8px","weight":"600"},{"sel":".brand .sub","color":"rgb(154, 169, 184)","bg":"rgb(22, 30, 39)","size":"13.6px","weight":"400"},{"sel":".dom small","color":"rgb(154, 169, 184)","bg":"rgb(22, 30, 39)","size":"11.84px","weight":"500"}]
+ArrowRight from overview -> lifecycle
+ArrowRight,ArrowLeft -> lifecycle
+Tab order (lifecycle): ["button[Products] fv=true outline=solid/2px","button[Domain explorer] fv=true outline=solid/2px","button[Architecture] fv=true outline=solid/2px","button[One request] fv=true outline=solid/2px","button[Conventions] fv=true outline=solid/2px","button[AI] fv=true outline=solid/2px","button[Glossary] fv=true outline=solid/2px","button[Quiz] fv=true outline=solid/2px","button[Sources] fv=true outline=solid/2px","g.lc-node[Research] fv=true outline=solid/2px","g.lc-node.on[Portfolio setup] fv=true outline=solid/2px","g.lc-node[Order] fv=true outline=solid/2px","g.lc-node[Pre-trade complian] fv=true outline=solid/2px","g.lc-node[Execution and allo] fv=true outline=solid/2px","g.lc-node[Settlement and cas] fv=true outline=solid/2px","g.lc-node[Asset lifecycle] fv=true outline=solid/2px","g.lc-node[Accounting and NAV] fv=true outline=solid/2px","g.lc-node[Oversight and clie] fv=true outline=solid/2px","button#lcPrev.btn[← Previous stage] fv=true outline=solid/2px","button#lcNext.btn[Next stage →] fv=true outline=solid/2px","button.btn[Open portfolio in ] fv=true outline=solid/2px","button.btn[← Overview] fv=true outline=solid/2px"]
+kbd Enter on lc node 4 -> {"h3":"5. Execution and allocation","focusOutline":"solid","activeFv":true,"active":"lc-node on"}
+roles: {"tablist":11,"tabsWithRole":11,"tabpanels":11,"tabpanelsLabelled":0,"tabsWithControls":0,"lcNodeRoles":9,"flashRoles":12,"chipsAriaPressed":5,"stepsCurrent":6,"domsAriaPressed":11,"svgsRoleImg":5,"liveRegions":0,"stabLabel":true,"lcDetailLive":null,"lcPrevLabel":"← Previous stage","h1count":1,"h2count":10,"pillCursor":"auto","svgTabIndexInside":14}
+data-theme=dark bg: rgb(15, 21, 28)
+[1280-dark domains] scrollWidth=1280 innerWidth=1280 bodyScrollWidth=1280 no overflowers
+[1280-dark architecture] scrollWidth=1280 innerWidth=1280 bodyScrollWidth=1280 no overflowers
+[1280-dark request] scrollWidth=1280 innerWidth=1280 bodyScrollWidth=1280 no overflowers
+[1280-dark conventions] scrollWidth=1280 innerWidth=1280 bodyScrollWidth=1280 no overflowers
+[1280-dark lifecycle] scrollWidth=1280 innerWidth=1280 bodyScrollWidth=1280 no overflowers
+fig-scroll overflow: ["lcsvg: scroll=1086 client=1086","archsvg: scroll=0 client=0","reqsvg: scroll=0 client=0","ai: scroll=0 client=0"]
+console errors: none
+
+===== PASS 390 =====
+[390 overview] scrollWidth=390 innerWidth=390 bodyScrollWidth=390 overflowers: BUTTON right=396 | BUTTON right=500 | BUTTON right=604 | BUTTON right=711 | BUTTON right=752 | BUTTON right=836 | BUTTON right=893 | BUTTON right=973
+tabs: ["Overview","Lifecycle","Products","Domain explorer","Architecture","One request","Conventions","AI","Glossary","Quiz","Sources"]
+tab sizes: Overview:82x31, Lifecycle:79x31, Products:80x31, Domain explorer:126x31, Architecture:100x31, One request:100x31, Conventions:103x31, AI:37x31, Glossary:80x31, Quiz:53x31, Sources:76x31
+nav metrics: {"scrollWidth":957,"clientWidth":358,"headerH":164.15625}
+tab 0 Overview -> {"active":"overview","hash":"#overview","prog":"9.09091%","selected":"Overview","scrollY":0}
+tab 1 Lifecycle -> {"active":"lifecycle","hash":"#lifecycle","prog":"18.1818%","selected":"Lifecycle","scrollY":0}
+tab 2 Products -> {"active":"products","hash":"#products","prog":"27.2727%","selected":"Products","scrollY":0}
+tab 3 Domain explorer -> {"active":"domains","hash":"#domains","prog":"36.3636%","selected":"Domain explorer","scrollY":0}
+tab 4 Architecture -> {"active":"architecture","hash":"#architecture","prog":"45.4545%","selected":"Architecture","scrollY":0}
+tab 5 One request -> {"active":"request","hash":"#request","prog":"54.5455%","selected":"One request","scrollY":0}
+tab 6 Conventions -> {"active":"conventions","hash":"#conventions","prog":"63.6364%","selected":"Conventions","scrollY":0}
+tab 7 AI -> {"active":"ai","hash":"#ai","prog":"72.7273%","selected":"AI","scrollY":0}
+tab 8 Glossary -> {"active":"glossary","hash":"#glossary","prog":"81.8182%","selected":"Glossary","scrollY":0}
+tab 9 Quiz -> {"active":"quiz","hash":"#quiz","prog":"90.9091%","selected":"Quiz","scrollY":0}
+tab 10 Sources -> {"active":"sources","hash":"#sources","prog":"100%","selected":"Sources","scrollY":0}
+[390] #lcsvg {"width":328,"scale":0.328,"count":21,"min":{"t":"middle office","px":3.1},"max":{"t":"Oversight","px":3.9},"sample":[{"t":"Research","px":3.9},{"t":"front office","px":3.1},{"t":"Setup","px":3.9},{"t":"front office","px":3.1}]}
+lifecycle nodes: 9
+lc node 2 -> {"h3":"3. Order","on":["2"]}
+lc node 3 -> {"h3":"4. Pre-trade compliance","on":["3"]}
+lc node 5 -> {"h3":"6. Settlement and cash","on":["5"]}
+lc node 8 -> {"h3":"9. Oversight and clients","on":["8"]}
+lc colours: {"onRect":"rgb(46, 106, 195)","onText":"rgb(255, 255, 255)","onTier":"rgb(255, 255, 255)","offRect":"rgb(233, 237, 242)","offText":"rgb(23, 33, 43)","offTier":"rgb(91, 107, 123)","cursor":"pointer"}
+after lcNext x2: 2. Portfolio setup
+open-in-explorer -> {"active":"domains","head":"portfolio Front office","pressedChip":"Front office","pressedDom":"portfolio3 APIs · 23 ops","apis":3}
+explorer all -> {"doms":11,"apis":54,"head":"All domainsClick a domain on the left for its description, or search across ever"}
+explorer middle -> {"doms":["analytics","clients","compliance"],"apis":14}
+explorer dom0 -> {"pressed":"analytics9 APIs · 53 ops","apis":9,"head":"analytics Middle office"}
+dom colours: {"on":{"bg":"rgb(233, 237, 242)","shadow":"rgb(23, 33, 43) 0px 0px 0px 1px inset","color":"rgb(23, 33, 43)"},"off":{"bg":"rgb(255, 255, 255)","shadow":"none","color":"rgb(23, 33, 43)"}}
+search cash (middle, dom0) -> {"apis":0,"head":"analytics Middle officeTwo things live here: sustainability data feeds (Climate and multi-vendor ESG) and the Risk Gover","empty":true}
+search cash (all) -> {"apis":4,"headPill":"4 of 54 APIs","searchVal":"cash"}
+search cash + alpha -> {"apis":0,"headPill":"0 of 54 APIs"}
+search zzzz -> {"apis":0,"empty":"No APIs match. Clear a filter.","doms":11}
+ArrowRight while in search -> domains
+[390] #archsvg {"width":328,"scale":0.364,"count":24,"min":{"t":"trading","px":3.5},"max":{"t":"Hosting","px":4.6},"sample":[{"t":"Consumers","px":4.6},{"t":"~100 Aladdin apps · ","px":3.8},{"t":"Gateway and identity","px":4.6},{"t":"application key head","px":3.8}]}
+layer boxes: consumers:313x23, gateway:313x23, graph:313x35, data:313x23, hosting:313x10
+layer consumers -> {"on":"consumers","h3":"Who calls the APIs"}
+layer gateway -> {"on":"gateway","h3":"How a call is admitted"}
+layer data -> {"on":"data","h3":"What the services read and write"}
+layer hosting -> {"on":"hosting","h3":"Where it runs"}
+layer colours: {"onFill":"rgb(227, 236, 250)","onStroke":"rgb(31, 95, 191)","onSW":"2px","offFill":"rgb(233, 237, 242)","offStroke":"rgb(213, 220, 229)","cursor":"pointer"}
+arch sub text: ["consumers: rect right=880 subtext right=439 ","gateway: rect right=880 subtext right=500 ","graph: rect right=880 subtext right=617 ","data: rect right=880 subtext right=624 ","hosting: rect right=880 subtext right=671 "]
+[390] #reqsvg {"width":328,"scale":0.342,"count":13,"min":{"t":"poll until done","px":3.4},"max":{"t":"Poll and result","px":3.9},"sample":[{"t":"Python script","px":3.9},{"t":"AladdinSDK","px":3.4},{"t":"Gateway","px":3.9},{"t":"client.blackrock.com","px":3.4}]}
+step button sizes: 114x28, 88x28, 91x28, 106x28, 95x28, 119x28
+step 3 -> {"cur":"4. Compliance","hopsOn":4,"cap":"With runCompliance set, assigned rules run against the order","h3":"4. Pre-trade compliance"}
+hn -> 5. Long-running operation
+hn at end -> {"h3":"1. The call","hn":true,"hnText":"Next hop →","hnDisabled":false}
+hp at start -> {"h3":"6. Back to the script","hpDisabled":false}
+conventions open before/after click #4: [true,true,false,false,false,false,false,false,false,false,false,false] [true,true,false,false,true,false,false,false,false,false,false,false]
+summary marker: {"after":"\"+\"","listStyle":"outside none none","cursor":"pointer"}
+glossary lot -> {"terms":1,"names":["ABOR / OBOR"]}
+glossary qqq -> No terms match.
+flash 1 click -> {"expanded":"true","hidden":false,"hint":"Hide answer","border":"rgb(31, 95, 191)","cursor":"pointer"}
+flash closed style: {"border":"rgb(213, 220, 229)","bg":"rgb(255, 255, 255)","hintColor":"rgb(31, 95, 191)"}
+contrast samples: [{"sel":".eyebrow","color":"rgb(91, 107, 123)","bg":"rgb(243, 245, 248)","size":"11.52px","weight":"600"},{"sel":".card p","color":"rgb(91, 107, 123)","bg":"rgb(255, 255, 255)","size":"15.2px","weight":"400"},{"sel":".stat span","color":"rgb(91, 107, 123)","bg":"rgb(255, 255, 255)","size":"12.8px","weight":"400"},{"sel":"figcaption","color":"rgb(91, 107, 123)","bg":"rgb(255, 255, 255)","size":"13.6px","weight":"400"},{"sel":"#tabs button:not([aria-selected=\"true\"])","color":"rgb(91, 107, 123)","bg":"rgb(255, 255, 255)","size":"13.44px","weight":"600"},{"sel":"#tabs button[aria-selected=\"true\"]","color":"rgb(243, 245, 248)","bg":"rgb(23, 33, 43)","size":"13.44px","weight":"600"},{"sel":".pill","color":"rgb(91, 107, 123)","bg":"rgb(255, 255, 255)","size":"11.84px","weight":"500"},{"sel":".pill.s-alpha","color":"rgb(184, 115, 26)","bg":"rgb(255, 255, 255)","size":"11.84px","weight":"500"},{"sel":".pill.s-beta","color":"rgb(31, 95, 191)","bg":"rgb(255, 255, 255)","size":"11.84px","weight":"500"},{"sel":".api .path","color":"rgb(91, 107, 123)","bg":"rgb(255, 255, 255)","size":"11.84px","weight":"400"},{"sel":".flash .hint","color":"rgb(31, 95, 191)","bg":"rgb(255, 255, 255)","size":"11.52px","weight":"600"},{"sel":".term b","color":"rgb(31, 95, 191)","bg":"rgb(255, 255, 255)","size":"14.72px","weight":"500"},{"sel":".chip[aria-pressed=\"false\"]","color":"rgb(91, 107, 123)","bg":"rgb(255, 255, 255)","size":"12.8px","weight":"600"},{"sel":".steps button:not([aria-current=\"step\"])","color":"rgb(91, 107, 123)","bg":"rgb(255, 255, 255)","size":"12.8px","weight":"600"},{"sel":".brand .sub","color":"rgb(91, 107, 123)","bg":"rgb(255, 255, 255)","size":"13.6px","weight":"400"},{"sel":".dom small","color":"rgb(91, 107, 123)","bg":"rgb(255, 255, 255)","size":"11.84px","weight":"500"}]
+ArrowRight from overview -> lifecycle
+ArrowRight,ArrowLeft -> lifecycle
+Tab order (lifecycle): ["button[Products] fv=true outline=solid/2px","button[Domain explorer] fv=true outline=solid/2px","button[Architecture] fv=true outline=solid/2px","button[One request] fv=true outline=solid/2px","button[Conventions] fv=true outline=solid/2px","button[AI] fv=true outline=solid/2px","button[Glossary] fv=true outline=solid/2px","button[Quiz] fv=true outline=solid/2px","button[Sources] fv=true outline=solid/2px","g.lc-node[Research] fv=true outline=solid/2px","g.lc-node.on[Portfolio setup] fv=true outline=solid/2px","g.lc-node[Order] fv=true outline=solid/2px","g.lc-node[Pre-trade complian] fv=true outline=solid/2px","g.lc-node[Execution and allo] fv=true outline=solid/2px","g.lc-node[Settlement and cas] fv=true outline=solid/2px","g.lc-node[Asset lifecycle] fv=true outline=solid/2px","g.lc-node[Accounting and NAV] fv=true outline=solid/2px","g.lc-node[Oversight and clie] fv=true outline=solid/2px","button#lcPrev.btn[← Previous stage] fv=true outline=solid/2px","button#lcNext.btn[Next stage →] fv=true outline=solid/2px","button.btn[Open portfolio in ] fv=true outline=solid/2px","button.btn[← Overview] fv=true outline=solid/2px"]
+kbd Enter on lc node 4 -> {"h3":"5. Execution and allocation","focusOutline":"solid","activeFv":true,"active":"lc-node on"}
+roles: {"tablist":11,"tabsWithRole":11,"tabpanels":11,"tabpanelsLabelled":0,"tabsWithControls":0,"lcNodeRoles":9,"flashRoles":12,"chipsAriaPressed":5,"stepsCurrent":6,"domsAriaPressed":11,"svgsRoleImg":5,"liveRegions":0,"stabLabel":true,"lcDetailLive":null,"lcPrevLabel":"← Previous stage","h1count":1,"h2count":10,"pillCursor":"auto","svgTabIndexInside":14}
+[390 domains] scrollWidth=432 innerWidth=390 bodyScrollWidth=432 overflowers: BUTTON right=466 | BUTTON right=573 | BUTTON right=614 | BUTTON right=698 | BUTTON right=755 | BUTTON right=835 | DIV.head right=432 | B right=432 | DIV.path right=432 | P right=432
+[390 architecture] scrollWidth=390 innerWidth=390 bodyScrollWidth=390 overflowers: BUTTON right=456 | BUTTON right=497 | BUTTON right=581 | BUTTON right=638 | BUTTON right=718
+[390 request] scrollWidth=390 innerWidth=390 bodyScrollWidth=390 overflowers: BUTTON right=393 | BUTTON right=477 | BUTTON right=534 | BUTTON right=614
+[390 conventions] scrollWidth=390 innerWidth=390 bodyScrollWidth=390 overflowers: BUTTON right=428 | BUTTON right=508
+[390 lifecycle] scrollWidth=390 innerWidth=390 bodyScrollWidth=390 overflowers: BUTTON right=396 | BUTTON right=500 | BUTTON right=604 | BUTTON right=711 | BUTTON right=752 | BUTTON right=836 | BUTTON right=893 | BUTTON right=973
+fig-scroll overflow: ["lcsvg: scroll=356 client=356","archsvg: scroll=0 client=0","reqsvg: scroll=0 client=0","ai: scroll=0 client=0"]
+console errors: none
+
+===== PASS 390-dark =====
+[390-dark overview] scrollWidth=390 innerWidth=390 bodyScrollWidth=390 overflowers: BUTTON right=396 | BUTTON right=500 | BUTTON right=604 | BUTTON right=711 | BUTTON right=752 | BUTTON right=836 | BUTTON right=893 | BUTTON right=973
+tabs: ["Overview","Lifecycle","Products","Domain explorer","Architecture","One request","Conventions","AI","Glossary","Quiz","Sources"]
+tab sizes: Overview:82x31, Lifecycle:79x31, Products:80x31, Domain explorer:126x31, Architecture:100x31, One request:100x31, Conventions:103x31, AI:37x31, Glossary:80x31, Quiz:53x31, Sources:76x31
+nav metrics: {"scrollWidth":957,"clientWidth":358,"headerH":164.15625}
+tab 0 Overview -> {"active":"overview","hash":"#overview","prog":"9.09091%","selected":"Overview","scrollY":0}
+tab 1 Lifecycle -> {"active":"lifecycle","hash":"#lifecycle","prog":"18.1818%","selected":"Lifecycle","scrollY":0}
+tab 2 Products -> {"active":"products","hash":"#products","prog":"27.2727%","selected":"Products","scrollY":0}
+tab 3 Domain explorer -> {"active":"domains","hash":"#domains","prog":"36.3636%","selected":"Domain explorer","scrollY":0}
+tab 4 Architecture -> {"active":"architecture","hash":"#architecture","prog":"45.4545%","selected":"Architecture","scrollY":0}
+tab 5 One request -> {"active":"request","hash":"#request","prog":"54.5455%","selected":"One request","scrollY":0}
+tab 6 Conventions -> {"active":"conventions","hash":"#conventions","prog":"63.6364%","selected":"Conventions","scrollY":0}
+tab 7 AI -> {"active":"ai","hash":"#ai","prog":"72.7273%","selected":"AI","scrollY":0}
+tab 8 Glossary -> {"active":"glossary","hash":"#glossary","prog":"81.8182%","selected":"Glossary","scrollY":0}
+tab 9 Quiz -> {"active":"quiz","hash":"#quiz","prog":"90.9091%","selected":"Quiz","scrollY":0}
+tab 10 Sources -> {"active":"sources","hash":"#sources","prog":"100%","selected":"Sources","scrollY":0}
+[390-dark] #lcsvg {"width":328,"scale":0.328,"count":21,"min":{"t":"middle office","px":3.1},"max":{"t":"Oversight","px":3.9},"sample":[{"t":"Research","px":3.9},{"t":"front office","px":3.1},{"t":"Setup","px":3.9},{"t":"front office","px":3.1}]}
+lifecycle nodes: 9
+lc node 2 -> {"h3":"3. Order","on":["2"]}
+lc node 3 -> {"h3":"4. Pre-trade compliance","on":["3"]}
+lc node 5 -> {"h3":"6. Settlement and cash","on":["5"]}
+lc node 8 -> {"h3":"9. Oversight and clients","on":["8"]}
+lc colours: {"onRect":"rgb(105, 154, 228)","onText":"rgb(15, 21, 28)","onTier":"rgb(15, 21, 28)","offRect":"rgb(31, 41, 51)","offText":"rgb(230, 236, 242)","offTier":"rgb(154, 169, 184)","cursor":"pointer"}
+after lcNext x2: 2. Portfolio setup
+open-in-explorer -> {"active":"domains","head":"portfolio Front office","pressedChip":"Front office","pressedDom":"portfolio3 APIs · 23 ops","apis":3}
+explorer all -> {"doms":11,"apis":54,"head":"All domainsClick a domain on the left for its description, or search across ever"}
+explorer middle -> {"doms":["analytics","clients","compliance"],"apis":14}
+explorer dom0 -> {"pressed":"analytics9 APIs · 53 ops","apis":9,"head":"analytics Middle office"}
+dom colours: {"on":{"bg":"rgb(31, 41, 51)","shadow":"rgb(230, 236, 242) 0px 0px 0px 1px inset","color":"rgb(230, 236, 242)"},"off":{"bg":"rgb(22, 30, 39)","shadow":"none","color":"rgb(230, 236, 242)"}}
+search cash (middle, dom0) -> {"apis":0,"head":"analytics Middle officeTwo things live here: sustainability data feeds (Climate and multi-vendor ESG) and the Risk Gover","empty":true}
+search cash (all) -> {"apis":4,"headPill":"4 of 54 APIs","searchVal":"cash"}
+search cash + alpha -> {"apis":0,"headPill":"0 of 54 APIs"}
+search zzzz -> {"apis":0,"empty":"No APIs match. Clear a filter.","doms":11}
+ArrowRight while in search -> domains
+[390-dark] #archsvg {"width":328,"scale":0.364,"count":24,"min":{"t":"trading","px":3.5},"max":{"t":"Hosting","px":4.6},"sample":[{"t":"Consumers","px":4.6},{"t":"~100 Aladdin apps · ","px":3.8},{"t":"Gateway and identity","px":4.6},{"t":"application key head","px":3.8}]}
+layer boxes: consumers:313x23, gateway:313x23, graph:313x35, data:313x23, hosting:313x10
+layer consumers -> {"on":"consumers","h3":"Who calls the APIs"}
+layer gateway -> {"on":"gateway","h3":"How a call is admitted"}
+layer data -> {"on":"data","h3":"What the services read and write"}
+layer hosting -> {"on":"hosting","h3":"Where it runs"}
+layer colours: {"onFill":"rgb(27, 43, 68)","onStroke":"rgb(111, 163, 242)","onSW":"2px","offFill":"rgb(31, 41, 51)","offStroke":"rgb(42, 55, 68)","cursor":"pointer"}
+arch sub text: ["consumers: rect right=880 subtext right=439 ","gateway: rect right=880 subtext right=500 ","graph: rect right=880 subtext right=617 ","data: rect right=880 subtext right=624 ","hosting: rect right=880 subtext right=671 "]
+[390-dark] #reqsvg {"width":328,"scale":0.342,"count":13,"min":{"t":"poll until done","px":3.4},"max":{"t":"Poll and result","px":3.9},"sample":[{"t":"Python script","px":3.9},{"t":"AladdinSDK","px":3.4},{"t":"Gateway","px":3.9},{"t":"client.blackrock.com","px":3.4}]}
+step button sizes: 114x28, 88x28, 91x28, 106x28, 95x28, 119x28
+step 3 -> {"cur":"4. Compliance","hopsOn":4,"cap":"With runCompliance set, assigned rules run against the order","h3":"4. Pre-trade compliance"}
+hn -> 5. Long-running operation
+hn at end -> {"h3":"1. The call","hn":true,"hnText":"Next hop →","hnDisabled":false}
+hp at start -> {"h3":"6. Back to the script","hpDisabled":false}
+conventions open before/after click #4: [true,true,false,false,false,false,false,false,false,false,false,false] [true,true,false,false,true,false,false,false,false,false,false,false]
+summary marker: {"after":"\"+\"","listStyle":"outside none none","cursor":"pointer"}
+glossary lot -> {"terms":1,"names":["ABOR / OBOR"]}
+glossary qqq -> No terms match.
+flash 1 click -> {"expanded":"true","hidden":false,"hint":"Hide answer","border":"rgb(111, 163, 242)","cursor":"pointer"}
+flash closed style: {"border":"rgb(42, 55, 68)","bg":"rgb(22, 30, 39)","hintColor":"rgb(111, 163, 242)"}
+contrast samples: [{"sel":".eyebrow","color":"rgb(154, 169, 184)","bg":"rgb(15, 21, 28)","size":"11.52px","weight":"600"},{"sel":".card p","color":"rgb(154, 169, 184)","bg":"rgb(22, 30, 39)","size":"15.2px","weight":"400"},{"sel":".stat span","color":"rgb(154, 169, 184)","bg":"rgb(22, 30, 39)","size":"12.8px","weight":"400"},{"sel":"figcaption","color":"rgb(154, 169, 184)","bg":"rgb(22, 30, 39)","size":"13.6px","weight":"400"},{"sel":"#tabs button:not([aria-selected=\"true\"])","color":"rgb(154, 169, 184)","bg":"rgb(22, 30, 39)","size":"13.44px","weight":"600"},{"sel":"#tabs button[aria-selected=\"true\"]","color":"rgb(15, 21, 28)","bg":"rgb(230, 236, 242)","size":"13.44px","weight":"600"},{"sel":".pill","color":"rgb(154, 169, 184)","bg":"rgb(22, 30, 39)","size":"11.84px","weight":"500"},{"sel":".pill.s-alpha","color":"rgb(224, 162, 74)","bg":"rgb(22, 30, 39)","size":"11.84px","weight":"500"},{"sel":".pill.s-beta","color":"rgb(111, 163, 242)","bg":"rgb(22, 30, 39)","size":"11.84px","weight":"500"},{"sel":".api .path","color":"rgb(154, 169, 184)","bg":"rgb(22, 30, 39)","size":"11.84px","weight":"400"},{"sel":".flash .hint","color":"rgb(111, 163, 242)","bg":"rgb(22, 30, 39)","size":"11.52px","weight":"600"},{"sel":".term b","color":"rgb(111, 163, 242)","bg":"rgb(22, 30, 39)","size":"14.72px","weight":"500"},{"sel":".chip[aria-pressed=\"false\"]","color":"rgb(154, 169, 184)","bg":"rgb(22, 30, 39)","size":"12.8px","weight":"600"},{"sel":".steps button:not([aria-current=\"step\"])","color":"rgb(154, 169, 184)","bg":"rgb(22, 30, 39)","size":"12.8px","weight":"600"},{"sel":".brand .sub","color":"rgb(154, 169, 184)","bg":"rgb(22, 30, 39)","size":"13.6px","weight":"400"},{"sel":".dom small","color":"rgb(154, 169, 184)","bg":"rgb(22, 30, 39)","size":"11.84px","weight":"500"}]
+ArrowRight from overview -> lifecycle
+ArrowRight,ArrowLeft -> lifecycle
+Tab order (lifecycle): ["button[Products] fv=true outline=solid/2px","button[Domain explorer] fv=true outline=solid/2px","button[Architecture] fv=true outline=solid/2px","button[One request] fv=true outline=solid/2px","button[Conventions] fv=true outline=solid/2px","button[AI] fv=true outline=solid/2px","button[Glossary] fv=true outline=solid/2px","button[Quiz] fv=true outline=solid/2px","button[Sources] fv=true outline=solid/2px","g.lc-node[Research] fv=true outline=solid/2px","g.lc-node.on[Portfolio setup] fv=true outline=solid/2px","g.lc-node[Order] fv=true outline=solid/2px","g.lc-node[Pre-trade complian] fv=true outline=solid/2px","g.lc-node[Execution and allo] fv=true outline=solid/2px","g.lc-node[Settlement and cas] fv=true outline=solid/2px","g.lc-node[Asset lifecycle] fv=true outline=solid/2px","g.lc-node[Accounting and NAV] fv=true outline=solid/2px","g.lc-node[Oversight and clie] fv=true outline=solid/2px","button#lcPrev.btn[← Previous stage] fv=true outline=solid/2px","button#lcNext.btn[Next stage →] fv=true outline=solid/2px","button.btn[Open portfolio in ] fv=true outline=solid/2px","button.btn[← Overview] fv=true outline=solid/2px"]
+kbd Enter on lc node 4 -> {"h3":"5. Execution and allocation","focusOutline":"solid","activeFv":true,"active":"lc-node on"}
+roles: {"tablist":11,"tabsWithRole":11,"tabpanels":11,"tabpanelsLabelled":0,"tabsWithControls":0,"lcNodeRoles":9,"flashRoles":12,"chipsAriaPressed":5,"stepsCurrent":6,"domsAriaPressed":11,"svgsRoleImg":5,"liveRegions":0,"stabLabel":true,"lcDetailLive":null,"lcPrevLabel":"← Previous stage","h1count":1,"h2count":10,"pillCursor":"auto","svgTabIndexInside":14}
+data-theme=dark bg: rgb(15, 21, 28)
+[390-dark domains] scrollWidth=432 innerWidth=390 bodyScrollWidth=432 overflowers: BUTTON right=466 | BUTTON right=573 | BUTTON right=614 | BUTTON right=698 | BUTTON right=755 | BUTTON right=835 | DIV.head right=432 | B right=432 | DIV.path right=432 | P right=432
+[390-dark architecture] scrollWidth=390 innerWidth=390 bodyScrollWidth=390 overflowers: BUTTON right=456 | BUTTON right=497 | BUTTON right=581 | BUTTON right=638 | BUTTON right=718
+[390-dark request] scrollWidth=390 innerWidth=390 bodyScrollWidth=390 overflowers: BUTTON right=393 | BUTTON right=477 | BUTTON right=534 | BUTTON right=614
+[390-dark conventions] scrollWidth=390 innerWidth=390 bodyScrollWidth=390 overflowers: BUTTON right=428 | BUTTON right=508
+[390-dark lifecycle] scrollWidth=390 innerWidth=390 bodyScrollWidth=390 overflowers: BUTTON right=396 | BUTTON right=500 | BUTTON right=604 | BUTTON right=711 | BUTTON right=752 | BUTTON right=836 | BUTTON right=893 | BUTTON right=973
+fig-scroll overflow: ["lcsvg: scroll=356 client=356","archsvg: scroll=0 client=0","reqsvg: scroll=0 client=0","ai: scroll=0 client=0"]
+console errors: none
