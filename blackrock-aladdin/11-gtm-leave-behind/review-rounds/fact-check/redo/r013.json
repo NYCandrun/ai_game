@@ -1,0 +1,57 @@
+[
+ {
+  "id": "p04-11",
+  "page": "4",
+  "location": "Exhibit 2 row 2 Compliance check col 'Who acts'",
+  "claim": "Any violation then carries an owner, a disposition and a resolution comment",
+  "sources": "6",
+  "earlier_first_verdict": "PARTLY",
+  "earlier_final_verdict": "PARTLY",
+  "earlier_receipt": "ViolationAPI swagger.json (asdk-plugin-compliance 2.0.0b3, fresh download fc/dl/b016r) line 864: \"The current  disposition of the violation. This will be populated for closed violations and include values such as Approved, Rejected, Manual etc.\"; line 868: \"The current team or group who owns the next step in resolving this violation.\"; line 879: \"The current resolution comment for the violation which has been populated by a user.\"; line 355 (AddResolution): \"This value is populated when a violation is being closed.\"; v1Violation required = ['actionStatus'] only",
+  "earlier_finding": "The fields exist, but not every violation carries all three. Disposition is filled only once a violation is closed, and the comment only if a user writes one. Suggested wording: \"A violation record has fields for an owner, a disposition (set when it is closed) and a user's resolution comment.\""
+ },
+ {
+  "id": "p04-22",
+  "page": "4",
+  "location": "Exhibit 2 row 3 Trade col 'BlackRock API that covers it'",
+  "claim": "BrokerConfirmRoutingAPI routes the confirm",
+  "sources": "6",
+  "earlier_first_verdict": "PARTLY",
+  "earlier_final_verdict": "PARTLY",
+  "earlier_receipt": "PyPI asdk-plugin-investment-operations 2.0.0b3 (fresh download, fc/dl/b018r), .../reference_data/broker/v1/BrokerConfirmRoutingAPI/swagger.json:1363: \"BrokerConfirmRouting describes instructions for delivering trade information to a broker desk.\\nAfter a trade is booked in Aladdin, it needs to be confirmed with broker. \\nConfirm routings are setup at broker level in order for the confirmation deliveries to be created and sent out.\" Line 46: \"Create one or more Confirm Routings to a maximum of 100 per request.\\nRequired fields:- brokerTicker,deliveryFormat,deliveryPurpose,deliveryType,recipientContactId.\" Only operations: batchCreate, batchRemove, batchUpdate, batchValidate, filter. (WebSearch for other sources failed: the turn's search budget was used up.)",
+  "earlier_finding": "The API keeps broker-level confirm-routing reference data. It does not route or send a confirm itself. Suggested wording: \"BrokerConfirmRoutingAPI sets up the broker-level routing (recipient, delivery type and format) by which confirms are delivered.\" Citation 6 is correct."
+ },
+ {
+  "id": "p05-01",
+  "page": "5",
+  "location": "Exhibit 3 title",
+  "claim": "Apps, Copilot and Studio all call one shared API layer",
+  "sources": "8,6,23",
+  "earlier_first_verdict": "PARTLY",
+  "earlier_final_verdict": "PARTLY",
+  "earlier_receipt": "https://www.blackrock.com/aladdin/platforms/products/aladdin-studio \"Empowering unique outcomes via our API-first approach across shared services and data.\" / \"Since day one, Aladdin has been a cloud/hosted platform powered by secure, common, and extensible services for hyper scale.\"; https://www.zenml.io/llmops-database/agentic-ai-architecture-for-investment-management-platform \"Tool registration : Mapping directly to existing Aladdin APIs already in production\"; 04-transcripts/part1-youtube-and-site/01_From_Analytics_To_Intelligence...md:24 (corpus) \"It exposes everything Aladdin knows how to do as a set of APIs events.\"; https://raw.githubusercontent.com/blackrock/aladdinsdk/main/README.md:276 \"wraps over OpenAPI generated python client code based on Aladdin Graph API's swagger specifications\"",
+  "earlier_finding": "No source says BlackRock's own apps call the same API layer that Studio clients and Copilot call. Searched the Studio page, the Copilot page, the AladdinSDK README, the ZenML write-up of source 8 and a corpus grep for 'same API(s)', 'APIs that power' and 'internally'. The gist is supported but 'one shared API layer' is the author's synthesis. Soften to 'draw on the same Aladdin services and APIs' and cite 14 alongside 8 and 23. Source 6 (the specs) does not say who calls them. WebSearch budget was exhausted, so only direct fetches were used."
+ },
+ {
+  "id": "p05-04",
+  "page": "5",
+  "location": "Exhibit 3 column 'People'",
+  "claim": "Client developers, quants (use Aladdin Studio)",
+  "sources": "1",
+  "earlier_first_verdict": "PARTLY",
+  "earlier_final_verdict": "PARTLY",
+  "earlier_receipt": "https://www.blackrock.com/aladdin/platforms/products/aladdin-studio \"Whether you're a professional engineer building new workflow applications, a code-curious portfolio manager extracting investment insights, or a data analyst automating reporting, Aladdin Studio gives you the data, tools, and governance support to make Aladdin your own.\"; 04-transcripts/part1-youtube-and-site/01_From_Analytics_To_Intelligence...md:24-26 (source 1, corpus only) \"We see in business engineering more and more across all of our clients. So the third pillar of studio is how do I bring those people in? How do I create environments where they can they have sandboxes, research environments, they can start code, they can build applications.\"",
+  "earlier_finding": "'Client developers' is supported. 'Quants' is not: none of the Studio page, the AladdinSDK README and PyPI summary, the Woodhead transcript or the crawled BlackRock pages uses 'quant(s)' for Studio users. The only hit is the 'Quantitative Analyst' option in site form dropdowns. The closest source is the title of source 40 ('...quantitative edge'), which returned 403 and is not cited for this claim. Replace 'quants' with 'data analysts' (or 'code-curious portfolio managers, data analysts'), cite 1 and 14, and mark the Woodhead quote corpus-only."
+ },
+ {
+  "id": "p05-15",
+  "page": "5",
+  "location": "Exhibit 3 box 'Excel tools, feeds'",
+  "claim": "Excel tools, feeds: events and files out",
+  "sources": "24",
+  "earlier_first_verdict": "PARTLY",
+  "earlier_final_verdict": "PARTLY",
+  "earlier_receipt": "Cited source 24, https://www.blackrock.com/aladdin/platforms/products/apis, only names the products, under \"Additional Aladdin Studio resources\": \"Aladdin Data eXchange (ADX)\" / \"Aladdin Tools for Excel (ATX)\". Its only 'Events' is a footer link. https://www.blackrock.com/aladdin/platforms/products/aladdin-tools-for-excel: \"Aladdin Tools for Excel (ATX) is an Excel plugin that enables users to retrieve Aladdin data to build custom reports and run bespoke analyses.\" https://www.blackrock.com/aladdin/platforms/products/aladdin-data-exchange: \"automated data transfer to and from Aladdin\" / \"feeding other investment software\" / \"Use Secure File Transfer Protocol or IBM MQ to manage files securely\". Events: source 1, local transcript line 24: \"It exposes everything Aladdin knows how to do as a set of APIs events.\"",
+  "earlier_finding": "Wrong citation. Page 24 names ATX and ADX as Studio resources but describes neither, and it says nothing about events or files. Cite the ATX and ADX pages, and 1 (corpus only) for events. ADX moves data 'to and from Aladdin' and has 35 CSV import loaders, so use 'events and files in and out'."
+ }
+]

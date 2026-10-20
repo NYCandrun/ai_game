@@ -1,0 +1,57 @@
+[
+ {
+  "id": "p15-103",
+  "page": "15",
+  "location": "Exhibit 17 row MSCI col 'Public docs'",
+  "claim": "MSCI, Public docs: 0 (none or blocked)",
+  "sources": "4",
+  "earlier_first_verdict": "WRONG",
+  "earlier_final_verdict": "WRONG",
+  "earlier_receipt": "https://developer.msci.com/content/dev-portal/apiDetails/slug:index-api (no login; page https://developer.msci.com/apis/index-api returns 200): \"The MSCI Index API (Application Programming Interface) gives you greater control and supports operational efficiency for the integration of MSCI Index data into your investment process. Key features: 1. Extensive Data for 400,000 + indexes\"; \"MSCI requires authentication details to be provided to use any API features ... The API equivalents of a username and password are an API Key and an API Key Secret respectively.\" Gated: /content/dev-portal/apiDefinitions/615411debf00206c2afd1658 returns HTTP 401 \"JWT token not present\"; all 58 PDFs sit under /secureDownloadable/.",
+  "earlier_finding": "Change to 1 (partial): public overview, feature and authentication pages exist for all 28 APIs; the specs and PDF manuals need a login. Wrong citation: source 4 has nothing on docs; cite developer.msci.com."
+ },
+ {
+  "id": "p15-104",
+  "page": "15",
+  "location": "Exhibit 17 row MSCI col 'API catalog'",
+  "claim": "MSCI, API catalog: 0 (none or blocked)",
+  "sources": "4",
+  "earlier_first_verdict": "WRONG",
+  "earlier_final_verdict": "WRONG",
+  "earlier_receipt": "https://developer.msci.com/apis (in sitemap.txt; data from https://developer.msci.com/content/dev-portal/apiSummariesPage, no login): \"Explore our catalog to find APIs that help create optimal user experiences and solutions to increase productivity and reduce manual distribution costs.\" It has 28 entries, including \"Index API\", \"ESG Data API\", \"Factor Insights\", \"Risk Analytics\" and \"MSCI Data Platform API\". The first record ID dates from 2021-09-29.",
+  "earlier_finding": "Change to 2: a public, browsable catalog of 28 APIs (or 1 if gated specs count against it). Wrong citation: source 4 does not mention a catalog; cite developer.msci.com."
+ },
+ {
+  "id": "p15-107",
+  "page": "15",
+  "location": "Exhibit 17 row MSCI col 'Sample code'",
+  "claim": "MSCI, Sample code: 0 (none or blocked)",
+  "sources": "4",
+  "earlier_first_verdict": "WRONG",
+  "earlier_final_verdict": "WRONG",
+  "earlier_receipt": "https://pypi.org/pypi/msci.sdk/json: author_email \"msci_sdk@msci.com\", v1.37.1 uploaded 2026-09-23, first release 2023-06-20. Description: \"Tax Optimization of portfolio using msci.sdk library. It demonstrates connection to the API, tax lot upload, rebalance, trade list generation, and review of results.\", with inline code \"from msci.sdk.calc.portfolio import mos ... session = mos.MOSSession()\". Rendered https://developer.msci.com/code-libraries/msci-python-sdk (fc/dl/b118r/render/r1.txt:39-40): \"You can download the MSCI Python SDK directly from https://pypi.org/project/msci.sdk\" / \"You can download the example notebook from https://developer.msci.com/code-libraries/qis-tax-optimization-with-msci-sdk-python-notebooks\". Portal home (render/r0.txt:60): \"MSCI's code library offers access to executable code ... Most of the code is distributed in the form of Jupyter Notebooks, written in Python.\" Notebook downloads need login: \"Please log in to view the Code Library.\" Source 4 has no sample code.",
+  "earlier_finding": "Change to 2. The inline example in the PyPI SDK is fully public and the code library is listed publicly; notebook downloads need sign-in. Use at least 1 if only the notebooks count. Cite PyPI msci.sdk and developer.msci.com/code-libraries, not source 4 (wrong citation). Running the code needs entitlement."
+ },
+ {
+  "id": "p15-26",
+  "page": "15",
+  "location": "Exhibit 17 row Bloomberg col 'First API call without a contract'",
+  "claim": "Bloomberg, First API call without a contract: 1 (partial or after sign-up or approval)",
+  "sources": "-",
+  "earlier_first_verdict": "UNVERIFIED",
+  "earlier_final_verdict": "WRONG",
+  "earlier_receipt": "ureg.html:2261 (https://service.blpprofessional.com/portal/product/ureg?referrer=bdev): \"By filling your name in the box above, you signify that you are authorized to execute the Bloomberg Trial License Agreement on behalf of the Trial Service Recipient\"; https://en.wikipedia.org/wiki/Bloomberg_Terminal: \"Bloomberg offers free BLPAPI SDKs allowing Bloomberg subscribers to build their own software\" and \"All Bloomberg Terminals are leased in two-year cycles\"; BLPAPI Developer Guide ~l.1207: \"a Desktop API application will always connect to bbcomm\"",
+  "earlier_finding": "Change 1 to 0. A call needs a Terminal or B-PIPE subscription, or the trial, and the trial requires signing a Bloomberg Trial License Agreement, which is a contract. If the author counts a free trial license as 'no contract', keep 1 with a footnote."
+ },
+ {
+  "id": "p15-28",
+  "page": "15",
+  "location": "Exhibit 17 row Bloomberg col 'Community or marketplace'",
+  "claim": "Bloomberg, Community or marketplace: 0 (none or blocked)",
+  "sources": "-",
+  "earlier_first_verdict": "UNVERIFIED",
+  "earlier_final_verdict": "WRONG",
+  "earlier_receipt": "ureg.html:67: \"apstApplicationStore\": \"Application Portal\"; ureg.html:206: \"Approve requests for third-party Bloomberg Terminal applications\"; ureg.html:71: \"I hereby certify that I have the authority to (i) subscribe for the application(s) on behalf of my company pursuant to agreements with Bloomberg, including without limitation the Bloomberg Schedule of Services for the application portal; and (ii) acknowledge, on behalf of my company, receipt of the terms and conditions of the third party developer(s)\"",
+  "earlier_finding": "Change 0 to 1. Bloomberg runs a third-party app marketplace (the Terminal Application Portal), open to subscribers after admin approval. The exhibit gives 1 to the client-only marketplaces and communities of Aladdin Studio, State Street, Arcesium, SimCorp and Clearwater, so 0 ('none') is inconsistent."
+ }
+]

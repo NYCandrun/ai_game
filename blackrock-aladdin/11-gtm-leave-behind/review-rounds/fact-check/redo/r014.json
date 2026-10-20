@@ -1,0 +1,57 @@
+[
+ {
+  "id": "p05-16",
+  "page": "5",
+  "location": "Exhibit 3 box 'Shared API layer'",
+  "claim": "Shared API layer: every app, Copilot and Studio call it \u00b7 access checked on every call",
+  "sources": "-",
+  "earlier_first_verdict": "PARTLY",
+  "earlier_final_verdict": "PARTLY",
+  "earlier_receipt": "https://www.blackrock.com/aladdin/platforms/products/aladdin-studio: \"Empowering unique outcomes via our API-first approach across shared services and data.\" https://www.zenml.io/llmops-database/agentic-ai-architecture-for-investment-management-platform: \"Mapping directly to existing Aladdin APIs already in production\". Source 8, local transcript 16_How_BlackRock_Built_Production_AI_Agents_for_Asset_Managemen.md line 20: \"they own all of the services that serve trading data to all Aladdin applications\". A fresh PyPI download of all 11 asdk_plugin 2.0.0b3 wheels shows 301 of 301 operations in the 54 specs declaring security. Example: trading OrderAPI swagger.json \"/order:post\": \"security\": [{\"APIKeyHeader\": [], \"OAuth2AccessCode\": [\"trading.order_management.order.v1.Order:write\"]}, ... {\"APIKeyHeader\": [], \"basicAuth\": []}]. APIs page (24): \"how Aladdin API requests are built, authorized, and processed in our system.\"",
+  "earlier_finding": "I agree. 'Every app ... call it' is unsupported, because no source says the ~100 front-end apps call the public API layer. The first report quoted the security block too narrowly: OAuth scope is one of four accepted alternatives, and two of them (basicAuth and ClientKeyHeader) carry no scope. So 'access checked on every call' holds only in the sense that every operation requires credentials. Cite 14, 8 and 6 (and 24), and soften to 'the apps, Copilot and Studio share one set of services'."
+ },
+ {
+  "id": "p05-29",
+  "page": "5",
+  "location": "Exhibit 3 box 'Aladdin Analytics'",
+  "claim": "Aladdin Analytics the risk engine every domain uses \u00b7 turns positions and market data into risk numbers",
+  "sources": "6",
+  "earlier_first_verdict": "PARTLY",
+  "earlier_final_verdict": "PARTLY",
+  "earlier_receipt": "Source 6, fresh asdk_plugin_analytics 2.0.0b3, analytics/oversight/governance/v1/RiskRuleAPI/swagger.json:5272: \"METRIC_SOURCE_ALADDIN_ANALYTICS: Evaluator will use Aladdin Analytics as metric source\". This enum appears only in the RiskRule, EvaluatorAnalytics, RiskException and RiskTask APIs. Uncited web support for the engine description, under a different product name: https://www.blackrock.com/aladdin/platforms/products/aladdin-risk : \"Aladdin Risk is BlackRock's analytics engine\u2014designed to deliver a consistent, integrated view of risk and return across asset classes.\" and \"Integrate positions, data, and analytics into a single framework for a consistent view of the portfolio.\"",
+  "earlier_finding": "No source I found supports \"every domain uses\". \"turns positions and market data into risk numbers\" is supported in substance by the Aladdin Risk product page, not by source 6, and that page calls the engine \"Aladdin Risk\". Suggested wording: \"Aladdin Analytics: the risk engine named as a metric source in the risk specifications 6\". Alternatively, cite the Aladdin Risk page for the engine description and drop \"every domain uses\"."
+ },
+ {
+  "id": "p05-30",
+  "page": "5",
+  "location": "Exhibit 3 box 'Shared data'",
+  "claim": "SHARED DATA \u00b7 EVERY DOMAIN READS AND WRITES IT",
+  "sources": "-",
+  "earlier_first_verdict": "PARTLY",
+  "earlier_final_verdict": "PARTLY",
+  "earlier_receipt": "Fresh specs. asdk_plugin_data has 15 operations, all POST creates. data/reference_data/asset/asset_creation/v1/SecurityCreationAPI/swagger.json:13: \"This service is used to create CDS, CDX, Equity Equity, Equity Option, Futures, ...\". asdk_plugin_accounting has 4 GET and 4 POST: /aborLots:filter, /valuations:filter, /configurations:filter and /configurations:submitPortfolioConfigurationRecordsRequest. Closest web support for a shared data layer: https://www.blackrock.com/aladdin : \"Aladdin\u00ae is a tech platform that unifies the investment management process through a common data language.\"",
+  "earlier_finding": "The claim has no source and overstates the specs. One refinement to the first checker: accounting is not purely read-only, because it submits portfolio configuration records. It does only read ABOR lots and NAV valuations, and the data domain only writes. Suggested wording: \"SHARED DATA \u00b7 the domains read and write these records\". The Aladdin home page (\"common data language\") could optionally be cited."
+ },
+ {
+  "id": "p05-32",
+  "page": "5",
+  "location": "Exhibit 3 box 'Aladdin Data Cloud'",
+  "claim": "Aladdin Data Cloud: Snowflake, this client\u2019s own",
+  "sources": "1,19",
+  "earlier_first_verdict": "PARTLY",
+  "earlier_final_verdict": "PARTLY",
+  "earlier_receipt": "Source 19, https://www.blackrock.com/aladdin/platforms/products/aladdin-data-cloud : \"a next-generation data and analytics platform, powered by Snowflake's cloud-native technology.\" and \"Store and access your Aladdin & non-Aladdin data on a single platform\". Uncited: https://www.blackrock.com/corporate/newsroom/media/press-releases/aladdin-data-cloud-powered-by-snowflake (dated \"NEW YORK \u2013 February 22, 2021\"): \"Each Aladdin Data Cloud client receives an independent, centrally-managed data store pre-loaded with rich front-to-back Aladdin data sets\". Source 1, corpus only: blackrock-aladdin/04-transcripts/requested-recordings/snowflake_data_cloud_podcast_woodhead_whisper.txt:449: \"[19:03] We operate hundreds of snowflake accounts.\"",
+  "earlier_finding": "Source 19 confirms \"Snowflake\". \"this client's own\" is not stated by source 19, whose \"your ... data\" is only possessive, and source 1 only implies it. Add the BlackRock/Snowflake press release as the citation for that part. It is dated February 22, 2021, not 2020 as the first report said."
+ },
+ {
+  "id": "p05-36",
+  "page": "5",
+  "location": "Exhibit 3 box 'Data vendors'",
+  "claim": "OUTSIDE ALADDIN: Data vendors: prices, ESG, Preqin",
+  "sources": "-",
+  "earlier_first_verdict": "PARTLY",
+  "earlier_final_verdict": "PARTLY",
+  "earlier_receipt": "https://www.preqin.com/about/press-release/blackrock-aladdin-expands-private-credit-solutions-on-preqin-for-greater-transparency-and-insights-across-the-asset-class : \"BlackRock Aladdin\u00ae\u2014inclusive of the Aladdin platform, eFront\u00ae, Aladdin Wealth\u2122, and Preqin\u2014empowers institutional investors\" (site logo alt text: \"Preqin a part of BlackRock Logo\"); the same sentence is in https://press.aboutamazon.com/aws/2025/12/blackrock-partners-with-aws-to-deliver-aladdin-on-secure-scalable-cloud-infrastructure . Prices: https://ir.theice.com/press/news-details/2016/BlackRock-Solutions-Integrates-ICE-Data-Services-Continuous-Evaluated-Pricing-Tool/default.aspx : \"ICE Data Services' Continuous Evaluated Pricing (CEP) has been integrated into BlackRock Solutions' Aladdin\". ESG: https://www.sustainalytics.com/investor-solutions/analytic-reporting-solutions/esg-investment-platform : \"Institutional Investor Platforms Aladdin Bloomberg Data Management Factset\". The document contradicts itself at doc_layout.txt:86 \"Preqin now sits inside eFront Insight\" and at :497 \"private markets and Preqin, arrives through Data Cloud\".",
+  "earlier_finding": "'Prices, ESG' from outside vendors is right; 'Preqin' is wrong. I tried to defend it: Preqin still sells data on its own (Preqin Pro). But BlackRock's own boilerplate places Preqin inside 'BlackRock Aladdin', and the document itself puts it in eFront Insight and Data Cloud. Replace it with, for example, 'reference data' or 'ratings', and show Preqin inside, next to eFront/Data Cloud. The box cites no source; add one, for example the ICE and Sustainalytics pages."
+ }
+]

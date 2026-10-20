@@ -1,0 +1,57 @@
+[
+ {
+  "id": "s56",
+  "page": "19",
+  "location": "Sources register, section P, entry 56",
+  "claim": "Source 56: [P] Arcesium unveils new suite of AI features in Aquata . Arcesium press release, 2025. https://www.arcesium.com/press-release/arcesium-unveils-new-suite-of-ai-features-in-aquata",
+  "sources": "-",
+  "earlier_first_verdict": "CONFIRMED (note)",
+  "earlier_final_verdict": "CONFIRMED (note)",
+  "earlier_receipt": "Cited arcesium.com URL returned HTTP 429, \"Vercel Security Checkpoint\" (curl and WebFetch). Independent coverage: https://www.alternativeswatch.com/2025/12/15/arcesium-aquata-launch-new-ai-features/ (\"December 15, 2025\"): \"Arcesium has added new AI features aimed at helping institutional asset managers scale up their investment operations. The AI technology is included in Aquata, Arcesium's self-service data platform.\" and \"The launch of this new suite of AI capabilities within the Aquata platform\"",
+  "earlier_finding": "The release exists and is from 2025 (Dec 15, 2025). The register gives a shortened title. Batch b074 reports the full headline as \"...in Aquata to Help Institutional Investors Scale Their AI Strategies\". arcesium.com was rate-limited, so recheck the exact title from a normal browser."
+ },
+ {
+  "id": "s57",
+  "page": "19",
+  "location": "Sources register, section P, entry 57",
+  "claim": "Source 57: [P] Arcesium launches comprehensive AI platform . Arcesium press release, 2026. https://www.arcesium.com/press-release/arcesium-launches-comprehensive-ai-platform",
+  "sources": "-",
+  "earlier_first_verdict": "CONFIRMED (note)",
+  "earlier_final_verdict": "CONFIRMED (note)",
+  "earlier_receipt": "Cited arcesium.com URL returned HTTP 429, \"Vercel Security Checkpoint\". Independent coverage: https://fintech.global/2026/05/20/arcesium-launches-ai-platform-for-institutional-investment/ (\"May 20, 2026\"): \"Arcesium, a global FinTech provider serving the investment industry, has launched Arcesium Intelligence, an AI platform built specifically for institutional investment firms.\"",
+  "earlier_finding": "The 2026 launch is confirmed (May 20, 2026). Optionally add the date and the product name, \"Arcesium Intelligence\". The exact title could not be checked because arcesium.com returned 429. A reprint (per b087) is headlined \"Arcesium Launches Comprehensive AI Platform to Operationalize Agentic AI for Institutional Investment\"."
+ },
+ {
+  "id": "s61",
+  "page": "19",
+  "location": "Sources register, section P, entry 61",
+  "claim": "Source 61: [P] AllianceBernstein selects SimCorp One technology platform . AllianceBernstein press release, February 2026. https://alliancebernsteinholdinglp.gcs-web.com/news-releases/news-release-details/alliancebernstein-selects-simcorp-one-technology-platform",
+  "sources": "-",
+  "earlier_first_verdict": "CONFIRMED (note)",
+  "earlier_final_verdict": "CONFIRMED (note)",
+  "earlier_receipt": "https://www.simcorp.com/about-us/news/2026/alliancebernstein-selects-simcorp-one : \"AllianceBernstein selects SimCorp One technology platform for investment teams\" ... \"NASHVILLE, Tenn., February 17, 2026 - AllianceBernstein Holding L.P. (NYSE: AB) and AllianceBernstein L.P. (\u201cAB\u201d) ... today announced it has selected global financial technology company SimCorp as its core investment technology partner.\"",
+  "earlier_finding": "The cited gcs-web URL returns 403 to curl and WebFetch, so it could not be opened directly. SimCorp's copy confirms the release and its date (Feb 17, 2026). The full headline adds 'for investment teams'. Optionally add the SimCorp URL as a fallback."
+ },
+ {
+  "id": "s63",
+  "page": "19",
+  "location": "Sources register, section P, entry 63",
+  "claim": "Source 63: [P] Build vs buy: a decision framework (insight page) . BlackRock Aladdin, August 2026. https://www.blackrock.com/aladdin/discover/insights/build-vs-buy-decision-framework",
+  "sources": "-",
+  "earlier_first_verdict": "CONFIRMED (note)",
+  "earlier_final_verdict": "CONFIRMED (note)",
+  "earlier_receipt": "https://www.blackrock.com/aladdin/discover/insights/build-vs-buy-decision-framework : <meta name=\"pageTitle\" content=\"Build vs Buy Framework for Asset Managers\">; <meta name=\"publicationDate\" content=\"1786639355081\"> (= 2026-08-13 UTC); heading \"Build vs buy is no longer a binary question\"",
+  "earlier_finding": "The date is correct. The title is paraphrased: the page title is 'Build vs Buy Framework for Asset Managers'. Consider using it."
+ },
+ {
+  "id": "s66",
+  "page": "19",
+  "location": "Sources register, section P, entry 66",
+  "claim": "Source 66: [P] FactSet developer portal . FactSet, as of October 8, 2026. https://developer.factset.com",
+  "sources": "-",
+  "earlier_first_verdict": "CONFIRMED (note)",
+  "earlier_final_verdict": "CONFIRMED (note)",
+  "earlier_receipt": "https://developer.factset.com (HTTP 200): <title>FactSet Developer Portal | Developer</title>",
+  "earlier_finding": "The portal exists under this title. The 'as of October 8, 2026' access date cannot be checked independently."
+ }
+]

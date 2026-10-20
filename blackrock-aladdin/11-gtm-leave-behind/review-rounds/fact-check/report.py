@@ -1,6 +1,6 @@
 import json,html,collections
 S="/tmp/claude-0/-home-user-ai-game/44510f87-22a4-5476-9273-389e23c654a8/scratchpad/fc"
-d=json.load(open(S+"/compiled.json")); fin=d["fin"]; cl=d["claims"]
+d=json.load(open(S+"/compiled_redo.json")); fin=d["fin"]; cl=d["claims"]
 E=lambda s: html.escape(s or "")
 OBS=["about a day","reasons I cannot see","How many clients use the APIs today","Learning about it from outside"]
 def obsolete(c): return any(k in c for k in OBS)
@@ -11,12 +11,16 @@ V=["CONFIRMED","CONFIRMED (note)","CORPUS-ONLY","PARTLY","UNVERIFIED","WRONG"]
 def row(i):
     f=fin[i]; c=cl[i]
     ob=' <span class="ob">text since changed</span>' if obsolete(f["claim"]) else ""
-    moved="" if f["first"]==f["final"] else f' <span class="mv">first check: {E(f["first"])}</span>'
+    moved=(f' <span class="mv">before web-search redo: {E(f["pre_redo"])}</span>' if f.get("redo") and f["pre_redo"]!=f["final"] else ("" if f["first"]==f["final"] else f' <span class="mv">first check: {E(f["first"])}</span>'))
+    moved+=' <span class="ob">re-checked with web search</span>' if f.get("redo") else ""
     return (f'<article class="f"><header><span class="id">{E(i)}</span> <span class="pg">Page {pg(i)}</span> '
             f'<span class="loc">{E(c["loc"])}</span>{moved}{ob}</header>'
             f'<p class="cl">{E(f["claim"])}</p><p class="fx"><b>Finding.</b> {E(f["correction"])}</p>'
             f'<p class="rc"><b>Receipt.</b> {E(f["receipt"])}</p></article>')
 sec=[]
+chg=sorted([i for i in fin if fin[i].get("redo") and fin[i]["pre_redo"]!=fin[i]["final"]],key=order)
+nredo=sum(1 for v in fin.values() if v.get("redo"))
+sec.append(f'<section><h2>Changed by the web-search redo <span class="n">{len(chg)}</span></h2><p class="blurb">{nredo} claims first checked without web search were checked again with it. These are the ones whose verdict changed. Each also appears in its verdict group below.</p>'+"".join(row(i) for i in chg)+'</section>')
 for v,title,blurb in [("WRONG","Wrong","A source contradicts the claim. Both checkers agree unless noted."),
                       ("PARTLY","Partly wrong","Part of the claim holds. The finding names the words that do not, or a citation that does not support the sentence."),
                       ("UNVERIFIED","Unverified","Not contradicted, but neither checker found a source."),
@@ -45,8 +49,8 @@ ul{{padding-left:20px}} li{{margin:4px 0}}
 <li>133 agents each checked six claims, on the open web first, and had to quote the words that support or contradict each one.</li>
 <li>A second, independent agent re-checked all 199 claims the first pass did not confirm, and tried to overturn the first verdict.</li>
 <li>Claims were taken from the version with the page 7 cut (v7). Text changed since then is marked "text since changed". Sources numbered 64 to 70 here are 65 to 71 in the current document, because the Aladdin Graph posting became source 64.</li>
-<li>Part way through, the shared web-search allowance ran out. Later checkers fetched pages directly instead, and some say so in their receipts.</li></ul>
-<table><tr><th>Verdict</th><th>First check</th><th>After re-check</th></tr>{tbl}</table>
+<li>Part way through, the shared web-search allowance ran out. Every claim checked after that point, 274 in all, was checked again with web search, by a fresh agent capped at two searches per claim.</li></ul>
+<table><tr><th>Verdict</th><th>First check</th><th>Final</th></tr>{tbl}</table>
 {"".join(sec)}
 </body></html>'''
 open(S+"/FACT_CHECK_FINDINGS.html","w").write(doc); print("written", len(doc))

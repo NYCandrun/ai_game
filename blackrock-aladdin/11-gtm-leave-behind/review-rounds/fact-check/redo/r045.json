@@ -1,0 +1,57 @@
+[
+ {
+  "id": "s16",
+  "page": "18",
+  "location": "Sources register, section S, entry 16",
+  "claim": "Source 16: [S] Data: the key ingredient (Never Done podcast, with Snowflake; published transcript) . Richard Newman, General Manager, Aladdin Studio, BlackRock, January 8, 2025. https://www.blackrock.com/aladdin/discover/podcast/snowflake-podcast-data-the-key-ingredient Quoted at 0:23, 1:32, 1:54, 2:00.",
+  "sources": "-",
+  "earlier_first_verdict": "CONFIRMED (note)",
+  "earlier_final_verdict": "CONFIRMED (note)",
+  "earlier_receipt": "https://www.blackrock.com/aladdin/discover/podcast/snowflake-podcast-data-the-key-ingredient : \"Never Done by Aladdin\u00ae\" / \"Christopher Napoli, Head of Wealth & Asset Management, Snowflake, and Richard Newman, General Manager, Aladdin Studio, discuss the key role of data\" / \"Read the full transcript\". RSS https://rss.art19.com/aladdin-client-stories : item \"Data: the key ingredient\", \"<pubDate>Wed, 08 Jan 2025 22:48:19 -0000</pubDate>\", enclosure episodes/64a15752-95b5-4f72-bb9b-b2d4994500a9.mp3. Timestamps (corpus) /home/user/ai_game/blackrock-aladdin/04-transcripts/timestamped/64a15752-95b5-4f72-bb9b-b2d4994500a9.mp3.ts.txt: \"[00:23] and the Aladdin data cloud specifically comes in,\" \"[01:32] what's our key, it does start with iBoard.\" \"[01:54] we're releasing soon,\" \"[02:00] That's all part of the studio umbrella.\"",
+  "earlier_finding": "Title, speaker, role, series, transcript and date are confirmed on the web. The BlackRock page shows no date and its published transcript has no timestamps. The four timestamps match only our local transcript of the same Art19 mp3 (same UUID), so they are corpus-only. Suggest saying the timestamps refer to the episode audio, not to the published transcript."
+ },
+ {
+  "id": "s18",
+  "page": "18",
+  "location": "Sources register, section P, entry 18",
+  "claim": "Source 18: [P] iShares V plc prospectus (Aladdin Provider fees paid by service providers) . BlackRock, 2026. https://www.blackrock.com/uk/literature/prospectus/ishares-v-plc-prospectus-en.pdf",
+  "sources": "-",
+  "earlier_first_verdict": "CONFIRMED (note)",
+  "earlier_final_verdict": "CONFIRMED (note)",
+  "earlier_receipt": "https://www.blackrock.com/uk/literature/prospectus/ishares-v-plc-prospectus-en.pdf (664 pp.): \"iShares V Public Limited Company / Prospectus / Dated 3 September 2026\"; section 'Conflicts of interest of the Manager' > 'Provider Aladdin': \"Custodial and fund administration service providers may use Provider Aladdin, a form of Aladdin software, to access data used by the Investment Manager and the Manager. Each service provider remunerates BlackRock Group for the use of Provider Aladdin.\"",
+  "earlier_finding": "The substance is confirmed. The prospectus says 'Provider Aladdin', not 'Aladdin Provider' (BlackRock markets the product as 'Aladdin\u00ae Provider' at /aladdin/platforms/products/aladdin-provider), and it says the providers 'remunerate' BlackRock rather than paying 'fees'. Optional: reword to '(Provider Aladdin: service providers remunerate BlackRock)' and add 'dated 3 September 2026'."
+ },
+ {
+  "id": "s20",
+  "page": "18",
+  "location": "Sources register, section S, entry 20",
+  "claim": "Source 20: [S] How can tech transform numbers into insightful narratives? (Big Little Questions, Aladdin Accounting episode; machine transcription) . David Schneid and Daniel Shannon, Aladdin Accounting, BlackRock, undated; the recording does not label which of the two is speaking. https://www.blackrock.com/aladdin/discover/expertise/big-little-questions Quoted at 0:32, 1:05, 1:23.",
+  "sources": "-",
+  "earlier_first_verdict": "CONFIRMED (note)",
+  "earlier_final_verdict": "CONFIRMED (note)",
+  "earlier_receipt": "https://www.blackrock.com/aladdin/discover/expertise/big-little-questions: \"How can tech transform numbers into insightful narratives? David Schneid and Daniel Shannon explore the importance of technology not only providing data but deriving actionable insights from that data. The episode explores our role as \u201cdata managers\u201d\"; video src \"https://dwu7l6as21h3p.cloudfront.net/blq_accounting-232.1080p.wide.mp4\". Timestamps (corpus) /home/user/ai_game/blackrock-aladdin/04-transcripts/timestamped/blq_accounting-232.720p.wide.mp4.ts.txt: \"[00:32] Our clients are CFOs, they're controllers,\" / \"[01:05] We actually look at our jobs as we are the managers.\" / \"[01:23] And what we've built is a process where you can go from that first order\"",
+  "earlier_finding": "Title, speakers and URL confirmed on the web; the page shows no date. 'Aladdin Accounting' comes from the media filename (blq_accounting) and the content; the page does not state the speakers' unit, and no second source was found because the WebSearch budget ran out. Timestamps checked only against the local machine transcript, since the page's subtitle track is empty. At 1:05 the timestamped Whisper text says 'the managers', but BlackRock's description and the plain transcript say 'data managers'. Optional: note that the timestamps come from the author's own transcript."
+ },
+ {
+  "id": "s24",
+  "page": "18",
+  "location": "Sources register, section P, entry 24",
+  "claim": "Source 24: [P] Aladdin APIs product page . BlackRock, as of October 2026. https://www.blackrock.com/aladdin/platforms/products/apis",
+  "sources": "-",
+  "earlier_first_verdict": "CONFIRMED (note)",
+  "earlier_final_verdict": "CONFIRMED (note)",
+  "earlier_receipt": "https://www.blackrock.com/aladdin/platforms/products/apis (HTTP 200): title \"API Solutions | Aladdin by BlackRock\"; body \"Aladdin APIs allow for programmatic access to Aladdin operational services, including trades, orders, and compliance rules.\"",
+  "earlier_finding": "BlackRock titles the page 'API Solutions', so 'Aladdin APIs product page' is a description, not the title. Optional: name it by its title."
+ },
+ {
+  "id": "s32",
+  "page": "18",
+  "location": "Sources register, section P, entry 32",
+  "claim": "Source 32: [P] Job posting: Senior Product Director, Aladdin Studio Developer (New York) . BlackRock Careers, as of October 2026. https://careers.blackrock.com/job/new-york/senior-product-director-aladdin-studio-developer/45831/96232273856",
+  "sources": "-",
+  "earlier_first_verdict": "CONFIRMED (note)",
+  "earlier_final_verdict": "CONFIRMED (note)",
+  "earlier_receipt": "https://careers.blackrock.com/job/new-york/senior-product-director-aladdin-studio-developer/45831/96232273856 (HTTP 200, 2026-10-20): \"Senior Product Director - Aladdin Studio Developer ... Location: New York, New York ... Job Requisition #: R264530 Date posted: Sep. 09, 2026\"; \"Set and evolve the vision for Studio Developer as Aladdin's extensibility layer\"",
+  "earlier_finding": "The entry is fine (posted September 9, 2026, still live in October 2026). In the posting, Studio Developer, not Studio as a whole, is 'Aladdin's extensibility layer'. Consider rewording the p.7 body: 'calls Studio Developer \"Aladdin's extensibility layer\"'."
+ }
+]

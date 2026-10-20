@@ -1,0 +1,57 @@
+[
+ {
+  "id": "p08-31",
+  "page": "8",
+  "location": "Exhibit 9 title",
+  "claim": "Aladdin won the tenders of three public pension bodies",
+  "sources": "43,44,45",
+  "earlier_first_verdict": "PARTLY",
+  "earlier_final_verdict": "PARTLY",
+  "earlier_receipt": "PPF [43]: https://www.find-tender.service.gov.uk/api/1.0/ocdsReleasePackages/062522-2025 (OCDS copy of the notice; the HTML page returns 403). Supplier on both lots is \"BlackRock Financial Management, Inc\", party url \"http://www.blackrock.com/aladdin\". Nest [44]: https://www.find-tender.service.gov.uk/api/1.0/ocdsReleasePackages/035311-2023 names supplier \"BlackRock Financial Management Inc\" for \"Provision of Investment Risk Platform Services\", with no Aladdin. Aladdin appears only in Nest's own press release (not cited): \"Nest will use BlackRock Aladdin to manage the risk of its entire investment strategy on a single platform\" (nestpensions.org.uk, 13 Nov 2023). PBGC [45]: https://api.usaspending.gov/api/v2/awards/CONT_AWD_16PBGC23C0006_1665_-NONE-_-NONE-/ has \"INVESTMENT RISK MANAGEMENT SYSTEM\" with recipient \"BLACKROCK FINANCIAL MANAGEMENT INC\". The 2017 predecessor 16PBGC17C5002 reads \"IGF::CT::IGF INVESTMENT RISK MANAGEMENT SYSTEM (IRMS)\". Neither names Aladdin. A USAspending keyword search for \"aladdin\" returned no PBGC award, and pbgc.gov site search for \"aladdin\" said \"Your search yielded no results\".",
+  "earlier_finding": "The citations support \"BlackRock won\" all three. They support \"Aladdin\" only for PPF, through the contractor URL. For Nest, cite the Nest press release. For PBGC, no public source names Aladdin, so retitle the exhibit \"BlackRock won the tenders of three public pension bodies\" or describe PBGC as BlackRock's \"Investment Risk Management System\". Side checks: Nest got 7 bids (so \"against six other bids\" holds), PPF got 2 bids on lot 1 and 4 on lot 2, and the PBGC 2017 award exists. Limit: the web-search budget was used up, so the PBGC check relied on the USAspending API and pbgc.gov site search, not a general search engine."
+ },
+ {
+  "id": "p08-40",
+  "page": "8",
+  "location": "Exhibit 9 row US Pension Benefit Guaranty Corporation col 'Year'",
+  "claim": "2017 and 2023",
+  "sources": "45",
+  "earlier_first_verdict": "PARTLY",
+  "earlier_final_verdict": "PARTLY",
+  "earlier_receipt": "https://api.usaspending.gov/api/v2/awards/CONT_AWD_16PBGC23C0006_1665_-NONE-_-NONE-/ (source 45): \"date_signed\": \"2023-03-27\". https://api.usaspending.gov/api/v2/awards/CONT_AWD_16PBGC17C5002_1665_-NONE-_-NONE-/ (not cited): \"piid\": \"16PBGC17C5002\", \"description\": \"IGF::CT::IGF INVESTMENT RISK MANAGEMENT SYSTEM (IRMS)\", \"date_signed\": \"2017-09-28\"",
+  "earlier_finding": "Both years are right, but source 45 only shows 2023. Add USAspending award 16PBGC17C5002 as a source for 2017."
+ },
+ {
+  "id": "p08-41",
+  "page": "8",
+  "location": "Exhibit 9 row US Pension Benefit Guaranty Corporation col 'Outcome'",
+  "claim": "Aladdin won in 2017 and again in 2023",
+  "sources": "45",
+  "earlier_first_verdict": "PARTLY",
+  "earlier_final_verdict": "PARTLY",
+  "earlier_receipt": "Source 45: \"recipient_name\": \"BLACKROCK FINANCIAL MANAGEMENT INC\", \"description\": \"INVESTMENT RISK MANAGEMENT SYSTEM\", \"number_of_offers_received\": \"4\", \"extent_competed_description\": \"FULL AND OPEN COMPETITION\". 16PBGC17C5002: \"recipient_name\": \"BLACKROCK FINANCIAL MANAGEMENT INC\", \"number_of_offers_received\": \"4\", \"extent_competed_description\": \"FULL AND OPEN COMPETITION\"",
+  "earlier_finding": "BlackRock won both competed IRMS awards (4 offers each), but neither federal record names Aladdin, and source 45 does not cover 2017. I could not run a web search for a PBGC-Aladdin link because the turn's search budget was used up. Guessed PBGC privacy-impact-assessment URLs returned 404, and the corpus mentions PBGC only in drafts of this document. Say \"BlackRock won PBGC's Investment Risk Management System contract in 2017 and again in 2023\" and cite both awards, or add a source that names Aladdin."
+ },
+ {
+  "id": "p08-42",
+  "page": "8",
+  "location": "Exhibit 9 row US Pension Benefit Guaranty Corporation col 'Outcome'",
+  "claim": "at an unchanged price",
+  "sources": "45",
+  "earlier_first_verdict": "PARTLY",
+  "earlier_final_verdict": "PARTLY",
+  "earlier_receipt": "POST https://api.usaspending.gov/api/v2/transactions/. 16PBGC17C5002: \"2017-09-28 0 1389350.64\"; \"2018-07-16 P00001 1000.0\" + \"2018-07-30 P00002 1388350.64\"; \"2019-08-13 P00007 1387500.0\"; \"2020-08-31 P00010 1387500.0\"; \"2021-09-24 P00013 1387500.0\"; \"2022-08-18 P00014 693750.0 RISK MANAGEMENT SERVICES\". 16PBGC23C0006: \"2023-03-27 0 1389350.64\"; \"2024-01-22 P00001 0.0 INVESTMENT RISK MANAGEMENT SYSTEM: PRICE REDUCTION AND ADDED CLAUSE.\"; \"2024-03-21 P00002 1387500.0\"; \"2024-06-12 P00003 -1850.64 ... CANCELLED LINE ITEM\"; \"2025-03-05 P00004 1387500.0\"; \"2026-03-10 P00006 1387500.0\"",
+  "earlier_finding": "The price really did stay flat. Both contracts start at $1,389,350.64 and then pay $1,387,500 per option year; the 2022 bridge ($693,750) is half a year at that rate. Source 45 alone cannot show the comparison, so cite the 2017 award too. Small addition: the 2017 contract's second year also came to $1,389,350.64 (P00001 + P00002), and the $1,850.64 above $1,387,500 in the 2023 base was a cancelled line item that was later de-obligated."
+ },
+ {
+  "id": "p08-43",
+  "page": "8",
+  "location": "Exhibit 9 note",
+  "claim": "Source: UK Find a Tender 43, 44; USAspending.gov 45",
+  "sources": "43,44,45",
+  "earlier_first_verdict": "PARTLY",
+  "earlier_final_verdict": "PARTLY",
+  "earlier_receipt": "fc/sources.tsv rows 43-45: 43 \"Contract award notice 062522-2025 ... Pension Protection Fund\"; 44 \"Contract award notice 035311-2023, Nest Corporation\"; 45 \"Award 16PBGC23C0006 ... performance March 2023 to March 2027\". USAspending 16PBGC23C0006: \"date_signed\": \"2023-03-27\"",
+  "earlier_finding": "The attributions are right, but 45 covers only the 2023 PBGC award. Add USAspending award 16PBGC17C5002 (https://api.usaspending.gov/api/v2/awards/CONT_AWD_16PBGC17C5002_1665_-NONE-_-NONE-/) to the note."
+ }
+]

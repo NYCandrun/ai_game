@@ -1,0 +1,57 @@
+[
+ {
+  "id": "p05-51",
+  "page": "5",
+  "location": "Exhibit 4 row 'Event-driven APIs'",
+  "claim": "Woodhead names \u201cAPIs events\u201d as one part",
+  "sources": "1",
+  "earlier_first_verdict": "CORPUS-ONLY",
+  "earlier_final_verdict": "CONFIRMED (note)",
+  "earlier_receipt": "https://www.youtube.com/watch?v=Me_H_-E6lSg, English auto-captions downloaded fresh with yt-dlp on 2026-10-20 (fc/dl/b030r/ytnew.en.vtt L1089-1098, 00:04:49.600 --> 00:04:52.550): \"exposes everything Aladdin knows how to\" / \"do as a set of APIs events. The Aladdin\"",
+  "earlier_finding": "The words are on the open web: the live YouTube auto-captions download now, so the verdict moves up from CORPUS-ONLY. These are ASR captions, and 'APIs events' is probably 'APIs and events'. Keep the auto-captions caveat, or quote it as 'APIs [and] events'."
+ },
+ {
+  "id": "p07-03",
+  "page": "7",
+  "location": "Exhibit 6 row Woodhead col 'What they add'",
+  "claim": "Woodhead: Gives the three-part definition quoted above",
+  "sources": "1",
+  "earlier_first_verdict": "CORPUS-ONLY",
+  "earlier_final_verdict": "CONFIRMED (note)",
+  "earlier_receipt": "https://www.youtube.com/watch?v=Me_H_-E6lSg (YouTube 'English (auto-generated)' track, fetched live through the YouTube player API): [4:36] \"So we think about Aladdin today as a platform and Aladdin Studio is essentially the user experience that allows people to think of Aladdin as a platform. It exposes everything Aladdin knows how to do as a set of APIs events. The Aladdin data cloud built on top of Snowflake takes all of that information that's generated through our analytics factory and inside of Aladdin and pushes that into Snowflake. And increasingly we're building a set of developer tools.\" [5:19] \"So the third pillar of studio is how do I bring those people in?\" Page publishDate \"2025-11-11T05:43:17-08:00\"; description: \"David Woodhead, Head of Engineering for Aladdin Studio at BlackRock\".",
+  "earlier_finding": "No change needed. The quote is on the web word for word, and the speaker's own 'third pillar of studio' backs the three-part reading. Keep the auto-captions label. The register's YouTube timings (4:36 to 4:58) are correct for the YouTube source cited. The first checker's 05:18 is the timing on the podcast audio."
+ },
+ {
+  "id": "p07-14",
+  "page": "7",
+  "location": "Exhibit 6 row Khara col 'What they add'",
+  "claim": "Khara: Named \"the Aladdin studio estate\" as a focus",
+  "sources": "30",
+  "earlier_first_verdict": "CORPUS-ONLY",
+  "earlier_final_verdict": "CONFIRMED (note)",
+  "earlier_receipt": "Primary recording embedded on https://www.blackrock.com/aladdin/discover (video file https://dwu7l6as21h3p.cloudfront.net/BSTAwards2023WinnerInterview-606.1080p.wide.mp4), my own faster-whisper transcription: [18:37] \"What we call the Aladdin Studio Estate,\" [18:40] \"we think is going to this year be a major, major unlock,\" ... [18:59] \"And today, these four or five product-oriented themes\" [19:03] \"are going to be where we're very, very focused in 2024.\" This matches corpus BSTAwards2023WinnerInterview-606.720p.wide.mp4.ts.txt:198.",
+  "earlier_finding": "No wording change. The words come from the official recording on BlackRock's own page, so the claim does not rest on the corpus alone. Both transcripts are machine transcriptions, so keep the 'machine transcription' label on source 30."
+ },
+ {
+  "id": "p07-15",
+  "page": "7",
+  "location": "Exhibit 6 row Khara col 'What they add'",
+  "claim": "Khara: meaning programmatic access \"at machine scale\"",
+  "sources": "30",
+  "earlier_first_verdict": "CORPUS-ONLY",
+  "earlier_final_verdict": "CONFIRMED (note)",
+  "earlier_receipt": "Same official recording, my own transcription: [18:42] \"because we're finding that more users are craving\" [18:45] \"this ability to interact with our data,\" [18:48] \"with their data, with reporting with dashboards\" [18:52] \"on a programmatic basis at machine scale\" [18:55] \"over and above what they get\" [18:57] \"through our front-end applications as well.\" This matches corpus ts.txt:200.",
+  "earlier_finding": "No change. 'Programmatic access' is a fair paraphrase of 'interact with ... data ... on a programmatic basis'."
+ },
+ {
+  "id": "p07-18",
+  "page": "7",
+  "location": "Exhibit 6 row Miller col 'What they add'",
+  "claim": "Miller: Data Cloud replaced \"flat files ... FTP and related transfers\"",
+  "sources": "31",
+  "earlier_first_verdict": "CORPUS-ONLY",
+  "earlier_final_verdict": "CONFIRMED (note)",
+  "earlier_receipt": "https://www.youtube.com/watch?v=3iXd7a7_F6g (title \"BlackRock Transforms Client Data Delivery With Snowflake's Aladdin Data Cloud\", owner \"Snowflake Inc.\", publishDate \"2026-05-21\"). The description says: \"BlackRock, the world's largest asset manager, replaced legacy flat files and FTP transfers with Snowflake's Aladdin Data Cloud to deliver client and market data faster and more securely.\" The exact spoken words appear only in corpus /home/user/ai_game/blackrock-aladdin/04-transcripts/timestamped/yt_3iXd7a7_F6g.m4a.ts.txt:10 [00:36] \"We sent flat files, we sent large schema definitions, FTP and related transfers,\"",
+  "earlier_finding": "No wording change. The video's own page confirms the substance; the exact words 'and related transfers' can be checked only against our machine transcript, because YouTube audio and captions are blocked. Side notes: source 31 should be dated 21 May 2026, not 'undated'. The description gives Miller's title as 'Global Head of Data Factory and Enterprise Data Platforms', which bears on p07-17."
+ }
+]

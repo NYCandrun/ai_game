@@ -1,0 +1,57 @@
+[
+ {
+  "id": "s05",
+  "page": "18",
+  "location": "Sources register, section P, entry 5",
+  "claim": "Source 5: [P] Cortex Agents MCP server, product documentation . Snowflake, as of October 2026. https://docs.snowflake.com/en/user-guide/snowflake-cortex/cortex-agents-mcp",
+  "sources": "-",
+  "earlier_first_verdict": "CONFIRMED (note)",
+  "earlier_final_verdict": "CONFIRMED (note)",
+  "earlier_receipt": "https://docs.snowflake.com/en/user-guide/snowflake-cortex/cortex-agents-mcp (HTTP 200, canonical): H1 \"Snowflake-managed MCP server\"; \"You can configure the MCP server to serve Cortex Analyst, Cortex Search, and Cortex Agents as tools\"; \"Snowflake recommends exposing a Cortex Agent as the client-facing MCP tool\"; \"As of August 20, 2026, the server returns tools/call responses as a Server-Sent Events (SSE) stream\"",
+  "earlier_finding": "The URL is live and supports how the document uses it. The page's own title is \"Snowflake-managed MCP server\". Consider using that title."
+ },
+ {
+  "id": "s06",
+  "page": "18",
+  "location": "Sources register, section P, entry 6",
+  "claim": "Source 6: [P] asdk_plugin_* add-on packages, version 2.0.0b3 (11 packages holding 54 Swagger 2.0 specifications) . PyPI, unpacked October 2026. https://pypi.org/search/?q=asdk_plugin",
+  "sources": "-",
+  "earlier_first_verdict": "CONFIRMED (note)",
+  "earlier_final_verdict": "CONFIRMED (note)",
+  "earlier_receipt": "The PyPI simple index lists 11 asdk-plugin-* projects (accounting, analytics, clients, compliance, data, investment-operations, investment-research, platform, portfolio, portfolio-management, trading). https://pypi.org/pypi/asdk-plugin-<name>/json shows version \"2.0.0b3\", upload_time \"2026-01-22\". Fresh pip download and unzip into fc/dl/b122/unz, counted by fc/dl/b122/count.py: \"total specs 54 versions {'2.0': 54} pkgs 11\". Example: unz/asdk_plugin_accounting-2.0.0b3-py3-none-any/asdk_plugin_accounting/agraph/accounting/transactions/abor_lot/v1/AborLotAPI/swagger.json:11 \"swagger\": \"2.0\",",
+  "earlier_finding": "The counts reproduce exactly. The cited PyPI search URL shows a JavaScript challenge to non-browsers. A per-project URL (for example https://pypi.org/project/asdk-plugin-accounting/) is a sturdier link."
+ },
+ {
+  "id": "s12",
+  "page": "18",
+  "location": "Sources register, section P, entry 12",
+  "claim": "Source 12: [P] Aladdin Wealth launches AI-enabled commentary tool at Morgan Stanley . BlackRock press release, October 2, 2025. https://www.blackrock.com/aladdin/discover/press-release/aladdin-wealth-launches-ai-enabled-commentary-tool-at-morgan-stanley",
+  "sources": "-",
+  "earlier_first_verdict": "CONFIRMED (note)",
+  "earlier_final_verdict": "CONFIRMED (note)",
+  "earlier_receipt": "https://www.blackrock.com/aladdin/discover/press-release/aladdin-wealth-launches-ai-enabled-commentary-tool-at-morgan-stanley (HTTP 200): \"Aladdin Wealth\u2122 Launches AI-Enabled Commentary Tool for Wealth Advisors; Morgan Stanley\u2019s Portfolio Risk Platform First to Implement\" ... \"NEW YORK \u2013 2 October 2025\"",
+  "earlier_finding": "The date and URL are correct. The register's title is a shortened version of the release's headline (it follows the URL slug). Optionally use the full headline."
+ },
+ {
+  "id": "s13",
+  "page": "18",
+  "location": "Sources register, section P, entry 13",
+  "claim": "Source 13: [P] BlackRock Aladdin expands private credit solutions on Preqin . Preqin press release, May 2026. https://www.preqin.com/about/press-release/blackrock-aladdin-expands-private-credit-solutions-on-preqin-for-greater-transparency-and-insights-across-the-asset-class",
+  "sources": "-",
+  "earlier_first_verdict": "CONFIRMED (note)",
+  "earlier_final_verdict": "CONFIRMED (note)",
+  "earlier_receipt": "https://www.preqin.com/about/press-release/blackrock-aladdin-expands-private-credit-solutions-on-preqin-for-greater-transparency-and-insights-across-the-asset-class : \"PRESS RELEASE / BlackRock Aladdin Expands Private Credit Solutions on Preqin for Greater Transparency and Insights across the Asset Class / May 06, 2026 ... London, 6 May 2026 \u2013 BlackRock Aladdin today announced new private credit capabilities on Preqin\"; og:title \"BlackRock Aladdin Expands Private Credit Solutions on Preqin\"",
+  "earlier_finding": "No fix needed. The title is the page's short og:title; the full headline adds 'for Greater Transparency and Insights across the Asset Class'. Optionally give the exact date, 6 May 2026."
+ },
+ {
+  "id": "s14",
+  "page": "18",
+  "location": "Sources register, section P, entry 14",
+  "claim": "Source 14: [P] Aladdin Studio product page . BlackRock, as of October 2026. https://www.blackrock.com/aladdin/platforms/products/aladdin-studio",
+  "sources": "-",
+  "earlier_first_verdict": "CONFIRMED (note)",
+  "earlier_final_verdict": "CONFIRMED (note)",
+  "earlier_receipt": "https://www.blackrock.com/aladdin/platforms/products/aladdin-studio (HTTP 200, fetched 2026-10-20): \"Aladdin Studio gives you the data, tools, and governance support to make Aladdin your own.\" / \"Aladdin Studio APIs enable you to build your own solutions.\"",
+  "earlier_finding": "No fix needed. The page's HTML title is 'Unlock data with Studio Platform | Aladdin by BlackRock'; 'Aladdin Studio product page' is a fair description."
+ }
+]

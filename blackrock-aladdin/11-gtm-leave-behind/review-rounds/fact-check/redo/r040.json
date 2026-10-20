@@ -1,0 +1,57 @@
+[
+ {
+  "id": "p15-63",
+  "page": "15",
+  "location": "Exhibit 17 row Clearwater col 'Public docs'",
+  "claim": "Clearwater, Public docs: 0 (none or blocked)",
+  "sources": "-",
+  "earlier_first_verdict": "CONFIRMED (note)",
+  "earlier_final_verdict": "CONFIRMED (note)",
+  "earlier_receipt": "https://developer.clearwateranalytics.com/ : curl returns HTTP 403, body \"Error code: 1006\" (Cloudflare). WebFetch: \"The server returned HTTP 403 Forbidden.\" https://cwan.com/roles/technology/: \"Connect Clearwater to your existing tools and data ecosystem with open APIs, pre-built adapters, and data feeds\", but the page links to no docs.",
+  "earlier_finding": "The 0 means 'blocked', not 'none'. A developer portal exists but refuses automated access. Consider naming it in the footnote that already says Clearwater pages blocked automated access."
+ },
+ {
+  "id": "p15-64",
+  "page": "15",
+  "location": "Exhibit 17 row Clearwater col 'API catalog'",
+  "claim": "Clearwater, API catalog: 0 (none or blocked)",
+  "sources": "-",
+  "earlier_first_verdict": "CONFIRMED (note)",
+  "earlier_final_verdict": "CONFIRMED (note)",
+  "earlier_receipt": "developer.clearwateranalytics.com and api.clearwateranalytics.com: HTTP 403. https://cwan.com/platform/overview/: \"our APIs and flexible architecture keep you in control\". No API catalog link appears on any of the 69 cwan.com sitemap pages.",
+  "earlier_finding": "The 0 means 'blocked'. A catalog may sit behind the blocked portal. The existing footnote covers this. Optionally name the portal."
+ },
+ {
+  "id": "p15-65",
+  "page": "15",
+  "location": "Exhibit 17 row Clearwater col 'Trial or sandbox'",
+  "claim": "Clearwater, Trial or sandbox: 0 (none or blocked)",
+  "sources": "-",
+  "earlier_first_verdict": "CONFIRMED (note)",
+  "earlier_final_verdict": "CONFIRMED (note)",
+  "earlier_receipt": "https://cwan.com/platform/gen-ai/ : \"See how Clearwater AI portfolio management collapses 25-hour reporting workflows into 15 minutes or less during a live demo.\" https://cwan.com/press-releases/clearwater-analytics-reports-agentic-ai-now-running-in-production-across-nearly-900-clients/ : \"Clients and prospects can learn more or request a demonstration at\". The cwan.com sitemaps (904 URLs) have a book-a-demo page and no trial, sandbox or sign-up page.",
+  "earlier_finding": "No change. This is a finding of absence. The only 'sandbox' found is inside Beacon's client docs (\"using the Sandbox integration directly within the docs\", on the cwan.com Beacon blog), which needs platform access. Optionally, add a Clearwater source to the exhibit's source line."
+ },
+ {
+  "id": "p15-66",
+  "page": "15",
+  "location": "Exhibit 17 row Clearwater col 'First API call without a contract'",
+  "claim": "Clearwater, First API call without a contract: 0 (none or blocked)",
+  "sources": "-",
+  "earlier_first_verdict": "CONFIRMED (note)",
+  "earlier_final_verdict": "CONFIRMED (note)",
+  "earlier_receipt": "https://developer.clearwateranalytics.com/ and https://api.clearwateranalytics.com/ both return HTTP 403 with the body \"error code: 1006\" (Cloudflare block). https://cwan.com/platform/overview/ : \"Whether you're building in Python or maintaining internal tools, our APIs and flexible architecture keep you in control.\"",
+  "earlier_finding": "No change. No public API reference, key sign-up or base URL was found, and the developer host blocks automated access, which matches the exhibit's caveat."
+ },
+ {
+  "id": "p15-67",
+  "page": "15",
+  "location": "Exhibit 17 row Clearwater col 'Sample code'",
+  "claim": "Clearwater, Sample code: 0 (none or blocked)",
+  "sources": "-",
+  "earlier_first_verdict": "CONFIRMED (note)",
+  "earlier_final_verdict": "CONFIRMED (note)",
+  "earlier_receipt": "https://github.com/clearwater-analytics has 8 public repos (tilt-demo, snippet-manager, devcontainer-java-example, golden-layout, JUTS, pdf-transforms, fisheye-clojure-syntax-highlighting, puppet-singularity), and none is an API client or SDK. PyPI JSON returns 404 for cwan, clearwater, clearwater-analytics, clearwater-api, cwan-api, beacon-platform and enfusion. GitHub repository search for \"Clearwater Analytics\" mcp: \"Your search did not match any repositories\".",
+  "earlier_finding": "No change. The GitHub org holds only general engineering repos, with no sample code for the Clearwater API."
+ }
+]

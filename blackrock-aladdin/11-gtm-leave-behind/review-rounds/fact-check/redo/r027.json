@@ -1,0 +1,57 @@
+[
+ {
+  "id": "p15-85",
+  "page": "15",
+  "location": "Exhibit 17 row Databricks col 'AI connector'",
+  "claim": "Databricks, AI connector: 2 (fully public or self-serve)",
+  "sources": "70",
+  "earlier_first_verdict": "PARTLY",
+  "earlier_final_verdict": "PARTLY",
+  "earlier_receipt": "Source 70 has no MCP or outside-connector text. The nav mentions \"AI Assistant\", which is Databricks' in-platform assistant and would score 0 under the exhibit's rule. https://docs.databricks.com/aws/en/agents/custom-agents/use-mcp-tools: \"To use MCPs from Claude Code, Codex, or another coding agent, choose your client in Supported coding agents . For other assistants and MCP clients, see Other MCP clients\". https://docs.databricks.com/aws/en/agents/mcp-tools (last updated Oct 8, 2026): \"Claude Code, Codex, or Cursor Add MCP tools to your coding agent.\" https://docs.databricks.com/aws/en/agents/mcp-tools/authentication-networking: \"On your computer, such as Claude Code, Codex CLI, or Cursor\"",
+  "earlier_finding": "The score of 2 is right. These are documented MCP servers for outside AI clients, not limited previews; only some system.ai tools need a Unity Gateway beta. The citation is wrong: source 70 does not say this. Cite docs.databricks.com/aws/en/agents/mcp-tools."
+ },
+ {
+  "id": "p15-93",
+  "page": "15",
+  "location": "Exhibit 17 row LSEG col 'AI connector'",
+  "claim": "LSEG, AI connector: 2 (fully public or self-serve)",
+  "sources": "68",
+  "earlier_first_verdict": "PARTLY",
+  "earlier_final_verdict": "PARTLY",
+  "earlier_receipt": "https://www.lseg.com/en/media-centre/press-releases/2025/lseg-announces-collaboration-with-anthropic (source 2): \"LSEG's MCP server, live in the Claude MCP Partner Directory from Monday 27 October\" and \"LSEG's AI-ready content will be accessible through MCP in a phased rollout, starting with LSEG Financial Analytics.\" Cited source 68 https://developers.lseg.com/en : 0 hits for mcp/claude/anthropic/model context. On the same portal, https://developers.lseg.com/en/api-catalog/lseg-financial-analytics/lseg-financial-analytics-apis/mcp (published 2025-12-03) has the title \"LSEG MCP | Developer Community\", the anchor \"#enabling-the-remote-lseg-mcp-server-to-claude-team-owner-specific\" and the body text \"Please sign in to explore content on this page.\"",
+  "earlier_finding": "The score of 2 stands. The first checker said source 68 has no mention of MCP; that is true of the cited home page only. The portal does host an 'LSEG MCP' page (found via sitemap.xml), but its content requires sign-in, so it is weak support. Add source 2 to the Exhibit 17 source line ('14, 66, 67, 68, 69, 70, 7, 57, 4'), which has no source that states the MCP server now. Optionally, also cite the portal's MCP page. Note that the data and the MCP docs need an LSEG licence or sign-in. No web search ran because the shared WebSearch budget was used up; the evidence comes from direct curl fetches."
+ },
+ {
+  "id": "p16-02",
+  "page": "16",
+  "location": "body para 1",
+  "claim": "The sources are BlackRock product pages, SEC filings, procurement notices, public code and packages on GitHub and PyPI, press releases, job postings, and transcripts of BlackRock recordings.",
+  "sources": "-",
+  "earlier_first_verdict": "PARTLY",
+  "earlier_final_verdict": "PARTLY",
+  "earlier_receipt": "sources.tsv has every listed category (14 \"Aladdin Studio product page\", 11 \"Form 10-K\", 43 \"Contract award notice\", 23 GitHub, 6 PyPI, 12 \"BlackRock press release\", 32 \"Job posting\", 16 \"published transcript\"), plus kinds the list leaves out: 10 \"BlackRock 2025 Investor Day presentation\", 47, 18 \"iShares V plc prospectus\", 22 \"Fivetran blog\", 25 \"Microsoft Cloud blog\", 37 \"The TRADE, 2016\", 55 \"Investing.com\", 66-70 competitor developer portals, 5/59 competitor docs. Recordings by others: 8 \"LangChain Interrupt 2025\", 21 \"third-party YouTube upload\", 1 \"Snowflake Data Cloud podcast\", 31 \"Snowflake video\".",
+  "earlier_finding": "The list is incomplete. Add investor presentations, a prospectus, competitors' developer pages, trade press and partner blogs. Correction to the first report: the roic.ai earnings-call transcripts (46, 48-51) are transcripts of BlackRock's own calls, so the existing phrase covers them and they are not missing. Suggested: 'transcripts of recordings and earnings calls featuring BlackRock speakers'."
+ },
+ {
+  "id": "p16-05",
+  "page": "16",
+  "location": "body para 2",
+  "claim": "AI agents pulled the pages, unpacked the packages, transcribed the recordings and drafted the text.",
+  "sources": "-",
+  "earlier_first_verdict": "PARTLY",
+  "earlier_final_verdict": "PARTLY",
+  "earlier_receipt": "Corpus only; this is the author's statement about method and nothing on the web can confirm it. /home/user/ai_game/blackrock-aladdin/04-transcripts/README.md:8 \"Published transcript or caption text was preferred; local Whisper (faster-whisper base.en) was used only where neither existed\". part2-cloudfront-and-podcasts/00_INDEX.md:3 \"Published transcripts and captions are BlackRock's own text. Everything marked Whisper is a local machine transcription of the downloaded audio\". Table rows: 47 Whisper, 26 published captions, 22 published transcript (95 in all; the first report said 45/21). part1-youtube-and-site/00_INDEX.md:3 \"Auto-generated YouTube captions\". Cited recordings in sources.tsv: 9 \"machine transcription\", 1 \"auto-captions\", 1 \"published captions\", 2 \"published transcript\".",
+  "earlier_finding": "The agents transcribed 9 of the 13 cited recordings and about half of the 95 in the part2 corpus. The rest are BlackRock's published captions or transcripts, or YouTube auto-captions. Suggested: 'transcribed the recordings that had no published transcript or captions'. The other three verbs fit the corpus."
+ },
+ {
+  "id": "p16-09",
+  "page": "16",
+  "location": "body para 3",
+  "claim": "[the Sources section] gives each source's grade (P, S or T), title, speaker and date.",
+  "sources": "-",
+  "earlier_first_verdict": "PARTLY",
+  "earlier_final_verdict": "PARTLY",
+  "earlier_receipt": "doc_layout.txt:844 \"2     P LSEG announces collaboration with Anthropic. LSEG press release, 2025.\" (a publisher, no speaker); :838 \"S is a BlackRock speaker on the record, with name and title as the recording gives them.\" Undated entries: :933 (entry 9) \"Replay page undated.\"; :946 (entry 20) \"Accounting, BlackRock, undated\"; :966 (entry 31) \"Engineering, BlackRock, undated.\"; :989 (entry 21) \"the channel \u201cjas jas,\u201d speaker not named, undated.\"",
+  "earlier_finding": "Only S entries name a speaker; P and T entries give a publisher, and entries 22 and 25 name an author. Entries 9, 20, 21 and 31 are undated. The first checker missed entry 9 and was wrong about entry 35, which is dated (:881 \"filed 2017 to 2026\"). Use: 'gives each source's grade (P, S or T), title, publisher or speaker, and date where one is known.' The same wording also appears at doc_layout.txt:51, which is outside this batch."
+ }
+]

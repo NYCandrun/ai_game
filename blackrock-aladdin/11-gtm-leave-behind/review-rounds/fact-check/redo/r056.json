@@ -1,0 +1,46 @@
+[
+ {
+  "id": "p03-16",
+  "page": "3",
+  "location": "Exhibit 1 title",
+  "claim": "Of Aladdin's eight named products (count: eight)",
+  "sources": "-",
+  "earlier_first_verdict": "WRONG",
+  "earlier_final_verdict": "WRONG",
+  "earlier_receipt": "https://www.blackrock.com/aladdin (fetched 2026-10-20) nav: \"Platforms / Aladdin / Aladdin Wealth / eFront / Preqin / Solutions / Accounting / Aladdin Studio / Aladdin Data Cloud / Whole Portfolio / Risk Management / Sustainability / Climate Risk / Aladdin Copilot / Private Markets Data\" (13 entries). There are also live product pages for \"Aladdin\u00ae Provider\" (/aladdin/platforms/products/aladdin-provider) and Aladdin Enterprise (/aladdin/platforms/solutions/aladdin-enterprise). The 10-K lists \"Aladdin \u00ae , Aladdin Wealth TM , eFront \u00ae , Preqin, and Cachematrix \u00ae\".",
+  "earlier_finding": "No source names eight products. Locally, \"eight named products\" appears only in the author's own drafts (e.g. /home/user/ai_game/blackrock-aladdin/11-gtm-leave-behind/review-rounds/short-text/apply.py:54). WebSearch was unavailable because the shared search budget was used up, so I checked the primary pages directly. Retitle as \"Eight of Aladdin's products: Studio is the one for people who write code\". BlackRock's nav lists 13, plus Provider and Enterprise."
+ },
+ {
+  "id": "p07-28",
+  "page": "7",
+  "location": "Exhibit 7 title",
+  "claim": "All four speakers name APIs, events and the Data Cloud as parts of Studio",
+  "sources": "-",
+  "earlier_first_verdict": "WRONG",
+  "earlier_final_verdict": "WRONG",
+  "earlier_receipt": "Khara BSTAwards ts.txt:52 [05:07] \"this big focus on open architecture and access to APIs\" (his only API mention; \"cloud\" appears only as \"cloud-based infrastructure\"; no Data Cloud). Newman, live published transcript https://www.blackrock.com/aladdin/discover/podcast/snowflake-podcast-data-the-key-ingredient: \"the data cloud and Aladdin data cloud specifically comes in, which is part of Studio\"; \"access those analytic APIs ... That's all part of the Studio umbrella\" (no events). Goel data_strat ts.txt: \"studio\" 0 hits. Woodhead scratchpad/yt/transcripts/01_From_Analytics_To_Intelligence_BlackRock_s_Journey_To_Data_P.md:24 \"It exposes everything Aladdin knows how to do as a set of APIs events. The Aladdin data cloud built on top of Snowflake ... the third pillar of studio\"",
+  "earlier_finding": "Only Woodhead names all three as parts of Studio. Newman names APIs and the Data Cloud, with no events. Goel names events, APIs and ADC but never says Studio. Khara never names events or the Data Cloud, so his Yes/Yes row is unsupported. Retitle Exhibit 7 (e.g. \"Speakers describe Studio as APIs, events and the Data Cloud\"), fix Khara's row and Newman's events cell, and fix the body sentence \"Four of the five describe Studio in the same terms\"."
+ },
+ {
+  "id": "p11-34",
+  "page": "11",
+  "location": "Exhibit 12 note",
+  "claim": "State Street, Clearwater and Bloomberg have none [no AI announcement], so they are not listed",
+  "sources": "-",
+  "earlier_first_verdict": "WRONG",
+  "earlier_final_verdict": "WRONG",
+  "earlier_receipt": "Clearwater: https://seekingalpha.com/pr/20295483 (Business Wire republication, Nov 05, 2025): \"CWAN Reports 800+ AI Agents Now Available for Deployment Across $10 Trillion in Client Assets\" ... \"today announced the global deployment of CWAN GenAI, a newly-launched, embedded generative AI platform\". Bloomberg: https://itbrief.co.uk/story/bloomberg-launches-enterprise-mcp-for-ai-data-access (13 Oct 2026): \"Bloomberg has launched Bloomberg Enterprise Model Context Protocol for its Data Licence Plus service, giving client AI agents access to licensed Bloomberg data through a standardised interface.\" State Street: its IR press-release feed for 2024-2026 has one AI headline, https://investors.statestreet.com/investor-news-events/press-releases/news-details/2025/EMAlpha-Selects-State-Streets-LINK-Platform-for-Integration-of-Multilingual-AI-Co-Pilot/default.aspx (May 08, 2025): \"EMAlpha will make its multilingual AI-powered information flow scanning and summarization tool available to LINK users\".",
+  "earlier_finding": "The sentence is false for Clearwater (CWAN GenAI, 800+ agents, Nov 2025) and Bloomberg (Enterprise MCP for Data License Plus, reported 13 Oct 2026, within the October 2026 as-of date). For State Street, 'none' is close to right: its only AI release covers a third-party tool on LINK. I could not confirm the first checker's Sept 29, 2026 release date for Bloomberg. Fix: add Bloomberg (and Clearwater) to Exhibit 12, which changes 'eight of nine', or reword to say they have announced AI access but are not in the author's sources."
+ },
+ {
+  "id": "p15-102",
+  "page": "15",
+  "location": "Exhibit 17 row FactSet col 'Call to action'",
+  "claim": "FactSet, Call to action: 0 (none or blocked)",
+  "sources": "66",
+  "earlier_first_verdict": "WRONG",
+  "earlier_final_verdict": "WRONG",
+  "earlier_receipt": "https://developer.factset.com/contact (data: /api/v2/content/page/contact): \"Please fill out the form below if you would like more information or would like to get a free trial to our APIs!\"; SEO: \"Interested in FactSet APIs? Contact us to know more and if you like to get free trial access to FactSet APIs!\". Home page buttons: \"Explore APIs\", \"Explore MCP\", \"Get Started Guide\". /learn/getting-started: \"Login to the Developer Portal with your corporate email address. If any issues, please contact your FactSet account manager or reach out using the contact form\"",
+  "earlier_finding": "Change to 1 (partial or after sign-up or approval): there is a public free-trial request form, but access follows approval or a corporate login. Also review FactSet's Trial or sandbox: 0 (outside this batch) against the same free-trial offer."
+ }
+]

@@ -1,0 +1,57 @@
+[
+ {
+  "id": "p13-17",
+  "page": "13",
+  "location": "body para 4",
+  "claim": "BlackRock serves hundreds of Aladdin clients",
+  "sources": "8,11",
+  "earlier_first_verdict": "CORPUS-ONLY",
+  "earlier_final_verdict": "CONFIRMED (note)",
+  "earlier_receipt": "https://www.youtube.com/watch?v=oyqeCHFM5U4 (YouTube English auto-captions, fetched through the youtubei player API and the timedtext URL it returned) [01:33]-[01:41]: \"is the biggest user of Aladdin, but we / also sell and support hundreds of / clients globally across 70 countries, / all using the Aladdin platform.\" Second confirmation: https://builtinsingapore.com/job/aladdin-client-experience-analyst/6923179 (BlackRock job posting): \"Over 300 unique clients\".",
+  "earlier_finding": "None needed. Source 8 can be checked on the web, so this is not corpus-only. Source 11 supports only the revenue half of the sentence."
+ },
+ {
+  "id": "p13-18",
+  "page": "13",
+  "location": "body para 4",
+  "claim": "[Aladdin clients] in 70 countries",
+  "sources": "8,11",
+  "earlier_first_verdict": "CORPUS-ONLY",
+  "earlier_final_verdict": "CONFIRMED (note)",
+  "earlier_receipt": "https://www.youtube.com/watch?v=oyqeCHFM5U4 (YouTube auto-captions) [01:36]-[01:41]: \"also sell and support hundreds of / clients globally across 70 countries, / all using the Aladdin platform.\" For contrast: https://builtinsingapore.com/job/aladdin-client-experience-analyst/6923179: \"Presence in over 50 countries\".",
+  "earlier_finding": "The source says 70 countries, and that can be checked on the web. The note is that it is a spoken figure, and a BlackRock posting gives 'presence in over 50 countries', which may measure something else. Optional: 'clients in some 70 countries, its engineers say 8'."
+ },
+ {
+  "id": "p13-25",
+  "page": "13",
+  "location": "Exhibit 14 box 'About 100 BlackRock applications'",
+  "claim": "About 100 BlackRock applications",
+  "sources": "8",
+  "earlier_first_verdict": "CORPUS-ONLY",
+  "earlier_final_verdict": "CONFIRMED (note)",
+  "earlier_receipt": "https://www.youtube.com/watch?v=oyqeCHFM5U4 (official video description in page HTML): \"serving $11 trillion in assets across 100+ applications globally\"; /home/user/ai_game/blackrock-aladdin/04-transcripts/timestamped/yt_oyqeCHFM5U4.m4a.ts.txt:18 [01:53] \"They're around 100 Aladdin front-end applications that thousands of people use every day\"; https://nextplatform.net/?p=5936 \"4,000\uba85 \uc774\uc0c1\uc758 \uc5d4\uc9c0\ub2c8\uc5b4\uac00 100\uac1c \uc774\uc0c1 \ud504\ub860\ud2b8\uc5d4\ub4dc \uc571 \uc6b4\uc601\"",
+  "earlier_finding": "No text change. The figure appears on the web in the recording's own YouTube description (\"100+ applications\"). The exact spoken words (\"around 100\") are only in the local transcript. Source 8 is the correct citation."
+ },
+ {
+  "id": "p13-28",
+  "page": "13",
+  "location": "Exhibit 14 box 'Copilot'",
+  "claim": "[Copilot tools] built by 50 to 60 BlackRock teams",
+  "sources": "8,17",
+  "earlier_first_verdict": "CORPUS-ONLY",
+  "earlier_final_verdict": "CONFIRMED (note)",
+  "earlier_receipt": "https://www.youtube.com/watch?v=oyqeCHFM5U4 (official description): \"plugin registry system that enables 50+ engineering teams to contribute tools and agents\"; TS:41 [03:58] \"Say 50 60 Aladdin engineering teams that cover specific domains throughout the platform\"; nextplatform.net/?p=5936 \"Aladdin \ub0b4 50~60\uac1c \uc5d4\uc9c0\ub2c8\uc5b4\ub9c1 \ud300\uc758 API/\uae30\ub2a5 \uc5f0\uacb0 \uad00\ub9ac\"; the source 17 Copilot page has no text about teams",
+  "earlier_finding": "No text change, but drop source 17 from this claim. The recording's own page confirms \"50+ teams\" on the web. The exact \"50 60\" figure is in the local transcript and a third-party summary. Optionally say \"tools and agents\"."
+ },
+ {
+  "id": "p13-36",
+  "page": "13",
+  "location": "Exhibit 14 centre caption",
+  "claim": "[the Data Cloud is] the client's Aladdin data in a Snowflake account BlackRock runs for it",
+  "sources": "19,1,22",
+  "earlier_first_verdict": "CONFIRMED (note)",
+  "earlier_final_verdict": "CONFIRMED (note)",
+  "earlier_receipt": "https://www.blackrock.com/corporate/newsroom/media/press-releases/aladdin-data-cloud-powered-by-snowflake: \"Each Aladdin Data Cloud client receives an independent, centrally-managed data store pre-loaded with rich front-to-back Aladdin data sets which can then be supplemented with proprietary and other third-party data sources\". https://www.youtube.com/watch?v=Me_H_-E6lSg at 18:37-18:46: \"we operate um hundreds of Snowflake accounts. We share data to hundreds of Snowflake accounts\". Source 19 (https://www.blackrock.com/aladdin/platforms/products/aladdin-data-cloud): \"powered by Snowflake's cloud-native technology\" and \"Leverage a managed investment data pipeline with preloaded Aladdin data\". Source 22: \"ADC is supported by Fivetran for data movement and Snowflake as its cloud data platform.\"",
+  "earlier_finding": "The substance holds, but no source literally says 'a Snowflake account per client'. The per-client managed store comes from the 2021 press release, which is not cited. Woodhead also describes sharing data into clients' own Snowflake accounts, and the store can hold non-Aladdin data. Optionally soften to 'a Snowflake data store BlackRock manages for it' and cite the press release."
+ }
+]

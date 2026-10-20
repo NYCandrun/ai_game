@@ -1,0 +1,57 @@
+[
+ {
+  "id": "p16-10",
+  "page": "16",
+  "location": "body para 4",
+  "claim": "BlackRock and Aladdin are registered trademarks of BlackRock, Inc.",
+  "sources": "-",
+  "earlier_first_verdict": "PARTLY",
+  "earlier_final_verdict": "PARTLY",
+  "earlier_receipt": "https://www.blackrock.com/corporate/compliance/terms-and-conditions: \"BLACKROCK, BLACKROCK SOLUTIONS, ALADDIN, iSHARES, LIFEPATH, SO WHAT DO I DO WITH MY MONEY, INVESTING FOR A NEW WORLD, and BUILT FOR THESE TIMES are registered and unregistered trademarks of BlackRock, Inc. or its subsidiaries in the United States and elsewhere.\" https://www.blackrock.com/aladdin/platforms/products/aladdin-studio: \"BLACKROCK and ALADDIN are trademarks of BlackRock, Inc. or its affiliates.\" The same page also uses \"Aladdin\u00ae Studio\".",
+  "earlier_finding": "Registration has more support than the first checker found: BlackRock's corporate terms say 'registered and unregistered', and it puts \u00ae on Aladdin. But no notice says which marks are registered, and both add 'or its subsidiaries/affiliates' to BlackRock, Inc. The USPTO register returned HTTP 405 and web search budget was exhausted, so the owner of record is unconfirmed. Use: 'BlackRock and Aladdin are trademarks of BlackRock, Inc. or its affiliates.'"
+ },
+ {
+  "id": "s02",
+  "page": "18",
+  "location": "Sources register, section P, entry 2",
+  "claim": "Source 2: [P] LSEG announces collaboration with Anthropic . LSEG press release, 2025. https://www.lseg.com/en/media-centre/press-releases/2025/lseg-announces-collaboration-with-anthropic",
+  "sources": "-",
+  "earlier_first_verdict": "PARTLY",
+  "earlier_final_verdict": "PARTLY",
+  "earlier_receipt": "https://www.lseg.com/en/media-centre/press-releases/2025/lseg-announces-collaboration-with-anthropic (curl 200): \"<title>LSEG and Anthropic collaborate to make more financial data accessible to Claude for Enterprise customers | LSEG</title>\"; og:title is the same; date \"October 27, 2025\"; \"LSEG today announced a collaboration with Anthropic granting access to data licensed through LSEG products,\". The phrase \"LSEG announces collaboration with Anthropic\" is not in the title tag, og:title or H1. It is only the URL slug.",
+  "earlier_finding": "URL, publisher and year are correct; the title is the URL slug. Use: \"LSEG and Anthropic collaborate to make more financial data accessible to Claude for Enterprise customers. LSEG press release, October 27, 2025.\""
+ },
+ {
+  "id": "s09",
+  "page": "18",
+  "location": "Sources register, section S, entry 9",
+  "claim": "Source 9: [S] Build vs. buy: how asset managers are rethinking key decisions (webinar replay; published captions) . Michael Campos, US asset manager coverage, and Alisha Sewdass, Head of Aladdin Solutions Engineering, Americas, BlackRock, with Clark Schafer, Partner, Alpha FMC. Replay page undated. https://www.blackrock.com/aladdin/discover/expertise/webinars/build-vs-buy-how-asset-managers-are-rethinking-key-decisions Quoted at 4:37, 4:40, 14:46, 24:34, 31:56, 32:01, 39:15, 39:42, 42:22, 47:41 (Sewdass at 31:56, 32:01, 39:15 and 39:42; Schafer at 42:22).",
+  "sources": "-",
+  "earlier_first_verdict": "PARTLY",
+  "earlier_final_verdict": "PARTLY",
+  "earlier_receipt": "https://www.blackrock.com/aladdin/discover/expertise/webinars/build-vs-buy-how-asset-managers-are-rethinking-key-decisions (HTTP 200): h1 \"Build vs. Buy: How Asset Managers Are Rethinking Key Decisions Today\", subheading \"June 2026\". Captions https://d2adqanfijfsj5.cloudfront.net/captions/ala_build_vs_buy_captions_en.vtt: 00:00:10 \"My name is Michael Campos.\" 00:00:11 \"I cover the US Asset Managers for Aladdin.\" 00:00:14 \"I am joined today by Alisha Sewdass, who runs our Aladdin Solutions Engineering team for Aladdin in the Americas and Clark Schafer\". Quoted in the document: 04:37, 04:40, 24:34, 31:56 \"you need that system of record that underpins anything that AI is built upon\", 32:01, 39:42, 40:15 \"very robust APIs that manage the end to end life cycle of a transaction\", 40:20 \"their secret sauce rebalancing tools\", 42:22 \"what's the API suite that you have?\", 50:41 \"compliance reporting is number one at 53%\". Cited but not quoted in the document: 14:46 \"6070% of tech costs or maintenance\", 39:15 \"that word monolith is definitely being challenged\", 47:41 \"roughly 12 to 18 months\". Speakers: 38:43 \"I'll start with Alisha\"; 41:13 \"And Clark, in addition\".",
+  "earlier_finding": "Agreed. Change 'Replay page undated' to 'Replay page dated June 2026'. This fits the captions' 50:59 mention of a follow-up event 'September 22nd'. Change the list to 'Quoted at 4:37, 4:40, 24:34, 31:56, 32:01, 39:42, 40:15, 40:20, 42:22, 50:41 (Sewdass at 31:56, 32:01, 39:42, 40:15 and 40:20; Schafer at 42:22)', which drops 14:46, 39:15 and 47:41. Optional: add 4:47, 24:39, 50:46 and 50:49 for the poll figures in Exhibit 13, and give the full title ending 'Today'."
+ },
+ {
+  "id": "s21",
+  "page": "18",
+  "location": "Sources register, section T, entry 21",
+  "claim": "Source 21: [T] Blackrock Aladdin Explore: Intro (an Aladdin classroom session; third-party YouTube upload; machine transcription) . Uploaded by the channel \u201cjas jas,\u201d speaker not named, undated. https://www.youtube.com/watch?v=BahCi45_BTc Quoted at 6:26, 9:34.",
+  "sources": "-",
+  "earlier_first_verdict": "PARTLY",
+  "earlier_final_verdict": "PARTLY",
+  "earlier_receipt": "https://www.youtube.com/oembed?url=https://www.youtube.com/watch?v=BahCi45_BTc&format=json : \"title\":\"Blackrock Aladdin Explore - Intro\",\"author_name\":\"jas jas\"; watch page https://www.youtube.com/watch?v=BahCi45_BTc : \"publishDate\":{\"simpleText\":\"Dec 25, 2022\"}. The watch page had no captions, so the timestamps come from the corpus only: /home/user/ai_game/blackrock-aladdin/04-transcripts/timestamped/yt_BahCi45_BTc.m4a.ts.txt:96 \"[09:34] If you go to the New What If model button in the top right corner of Explore\"; :74 \"[06:26] A key functionality to explore is that it is web-based, which allows us to save time on a lot of Java issues\". The document doc_layout.txt cites source 21 only at :121-125 (\"new what-if model\" (Explore classroom recording) ... 21) and at :161 (\"the Explore training recording 21\"). The words \"web-based\" and \"Java\" appear nowhere in the document.",
+  "earlier_finding": "Wrong words: (1) 'undated': YouTube shows the upload date as Dec 25, 2022. (2) The title is 'Blackrock Aladdin Explore - Intro', with a hyphen, not a colon. (3) 'Quoted at 6:26': nothing from 6:26 is quoted. Only 9:34 ('new what-if model') is used. Fix: 'Blackrock Aladdin Explore - Intro (...). Uploaded by the channel \u201cjas jas\u201d on December 25, 2022, speaker not named. ... Quoted at 9:34.'"
+ },
+ {
+  "id": "s31",
+  "page": "18",
+  "location": "Sources register, section S, entry 31",
+  "claim": "Source 31: [S] BlackRock transforms client data delivery with Snowflake\u2019s Aladdin Data Cloud (Snowflake video; machine transcription) . Jeff Miller, Managing Director, Global Head of Data Platform and Product Engineering, BlackRock, undated. https://www.youtube.com/watch?v=3iXd7a7_F6g Quoted at 0:36.",
+  "sources": "-",
+  "earlier_first_verdict": "CORPUS-ONLY",
+  "earlier_final_verdict": "PARTLY",
+  "earlier_receipt": "https://www.youtube.com/watch?v=3iXd7a7_F6g (watch page fetched 2026-10-20 with curl; not blocked this time): \"ownerChannelName\":\"Snowflake Inc.\", \"uploadDate\":\"2026-05-21T08:00:10-07:00\", \"dateText\":{\"simpleText\":\"May 21, 2026\"}. YouTube English auto-captions (yt-dlp json3): 0:09.08 \"I'm Jeff Miller. I'm managing director, global head of data platform and product engineering at BlackRock.\"; 0:35.96 \"We sent flat files. We sent large schema definitions, FTP and related transfers\" ('flat' at 0:36.48). The description reads differently: \"Jeff Miller, Managing Director and Global Head of Data Factory and Enterprise Data Platforms\".",
+  "earlier_finding": "The title, channel, spoken speaker title and 0:36 timestamp are now confirmed on the web, so CORPUS-ONLY no longer applies. Wrong: 'undated'. YouTube shows an upload date of May 21, 2026, so change it to 'published May 21, 2026'. Optional note: the YouTube description gives Miller's title as 'Global Head of Data Factory and Enterprise Data Platforms'; the entry follows what he says on camera."
+ }
+]

@@ -1,0 +1,57 @@
+[
+ {
+  "id": "s08",
+  "page": "18",
+  "location": "Sources register, section S, entry 8",
+  "claim": "Source 8: [S] How BlackRock built production AI agents for asset management with LangGraph (LangChain Interrupt 2025; machine transcription) . Brennan Rosales, AI Engineering Lead, and Pedro Vicente Valdez, Principal AI Engineer, BlackRock, 2025. https://www.youtube.com/watch?v=oyqeCHFM5U4 Quoted at 1:33, 1:44, 1:53, 3:58, 4:31, 5:27, 6:42, 7:16, 7:22, 7:34, 10:30.",
+  "sources": "-",
+  "earlier_first_verdict": "CORPUS-ONLY",
+  "earlier_final_verdict": "CORPUS-ONLY",
+  "earlier_receipt": "https://www.youtube.com/oembed?url=https://www.youtube.com/watch?v=oyqeCHFM5U4: \"title\":\"How BlackRock Built Production AI Agents for Asset Management with LangGraph | LangChain Interrupt\",\"author_name\":\"LangChain\". Fresh watch page (dl/b123r/yt.html; status LOGIN_REQUIRED, so no captions): \"Brennan Rosales and Pedro Vicente Valdez reveal their enterprise agentic architecture built on LangGraph\". fc/yt_b006.html: \"publishDate\":\"2025-06-12T10:19:54-07:00\". https://blog.langchain.com/interrupt-2025-recap/: \"Cisco, Uber, Replit, LinkedIn, Blackrock, JPMorgan, Harvey, and more shared lessons\". YouTube timedtext returned 0 bytes. Corpus /home/user/ai_game/blackrock-aladdin/04-transcripts/timestamped/yt_oyqeCHFM5U4.m4a.ts.txt:1 \"[00:15] ... My name is Brennan Rosales and I am an AI engineering lead at BlackRock\"; :2-3 \"[00:20] I'm joined today by my friend and colleague Pedro Vicente Valdez\" / \"[00:25] principal AI engineer\". All 11 cited times are in that file (lines 15, 17, 18, 41, 47, 59, 72, 77, 79, 81, 117).",
+  "earlier_finding": "Agreed. The title, channel, 2025 date and names are on the web. The job titles and quotes are in our transcript only. Add 2:35 to the 'Quoted at' list, because Exhibit 8 cites 'Rosales and Vicente Valdez at 2:35'. That receipt is on transcript line :25, not :22 as the first checker said: '[02:34] application is currently embedded across all of those hundred front-end applications'. Minor: 4:31 is a paraphrase, not a word-for-word quote."
+ },
+ {
+  "id": "s52",
+  "page": "19",
+  "location": "Sources register, section S, entry 52",
+  "claim": "Source 52: [S] Unifying the whole portfolio across public and private markets (webinar replay; machine transcription) . Melissa Faraz, Global Head of Business Development for Private Markets Analytics Platforms and Head of Preqin London. Paul McGaugh, Managing Director, Aladdin Private Markets Product. Cameron Skinner, Managing Director and Global Head of Solutions Engineering; all three at BlackRock, September 2025. https://www.blackrock.com/aladdin/discover/expertise/webinars/unifying-the-whole-portfolio-across-public-and-private-markets Quoted at 17:36, 19:21 (McGaugh), 20:51, 21:21 (Faraz).",
+  "sources": "-",
+  "earlier_first_verdict": "CORPUS-ONLY",
+  "earlier_final_verdict": "CORPUS-ONLY",
+  "earlier_receipt": "https://www.blackrock.com/aladdin/discover/expertise/webinars/unifying-the-whole-portfolio-across-public-and-private-markets : \"Unifying the Whole Portfolio Across Public and Private Markets This webinar explores how Aladdin\u00ae is transforming portfolio and risk management across public and private markets.\"; video src \"https://dwu7l6as21h3p.cloudfront.net/20250912_sctask2738310-537.1080p.wide.mp4\". The page shows no speakers and no visible date. Corpus /home/user/ai_game/blackrock-aladdin/04-transcripts/part2-cloudfront-and-podcasts/056_Unifying_the_Whole_Portfolio_Across_Public_and_Private_Markets.md:16 \"Melissa Faraz, who is global head of business development for private markets, analytics platforms and head of prequin London ... Paul McGaugh and Cameron Skinner. Paul is a managing director in our Ladin private markets product team\"; :18 \"Cameron is also a managing director and is the global head of solutions engineering for the Aladdin business.\" Timestamps file scratchpad/gtm/ts/20250912_sctask2738310-537.720p.wide.mp4.ts.txt: \"[17:36] So we've introduced over 10 different transaction types to Aladdin\"; \"[19:21] ... our new colleagues from HPS\"; \"[19:42] Great. Thank you Paul. ... Melissa\"; \"[20:51] And investors now have access to over 15,000 fund investments\"; \"[21:21] Frequent indices are also available today\"",
+  "earlier_finding": "No change is required. The title and URL are confirmed on the web. 'September 2025' rests only on the 20250912 date in the video filename, because the page itself shows no date. The speaker names, titles and attributions come only from the machine transcript, where they are consistent. You could add 'speakers as introduced in the recording'. WebSearch was unavailable (budget used up), so only direct fetches were tried."
+ },
+ {
+  "id": "p02-05",
+  "page": "2",
+  "location": "body para 1",
+  "claim": "Aladdin's APIs also change the book. They post orders and set compliance rules",
+  "sources": "6",
+  "earlier_first_verdict": "PARTLY",
+  "earlier_final_verdict": "PARTLY",
+  "earlier_receipt": "fc/dl/b003r/un/asdk_plugin_trading-2.0.0b3.../OrderAPI/swagger.json info (stable): \"Filter, post or cancel orders.\"; ComplianceRuleAPI/swagger.json only op \"Filter ComplianceRules\"; ComplianceRuleAssignmentAPI/swagger.json:17 \"x-aladdin-api-stability\": \"alpha\", info \"Rule assignment assigns compliance rules for portfolio.\"; also asdk_plugin_analytics .../governance/v1/RiskRuleAPI/swagger.json:17 \"x-aladdin-api-stability\": \"stable\", info \"Retrieve, update, and create Rules and Rule Subscriptions as surfaced in Risk Radar.\", POST /rules \"Create a new rule in DRAFT status\"",
+  "earlier_finding": "'Post orders' is correct. Compliance rules can only be read. The APIs can assign existing compliance rules to portfolios (alpha), restrict assets (alpha) and create or update Risk Radar risk rules (stable; the first checker missed these, but they are not compliance rules). Reword to 'assign compliance rules to portfolios' (optionally 'and create risk rules')."
+ },
+ {
+  "id": "p02-06",
+  "page": "2",
+  "location": "body para 1",
+  "claim": "[Aladdin's APIs post orders and set compliance rules] under each user's permissions",
+  "sources": "6",
+  "earlier_first_verdict": "PARTLY",
+  "earlier_final_verdict": "PARTLY",
+  "earlier_receipt": "OrderAPI/swagger.json:3316 \"This API uses OAuth 2.0 with the access code flow.\"; :2103 \"how many were hidden due to permissions issues\"; every operation also accepts security sets [APIKeyHeader, OAuth2ClientCredentials], [APIKeyHeader, ClientKeyHeader], [APIKeyHeader, basicAuth]. https://www.blackrock.com/aladdin/platforms/products/aladdin-copilot \"permission-dependent access to insights\" (about Copilot reads, not API writes)",
+  "earlier_finding": "The specs allow app-level client-credentials, client-key and basic auth, and no source says writes run under each user's own permissions. Reword to 'with OAuth sign-in and permission-scoped access'. No new web search was possible because the search budget was exhausted."
+ },
+ {
+  "id": "p02-07",
+  "page": "2",
+  "location": "body para 1",
+  "claim": "[Aladdin's APIs post orders] with a compliance check on every order",
+  "sources": "6",
+  "earlier_first_verdict": "PARTLY",
+  "earlier_final_verdict": "PARTLY",
+  "earlier_receipt": "OrderAPI/swagger.json:3027-3028 \"runCompliance\": \"Default is true to run compliance on this post order request.\"; :3041 \"If the non-zero time is reached and the run is not complete,\\norders will be posted with the \\\"Compl Pending\\\" status set regardless of any violations\"",
+  "earlier_finding": "Compliance runs by default but the caller can turn it off, and a timeout can post an order before the check finishes. Reword to 'with a compliance check run by default on each order'."
+ }
+]

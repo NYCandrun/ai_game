@@ -1,0 +1,57 @@
+[
+ {
+  "id": "p06-63",
+  "page": "6",
+  "location": "body para 1",
+  "claim": "Every request carries an application key plus OAuth 2.0 scopes",
+  "sources": "23",
+  "earlier_first_verdict": "PARTLY",
+  "earlier_final_verdict": "PARTLY",
+  "earlier_receipt": "asdk_plugin_trading 2.0.0b3 (PyPI) order_management/order/v1/OrderAPI/swagger.json:24-45: four security alternatives, each pairing \"APIKeyHeader\": [] with one of \"OAuth2AccessCode\", \"OAuth2ClientCredentials\", \"ClientKeyHeader\" or \"basicAuth\"; same file:3305-3307 \"APIKeyHeader\": {\"type\": \"apiKey\", \"name\": \"VND.com.blackrock.API-Key\"}. https://raw.githubusercontent.com/blackrock/aladdinsdk/main/README.md line 281 \"Authentication: Using Basic Auth or OAuth\"; line 89 \"API Token registered via Studio UI. Required only for Basic Auth\". https://raw.githubusercontent.com/blackrock/aladdinsdk/main/aladdinsdk/common/authentication/api.py:147-148 \"In case of basic auth: adding api key header to configuration ... In case of oauth: adding api key header to configuration + add oauth api access token\"; api.py:158 \"# Note: api key will be phased out eventually by agraph team\"",
+  "earlier_finding": "The 'plus OAuth 2.0 scopes' part is wrong. The specs list OAuth (access-code or client-credentials) as one of four accepted options; the others are a client key (X-API-Key) and Basic Auth. The SDK supports Basic Auth or OAuth, and Basic Auth is its default. Added caveat: the SDK README says the API token is 'Required only for Basic Auth', so the application key is required by the spec security definitions but not enforced by the SDK under OAuth. Suggested wording: 'Every API's specification requires an application key (VND.com.blackrock.API-Key) alongside OAuth 2.0 scopes, Basic Auth or a client key.' Cite 6 and 23."
+ },
+ {
+  "id": "p06-64",
+  "page": "6",
+  "location": "body para 1",
+  "claim": "OAuth 2.0 scopes such as trading.order_management.order.v1.Order:read",
+  "sources": "23",
+  "earlier_first_verdict": "PARTLY",
+  "earlier_final_verdict": "PARTLY",
+  "earlier_receipt": "asdk_plugin_trading 2.0.0b3 (PyPI) asdk_plugin_trading/agraph/trading/order_management/order/v1/OrderAPI/swagger.json:27-28 \"OAuth2AccessCode\": [ \"trading.order_management.order.v1.Order:read\" ]; same file:3323 \"trading.order_management.order.v1.Order:read\": \"non-sensitive read\". Against source 23: grep -rn \"order_management\\|Order:read\" over a fresh clone of github.com/blackrock/aladdinsdk returns no match. The README mentions only \"pip install asdk_plugin_trading\" and \"OrderAPI\". The SDK reads scopes from plugin specs: client.py:204 \"def _fetch_scopes_from_swagger\".",
+  "earlier_finding": "Wrong citation. The scope string is real but is in source 6 (asdk_plugin_trading), not source 23. Change the citation to 6. A second web receipt was not attempted because the shared WebSearch budget was used up."
+ },
+ {
+  "id": "p06-66",
+  "page": "6",
+  "location": "body para 2 (What Studio is)",
+  "claim": "Five BlackRock speakers define Studio",
+  "sources": "28,29",
+  "earlier_first_verdict": "PARTLY",
+  "earlier_final_verdict": "PARTLY",
+  "earlier_receipt": "https://www.blackrock.com/aladdin/discover/expertise/never-done-podcast-by-aladdin and https://www.blackrock.com/aladdin/discover/expertise/big-little-questions (curl 2026-10-20): the only 'Studio' on either page is the nav, 'Accounting Aladdin Studio Aladdin Data Cloud'. Goel webinar page https://www.blackrock.com/aladdin/discover/expertise/webinars/data-as-a-strategic-assets-for-pensions: no 'Studio' outside the nav. Miller YouTube https://www.youtube.com/watch?v=3iXd7a7_F6g, description: 'replaced legacy flat files and FTP transfers with Snowflake's Aladdin Data Cloud', with no 'Studio'. Corpus: /home/user/ai_game/blackrock-aladdin/04-transcripts/timestamped/data_strat-asset_pens_v1-839.720p.wide.mp4.ts.txt and yt_3iXd7a7_F6g.m4a.ts.txt both have 0 'studio' matches. Goel at line 164: '[28:52] ... accessible to you via an event, via an API.' Miller at line 10: '[00:36] We sent flat files, we sent large schema definitions, FTP and related transfers'.",
+  "earlier_finding": "Wrong citation: 28 and 29 are series index pages that do not define Studio. Point to Exhibit 6 or cite 1, 16, 26, 30, 31. Overstated: Goel and Miller never say 'Studio'. Suggested wording: 'Five BlackRock speakers describe Studio or its parts'. (WebSearch budget was exhausted, so only direct fetches were used.)"
+ },
+ {
+  "id": "p07-01",
+  "page": "7",
+  "location": "Exhibit 6 title",
+  "claim": "Five BlackRock executives have defined Studio on the record",
+  "sources": "-",
+  "earlier_first_verdict": "PARTLY",
+  "earlier_final_verdict": "PARTLY",
+  "earlier_receipt": "https://www.youtube.com/watch?v=3iXd7a7_F6g (YouTube auto-captions, the full 2:08 track, 0 hits for 'studio'): [0:09] \"I'm Jeff Miller. I'm managing director, global head of data platform and product engineering at BlackRock.\" / [0:42] \"But the Aladdin data cloud and Snowflake makes it much simpler for us to get our clients' data and market data\". Goel webinar page (blackrock.com/aladdin/discover/expertise/webinars/data-as-a-strategic-assets-for-pensions) has an empty subtitle track (src \"\"). Local Whisper transcript timestamped/data_strat-asset_pens_v1-839.720p.wide.mp4.ts.txt has 0 hits for 'studio'; line 164 [28:52]: \"accessible to you via an event, via an API.\" Newman (blackrock.com podcast transcript): \"which is part of Studio\" and \"That's all part of the Studio umbrella\". Khara (local BSTAwards2023WinnerInterview ts.txt:198): \"What we call the Aladdin studio estate\". Woodhead (YouTube captions [4:40]): \"Aladdin Studio is essentially the user experience\".",
+  "earlier_finding": "The words 'have defined Studio' are wrong for Miller, who speaks only about the Aladdin Data Cloud and never says 'Studio' (web captions agree with the local transcript). They are a stretch for Goel, who never names Studio. The document's own body says 'Four of the five describe Studio'. Suggested title: 'Five BlackRock executives describe Studio and its parts on the record' (or 'Three name Studio; two more describe its parts')."
+ },
+ {
+  "id": "p07-16",
+  "page": "7",
+  "location": "Exhibit 6 row Khara col 'Recording'",
+  "claim": "Khara: 2024 Awards interview, early 2024",
+  "sources": "30",
+  "earlier_first_verdict": "PARTLY",
+  "earlier_final_verdict": "PARTLY",
+  "earlier_receipt": "https://www.waterstechnology.com/awards-rankings/7951675/bst-awards-2023-best-overall-technology-provider-for-2023-winners-interview-blackrock: headline \"Best overall technology provider for 2023 winner's interview: BlackRock\", datePublished \"2024-02-08T09:56:58+00:00\". Video intro, my own transcription: [00:00] \"Welcome to the winner's interviews of the recent Bayside [Buy-Side] Technology Awards.\" [00:23] \"BlackRock won three categories in this year's BST Awards, ... Best Overall Technology Provider\" [00:34] \"for 2023.\" The hub page embed id is \"BSTAwards2023WinnerInterview\".",
+  "earlier_finding": "'2024 Awards' is wrong; it is the 2023 Buy-Side Technology Awards winner's interview. 'early 2024' is correct (published 8 Feb 2024). Change to '2023 BST Awards interview, February 2024'."
+ }
+]

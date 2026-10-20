@@ -1,0 +1,57 @@
+[
+ {
+  "id": "p16-06",
+  "page": "16",
+  "location": "body para 2",
+  "claim": "I checked each claim against the document or recording it cites.",
+  "sources": "-",
+  "earlier_first_verdict": "CONFIRMED (note)",
+  "earlier_final_verdict": "CONFIRMED (note)",
+  "earlier_receipt": "fc/CHECK.md:3 \"You own ONE batch of five or six claims ... Verify each claim fully.\"; CHECK.md:6 \"Verify each claim against the open web FIRST\"; fc/reports/ holds 114 batch reports at time of check.",
+  "earlier_finding": "The check exists, but AI fact-check agents run it. Some claims cite no source, so 'the document or recording it cites' does not cover them. The sentence is only true once every batch's corrections are applied."
+ },
+ {
+  "id": "p16-07",
+  "page": "16",
+  "location": "body para 3",
+  "claim": "Underlined text links to the document behind each fact.",
+  "sources": "-",
+  "earlier_first_verdict": "CONFIRMED (note)",
+  "earlier_final_verdict": "CONFIRMED (note)",
+  "earlier_receipt": "gtm/out/Aladdin_Studio_from_the_outside_v7.html:180 \"a{color:inherit; text-decoration:underline; text-decoration-color:var(--orange);\". The PDF has external link annotations on pp.3-12 and 14-15 (p.4: 36). v7.html:447 \"sup.fnref a{text-decoration:none}\".",
+  "earlier_finding": "Underlined text does link to documents, but pp.1, 2 and 13 have no external links, so not every fact carries one. Suggest 'Underlined text links to the document behind a fact.'"
+ },
+ {
+  "id": "p16-11",
+  "page": "16",
+  "location": "body para 4",
+  "claim": "Other company and product names are the property of their owners.",
+  "sources": "-",
+  "earlier_first_verdict": "CONFIRMED (note)",
+  "earlier_final_verdict": "CONFIRMED (note)",
+  "earlier_receipt": "https://www.blackrock.com/aladdin/platforms/products/aladdin-studio footer: \"All other marks are the property of their respective owners.\" ishares.com/us: \"All other trademarks are those of their respective owners\".",
+  "earlier_finding": "This is a standard notice that matches BlackRock's own wording. It is not a checkable fact."
+ },
+ {
+  "id": "s01",
+  "page": "18",
+  "location": "Sources register, section S, entry 1",
+  "claim": "Source 1: [S] From Analytics To Intelligence: BlackRock\u2019s Journey To Data Productization (Snowflake Data Cloud podcast; auto-captions) . Dave Woodhead, Managing Director and Head of Engineering for Aladdin Studio, BlackRock, published November 11, 2025, the episode date given by the podcast\u2019s RSS feed (feeds.simplecast.com/eoH3iEB8). https://www.youtube.com/watch?v=Me_H_-E6lSg Quoted at 4:36, 4:46, 4:49, 4:58, 8:48, 9:39, 9:43, 9:51, 18:37, 18:44.",
+  "sources": "-",
+  "earlier_first_verdict": "CONFIRMED (note)",
+  "earlier_final_verdict": "CONFIRMED (note)",
+  "earlier_receipt": "https://feeds.simplecast.com/eoH3iEB8: \"From Analytics to Intelligence: BlackRock's Journey to Data Productization with David Woodhead, Head of Engineering for Aladdin Studio at BlackRock\" / \"<pubDate>Tue, 11 Nov 2025 10:00:00 +0000</pubDate>\"; channel \"<title>The Data Cloud Podcast</title>\". https://www.youtube.com/watch?v=Me_H_-E6lSg: \"publishDate\":\"2025-11-11\", channel \"Snowflake Inc.\", captions \"English (auto-generated)\". Live auto-captions 27:01-27:04: \"Dave Woodhead, managing director and head of engineering for Aladdin Studio at Black Rockck\". Timestamps match: 4:49 \"exposes everything Aladdin knows how to\", 4:58 \"generated through our analytics factory\", 8:48 \"several years ago crossed the threshold\", 9:43 \"citizen developers in business engineers\", 18:37 \"challenges is fleet management\", 18:44 \"of Snowflake accounts. We share data to\"",
+  "earlier_finding": "Accurate. The podcast's own name is \"The Data Cloud Podcast\" (Snowflake). \"Managing Director\" comes only from the host's spoken outro. The RSS feed and YouTube text say just \"Head of Engineering for Aladdin Studio\"."
+ },
+ {
+  "id": "s03",
+  "page": "18",
+  "location": "Sources register, section P, entry 3",
+  "claim": "Source 3: [P] FactSet meets demand for AI-ready data, first to announce MCP . FactSet press release, 2025. https://www.factset.com/newsroom/press-release/factset-meets-demand-for-ai-ready-data-first-to-announce-mcp-sans-intermediary",
+  "sources": "-",
+  "earlier_first_verdict": "CONFIRMED (note)",
+  "earlier_final_verdict": "CONFIRMED (note)",
+  "earlier_receipt": "Page <title>: \"FactSet Meets Demand for AI-Ready Data, First to Announce MCP Sans Intermediary\". Body via https://www.factset.com/api/page/newsroom/press-release/factset-meets-demand-for-ai-ready-data-first-to-announce-mcp-sans-intermediary: \"NORWALK, Conn., Dec. 16, 2025 (GLOBE NEWSWIRE) -- FactSet ... today announced availability of the industry's first production-grade model context protocol (MCP) server\"",
+  "earlier_finding": "The title is cut short: restore \"Sans Intermediary\". The date can be given as December 16, 2025."
+ }
+]

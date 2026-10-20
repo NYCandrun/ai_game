@@ -1,0 +1,57 @@
+[
+ {
+  "id": "p09-33",
+  "page": "9",
+  "location": "body para 2 (section 2)",
+  "claim": "Investors \u201cnow have access to over 15,000 fund investments within eFront Insight\u201d for benchmarking",
+  "sources": "52",
+  "earlier_first_verdict": "CORPUS-ONLY",
+  "earlier_final_verdict": "CONFIRMED (note)",
+  "earlier_receipt": "https://dwu7l6as21h3p.cloudfront.net/20250912_sctask2738310-537.1080p.wide.mp4 (replay embedded on https://www.blackrock.com/aladdin/discover/expertise/webinars/unifying-the-whole-portfolio-across-public-and-private-markets; HTTP 200). Fresh faster-whisper transcription of 20:00-22:30, at 20:51: \"And investors now have access to over 15,000 fund investments within e-front insight, directly enabling robust comparisons across IRR, TVPI, DPI and PIC metrics.\" Context at 20:44: \"benchmarking, performance and risk analytics is key to what we do within e-front and Aladdin\". It matches corpus 04-transcripts/part2-cloudfront-and-podcasts/056_Unifying_the_Whole_Portfolio_Across_Public_and_Private_Markets.md:68.",
+  "earlier_finding": "Keep the wording. The words can be reached on the web through the official replay MP4, which is more than the corpus. The page has no published transcript (empty subtitle src), so keep the machine-transcription label. The register's 20:51 timestamp checks out. WebSearch was unavailable (search budget used up), so I ran no new phrase search."
+ },
+ {
+  "id": "p09-34",
+  "page": "9",
+  "location": "body para 2 (section 2)",
+  "claim": "Preqin indices \u201care also available today in Aladdin Explore and our Aladdin Data Cloud capabilities\u201d",
+  "sources": "52",
+  "earlier_first_verdict": "CORPUS-ONLY",
+  "earlier_final_verdict": "CONFIRMED (note)",
+  "earlier_receipt": "Same replay MP4, fresh transcription at 21:21-21:30: \"Frequent [Preqin] indices are also available today in Aladdin Explore and our Aladdin Data Cloud capabilities to support more accurate risk attribution and private market funds.\" It matches corpus 056_...md:68: \"Prequin indices are also available today in Aladdin explore and our Aladdin data cloud capabilities\".",
+  "earlier_finding": "Keep the wording. The register's 21:21 timestamp checks out. It rests on a spoken statement in a September 2025 webinar, as a machine transcription. I could not search again for a written BlackRock page naming Explore or Data Cloud for Preqin indices (search budget used up)."
+ },
+ {
+  "id": "p12-30",
+  "page": "12",
+  "location": "body para 2",
+  "claim": "BlackRock's own August 2026 insight page says ... \"Build vs buy is no longer a binary question\"",
+  "sources": "63",
+  "earlier_first_verdict": "CONFIRMED (note)",
+  "earlier_final_verdict": "CONFIRMED (note)",
+  "earlier_receipt": "https://www.blackrock.com/aladdin/discover/insights/build-vs-buy-decision-framework (fetched 2026-10-20), hero heading: \"Build vs buy is no longer a binary question\". Body: \"For years, asset managers treated technology strategy as a binary decision: build for control, or buy for scale. That framing no longer fits the market.\"",
+  "earlier_finding": "The quote is exact and the source is right. The page shows no publication date. 'August 2026' rests only on the listing tile image on blackrock.com/aladdin/discover ('Build vs Buy - Aladdin Discover.1786719701630.png', an asset timestamp that decodes to 2026-08-14). The sitemap lastmod is 2026-10-12."
+ },
+ {
+  "id": "p12-31",
+  "page": "12",
+  "location": "callout 'What this finding suggests'",
+  "claim": "Buyers now ask in RFPs whether they can build on the platform.",
+  "sources": "-",
+  "earlier_first_verdict": "CONFIRMED (note)",
+  "earlier_final_verdict": "CONFIRMED (note)",
+  "earlier_receipt": "https://d2adqanfijfsj5.cloudfront.net/captions/ala_build_vs_buy_captions_en.vtt (published captions for the webinar at source 9, fetched fresh), Schafer, 00:42:03-00:42:29: \"I think now that RFP, the content in that RFP that's going to vendors has changed significantly. ... But it's also then what is your, what is your openness structure look like? ... what's the API suite that you have? Are you using connectors to Snowflake or to data bricks? And I think that that part of the RFP has become much more prominent.\"",
+  "earlier_finding": "This is a fair paraphrase of one consultant (Schafer) and carries no citation; add source 9. His words are about openness, APIs and connectors, not literally 'build on the platform'. Sewdass at 00:40:51 calls build vs buy in RFPs 'less explicit', and at 00:03:47 Schafer says 'we aren't really seeing that many RFPs that are asking for support or guidance on a build versus buy strategy'."
+ },
+ {
+  "id": "p13-03",
+  "page": "13",
+  "location": "body para 1",
+  "claim": "[Its speakers have said] that the data model is being structured for agentic use",
+  "sources": "54",
+  "earlier_first_verdict": "CORPUS-ONLY",
+  "earlier_final_verdict": "CONFIRMED (note)",
+  "earlier_receipt": "https://www.blackrock.com/aladdin/discover/podcast/reducing-time-to-insight-how-ai-is-reshaping-risk-management. The page embeds a speaker-labelled transcript (the transcriptBody field behind its Transcript panel). Under [JESS FITZGIBBON]: \"...where there's much more of a focus on ensuring that the data model itself is structured for agentic use cases, and we're even changing the way that we refactor the way that our products are built in order to achieve that.\" Extracted copy: /tmp/claude-0/-home-user-ai-game/44510f87-22a4-5476-9273-389e23c654a8/scratchpad/fc/dl/b086r/pod_transcript.txt:91-93",
+  "earlier_finding": "The text can stay. The quote is on the web in BlackRock's published transcript, so this does not need to be CORPUS-ONLY. That transcript names the speaker as Jess Fitzgibbon (Head of Product for Aladdin Risk), not Pemmaraju. Fix the page 11 attribution to 'BlackRock's AI product head' (outside this batch). Revise the [54] register note, which says the recording does not label speakers."
+ }
+]

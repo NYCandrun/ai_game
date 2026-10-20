@@ -1,0 +1,57 @@
+[
+ {
+  "id": "s49",
+  "page": "19",
+  "location": "Sources register, section T, entry 49",
+  "claim": "Source 49: [T] BlackRock Q4 2024 earnings call transcript . roic.ai, January 2025. https://www.roic.ai/quote/BLK/transcripts/2024-year/4-quarter",
+  "sources": "-",
+  "earlier_first_verdict": "CONFIRMED (note)",
+  "earlier_final_verdict": "CONFIRMED (note)",
+  "earlier_receipt": "https://www.fool.com/earnings/call-transcripts/2025/01/15/blackrock-blk-q4-2024-earnings-call-transcript/ : \"BlackRock (BLK) Q4 2024 Earnings Call Transcript ... Jan 15, 2025\"; \"It includes clients leveraging enterprise Aladdin, alongside Aladdin Accounting or the Aladdin Data Cloud.\"",
+  "earlier_finding": "The roic.ai URL returns a Cloudflare challenge (403) to both curl and WebFetch, so it could not be read. A second transcript confirms the call (Jan 15, 2025) and its Data Cloud mention. Web search was unavailable (budget exhausted)."
+ },
+ {
+  "id": "s50",
+  "page": "19",
+  "location": "Sources register, section T, entry 50",
+  "claim": "Source 50: [T] BlackRock Q4 2021 earnings call transcript . roic.ai, January 2022. https://www.roic.ai/quote/BLK/transcripts/2021-year/4-quarter",
+  "sources": "-",
+  "earlier_first_verdict": "CONFIRMED (note)",
+  "earlier_final_verdict": "CONFIRMED (note)",
+  "earlier_receipt": "https://www.fool.com/earnings/call-transcripts/2022/01/14/blackrock-blk-q4-2021-earnings-call-transcript/ : \"BlackRock (BLK) Q4 2021 Earnings Call Transcript ... Jan 14, 2022\"; \"where clients are really looking to use both data and APIs in ways that differentiate them\"",
+  "earlier_finding": "The roic.ai page was blocked (403). A second transcript confirms the call date and the exact quote used in Exhibit 10."
+ },
+ {
+  "id": "s51",
+  "page": "19",
+  "location": "Sources register, section T, entry 51",
+  "claim": "Source 51: [T] BlackRock Q4 2023 earnings call transcript . roic.ai, January 2024. https://www.roic.ai/quote/BLK/transcripts/2023-year/4-quarter",
+  "sources": "-",
+  "earlier_first_verdict": "CONFIRMED (note)",
+  "earlier_final_verdict": "CONFIRMED (note)",
+  "earlier_receipt": "https://www.fool.com/earnings/call-transcripts/2024/01/12/blackrock-blk-q4-2023-earnings-call-transcript/ : \"BlackRock (BLK) Q4 2023 Earnings Call Transcript ... Jan 12, 2024\"; \"Investments in Aladdin AI copilot, enhancements in openness, supporting ecosystem partnerships\"",
+  "earlier_finding": "The roic.ai page was blocked (403). The call date is confirmed. The Fool transcript reads \"Aladdin AI copilot\" (singular), while Exhibit 10 quotes \"copilots\". Check this against roic.ai."
+ },
+ {
+  "id": "s53",
+  "page": "19",
+  "location": "Sources register, section S, entry 53",
+  "claim": "Source 53: [S] Humans in the loop, robots on the team, part 2 (Never Done podcast; published transcript) . Adrian Crockett, General Manager, Microsoft Cloud for Financial Services, with Syril Smith Garson, Head of Product for AI, BlackRock, November 6, 2024. https://www.blackrock.com/aladdin/discover/podcast/microsoft-part-2-podcast Quoted at 8:00 (Smith Garson), 17:29 (Crockett).",
+  "sources": "-",
+  "earlier_first_verdict": "CONFIRMED (note)",
+  "earlier_final_verdict": "CONFIRMED (note)",
+  "earlier_receipt": "https://www.blackrock.com/aladdin/discover/podcast/microsoft-part-2-podcast : \"Humans in the loop; robots on the team - Part 2 ... Never Done by Aladdin ... Adrian Crockett, General Manager, Microsoft Cloud for Financial Services, and Syril Smith Garson, Head of Product for AI\"; under [ADRIAN CROCKETT]: \"There's no copilot without plug-ins.\" Date: https://rss.art19.com/aladdin-client-stories \"Wed, 06 Nov 2024 17:01:32 -0000 | Microsoft Copilot Episode Part 2 | 00:18:40\". Timestamps: /home/user/ai_game/blackrock-aladdin/04-transcripts/timestamped/1fe47d8b-c5ba-4d9e-aad6-e4ac8ee2a936.mp3.ts.txt:226 \"[17:29] Now, in order to do that, you need to actually create the plugins. There's no copilot without\"",
+  "earlier_finding": "November 6, 2024 is the first release, in the Aladdin Client Stories feed as \"Microsoft Copilot Episode Part 2\". The episode was re-released on Nov 9, 2025 (Client Stories) and Dec 10, 2025 (Never Done feed). The page transcript has no timestamps; the 8:00 and 17:29 times come from the Nov 2024 audio. The page title uses a semicolon."
+ },
+ {
+  "id": "s55",
+  "page": "19",
+  "location": "Sources register, section T, entry 55",
+  "claim": "Source 55: [T] LSEG Q1 2026 slides: record growth, AI adoption accelerates (summary of LSEG results slides) . Investing.com, April 2026. https://www.investing.com/news/company-news/lseg-q1-2026-slides-record-growth-ai-adoption-accelerates-93CH-4631412",
+  "sources": "-",
+  "earlier_first_verdict": "CONFIRMED (note)",
+  "earlier_final_verdict": "CONFIRMED (note)",
+  "earlier_receipt": "https://www.investing.com/news/company-news/lseg-q1-2026-slides-record-growth-ai-adoption-accelerates-93CH-4631412 (WebFetch): headline \"LSEG Q1 2026 slides: record growth, AI adoption accelerates\"; \"By Investing.com\", published April 23, 2026; \"London Stock Exchange Group PLC (LON:LSEG) presented its Q1 2026 trading update on April 23, 2026\"; \"accelerating momentum in AI product adoption\"",
+  "earlier_finding": "Title, publisher, month and URL are correct. The article summarizes LSEG's Q1 2026 trading-update slides, so \"results slides\" is loose. Optionally write \"Q1 2026 trading-update slides\" and date it April 23, 2026."
+ }
+]

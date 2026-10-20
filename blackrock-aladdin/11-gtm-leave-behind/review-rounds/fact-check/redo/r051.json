@@ -1,0 +1,57 @@
+[
+ {
+  "id": "p15-89",
+  "page": "15",
+  "location": "Exhibit 17 row LSEG col 'Trial or sandbox'",
+  "claim": "LSEG, Trial or sandbox: 1 (partial or after sign-up or approval)",
+  "sources": "68",
+  "earlier_first_verdict": "CONFIRMED",
+  "earlier_final_verdict": "CONFIRMED",
+  "earlier_receipt": "https://developers.lseg.com/en/api-catalog/lseg-data-platform/lseg-data-library-for-python : \"Request Free Trial\" / \"Request a Free Trial with the form below\" (product list includes \"LSEG Data Library (Python) - Desktop License\")",
+  "earlier_finding": "None. A trial exists, but you only get it by filling in a request form, so a score of 1 fits."
+ },
+ {
+  "id": "p15-91",
+  "page": "15",
+  "location": "Exhibit 17 row LSEG col 'Sample code'",
+  "claim": "LSEG, Sample code: 2 (fully public or self-serve)",
+  "sources": "68",
+  "earlier_first_verdict": "CONFIRMED",
+  "earlier_final_verdict": "CONFIRMED",
+  "earlier_receipt": "https://developers.lseg.com/en : \"Explore API Samples on GitHub\" (links https://github.com/LSEG-API-Samples); WebFetch of the org page: \"Articles, tutorials and code samples for LSEG/Refinitiv API's.\" and \"Showing 10 of 455 repositories\" (All Public)",
+  "earlier_finding": "None."
+ },
+ {
+  "id": "p15-92",
+  "page": "15",
+  "location": "Exhibit 17 row LSEG col 'Community or marketplace'",
+  "claim": "LSEG, Community or marketplace: 2 (fully public or self-serve)",
+  "sources": "68",
+  "earlier_first_verdict": "CONFIRMED",
+  "earlier_final_verdict": "CONFIRMED",
+  "earlier_receipt": "https://community.developers.lseg.com/ (linked from developers.lseg.com/en as \"Community Forum\"): \"Q&A Forum\", \"Welcome to the LSEG Developer Community\", \"Recent Questions\" with question text readable without login; \"Sign in or register to get started.\" is needed only to post",
+  "earlier_finding": "None."
+ },
+ {
+  "id": "p15-94",
+  "page": "15",
+  "location": "Exhibit 17 row LSEG col 'Call to action'",
+  "claim": "LSEG, Call to action: 1 (partial or after sign-up or approval)",
+  "sources": "68",
+  "earlier_first_verdict": "CONFIRMED",
+  "earlier_final_verdict": "CONFIRMED",
+  "earlier_receipt": "https://developers.lseg.com/en/api-catalog/lseg-data-platform/lseg-data-library-for-python : CTA block \"Request Free Trial\" / \"Email sales\" / \"Call sales\"; https://developers.lseg.com/en : \"Sign in to get started\"",
+  "earlier_finding": "None. The main CTA is a trial request form or sales contact, not instant self-serve sign-up."
+ },
+ {
+  "id": "p15-95",
+  "page": "15",
+  "location": "Exhibit 17 row FactSet col 'Public docs'",
+  "claim": "FactSet, Public docs: 2 (fully public or self-serve)",
+  "sources": "66",
+  "earlier_first_verdict": "CONFIRMED",
+  "earlier_final_verdict": "CONFIRMED",
+  "earlier_receipt": "https://developer.factset.com/learn/getting-started (portal content API /api/v2/content/page/learn/getting-started, no login): \"This guide will walk you through getting started with FactSet's APIs, from authentication to your first API request.\" Also /api-catalog/formula-api, served without a login: \"Sample Python code to retrieve data items for each Formula API endpoint using the SDK\". Second source, https://raw.githubusercontent.com/factset/enterprise-sdk/main/README.md: \"The FactSet Enterprise SDK is a collection of client libraries designed to make it easier to use FactSet's APIs\"",
+  "earlier_finding": "None. Learn pages, API descriptions and the generated SDK docs are all public."
+ }
+]

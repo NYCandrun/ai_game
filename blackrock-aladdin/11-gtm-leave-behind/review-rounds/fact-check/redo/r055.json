@@ -1,0 +1,46 @@
+[
+ {
+  "id": "s45",
+  "page": "19",
+  "location": "Sources register, section P, entry 45",
+  "claim": "Source 45: [P] Award 16PBGC23C0006, Investment Risk Management System, Pension Benefit Guaranty Corporation to BlackRock Financial Management . USAspending.gov award record. Full and open competition, four offers received, performance March 2023 to March 2027. https://api.usaspending.gov/api/v2/awards/CONT_AWD_16PBGC23C0006_1665_-NONE-_-NONE-/",
+  "sources": "-",
+  "earlier_first_verdict": "CONFIRMED",
+  "earlier_final_verdict": "CONFIRMED",
+  "earlier_receipt": "https://api.usaspending.gov/api/v2/awards/CONT_AWD_16PBGC23C0006_1665_-NONE-_-NONE-/ : description \"INVESTMENT RISK MANAGEMENT SYSTEM\"; recipient \"BLACKROCK FINANCIAL MANAGEMENT INC\"; agency \"Pension Benefit Guaranty Corporation\"; extent_competed_description \"FULL AND OPEN COMPETITION\"; number_of_offers_received \"4\"; start_date \"2023-03-28\", end_date \"2027-03-27\"",
+  "earlier_finding": "None needed. For context: potential end date with options is 2033-03-27, firm fixed price, $5.55M obligated."
+ },
+ {
+  "id": "s58",
+  "page": "19",
+  "location": "Sources register, section P, entry 58",
+  "claim": "Source 58: [P] S&P Global brings Credit Ratings to the S&P Global AI Data Portal . S&P Global press release, September 28, 2026. https://press.spglobal.com/2026-09-28-S-P-Global-brings-Credit-Ratings-to-the-S-P-Global-AI-Data-Portal",
+  "sources": "-",
+  "earlier_first_verdict": "CONFIRMED",
+  "earlier_final_verdict": "CONFIRMED",
+  "earlier_receipt": "https://press.spglobal.com/2026-09-28-S-P-Global-brings-Credit-Ratings-to-the-S-P-Global-AI-Data-Portal (HTTP 200): title \"S&P Global brings Credit Ratings to the S&P Global AI Data Portal - Sep 28, 2026\"; \"NEW YORK , Sept. 28, 2026 / PRNewswire / -- S&P Global (NYSE: SPGI) today announced that RatingsXpress credit data from S&P Global Ratings is now available through the S&P Global AI Data Portal, a solution that enables customers to seamlessly access verifiable data via any MCP-enabled AI application.\"",
+  "earlier_finding": "None. Title, publisher, date and URL match."
+ },
+ {
+  "id": "s62",
+  "page": "19",
+  "location": "Sources register, section P, entry 62",
+  "claim": "Source 62: [P] Pictet Asset Management selects SimCorp One . SimCorp news, May 2026. https://www.simcorp.com/about-us/news/2026/pictet-asset-management-selects-simcorp-one",
+  "sources": "-",
+  "earlier_first_verdict": "CONFIRMED",
+  "earlier_final_verdict": "CONFIRMED",
+  "earlier_receipt": "https://www.simcorp.com/about-us/news/2026/pictet-asset-management-selects-simcorp-one : title \"Pictet Asset Management selects SimCorp One | SimCorp\"; \"London \u2014 May 20, 2026 \u2014 SimCorp ... today announced that leading investment management firm Pictet Asset Management (\u201cPictet AM\u201d) has selected SimCorp\"",
+  "earlier_finding": ""
+ },
+ {
+  "id": "s64",
+  "page": "19",
+  "location": "Sources register, section P, entry 64",
+  "claim": "Source 64: [P] aladdinsdk, release history . PyPI, releases May 2024 to July 2026. https://pypi.org/project/aladdinsdk/#history",
+  "sources": "-",
+  "earlier_first_verdict": "CONFIRMED",
+  "earlier_final_verdict": "CONFIRMED",
+  "earlier_receipt": "https://pypi.org/pypi/aladdinsdk/json : earliest \"0.0.1a4.post0\" upload_time \"2024-05-02T22:50:41\"; latest \"2.0.0b10\" upload_time \"2026-07-27T17:29:21\" (14 releases)",
+  "earlier_finding": ""
+ }
+]

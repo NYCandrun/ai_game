@@ -1,0 +1,57 @@
+[
+ {
+  "id": "p15-25",
+  "page": "15",
+  "location": "Exhibit 17 row Bloomberg col 'Trial or sandbox'",
+  "claim": "Bloomberg, Trial or sandbox: 1 (partial or after sign-up or approval)",
+  "sources": "-",
+  "earlier_first_verdict": "UNVERIFIED",
+  "earlier_final_verdict": "CONFIRMED (note)",
+  "earlier_receipt": "https://service.blpprofessional.com/portal/product/ureg?referrer=bdev (sign-up page linked from developer.bloomberg.com; saved at /tmp/claude-0/-home-user-ai-game/44510f87-22a4-5476-9273-389e23c654a8/scratchpad/fc/dl/b104r/ureg.html:2259): \"Please review the Bloomberg Trial License Agreement in the scroll box below.\"; ureg.html:2255: \"The URL (link) you entered is for a subscription that has already been activated. Please check the URL (link) in the email previously sent to you.\"; BLPAPI Core Developer Guide https://data.bloomberglp.com/professional/sites/10/2017/03/BLPAPI-Core-Developer-Guide.pdf l.3306: \"FREE_TRIAL_TERM    FTT limit reached\"",
+  "earlier_finding": "Keep 1. Bloomberg runs a formal trial: access comes through a link Bloomberg emails, followed by a Trial License Agreement, so it is 'after approval'. Note that there is no self-serve sandbox or emulator."
+ },
+ {
+  "id": "p15-27",
+  "page": "15",
+  "location": "Exhibit 17 row Bloomberg col 'Sample code'",
+  "claim": "Bloomberg, Sample code: 1 (partial or after sign-up or approval)",
+  "sources": "-",
+  "earlier_first_verdict": "CONFIRMED (note)",
+  "earlier_final_verdict": "CONFIRMED (note)",
+  "earlier_receipt": "Developer Guide (~l.3700): \"The BLPAPI provides a core set of code examples across multiple languages ... (from the \\\"\\\\examples\\\" folder of each SDK installation)\" and \"the Windows SDKs from WAPI <GO> have the most complete set of examples\". developer.bloomberg.com: \"Preview sample code\" (behind sign-in)",
+  "earlier_finding": "No change needed. Basic examples ship with the public SDK download. The fullest set is in the Terminal (WAPI <GO>) or behind the portal sign-in, so partial (1) fits."
+ },
+ {
+  "id": "p15-47",
+  "page": "15",
+  "location": "Exhibit 17 row Arcesium col 'Public docs'",
+  "claim": "Arcesium, Public docs: 0 (none or blocked)",
+  "sources": "57",
+  "earlier_first_verdict": "CONFIRMED (note)",
+  "earlier_final_verdict": "CONFIRMED (note)",
+  "earlier_receipt": "https://developer.arcesium.com -> \"HTTP/2 307 location: https://login.arcesium.com/docsLogin?resource=developerDocs&location=%2F\"; https://docs.arcesium.com -> \"location: https://login.arcesium.com/docsLogin?resource=genericDocs&location=%2F\"; the page served is titled \"Arcesium:Login\" and shows \"Sign in\" / \"Enter your email\".",
+  "earlier_finding": "Score is right. Source 57 (an AI-platform press release, unreachable with HTTP 429 Vercel checkpoint) cannot show that docs are gated. Cite the developer.arcesium.com login redirect as the receipt for this cell."
+ },
+ {
+  "id": "p15-48",
+  "page": "15",
+  "location": "Exhibit 17 row Arcesium col 'API catalog'",
+  "claim": "Arcesium, API catalog: 0 (none or blocked)",
+  "sources": "57",
+  "earlier_first_verdict": "CONFIRMED (note)",
+  "earlier_final_verdict": "CONFIRMED (note)",
+  "earlier_receipt": "developer.arcesium.com/api -> \"307 https://login.arcesium.com/docsLogin?resource=developerDocs&location=%2Fapi\"; /openapi.json and /swagger.json give the same 307 to docsLogin.",
+  "earlier_finding": "No public API catalog was found. Add the developer.arcesium.com login gate as the receipt. Source 57 does not address the catalog."
+ },
+ {
+  "id": "p15-49",
+  "page": "15",
+  "location": "Exhibit 17 row Arcesium col 'Trial or sandbox'",
+  "claim": "Arcesium, Trial or sandbox: 0 (none or blocked)",
+  "sources": "57",
+  "earlier_first_verdict": "CONFIRMED (note)",
+  "earlier_final_verdict": "CONFIRMED (note)",
+  "earlier_receipt": "developer.arcesium.com/sandbox -> \"307 https://login.arcesium.com/docsLogin?resource=developerDocs&location=%2Fsandbox\". The Aquata launch release (prnewswire.com/news-releases/arcesium-launches-aquata-...-301791400.html) has no mention of a trial.",
+  "earlier_finding": "No self-serve trial was found. arcesium.com pages could not be checked (HTTP 429 bot checkpoint). Cite the login gate, not source 57."
+ }
+]

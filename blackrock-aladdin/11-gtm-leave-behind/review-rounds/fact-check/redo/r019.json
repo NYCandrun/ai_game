@@ -1,0 +1,57 @@
+[
+ {
+  "id": "p09-01",
+  "page": "9",
+  "location": "body para 1 (section 2)",
+  "claim": "BlackRock tells investors growth will come from API calls, without naming the product behind them",
+  "sources": "10",
+  "earlier_first_verdict": "PARTLY",
+  "earlier_final_verdict": "PARTLY",
+  "earlier_receipt": "https://s24.q4cdn.com/856567660/files/doc_presentations/2025/BLK-Investor-Day-2025-WEB.pdf (downloaded fresh, 147 pages), slide 23: \"4. Continuously drive marginal costs down / All of BlackRock is built on a foundation of operating excellence in everything we do and what we do will continue to rapidly grow\" ... \"2030 Estimate ... Metric / Increase by 2030 ... BlackRock: Portfolios (#) 2x, Model Portfolios (#) 4x; BlackRock + Aladdin\u00ae: Trade Allocations (#) 1.3x, API Calls (#) 17x\" ... \"Our objective is for the marginal cost of this growth to be as low as possible through continued investment in scale enablement\". A grep of the whole deck for API/Studio/developer/interoperab finds only \"API Calls (#)\" on slide 23. A second-source web search (for an Investor Day transcript) could not run because the WebSearch budget was used up.",
+  "earlier_finding": "The words \"growth will come from API calls\" are wrong. The slide lists API calls as one of four operating volumes expected to grow, the fastest at 17x, under a marginal-cost theme. It does not say that revenue or business growth comes from API calls. \"Without naming the product\" is correct, because Studio is not mentioned anywhere in the deck. Suggested wording: \"BlackRock tells investors API calls will grow faster than any other volume it measures (17x by 2030), without naming the product behind them.\" The same fix applies to doc_layout.txt:496, \"BlackRock itself says growth will come from API calls\"."
+ },
+ {
+  "id": "p10-01",
+  "page": "10",
+  "location": "direction box (cont. from p9) sentence 1",
+  "claim": "BlackRock itself says growth will come from API calls",
+  "sources": "-",
+  "earlier_first_verdict": "PARTLY",
+  "earlier_final_verdict": "PARTLY",
+  "earlier_receipt": "https://s24.q4cdn.com/856567660/files/doc_presentations/2025/BLK-Investor-Day-2025-WEB.pdf slide 23: \"4. Continuously drive marginal costs down / All of BlackRock is built on a foundation of operating excellence in everything we do and what we do will continue to rapidly grow ... BlackRock + Aladdin\u00ae ... API Calls (#) 17x / Our objective is for the marginal cost of this growth to be as low as possible through continued investment in scale enablement\". Slide 32: \"Aladdin\u00ae is a growth and innovation flywheel / Expanding the suite of capabilities \u2022 Whole Portfolio \u2022 Wealth \u2022 Data (including Preqin)\"",
+  "earlier_finding": "The wrong words are 'says growth will come from API calls'. The 17x is a forecast of operating volume on a slide about marginal cost. Where the deck names Aladdin's growth areas (slide 32), it lists Whole Portfolio, Wealth and Data. Rewrite: 'BlackRock projects API calls across BlackRock and Aladdin to grow 17x by 2030, the fastest-growing measure it showed investors' and cite 10."
+ },
+ {
+  "id": "p10-04",
+  "page": "10",
+  "location": "direction box (cont. from p9) sentence 3",
+  "claim": "Both [Data Cloud and Explore] are Studio surfaces",
+  "sources": "-",
+  "earlier_first_verdict": "PARTLY",
+  "earlier_final_verdict": "PARTLY",
+  "earlier_receipt": "Source 16 page: \"where the data cloud and Aladdin data cloud specifically comes in, which is part of Studio\". https://www.blackrock.com/aladdin/platforms/products/aladdin-studio: \"Aladdin Data Cloud (ADC) is a managed data-as-a-service offering that brings together Aladdin\u2014the language of portfolios\u2014with Snowflake's data platform\". The Studio page never mentions Explore. /home/user/ai_game/blackrock-aladdin/04-transcripts/part2-cloudfront-and-podcasts/047_An_introduction_to_Aladdin_Climate.md:42 (Whisper of the introduction-to-aladdin-climate webinar): \"Explore is our standard application to understand aggregated analysis for investment and risk management\"",
+  "earlier_finding": "The wrong word is 'Both'. Data Cloud is part of Studio (16, 14). Explore is a standard Aladdin application and no source calls it a Studio surface. Rewrite: 'Data Cloud is part of Studio; Explore is an Aladdin app that calls the same APIs.'"
+ },
+ {
+  "id": "p10-07",
+  "page": "10",
+  "location": "body para 1 sentence 1",
+  "claim": "Aladdin Copilot, the AI inside the login, is built on the same APIs Studio exposes",
+  "sources": "-",
+  "earlier_first_verdict": "PARTLY",
+  "earlier_final_verdict": "PARTLY",
+  "earlier_receipt": "Talk (src 8), /home/user/ai_game/blackrock-aladdin/04-transcripts/timestamped/yt_oyqeCHFM5U4.m4a.ts.txt:47-48 [04:31-04:39]: \"the first we we come to define a tool as / Kind of mapping one-to-one to an existing Aladdin API already out in production\". Closest bridge, Woodhead (src 1), /home/user/ai_game/blackrock-aladdin/04-transcripts/part1-youtube-and-site/01_From_Analytics_To_Intelligence_BlackRock_s_Journey_To_Data_P.md:24: \"It exposes everything Aladdin knows how to do as a set of APIs events.\" https://www.blackrock.com/aladdin/platforms/products/aladdin-studio: \"Aladdin Studio APIs enable you to build your own solutions.\" https://www.blackrock.com/aladdin/platforms/products/aladdin-copilot: \"Access Aladdin Copilot securely on the Aladdin platform\" (no mention of APIs or Studio).",
+  "earlier_finding": "The wrong words are 'the same APIs Studio exposes': no source equates Copilot's tool APIs with Studio's. Woodhead's 'exposes everything Aladdin knows how to do' makes the link plausible but does not state it. 'Inside the login' is supported. Suggested wording: 'Aladdin Copilot calls Aladdin's production APIs as tools [8]'. To keep the Studio link, attribute it as inference from [1] and [8]."
+ },
+ {
+  "id": "p10-10",
+  "page": "10",
+  "location": "body para 1 sentence 4",
+  "claim": "So Copilot\u2019s tools are Studio\u2019s APIs",
+  "sources": "-",
+  "earlier_first_verdict": "PARTLY",
+  "earlier_final_verdict": "PARTLY",
+  "earlier_receipt": "/home/user/ai_game/blackrock-aladdin/04-transcripts/part1-youtube-and-site/16_How_BlackRock_Built_Production_AI_Agents_for_Asset_Managemen.md:20: \"The first, we come to define a tool as kind of mapping one-to-one to an existing Aladdin API already out in production. Kind of the second onboarding path that we give to these development teams for very complex workflows is the ability to spin up a custom agent and also plug that into the system.\" ZenML (URL above): \"Custom agents: For complex workflows, teams can spin up their own agents and register them in the system\". Studio page: \"Aladdin Studio APIs enable you to build your own solutions.\"",
+  "earlier_finding": "Overstated in two ways. (1) Only one of the two onboarding paths maps tools to APIs; the other plugs in custom agents. (2) No source says those production APIs are the ones Studio exposes to clients. Suggested wording: 'So many of Copilot's tools are wrappers on Aladdin's production APIs, the same estate Studio opens to clients', with the second clause marked as the author's inference from [1] and [8]."
+ }
+]

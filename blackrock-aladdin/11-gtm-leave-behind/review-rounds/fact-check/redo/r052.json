@@ -1,0 +1,57 @@
+[
+ {
+  "id": "p15-99",
+  "page": "15",
+  "location": "Exhibit 17 row FactSet col 'Sample code'",
+  "claim": "FactSet, Sample code: 2 (fully public or self-serve)",
+  "sources": "66",
+  "earlier_first_verdict": "CONFIRMED",
+  "earlier_final_verdict": "CONFIRMED",
+  "earlier_receipt": "/api-catalog/factset-fundamentals-api (anonymous): \"Sample code to retrieve the company fundamental data using FactSet Fundamentals API\". /learn/self-service-tools-FactSet-sdk: \"SDK packages are available via industry-standard package managers: PyPI (Python), Maven (Java), NuGet (.NET), and npm\". GitHub factset/enterprise-sdk README is Apache-2 licensed. PyPI fds.sdk.Formula 5.0.0",
+  "earlier_finding": "None."
+ },
+ {
+  "id": "p16-08",
+  "page": "16",
+  "location": "body para 3",
+  "claim": "Superscripts point to the Sources section, which follows this page",
+  "sources": "-",
+  "earlier_first_verdict": "CONFIRMED",
+  "earlier_final_verdict": "CONFIRMED",
+  "earlier_receipt": "PDF v7 p.17 begins \"Sources / Sources are numbered in the order they are first cited\". Every superscript is <sup class=\"fnref\"><a href=\"#sN\">. 70 #sN targets, all present in the register (0 missing). Register on pp.17-19.",
+  "earlier_finding": ""
+ },
+ {
+  "id": "s07",
+  "page": "18",
+  "location": "Sources register, section P, entry 7",
+  "claim": "Source 7: [P] Introducing Agent Launchpad . SimCorp news, 2026. https://www.simcorp.com/about-us/news/2026/introducing-agent-launchpad",
+  "sources": "-",
+  "earlier_first_verdict": "CONFIRMED",
+  "earlier_final_verdict": "CONFIRMED",
+  "earlier_receipt": "https://www.simcorp.com/about-us/news/2026/introducing-agent-launchpad (HTTP 200, fetched 2026-10-20): title \"Introducing Agent Launchpad | SimCorp\"; body \"Copenhagen \u2014 April 22, 2026 \u2014 SimCorp, a global leader in financial technology, today announced Agent Launchpad, an agentic AI ecosystem that allows investment managers to employ agents from SimCorp and curated partners\"",
+  "earlier_finding": "None needed. Optionally give the full date, April 22, 2026. No second source: the WebSearch budget was used up."
+ },
+ {
+  "id": "s10",
+  "page": "18",
+  "location": "Sources register, section P, entry 10",
+  "claim": "Source 10: [P] BlackRock 2025 Investor Day presentation . BlackRock, June 2025. https://s24.q4cdn.com/856567660/files/doc_presentations/2025/BLK-Investor-Day-2025-WEB.pdf",
+  "sources": "-",
+  "earlier_first_verdict": "CONFIRMED",
+  "earlier_final_verdict": "CONFIRMED",
+  "earlier_receipt": "https://s24.q4cdn.com/856567660/files/doc_presentations/2025/BLK-Investor-Day-2025-WEB.pdf (HTTP 200, 147 pp.): PDF Title \"BLK Investor Day 2025 - WEB\", CreationDate \"Thu Jun 12 20:09:19 2025 UTC\"; slide 23 \"API Calls (#) ... 17x\" under \"2030 Estimate\". https://ir.blackrock.com/news-and-events/2025-Investor-Day/default.aspx (WebFetch): \"2025 Investor Day\" page, whose \"Download Presentation (PDF)\" link points to this same file.",
+  "earlier_finding": "None needed. Neither page prints the event date. June 2025 rests on the PDF dates (deck 2025-06-12, agenda 2025-06-11) and on data labelled 'as of May 2025'."
+ },
+ {
+  "id": "s11",
+  "page": "18",
+  "location": "Sources register, section P, entry 11",
+  "claim": "Source 11: [P] BlackRock, Inc., Form 10-K for fiscal year 2025 . SEC EDGAR, filed 2026. https://www.sec.gov/Archives/edgar/data/2012383/000119312526071966/blk-20251231.htm",
+  "sources": "-",
+  "earlier_first_verdict": "CONFIRMED",
+  "earlier_final_verdict": "CONFIRMED",
+  "earlier_receipt": "EDGAR full-text API (efts.sec.gov), hit 0001193125-26-071966:blk-20251231.htm: \"display_names\": \"BlackRock, Inc. (BLK) (CIK 0002012383)\", \"form\": \"10-K\", \"file_date\": \"2026-02-25\", \"period_ending\": \"2025-12-31\". Document at the URL (HTTP 200): \"FORM 10-K ... ANNUAL REPORT PURSUANT TO SECTION 13 OR 15(d) OF THE SECURITIES EXCHANGE ACT OF 1934 For the fiscal year ended December 31 , 2025\".",
+  "earlier_finding": "None needed. Optionally give the filing date, February 25, 2026."
+ }
+]

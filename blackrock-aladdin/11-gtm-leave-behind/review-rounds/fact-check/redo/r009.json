@@ -1,0 +1,57 @@
+[
+ {
+  "id": "p10-17",
+  "page": "10",
+  "location": "Exhibit 11 box 'Thousands of registered tools'",
+  "claim": "a plugin registry holding \u201ccouple of thousands agents and tools\u201d",
+  "sources": "8",
+  "earlier_first_verdict": "CORPUS-ONLY",
+  "earlier_final_verdict": "CORPUS-ONLY",
+  "earlier_receipt": "/home/user/ai_game/blackrock-aladdin/04-transcripts/part1-youtube-and-site/16_How_BlackRock_Built_Production_AI_Agents_for_Asset_Managemen.md:26 \"this set of agents and tools, couple of thousands agents and tools that are registered in the plug-in registry\"; timestamped TS8 line 72 [06:42] \"a couple thousands agents and tools that are registered in the plug-in registry\"; web paraphrase https://www.zenml.io/llmops-database/agentic-ai-architecture-for-investment-management-platform \"With potentially thousands of tools and agents registered in the plugin registry, this node reduces the searchable universe to a manageable set (typically 20-30 tools).\"",
+  "earlier_finding": "No change needed. The substance is on the web as a paraphrase. The exact wording exists only in machine transcripts, and the two runs differ ('couple of thousands' vs 'a couple thousands'). Optionally soften it to a paraphrase."
+ },
+ {
+  "id": "p10-18",
+  "page": "10",
+  "location": "Exhibit 11 box 'Thousands of registered tools'",
+  "claim": "from \u201c50, 60 Aladdin engineering teams\u201d",
+  "sources": "8",
+  "earlier_first_verdict": "CORPUS-ONLY",
+  "earlier_final_verdict": "CORPUS-ONLY",
+  "earlier_receipt": "/home/user/ai_game/blackrock-aladdin/04-transcripts/timestamped/yt_oyqeCHFM5U4.m4a.ts.txt:41 \"[03:58] Say 50 60 Aladdin engineering teams that cover specific domains throughout the platform\"; scratchpad/yt/transcripts/16_How_BlackRock_Built_Production_AI_Agents_for_Asset_Managemen.md:18 \"say, 50, 60 Aladdin engineering teams\". Web paraphrase: https://www.zenml.io/llmops-database/agentic-ai-architecture-for-investment-management-platform \"With 50-60 specialized engineering teams owning different domains\"",
+  "earlier_finding": "None. The quote matches the corpus at 3:58. The exact words are corpus-only: the YouTube page lists an English auto-caption track, but every timedtext download came back as a 0-byte body."
+ },
+ {
+  "id": "p10-20",
+  "page": "10",
+  "location": "Exhibit 11 box '20 to 30 tools shortlisted'",
+  "claim": "leaving \u201csay, 20 to 30 tools and agents.\u201d",
+  "sources": "8",
+  "earlier_first_verdict": "CORPUS-ONLY",
+  "earlier_final_verdict": "CORPUS-ONLY",
+  "earlier_receipt": "ts.txt:79 \"[07:22] So we leave that filtering and access control node with some set of say 20 to 30 30 tools and agents and we enter our orchestration node\"; 16_...md:28 \"with some set of, say, 20 to 30 tools and agents, and we enter our orchestration node.\" Web paraphrase: zenml.io \"reduces the searchable universe to a manageable set (typically 20-30 tools)\"",
+  "earlier_finding": "None needed. Optional: the sentence continues past 'agents', so the period inside the quote marks could become an ellipsis or move outside them."
+ },
+ {
+  "id": "p10-21",
+  "page": "10",
+  "location": "Exhibit 11 box '20 to 30 tools shortlisted'",
+  "claim": "More than \u201c40, 50 tools\u201d would hurt performance",
+  "sources": "8",
+  "earlier_first_verdict": "CORPUS-ONLY",
+  "earlier_final_verdict": "CORPUS-ONLY",
+  "earlier_receipt": "ts.txt:77-78 \"[07:16] You know if we're sending more than 4050 tools / [07:20] We probably won't have that good of a performance\"; 16_...md:28 \"more than 40, 50 tools, we probably won't have that good of a performance.\" Web paraphrase: zenml.io \"sending more than 40-50 tools to the planning step would degrade performance\"",
+  "earlier_finding": "None. The exact words are corpus-only. The substance is confirmed on the web."
+ },
+ {
+  "id": "p10-22",
+  "page": "10",
+  "location": "Exhibit 11 box 'Plan and call the API'",
+  "claim": "an orchestrator loops \u201cover a planning and action node\u201d",
+  "sources": "8",
+  "earlier_first_verdict": "CORPUS-ONLY",
+  "earlier_final_verdict": "CORPUS-ONLY",
+  "earlier_receipt": "ts.txt:81 \"[07:34] Function calling today. We essentially just iterate over a planning and action node\"; 16_...md:30 \"iterate over a planning and action node\". Web paraphrase: zenml.io \"iterating through planning and action nodes until either an answer is found\"",
+  "earlier_finding": "None. 'loops' is a fair paraphrase of 'iterate'. The exact words are corpus-only."
+ }
+]

@@ -1,0 +1,57 @@
+[
+ {
+  "id": "p02-09",
+  "page": "2",
+  "location": "body para 2",
+  "claim": "About 100 of its [BlackRock's] applications ... already call these APIs every day",
+  "sources": "8",
+  "earlier_first_verdict": "PARTLY",
+  "earlier_final_verdict": "PARTLY",
+  "earlier_receipt": "/home/user/ai_game/blackrock-aladdin/04-transcripts/timestamped/yt_oyqeCHFM5U4.m4a.ts.txt:18 [01:53] \"They're around 100 Aladdin front-end applications that thousands of people use every day\"; :24-25 [02:32-02:34] \"The Aladdin co-pilot application is currently embedded across all of those hundred front-end applications\". Web: https://www.zenml.io/llmops-database/agentic-ai-architecture-for-investment-management-platform \"The platform comprises approximately 100 front-end applications maintained by around 4,000 engineers\" (no \"every day\" on the page). YouTube was blocked by a bot check, and WebSearch was out of budget.",
+  "earlier_finding": "\"About 100 applications\" holds. In the talk, \"every day\" describes people using the apps, and the talk never says the apps call the public Studio APIs. The speaker's words are CORPUS-ONLY. Suggested wording: \"About 100 Aladdin applications, used by thousands of people every day, all carry Copilot [8]\"."
+ },
+ {
+  "id": "p02-10",
+  "page": "2",
+  "location": "body para 2",
+  "claim": "thousands of Copilot tools already call these APIs every day",
+  "sources": "8",
+  "earlier_first_verdict": "PARTLY",
+  "earlier_final_verdict": "PARTLY",
+  "earlier_receipt": "yt_oyqeCHFM5U4.m4a.ts.txt:72 [06:42] \"a couple thousands agents and tools that are registered in the plug-in registry\"; :47-48 [04:31-04:39] \"we come to define a tool as / Kind of mapping one-to-one to an existing Aladdin API already out in production\"; :125 [11:07] \"It runs every day\" (the eval pipeline). ZenML: \"With potentially thousands of tools and agents registered in the plugin registry\"; \"Mapping directly to existing Aladdin APIs already in production\".",
+  "earlier_finding": "The count covers tools and agents together, and they are registered, not shown calling anything daily. \"Every day\" refers to the eval pipeline, and the talk does not tie the tools to the public Studio APIs. Suggested wording: \"a couple of thousand Copilot tools and agents are registered, each tool mapped to an existing production Aladdin API [8]\"."
+ },
+ {
+  "id": "p02-14",
+  "page": "2",
+  "location": "method box",
+  "claim": "Public material only: BlackRock web pages, the 54 API specifications inside 11 public asdk_plugin Python packages, 128 recordings, SEC filings, procurement notices, GitHub and PyPI",
+  "sources": "-",
+  "earlier_first_verdict": "PARTLY",
+  "earlier_final_verdict": "PARTLY",
+  "earlier_receipt": "part1-youtube-and-site/00_INDEX.md: 34 numbered rows, including row 15 \"Reference pages as plain text ... | notes\"; part2-cloudfront-and-podcasts/00_INDEX.md: 95 rows. 34+95-1=128. Duplicates: part1 \"11 | Never Done podcast: Data, the key ingredient\" = part2 \"13 | Podcast | Data: The key ingredient\"; part1 #12 = part2 #19 \"Humans in the loop; robots on the team\"; part1 #23 = part2 #42 \"What is the role of emerging tech in financial services?\". Unindexed: requested-recordings/nine_recordings_transcripts.md:15 \"8 | Transforming Private Markets Investment Strategies with Data & Tech\". 54 specs and 11 packages come from the first checker's fresh PyPI download.",
+  "earlier_finding": "54 specs and 11 packages: confirmed. \"128\" is a corpus-only index-row count. Distinct recordings come to about 126 (128 minus at least 3 duplicates, plus 1 unindexed), and 3 have no speech. Use \"about 125 recordings\" here and on page 4 (doc line 298)."
+ },
+ {
+  "id": "p03-02",
+  "page": "3",
+  "location": "body para 1",
+  "claim": "Brennan Rosales, its [Aladdin's] AI Engineering Lead (name and title)",
+  "sources": "8",
+  "earlier_first_verdict": "CORPUS-ONLY",
+  "earlier_final_verdict": "PARTLY",
+  "earlier_receipt": "https://www.youtube.com/watch?v=oyqeCHFM5U4 (YouTube English auto-captions fetched live, 00:15.36-00:21.44): \"Good afternoon everyone. My name is / Brennan Rosales and I am an AI / engineering lead at BlackRock.\" Video description: \"Brennan Rosales and Pedro Vicente Valdez reveal their enterprise agentic architecture\"",
+  "earlier_finding": "The title is now confirmed on the web through the live YouTube captions, so it is not CORPUS-ONLY. But \"its AI Engineering Lead\" is wrong: he calls himself \"an AI engineering lead at BlackRock\". Change it to that wording."
+ },
+ {
+  "id": "p03-14",
+  "page": "3",
+  "location": "body para 1",
+  "claim": "BlackRock sells the platform as one engine with separate entry points",
+  "sources": "-",
+  "earlier_first_verdict": "PARTLY",
+  "earlier_final_verdict": "PARTLY",
+  "earlier_receipt": "https://www.blackrock.com/aladdin/platforms/products/aladdin-studio : \"Aladdin\u00ae Studio helps unlock data to uncover new insights, automate workflows, and accelerate innovation\u2014all on a single platform built for the pace of change.\" https://www.blackrock.com/aladdin : \"Aladdin\u00ae is a tech platform that unifies the investment management process through a common data language.\" The same homepage nav heading \"Platforms\" lists \"Aladdin / Aladdin Wealth / eFront / Preqin\". 10-K FY2025 (fc/dl/b008/10k.txt): \"eFront is offered to clients both as a standalone offering and as part of an integrated \u201cWhole Portfolio\u201d solution\". https://www.preqin.com/about/press-release/blackrock-establishes-preeminent-private-markets-technology-and-data : \"Preqin will remain available as a standalone solution\"",
+  "earlier_finding": "The core framing is better supported than the first checker found, because the Studio page itself says \"single platform\". The words \"one engine\" still overstate it: BlackRock lists four separate \"Platforms\" and sells eFront and Preqin standalone. Rewrite as \"BlackRock sells Aladdin as one platform with a common data language, with separate products on top of it\" and cite the homepage and source 14."
+ }
+]

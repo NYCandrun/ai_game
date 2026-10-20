@@ -1,0 +1,57 @@
+[
+ {
+  "id": "s33",
+  "page": "18",
+  "location": "Sources register, section P, entry 33",
+  "claim": "Source 33: [P] Full-text search of SEC EDGAR for \u201cAladdin Studio.\u201d SEC EDGAR, run October 2026. https://www.sec.gov/edgar/search/#/q=%22Aladdin%20Studio%22",
+  "sources": "-",
+  "earlier_first_verdict": "CONFIRMED",
+  "earlier_final_verdict": "CONFIRMED",
+  "earlier_receipt": "https://efts.sec.gov/LATEST/search-index?q=%22Aladdin%20Studio%22 (the backend of the cited EDGAR FTS UI query, run 2026-10-20): \"match_phrase\":{\"doc_text\":\"Aladdin Studio\"} ... \"hits\":{\"total\":{\"value\":0,\"relation\":\"eq\"}. Control query \"Aladdin platform\" returns 291 hits.",
+  "earlier_finding": "None. The search finds zero filings, as the document says."
+ },
+ {
+  "id": "s35",
+  "page": "18",
+  "location": "Sources register, section P, entry 35",
+  "claim": "Source 35: [P] JPMorgan Chase proxy statements (DEF 14A), filed 2017 to 2026, covering related-party payments to BlackRock for Aladdin . SEC EDGAR. https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000019617&type=DEF+14A",
+  "sources": "-",
+  "earlier_first_verdict": "CONFIRMED",
+  "earlier_final_verdict": "CONFIRMED",
+  "earlier_receipt": "The EDGAR browse URL lists JPMORGAN CHASE & CO DEF 14A filings for 2017 to 2026. 2018 proxy: \"paid Blackrock approximately $4.4 million in 2017 to access its Aladdin\u00ae platform\". 2019: \"$5.0 million in 2018\". 2020: \"$5.3 million in 2019\". 2021: \"$6.8 million in 2020\". 2022: \"$4.6 million in 2021\". 2023: \"$7.6 million in 2022\". 2024: \"$6.9 million in 2023 to access and utilize its Aladdin\u00ae platform\". 2025 (jpm-20250405.htm): \"approximately $14.7 million in 2024\". 2017 (jpmc2017definitiveproxy.htm): \"paid BlackRock approximately $1.5 million in 2016 for integration services\".",
+  "earlier_finding": "None. The $4.4M to $7.6M range for 2017 to 2023, the $14.7M for 2024 and the 2016 integration bar all check out."
+ },
+ {
+  "id": "s39",
+  "page": "19",
+  "location": "Sources register, section P, entry 39",
+  "claim": "Source 39: [P] Pull request 53, additional HTTP headers, blackrock/aladdinsdk . GitHub, December 2025. https://github.com/blackrock/aladdinsdk/pull/53",
+  "sources": "-",
+  "earlier_first_verdict": "CONFIRMED",
+  "earlier_final_verdict": "CONFIRMED",
+  "earlier_receipt": "https://github.com/blackrock/aladdinsdk/pull/53: title \"[FEATURE] Additional HTTP headers\"; opened December 2, 2025, merged December 8, 2025; body: \"Added functionality to support custom additional HTTP headers to API requests made via the API.\"",
+  "earlier_finding": ""
+ },
+ {
+  "id": "s41",
+  "page": "19",
+  "location": "Sources register, section P, entry 41",
+  "claim": "Source 41: [P] Commit 1c1bd25, raw patch, blackrock/aladdinsdk . GitHub, December 1, 2025. https://github.com/blackrock/aladdinsdk/commit/1c1bd2559e4e4da2591f13dccfd7db6c2f9dc68c.patch",
+  "sources": "-",
+  "earlier_first_verdict": "CONFIRMED",
+  "earlier_final_verdict": "CONFIRMED",
+  "earlier_receipt": "https://github.com/blackrock/aladdinsdk/commit/1c1bd2559e4e4da2591f13dccfd7db6c2f9dc68c.patch: \"From: Willem du Preez <Willem.DuPreez@janushenderson.com>\" / \"Date: Mon, 1 Dec 2025 16:53:28 +0000\" / \"Subject: [PATCH] Added ability to add additional HTTP headers.\"",
+  "earlier_finding": "Note: this commit is the HTTP-headers work in PR 53, not PR 52."
+ },
+ {
+  "id": "s42",
+  "page": "19",
+  "location": "Sources register, section P, entry 42",
+  "claim": "Source 42: [P] Janus Henderson Group, Form 10-K for fiscal year 2025 . SEC EDGAR, filed 2026. https://www.sec.gov/Archives/edgar/data/1274173/000143774926005628/jhg20251231_10k.htm",
+  "sources": "-",
+  "earlier_first_verdict": "CONFIRMED",
+  "earlier_final_verdict": "CONFIRMED",
+  "earlier_receipt": "https://www.sec.gov/Archives/edgar/data/1274173/000143774926005628/jhg20251231_10k.htm: \"FORM 10-K\", \"JANUS HENDERSON GROUP PLC\", \"For the fiscal year ended December 31, 2025\". The index page https://www.sec.gov/Archives/edgar/data/1274173/000143774926005628/0001437749-26-005628-index.html shows \"Filing Date: 2026-02-25\", \"Period of Report: 2025-12-31\".",
+  "earlier_finding": "Optional: exact filing date February 25, 2026."
+ }
+]

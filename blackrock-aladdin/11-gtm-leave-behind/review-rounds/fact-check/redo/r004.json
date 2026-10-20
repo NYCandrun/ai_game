@@ -1,0 +1,57 @@
+[
+ {
+  "id": "p15-112",
+  "page": "15",
+  "location": "Exhibit 17 source note",
+  "claim": "my test of each platform's public pages, no accounts or payments, October 8, 2026",
+  "sources": "14,66,67,68,69,70,7,57,4",
+  "earlier_first_verdict": "UNVERIFIED",
+  "earlier_final_verdict": "UNVERIFIED",
+  "earlier_receipt": "fc/sources.tsv:66-70: \"as of October 8, 2026\" (e.g. \"66 P FactSet developer portal . FactSet, as of October 8, 2026\"). sources.tsv:14: \"as of October 2026\". sources.tsv:4: \"MSCI press release, 2025\", but the live dateline (WebFetch) is \"New York \u2013 February 24, 2026\". gen_p14_15.py:72: (\"MSCI\", [0,0,0,0,0,0,2,0], \"4\"). gen_p14_15.py:82: \"Bloomberg, Clearwater and MSCI may score lower than they deserve, because some of their pages blocked automated access\". curl to www.msci.com returns \"<title>Checking your browser - reCAPTCHA</title>\", but developer.msci.com returns 200 and renders publicly in headless Chromium. No test log found.",
+  "earlier_finding": "The author's own test cannot be checked from outside. Its dates match sources 66-70 only; 7, 57 and 4 are press releases. Fix source 4's year to 2026. The blocking caveat holds for www.msci.com but not for developer.msci.com or PyPI. Rescore the MSCI row from them and add them as sources."
+ },
+ {
+  "id": "p15-30",
+  "page": "15",
+  "location": "Exhibit 17 row Bloomberg col 'Call to action'",
+  "claim": "Bloomberg, Call to action: 1 (partial or after sign-up or approval)",
+  "sources": "-",
+  "earlier_first_verdict": "UNVERIFIED",
+  "earlier_final_verdict": "UNVERIFIED",
+  "earlier_receipt": "https://professional.bloomberg.com/products/data/data-license/dl-plus/ : CTA \"Request a Demo\". https://professional.bloomberg.com/support/api-library/ : \"Java Supported Release v3.26.9.1 (zip)\" (the blpapi.bloomberg.com zip returns HTTP 200 with no login), but \"These Bloomberg API libraries ... are only compatible with the Bloomberg Server API and B-Pipe data feed products\". /home/user/ai_game/blackrock-aladdin/11-gtm-leave-behind/review-rounds/short-text/MEANING_CHECK_titles.md:45: \"add one sentence to the existing score footnote ... saying what a 2, 1 and 0 mean for it.\"",
+  "earlier_finding": "The 'Call to action' scale is never defined, so the score cannot be reproduced. Bloomberg's main CTA, 'Request a Demo', is the same kind as Studio's 'Book a meeting', which scores 0. The only basis for a 1 is the open SDK download, and that SDK is usable only by existing customers. Define the scale, then rescore Bloomberg and Studio consistently."
+ },
+ {
+  "id": "p15-52",
+  "page": "15",
+  "location": "Exhibit 17 row Arcesium col 'Community or marketplace'",
+  "claim": "Arcesium, Community or marketplace: 1 (partial or after sign-up or approval)",
+  "sources": "57",
+  "earlier_first_verdict": "UNVERIFIED",
+  "earlier_final_verdict": "UNVERIFIED",
+  "earlier_receipt": "https://www.prnewswire.com/news-releases/arcesium-launches-aquata-an-advanced-data-platform-purpose-built-for-the-investments-industry-301791400.html: the only related wording is \"We engineered Aquata to allow firms to put their data into production and seamlessly integrate it with their own ecosystem or with Arcesium's operational platform\". There is no marketplace or community. The Snowflake, Confluence and Lionpoint releases on PR Newswire say \"ecosystem\" only in the boilerplate: \"achieve a synchronized golden source of data throughout a client's ecosystem\". https://github.com/arcesium has five general open-source repos (poetry-plugin-pypi-mirror, log-viewer-for-argo-workflows, tech-conference, glob-tries, swiftlake) and no platform community. docs.arcesium.com and developer.arcesium.com redirect to login.arcesium.com/docsLogin (gated docs). The community, marketplace, partners, forum, support and aquata subdomains of arcesium.com do not resolve. arcesium.com, including source 57 and /partners, returns HTTP 429 to curl and WebFetch. The WebSearch budget was exhausted. The only text that says marketplace is our own draft: /home/user/ai_game/blackrock-aladdin/06-revised-documents/briefing-and-interview-guide/Aladdin_Briefing_and_Interview_Guide_REVISED.md:763 \"Arcesium's Aquata is the most direct, with thousands of prebuilt data models and a marketplace of partner integrations.\"",
+  "earlier_finding": "Make the cell rest on a reachable Arcesium page that shows a partner marketplace or a gated client community, checked in a real browser since arcesium.com rate-limits automated access. Cite that page, not 57: an AI-platform release does not support this cell. If no such page exists, set the score to 0."
+ },
+ {
+  "id": "s37",
+  "page": "19",
+  "location": "Sources register, section T, entry 37",
+  "claim": "Source 37: [T] JP Morgan to connect to BlackRock\u2019s Aladdin . The TRADE, 2016. https://www.thetradenews.com/jp-morgan-to-connect-to-blackrocks-aladdin/",
+  "sources": "-",
+  "earlier_first_verdict": "UNVERIFIED",
+  "earlier_final_verdict": "UNVERIFIED",
+  "earlier_receipt": "https://www.thetradenews.com/jp-morgan-to-connect-to-blackrocks-aladdin/ : WebFetch \"The server returned HTTP 522 Unknown Status.\"; curl: HTTP 403. Wayback availability API (http://archive.org/wayback/available?url=thetradenews.com/jp-morgan-to-connect-to-blackrocks-aladdin/): \"closest\": {\"status\": \"200\", \"available\": true, \"url\": \"http://web.archive.org/web/20251118133609/https://www.thetradenews.com/jp-morgan-to-connect-to-blackrocks-aladdin/\"}. This shows the URL served a real page on 2025-11-18, but the snapshot could not be read: curl said \"Blocked by egress policy\" and WebFetch said it was \"unable to fetch from web.archive.org\". WebSearch: \"this turn's web search budget is used up\". There is no local copy of the article. The year has indirect support only: blackrock-aladdin/10-compendium/Aladdin_Studio_BlackRock_Compendium.md:425 \"JPMorgan \\\"one of the very early adopters ... from 2016\\\"\" (T2-059, a BlackRock video).",
+  "earlier_finding": "The URL exists (archived with status 200), but the headline wording, the publisher and the 2016 date were not read. Open the Wayback snapshot web.archive.org/web/20251118133609/https://www.thetradenews.com/jp-morgan-to-connect-to-blackrocks-aladdin/ or the live page in a browser to confirm them before publishing."
+ },
+ {
+  "id": "s46",
+  "page": "19",
+  "location": "Sources register, section T, entry 46",
+  "claim": "Source 46: [T] BlackRock earnings call transcripts, Q1 2020 to Q2 2026 . roic.ai, 2020 to 2026. https://www.roic.ai/quote/BLK/transcripts",
+  "sources": "-",
+  "earlier_first_verdict": "UNVERIFIED",
+  "earlier_final_verdict": "UNVERIFIED",
+  "earlier_receipt": "https://www.roic.ai/quote/BLK/transcripts: HTTP 403 to curl and WebFetch. All roic.ai content URLs, including sitemaps, return a Cloudflare page \"<title>Just a moment...</title>\". Wayback availability API: {\"closest\": {\"status\": \"200\", \"available\": true, \"url\": \"http://web.archive.org/web/20250716152332/https://www.roic.ai/quote/BLK/transcripts\"}}, but the snapshot is blocked here (\"Blocked by egress policy\"). The ends of the range exist per the SEC 8-Ks: \"Earnings release dated April 16, 2020\"; \"BlackRock Reports Second Quarter 2026 Diluted EPS of $12.19\"",
+  "earlier_finding": "No text change needed. The page existed (Wayback index shows HTTP 200 on 2025-07-16), but its Q1 2020 to Q2 2026 coverage could not be read. WebSearch budget was used up. A reviewer should open the page in a browser."
+ }
+]

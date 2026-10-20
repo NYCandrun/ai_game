@@ -1,0 +1,57 @@
+[
+ {
+  "id": "p07-22",
+  "page": "7",
+  "location": "body para 1",
+  "claim": "Four of the five describe Studio in the same terms, APIs and events plus the Data Cloud",
+  "sources": "-",
+  "earlier_first_verdict": "PARTLY",
+  "earlier_final_verdict": "PARTLY",
+  "earlier_receipt": "Woodhead (Simplecast transcript): \"Aladdin Studio is essentially the user experience ... as a set of APIs events. The Aladdin Data Cloud built on top of Snowflake\". Goel (my transcription of the public MP4): \"make every single event that happens in Aladdin available to you ... via an event, via an API\"; \"a near real time data store in the form of ADC\". Corpus ts.txt has 0 matches for 'studio'. Newman (blackrock.com page): \"Aladdin data cloud specifically comes in, which is part of Studio\"; \"those analytic APIs\". No 'event' appears in the transcript. Khara (my transcription of the public MP4): \"what we call the Aladdin studio [e]state ... interact with our data, with their data, with reporting with dashboards on a programmatic basis at machine scale\". He uses no API, event or Data Cloud wording. Miller corpus 17_...md has 0 matches for studio, API, event or developer.",
+  "earlier_finding": "Overstated. Only Woodhead names APIs, events and the Data Cloud while calling it Studio. Goel names all three but never says \"Studio\"; his frame is \"opening up Aladdin\". Newman names APIs and the Data Cloud but not events. Khara describes only programmatic access to data, reporting and dashboards. Suggested wording: \"Four of the five describe overlapping parts of Studio: programmatic access through APIs (Woodhead, Goel, Newman; Khara in general terms), events (Woodhead, Goel) and the Data Cloud (Woodhead, Goel, Newman).\" Exhibit 7's title and its Yes marks for Khara and Newman have the same problem (outside this batch)."
+ },
+ {
+  "id": "p07-27",
+  "page": "7",
+  "location": "body para 1",
+  "claim": "A 2026 job posting calls Studio \"Aladdin's extensibility layer\"",
+  "sources": "32",
+  "earlier_first_verdict": "PARTLY",
+  "earlier_final_verdict": "PARTLY",
+  "earlier_receipt": "https://careers.blackrock.com/job/new-york/senior-product-director-aladdin-studio-developer/45831/96232273856 (fetched live): \"Set and evolve the vision for Studio Developer as Aladdin's extensibility layer, enabling customization and automation within the platform while preserving the integrity of core functionality\"; \"You will lead Studio Developer, Aladdin's platform for extending and automating workflows\"; \"Date posted: Sep. 09, 2026\"",
+  "earlier_finding": "The wrong words are \"calls Studio\": the posting gives the label to Studio Developer. Reword: A 2026 job posting calls Studio Developer \"Aladdin's extensibility layer\" [32]."
+ },
+ {
+  "id": "p07-31",
+  "page": "7",
+  "location": "Exhibit 7 row Khara cols 'APIs and events / Data Cloud / Developer tools'",
+  "claim": "Khara: APIs and events Yes; Data Cloud Yes; Developer tools \u2013",
+  "sources": "30",
+  "earlier_first_verdict": "PARTLY",
+  "earlier_final_verdict": "PARTLY",
+  "earlier_receipt": "https://www.blackrock.com/aladdin/discover (re-fetched live) embeds BSTAwards2023WinnerInterview-606.1080p.wide.mp4 with an empty caption track: \"tracks\":[{\"kind\":\"subtitles\",...,\"src\":\"\"}], so there is no published transcript. Local Whisper: /home/user/ai_game/blackrock-aladdin/04-transcripts/timestamped/BSTAwards2023WinnerInterview-606.720p.wide.mp4.ts.txt:198-200 [18:37-18:48] \"What we call the Aladdin studio estate, we think is going to this year be a major, major unlock, because we're finding that more users are craving this ability to interact with our data, with their data, with reporting with dashboards on a programmatic basis at machine scale\". The only API line is at :52 [05:07] \"this big focus on open architecture and access to APIs\" (about Aladdin in general). The transcript has no \"data cloud\", \"Snowflake\", \"developer\" or \"SDK\". Its only \"events\" means market events (:134 \"respond to these market events\").",
+  "earlier_finding": "The legend says Yes means the speaker names that part, and Khara does not name APIs, events or the Data Cloud in the Studio passage. APIs are implied by 'programmatic basis', events are not named, and the Data Cloud is at most implied. Mark both cells as implied or add a footnote, and soften the Exhibit 7 title 'All four speakers name APIs, events and the Data Cloud'. The words are corpus-only (Whisper). Web search budget was exhausted this turn, so only direct fetches were possible."
+ },
+ {
+  "id": "p07-40",
+  "page": "7",
+  "location": "Exhibit 7 row Goel cols 'APIs and events / Data Cloud / Developer tools'",
+  "claim": "Goel: APIs and events Yes; Data Cloud Yes; Developer tools Yes",
+  "sources": "26",
+  "earlier_first_verdict": "PARTLY",
+  "earlier_final_verdict": "PARTLY",
+  "earlier_receipt": "ts.txt:164 \"via an event, via an API\"; ts.txt:168 [29:37] \"the data in the form of ADC, which we think about as a data integration hub\". The phrase 'developer tools' does not occur. Nearest are [29:55] \"extending a lot in into a platform\" and [30:01] \"overlay your own configuration and code\", and [35:40] \"provide platform to our citizen developers\", which [35:23] frames internally: \"When I reflected BlackRock, we have 3,000 people who qualify in this bracket today.\"",
+  "earlier_finding": "Set Developer tools for Goel to '\u2013' and change the note to 'Only Woodhead names developer tools'. If Yes stays, cite 29:55/30:01 as an inference, not 35:40, because that passage is about BlackRock's own staff. Data Cloud Yes can stand because ADC is Aladdin Data Cloud."
+ },
+ {
+  "id": "p07-45",
+  "page": "7",
+  "location": "Exhibit 7 note",
+  "claim": "Quotations are verbatim",
+  "sources": "30,16,26,1",
+  "earlier_first_verdict": "PARTLY",
+  "earlier_final_verdict": "PARTLY",
+  "earlier_receipt": "https://www.blackrock.com/aladdin/discover/podcast/snowflake-podcast-data-the-key-ingredient: \"and where the data cloud and Aladdin data cloud specifically comes in, which is part of Studio, is we recognize that partnering\"; same page: \"access those analytic APIs, portfolio analysis, security analysis, things like that. That's all part of the Studio umbrella.\" Woodhead YouTube auto-captions at 04:47 to 05:02: \"exposes everything Aladdin knows how to do as a set of APIs events. The Aladdin data cloud built on top of Snowflake\". Khara: timestamped/BSTAwards2023WinnerInterview-606.720p.wide.mp4.ts.txt:199 \"more users are craving this ability to interact with our data,\"; 061_Best_Overall_Technology_Provider_for_2023.md:60 \"with their data, with reporting with dashboards on a programmatic basis at machine scale\". Goel: timestamped/data_strat-asset_pens_v1-839.720p.wide.mp4.ts.txt:164 \"accessible to you via an event, via an API.\"; :167 \"a near real time data store\"; :140 \"exposing some of the software and application that we're building\".",
+  "earlier_finding": "Newman's \"The Aladdin data cloud ... which is part of Studio\" is not verbatim: the source says \"the data cloud and Aladdin data cloud\", and \"data cloud and\" was dropped without an ellipsis. Change it to \"Aladdin data cloud ... which is part of Studio\" or quote it in full. All the other quotes match their sources. Woodhead is now confirmed on the web through YouTube's caption track. Khara and Goel are still corpus-only: the BlackRock video players have an empty subtitle src, and no caption file was found on CloudFront (403). The WebSearch budget was used up, so no search-engine queries could be run."
+ }
+]

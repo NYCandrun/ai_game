@@ -1,0 +1,57 @@
+[
+ {
+  "id": "s48",
+  "page": "19",
+  "location": "Sources register, section T, entry 48",
+  "claim": "Source 48: [T] BlackRock Q3 2022 earnings call transcript . roic.ai, October 2022. https://www.roic.ai/quote/BLK/transcripts/2022-year/3-quarter",
+  "sources": "-",
+  "earlier_first_verdict": "UNVERIFIED",
+  "earlier_final_verdict": "UNVERIFIED",
+  "earlier_receipt": "https://www.roic.ai/quote/BLK/transcripts/2022-year/3-quarter: WebFetch \"The server returned HTTP 403 Forbidden.\"; Wayback availability API \"archived_snapshots\": {} (no snapshot). Call date re-confirmed: https://www.sec.gov/Archives/edgar/data/1364742/000156459022034147/blk-ex991_7.htm \"BlackRock Reports Third Quarter 2022 Diluted EPS of $9.25, or $9.55 as adjusted\" ... \"will host a teleconference call for investors and analysts on Thursday, October 13, 2022 at 8:30 a.m. (Eastern Time)\"",
+  "earlier_finding": "No text change needed. 'October 2022' is correct (call on 13 October 2022). The roic.ai transcript page is behind a bot wall and has no Wayback snapshot, so it could not be read. WebSearch budget was used up."
+ },
+ {
+  "id": "p03-07",
+  "page": "3",
+  "location": "body para 1",
+  "claim": "Rosales: The organization is \"around 7,000 people, with over 4,000 of those being engineers.\" (quotation)",
+  "sources": "8",
+  "earlier_first_verdict": "CORPUS-ONLY",
+  "earlier_final_verdict": "CORPUS-ONLY",
+  "earlier_receipt": "/home/user/ai_game/blackrock-aladdin/04-transcripts/part1-youtube-and-site/16_How_BlackRock_Built_Production_AI_Agents_for_Asset_Managemen.md:12: \"The Aladdin organization is made up of around 7,000 people, with over 4,000 of those being engineers.\" Also timestamped/yt_oyqeCHFM5U4.m4a.ts.txt:17 [01:44]. Web paraphrase https://www.zenml.io/llmops-database/agentic-ai-architecture-for-investment-management-platform: \"maintained by around 4,000 engineers within the 7,000-person Aladdin organization.\"",
+  "earlier_finding": "None. Quote is verbatim in local transcript. YouTube returns LOGIN_REQUIRED ('Sign in to confirm you're not a bot') and no captions on every innertube client tried; web search budget exhausted this turn."
+ },
+ {
+  "id": "p03-08",
+  "page": "3",
+  "location": "body para 1",
+  "claim": "Rosales: around 7,000 people",
+  "sources": "8",
+  "earlier_first_verdict": "CORPUS-ONLY",
+  "earlier_final_verdict": "CORPUS-ONLY",
+  "earlier_receipt": "yt_oyqeCHFM5U4.m4a.ts.txt:17 [01:44]: \"The Aladdin organization is made up of around 7,000 people\". ZenML (web paraphrase): \"within the 7,000-person Aladdin organization.\"",
+  "earlier_finding": "None. Web support is paraphrase only."
+ },
+ {
+  "id": "p03-09",
+  "page": "3",
+  "location": "body para 1",
+  "claim": "Rosales: over 4,000 of those being engineers",
+  "sources": "8",
+  "earlier_first_verdict": "CORPUS-ONLY",
+  "earlier_final_verdict": "CORPUS-ONLY",
+  "earlier_receipt": "yt_oyqeCHFM5U4.m4a.ts.txt:17 [01:44]: \"with over 4,000 of those being engineers\". ZenML (web paraphrase): \"maintained by around 4,000 engineers\"",
+  "earlier_finding": "None. Keep 'over' (speaker's word); ZenML's 'around' is its paraphrase."
+ },
+ {
+  "id": "p03-10",
+  "page": "3",
+  "location": "body para 1",
+  "claim": "Rosales: They maintain \"around 100 Aladdin front-end applications\"",
+  "sources": "8",
+  "earlier_first_verdict": "CORPUS-ONLY",
+  "earlier_final_verdict": "CORPUS-ONLY",
+  "earlier_receipt": "16_How_BlackRock_Built_Production_AI_Agents_for_Asset_Managemen.md:14: \"And these engineers build and maintain the around 100 Aladdin front-end applications that thousands of people use every day.\" ZenML: \"The platform comprises approximately 100 front-end applications maintained by around 4,000 engineers\"",
+  "earlier_finding": "None. Quoted words verbatim. Note ts.txt:18 [01:53] mis-transcribes as \"They're around 100 Aladdin front-end applications\"; cite part1 line 14 or ts.txt:17-18 together."
+ }
+]

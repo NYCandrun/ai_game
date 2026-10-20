@@ -1,0 +1,57 @@
+[
+ {
+  "id": "p13-47",
+  "page": "13",
+  "location": "exhibit note",
+  "claim": "The hatched box is not: on a client's AI tools BlackRock has published nothing beyond a job posting",
+  "sources": "60",
+  "earlier_first_verdict": "PARTLY",
+  "earlier_final_verdict": "PARTLY",
+  "earlier_receipt": "(1) https://careers.blackrock.com/job/mumbai/forward-deploy-engineer-aladdin-data-associate/45831/97466309856 (curl 20 Oct 2026, HTTP 404): \"sorry this job post no longer exists.\" Wayback API: \"archived_snapshots\": {}. (2) Mirror https://joinsaarthi.com/jobs/blackrock/forward-deploy-engineer-aladdin-data-associate-mumbai/46c71ea1-8135-43ac-9591-17a49139ceb6: \"BlackRock's Enterprise Data Platform (EDP) is the firm's strategic foundation for how data products are built\"; \"Implement emerging AI tooling including Model Context Protocol (MCP), AI agents, and Copilot extensions to automate repetitive onboarding tasks\"; \"Act as a trusted technical advisor on data product design and onboarding best practices for partner engineering and data teams\"; \"posted_at\":\"2026-09-04\", Workday req R264906. (3) https://www.blackrock.com/aladdin/platforms/products/aladdin-copilot: \"Aladdin Copilot serves to strengthen the connective tissue across the Aladdin\u00ae platform\" (silent on client-built AI tools/MCP). (4) /home/user/ai_game/blackrock-aladdin/04-transcripts/part2-cloudfront-and-podcasts/049_Build_vs_Buy_Webinar_Replay.md:108: \"You can have your MCP, you can have your different APIs, but how do we actually make use of that data?\" (passing remark in a BlackRock webinar, not a product statement).",
+  "earlier_finding": "Agree: the negative core holds (no BlackRock publication on how a client's AI tools would connect), but the sentence implies the posting addresses client AI tools; it is an internal EDP/DPaaS role using MCP/agents to automate onboarding for partner teams, and the cited URL is dead with no archive. Reword: 'The hatched box is not: BlackRock has not published how a client's AI tools would connect; the nearest public sign is a since-removed posting (Sept 2026) for an internal data-platform role that names MCP and AI agents [60].' Replace source 60 URL with the Saarthi mirror or Workday R264906 plus 'posted 4 Sept 2026, removed by 20 Oct 2026'; apply the same fix to the hatched-box label and p.12. Also p.9 'Aladdin has only a job posting that mentions MCP' is slightly overstated: BlackRock's 2025 Build vs Buy webinar mentions MCP in passing. Limitation: shared WebSearch budget was exhausted, so no new web searches were possible; checks used direct fetches and corpus grep."
+ },
+ {
+  "id": "p14-04",
+  "page": "14",
+  "location": "Exhibit 15 row 1 col 'What it is'",
+  "claim": "the Snowflake and Databricks answer (Studio has a Snowflake and Databricks connection to describe)",
+  "sources": "-",
+  "earlier_first_verdict": "PARTLY",
+  "earlier_final_verdict": "PARTLY",
+  "earlier_receipt": "https://www.blackrock.com/aladdin/platforms/products/aladdin-studio (fetched Oct 20 2026, HTTP 200): \"Aladdin Data Cloud (ADC) is a managed data-as-a-service offering that brings together Aladdin\u2014the language of portfolios\u2014with Snowflake's data platform to transform how you mobilize investment data.\" Also https://www.blackrock.com/aladdin/products/aladdin-data-cloud: \"a next-generation data and analytics platform, powered by Snowflake's cloud-native technology\". Neither page contains \"Databricks\" (case-insensitive grep of the full HTML), and the 1,943-line Aladdin sitemap (scratchpad crawl2/aladdin_sitemap.xml) has no Databricks URL. Buyer question, from https://d2adqanfijfsj5.cloudfront.net/captions/ala_build_vs_buy_captions_en.vtt 00:42:22.360-00:42:33.800: \"what's the API suite that you have? / Are you using connectors to Snowflake or / to data bricks? / And I think that that part of the RFP has / become much more prominent.\" The speaker is Clark Schafer of Alpha FMC, not BlackRock.",
+  "earlier_finding": "The Snowflake part is correct (Aladdin Data Cloud). No BlackRock source shows a Databricks connection; Databricks appears only in the buyer's question and as the competing build-your-own option. Reword to \"the answer to the Snowflake and Databricks question buyers now ask (Data Cloud runs on Snowflake)\", or confirm a Databricks path before implying one exists. Limit: this turn's WebSearch budget was used up, so no new web searches were made. Only the BlackRock pages, the captions and the sitemap were checked."
+ },
+ {
+  "id": "p14-15",
+  "page": "14",
+  "location": "body para 1 (Part 4)",
+  "claim": "I could not run anything, open the catalog, guides, notebooks or samples, or test what a client receives (the catalog, guides, notebooks and samples are not publicly openable)",
+  "sources": "-",
+  "earlier_first_verdict": "PARTLY",
+  "earlier_final_verdict": "PARTLY",
+  "earlier_receipt": "https://www.blackrock.com/aladdin/platforms/products/apis : \"Get a head start building with developer guides Download Python Jupyter Notebooks, or cut and paste code samples across multiple programming languages from carefully curated API guides, to build solutions in minutes. Discover the data you need Our Data Dictionary allows you to explore Aladdin data\". The page's only Aladdin product links go to the Studio and APIs pages, with no link to the guides, notebooks or dictionary. Contradicting: https://raw.githubusercontent.com/blackrock/aladdinsdk/main/README.md line 226: \"Sample code snippets and user configuration files are provided under [`resources/sample_code_snippets`](resources/sample_code_snippets) directory in this code repository.\" sample_api_calls.md returns HTTP 200. README line 179: \"AladdinSDK can run on a developer's local machine or in Aladdin Studio Compute sessions. There is also a test mode used by SDK developers.\"",
+  "earlier_finding": "The catalog, the API guides and their notebooks and code samples are not publicly reachable. But the SDK's own sample code snippets are public on GitHub, so the bare word 'samples' is too broad. Say 'the catalog, the API guides or their notebooks and code samples'. 'Could not run anything' is the author's own account. It holds in substance, because every real call needs a client host and credentials."
+ },
+ {
+  "id": "p14-18",
+  "page": "14",
+  "location": "Exhibit 16 row Hear col 'After qualification'",
+  "claim": "Client forums and the solutions team (available after qualification)",
+  "sources": "-",
+  "earlier_first_verdict": "PARTLY",
+  "earlier_final_verdict": "PARTLY",
+  "earlier_receipt": "https://www.blackrock.com/aladdin/discover/expertise/events/aladdin-client-forum-2026 : \"The Aladdin Client Forum is an invitation-only event. It brings together CIOs, COOs, and other C-suite leaders across institutional investors and wealth managers. Attendees include strategic clients and partners, alongside a select group of prospective clients.\" https://www.blackrock.com/aladdin/discover/expertise/events : \"Aladdin Client Forum ... Sign up to receive invites\". https://www.blackrock.com/aladdin/platforms/products/aladdin-studio : \"please contact your Aladdin Relationship Management representative\". No fetched page says 'solutions team'.",
+  "earlier_finding": "The Client Forum is supported, but entry is by invitation rather than strictly after qualification: the forum page says it also invites 'a select group of prospective clients'. 'The solutions team' has no source. The only client contact the Studio page names is the 'Aladdin Relationship Management representative'. Suggested wording: 'Invitation-only Client Forums and an Aladdin Relationship Management representative', citing the Client Forum 2026 page and the Studio page."
+ },
+ {
+  "id": "p14-24",
+  "page": "14",
+  "location": "Exhibit 16 row Read col 'Public today'",
+  "claim": "the APIs page, which promises \u201cdozens of APIs\u201d",
+  "sources": "24",
+  "earlier_first_verdict": "PARTLY",
+  "earlier_final_verdict": "PARTLY",
+  "earlier_receipt": "https://www.blackrock.com/aladdin/platforms/products/apis (fetched 2026-10-20), accordion heading: \"Dozens of Aladdin APIs available \u2013 with constant new additions\"; next line: \"Aladdin Studio already has a large universe of available APIs\". The exact string \"dozens of APIs\" is absent from the page HTML, its meta description and the Studio page [14].",
+  "earlier_finding": "Citation and meaning are correct, but the quote drops \"Aladdin\" inside the quotation marks. Write \"dozens of Aladdin APIs\" or remove the quotation marks."
+ }
+]

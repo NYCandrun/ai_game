@@ -1,0 +1,57 @@
+[
+ {
+  "id": "p10-13",
+  "page": "10",
+  "location": "body para 1 sentence 6",
+  "claim": "BlackRock\u2019s AI product head says the team is making sure \u201cthe data model itself is structured for agentic use cases\u201d (attribution: BlackRock\u2019s AI product head)",
+  "sources": "54",
+  "earlier_first_verdict": "PARTLY",
+  "earlier_final_verdict": "PARTLY",
+  "earlier_receipt": "/home/user/ai_game/blackrock-aladdin/04-transcripts/timestamped/1f33b7f7-6e02-4c5b-b9ed-cf0f2ead158d.mp3.ts.txt lines 176-177 [17:37]-[17:44] \"ensuring that the data model itself / is structured for agentic use cases\"; same turn lines 170-171 [16:51]-[16:59] \"We're spending a lot more time with our engineers and database engineers really understanding at / a deeper level of what Pavana is speaking to.\" Web: https://www.blackrock.com/aladdin/discover/podcast/reducing-time-to-insight-how-ai-is-reshaping-risk-management has no transcript; guests listed are \"Pavan Pemmaraju, Head of AI Product & Engineering\" and \"Jess Fitzgibbon, Head of Product for Aladdin Risk\".",
+  "earlier_finding": "The quoted words are right (CORPUS-ONLY). The attribution 'BlackRock's AI product head' is wrong: the speaker refers to Pavan in the third person, so it is not Pemmaraju. The speaker also talks about how 'our products are built', which points to Jess Fitzgibbon (Head of Product for Aladdin Risk). Use 'a BlackRock product leader on the podcast', since the recording has no speaker labels."
+ },
+ {
+  "id": "p10-25",
+  "page": "10",
+  "location": "Exhibit 11 box 'One answer, never investment advice'",
+  "claim": "Copilot\u2019s standing instructions (its system prompt) are tested so it will \u201cnever provide investment advice\u201d",
+  "sources": "8",
+  "earlier_first_verdict": "PARTLY",
+  "earlier_final_verdict": "PARTLY",
+  "earlier_receipt": "https://www.zenml.io/llmops-database/agentic-ai-architecture-for-investment-management-platform (fetched 2026-10-20): \"For every intended behavior encoded in system prompts, they generate comprehensive test cases.\" / \"For example, if a system prompt states \u201cyou must never provide investment advice,\u201d they work with subject matter experts to:\". I could not get the YouTube captions: the track list loaded but the English caption file came back empty. So the speaker's exact words are from our local transcript, /home/user/ai_game/blackrock-aladdin/04-transcripts/timestamped/yt_oyqeCHFM5U4.m4a.ts.txt:116-121: \"[10:25] ... So for example if I write you're a lot in copilot / [10:30] You must never provide investment advice. What is investment advice? ... [10:44] And again, this is a very dummy example, but we do this for every system problem / [10:48] We do this for every intended behavior we code into our system prompts\"",
+  "earlier_finding": "The testing practice and the quoted words are accurate. The example is about Copilot: \"you're a lot in copilot\" is the machine transcription of \"You're Aladdin Copilot\". But the speaker presents the rule as a hypothetical (\"for example if I write\", \"a very dummy example\"). ZenML's summary also frames it as an example (\"if a system prompt states\"). Neither source says Copilot's actual system prompt contains this rule. Suggested rewording: \"the team tests every behaviour written into Copilot's system prompts; the talk's example is a rule that it must 'never provide investment advice' 8\". Web search was unavailable because this turn's search budget was used up, so I found no further independent source."
+ },
+ {
+  "id": "p11-35",
+  "page": "11",
+  "location": "direction box sentence 1",
+  "claim": "A public account of the Copilot plugin model would cover production Aladdin APIs, the same ones Studio exposes",
+  "sources": "8,17",
+  "earlier_first_verdict": "PARTLY",
+  "earlier_final_verdict": "PARTLY",
+  "earlier_receipt": "Source 8 (corpus only; YouTube ASR caption fetch returned empty): /home/user/ai_game/blackrock-aladdin/04-transcripts/timestamped/yt_oyqeCHFM5U4.m4a.ts.txt:48 [04:39]: \"Kind of mapping one-to-one to an existing Aladdin API already out in production\". Web secondary: https://www.zenml.io/llmops-database/agentic-ai-architecture-for-investment-management-platform : \"Tool registration : Mapping directly to existing Aladdin APIs already in production\". https://www.blackrock.com/aladdin/platforms/products/aladdin-studio : \"Aladdin Studio APIs enable you to build your own solutions.\" Source 17 (aladdin-copilot page) mentions Studio only in the site navigation, and no corpus text links Copilot tools to Studio APIs.",
+  "earlier_finding": "'Production Aladdin APIs' is supported by source 8. 'The same ones Studio exposes' is the author's own inference, not in source 8 or 17. Change it to 'would cover existing Aladdin APIs already in production [8]', and drop the Studio phrase or mark it as the author's inference."
+ },
+ {
+  "id": "p13-01",
+  "page": "13",
+  "location": "body para 1",
+  "claim": "It [BlackRock] sells Aladdin as the system it runs internally",
+  "sources": "14,17,19,8",
+  "earlier_first_verdict": "PARTLY",
+  "earlier_final_verdict": "PARTLY",
+  "earlier_receipt": "https://www.sec.gov/Archives/edgar/data/1364742/000119312519083451/d686182dex991.htm (BlackRock 8-K ex. 99.1, 2019): \"Aladdin was first built to manage BlackRock's business, and the firm continues to be the largest user of Aladdin today.\" Source 8 (YouTube returned a bot check, so this is from the corpus): /home/user/ai_game/blackrock-aladdin/04-transcripts/timestamped/yt_oyqeCHFM5U4.m4a.ts.txt:15 [01:33]: \"BlackRock is the biggest user of Aladdin, but we also sell and support hundreds of clients globally\". Sources 14, 17 and 19, re-fetched 2026-10-20, have no sentence about internal use. Studio: \"make Aladdin your own\". Copilot: \"now available to all Aladdin clients\". Data Cloud: \"our own principles for harnessing the power of citizen developers\" (this is about a white paper).",
+  "earlier_finding": "The fact is true, but the citation is wrong: sources 14, 17 and 19 do not say it. Cite source 8 and add the 2019 8-K exhibit 99.1 as a primary web source."
+ },
+ {
+  "id": "p13-06",
+  "page": "13",
+  "location": "body para 2",
+  "claim": "About 100 of its [BlackRock's] applications ... call these APIs every day",
+  "sources": "8",
+  "earlier_first_verdict": "PARTLY",
+  "earlier_final_verdict": "PARTLY",
+  "earlier_receipt": "CORPUS-ONLY (YouTube showed a captcha, timedtext came back empty, and web search was unavailable because the shared budget was used up). /home/user/ai_game/blackrock-aladdin/04-transcripts/timestamped/yt_oyqeCHFM5U4.m4a.ts.txt:18 [01:53]: \"They're around 100 Aladdin front-end applications that thousands of people use every day\". The separate Whisper run (scratchpad/yt/media3/yt_oyqeCHFM5U4.whisper.txt) agrees: \"these engineers build and maintain the around 100 Aladdin front-end applications that thousands of people use every day\". ts.txt:43 [04:06]: teams \"own all of the services that serve trading data to all Aladdin applications\".",
+  "earlier_finding": "The ~100 figure is right. The wrong words are \"call these APIs every day\": in the talk, \"every day\" describes thousands of people using the apps, and the talk never says the apps call the published Studio APIs. Suggest: \"About 100 Aladdin applications, used by thousands of people every day, embed Copilot\" (ts.txt:25 [02:34] \"embedded across all of those hundred front-end applications\")."
+ }
+]

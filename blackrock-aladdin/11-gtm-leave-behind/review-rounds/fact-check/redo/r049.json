@@ -1,0 +1,57 @@
+[
+ {
+  "id": "p03-05",
+  "page": "3",
+  "location": "body para 1",
+  "claim": "Rosales: hundreds of clients",
+  "sources": "8",
+  "earlier_first_verdict": "CORPUS-ONLY",
+  "earlier_final_verdict": "CONFIRMED",
+  "earlier_receipt": "https://www.youtube.com/watch?v=oyqeCHFM5U4 (YouTube English auto-captions, 01:36.00-01:39.12): \"also sell and support hundreds of / clients globally across 70 countries,\"",
+  "earlier_finding": "None."
+ },
+ {
+  "id": "p13-02",
+  "page": "13",
+  "location": "body para 1",
+  "claim": "Its speakers have said that the system of record underpins anything built with AI",
+  "sources": "9",
+  "earlier_first_verdict": "CONFIRMED",
+  "earlier_final_verdict": "CONFIRMED",
+  "earlier_receipt": "https://d2adqanfijfsj5.cloudfront.net/captions/ala_build_vs_buy_captions_en.vtt (captions for the source 9 replay, fetched fresh), 00:31:52-00:31:56, after the moderator's 'So sticking with you, Alisha, on that' (00:31:17): \"So I think data is, as we've been alluding to the foundation, you need that system of record that underpins anything that AI is built upon.\"",
+  "earlier_finding": "None. The speaker is Alisha Sewdass of BlackRock. The replay page itself has no transcript text; the quote comes from its CloudFront caption file."
+ },
+ {
+  "id": "p13-04",
+  "page": "13",
+  "location": "body para 2",
+  "claim": "SimCorp has announced AI agents",
+  "sources": "7,56,57",
+  "earlier_first_verdict": "CONFIRMED",
+  "earlier_final_verdict": "CONFIRMED",
+  "earlier_receipt": "https://www.simcorp.com/about-us/news/2026/introducing-agent-launchpad, 'Introducing Agent Launchpad: SimCorp's Agentic AI ecosystem for investment managers', April 22, 2026: \"Today, SimCorp One clients can use a portfolio management agent as a standalone solution.\" and \"Investment managers will be able to access a growing range of pre-built AI agents from SimCorp and curated partners.\"",
+  "earlier_finding": "None for SimCorp; source 7 supports it. Sources 56 and 57 are Arcesium press releases and support the next clause ('Arcesium an AI platform'). Both returned HTTP 429 on 2026-10-20 and were not re-checked."
+ },
+ {
+  "id": "p14-19",
+  "page": "14",
+  "location": "Exhibit 16 row Hear col 'Receipt'",
+  "claim": "the Never Done podcast (a BlackRock Aladdin podcast series)",
+  "sources": "28",
+  "earlier_first_verdict": "CONFIRMED",
+  "earlier_final_verdict": "CONFIRMED",
+  "earlier_receipt": "https://www.blackrock.com/aladdin/discover/expertise/never-done-podcast-by-aladdin : page title \"Never Done podcast | Aladdin by BlackRock\"; \"The Never Done by Aladdin\u00ae podcast highlights stories about innovation, transformation, and technology\u2014for and by the Aladdin community.\"",
+  "earlier_finding": "None (official name: 'Never Done by Aladdin')."
+ },
+ {
+  "id": "p14-20",
+  "page": "14",
+  "location": "Exhibit 16 row Hear col 'Receipt'",
+  "claim": "the Big Little Questions video series (a BlackRock Aladdin video series)",
+  "sources": "29",
+  "earlier_first_verdict": "CONFIRMED",
+  "earlier_final_verdict": "CONFIRMED",
+  "earlier_receipt": "https://www.blackrock.com/aladdin/discover/expertise/big-little-questions : page title \"Big Little Questions video series | Aladdin by BlackRock\"; \"Big Little Questions is a new series by Aladdin, delivered by the people on the front lines of change.\"",
+  "earlier_finding": "None."
+ }
+]

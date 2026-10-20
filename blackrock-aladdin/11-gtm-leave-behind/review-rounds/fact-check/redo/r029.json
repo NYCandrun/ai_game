@@ -1,0 +1,57 @@
+[
+ {
+  "id": "s36",
+  "page": "19",
+  "location": "Sources register, section P, entry 36",
+  "claim": "Source 36: [P] JPMorgan Chase proxy statement (DEF 14A), payments for 2025 . SEC EDGAR, filed April 2, 2026. https://www.sec.gov/Archives/edgar/data/19617/000001961726000096/jpm-20260402.htm",
+  "sources": "-",
+  "earlier_first_verdict": "PARTLY",
+  "earlier_final_verdict": "PARTLY",
+  "earlier_receipt": "https://www.sec.gov/Archives/edgar/data/19617/000001961726000096/0000019617-26-000096-index.htm: \"Filing Date: 2026-04-06\", \"Accepted: 2026-04-06 06:17:40\", main document jpm-20260402.htm (DEF 14A). https://www.sec.gov/Archives/edgar/data/19617/000001961726000096/jpm-20260402.htm: \"JPMorganChase paid BlackRock approximately $25.6 million in 2025 to access and utilize its Aladdin\u00ae platform.\"; cover letter dated \"April 6, 2026\".",
+  "earlier_finding": "Wrong: 'filed April 2, 2026'. It was filed on April 6, 2026; the '20260402' in the file name is not the filing date. The URL and the $25.6M figure for 2025 are correct."
+ },
+ {
+  "id": "s40",
+  "page": "19",
+  "location": "Sources register, section P, entry 40",
+  "claim": "Source 40: [P] Open-sourcing the AladdinSDK: empower Python developers with a quantitative edge . BlackRock Engineering, on Medium, 2024. https://engineering.blackrock.com/open-sourcing-the-aladdinsdk-empower-python-developers-with-a-quantitative-edge-7f63376061e6",
+  "sources": "-",
+  "earlier_first_verdict": "PARTLY",
+  "earlier_final_verdict": "PARTLY",
+  "earlier_receipt": "https://engineering.blackrock.com/feed (fetched fresh, the item for this link): title \"Open Sourcing the Aladdin SDK: Empowering Python Developers with a Quantitative Edge\"; link \"https://engineering.blackrock.com/open-sourcing-the-aladdinsdk-empower-python-developers-with-a-quantitative-edge-7f63376061e6?source=rss----e8ae0174b0d8---4\"; pubDate \"Tue, 07 May 2024 15:54:21 GMT\"; body \"By: Vedant Naik, Lead Engineer, Aladdin Studio, and Eli Kalish, Product Manager II, Aladdin Studio\"",
+  "earlier_finding": "The title is wrong because it was rebuilt from the URL slug. Change it to 'Open Sourcing the Aladdin SDK: Empowering Python Developers with a Quantitative Edge' (BlackRock Engineering, Medium, May 7, 2024). The publisher, year and URL are correct."
+ },
+ {
+  "id": "s54",
+  "page": "19",
+  "location": "Sources register, section S, entry 54",
+  "claim": "Source 54: [S] Reducing time to insight: how AI reshapes risk management (Never Done podcast; machine transcription) . Pavan Pemmaraju, Head of AI Product and Engineering, BlackRock, July 16, 2026. https://www.blackrock.com/aladdin/discover/podcast/reducing-time-to-insight-how-ai-is-reshaping-risk-management Quoted at 10:00, 17:37. The episode also features Jess Fitzgibbon, Head of Product for Aladdin Risk. The recording does not label speakers, so this document does not attribute the 10:00 passage to either by name.",
+  "sources": "-",
+  "earlier_first_verdict": "PARTLY",
+  "earlier_final_verdict": "PARTLY",
+  "earlier_receipt": "https://www.blackrock.com/aladdin/discover/podcast/reducing-time-to-insight-how-ai-is-reshaping-risk-management : og:title \"Reducing time to insight: how AI reshapes risk management\"; \"Never Done by Aladdin\u00ae Pavan Pemmaraju, Head of AI Product & Engineering, and Jess Fitzgibbon, Head of Product for Aladdin Risk\". https://rss.art19.com/aladdin-client-stories : pubDate \"Thu, 16 Jul 2026 22:00:00 -0000\". Corpus /home/user/ai_game/blackrock-aladdin/04-transcripts/timestamped/1f33b7f7-6e02-4c5b-b9ed-cf0f2ead158d.mp3.ts.txt:170-176 \"[16:51] We're spending a lot more time with our engineers and database engineers really understanding at [16:59] a deeper level of what Pavana is speaking to. ... [17:37] software is developed where there's much more of a focus on ensuring that the data model itself [17:44] is structured for agentic use cases\"",
+  "earlier_finding": "The title, Pemmaraju's title, the July 16, 2026 date and the timestamps are correct. The 17:37 passage is wrongly credited to Pemmaraju: that speaker is building on 'what Pavana [Pavan] is speaking to', so it is Jess Fitzgibbon, Head of Product for Aladdin Risk. On p.12 (doc_layout.txt:509-510), change 'BlackRock's AI product head says' to 'BlackRock's head of product for Aladdin Risk says' or 'a BlackRock product head says'. Extend the entry's caveat to cover 17:37, or name Fitzgibbon for it. The p.13 wording 'Its speakers have said' is fine."
+ },
+ {
+  "id": "s59",
+  "page": "19",
+  "location": "Sources register, section P, entry 59",
+  "claim": "Source 59: [P] Managed MCP servers, product documentation . Databricks, as of October 2026. https://docs.databricks.com/aws/en/generative-ai/mcp/managed-mcp",
+  "sources": "-",
+  "earlier_first_verdict": "PARTLY",
+  "earlier_final_verdict": "PARTLY",
+  "earlier_receipt": "Cited URL https://docs.databricks.com/aws/en/generative-ai/mcp/managed-mcp: curl -I returns \"HTTP/2 301\" with \"location: /aws/en/agents/mcp-tools/built-in-mcp-services\". The final page returns 200 and reads: \"Last updated on Oct 16, 2026 Databricks-provided MCPs Databricks provides MCPs in the system.ai schema for data and external services. ... You don't need to host or register a server.\" Only the legacy section keeps the old name: \"For these legacy URLs, a workspace administrator must enable Managed MCP Servers on the workspace Previews page\". Second source: https://learn.microsoft.com/en-us/azure/databricks/agents/mcp-tools/built-in-mcp-services has the title \"Databricks-provided MCPs - Azure Databricks | Microsoft Learn\".",
+  "earlier_finding": "The wrong words are the title \"Managed MCP servers\" and the stale URL. As of October 2026 the page is \"Databricks-provided MCPs\" at https://docs.databricks.com/aws/en/agents/mcp-tools/built-in-mcp-services (last updated Oct 16, 2026). The old URL is not dead: it 301-redirects there. The claim the doc uses this source for (doc_layout.txt:575, \"Databricks documents managed MCP servers\") still holds. Update the entry's title and URL."
+ },
+ {
+  "id": "s60",
+  "page": "19",
+  "location": "Sources register, section P, entry 60",
+  "claim": "Source 60: [P] Job posting: Forward Deploy Engineer, Aladdin Data, Associate (Mumbai) . BlackRock Careers, as of October 2026. https://careers.blackrock.com/job/mumbai/forward-deploy-engineer-aladdin-data-associate/45831/97466309856",
+  "sources": "-",
+  "earlier_first_verdict": "PARTLY",
+  "earlier_final_verdict": "PARTLY",
+  "earlier_receipt": "https://careers.blackrock.com/job/mumbai/forward-deploy-engineer-aladdin-data-associate/45831/97466309856 (curl 2026-10-20): HTTP 404, \"<title>Custom Job Error</title>\", \"sorry this job post no longer exists.\" Mirror https://joinsaarthi.com/jobs/blackrock/forward-deploy-engineer-aladdin-data-associate-mumbai/46c71ea1-8135-43ac-9591-17a49139ceb6: \"Forward Deploy Engineer, Aladdin Data, Associate\", \"BlackRock\", \"Mumbai\", \"Implement emerging AI tooling including Model Context Protocol (MCP), AI agents, and Copilot extensions\" (the mirror gives no post date or job ID). Corpus, for the capture date: /home/user/ai_game/blackrock-aladdin/10-compendium/Aladdin_Studio_BlackRock_Compendium.md:323: \"Job postings on BlackRock's careers site, as recorded in the briefing and the candidate's draft (seen 8 October 2026): ... a Forward Deploy Engineer, Aladdin Data, in Mumbai, naming \\\"Model Context Protocol (MCP), AI agents, and Copilot extensions\\\"\".",
+  "earlier_finding": "I agree with PARTLY but refine the correction. The title, location and MCP wording are correct. \"As of October 2026\" is not wrong in itself, because the corpus records the posting as seen on 8 October 2026. What is wrong is that the entry gives a link that is now dead (404 on 20 Oct 2026) with no note. Change it to \"BlackRock Careers, seen 8 October 2026; removed by 20 October 2026\" and add the joinsaarthi.com mirror. The 8 October date rests on the corpus only: WebSearch was out of budget and web.archive.org was unreachable, so no archived copy was retrieved."
+ }
+]

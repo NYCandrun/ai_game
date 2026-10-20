@@ -1,0 +1,57 @@
+[
+ {
+  "id": "p07-39",
+  "page": "7",
+  "location": "Exhibit 7 row Goel col 'What they said'",
+  "claim": "Goel: exposing \"the software and application that we're building\"",
+  "sources": "26",
+  "earlier_first_verdict": "CORPUS-ONLY",
+  "earlier_final_verdict": "CORPUS-ONLY",
+  "earlier_receipt": "ts.txt:140 [25:22] \"What we want to do is we want to actually start exposing some of the software and application that we're building so that our clients can also access and leverage the AI that we developing.\" The whisper run has the same words.",
+  "earlier_finding": "No change to the quote. In context it is about AI applications (security creation, compliance rules, reporting), not developer tools."
+ },
+ {
+  "id": "p10-03",
+  "page": "10",
+  "location": "direction box (cont. from p9) sentence 2",
+  "claim": "The data it is adding, private markets and Preqin, arrives through Data Cloud and Explore",
+  "sources": "-",
+  "earlier_first_verdict": "CORPUS-ONLY",
+  "earlier_final_verdict": "CORPUS-ONLY",
+  "earlier_receipt": "Web, source 16 https://www.blackrock.com/aladdin/discover/podcast/snowflake-podcast-data-the-key-ingredient: \"So eFront\u2019s an obvious example of that, that data coming into the Aladdin Data Cloud. With the announcement of the Prequin acquisition, bringing in that data.\" Explore half, corpus only: /home/user/ai_game/blackrock-aladdin/04-transcripts/part2-cloudfront-and-podcasts/056_Unifying_the_Whole_Portfolio_Across_Public_and_Private_Markets.md:68: \"Prequin indices are also available today in Aladdin explore and our Aladdin data cloud capabilities\". Same line: \"investors now have access to over 15,000 fund investments within e front insight\". The source 52 page has no published transcript (subtitle track src is empty).",
+  "earlier_finding": "Cite 16 and 52. Narrow it to: Preqin indices are in Explore and Data Cloud, and eFront data is coming into Data Cloud. Preqin data also reaches clients through eFront Insight, with asset-allocation tools and Aladdin Wealth in progress (056:70), so these are not the only routes. Investor Day slide 37 says only 'Launched Preqin benchmarks within the Aladdin\u00ae platform'."
+ },
+ {
+  "id": "p10-08",
+  "page": "10",
+  "location": "body para 1 sentence 2",
+  "claim": "It [Copilot] draws on a registry of plugins, \u201ccouple of thousands agents and tools,\u201d built by Aladdin\u2019s engineering teams",
+  "sources": "-",
+  "earlier_first_verdict": "CORPUS-ONLY",
+  "earlier_final_verdict": "CORPUS-ONLY",
+  "earlier_receipt": "YouTube oyqeCHFM5U4 blocked (captcha on the watch page, LOGIN_REQUIRED from the player API, empty timedtext). /home/user/ai_game/blackrock-aladdin/04-transcripts/part1-youtube-and-site/16_How_BlackRock_Built_Production_AI_Agents_for_Asset_Managemen.md:26: \"couple of thousands agents and tools that are registered in the plug-in registry\"; line 20: \"Our job is to make it as easy as possible for these engineers to plug their functionality that they own into this system. And we do that through this plug-in registry.\" Timestamped captions line 72 [06:42]: \"a couple thousands agents and tools that are registered in the plug-in registry\". Web secondary https://www.zenml.io/llmops-database/agentic-ai-architecture-for-investment-management-platform: \"With potentially thousands of tools and agents registered in the plugin registry\"; \"By enabling 50-60 teams to contribute tools and agents independently\".",
+  "earlier_finding": "Add citation [8]. The substance is on the web (ZenML). The exact quoted words appear only in our machine transcriptions, which disagree ('couple of thousands' vs 'a couple thousands')."
+ },
+ {
+  "id": "p10-09",
+  "page": "10",
+  "location": "body para 1 sentence 3",
+  "claim": "The first way a team adds a tool is \u201cto define a tool as kind of mapping one-to-one to an existing Aladdin API already out in production\u201d",
+  "sources": "8",
+  "earlier_first_verdict": "CORPUS-ONLY",
+  "earlier_final_verdict": "CORPUS-ONLY",
+  "earlier_receipt": "/home/user/ai_game/blackrock-aladdin/04-transcripts/part1-youtube-and-site/16_How_BlackRock_Built_Production_AI_Agents_for_Asset_Managemen.md:20: \"Today, we allow these development teams two ways to onboard. The first, we come to define a tool as kind of mapping one-to-one to an existing Aladdin API already out in production.\" Timestamped file :47-48 [04:31-04:39]. Web paraphrase https://www.zenml.io/llmops-database/agentic-ai-architecture-for-investment-management-platform: \"Tool registration: Mapping directly to existing Aladdin APIs already in production, allowing quick integration of existing capabilities\".",
+  "earlier_finding": "No change. The quote matches the transcription word for word and [8] is the right citation. The verbatim words could not be reached on the web because YouTube was blocked."
+ },
+ {
+  "id": "p10-16",
+  "page": "10",
+  "location": "Exhibit 11 box 'One question'",
+  "claim": "The talk\u2019s example is \u201cwhat is my exposure to aerospace in Portfolio 1?\u201d",
+  "sources": "8",
+  "earlier_first_verdict": "CORPUS-ONLY",
+  "earlier_final_verdict": "CORPUS-ONLY",
+  "earlier_receipt": "/home/user/ai_game/blackrock-aladdin/04-transcripts/timestamped/yt_oyqeCHFM5U4.m4a.ts.txt line 59 [05:27] \"So we're gonna start out with the query. What is my exposure to aerospace in portfolio one?\"; second run /home/user/ai_game/blackrock-aladdin/04-transcripts/part1-youtube-and-site/16_How_BlackRock_Built_Production_AI_Agents_for_Asset_Managemen.md:22 \"So we're going to start out with the query, what is my exposure to aerospace in Portfolio 1?\"",
+  "earlier_finding": "No change. Two transcription runs agree, and the second writes 'Portfolio 1' exactly. Not reachable on the web: YouTube showed a bot check to curl and WebFetch, zenml.io has no 'aerospace', and WebSearch could not be used because the turn's search budget was spent. Keep the machine-transcription caveat."
+ }
+]

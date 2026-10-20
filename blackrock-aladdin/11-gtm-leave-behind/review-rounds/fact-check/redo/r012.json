@@ -1,0 +1,57 @@
+[
+ {
+  "id": "p03-17",
+  "page": "3",
+  "location": "Exhibit 1 title",
+  "claim": "the eight named products are: Aladdin, Aladdin Wealth, eFront, Aladdin Studio, Aladdin Data Cloud, Aladdin Copilot, Aladdin Accounting, Aladdin Provider (identity of the eight)",
+  "sources": "-",
+  "earlier_first_verdict": "PARTLY",
+  "earlier_final_verdict": "PARTLY",
+  "earlier_receipt": "https://www.blackrock.com/aladdin nav: \"Aladdin\", \"Aladdin Wealth\", \"eFront\", \"Preqin\" (Platforms) and \"Accounting\", \"Aladdin Studio\", \"Aladdin Data Cloud\", \"Whole Portfolio\", \"Risk Management\", \"Sustainability\", \"Climate Risk\", \"Aladdin Copilot\", \"Private Markets Data\" (Solutions). https://www.blackrock.com/aladdin/platforms/products/aladdin-accounting heading \"Aladdin\u00ae Accounting\". https://www.blackrock.com/aladdin/platforms/products/aladdin-provider heading \"Aladdin\u00ae Provider\" and \"connects asset managers and asset servicers through a single platform \u2013 Aladdin.\"",
+  "earlier_finding": "All eight names are real BlackRock products. The list is the author's selection, not BlackRock's set. It leaves out the top-level platform Preqin and the solutions Whole Portfolio, Risk Management, Sustainability, Climate Risk and Private Markets Data. Label the list as a selection, or add Preqin."
+ },
+ {
+  "id": "p03-27",
+  "page": "3",
+  "location": "Exhibit 1 row eFront col 'What it does'",
+  "claim": "Preqin now sits inside eFront Insight",
+  "sources": "13",
+  "earlier_first_verdict": "PARTLY",
+  "earlier_final_verdict": "PARTLY",
+  "earlier_receipt": "Source 13 (https://www.preqin.com/about/press-release/blackrock-aladdin-expands-private-credit-solutions-on-preqin-for-greater-transparency-and-insights-across-the-asset-class) never says 'eFront Insight'. Its only eFront mention: \"This expansion brings together Aladdin technology with Preqin and eFront data and analytics\". Support from other pages: https://www.efront.com/en: \"With Preqin\u00ae inside, eFront\u00ae Insight makes private markets investing more seamless and more informed.\"; https://www.preqin.com/news/blackrock-aladdin-launches-end-to-end-private-markets-workflow: \"eFront Insight combines pre-investment data from Preqin\u00ae with eFront's post-investment workflows and risk analytics.\"; https://www.blackrock.com/aladdin/discover/press-release/blackrock-aladdin-drives-private-markets-transparency: \"In eFront, institutional clients can now manage their full investment lifecycle in one place, with detailed market context via Preqin data.\"",
+  "earlier_finding": "The fact is true, but the citation is wrong. Cite the BlackRock press release of 5 Feb 2026 (or efront.com) for this clause, and keep 13 for the May 2026 clause. Optionally write 'Preqin data now sits inside eFront Insight', because Preqin is still sold as its own product."
+ },
+ {
+  "id": "p03-30",
+  "page": "3",
+  "location": "Exhibit 1 row Aladdin Studio col 'What it does'",
+  "claim": "Aladdin Studio: The developer and data layer. It covers APIs and events, Aladdin Data Cloud, and developer tools",
+  "sources": "14",
+  "earlier_first_verdict": "PARTLY",
+  "earlier_final_verdict": "PARTLY",
+  "earlier_receipt": "Source 14 (https://www.blackrock.com/aladdin/platforms/products/aladdin-studio): \"Empowering unique outcomes via our API-first approach across shared services and data.\" / \"Aladdin Data Cloud (ADC) is a managed data-as-a-service offering\" / \"Start building in minutes with developer guides, code snippets, and convenient documentation.\" The page has no 'events' outside the site navigation. A live web receipt for events: https://www.blackrock.com/aladdin/platforms/products/aladdin-risk: \"Aladdin supports this through concrete capabilities such as Aladdin Studio, APIs, and event-driven workflows\". Corpus (YouTube captions were blocked): /home/user/ai_game/blackrock-aladdin/04-transcripts/part1-youtube-and-site/01_From_Analytics_To_Intelligence_BlackRock_s_Journey_To_Data_P.md:24 \"It exposes everything Aladdin knows how to do as a set of APIs events.\"",
+  "earlier_finding": "Source 14 does not support 'events'. Cite source 1 (Woodhead) or the Aladdin Risk product page alongside 14, or drop 'and events'. 'Events' is confirmed on the open web through the Aladdin Risk page, so it is not only in our corpus."
+ },
+ {
+  "id": "p03-36",
+  "page": "3",
+  "location": "Exhibit 1 row Aladdin Data Cloud col 'What it does'",
+  "claim": "Aladdin Data Cloud is sold as an add-on to Aladdin Enterprise",
+  "sources": "15",
+  "earlier_first_verdict": "PARTLY",
+  "earlier_final_verdict": "PARTLY",
+  "earlier_receipt": "https://www.tradingview.com/news/reuters.com,2025-12-05:newsml_Zaw4R27h7:0-pressr-blackrock-partners-with-aws-to-deliver-aladdin-on-secure-scalable-cloud-infrastructure/ : \"Q: Which Aladdin products will be available on AWS? A: Initially, AWS hosting will be available for: Aladdin Enterprise (US-hosted only) Accounting (Enterprise add-on) ADC (Enterprise add-on) eFront Invest Whole Portfolio\". The cited source 15 (https://press.aboutamazon.com/aws/2025/12/blackrock-partners-with-aws-to-deliver-aladdin-on-secure-scalable-cloud-infrastructure) does not contain 'add-on' or 'Data Cloud'. Its only mention of Enterprise is \"General availability for Aladdin Enterprise clients hosted in the United States is expected in the second half of 2026.\" BlackRock's own copy of the release also lacks the FAQ.",
+  "earlier_finding": "Wrong citation: the claim is true, but source 15 does not say it. Re-point 15, or add a second URL, to the release copy that carries the FAQ, such as the Reuters PRESSR copy on TradingView (2025-12-05): 'ADC (Enterprise add-on)'."
+ },
+ {
+  "id": "p04-06",
+  "page": "4",
+  "location": "Exhibit 2 row 1 Order col 'Product or application names'",
+  "claim": "Explore's new what-if model compares a changed portfolio with the original before anything is traded",
+  "sources": "21",
+  "earlier_first_verdict": "PARTLY",
+  "earlier_final_verdict": "PARTLY",
+  "earlier_receipt": "Web, https://www.youtube.com/watch?v=BahCi45_BTc (shortDescription): \"a framework for modeling changes to portfolios' composition ... and viewing reporting on the resulting portfolio\". Corpus, yt_BahCi45_BTc.m4a.ts.txt:101 [10:16]: \"I'll see an original column for my original market value and then a modified column for any changes that I've been making.\"; :106 [11:03]: \"That'll then show me each portfolio, my original portfolio, and my new What If portfolio side by side\"",
+  "earlier_finding": "The words 'before anything is traded' are unsupported. Source 21, both the description and the transcript, never mentions trading or orders. Drop the phrase or mark it as inference. Suggested wording: 'compares a modified what-if portfolio with the original, side by side 21'."
+ }
+]

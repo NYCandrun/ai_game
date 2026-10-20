@@ -1,0 +1,57 @@
+[
+ {
+  "id": "s65",
+  "page": "19",
+  "location": "Sources register, section P, entry 65",
+  "claim": "Source 65: [P] Pull request 57, dependency conflict with the MCP toolkit, blackrock/aladdinsdk . GitHub, merged August 2026. https://github.com/blackrock/aladdinsdk/pull/57",
+  "sources": "-",
+  "earlier_first_verdict": "PARTLY",
+  "earlier_final_verdict": "PARTLY",
+  "earlier_receipt": "https://patch-diff.githubusercontent.com/raw/blackrock/aladdinsdk/pull/57.patch (local copy /tmp/claude-0/-home-user-ai-game/44510f87-22a4-5476-9273-389e23c654a8/scratchpad/fc/pr57.patch): line 4 \"Subject: [PATCH] add Pydantic v2 compatibility support\"; line 1768 \"-pydantic~=1.10.12\"; line 1781 \"+pydantic>=1.10\". The patch contains no 'mcp' string. https://github.com/blackrock/aladdinsdk/pull/57 (WebFetch): \"add Pydantic v2 compatibility support\" #57, merged \"Aug 11, 2026\"; neither the description nor the comments mention MCP or a conflict. Issue search ?q=pydantic returns only #57. PyPI: aladdinsdk 2.0.0b10 requires \"pydantic~=1.10.12\"; mcp 2.3.0 requires \"pydantic>=2.12.0\".",
+  "earlier_finding": "The PR number, repo and merge date (Aug 11, 2026) are correct. 'Dependency conflict with the MCP toolkit' is the analysis's own description. It is not the PR's title, and neither the PR nor any linked issue says it. The PR does relax the pin that causes the conflict: pydantic~=1.10.12 becomes pydantic>=1.10, and mcp needs >=2.12.0. Suggested entry: \"Pull request 57, 'add Pydantic v2 compatibility support' (relaxes the pydantic 1.x pin that conflicts with the MCP SDK), blackrock/aladdinsdk. GitHub, merged 11 August 2026.\""
+ },
+ {
+  "id": "p03-04",
+  "page": "3",
+  "location": "body para 1",
+  "claim": "Rosales: \"BlackRock is the biggest user of Aladdin, but we also sell and support hundreds of clients globally across 70 countries.\" (quotation)",
+  "sources": "8",
+  "earlier_first_verdict": "CORPUS-ONLY",
+  "earlier_final_verdict": "CONFIRMED (note)",
+  "earlier_receipt": "https://www.youtube.com/watch?v=oyqeCHFM5U4 (YouTube English auto-captions, 01:31.20-01:41.60): \"Black Rockck / is the biggest user of Aladdin, but we / also sell and support hundreds of / clients globally across 70 countries, / all using the Aladdin platform.\"",
+  "earlier_finding": "No wording change. The live YouTube auto-captions match word for word (\"Black Rockck\" is an ASR artefact for BlackRock). The quote is cut before \"all using the Aladdin platform\", which is acceptable. The source is a machine transcript."
+ },
+ {
+  "id": "p03-06",
+  "page": "3",
+  "location": "body para 1",
+  "claim": "Rosales: across 70 countries",
+  "sources": "8",
+  "earlier_first_verdict": "CORPUS-ONLY",
+  "earlier_final_verdict": "CONFIRMED (note)",
+  "earlier_receipt": "https://www.youtube.com/watch?v=oyqeCHFM5U4 (YouTube English auto-captions, 01:39.12): \"clients globally across 70 countries,\"",
+  "earlier_finding": "No wording change. It is confirmed as Rosales's spoken figure. No BlackRock web page repeating 70 countries was found (blackrock.com/aladdin/about-us has no country count), so keep it attributed to him."
+ },
+ {
+  "id": "p04-34",
+  "page": "4",
+  "location": "Exhibit 2 row 6 NAV col 'Who acts'",
+  "claim": "NAV: who acts: Accounting, whose clients are \u201cCFOs, they\u2019re controllers, they\u2019re heads of performance\u201d (Schneid or Shannon)",
+  "sources": "20",
+  "earlier_first_verdict": "CORPUS-ONLY",
+  "earlier_final_verdict": "CONFIRMED (note)",
+  "earlier_receipt": "Live recording https://dwu7l6as21h3p.cloudfront.net/blq_accounting-232.1080p.wide.mp4 (the player source on https://www.blackrock.com/aladdin/discover/expertise/big-little-questions), freshly downloaded and transcribed by me with faster-whisper base.en. fc/dl/b020r/clip_transcript.txt:5 \"[ 32.32- 40.64] Our clients are CFOs, they are controllers, they are heads of performance\". The episode page names the speakers: \"David Schneid and Daniel Shannon explore the importance of technology not only providing data but deriving actionable insights from that data.\" The corpus agrees: timestamped/blq_accounting-232.720p.wide.mp4.ts.txt:8-9 \"[00:32] Our clients are CFOs, they're controllers, / [00:36] they're heads of performance.\"",
+  "earlier_finding": "No change to the wording. The quote is verified against BlackRock's own public video at 0:32-0:40, not only against our corpus. BlackRock publishes no transcript (the subtitle track src is empty), so every receipt is a machine transcription; keep the 'machine transcription' label in source 20 and the 'Schneid or Shannon' attribution. The fresh run wrote 'they are' where the corpus has 'they're', a transcription difference with no change in meaning. Web search could not be re-run because the shared search budget for the turn was used up."
+ },
+ {
+  "id": "p05-14",
+  "page": "5",
+  "location": "Exhibit 3 box 'Research sandboxes'",
+  "claim": "Research sandboxes: hosted places to build",
+  "sources": "-",
+  "earlier_first_verdict": "CORPUS-ONLY",
+  "earlier_final_verdict": "CONFIRMED (note)",
+  "earlier_receipt": "https://raw.githubusercontent.com/blackrock/aladdinsdk/main/README.md line 179: \"AladdinSDK can run on a developer's local machine or in Aladdin Studio Compute sessions.\"; line 70: \"In 'Aladdin Developer' or similar python development environments, for any config file updates, a kernel restart is always recommended.\" https://www.blackrock.com/aladdin/platforms/products/apis lists \"Aladdin Compute\" under \"Additional Aladdin Studio resources\". The word 'sandboxes' comes from source 1, local transcript /home/user/ai_game/blackrock-aladdin/04-transcripts/part1-youtube-and-site/01_From_Analytics_To_Intelligence_BlackRock_s_Journey_To_Data_P.md line 26: \"How do I create environments where they can they have sandboxes, research environments, they can start code, they can build applications.\"",
+  "earlier_finding": "The first checker missed a web receipt. The SDK README (23) says there are hosted Studio Compute sessions, which it sets apart from a developer's local machine, so 'hosted places to build' holds on the open web. Only the label 'sandboxes / research environments' relies on Woodhead (1), which we can reach only through the local transcript, because YouTube captions came back empty. Add citations 23 and 1."
+ }
+]

@@ -1,0 +1,57 @@
+[
+ {
+  "id": "p15-69",
+  "page": "15",
+  "location": "Exhibit 17 row Clearwater col 'AI connector'",
+  "claim": "Clearwater, AI connector: 0 (none or blocked)",
+  "sources": "-",
+  "earlier_first_verdict": "CONFIRMED (note)",
+  "earlier_final_verdict": "CONFIRMED (note)",
+  "earlier_receipt": "https://cwan.com/platform/gen-ai/ : \"Embedded Clearwater AI helps your team work smarter through intelligent copilots and customizable AI agents.\" https://cwan.com/press-releases/cwan-reports-800-ai-agents-now-available-for-deployment-across-10-trillion-in-client-assets/ : \"Clearwater GenAI is fully integrated and deployed into production on Clearwater's front-to-back platform\". None of the 904 cwan.com sitemap URLs contains mcp, connector, anthropic, claude, openai or copilot.",
+  "earlier_finding": "No change. Clearwater's AI works only inside its own platform, which the rubric scores 0. The web search budget ran out before a broader MCP search could be done, so a recent announcement could have been missed."
+ },
+ {
+  "id": "p15-70",
+  "page": "15",
+  "location": "Exhibit 17 row Clearwater col 'Call to action'",
+  "claim": "Clearwater, Call to action: 0 (none or blocked)",
+  "sources": "-",
+  "earlier_first_verdict": "CONFIRMED (note)",
+  "earlier_final_verdict": "CONFIRMED (note)",
+  "earlier_receipt": "https://cwan.com/platform/overview/ : \"Connect with an expert\". The site menu reads \"Talk to an Expert\" and \"Get more information about our product or request a demo.\"",
+  "earlier_finding": "No change. The only calls to action are for sales, the same as Aladdin Studio's 'Book a meeting', which the exhibit also scores 0."
+ },
+ {
+  "id": "p15-84",
+  "page": "15",
+  "location": "Exhibit 17 row Databricks col 'Community or marketplace'",
+  "claim": "Databricks, Community or marketplace: 2 (fully public or self-serve)",
+  "sources": "70",
+  "earlier_first_verdict": "CONFIRMED (note)",
+  "earlier_final_verdict": "CONFIRMED (note)",
+  "earlier_receipt": "Source 70, https://www.databricks.com/try-databricks: \"Active community forums and support resources are also available\" and \"Connect to Marketplace\". https://www.databricks.com/product/marketplace: \"Databricks Marketplace is an open marketplace for all your data, analytics and AI\". https://community.databricks.com/: \"Welcome to the Databricks Community!\"",
+  "earlier_finding": "Source 70 only mentions the forums and Marketplace in passing. The marketplace product page is a stronger citation. Posting on the forum needs a login (\"Once you are logged in, you will be ready to post content\")."
+ },
+ {
+  "id": "p15-88",
+  "page": "15",
+  "location": "Exhibit 17 row LSEG col 'API catalog'",
+  "claim": "LSEG, API catalog: 2 (fully public or self-serve)",
+  "sources": "68",
+  "earlier_first_verdict": "CONFIRMED (note)",
+  "earlier_final_verdict": "CONFIRMED (note)",
+  "earlier_receipt": "https://developers.lseg.com/en/api-catalog (HTTP 200, no sign-in): \"Home API Catalog Explore our Developer Content APIs APIs Articles Videos Tools Use Cases\". Source 68's home page, https://developers.lseg.com/en, links catalog entries such as /en/api-catalog/lseg-data-platform/lseg-data-library-for-python",
+  "earlier_finding": "The catalog page and its entries are public. The list itself is loaded by JavaScript, so a plain fetch shows only the frame, but the linked entries load without sign-in."
+ },
+ {
+  "id": "p15-90",
+  "page": "15",
+  "location": "Exhibit 17 row LSEG col 'First API call without a contract'",
+  "claim": "LSEG, First API call without a contract: 1 (partial or after sign-up or approval)",
+  "sources": "68",
+  "earlier_first_verdict": "CONFIRMED (note)",
+  "earlier_final_verdict": "CONFIRMED (note)",
+  "earlier_receipt": "https://developers.lseg.com/en/api-catalog/lseg-data-platform/lseg-data-library-for-python/quick-start : \"To acquire your Platform credentials, you will need to reach out to your LSEG Account Manager.\" Desktop access needs \"a valid desktop login\".",
+  "earlier_finding": "No change. The first call is possible only through the free-trial request form or account credentials, which supports 1. A footnote could say so."
+ }
+]

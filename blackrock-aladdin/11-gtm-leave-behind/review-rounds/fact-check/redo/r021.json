@@ -1,0 +1,57 @@
+[
+ {
+  "id": "p13-07",
+  "page": "13",
+  "location": "body para 2",
+  "claim": "thousands of Copilot tools ... call these APIs every day",
+  "sources": "8",
+  "earlier_first_verdict": "PARTLY",
+  "earlier_final_verdict": "PARTLY",
+  "earlier_receipt": "CORPUS-ONLY. ts.txt:72 [06:42]: \"a couple thousands agents and tools that are registered in the plug-in registry\". The second Whisper run says \"couple of thousands agents and tools that are registered in the plug-in registry\". ts.txt:48 [04:39]: \"Kind of mapping one-to-one to an existing Aladdin API already out in production\". ts.txt:50 [04:49]: \"the ability to spin up a custom agent\".",
+  "earlier_finding": "Change to \"a couple of thousand Copilot agents and tools, many mapped one-to-one to existing Aladdin APIs\". Some are custom agents, not tools. The talk gives no daily-call figure, so drop \"every day\"."
+ },
+ {
+  "id": "p13-08",
+  "page": "13",
+  "location": "body para 2",
+  "claim": "[applications and Copilot tools] built by 50 to 60 of its teams",
+  "sources": "8",
+  "earlier_first_verdict": "PARTLY",
+  "earlier_final_verdict": "PARTLY",
+  "earlier_receipt": "CORPUS-ONLY. ts.txt:41 [03:58]: \"Say 50 60 Aladdin engineering teams that cover specific domains throughout the platform\". The second Whisper run has \"say, 50, 60 Aladdin engineering teams\". ts.txt:45-46: \"make it as easy as possible for these engineers to plug their functionality that they own into this system ... through this plug-in registry\". ts.txt:17-18 [01:44]-[01:53]: \"over 4,000 of those being engineers and these engineers build and maintain ... around 100 Aladdin front-end applications\".",
+  "earlier_finding": "The wrong word is \"applications\". The 50-60 teams onboard the Copilot tools and agents, while the ~100 apps are attributed to the 4,000+ engineers. Attribute only the tools and agents to the 50-60 teams."
+ },
+ {
+  "id": "p13-09",
+  "page": "13",
+  "location": "body para 2",
+  "claim": "[applications and Copilot tools] call these APIs every day under each user's permissions",
+  "sources": "8",
+  "earlier_first_verdict": "PARTLY",
+  "earlier_final_verdict": "PARTLY",
+  "earlier_receipt": "CORPUS-ONLY. ts.txt:64-65 [05:56]-[06:01]: \"ideally we are respecting those / Preferences as we make all these calls on behalf of the user\". ts.txt:73-74 [06:51]-[06:58]: owners \"have complete control over which environment / Environments this plug-in is enabled in which user groups have access to this and even which which Aladdin apps can even access these plugins\". Neither transcript contains \"permission\" or \"entitle\". \"every day\" appears only for app usage and CI runs.",
+  "earlier_finding": "The talk does not say \"under each user's permissions\" and gives no daily frequency. Change to \"on behalf of the user, with access set by user group and application\" and drop \"every day\"."
+ },
+ {
+  "id": "p13-22",
+  "page": "13",
+  "location": "Exhibit 14 title",
+  "claim": "BlackRock's applications and a client's code call the same APIs under the same permissions",
+  "sources": "8,17,38,39,23,6,19,1,22",
+  "earlier_first_verdict": "PARTLY",
+  "earlier_final_verdict": "PARTLY",
+  "earlier_receipt": "https://www.youtube.com/watch?v=oyqeCHFM5U4 captions [04:38]-[04:43]: \"define a tool as kind of mapping / onetoone to an existing Aladdin API / already out in production\"; [04:06]-[04:13]: \"they own all of the services / that serve trading data to all Aladdin / applications\". https://raw.githubusercontent.com/blackrock/aladdinsdk/main/README.md line 3: \"AladdinSDK allows developers to easily integrate BlackRock's Aladdin functionality into their own applications and systems ... access and utilize Aladdin APIs and Data Cloud.\" Line 45: \"adds scopes from swagger specs to oauth access token request\". https://www.blackrock.com/aladdin/platforms/products/aladdin-copilot: \"permission-dependent access to insights\". The closest general statement found, BlackRock's New Mexico SIO case study: \"Aladdin offers the same technology and intellectual capital that BlackRock uses to manage investments day-to-day\". It does not mention APIs or permissions.",
+  "earlier_finding": "'the same APIs under the same permissions' is the author's inference. No source says BlackRock's front-end apps and client code use identical APIs or identical permission models. Retitle to 'BlackRock's applications and a client's code both call Aladdin's APIs, each under per-API, per-user permissions', or label it as inference."
+ },
+ {
+  "id": "p13-26",
+  "page": "13",
+  "location": "Exhibit 14 box 'About 100 BlackRock applications'",
+  "claim": "Explore, Dashboard, Risk Radar and the rest all call these APIs.",
+  "sources": "8",
+  "earlier_first_verdict": "PARTLY",
+  "earlier_final_verdict": "PARTLY",
+  "earlier_receipt": "Source 8 never names the apps; TS:43 [04:06] \"they own all of the services that serve trading data to all Aladdin applications\". Source 6 (fresh PyPI 2.0.0b3): asdk_plugin_analytics .../RiskRuleAPI/swagger.json:13 \"Retrieve, update, and create Rules and Rule Subscriptions as surfaced in Risk Radar.\"; same file :5303 \"We need to do this because this is aligned with Explore UI\"; asdk_plugin_trading .../order/v1/OrderAPI/swagger.json:2244 \"is visible in the \\\"Basket\\\" column in Order Monitor of Aladdin Dashboard\"",
+  "earlier_finding": "Wrong citation: add source 6 for the app names. \"All call these APIs\" goes beyond any source. The specs tie only some APIs to these apps, and \"aligned with Explore UI\" is a design note. Soften to \"Explore, Dashboard, Risk Radar and the rest draw on the same services/APIs\"."
+ }
+]

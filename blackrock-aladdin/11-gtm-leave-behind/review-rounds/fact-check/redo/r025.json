@@ -1,0 +1,57 @@
+[
+ {
+  "id": "p15-108",
+  "page": "15",
+  "location": "Exhibit 17 row MSCI col 'Community or marketplace'",
+  "claim": "MSCI, Community or marketplace: 0 (none or blocked)",
+  "sources": "4",
+  "earlier_first_verdict": "PARTLY",
+  "earlier_final_verdict": "PARTLY",
+  "earlier_receipt": "Rendered https://developer.msci.com/ (redirects to /dashboard; fc/dl/b118r/render/r0.txt:3,19,21): \"Developer Community\" / \"Build on MSCI. Integrate intelligence into every workflow.\" / \"Explore our MCP, APIs, and use cases to bring MSCI's models, data, and analytics directly into your applications.\" /skills (render2/r3.txt:21): \"MSCI Skills package our models, data and workflows into ready-to-use capabilities you can drop straight into your AI assistant\". https://claude.com/connectors/msci: \"Made by MSCI Inc ... Sign-in Required Added February 2026 Connector URL https://mcp.msci.com/mcp/v1.0/mcp ... Entitlement-based access to our proprietary data and analytics\".",
+  "earlier_finding": "\"none\" is wrong. One fix to the first checker: the portal is browsable without sign-in; only downloads and some tabs need login. No public forum is visible. Score 1 (2 is arguable). Cite developer.msci.com and claude.com/connectors/msci, not source 4 (wrong citation)."
+ },
+ {
+  "id": "p15-110",
+  "page": "15",
+  "location": "Exhibit 17 row MSCI col 'Call to action'",
+  "claim": "MSCI, Call to action: 0 (none or blocked)",
+  "sources": "4",
+  "earlier_first_verdict": "UNVERIFIED",
+  "earlier_final_verdict": "PARTLY",
+  "earlier_receipt": "Rendered https://developer.msci.com/apis/index-api (fc/dl/b118r/render/indexapi.png) has buttons ['Disclaimer','Contact Us','Description','Definition','Downloads','Release Notes','Instructions','Related APIs','Sign in',...]. The SDK page's Code Library tab: \"Please log in to view the Code Library. Sign in / Need an account? Register now\". \"Register now\" goes to accounts.msci.com/u/login/identifier: \"Don't have an account? Create an account\". Source 4 (msci.com press release via WebFetch) CTAs: \"Client Log In\", \"Get in touch\", \"Contact us\", \"Let's talk.\"",
+  "earlier_finding": "0 (none or blocked) is not supported. There is a Contact Us button on every API page and a self-registration path (Register now leads to Create an account). On the exhibit's key (1 = partial or after sign-up or approval) this scores 1. If sales contacts count as 0, as the Studio and FactSet rows suggest, the account sign-up still argues for 1. State the CTA rule and cite developer.msci.com."
+ },
+ {
+  "id": "p15-119",
+  "page": "15",
+  "location": "body para 2",
+  "claim": "Data and cloud platforms sell to developers directly and cluster high",
+  "sources": "-",
+  "earlier_first_verdict": "PARTLY",
+  "earlier_final_verdict": "PARTLY",
+  "earlier_receipt": "FD:806-810 Exhibit 17: \"FactSet 2 2 0 0 2 1 2 0\" (9/16), \"MSCI 0 0 0 0 0 0 2 0\" (2/16), vs Snowflake/Databricks 16, LSEG 12. https://www.msci.com/discover-msci/media-room/msci-unveils-new-ai-connectors-transforming-access-to-proprietary-data: \"Clients can access MSCI's insights via the MSCI ONE cloud-based platform or through leading AI providers\"; \"MSCI grants no right or license to use its products or services without an appropriate license.\" https://raw.githubusercontent.com/factset/enterprise-sdk/main/README.md:24 \"client libraries that a FactSet customer can use to programmatically access FactSet content and analytics\". https://www.databricks.com/try-databricks: \"No credit card is required to start your Databricks free trial.\" (WebSearch budget exhausted; direct fetches only; msci.com blocks curl with reCAPTCHA.)",
+  "earlier_finding": "Holds for Snowflake, Databricks and, less fully, LSEG. MSCI (client-only, 2/16) and FactSet (customer subscription needed for a first call, 9/16) do not sell to developers directly. Suggested: 'Snowflake and Databricks, and to a lesser degree LSEG, sell to developers directly and score high; FactSet requires a subscription for a first call, and MSCI is client-only.'"
+ },
+ {
+  "id": "p15-31",
+  "page": "15",
+  "location": "Exhibit 17 row Aladdin Studio col 'Public docs'",
+  "claim": "Aladdin Studio, Public docs: 1 (partial or after sign-up or approval)",
+  "sources": "14",
+  "earlier_first_verdict": "PARTLY",
+  "earlier_final_verdict": "PARTLY",
+  "earlier_receipt": "Source 14 https://www.blackrock.com/aladdin/platforms/products/aladdin-studio : \"Start building in minutes with developer guides, code snippets, and convenient documentation.\" A full list of the page's anchors shows no docs, GitHub or PyPI link, only a brochure form, contact-us and navigation. Source 23 https://raw.githubusercontent.com/blackrock/aladdinsdk/main/README.md line 89: \"API Token registered via Studio UI. Required only for Basic Auth\"; line 258: \"Client ID and Secret can be sourced from Studio UI by creating a OAuth application under a Project.\" Source 24 https://www.blackrock.com/aladdin/platforms/products/apis : \"Aladdin Studio documentation teaches you how Aladdin API requests are built, authorized, and processed in our system.\"",
+  "earlier_finding": "PARTLY: wrong citation. A score of 1 is fair: the SDK README is public, and the Studio docs are for clients only. Source 14 shows no public documentation, so cite sources 23 and 24."
+ },
+ {
+  "id": "p15-32",
+  "page": "15",
+  "location": "Exhibit 17 row Aladdin Studio col 'API catalog'",
+  "claim": "Aladdin Studio, API catalog: 1 (partial or after sign-up or approval)",
+  "sources": "14",
+  "earlier_first_verdict": "PARTLY",
+  "earlier_final_verdict": "PARTLY",
+  "earlier_receipt": "Source 14: \"Aladdin Studio APIs enable you to build your own solutions.\" (no API list). Source 23 README line 312: \"List of official AladdinSDK API plugins (refer documentation on PyPI for up-to-date list of APIs packaged in each plugin):\" followed by 11 asdk_plugin_* packages (lines 313-323). https://pypi.org/pypi/asdk_plugin_trading/json (2.0.0b3): \"APIs bundled in this plugin: - OrderAPI - v1 - TradeAPI - v2\". Source 24: \"Dozens of Aladdin APIs available \u2013 with constant new additions\"; the search box on that page is site search, not an API catalog.",
+  "earlier_finding": "PARTLY: wrong citation. A score of 1 is supported by the PyPI plugin listings (source 6) and the README plugin list (source 23). There is no browsable public catalog, and source 14 shows none. Add sources 6 and 23 to the exhibit's source line."
+ }
+]

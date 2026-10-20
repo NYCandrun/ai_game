@@ -1,0 +1,57 @@
+[
+ {
+  "id": "p15-60",
+  "page": "15",
+  "location": "Exhibit 17 row SimCorp col 'Community or marketplace'",
+  "claim": "SimCorp, Community or marketplace: 1 (partial or after sign-up or approval)",
+  "sources": "7",
+  "earlier_first_verdict": "CONFIRMED",
+  "earlier_final_verdict": "CONFIRMED",
+  "earlier_receipt": "https://www.simcorp.com/about-us/news/2026/introducing-agent-launchpad: \"allows investment managers to employ agents from SimCorp and curated partners securely and easily within the award-winning SimCorp One platform\"; \"The first SimCorp One clients are expected to gain access this year.\" Also https://www.simcorp.com/partners/become-a-partner: \"SimCorp offers curated access to innovation... Want to join our growing ecosystem? Simply get in touch.\"",
+  "earlier_finding": ""
+ },
+ {
+  "id": "p15-61",
+  "page": "15",
+  "location": "Exhibit 17 row SimCorp col 'AI connector'",
+  "claim": "SimCorp, AI connector: 0 (none or blocked)",
+  "sources": "7",
+  "earlier_first_verdict": "CONFIRMED",
+  "earlier_final_verdict": "CONFIRMED",
+  "earlier_receipt": "https://www.simcorp.com/about-us/news/2026/introducing-agent-launchpad: \"Agent Launchpad will enable clients to discover and deploy agentic AI with ease across front-to-back investment workflows directly within SimCorp One\"; \"Agent Launchpad will allow clients to build their own agents, with controlled access to data from SimCorp One\".",
+  "earlier_finding": "Matches the exhibit's rule that 0 = \"an assistant that works only inside the vendor's own platform\". No MCP server or external connector is mentioned."
+ },
+ {
+  "id": "p15-68",
+  "page": "15",
+  "location": "Exhibit 17 row Clearwater col 'Community or marketplace'",
+  "claim": "Clearwater, Community or marketplace: 1 (partial or after sign-up or approval)",
+  "sources": "-",
+  "earlier_first_verdict": "CONFIRMED",
+  "earlier_final_verdict": "CONFIRMED",
+  "earlier_receipt": "https://cwan.com/platform/overview/ : \"Marketplace integrations ... Our marketplace of pre-built and partner integrations keeps your ecosystem future-ready to expand and scale.\" https://cwan.com/platform/partners/ : \"Fill out the Clearwater partner network application to get started.\"",
+  "earlier_finding": "None. There is a marketplace and partner network, and joining needs an application, so 1 is right."
+ },
+ {
+  "id": "p15-86",
+  "page": "15",
+  "location": "Exhibit 17 row Databricks col 'Call to action'",
+  "claim": "Databricks, Call to action: 2 (fully public or self-serve)",
+  "sources": "70",
+  "earlier_first_verdict": "CONFIRMED",
+  "earlier_final_verdict": "CONFIRMED",
+  "earlier_receipt": "Source 70, https://www.databricks.com/try-databricks: \"Start your Databricks trial with up to $400 in free usage\" and \"No credit card is required to start your Databricks free trial. You can sign up and begin using Databricks immediately, risk-free.\"",
+  "earlier_finding": ""
+ },
+ {
+  "id": "p15-87",
+  "page": "15",
+  "location": "Exhibit 17 row LSEG col 'Public docs'",
+  "claim": "LSEG, Public docs: 1 (partial or after sign-up or approval)",
+  "sources": "68",
+  "earlier_first_verdict": "CONFIRMED",
+  "earlier_final_verdict": "CONFIRMED",
+  "earlier_receipt": "Source 68's portal, https://developers.lseg.com/en/api-catalog/refinitiv-data-platform/refinitiv-data-platform-apis/documentation: \"Documentation Please sign in to explore content on this page. Sign in Register now\". By contrast, https://developers.lseg.com/en/api-catalog/lseg-data-platform/lseg-data-library-for-python/documentation is public: \"LSEG Data Library for Python - Reference Guide Please click on the following link to access the document\"",
+  "earlier_finding": "Some docs are public and some sit behind sign-in, which matches a score of 1."
+ }
+]

@@ -1,0 +1,57 @@
+[
+ {
+  "id": "p05-47",
+  "page": "5",
+  "location": "Exhibit 4 title",
+  "claim": "Six pieces make up Studio",
+  "sources": "14,24",
+  "earlier_first_verdict": "PARTLY",
+  "earlier_final_verdict": "PARTLY",
+  "earlier_receipt": "https://www.blackrock.com/aladdin/platforms/products/apis (fetched 2026-10-20): \"Additional Aladdin Studio resources / Aladdin Studio home / Aladdin Data Cloud / Aladdin Data eXchange (ADX) / Aladdin Compute / Aladdin Tools for Excel (ATX)\". The Studio page [14] gives no count or list of pieces; it has only \"Cloud native/hosted\", \"API-first approach\" and \"Aladdin Data Cloud (ADC) is a managed data-as-a-service offering\".",
+  "earlier_finding": "Neither [14] nor [24] gives a count, so 'six' is the analyst's own grouping, and it leaves out ADX and ATX, which BlackRock lists as Studio resources. Retitle to 'Six pieces of Studio, as this analysis groups them' or add ADX and ATX."
+ },
+ {
+  "id": "p05-48",
+  "page": "5",
+  "location": "Exhibit 4 title",
+  "claim": "the six pieces are: APIs (Aladdin Graph), Event-driven APIs, Aladdin Data Cloud, Aladdin Compute, Aladdin SDK, Developer Portal and Data Dictionary",
+  "sources": "14,24,6,23,1,26",
+  "earlier_first_verdict": "PARTLY",
+  "earlier_final_verdict": "PARTLY",
+  "earlier_receipt": "[23] https://raw.githubusercontent.com/blackrock/aladdinsdk/main/README.md L276: \"wraps over OpenAPI generated python client code based on Aladdin Graph API's swagger specifications.\"; L857: \"Resources: - Aladdin Graph APIs\"; L179: \"AladdinSDK can run on a developer's local machine or in Aladdin Studio Compute sessions.\"; [24] APIs page: \"Our Data Dictionary allows you to explore Aladdin data and search for the field definitions you need.\"; [14]: \"Aladdin Data Cloud (ADC) is a managed data-as-a-service offering\". Developer Portal appears only in https://builtinbristol.uk/job/technical-writer-aladdin-product-vice-president/7444888: \"Continuously improve the discoverability and usability of content within the Aladdin Studio Developer Portal.\"",
+  "earlier_finding": "I agree with the verdict but not with all of its reasoning. The first checker said 'Aladdin Graph' is never used, but BlackRock's own SDK README [23] says 'Aladdin Graph API's' and 'Aladdin Graph APIs', so that label is supported. Still unsupported: 'Developer Portal' is not in any cited source (cite the job posting or rename it), and 'Event-driven APIs' is not a product name on any BlackRock page; it rests only on Woodhead [1] and Goel [26]. ADX and ATX are left out. Present the list as the analyst's composite."
+ },
+ {
+  "id": "p05-50",
+  "page": "5",
+  "location": "Exhibit 4 row 'APIs (Aladdin Graph)'",
+  "claim": "every public specification carries an id of the form agraph.<domain>.<segment>.<group>.v1.<API>",
+  "sources": "6",
+  "earlier_first_verdict": "PARTLY",
+  "earlier_final_verdict": "PARTLY",
+  "earlier_receipt": "Fresh PyPI download of all 11 asdk_plugin_*==2.0.0b3 wheels (fc/dl/b030r/un/), 54 swagger.json files, of which 48 match agraph.d.s.g.v1.API. Example of a match, .../abor_lot/v1/AborLotAPI/swagger.json:18: \"x-aladdin-spec-id\": \"agraph.accounting.transactions.abor_lot.v1.AborLotAPI\". Example that does not match, .../trade/v2/TradeAPI/swagger.json:18: \"agraph.trading.trade_processing.trade.v2.TradeAPI\". The other five that do not match: ResearchNoteAPI v2, CashLadderAPI v2, \"agraph.platform.studio.adc.adc_dataset.v1.AdcDatasetAPI\", \"agraph.data.reference_data.asset.asset_creation.v1.SecurityCreationAPI\", \"agraph.accounting.configuration.attribute.portfolio.records.v1.PortfolioConfigurationAPI\".",
+  "earlier_finding": "'Every' holds only for the agraph.<domain> prefix (54 of 54). Three specs are v2 and three have extra segments. Suggested wording: 'every id begins agraph.<domain>; 48 of 54 take the form agraph.<domain>.<segment>.<group>.v1.<API>'."
+ },
+ {
+  "id": "p05-56",
+  "page": "5",
+  "location": "Exhibit 4 row 'Aladdin Compute'",
+  "claim": "Aladdin Compute: A hosted space where developers run Python next to their Aladdin data",
+  "sources": "-",
+  "earlier_first_verdict": "PARTLY",
+  "earlier_final_verdict": "PARTLY",
+  "earlier_receipt": "https://raw.githubusercontent.com/blackrock/aladdinsdk/main/README.md L179: \"AladdinSDK can run on a developer's local machine or in Aladdin Studio Compute sessions.\"; https://raw.githubusercontent.com/blackrock/aladdinsdk/main/aladdinsdk/common/secrets/fsutil.py L29-30: \"local development environment or in Aladdin Compute sessions to read secret files injected by Vault init container.\"; .../aladdinsdk/config/utils/user_settings_file_util.py L33: `_ENV_VAR_NOTEBOOK_USER_NAME = \"NB_USER\"  # For Aladdin Compute run modes`; aladdinsdk 2.0.0b10 (PyPI) common/authentication/oauth/local_token_server_client.py: \"Client for communicating with the gateway's local token server running in aladdin-compute run mode.\" Negative: on https://www.blackrock.com/aladdin/platforms/products/apis the 'Aladdin Compute' link goes to /aladdin/platforms/products/aladdin-studio; /aladdin/products/aladdin-compute and /aladdin/platforms/products/aladdin-compute both return HTTP 404. No new web searches were run because the turn's search budget was used up, and Wayback was not used.",
+  "earlier_finding": "The first checker was too harsh on 'hosted'. The SDK source (source 23 repo) shows Compute sessions are platform-run containers: secrets are 'injected by Vault init container', there is a notebook user (NB_USER), and a gateway with a token server. So 'hosted' and 'run Python' are supported. Only 'next to their Aladdin data' has no public quote; it is an inference from the injected API, ADC and S3 credentials. The row also cites no source. Fix: cite 23 and reword to 'a hosted environment (Compute sessions) where developers run Python against Aladdin's APIs and Data Cloud', or drop 'next to their Aladdin data'."
+ },
+ {
+  "id": "p05-65",
+  "page": "5",
+  "location": "Exhibit 4 note",
+  "claim": "the catalog, guides, notebooks and samples sit behind a client login",
+  "sources": "24",
+  "earlier_first_verdict": "PARTLY",
+  "earlier_final_verdict": "PARTLY",
+  "earlier_receipt": "(1) Source 24, https://www.blackrock.com/aladdin/platforms/products/apis: \"Aladdin Studio documentation teaches you how Aladdin API requests are built, authorized, and processed in our system. Get a head start building with developer guides Download Python Jupyter Notebooks, or cut and paste code samples ... Our Data Dictionary allows you to explore Aladdin data\". The page has no link to these resources, only \"Sign In\" (Okta login.epl link) and \"Contact us to learn more\", and it never mentions a login requirement. (2) curl https://www.blackrock.com/apps/aladdin-developer-portal/ returns \"302 https://aladdin-login.blackrock.com/oauth2/v1/authorize?client_id=0oangjmoyueyPY1VC357&response_type=code&scope=openid%20email%20profile...\". (3) Fresh PyPI asdk_plugin_platform 2.0.0b3, scratchpad/fc/dl/b033r/pkg/asdk_plugin_platform/agraph/platform/identity/user/v1/UserAPI/swagger.json:13: \"[Developer Guide]: apps/aladdin-developer-portal/#/guides/developer-guide\" and \"An Aladdin User is a person or a system account that can login into\\n Aladdin client's website\". (4) The Aladdin Studio page (blackrock.com/aladdin/products/aladdin-studio) says only \"Start building in minutes with developer guides, code snippets, and convenient documentation\", with no mention of a login.",
+  "earlier_finding": "The claim is true in substance, but source 24 does not say it, so the citation is incomplete. Add source 6 (the UserAPI spec puts the Developer Guide at apps/aladdin-developer-portal), and/or state the observed fact that this URL redirects to the Aladdin Okta login (aladdin-login.blackrock.com). Only the guides are tied directly to the portal. That the catalog, notebooks and samples sit behind the same login is an inference from the lack of any public link, so softer wording would be safer, e.g. 'reached through the login-gated Aladdin developer portal'. My WebSearch budget was used up, so I verified with direct fetches and the fresh PyPI package."
+ }
+]

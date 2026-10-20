@@ -1,0 +1,57 @@
+[
+ {
+  "id": "p14-25",
+  "page": "14",
+  "location": "Exhibit 16 row Read col 'After qualification'",
+  "claim": "The Developer Portal and the API framework guides (available after qualification)",
+  "sources": "14,24",
+  "earlier_first_verdict": "PARTLY",
+  "earlier_final_verdict": "PARTLY",
+  "earlier_receipt": "APIs page [24] https://www.blackrock.com/aladdin/platforms/products/apis: \"Learn about our API framework\" / \"Aladdin Studio documentation teaches you how Aladdin API requests are built, authorized, and processed in our system.\" / \"Get a head start building with developer guides\" / \"Contact us to learn more\". Studio page [14] https://www.blackrock.com/aladdin/platforms/products/aladdin-studio: \"Start building in minutes with developer guides, code snippets, and convenient documentation.\" A raw-HTML grep of both pages for \"portal\" finds only an unrelated blocklist domain (\"gportal.hu\"). \"qualif\" appears only in the regulatory disclaimer. The SDK README [23] has no \"portal\" either (\"API Token registered via Studio UI\"). The name appears only in project notes: /tmp/claude-0/-home-user-ai-game/44510f87-22a4-5476-9273-389e23c654a8/scratchpad/clientcheck/b.txt:1908-1909, Technical Writer, Aladdin Studio (May 2026; since removed) \"mentions an 'Aladdin Studio Developer Portal.'\" I could not search the web for more: the search budget was used up.",
+  "earlier_finding": "[24] supports the API framework documentation and developer guides, and [14] supports the developer guides. Neither cited page uses the name \"Developer Portal\" or says these come \"after qualification\". This matters because the Exhibit 16 source line says that column \"is what those sources say a client receives\". Write \"the Studio API framework documentation and developer guides\". Either cite the portal name separately (the removed Technical Writer job posting) or drop it. Present the gating as an inference: the pages link to no documentation and only say \"Contact us to learn more\"."
+ },
+ {
+  "id": "p15-08",
+  "page": "15",
+  "location": "Exhibit 16 row Get help col 'Public today'",
+  "claim": "GitHub issues and pull requests on the SDK, answered by BlackRock engineers",
+  "sources": "38,65",
+  "earlier_first_verdict": "PARTLY",
+  "earlier_final_verdict": "PARTLY",
+  "earlier_receipt": "https://github.com/blackrock/aladdinsdk/issues?q=is%3Aissue%20is%3Aclosed: \"0 results\". The only issue is #59; on https://github.com/blackrock/aladdinsdk/issues/59 its one comment is from outsider KRISH-SINGH-10: \"I would like to take up this issue and contribute a fix for the missing re-raise in the local Basic Auth keyring flow\" (\"No one assigned\"). https://github.com/blackrock/aladdinsdk/pull/52: vedantnaik wrote \"LGTM! Just one minor change requested in api/client.py\", then \"LGTM!\", and merged it on Dec 9, 2025. https://github.com/blackrock/aladdinsdk/pull/57 (\"add Pydantic v2 compatibility support\"): vedantnaik wrote \"LGTM\" and merged it on Aug 11, 2026.",
+  "earlier_finding": "No BlackRock person has answered any issue: there is one issue, it is open, and it has no BlackRock reply. One engineer (vedantnaik) reviewed and merged every cited PR. Suggested text: \"Pull requests on the SDK, reviewed and merged by a BlackRock engineer 38, 65\". The register entry for source 65 is also wrong: PR 57 adds Pydantic v2 compatibility and does not mention MCP."
+ },
+ {
+  "id": "p15-10",
+  "page": "15",
+  "location": "Exhibit 16 row Get help col 'After qualification'",
+  "claim": "Notebooks, code samples, support (available after qualification)",
+  "sources": "-",
+  "earlier_first_verdict": "PARTLY",
+  "earlier_final_verdict": "PARTLY",
+  "earlier_receipt": "https://www.blackrock.com/aladdin/platforms/products/apis (src 24): \"Download Python Jupyter Notebooks, or cut and paste code samples across multiple programming languages from carefully curated API guides\". Studio page (src 14): \"Start building in minutes with developer guides, code snippets, and convenient documentation.\" https://github.com/blackrock/aladdinsdk/tree/main/resources/sample_code_snippets lists \"SDK_Demo_template.ipynb\" and \"SDK_Demo_ADC_template.ipynb\" (both public, HTTP 200). PR #39 is \"Upload SDK demo notebook to make API and ADC calls\". README L226: \"Sample code snippets and user configuration files are provided under resources/sample_code_snippets directory in this code repository.\"",
+  "earlier_finding": "Wrong citation: cite the APIs page 24, not 38, 65 or 14. Drop \"support\": no public source offers it. The Studio page's only use of the word is \"governance support\", and the shared web-search budget ran out before I could search again. The first checker missed that notebooks, like code samples, are already public as SDK demo notebooks on GitHub. Suggested text: \"Jupyter notebooks and multi-language code samples from the curated API guides 24\", and add the SDK demo notebooks and snippets (src 23) to \"Public today\"."
+ },
+ {
+  "id": "p15-105",
+  "page": "15",
+  "location": "Exhibit 17 row MSCI col 'Trial or sandbox'",
+  "claim": "MSCI, Trial or sandbox: 0 (none or blocked)",
+  "sources": "4",
+  "earlier_first_verdict": "PARTLY",
+  "earlier_final_verdict": "PARTLY",
+  "earlier_receipt": "Source 4 (msci.com AI-connectors press release, via WebFetch): \"now offering clients AI connectivity to engage MSCI's proprietary data\", with nothing on a sandbox or trial. Supporting the 0: all 28 records at https://developer.msci.com/content/dev-portal/apiDetails/slug:<slug> have \"sandBoxEnabled\":false (28/28). The labs also need a subscription: labDetails/slug:risk-backtesting says \"To use this App you must have a subscription to RiskMetrics RiskManager and OnDemand Web Services.\"",
+  "earlier_finding": "PARTLY: wrong citation. The 0 is correct, but source 4 does not say it; cite developer.msci.com."
+ },
+ {
+  "id": "p15-106",
+  "page": "15",
+  "location": "Exhibit 17 row MSCI col 'First API call without a contract'",
+  "claim": "MSCI, First API call without a contract: 0 (none or blocked)",
+  "sources": "4",
+  "earlier_first_verdict": "PARTLY",
+  "earlier_final_verdict": "PARTLY",
+  "earlier_receipt": "https://developer.msci.com/content/dev-portal/apiDetails/slug:index-api: \"By Clicking on the \u201cGet Access\u201d button, you will be navigated to another page with the product pre-populated and by providing additional information, you can submit the request. An API key will be generated and will be sent to the backend team for provisioning the key with the requested APIs. You will receive an email confirmation once the key is provisioned\"; \"The API keys will be valid for as long as the account is valid.\" Its servicePortalUrl is https://one.msci.com/manage-account/data-and-credentials?... (a client-account page). Source 4 says only \"offering clients AI connectivity\".",
+  "earlier_finding": "PARTLY: wrong citation. The 0 is correct, because MSCI provisions keys for existing client accounts, but cite developer.msci.com, not source 4."
+ }
+]

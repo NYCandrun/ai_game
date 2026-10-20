@@ -1,0 +1,57 @@
+[
+ {
+  "id": "p15-50",
+  "page": "15",
+  "location": "Exhibit 17 row Arcesium col 'First API call without a contract'",
+  "claim": "Arcesium, First API call without a contract: 0 (none or blocked)",
+  "sources": "57",
+  "earlier_first_verdict": "CONFIRMED (note)",
+  "earlier_final_verdict": "CONFIRMED (note)",
+  "earlier_receipt": "https://pypi.org/pypi/arcesium-python/json: \"summary : Arcesium Python Client redirector\", \"license : Proprietary\", \"A sample import catcher that redirects clients to the proper package\" (so the real client is private). The docs redirect to login.arcesium.com/docsLogin. api.arcesium.com did not resolve publicly.",
+  "earlier_finding": "No path to a call without a contract was found. Cite the login gate and the PyPI placeholder package, not source 57."
+ },
+ {
+  "id": "p15-51",
+  "page": "15",
+  "location": "Exhibit 17 row Arcesium col 'Sample code'",
+  "claim": "Arcesium, Sample code: 0 (none or blocked)",
+  "sources": "57",
+  "earlier_first_verdict": "CONFIRMED (note)",
+  "earlier_final_verdict": "CONFIRMED (note)",
+  "earlier_receipt": "https://github.com/arcesium: \"5 public repositories\": poetry-plugin-pypi-mirror, swiftlake (\"Java SQL engine built on Apache Iceberg and DuckDB\"), glob-tries, tech-conference, log-viewer-for-argo-workflows. None is platform API sample code. PyPI has only the arcesium-python \"redirector\". npm arcesium, @arcesium/sdk and aquata all return 404.",
+  "earlier_finding": "The score holds for platform API samples. Arcesium does publish general open-source tools on GitHub. Cite the GitHub org or the login gate, not source 57."
+ },
+ {
+  "id": "p15-53",
+  "page": "15",
+  "location": "Exhibit 17 row Arcesium col 'AI connector'",
+  "claim": "Arcesium, AI connector: 2 (fully public or self-serve)",
+  "sources": "57",
+  "earlier_first_verdict": "CONFIRMED (note)",
+  "earlier_final_verdict": "CONFIRMED (note)",
+  "earlier_receipt": "https://hedgeweek.com/news/arcesium-rolls-out-new-ai-capabilities-for-aquata-data-platform : \"a new Model Context Protocol (MCP) server designed to improve interoperability between enterprise AI tools and Aquata's governed data foundation\"; https://aquata.ai/ : \"Claude and ChatGPT connect directly via MCP.\"",
+  "earlier_finding": "Keep the 2. It fits the exhibit's definition of a 2 (an MCP server outside AI tools can use). Cited source 57 (arcesium.com) returned HTTP 429 (Vercel checkpoint) on every try, so it could not be read. Search found only the Dec 15, 2025 release 'Arcesium Unveils New Suite of AI Features in Aquata', not a 2026 'comprehensive AI platform' release. Check source 57's title, date and URL."
+ },
+ {
+  "id": "p15-59",
+  "page": "15",
+  "location": "Exhibit 17 row SimCorp col 'Sample code'",
+  "claim": "SimCorp, Sample code: 0 (none or blocked)",
+  "sources": "7",
+  "earlier_first_verdict": "CONFIRMED (note)",
+  "earlier_final_verdict": "CONFIRMED (note)",
+  "earlier_receipt": "https://github.com/simcorp (WebFetch): 4 public repos, \"NetMQ.Security\", \"nats-topology-visualiser\", \"DevChallenge\" (\"Battle IT by SimCorp\"), \"scd-actions-pipeline\". None is an API sample or SDK. PyPI simcorp / simcorp-one / simcorp-sdk JSON: HTTP 404. https://www.simcorp.com/developers: 404. The simcorp.com sitemap has no developer/docs URL.",
+  "earlier_finding": "Source 7 (the Agent Launchpad release) says nothing about sample code. The cell rests on the author's own test of public pages, which I reproduced with the same result. No change needed."
+ },
+ {
+  "id": "p15-62",
+  "page": "15",
+  "location": "Exhibit 17 row SimCorp col 'Call to action'",
+  "claim": "SimCorp, Call to action: 0 (none or blocked)",
+  "sources": "7",
+  "earlier_first_verdict": "CONFIRMED (note)",
+  "earlier_final_verdict": "CONFIRMED (note)",
+  "earlier_receipt": "https://www.simcorp.com/ : the only CTA in the page text is the nav link \"Contact us\". The sitemap has no demo, trial or get-started URL, only https://www.simcorp.com/about-us/contact. Source 7 ends with \"Media contacts\" only.",
+  "earlier_finding": "There is no developer-facing CTA. Source 7 does not cover this cell. It rests on the author's own test, which I reproduced. No change needed."
+ }
+]

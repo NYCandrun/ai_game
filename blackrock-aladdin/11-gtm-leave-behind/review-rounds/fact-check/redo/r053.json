@@ -1,0 +1,57 @@
+[
+ {
+  "id": "s15",
+  "page": "18",
+  "location": "Sources register, section P, entry 15",
+  "claim": "Source 15: [P] BlackRock partners with AWS to deliver Aladdin on secure, scalable cloud infrastructure . Amazon press release, December 2025. https://press.aboutamazon.com/aws/2025/12/blackrock-partners-with-aws-to-deliver-aladdin-on-secure-scalable-cloud-infrastructure",
+  "sources": "-",
+  "earlier_first_verdict": "CONFIRMED",
+  "earlier_final_verdict": "CONFIRMED",
+  "earlier_receipt": "https://press.aboutamazon.com/aws/2025/12/blackrock-partners-with-aws-to-deliver-aladdin-on-secure-scalable-cloud-infrastructure : \"December 01, 2025 / BlackRock Partners with AWS to Deliver Aladdin on Secure, Scalable Cloud Infrastructure ... New York\u2014 December 1, 2025 \u2014 BlackRock (NYSE: BLK) and Amazon Web Services, Inc. (AWS) ... today announced a strategic partnership\"; article:published_time 2025-12-01T14:00:00",
+  "earlier_finding": "None. The exact date is 1 December 2025."
+ },
+ {
+  "id": "s17",
+  "page": "18",
+  "location": "Sources register, section P, entry 17",
+  "claim": "Source 17: [P] Aladdin Copilot product page . BlackRock, as of October 2026. https://www.blackrock.com/aladdin/platforms/products/aladdin-copilot",
+  "sources": "-",
+  "earlier_first_verdict": "CONFIRMED",
+  "earlier_final_verdict": "CONFIRMED",
+  "earlier_receipt": "https://www.blackrock.com/aladdin/platforms/products/aladdin-copilot (HTTP 200, fetched 2026-10-20): title \"Aladdin\u00ae Copilot | Aladdin by BlackRock\"; \"Introducing Aladdin\u00ae Copilot, now available to all Aladdin clients.\"",
+  "earlier_finding": "None."
+ },
+ {
+  "id": "s19",
+  "page": "18",
+  "location": "Sources register, section P, entry 19",
+  "claim": "Source 19: [P] Aladdin Data Cloud product page . BlackRock, as of October 2026. https://www.blackrock.com/aladdin/platforms/products/aladdin-data-cloud",
+  "sources": "-",
+  "earlier_first_verdict": "CONFIRMED",
+  "earlier_final_verdict": "CONFIRMED",
+  "earlier_receipt": "https://www.blackrock.com/aladdin/platforms/products/aladdin-data-cloud (HTTP 200, fetched 2026-10-20). H1: \"Aladdin\u00ae Data Cloud\"; title tag: \"Data Cloud Investment Management | Aladdin by BlackRock\"",
+  "earlier_finding": "None. Live BlackRock product page at the stated URL."
+ },
+ {
+  "id": "s22",
+  "page": "18",
+  "location": "Sources register, section P, entry 22",
+  "claim": "Source 22: [P] How Fivetran helps power BlackRock\u2019s Aladdin Data Cloud . Fivetran blog, by Taylor Brown, August 28, 2024. https://www.fivetran.com/blog/how-fivetran-helps-power-blackrocks-aladdin-data-cloud",
+  "sources": "-",
+  "earlier_first_verdict": "CONFIRMED",
+  "earlier_final_verdict": "CONFIRMED",
+  "earlier_receipt": "https://www.fivetran.com/blog/how-fivetran-helps-power-blackrocks-aladdin-data-cloud: title \"How Fivetran helps power BlackRock\u2019s Aladdin\u00ae Data Cloud | Blog | Fivetran\"; JSON-LD \"author\": {\"@type\": \"Person\", \"name\": \"Taylor Brown\"}, \"datePublished\": \"Aug 28, 2024\"; visible date \"August 28, 2024\"",
+  "earlier_finding": "None. The page also lists dateModified Jul 21, 2026."
+ },
+ {
+  "id": "s23",
+  "page": "18",
+  "location": "Sources register, section P, entry 23",
+  "claim": "Source 23: [P] AladdinSDK README and source, blackrock/aladdinsdk . GitHub, as of October 19, 2026. https://github.com/blackrock/aladdinsdk",
+  "sources": "-",
+  "earlier_first_verdict": "CONFIRMED",
+  "earlier_final_verdict": "CONFIRMED",
+  "earlier_receipt": "https://raw.githubusercontent.com/blackrock/aladdinsdk/main/README.md: \"# AladdinSDK ... AladdinSDK allows developers to easily integrate BlackRock's Aladdin functionality into their own applications and systems. The goal is to make it easier for everyone to efficiently access and utilize Aladdin APIs and Data Cloud.\"; github.com/blackrock/aladdinsdk shows \"Public\", \"Apache-2.0 license\"",
+  "earlier_finding": "None."
+ }
+]

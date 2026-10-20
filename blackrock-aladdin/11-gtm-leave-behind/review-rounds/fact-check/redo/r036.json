@@ -1,0 +1,57 @@
+[
+ {
+  "id": "p14-07",
+  "page": "14",
+  "location": "Exhibit 15 row 3 col 'What it is'",
+  "claim": "a public pension fund already on record (a public pension fund is already publicly on record as an Aladdin/Studio client)",
+  "sources": "-",
+  "earlier_first_verdict": "CONFIRMED (note)",
+  "earlier_final_verdict": "CONFIRMED (note)",
+  "earlier_receipt": "https://www.find-tender.service.gov.uk/api/1.0/ocdsReleasePackages/062522-2025 buyer \"Pension Protection Fund\", award \"Order management, portfolio monitoring and risk analytics system\" to \"BlackRock Financial Management, Inc\" (supplier url \"http://www.blackrock.com/aladdin\"; buyer \"Body governed by public law\"). .../035311-2023 buyer \"National Employment Savings Trust (NEST)\", award \"Provision of Investment Risk Platform Services\" to \"BlackRock Financial Management Inc\". https://api.usaspending.gov/api/v2/awards/CONT_AWD_16PBGC23C0006_1665_-NONE-_-NONE-/ \"INVESTMENT RISK MANAGEMENT SYSTEM\", \"BLACKROCK FINANCIAL MANAGEMENT INC\".",
+  "earlier_finding": "These bodies are on record as Aladdin buyers, not Studio clients, and no notice names Studio. The Nest notice names BlackRock only, not Aladdin. PBGC is a federal insurer, not a pension fund. The HTML notices return 403, so the OCDS API was used."
+ },
+ {
+  "id": "p14-08",
+  "page": "14",
+  "location": "Exhibit 15 row 3 col 'What it is'",
+  "claim": "a client whose engineers have contributed to the SDK (client engineers have contributed to the open-source SDK)",
+  "sources": "-",
+  "earlier_first_verdict": "CONFIRMED (note)",
+  "earlier_final_verdict": "CONFIRMED (note)",
+  "earlier_receipt": "https://patch-diff.githubusercontent.com/raw/blackrock/aladdinsdk/pull/53.patch \"From: Willem du Preez <Willem.DuPreez@janushenderson.com> ... Subject: [PATCH 1/3] Added ability to add additional HTTP headers.\" (PR 52 patch: same author, \"Added ability to rewrite URLs.\"). https://www.sec.gov/Archives/edgar/data/1274173/000143774926005628/jhg20251231_10k.htm \"For example, we are engaged in a project to implement BlackRock's Aladdin platform, a complex, multi-year initiative to upgrade our Investment Management, Compliance, and Middle- and Back-Office services platform.\"",
+  "earlier_finding": "Only one client engineer is evidenced (Willem du Preez of Janus Henderson, GitHub accounts willemdupreez and willemdupreez-jh). Suggest 'a client whose engineer has contributed to the SDK'."
+ },
+ {
+  "id": "p14-16",
+  "page": "14",
+  "location": "Exhibit 16 title",
+  "claim": "What I was not able to see from outside, and what opens after qualification (Studio access opens after qualification)",
+  "sources": "-",
+  "earlier_first_verdict": "CONFIRMED (note)",
+  "earlier_final_verdict": "CONFIRMED (note)",
+  "earlier_receipt": "https://www.blackrock.com/aladdin/platforms/products/aladdin-studio : \"Create, customize, and align by innovating on the Aladdin platform through Studio. Book a meeting\"; APIs page: \"Contact us to learn more\"; SDK README line 89: \"API Token registered via Studio UI\"; line 258: \"Client ID and Secret can be sourced from Studio UI by creating a OAuth application under a Project.\"",
+  "earlier_finding": "No public sign-up; access goes through a meeting/contact and Studio UI credentials. 'Qualification' is the author's term; BlackRock says only that Aladdin is 'designed for institutional, wholesale, qualified, and professional investor/client use only'."
+ },
+ {
+  "id": "p14-17",
+  "page": "14",
+  "location": "Exhibit 16 row Hear col 'Public today'",
+  "claim": "Podcasts, webinar replays, client videos and conference talks on BlackRock's site and partner channels",
+  "sources": "28,29,1,8",
+  "earlier_first_verdict": "CONFIRMED (note)",
+  "earlier_final_verdict": "CONFIRMED (note)",
+  "earlier_receipt": "[28] https://www.blackrock.com/aladdin/discover/expertise/never-done-podcast-by-aladdin : \"The Never Done by Aladdin\u00ae podcast highlights stories about innovation, transformation, and technology\"; [1] YouTube oEmbed Me_H_-E6lSg: title \"From Analytics To Intelligence: BlackRock's Journey To Data Productization\", author \"Snowflake Inc.\"; [8] YouTube oEmbed oyqeCHFM5U4: \"How BlackRock Built Production AI Agents for Asset Management with LangGraph | LangChain Interrupt\", author \"LangChain\"; uncited https://www.blackrock.com/aladdin/discover/expertise/webinars : \"Watch the replay\" / \"Explore our instant replays\"",
+  "earlier_finding": "All four kinds exist publicly, but 'webinar replays' is supported only by the uncited Webinars page (add it as a receipt), and [29] Big Little Questions is BlackRock staff and Microsoft, not clients; client voices are in Never Done (e.g. 'Melissa Stolfi, Global COO at TCW'). Rephrase or re-source 'client videos'."
+ },
+ {
+  "id": "p15-100",
+  "page": "15",
+  "location": "Exhibit 17 row FactSet col 'Community or marketplace'",
+  "claim": "FactSet, Community or marketplace: 1 (partial or after sign-up or approval)",
+  "sources": "66",
+  "earlier_first_verdict": "CONFIRMED (note)",
+  "earlier_final_verdict": "CONFIRMED (note)",
+  "earlier_receipt": "developer.factset.com API catalog (anonymous): \"Open:FactSet Marketplace API ... This API provides endpoints to read Product and Partner data that is displayed on FactSet.com.\" https://open.factset.com/ redirects (HTTP 200) to https://www.factset.com/marketplace/catalog. The portal home page offers only \"Connect with Sales\": \"Have questions? Our sales experts are here to help.\"",
+  "earlier_finding": "None needed. A marketplace exists and I found no open developer forum. A score of 1 is a fair judgment, but no page states the marketplace access terms, so 'after approval' rests on inference."
+ }
+]

@@ -1,0 +1,57 @@
+[
+ {
+  "id": "p15-101",
+  "page": "15",
+  "location": "Exhibit 17 row FactSet col 'AI connector'",
+  "claim": "FactSet, AI connector: 2 (fully public or self-serve)",
+  "sources": "66",
+  "earlier_first_verdict": "CONFIRMED (note)",
+  "earlier_final_verdict": "CONFIRMED (note)",
+  "earlier_receipt": "https://developer.factset.com/mcp/factset-ai-ready-data-mcp (content served by /api/v2/content/page/mcp/factset-ai-ready-data-mcp): \"The FactSet Data MCP is a Model Context Protocol server that provides unified access to FactSet's comprehensive financial data APIs. It enables AI agents and applications to seamlessly retrieve...\"; connectionHost \"https://mcp.factset.com/\"; listed clients include Claude, Claude Code, ChatGPT, Gemini, Microsoft Copilot and Perplexity. The catalog at /api/v2/content/mcp-catalog says: \"MCP server connecting AI agents to FactSet financial data, estimates, pricing, and market information APIs\"",
+  "earlier_finding": "Keep the 2: it meets the exhibit's own AI-connector definition (\"a connector that outside AI tools can use, such as an MCP server\"). Using it requires FactSet OAuth credentials (\"Step 1: Create and configure OAuth Client\") and an entitled tier (\"Tool availability and packaging now reflect your firm type as well as your data tier\"), so the header's \"fully public or self-serve\" is not literal. Source 66 is correct."
+ },
+ {
+  "id": "p15-109",
+  "page": "15",
+  "location": "Exhibit 17 row MSCI col 'AI connector'",
+  "claim": "MSCI, AI connector: 2 (fully public or self-serve)",
+  "sources": "4",
+  "earlier_first_verdict": "CONFIRMED (note)",
+  "earlier_final_verdict": "CONFIRMED (note)",
+  "earlier_receipt": "Source 4 https://www.msci.com/discover-msci/media-room/msci-unveils-new-ai-connectors-transforming-access-to-proprietary-data: \"is now offering clients AI connectivity to engage MSCI's proprietary data\"; \"the MSCI app in OpenAI's ChatGPT and the MSCI connector in Claude\". Second source https://claude.com/connectors/msci: Connector URL \"https://mcp.msci.com/mcp/v1.0/mcp\", 36 tools, sign-in \"Required\".",
+  "earlier_finding": "Meets the key (an MCP connector that outside AI tools can use). Note: access is entitlement-based, clients only. Source 4 is dated \"New York \u2013 February 24, 2026\", but the Sources register says 2025. Fix the register year."
+ },
+ {
+  "id": "p15-111",
+  "page": "15",
+  "location": "Exhibit 17 note (AI connector)",
+  "claim": "For the AI connector score: 2 means a connector that outside AI tools can use, such as an MCP server. 1 means one announced or in limited release. 0 means none, or an assistant that works only inside the vendor's own platform (scoring key applied to the AI connector column)",
+  "sources": "-",
+  "earlier_first_verdict": "CONFIRMED (note)",
+  "earlier_final_verdict": "CONFIRMED (note)",
+  "earlier_receipt": "fc/doc_layout.txt:810-811: \"For the AI connector score: 2 means a connector that outside AI tools can use, such as an MCP server. 1 means one announced or in limited release. 0 means none, or an assistant that works only inside the vendor's own platform.\"",
+  "earlier_finding": "This defines the scoring and needs no source. The text matches the document. The MSCI row follows it (mcp.msci.com used from Claude)."
+ },
+ {
+  "id": "p15-23",
+  "page": "15",
+  "location": "Exhibit 17 row Bloomberg col 'Public docs'",
+  "claim": "Bloomberg, Public docs: 1 (partial or after sign-up or approval)",
+  "sources": "-",
+  "earlier_first_verdict": "CONFIRMED (note)",
+  "earlier_final_verdict": "CONFIRMED (note)",
+  "earlier_receipt": "https://developer.bloomberg.com/ (page config): \"Sign in to access developer resources and technical documentation for Bloomberg APIs\". https://bloomberg.github.io/blpapi-docs/ (public): \"The BLPAPI Developer's Guide is a tutorial for developing applications with BLPAPI in C++, Java and C# (.NET)\"",
+  "earlier_finding": "No change needed. Partial fits: the portal docs need a sign-in, but the BLPAPI SDK reference and the Core Developer Guide PDF are fully public, so a reader could argue for 2. No source number is given; this is the author's own test."
+ },
+ {
+  "id": "p15-24",
+  "page": "15",
+  "location": "Exhibit 17 row Bloomberg col 'API catalog'",
+  "claim": "Bloomberg, API catalog: 0 (none or blocked)",
+  "sources": "-",
+  "earlier_first_verdict": "CONFIRMED (note)",
+  "earlier_final_verdict": "CONFIRMED (note)",
+  "earlier_receipt": "https://developer.bloomberg.com/ (marketingContent): \"API Reference\":{\"bullets\":[\"Identify service endpoints\",\"Discover event schemas\",\"Browse through SDK Libraries\"]}, behind \"Sign in to access developer resources\"; the sign-up route is https://service.blpprofessional.com/portal/product/ureg?referrer=bdev",
+  "earlier_finding": "The endpoint and schema catalog is gated. Keep 0 only if portal registration needs an existing client relationship. If anyone can sign up for free, the exhibit's own rubric gives 1."
+ }
+]

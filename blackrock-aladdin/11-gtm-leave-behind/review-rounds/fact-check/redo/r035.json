@@ -1,0 +1,57 @@
+[
+ {
+  "id": "p13-38",
+  "page": "13",
+  "location": "Exhibit 14 box 'Permissions per user'",
+  "claim": "Each API has its own access scope.",
+  "sources": "6",
+  "earlier_first_verdict": "CONFIRMED (note)",
+  "earlier_final_verdict": "CONFIRMED (note)",
+  "earlier_receipt": "Fresh PyPI wheels, 2.0.0b3: all 54 of 54 swagger.json files define an OAuth scope named after the API. Example: /tmp/claude-0/-home-user-ai-game/44510f87-22a4-5476-9273-389e23c654a8/scratchpad/fc/dl/b092/un/platform/asdk_plugin_platform/agraph/platform/studio/adc/adc_dataset/v1/AdcDatasetAPI/swagger.json:3494: \"platform.studio.adc.adc_dataset.v1.AdcDataset\": \"This grants access to all endpoints in the platform.studio.adc.adc_dataset.v1.AdcDataset API\". .../trading/asdk_plugin_trading/agraph/trading/trade_processing/trade/v2/TradeAPI/swagger.json:3344-3345: \"trading.trade_processing.trade.v2.Trade:read\": \"non-sensitive read\", \"trading.trade_processing.trade.v2.Trade:write\": \"non-sensitive write\". Second source, the SDK README (https://pypi.org/pypi/aladdinsdk/json): \"AGRAPH_SCOPES_ENABLED | If enabled, adds scopes from swagger specs to oauth access token request\".",
+  "earlier_finding": "37 specs split the scope into :read and :write; the others use one whole-API scope. Each operation also offers an APIKeyHeader plus ClientKeyHeader option with no scope (CorporateActionEntitlementAPI/swagger.json around lines 36-39), so the scope governs OAuth access. Optional note only."
+ },
+ {
+  "id": "p13-39",
+  "page": "13",
+  "location": "Exhibit 14 box 'Permissions per user'",
+  "claim": "A user sees only what their entitlements allow.",
+  "sources": "6,8",
+  "earlier_first_verdict": "CONFIRMED (note)",
+  "earlier_final_verdict": "CONFIRMED (note)",
+  "earlier_receipt": "/tmp/claude-0/-home-user-ai-game/44510f87-22a4-5476-9273-389e23c654a8/scratchpad/fc/dl/b092/un/analytics/asdk_plugin_analytics/agraph/analytics/data/esg/v1/EsgDataAPI/swagger.json:863 and 886: \"Response message for ESG Entitlements/Metadata API.\" and \"Return list of entitled measures.\" .../platform/asdk_plugin_platform/agraph/platform/access/permission/v1/PermissionAPI/swagger.json:160: \"Aladdin\u00ae understood the request but is refusing to authorize it.\" AdcDatasetAPI/swagger.json:1689: \"The use of this operation requires \\\"StudioAdmin\\\" Aladdin perm assigned to the user\". PermissionAPI/swagger.json:13: \"Permissions cannot be applied directly to a user, they must be applied to a User Group first\". Source 8 (CORPUS, YouTube returned 429): /home/user/ai_game/blackrock-aladdin/04-transcripts/timestamped/yt_oyqeCHFM5U4.m4a.ts.txt:74 [06:58]: \"Environments this plug-in is enabled in which user groups have access to this and even which which Aladdin apps can even access these plugins\".",
+  "earlier_finding": "No spec states this as a general rule; it is a fair inference from the entitlement and permission checks. Permissions are granted through user groups, not to individual users. PermissionAPI also notes: \"This is not intended to be used for Authorization.\" The source 8 wording is corpus-only."
+ },
+ {
+  "id": "p14-03",
+  "page": "14",
+  "location": "Exhibit 15 row 1 col 'What it is'",
+  "claim": "how a client routes calls through its own gateway (clients can route Aladdin API calls through their own gateway)",
+  "sources": "-",
+  "earlier_first_verdict": "CONFIRMED (note)",
+  "earlier_final_verdict": "CONFIRMED (note)",
+  "earlier_receipt": "https://github.com/blackrock/aladdinsdk/pull/52 (README hunk in patch; also live README line 633): \"When consuming the Aladdin APIs via an enterprise API management platform such as Azure API Management, the relative URL of the Aladdin APIs are likely to be different (in addition to the host name).\" PR 53: \"This is required when routing requests to API management platforms such as Azure API Management where the subscription key for the API needs to be passed as custom header.\"",
+  "earlier_finding": "No change needed. The source says 'API management platform', not 'gateway', which means the same thing. The SDK supports this routing; it is not stated as BlackRock policy. Both PRs were merged by vedantnaik on Dec 8-9, 2025."
+ },
+ {
+  "id": "p14-05",
+  "page": "14",
+  "location": "Exhibit 15 row 1 col 'What it is'",
+  "claim": "plus how a client's own AI tools would connect",
+  "sources": "-",
+  "earlier_first_verdict": "CONFIRMED (note)",
+  "earlier_final_verdict": "CONFIRMED (note)",
+  "earlier_receipt": "This is a proposed work item. Its premise, that the method is not public, holds: a web search for BlackRock Aladdin MCP or client AI-agent connection found no BlackRock publication, and the only MCP hit was the third-party directory apis.io. Source 60 https://careers.blackrock.com/job/mumbai/forward-deploy-engineer-aladdin-data-associate/45831/97466309856 now returns HTTP 404 (Oct 20 2026). The corpus copy (scratchpad htmlrev/src/key_findings_original.html) quotes it: \"Model Context Protocol (MCP), AI agents, and Copilot extensions\".",
+  "earlier_finding": "Nothing to change in this cell. Note elsewhere that source 60 (job posting) has since been removed (404 as of Oct 20 2026)."
+ },
+ {
+  "id": "p14-06",
+  "page": "14",
+  "location": "Exhibit 15 row 2 col 'What it is'",
+  "claim": "a client's own AI tools could read data and take actions through Aladdin's APIs, under the same permissions, compliance checks and guardrails Copilot uses (Copilot operates under permissions, compliance checks and guardrails)",
+  "sources": "-",
+  "earlier_first_verdict": "CONFIRMED (note)",
+  "earlier_final_verdict": "CONFIRMED (note)",
+  "earlier_receipt": "https://www.blackrock.com/aladdin/platforms/products/aladdin-copilot \"Enable more informed decision making with permission-dependent access to insights\"; \"Aladdin Copilot: Will not give investment advice or respond to questions outside Aladdin platform boundaries Contains content filtering and parameters to limit risk of hallucination, misinformation or inappropriate outputs\". https://www.zenml.io/llmops-database/agentic-ai-architecture-for-investment-management-platform \"The filtering considers which environments plugins are enabled in, which user groups have access, and which applications can access specific plugins\"; \"Output Guardrails : Before returning responses to users, the system runs hallucination detection checks and domain-specific output moderation.\" asdk_plugin_trading 2.0.0b3 OrderAPI/swagger.json: \"runCompliance\": \"Default is true to run compliance on this post order request.\"",
+  "earlier_finding": "Permissions and guardrails are confirmed for Copilot. 'Compliance checks' come from the order API's default compliance run; no source says Copilot itself runs a compliance check on each action. Consider 'the same permissions and guardrails Copilot uses, and the compliance check the order API runs by default'."
+ }
+]

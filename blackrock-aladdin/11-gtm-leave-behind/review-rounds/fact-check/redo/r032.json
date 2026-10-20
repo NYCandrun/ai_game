@@ -1,0 +1,57 @@
+[
+ {
+  "id": "p07-20",
+  "page": "7",
+  "location": "Exhibit 6 note",
+  "claim": "Quotations are verbatim from the transcripts",
+  "sources": "1,16,26,30,31",
+  "earlier_first_verdict": "CORPUS-ONLY",
+  "earlier_final_verdict": "CONFIRMED (note)",
+  "earlier_receipt": "Newman: https://www.blackrock.com/aladdin/discover/podcast/snowflake-podcast-data-the-key-ingredient \"where the data cloud and Aladdin data cloud specifically comes in, which is part of Studio\"; \"We're releasing soon the ability to actually access those analytic APIs ... That's all part of the Studio umbrella.\" Woodhead: published Simplecast transcript, https://api.simplecast.com/episodes/82e0765b-4300-4ade-9414-052cda8e9d96 field 'transcription', [00:05:25] \"It exposes everything Aladdin knows how to do as a set of APIs events. The Aladdin Data Cloud built on top of Snowflake takes all of that information that's generated through our analytics factory and inside of Aladdin and pushes that into Snowflake. [00:05:48] ... And increasingly we're building a set of developer tools\". Goel: my own faster-whisper transcription of the public MP4 https://dwu7l6as21h3p.cloudfront.net/data_strat-asset_pens_v1-839.720p.wide.mp4 from 28:45: \"should be available and accessible to you via an event, via an API\" ... \"within 15 minutes of latency\". Khara: my transcription of the public MP4 https://dwu7l6as21h3p.cloudfront.net/BSTAwards2023WinnerInterview-606.720p.wide.mp4 from 18:25: \"on a programmatic basis at machine scale\". Miller (corpus only): scratchpad/yt/transcripts/17_BlackRock_Transforms_...md:10 \"We sent flat files, we sent large schema definitions, FTP and related transfers\". The YouTube description of 3iXd7a7_F6g paraphrases it: \"replaced legacy flat files and FTP transfers\".",
+  "earlier_finding": "No text change. Four of the five quotes now check out against public sources: Newman's page, Woodhead's published Simplecast transcript, and the public MP4s for Goel and Khara, which I transcribed myself. Only Miller's is still corpus-only, because YouTube captions and audio return 403 or a captcha. Two notes. My transcription hears Khara's phrase as \"studio state\" where the corpus has \"studio estate\"; \"estate\" is likelier, but the audio is ambiguous. Outside this batch (p07-19): the Miller YouTube page gives uploadDate 2026-05-21, and its description titles him \"Managing Director and Global Head of Data Factory and Enterprise Data Platforms\", which differs from src 31."
+ },
+ {
+  "id": "p07-21",
+  "page": "7",
+  "location": "Exhibit 6 note",
+  "claim": "three of the five are machine transcriptions, marked as such in the Sources section at the end of this document",
+  "sources": "-",
+  "earlier_first_verdict": "PARTLY",
+  "earlier_final_verdict": "CONFIRMED (note)",
+  "earlier_receipt": "fc/doc_layout.txt:839-840 \"'Machine transcription' means speech-to-text software run locally on the downloaded audio. 'Auto-captions' means YouTube's captions.\" fc/sources.tsv: src 26 \"(webinar replay; machine transcription)\", src 30 \"winner interview (machine transcription)\", src 31 \"(Snowflake video; machine transcription)\", src 1 \"(Snowflake Data Cloud podcast; auto-captions)\", src 16 \"published transcript\". The Simplecast API for Woodhead's episode has a published transcript: \"[00:00:00] Producer: Hello and welcome to The Data Cloud Podcast. Today's episode features an interview with David Woodhead\".",
+  "earlier_finding": "The document defines machine transcription and auto-captions as separate categories, and exactly three sources (Goel, Khara, Miller) are labelled machine transcription, so \"three\" is literally correct and they are marked as such. The first checker's \"four\" merges the two categories. The real gap is that the sentence says nothing about Woodhead. Best fix: cite the published Simplecast transcript for src 1, which matches the quote word for word. The sentence can then read \"three are machine transcriptions; two have published transcripts\". Simplecast timestamps run about 49 s later than the YouTube cut ([00:05:25] versus 4:36). Otherwise add \"and one (Woodhead) is YouTube auto-captions\", and keep Exhibit 7's note consistent."
+ },
+ {
+  "id": "p07-23",
+  "page": "7",
+  "location": "body para 1",
+  "claim": "two of those four add developer tools",
+  "sources": "-",
+  "earlier_first_verdict": "CORPUS-ONLY",
+  "earlier_final_verdict": "CONFIRMED (note)",
+  "earlier_receipt": "Woodhead, published Simplecast transcript (https://api.simplecast.com/episodes/82e0765b-4300-4ade-9414-052cda8e9d96), [00:05:48]: \"And increasingly we're building a set of developer tools, so understanding that we power innovation when we decentralize it.\" Goel, my own transcription of the public MP4 (data_strat-asset_pens_v1-839.720p.wide.mp4), from 25:15: \"What we want to do is we want to actually start exposing some of the software and application that we're building so that our clients can also access and leverage the AI that we're developing\"; from 35:35: \"I think it's critical that we are able to provide platform to our citizen developers\".",
+  "earlier_finding": "Both quotes can now be checked against public sources, not only the local transcripts. Woodhead says \"developer tools\" word for word. For Goel it is a fair paraphrase, not his words. Caveat: Khara ties the Studio estate to \"capabilities around real time computation and development\", so a strict reader might count three. Optionally write \"two of those four, Woodhead and Goel, explicitly add developer tooling\"."
+ },
+ {
+  "id": "p07-42",
+  "page": "7",
+  "location": "Exhibit 7 row Woodhead col 'What they said'",
+  "claim": "Woodhead: \"It exposes everything Aladdin knows how to do as a set of APIs events. The Aladdin data cloud built on top of Snowflake ... developer tools\"",
+  "sources": "1",
+  "earlier_first_verdict": "CORPUS-ONLY",
+  "earlier_final_verdict": "CONFIRMED (note)",
+  "earlier_receipt": "https://api.simplecast.com/episodes/82e0765b-4300-4ade-9414-052cda8e9d96 (published transcript for the Simplecast episode of source 1): \"[00:05:25] David Woodhead: ... It exposes everything Aladdin knows how to do as a set of APIs events. The Aladdin Data Cloud built on top of Snowflake takes all of that information that's generated through our analytics factory and inside of Aladdin and pushes that into Snowflake. [00:05:48] David Woodhead: And increasingly we're building a set of developer tools\"",
+  "earlier_finding": "Verbatim in the podcast's own published transcript, so it is on the open web and no longer CORPUS-ONLY. The quote could take 'Aladdin Data Cloud' with capitals, as that transcript spells it. Simplecast timestamps are about 41s later than the YouTube timings because of the producer intro. Consider adding the Simplecast episode URL to source 1."
+ },
+ {
+  "id": "p07-43",
+  "page": "7",
+  "location": "Exhibit 7 row Woodhead cols 'APIs and events / Data Cloud / Developer tools'",
+  "claim": "Woodhead: APIs and events Yes; Data Cloud Yes; Developer tools Yes",
+  "sources": "1",
+  "earlier_first_verdict": "CORPUS-ONLY",
+  "earlier_final_verdict": "CONFIRMED (note)",
+  "earlier_receipt": "https://www.youtube.com/watch?v=Me_H_-E6lSg, YouTube's own 'English (auto-generated)' caption track (timedtext, kind=asr, fetched 2026-10-20), cues 00:04:47.919 to 00:05:02.080: \"exposes everything Aladdin knows how to do as a set of APIs events. The Aladdin data cloud built on top of Snowflake takes all of that information that's generated through our analytics factory and inside of Aladdin and pushes that into Snowflake. And increasingly we're building a set of developer tools.\" This matches the local file 01_From_Analytics_To_Intelligence...md:24 word for word.",
+  "earlier_finding": "The words can be reached on the web: YouTube's auto-generated caption track for the video. All three Yes marks are supported, and source [1] is the correct citation. No change to the text. Note that the source is auto-captions, which the Sources section already says."
+ }
+]

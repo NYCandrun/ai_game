@@ -1,0 +1,57 @@
+[
+ {
+  "id": "p15-29",
+  "page": "15",
+  "location": "Exhibit 17 row Bloomberg col 'AI connector'",
+  "claim": "Bloomberg, AI connector: 0 (none or blocked)",
+  "sources": "-",
+  "earlier_first_verdict": "WRONG",
+  "earlier_final_verdict": "WRONG",
+  "earlier_receipt": "https://www.webull.com/news/15660486556124160 (PR Newswire 09/29): \"NEW YORK and LONDON , Sept. 29, 2026 /PRNewswire/ -- Bloomberg today announced the launch of Bloomberg Enterprise Model Context Protocol (MCP), an AI access layer for Data License Plus (DL+)\"; \"Bloomberg hosts and manages Enterprise MCP, while clients control the AI agents and applications that connect to it\". https://professional.bloomberg.com/products/data/data-license/dl-plus/ : \"Bloomberg Enterprise MCP plugs Bloomberg data directly into enterprise AI workflows through a standardized Model Context Protocol (MCP) interface, enabling your AI agents to discover, understand and retrieve Bloomberg data\". https://itbrief.co.uk/story/bloomberg-launches-enterprise-mcp-for-ai-data-access (13 Oct 2026): \"Bloomberg has launched Bloomberg Enterprise Model Context Protocol for its Data Licence Plus service, giving client AI agents access to licensed Bloomberg data through a standardised interface.\"",
+  "earlier_finding": "Bloomberg launched a hosted MCP server, which clients' own agents connect to, on Sept 29, 2026, before the Oct 8 test. That is a launch, not an announcement. Under the exhibit's footnote (2 = a connector outside AI tools can use, such as an MCP server) the score is 2, matching FactSet and MSCI. Also fix doc_layout.txt:581 ('State Street, Clearwater and Bloomberg have none') and the 'Investment platforms cluster low' narrative."
+ },
+ {
+  "id": "p15-54",
+  "page": "15",
+  "location": "Exhibit 17 row Arcesium col 'Call to action'",
+  "claim": "Arcesium, Call to action: 0 (none or blocked)",
+  "sources": "57",
+  "earlier_first_verdict": "PARTLY",
+  "earlier_final_verdict": "WRONG",
+  "earlier_receipt": "https://aquata.ai/demo-center FAQ 'How do I get started for free?': \"You can request a 30-day trial and get your own production-grade, enterprise environment to fully test the platform with your real data and workflows. There are no sales calls required to get started\"; FAQ 'How much does Aquata cost?': \"most teams start in the $2,000\u2013$4,000 per month range for typical production usage, with a full-featured 30-day free trial to validate fit before you commit.\"; https://aquata.ai/landing/free-trial-request: \"Book a Demo Drop your work email to get started.\"; https://aquata.ai/ : \"Talk to an Expert See Product Tour\" ... \"Book Demo Get started ... Contact us\"",
+  "earlier_finding": "Wrong under any reading of the column: Aquata has a free-trial request page that asks only for a work email (first published March 2026, before the Oct 8 test), plus 'no sales calls required'. Score Arcesium Call to action at least 1 (arguably 2). Source 57 returns 429 and cannot be verified; cite aquata.ai/demo-center. Outside the batch: Arcesium 'Trial or sandbox: 0' and the line saying that at Arcesium 'a sandbox and a first call come after a relationship exists' also look wrong."
+ },
+ {
+  "id": "p15-97",
+  "page": "15",
+  "location": "Exhibit 17 row FactSet col 'Trial or sandbox'",
+  "claim": "FactSet, Trial or sandbox: 0 (none or blocked)",
+  "sources": "66",
+  "earlier_first_verdict": "WRONG",
+  "earlier_final_verdict": "WRONG",
+  "earlier_receipt": "https://developer.factset.com/api/v2/content/page/contact (anonymous, HTTP 200, fetched 2026-10-20): \"Please fill out the form below if you would like more information or would like to get a free trial to our APIs!\" SEO description: \"Interested in FactSet APIs? Contact us to know more and if you like to get free trial access to FactSet APIs!\" Also https://developer.factset.com/api/v2/content/page/home (API Playground card): \"try out different API requests, see real-time responses, and better understand how the API works\u2014without needing to write any code first.\" Second confirmation by web search was not possible because the WebSearch budget was used up. Guessed factset.com trial URLs returned 404.",
+  "earlier_finding": "Change FactSet 'Trial or sandbox' from 0 to 1 (partial or after sign-up or approval). FactSet offers a free API trial on request through the contact form, and it has an API Playground that needs a login. Neither is self-serve, so 1 rather than 2. This matches the Bloomberg and State Street rows, which score 1 in this column. Source 66 supports the correction. Report: /tmp/claude-0/-home-user-ai-game/44510f87-22a4-5476-9273-389e23c654a8/scratchpad/fc/reports/b116_recheck.md"
+ },
+ {
+  "id": "s04",
+  "page": "18",
+  "location": "Sources register, section P, entry 4",
+  "claim": "Source 4: [P] MSCI unveils new AI connectors . MSCI press release, 2025. https://www.msci.com/discover-msci/media-room/msci-unveils-new-ai-connectors-transforming-access-to-proprietary-data",
+  "sources": "-",
+  "earlier_first_verdict": "WRONG",
+  "earlier_final_verdict": "WRONG",
+  "earlier_receipt": "https://www.msci.com/discover-msci/media-room/msci-unveils-new-ai-connectors-transforming-access-to-proprietary-data (WebFetch): headline \"MSCI unveils new AI connectors transforming access to proprietary data\"; dateline \"New York \u2013 February 24, 2026\"; \"MSCI Inc. (NYSE: MSCI) is now offering clients AI connectivity to engage MSCI's proprietary data to ask questions,\". No second source: ir.msci.com returned 403, the media-room index lists only October 2026 items, and WebSearch was unavailable (budget used up).",
+  "earlier_finding": "The year is 2026, not 2025, and the title is shortened. Use: \"MSCI unveils new AI connectors transforming access to proprietary data. MSCI press release, February 24, 2026.\""
+ },
+ {
+  "id": "p03-39",
+  "page": "3",
+  "location": "Exhibit 1 row Aladdin Data Cloud col 'Main users'",
+  "claim": "Aladdin Data Cloud main users: Data teams",
+  "sources": "-",
+  "earlier_first_verdict": "UNVERIFIED",
+  "earlier_final_verdict": "UNVERIFIED",
+  "earlier_receipt": "https://www.blackrock.com/aladdin/platforms/products/aladdin-data-cloud (closest wording): \"Create shareable dashboards, customize analytics, and natively integrate with your business intelligence tools to accelerate time-to-insight\"; https://www.hubbis.com/news/blackrock-to-launch-the-aladdin-data-cloud-powered-by-snowflake: \"BlackRock will launch Aladdin Data Cloud, a solution for investment managers to expand the utility of data\". Neither says \"data teams\". The only \"Data teams\" wording is in the author's own briefings (scratchpad/clientcheck/b.txt:297), and those are not independent.",
+  "earlier_finding": "No public source says \"data teams\". Either attribute it as the author's characterization, or rewrite it as \"Investment managers' data and analytics users\" and cite the ADC product page and the 2021 launch release. What I tried: the ADC product page, the source 16 page, the Aladdin Studio page (\"a data analyst automating reporting\" applies to Studio, not ADC), the hubbis mirror, the Snowflake press release and case study (403/404), the BlackRock IR release (502), the gated case study, and a corpus grep. The web search budget was used up, so no new search queries were possible."
+ }
+]

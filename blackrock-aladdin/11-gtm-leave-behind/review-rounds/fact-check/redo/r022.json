@@ -1,0 +1,57 @@
+[
+ {
+  "id": "p13-27",
+  "page": "13",
+  "location": "Exhibit 14 box 'Copilot'",
+  "claim": "Thousands of tools, each one an Aladdin API",
+  "sources": "8,17",
+  "earlier_first_verdict": "PARTLY",
+  "earlier_final_verdict": "PARTLY",
+  "earlier_receipt": "TS:72 [06:42] \"a couple thousands agents and tools that are registered in the plug-in registry\"; TS:47-50 [04:31]-[04:49] \"define a tool as / Kind of mapping one-to-one to an existing Aladdin API already out in production / ... Complex workflows is the ability to spin up a custom agent and also plug that into the system\"; YouTube description: \"plugin registry system that enables 50+ engineering teams to contribute tools and agents\"; nextplatform.net/?p=5936 \"\uae30\uc874 API \ub9e4\ud551 \u2192 \ub3c4\uad6c(tool)\ub85c \ub4f1\ub85d \ubcf5\uc7a1\ud55c \uae30\ub2a5 \u2192 \ucee4\uc2a4\ud140 \uc5d0\uc774\uc804\ud2b8\ub85c \ub4f1\ub85d\"; source 17 Copilot page has only \"Aladdin Copilot serves to strengthen the connective tissue across the Aladdin\u00ae platform\"",
+  "earlier_finding": "\"Each one an Aladdin API\" is wrong. The couple of thousand registry entries are tools and agents together, and custom agents are a separate path. Change to \"A couple of thousand tools and agents; each tool maps to an existing Aladdin API\". Cite 8 only, not 17."
+ },
+ {
+  "id": "p13-34",
+  "page": "13",
+  "location": "Exhibit 14 centre caption",
+  "claim": "BlackRock's applications, Copilot and a client's own code call the same APIs",
+  "sources": "8,23",
+  "earlier_first_verdict": "PARTLY",
+  "earlier_final_verdict": "PARTLY",
+  "earlier_receipt": "Source 8, https://www.youtube.com/watch?v=oyqeCHFM5U4: on 2026-10-20 the page returns 'CAPTCHA' and every timedtext caption track came back empty, so this is from the corpus /home/user/ai_game/blackrock-aladdin/04-transcripts/timestamped/yt_oyqeCHFM5U4.m4a.ts.txt:43 '[04:06] Maybe the trading team and they own all of the services that serve trading data to all Aladdin applications' and :48 '[04:39] Kind of mapping one-to-one to an existing Aladdin API already out in production'. Source 23, https://raw.githubusercontent.com/blackrock/aladdinsdk/main/README.md: 'AladdinSDK allows developers to easily integrate BlackRock's Aladdin functionality into their own applications and systems.' / 'The goal is to make it easier for everyone to efficiently access and utilize Aladdin APIs and Data Cloud.' Not cited: https://www.blackrock.com/aladdin/products/aladdin-studio: 'Empowering unique outcomes via our API-first approach across shared services and data.' / 'powered by secure, common, and extensible services for hyper scale.'",
+  "earlier_finding": "'The same APIs' is an inference. Source 8 links Copilot to production Aladdin APIs (corpus only) and source 23 links client code to Aladdin APIs. Neither source, and no BlackRock statement found on the web or in the corpus, says that client-facing APIs are the ones BlackRock's own applications call. The web search budget was used up, so no broader search was possible. Soften to 'all call Aladdin's APIs', or add the Aladdin Studio page as a citation and present 'the same' as an inference."
+ },
+ {
+  "id": "p13-35",
+  "page": "13",
+  "location": "Exhibit 14 centre caption",
+  "claim": "[they] read the same Data Cloud",
+  "sources": "19,1,22",
+  "earlier_first_verdict": "PARTLY",
+  "earlier_final_verdict": "PARTLY",
+  "earlier_receipt": "https://www.youtube.com/watch?v=Me_H_-E6lSg 19:38-19:56: \"we started our relationship with Snowflake as a vehicle for historiizing all of the data that lives inside of our Latin ecosystem and then delivering that to our clients. That was the product. It's now being used across the organization. a variety of use cases internal and external\". 24:04-24:24: \"We want to live in a world where any user can with natural language ask any sophistication of question against our entire data corpus ... Now we're leveraging a lot of the AI capabilities that live inside of Snowflake ... and we're not there yet\". https://www.blackrock.com/aladdin/platforms/products/aladdin-copilot (fetched 2026-10-20) names no data source: \"Through generative AI, Aladdin Copilot serves to strengthen the connective tissue across the Aladdin\u00ae platform\". Press release https://www.blackrock.com/corporate/newsroom/media/press-releases/aladdin-data-cloud-powered-by-snowflake: \"Each Aladdin Data Cloud client receives an independent, centrally-managed data store\".",
+  "earlier_finding": "The client side is confirmed. No source says BlackRock's applications or Copilot read the Data Cloud. Woodhead says only that BlackRock also uses Snowflake internally, and he calls natural-language querying through Snowflake a goal ('we're not there yet'). Each client's store is independent, so 'same' is loose. Drop 'BlackRock's applications, Copilot' from 'read the same Data Cloud', or soften to 'BlackRock also uses Snowflake internally' (Woodhead 19:38-19:56)."
+ },
+ {
+  "id": "p13-37",
+  "page": "13",
+  "location": "Exhibit 14 section header",
+  "claim": "CONTROLS ON EVERY CALL",
+  "sources": "-",
+  "earlier_first_verdict": "PARTLY",
+  "earlier_final_verdict": "PARTLY",
+  "earlier_receipt": "All 301 operations in the 54 specs carry a security requirement. Example: DL/investment_operations/.../CorporateActionEntitlementAPI/swagger.json:24-28: \"security\": [ { \"APIKeyHeader\": [], \"OAuth2AccessCode\": [ \"investment_operations.asset_lifecycle.corporate_action.v1.CorporateActionEntitlement\" ] }. Not per call: DL/platform/.../AdcDatasetAPI/swagger.json:3400: \"STATE_REVIEW: In review state, dataset is ready for a 4-eyes check prior to release\". DL/trading/.../OrderAPI/swagger.json:3028: \"Default is true to run compliance on this post order request.\" (DL = /tmp/claude-0/-home-user-ai-game/44510f87-22a4-5476-9273-389e23c654a8/scratchpad/fc/dl/b092/un)",
+  "earlier_finding": "Only access scopes and permissions apply to every call. The second approver applies to specific workflow states. Compliance applies only to order posts, where it is a default that can be switched off (runCompliance). Retitle, e.g. 'CONTROLS BUILT INTO THE APIS'."
+ },
+ {
+  "id": "p13-40",
+  "page": "13",
+  "location": "Exhibit 14 box 'A second approver'",
+  "claim": "Rule assignments and dataset releases record a second sign-off.",
+  "sources": "6",
+  "earlier_first_verdict": "PARTLY",
+  "earlier_final_verdict": "PARTLY",
+  "earlier_receipt": "DL/platform/.../AdcDatasetAPI/swagger.json:3400: \"STATE_REVIEW: In review state, dataset is ready for a 4-eyes check prior to release\\n - STATE_APPROVED: In approved state, dataset is ready for a release\". DL/compliance/.../ComplianceRuleAssignmentAPI/swagger.json:944: \"Rule assignment in 'proposed review required' state ... Rule assignment in 'approved review required' state ... Rule assignment in 'approved' state.\" Lines 1147-1148: \"resolutionRequiresFourEyesApproval\": \"The rule assignment's violation4EyesFlag flag.\\nBy default it is false.\" Neither file has an approver field. Specs that do record a named approver: DL/clients/.../EnrichedCapitalFlowAPI/swagger.json:1869-1871: \"approverUserId\" \"Approver Aladdin user Id\". DL/accounting/.../ValuationsAPI/swagger.json:972-974: \"pmgApprover\" \"Describes the pmg approver user_id\".",
+  "earlier_finding": "The dataset 4-eyes check is explicit. Rule assignments have review and approval states, but no spec says a second person signs off. The only four-eyes flag covers resolving violations and is off by default. Neither spec records an approver. Reword: 'Dataset releases pass a 4-eyes check; rule assignments move through review and approval states.' Or use the capital-flow (authorizerUserId/approverUserId) and valuation (pmgApprover) APIs, which do record an approver."
+ }
+]

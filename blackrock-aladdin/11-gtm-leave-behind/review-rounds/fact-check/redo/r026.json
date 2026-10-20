@@ -1,0 +1,57 @@
+[
+ {
+  "id": "p15-55",
+  "page": "15",
+  "location": "Exhibit 17 row SimCorp col 'Public docs'",
+  "claim": "SimCorp, Public docs: 0 (none or blocked)",
+  "sources": "7",
+  "earlier_first_verdict": "PARTLY",
+  "earlier_final_verdict": "PARTLY",
+  "earlier_receipt": "https://thesim.dev/ : \"Explore Web APIs, Data Distribution APIs, and Streaming APIs. Access detailed technical specifications, Swagger documentation, practical example code\" / \"Notice: Access to and use of this information is strictly limited and controlled by SimCorp.\"; https://thesim.dev/gettingstarted/ -> 302 to /accounts/login/?next=/gettingstarted/ : \"Clients, vendors, and partners Sign in with the email and password assigned to your portal account.\"; source 7 (full text read) has no mention of docs or APIs; github.com/simcorp has 4 public repos and no API docs.",
+  "earlier_finding": "Keep the 0, but it is the wrong citation: cite thesim.dev (only the landing page is public; all doc paths redirect to a login with credentials SimCorp assigns) instead of source 7."
+ },
+ {
+  "id": "p15-56",
+  "page": "15",
+  "location": "Exhibit 17 row SimCorp col 'API catalog'",
+  "claim": "SimCorp, API catalog: 0 (none or blocked)",
+  "sources": "7",
+  "earlier_first_verdict": "PARTLY",
+  "earlier_final_verdict": "PARTLY",
+  "earlier_receipt": "https://thesim.dev/ : \"Explore Web APIs, Data Distribution APIs, and Streaming APIs. Access detailed technical specifications, Swagger documentation\"; https://thesim.dev/accounts/login/ : \"Sign in with the email and password assigned to your portal account.\"; https://apitracker.io/a/simcorp : \"Integration details are still being documented. We don't yet have enough API information for Sim .\"",
+  "earlier_finding": "Keep the 0, but it is the wrong citation: the catalog exists only behind the assigned-credential login. Source 7 does not mention APIs; cite thesim.dev."
+ },
+ {
+  "id": "p15-57",
+  "page": "15",
+  "location": "Exhibit 17 row SimCorp col 'Trial or sandbox'",
+  "claim": "SimCorp, Trial or sandbox: 0 (none or blocked)",
+  "sources": "7",
+  "earlier_first_verdict": "PARTLY",
+  "earlier_final_verdict": "PARTLY",
+  "earlier_receipt": "https://thesim.dev/accounts/login/ : \"Clients, vendors, and partners Sign in with the email and password assigned to your portal account.\" (no registration link); source 7 https://www.simcorp.com/about-us/news/2026/introducing-agent-launchpad : \"The first SimCorp One clients are expected to gain access this year.\"",
+  "earlier_finding": "Keep the 0, but it is the wrong citation: source 7 is about client-only access to Agent Launchpad, not a trial or sandbox. I found no public trial, but web search was unavailable (shared budget used up), so that negative comes from direct fetches only. Cite thesim.dev or the Oct 8 test."
+ },
+ {
+  "id": "p15-58",
+  "page": "15",
+  "location": "Exhibit 17 row SimCorp col 'First API call without a contract'",
+  "claim": "SimCorp, First API call without a contract: 0 (none or blocked)",
+  "sources": "7",
+  "earlier_first_verdict": "PARTLY",
+  "earlier_final_verdict": "PARTLY",
+  "earlier_receipt": "https://thesim.dev/accounts/login/ : \"External account sign in For clients, vendors, and partners with portal credentials.\"; footer: \"Access to and use of this information is strictly limited and controlled by SimCorp.\"",
+  "earlier_finding": "Keep the 0, but it is the wrong citation: there is no self-serve key or sign-up. Source 7 says nothing about API access; cite thesim.dev."
+ },
+ {
+  "id": "p15-83",
+  "page": "15",
+  "location": "Exhibit 17 row Databricks col 'Sample code'",
+  "claim": "Databricks, Sample code: 2 (fully public or self-serve)",
+  "sources": "70",
+  "earlier_first_verdict": "PARTLY",
+  "earlier_final_verdict": "PARTLY",
+  "earlier_receipt": "Source 70 https://www.databricks.com/try-databricks (fetched 2026-10-20). The only resource text is \"Databricks offers step-by-step tutorials, video demos, webinars and community events to help you get started\" and \"Access an expansive library of over 100 video demos, tutorials and product tours\". Its only code-related item is a footer link labelled \"Solution Accelerators\", with no description. Sample code is public elsewhere. https://raw.githubusercontent.com/databricks/databricks-sdk-py/main/README.md line 68: \"The Databricks SDK for Python comes with a number of examples demonstrating how to use the library for various common use-cases\". https://www.databricks.com/solutions/accelerators: \"Our purpose-built guides \u2014 fully functional notebooks and best practices \u2014 speed up results across your most common and high-impact use cases\"",
+  "earlier_finding": "The score of 2 is right. The citation is wrong: source 70 offers demos and tutorials, not sample code. Re-cite to github.com/databricks/databricks-sdk-py (examples/) or databricks.com/solutions/accelerators."
+ }
+]
