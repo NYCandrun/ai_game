@@ -1,0 +1,9 @@
+# Batch b116 re-check (p15-97)
+
+Method: on 2026-10-20 I fetched, with no login, the developer.factset.com content API (contact and home pages) and the /api-playground route. Saved copies are in /tmp/claude-0/-home-user-ai-game/44510f87-22a4-5476-9273-389e23c654a8/scratchpad/fc/dl/b116r/. I could not get a second confirmation by web search because WebSearch's per-turn budget was used up. Guessed factset.com trial URLs (/free-trial, /request-a-trial) returned 404. The marketplace product page had no wording about trials.
+
+| id | claim | first verdict | final verdict | agrees | receipt (URL or file:line, then exact quote) | correction |
+|---|---|---|---|---|---|---|
+| p15-97 | FactSet, Trial or sandbox: 0 (none or blocked) | WRONG | WRONG | yes | https://developer.factset.com/api/v2/content/page/contact (anonymous, HTTP 200): "Please fill out the form below if you would like more information or would like to get a free trial to our APIs!" SEO description: "Interested in FactSet APIs? Contact us to know more and if you like to get free trial access to FactSet APIs!" Also https://developer.factset.com/api/v2/content/page/home: "try out different API requests, see real-time responses, and better understand how the API works—without needing to write any code first." (API Playground. The /api-playground route itself was reachable here with HTTP 200, but it is a JS shell, and the first checker reports it needs a login.) | Change to 1 (partial or after sign-up or approval). FactSet offers a free API trial on request by form, and it has an API Playground. Neither is fully self-serve, so 2 would overstate it. This matches the Bloomberg and State Street rows, which score 1 in the same column. The source (66, developer.factset.com) supports the correction. |
+
+Correction: p15-97, change FactSet "Trial or sandbox" from 0 to 1.

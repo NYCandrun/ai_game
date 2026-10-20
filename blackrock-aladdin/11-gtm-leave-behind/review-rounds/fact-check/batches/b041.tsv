@@ -1,0 +1,7 @@
+id	page	location	claim	sources
+p06-48	6	Exhibit 5 row Total col 'Operations'	Total: 301 operations	6
+p06-49	6	Exhibit 5 row Total cols 'Alpha/Beta/Stable/Sunset'	Total: Alpha 24, Beta 6, Stable 23, Sunset 1	6
+p06-50	6	Exhibit 5 row Total col 'Largest APIs by operations'	11 domains, 11 PyPI packages	6
+p06-51	6	Exhibit 5 note	the 54 Swagger 2.0 specifications inside the 11 asdk_plugin packages, version 2.0.0b3, on PyPI	6
+p06-52	6	Exhibit 5 note	The core aladdinsdk package adds four utility APIs (token, subscription, notification and a demo), not counted here	-
+p06-53	6	Exhibit 5 note	Alpha, beta, stable and sunset are the stability labels each specification carries (its x-aladdin-api-stability field), alpha being the earliest	-

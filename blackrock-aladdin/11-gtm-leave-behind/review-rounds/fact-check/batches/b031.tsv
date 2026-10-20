@@ -1,0 +1,7 @@
+id	page	location	claim	sources
+p05-53	5	Exhibit 4 row 'Event-driven APIs'	Goel wants “every single transaction ... via an event, via an API”	26
+p05-54	5	Exhibit 4 row 'Aladdin Data Cloud'	Aladdin Data Cloud: A managed data store on Snowflake, with Fivetran moving the data	-
+p05-55	5	Exhibit 4 row 'Aladdin Data Cloud'	Goel puts its latency at “within 15 minutes”	26
+p05-56	5	Exhibit 4 row 'Aladdin Compute'	Aladdin Compute: A hosted space where developers run Python next to their Aladdin data	-
+p05-57	5	Exhibit 4 row 'Aladdin Compute'	the SDK has a run mode for “Aladdin Studio Compute sessions”	23
+p05-58	5	Exhibit 4 row 'Aladdin SDK'	Aladdin SDK: An open-source Python library that handles login, retries, rate limits, pagination and long-running operations	23

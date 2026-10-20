@@ -1,0 +1,7 @@
+id	page	location	claim	sources
+p03-49	3	Exhibit 1 note	Source: BlackRock product pages 14, 17, 19 (sources 14, 17 and 19 are BlackRock product pages)	14,17,19
+p03-50	3	Exhibit 1 note	Amazon press release, December 2025 (source 15 is an Amazon press release dated December 2025)	15
+p03-51	3	Exhibit 1 note	iShares prospectus (source 18 is an iShares prospectus)	18
+p03-52	3	Exhibit 1 note	the public specifications (source 6 is the public specifications)	6
+p04-01	4	body para 1	Exhibit 2 follows one trade through Aladdin, step by step, as far as the 54 public specifications describe it	6,20
+p04-02	4	Exhibit 2 title	The public APIs follow a trade from order to NAV	6

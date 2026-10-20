@@ -1,0 +1,56 @@
+p13-01	13	body para 1	It [BlackRock] sells Aladdin as the system it runs internally	14,17,19,8
+p13-02	13	body para 1	Its speakers have said that the system of record underpins anything built with AI	9
+p13-03	13	body para 1	[Its speakers have said] that the data model is being structured for agentic use	54
+p13-04	13	body para 2	SimCorp has announced AI agents	7,56,57
+p13-05	13	body para 2	Arcesium [has announced] an AI platform	7,56,57
+p13-06	13	body para 2	About 100 of its [BlackRock's] applications ... call these APIs every day	8
+p13-07	13	body para 2	thousands of Copilot tools ... call these APIs every day	8
+p13-08	13	body para 2	[applications and Copilot tools] built by 50 to 60 of its teams	8
+p13-09	13	body para 2	[applications and Copilot tools] call these APIs every day under each user's permissions	8
+p13-10	13	body para 2	Every order is checked for compliance by default	6,8
+p13-11	13	body para 2	Copilot's guardrails are tested daily	6,8
+p13-12	13	body para 2	How those tools [a client's AI tools] would connect is not public	60
+p13-13	13	body para 3	"AI and data demands" led BlackRock's webinar poll at 42 percent as the reason firms are rethinking what to build and what to buy	9
+p13-14	13	body para 3	buyers now ask about APIs and connectors in RFPs	9
+p13-15	13	body para 3	The poll did not ask whether clients want AI tools that act on Aladdin	9
+p13-16	13	body para 3	[the poll] gives no sample size	9
+p13-17	13	body para 4	BlackRock serves hundreds of Aladdin clients	8,11
+p13-18	13	body para 4	[Aladdin clients] in 70 countries	8,11
+p13-19	13	body para 4	its technology services revenue was $2.0 billion in 2025	8,11
+p13-20	13	body para 4	It projects API calls to grow 17x by 2030	10
+p13-21	13	body para 4	How many clients use the APIs today, or run their own AI tools, is not public.	-
+p13-22	13	Exhibit 14 title	BlackRock's applications and a client's code call the same APIs under the same permissions	8,17,38,39,23,6,19,1,22
+p13-23	13	Exhibit 14 left header	BLACKROCK'S OWN USE · IN THE PUBLIC RECORD	8,17,38,39,23,6,19,1,22
+p13-24	13	Exhibit 14 right header	A CLIENT'S USE · THE SAME APIS	8,17,38,39,23,6,19,1,22
+p13-25	13	Exhibit 14 box 'About 100 BlackRock applications'	About 100 BlackRock applications	8
+p13-26	13	Exhibit 14 box 'About 100 BlackRock applications'	Explore, Dashboard, Risk Radar and the rest all call these APIs.	8
+p13-27	13	Exhibit 14 box 'Copilot'	Thousands of tools, each one an Aladdin API	8,17
+p13-28	13	Exhibit 14 box 'Copilot'	[Copilot tools] built by 50 to 60 BlackRock teams	8,17
+p13-29	13	Exhibit 14 box 'Its engineers'	Route Aladdin calls through the client's own gateway.	23,38,39
+p13-30	13	Exhibit 14 box 'Its applications'	Run in the client's own environment, on the client's credentials.	23,38,39
+p13-31	13	Exhibit 14 box 'Its AI tools' (hatched)	How they would connect is not published.	60
+p13-32	13	Exhibit 14 box 'Its AI tools' (hatched)	BlackRock's only public word is a job posting.	60
+p13-33	13	Exhibit 14 centre box	Aladdin's APIs	-
+p13-34	13	Exhibit 14 centre caption	BlackRock's applications, Copilot and a client's own code call the same APIs	8,23
+p13-35	13	Exhibit 14 centre caption	[they] read the same Data Cloud	19,1,22
+p13-36	13	Exhibit 14 centre caption	[the Data Cloud is] the client's Aladdin data in a Snowflake account BlackRock runs for it	19,1,22
+p13-37	13	Exhibit 14 section header	CONTROLS ON EVERY CALL	-
+p13-38	13	Exhibit 14 box 'Permissions per user'	Each API has its own access scope.	6
+p13-39	13	Exhibit 14 box 'Permissions per user'	A user sees only what their entitlements allow.	6,8
+p13-40	13	Exhibit 14 box 'A second approver'	Rule assignments and dataset releases record a second sign-off.	6
+p13-41	13	Exhibit 14 box 'Compliance on every order'	The order API runs compliance by default and returns any violations.	6
+p13-42	13	Exhibit 14 section header	WHAT COPILOT ADDS FOR AI · FROM BLACKROCK'S OWN ACCOUNT	8,17
+p13-43	13	Exhibit 14 box 'Input guardrails'	Off-topic content is caught and personal data handled before any plan.	8,17
+p13-44	13	Exhibit 14 box 'Output guardrails'	Answers are checked for hallucinations and against domain rules.	8,17
+p13-45	13	Exhibit 14 box 'LLM judges'	Every system prompt is tested daily and on every change.	8,17
+p13-46	13	exhibit note	Solid boxes are in the public record.	8,17,38,39,23,6,19,1,22
+p13-47	13	exhibit note	The hatched box is not: on a client's AI tools BlackRock has published nothing beyond a job posting	60
+p13-48	13	exhibit note	The right-hand controls show how BlackRock governs AI on these APIs today	8,17
+p13-49	13	exhibit note (sources line)	Sources: Rosales and Valdez 8 (source 8 is Rosales and Valdez)	8
+p13-50	13	exhibit note (sources line)	the Copilot page 17 (source 17 is the Copilot page)	17
+p13-51	13	exhibit note (sources line)	pull requests 52 and 53 38, 39 (sources 38 and 39 are pull requests 52 and 53)	38,39
+p13-52	13	exhibit note (sources line)	the SDK README 23 (source 23 is the SDK README)	23
+p13-53	13	exhibit note (sources line)	the public specifications 6 (source 6 is the public specifications)	6
+p13-54	13	exhibit note (sources line)	the Data Cloud page 19 (source 19 is the Data Cloud page)	19
+p13-55	13	exhibit note (sources line)	Woodhead 1 (source 1 is Woodhead)	1
+p13-56	13	exhibit note (sources line)	Fivetran 22 (source 22 is Fivetran)	22

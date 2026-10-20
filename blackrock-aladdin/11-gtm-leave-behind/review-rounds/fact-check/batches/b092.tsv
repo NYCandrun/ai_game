@@ -1,0 +1,7 @@
+id	page	location	claim	sources
+p13-35	13	Exhibit 14 centre caption	[they] read the same Data Cloud	19,1,22
+p13-36	13	Exhibit 14 centre caption	[the Data Cloud is] the client's Aladdin data in a Snowflake account BlackRock runs for it	19,1,22
+p13-37	13	Exhibit 14 section header	CONTROLS ON EVERY CALL	-
+p13-38	13	Exhibit 14 box 'Permissions per user'	Each API has its own access scope.	6
+p13-39	13	Exhibit 14 box 'Permissions per user'	A user sees only what their entitlements allow.	6,8
+p13-40	13	Exhibit 14 box 'A second approver'	Rule assignments and dataset releases record a second sign-off.	6

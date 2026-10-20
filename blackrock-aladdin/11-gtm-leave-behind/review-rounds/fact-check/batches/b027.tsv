@@ -1,0 +1,7 @@
+id	page	location	claim	sources
+p05-29	5	Exhibit 3 box 'Aladdin Analytics'	Aladdin Analytics the risk engine every domain uses · turns positions and market data into risk numbers	6
+p05-30	5	Exhibit 3 box 'Shared data'	SHARED DATA · EVERY DOMAIN READS AND WRITES IT	-
+p05-31	5	Exhibit 3 box 'Shared data'	Shared data stores: Orders, trades; Positions (IBOR, the live book); Accounting (ABOR, NAV); Portfolios; Securities	-
+p05-32	5	Exhibit 3 box 'Aladdin Data Cloud'	Aladdin Data Cloud: Snowflake, this client’s own	1,19
+p05-33	5	Exhibit 3 box 'Aladdin Data Cloud'	Aladdin Data Cloud fed by Aladdin data and analytics	1,19
+p05-34	5	Exhibit 3 box 'Brokers'	OUTSIDE ALADDIN: Brokers: orders, confirms	-

@@ -1,0 +1,7 @@
+id	page	location	claim	sources
+p06-24	6	Exhibit 5 row Portfolio col 'Operations'	Portfolio: 23 operations	6
+p06-25	6	Exhibit 5 row Portfolio cols 'Alpha/Beta/Stable/Sunset'	Portfolio: Alpha 1, Beta –, Stable 2, Sunset –	6
+p06-26	6	Exhibit 5 row Portfolio col 'Largest APIs by operations'	Portfolio: PortfolioGroup, RestrictedAsset, PortfolioToolkit	6
+p06-27	6	Exhibit 5 row Data col 'Specs'	Data: 1 spec	6
+p06-28	6	Exhibit 5 row Data col 'Operations'	Data: 15 operations	6
+p06-29	6	Exhibit 5 row Data cols 'Alpha/Beta/Stable/Sunset'	Data: Alpha –, Beta –, Stable 1, Sunset –	6

@@ -1,0 +1,7 @@
+id	page	location	claim	sources
+p14-03	14	Exhibit 15 row 1 col 'What it is'	how a client routes calls through its own gateway (clients can route Aladdin API calls through their own gateway)	-
+p14-04	14	Exhibit 15 row 1 col 'What it is'	the Snowflake and Databricks answer (Studio has a Snowflake and Databricks connection to describe)	-
+p14-05	14	Exhibit 15 row 1 col 'What it is'	plus how a client's own AI tools would connect	-
+p14-06	14	Exhibit 15 row 2 col 'What it is'	a client's own AI tools could read data and take actions through Aladdin's APIs, under the same permissions, compliance checks and guardrails Copilot uses (Copilot operates under permissions, compliance checks and guardrails)	-
+p14-07	14	Exhibit 15 row 3 col 'What it is'	a public pension fund already on record (a public pension fund is already publicly on record as an Aladdin/Studio client)	-
+p14-08	14	Exhibit 15 row 3 col 'What it is'	a client whose engineers have contributed to the SDK (client engineers have contributed to the open-source SDK)	-

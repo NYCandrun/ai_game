@@ -1,0 +1,7 @@
+id	page	location	claim	sources
+p02-03	2	body para 1	Aladdin Data Cloud on Snowflake	1
+p02-04	2	body para 1	Many data providers now offer AI tools a way to read their data (LSEG, FactSet, MSCI, Snowflake Cortex)	2,3,4,5
+p02-05	2	body para 1	Aladdin's APIs also change the book. They post orders and set compliance rules	6
+p02-06	2	body para 1	[Aladdin's APIs post orders and set compliance rules] under each user's permissions	6
+p02-07	2	body para 1	[Aladdin's APIs post orders] with a compliance check on every order	6
+p02-08	2	body para 2	SimCorp has announced AI agents	7

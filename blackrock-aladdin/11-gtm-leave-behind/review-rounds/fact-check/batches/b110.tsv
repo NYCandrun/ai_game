@@ -1,0 +1,7 @@
+id	page	location	claim	sources
+p15-59	15	Exhibit 17 row SimCorp col 'Sample code'	SimCorp, Sample code: 0 (none or blocked)	7
+p15-60	15	Exhibit 17 row SimCorp col 'Community or marketplace'	SimCorp, Community or marketplace: 1 (partial or after sign-up or approval)	7
+p15-61	15	Exhibit 17 row SimCorp col 'AI connector'	SimCorp, AI connector: 0 (none or blocked)	7
+p15-62	15	Exhibit 17 row SimCorp col 'Call to action'	SimCorp, Call to action: 0 (none or blocked)	7
+p15-63	15	Exhibit 17 row Clearwater col 'Public docs'	Clearwater, Public docs: 0 (none or blocked)	-
+p15-64	15	Exhibit 17 row Clearwater col 'API catalog'	Clearwater, API catalog: 0 (none or blocked)	-

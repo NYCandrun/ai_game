@@ -1,0 +1,52 @@
+p03-01	3	body para 1	Aladdin is the investment platform BlackRock built for itself and sells to other institutions	-
+p03-02	3	body para 1	Brennan Rosales, its [Aladdin's] AI Engineering Lead (name and title)	8
+p03-03	3	body para 1	Brennan Rosales ... put the scale this way at a LangChain conference in 2025 (venue and year)	8
+p03-04	3	body para 1	Rosales: "BlackRock is the biggest user of Aladdin, but we also sell and support hundreds of clients globally across 70 countries." (quotation)	8
+p03-05	3	body para 1	Rosales: hundreds of clients	8
+p03-06	3	body para 1	Rosales: across 70 countries	8
+p03-07	3	body para 1	Rosales: The organization is "around 7,000 people, with over 4,000 of those being engineers." (quotation)	8
+p03-08	3	body para 1	Rosales: around 7,000 people	8
+p03-09	3	body para 1	Rosales: over 4,000 of those being engineers	8
+p03-10	3	body para 1	Rosales: They maintain "around 100 Aladdin front-end applications"	8
+p03-11	3	body para 1	BlackRock's technology services and subscription revenue was $2.0 billion in 2025	11
+p03-12	3	body para 1	[technology services and subscription revenue] up 24 percent including Preqin	11
+p03-13	3	body para 1	Preqin, the private-markets data firm bought in 2025	11
+p03-14	3	body para 1	BlackRock sells the platform as one engine with separate entry points	-
+p03-15	3	body para 1	Studio is the entry point for people who write code	-
+p03-16	3	Exhibit 1 title	Of Aladdin's eight named products (count: eight)	-
+p03-17	3	Exhibit 1 title	the eight named products are: Aladdin, Aladdin Wealth, eFront, Aladdin Studio, Aladdin Data Cloud, Aladdin Copilot, Aladdin Accounting, Aladdin Provider (identity of the eight)	-
+p03-18	3	Exhibit 1 title	Studio is the one [of the eight] for people who write code	-
+p03-19	3	Exhibit 1 row Aladdin col 'What it does'	Aladdin: The front-to-back system for public markets	8
+p03-20	3	Exhibit 1 row Aladdin col 'What it does'	Aladdin: the same system BlackRock runs internally	8
+p03-21	3	Exhibit 1 row Aladdin col 'Main users'	Aladdin main users: Asset managers, insurers, pension funds, banks	-
+p03-22	3	Exhibit 1 row Aladdin Wealth col 'What it does'	Aladdin Wealth: Portfolio risk analysis and proposals for advisors	-
+p03-23	3	Exhibit 1 row Aladdin Wealth col 'What it does'	Aladdin Wealth: Its AI "auto commentary" tool launched in October 2025	12
+p03-24	3	Exhibit 1 row Aladdin Wealth col 'What it does'	Aladdin Wealth auto commentary: with Morgan Stanley as the first client	12
+p03-25	3	Exhibit 1 row Aladdin Wealth col 'Main users'	Aladdin Wealth main users: Wealth managers and private banks	-
+p03-26	3	Exhibit 1 row eFront col 'What it does'	eFront: A private-fund investment platform covering due diligence through cash flows and reporting	-
+p03-27	3	Exhibit 1 row eFront col 'What it does'	Preqin now sits inside eFront Insight	13
+p03-28	3	Exhibit 1 row eFront col 'What it does'	private credit analytics were added on Preqin in May 2026	13
+p03-29	3	Exhibit 1 row eFront col 'Main users'	eFront main users: Investors in funds and fund managers	-
+p03-30	3	Exhibit 1 row Aladdin Studio col 'What it does'	Aladdin Studio: The developer and data layer. It covers APIs and events, Aladdin Data Cloud, and developer tools	14
+p03-31	3	Exhibit 1 row Aladdin Studio col 'What it does'	BlackRock calls it [Aladdin Studio] "API-first"	14
+p03-32	3	Exhibit 1 row Aladdin Studio col 'What it does'	BlackRock names three users [of Studio] (count: three)	14
+p03-33	3	Exhibit 1 row Aladdin Studio col 'What it does'	Studio product page quotation: "a professional engineer building new workflow applications, a code-curious portfolio manager extracting investment insights, or a data analyst automating reporting"	14
+p03-34	3	Exhibit 1 row Aladdin Studio col 'Main users'	Aladdin Studio main users: Client engineers, data analysts, code-curious portfolio managers	-
+p03-35	3	Exhibit 1 row Aladdin Data Cloud col 'What it does'	Aladdin Data Cloud: A managed data service on Snowflake that puts Aladdin and outside data in one place	-
+p03-36	3	Exhibit 1 row Aladdin Data Cloud col 'What it does'	Aladdin Data Cloud is sold as an add-on to Aladdin Enterprise	15
+p03-37	3	Exhibit 1 row Aladdin Data Cloud col 'What it does'	Richard Newman, General Manager, Aladdin Studio (name and title)	16
+p03-38	3	Exhibit 1 row Aladdin Data Cloud col 'What it does'	Richard Newman ... calls it [Aladdin Data Cloud] "part of Studio"	16
+p03-39	3	Exhibit 1 row Aladdin Data Cloud col 'Main users'	Aladdin Data Cloud main users: Data teams	-
+p03-40	3	Exhibit 1 row Aladdin Copilot col 'What it does'	Aladdin Copilot: A chat assistant "now available to all Aladdin clients"	17
+p03-41	3	Exhibit 1 row Aladdin Copilot col 'What it does'	Aladdin Copilot "will not give investment advice"	17
+p03-42	3	Exhibit 1 row Aladdin Copilot col 'Main users'	Aladdin Copilot main users: All platform users	-
+p03-43	3	Exhibit 1 row Aladdin Accounting col 'What it does'	Aladdin Accounting: Investment accounting and performance	-
+p03-44	3	Exhibit 1 row Aladdin Accounting col 'What it does'	Aladdin Accounting: Its public APIs cover configuration, valuations, lots and composites	6
+p03-45	3	Exhibit 1 row Aladdin Accounting col 'Main users'	Aladdin Accounting main users: Asset managers and asset owners	-
+p03-46	3	Exhibit 1 row Aladdin Provider col 'What it does'	Aladdin Provider: Connects custodians and administrators to a client's Aladdin	18
+p03-47	3	Exhibit 1 row Aladdin Provider col 'What it does'	Aladdin Provider: The providers pay BlackRock to use it	18
+p03-48	3	Exhibit 1 row Aladdin Provider col 'Main users'	Aladdin Provider main users: Custodians and administrators	-
+p03-49	3	Exhibit 1 note	Source: BlackRock product pages 14, 17, 19 (sources 14, 17 and 19 are BlackRock product pages)	14,17,19
+p03-50	3	Exhibit 1 note	Amazon press release, December 2025 (source 15 is an Amazon press release dated December 2025)	15
+p03-51	3	Exhibit 1 note	iShares prospectus (source 18 is an iShares prospectus)	18
+p03-52	3	Exhibit 1 note	the public specifications (source 6 is the public specifications)	6

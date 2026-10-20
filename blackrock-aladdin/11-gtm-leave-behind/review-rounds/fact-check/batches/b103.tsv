@@ -1,0 +1,7 @@
+id	page	location	claim	sources
+p15-17	15	body para 1	It stores a prompted password in the operating system's credential manager	23
+p15-18	15	body para 1	It carries settings for firms that consume “the Aladdin APIs via an enterprise API management platform such as Azure API Management”	23
+p15-19	15	Exhibit 17 title	Investment platforms, Studio among them, open to developers only after a relationship exists	-
+p15-20	15	Exhibit 17 group 'Investment platforms'	Investment platforms: Bloomberg, Aladdin Studio, State Street, Arcesium, SimCorp, Clearwater (six rows)	-
+p15-21	15	Exhibit 17 group 'Data and cloud platforms'	Data and cloud platforms: Snowflake, Databricks, LSEG, FactSet, MSCI (five rows)	-
+p15-22	15	Exhibit 17 column headers	eight scored columns: Public docs, API catalog, Trial or sandbox, First API call without a contract, Sample code, Community or marketplace, AI connector, Call to action	-

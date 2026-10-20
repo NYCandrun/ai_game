@@ -1,0 +1,7 @@
+id	page	location	claim	sources
+p15-107	15	Exhibit 17 row MSCI col 'Sample code'	MSCI, Sample code: 0 (none or blocked)	4
+p15-108	15	Exhibit 17 row MSCI col 'Community or marketplace'	MSCI, Community or marketplace: 0 (none or blocked)	4
+p15-109	15	Exhibit 17 row MSCI col 'AI connector'	MSCI, AI connector: 2 (fully public or self-serve)	4
+p15-110	15	Exhibit 17 row MSCI col 'Call to action'	MSCI, Call to action: 0 (none or blocked)	4
+p15-111	15	Exhibit 17 note (AI connector)	For the AI connector score: 2 means a connector that outside AI tools can use, such as an MCP server. 1 means one announced or in limited release. 0 means none, or an assistant that works only inside the vendor's own platform (scoring key applied to the AI connector column)	-
+p15-112	15	Exhibit 17 source note	my test of each platform's public pages, no accounts or payments, October 8, 2026	14,66,67,68,69,70,7,57,4

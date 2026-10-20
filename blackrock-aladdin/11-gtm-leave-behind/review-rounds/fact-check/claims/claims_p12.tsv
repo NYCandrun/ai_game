@@ -1,0 +1,31 @@
+p12-01	12	Exhibit 13 title	Webinar attendees mostly run vendor or hybrid platforms	9
+p12-02	12	Exhibit 13 title	[attendees] would stop maintaining compliance reporting in house first	9
+p12-03	12	Exhibit 13 left panel 'Where firms sit today'	Mostly vendor platforms 37%	9
+p12-04	12	Exhibit 13 left panel 'Where firms sit today'	Hybrid 30%	9
+p12-05	12	Exhibit 13 left panel 'Where firms sit today'	Actively reevaluating 18%	9
+p12-06	12	Exhibit 13 left panel 'Where firms sit today'	Mostly built in house 15%	9
+p12-07	12	Exhibit 13 left panel axis label	Share of attendees, poll 1 (the 'where firms sit today' question was poll 1)	9
+p12-08	12	Exhibit 13 right panel 'What firms would stop maintaining in house'	Compliance reporting 53%	9
+p12-09	12	Exhibit 13 right panel 'What firms would stop maintaining in house'	Position and cash management 22%	9
+p12-10	12	Exhibit 13 right panel 'What firms would stop maintaining in house'	Trade lifecycle 17%	9
+p12-11	12	Exhibit 13 right panel 'What firms would stop maintaining in house'	Risk infrastructure 9%	9
+p12-12	12	Exhibit 13 right panel axis label	Share of attendees, poll 3 (the 'stop maintaining in house' question was poll 3)	9
+p12-13	12	Exhibit 13 source note	poll results read out on the Build vs. Buy webinar, from the replay's published captions	9
+p12-14	12	pull quote	"What's the API suite that you have? Are you using connectors to Snowflake or to Databricks? And I think that that part of the RFP has become much more prominent."	9
+p12-15	12	pull quote attribution	quote attributed to Clark Schafer	9
+p12-16	12	pull quote attribution	Clark Schafer, Partner, Alpha FMC	9
+p12-17	12	pull quote attribution	[Schafer spoke] on the Build vs. Buy webinar	9
+p12-18	12	body para 1	Alisha Sewdass, BlackRock's Head of Aladdin Solutions Engineering, Americas	9
+p12-19	12	body para 1	[Sewdass] gave BlackRock's side on the same webinar [Build vs. Buy]	9
+p12-20	12	body para 1	She described the shift of the last two years	9
+p12-21	12	body para 1	[the shift is] "to more of a modular approach where clients are looking for that backbone foundational data that supports both publics and privates workflows."	9
+p12-22	12	body para 1	That comes, she said, with "very, very robust APIs that manage the end to end life cycle of a transaction."	9
+p12-23	12	body para 1	Those APIs let clients build "their secret sauce rebalancing tools" on top	9
+p12-24	12	body para 1	On AI, she said, "you need that system of record that underpins anything that AI is built upon."	9
+p12-25	12	body para 1	She also said "the other layer that is almost equally important is a really defined system of work"	9
+p12-26	12	body para 2	SimCorp announced wins at AllianceBernstein in February 2026	61,62
+p12-27	12	body para 2	SimCorp announced wins at ... Pictet in May 2026	61,62
+p12-28	12	body para 2	AllianceBernstein keeps its "specialized in-house technology"	61,62
+p12-29	12	body para 2	Pictet connects its own tools to SimCorp One by API	61,62
+p12-30	12	body para 2	BlackRock's own August 2026 insight page says ... "Build vs buy is no longer a binary question"	63
+p12-31	12	callout 'What this finding suggests'	Buyers now ask in RFPs whether they can build on the platform.	-

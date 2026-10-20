@@ -1,0 +1,7 @@
+id	page	location	claim	sources
+p04-21	4	Exhibit 2 row 3 Trade col 'BlackRock API that covers it'	A block trade carries its per-portfolio trades, plus confirmedWith and confirmedBy	6
+p04-22	4	Exhibit 2 row 3 Trade col 'BlackRock API that covers it'	BrokerConfirmRoutingAPI routes the confirm	6
+p04-23	4	Exhibit 2 row 4 Position in the IBOR col 'Who acts'	Position in the IBOR: who acts: The investment team, whose live book is the IBOR, the investment book of record	-
+p04-24	4	Exhibit 2 row 4 Position in the IBOR col 'Who acts'	Richard Newman, Studio’s general manager	16
+p04-25	4	Exhibit 2 row 4 Position in the IBOR col 'Who acts'	Richard Newman: “It does start with IBOR”	16
+p04-26	4	Exhibit 2 row 4 Position in the IBOR col 'Product or application names'	Aladdin Data Cloud, where users “can access their Investment Books of Record (IBOR), Accounting Books of Record (ABOR) holdings” (Fivetran’s blog)	22

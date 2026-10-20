@@ -1,0 +1,7 @@
+id	page	location	claim	sources
+p08-08	8	body para 1	and $25.6 million in 2025	35,36
+p08-09	8	Exhibit 8 title	JPMorgan Chase’s payments for Aladdin rose from under $8 million a year to $25.6 million in 2025	35,36
+p08-10	8	Exhibit 8 legend	series ‘Payments for Aladdin’ and series ‘Payment for integration services (2016 only)’	35,36
+p08-11	8	Exhibit 8 axis	y-axis in $ millions, scale 0 to 30; x-axis years 2016 to 2025 (ten annual bars)	35,36
+p08-12	8	Exhibit 8 bar 2016	grey 2016 bar: a payment for integration services (value not labelled)	35
+p08-13	8	Exhibit 8 bar 2017	data label 4.4 ($ millions) on the 2017 bar	35

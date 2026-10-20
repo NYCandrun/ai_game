@@ -1,0 +1,7 @@
+id	page	location	claim	sources
+p04-33	4	Exhibit 2 row 5 Lot in the ABOR col 'BlackRock API that covers it'	ABOR lots, the accounting book of record, are “retrieved from the ledger_a_summary table” (AborLot spec)	6
+p04-34	4	Exhibit 2 row 6 NAV col 'Who acts'	NAV: who acts: Accounting, whose clients are “CFOs, they’re controllers, they’re heads of performance” (Schneid or Shannon)	20
+p04-35	4	Exhibit 2 row 6 NAV col 'Product or application names'	NAV: Aladdin Accounting; each valuation carries an exception list	6
+p04-36	4	Exhibit 2 row 6 NAV col 'BlackRock API that covers it'	ValuationsAPI v1, beta	6
+p04-37	4	Exhibit 2 row 6 NAV col 'BlackRock API that covers it'	valuations “generated for various processes at the portfolio/portfolio group level” (Valuations spec)	6
+p04-38	4	Exhibit 2 note	Source: the public specifications named in each cell	6

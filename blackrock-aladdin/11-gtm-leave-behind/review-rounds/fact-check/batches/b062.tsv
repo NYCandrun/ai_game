@@ -1,0 +1,7 @@
+id	page	location	claim	sources
+p09-11	9	Exhibit 10 title	No BlackRock executive said “Studio” on any of 26 earnings calls, Q1 2020 to Q2 2026	46
+p09-12	9	Exhibit 10 row Studio col 'Mentions'	Studio: 0	46
+p09-13	9	Exhibit 10 row Studio col 'Where it came up'	Never on a call. The only investor-facing mention found is one line on a 2023 Investor Day slide	47
+p09-14	9	Exhibit 10 row Data Cloud col 'Mentions'	Data Cloud: 2	46
+p09-15	9	Exhibit 10 row Data Cloud col 'Where it came up'	Q3 2022 48 and Q4 2024 49	48,49
+p09-16	9	Exhibit 10 row Data Cloud col 'Where it came up'	where it was described as an add-on sold with Aladdin Enterprise	48,49

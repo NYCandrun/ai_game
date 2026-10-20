@@ -1,0 +1,7 @@
+id	page	location	claim	sources
+p04-15	4	Exhibit 2 row 2 Compliance check col 'BlackRock API that covers it'	Violations are “generated at time of the compliance breach” (Violation spec)	6
+p04-16	4	Exhibit 2 row 2 Compliance check col 'BlackRock API that covers it'	A check that times out posts the order as “Compl Pending”	6
+p04-17	4	Exhibit 2 row 3 Trade col 'Who acts'	Step 3 Trade: who acts: The trading desk	6
+p04-18	4	Exhibit 2 row 3 Trade col 'Who acts'	Operations then confirms it, because “after a trade is booked in Aladdin, it needs to be confirmed with broker” (BrokerConfirmRouting spec)	6
+p04-19	4	Exhibit 2 row 3 Trade col 'Product or application names'	Schneid or Shannon of Aladdin Accounting describes the run as going “from that first order through the trade, through all the operation protocols into accounting without lifting up the pencil”	20
+p04-20	4	Exhibit 2 row 3 Trade col 'BlackRock API that covers it'	TradeAPI v2 (alpha)	6

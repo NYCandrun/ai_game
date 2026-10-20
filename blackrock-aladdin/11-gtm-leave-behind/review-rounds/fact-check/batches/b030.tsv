@@ -1,0 +1,7 @@
+id	page	location	claim	sources
+p05-47	5	Exhibit 4 title	Six pieces make up Studio	14,24
+p05-48	5	Exhibit 4 title	the six pieces are: APIs (Aladdin Graph), Event-driven APIs, Aladdin Data Cloud, Aladdin Compute, Aladdin SDK, Developer Portal and Data Dictionary	14,24,6,23,1,26
+p05-49	5	Exhibit 4 row 'APIs (Aladdin Graph)'	Aladdin Graph is the whole API layer, not one API	6
+p05-50	5	Exhibit 4 row 'APIs (Aladdin Graph)'	every public specification carries an id of the form agraph.<domain>.<segment>.<group>.v1.<API>	6
+p05-51	5	Exhibit 4 row 'Event-driven APIs'	Woodhead names “APIs events” as one part	1
+p05-52	5	Exhibit 4 row 'Event-driven APIs'	Diwakar Goel, Global Head of Data, Aladdin	26

@@ -1,0 +1,7 @@
+id	page	location	claim	sources
+p14-09	14	Exhibit 15 row 4 col 'What it is'	a client's AI tool proposes a rebalance through the order API (Aladdin exposes an order API)	-
+p14-10	14	Exhibit 15 row 4 col 'What it is'	Aladdin runs what-if and compliance on every order and returns any violations	-
+p14-11	14	Exhibit 15 row 4 col 'What it is'	a portfolio manager approves before anything trades	-
+p14-12	14	Exhibit 15 row 4 col 'What it is'	Sewdass names rebalancing tools as what clients build on Aladdin's APIs	9
+p14-13	14	body para 1 (Part 4)	Exhibit 16 follows a prospect's engineer through six steps, from first hearing about Studio to getting help (exhibit has six steps: Hear, Read, See the catalog, Try, Build, Get help)	-
+p14-14	14	body para 1 (Part 4)	I could read the pages, unpack the specifications and read the SDK's code (the specifications are unpackable and the SDK code is readable from outside)	-

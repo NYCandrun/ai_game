@@ -1,0 +1,7 @@
+id	page	location	claim	sources
+p15-89	15	Exhibit 17 row LSEG col 'Trial or sandbox'	LSEG, Trial or sandbox: 1 (partial or after sign-up or approval)	68
+p15-90	15	Exhibit 17 row LSEG col 'First API call without a contract'	LSEG, First API call without a contract: 1 (partial or after sign-up or approval)	68
+p15-91	15	Exhibit 17 row LSEG col 'Sample code'	LSEG, Sample code: 2 (fully public or self-serve)	68
+p15-92	15	Exhibit 17 row LSEG col 'Community or marketplace'	LSEG, Community or marketplace: 2 (fully public or self-serve)	68
+p15-93	15	Exhibit 17 row LSEG col 'AI connector'	LSEG, AI connector: 2 (fully public or self-serve)	68
+p15-94	15	Exhibit 17 row LSEG col 'Call to action'	LSEG, Call to action: 1 (partial or after sign-up or approval)	68

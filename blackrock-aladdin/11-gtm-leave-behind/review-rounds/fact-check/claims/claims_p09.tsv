@@ -1,0 +1,41 @@
+p09-01	9	body para 1 (section 2)	BlackRock tells investors growth will come from API calls, without naming the product behind them	10
+p09-02	9	body para 1 (section 2)	It projected at its 2025 Investor Day that API calls across BlackRock and Aladdin would grow 17x by 2030	10
+p09-03	9	body para 1 (section 2)	the 17x projection covers API calls across BlackRock and Aladdin (not Aladdin alone)	10
+p09-04	9	body para 1 (section 2)	API use is the activity the Studio page describes	14
+p09-05	9	body para 1 (section 2)	No executive said “Studio” on any of the 26 earnings calls from the first quarter of 2020 to the second quarter of 2026	46
+p09-06	9	body para 1 (section 2)	there were 26 earnings calls from the first quarter of 2020 to the second quarter of 2026	46
+p09-07	9	body para 1 (section 2)	Outside the calls, the only investor-facing mention I found is a single line on a 2023 Investor Day slide	47
+p09-08	9	body para 1 (section 2)	BlackRock’s 10-K says technology services fees are generally set by the value of positions on the platform or at a fixed rate	11
+p09-09	9	body para 1 (section 2)	They can also depend on subscriptions, go-lives and support	11
+p09-10	9	body para 1 (section 2)	The 10-K does not list API calls among the fee terms it names	11,10
+p09-11	9	Exhibit 10 title	No BlackRock executive said “Studio” on any of 26 earnings calls, Q1 2020 to Q2 2026	46
+p09-12	9	Exhibit 10 row Studio col 'Mentions'	Studio: 0	46
+p09-13	9	Exhibit 10 row Studio col 'Where it came up'	Never on a call. The only investor-facing mention found is one line on a 2023 Investor Day slide	47
+p09-14	9	Exhibit 10 row Data Cloud col 'Mentions'	Data Cloud: 2	46
+p09-15	9	Exhibit 10 row Data Cloud col 'Where it came up'	Q3 2022 48 and Q4 2024 49	48,49
+p09-16	9	Exhibit 10 row Data Cloud col 'Where it came up'	where it was described as an add-on sold with Aladdin Enterprise	48,49
+p09-17	9	Exhibit 10 row API col 'Mentions'	API: 1	46
+p09-18	9	Exhibit 10 row API col 'Where it came up'	Q4 2021: “clients are really looking to use both data and APIs”	50
+p09-19	9	Exhibit 10 row Copilot col 'Mentions'	Copilot: 1	46
+p09-20	9	Exhibit 10 row Copilot col 'Where it came up'	Q4 2023: “investments in Aladdin AI copilots”	51
+p09-21	9	Exhibit 10 row Citizen developer col 'Mentions'	Citizen developer: 0	46
+p09-22	9	Exhibit 10 row Citizen developer col 'Where it came up'	Never	46
+p09-23	9	Exhibit 10 row Agent col 'Mentions'	Agent: 0	46
+p09-24	9	Exhibit 10 row Agent col 'Where it came up'	Never	46
+p09-25	9	Exhibit 10 note	Source: third-party transcripts of BlackRock earnings calls, Q1 2020 to Q2 2026	46
+p09-26	9	Exhibit 10 note	The non-zero counts add up to about four mentions in six and a half years	46
+p09-27	9	Exhibit 10 note	A zero means the term appears in no transcript	46
+p09-28	9	Exhibit 10 note	the non-zero counts are approximate	46
+p09-29	9	body para 2 (section 2)	The private-markets data BlackRock has been adding reaches clients through Data Cloud and Explore	-
+p09-30	9	body para 2 (section 2)	BlackRock bought eFront in 2019	-
+p09-31	9	body para 2 (section 2)	BlackRock bought Preqin in 2025	-
+p09-32	9	body para 2 (section 2)	In September 2025 its private markets team described the result on a client webinar	52
+p09-33	9	body para 2 (section 2)	Investors “now have access to over 15,000 fund investments within eFront Insight” for benchmarking	52
+p09-34	9	body para 2 (section 2)	Preqin indices “are also available today in Aladdin Explore and our Aladdin Data Cloud capabilities”	52
+p09-35	9	body para 2 (section 2)	“over 10 different transaction types” were added to Aladdin	52
+p09-36	9	body para 2 (section 2)	transaction types covering commitments, fundings, paydowns and PIK	52
+p09-37	9	body para 2 (section 2)	so private credit loans are captured natively	52
+p09-38	9	body para 2 (section 2)	The team said those were designed with BlackRock’s own professionals and “our new colleagues from HPS”	52
+p09-39	9	body para 2 (section 2)	Private credit analytics on Preqin followed in May 2026	13
+p09-40	9	body para 2 (section 2)	Newman, the Studio general manager (job title)	16
+p09-41	9	body para 2 (section 2)	Newman names eFront data and Preqin among the data being added to Data Cloud	16

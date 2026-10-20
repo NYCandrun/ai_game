@@ -1,0 +1,65 @@
+p05-01	5	Exhibit 3 title	Apps, Copilot and Studio all call one shared API layer	8,6,23
+p05-02	5	Exhibit 3 header	THE ALADDIN PLATFORM · INSTITUTIONAL	-
+p05-03	5	Exhibit 3 column 'People'	People who use the apps: Portfolio manager, Trader, Compliance, risk, Operations, Accountant, Performance analyst	-
+p05-04	5	Exhibit 3 column 'People'	Client developers, quants (use Aladdin Studio)	1
+p05-05	5	Exhibit 3 column 'People'	Client systems: the client’s own tools	-
+p05-06	5	Exhibit 3 box 'Apps'	APPS · ABOUT 100 FRONT-END APPLICATIONS	8
+p05-07	5	Exhibit 3 box 'Explore'	Explore: analyse portfolios, test trades	6,21
+p05-08	5	Exhibit 3 box 'Dashboard'	Dashboard: monitor orders and events	6
+p05-09	5	Exhibit 3 box 'Risk Radar'	Risk Radar: work through risk breaches	6
+p05-10	5	Exhibit 3 box 'about 95 more'	about 95 more: cash, FX, collateral, data	8,6
+p05-11	5	Exhibit 3 box 'Aladdin Copilot'	Aladdin Copilot a chat panel inside each app · reads what is on screen · answers through the same APIs	8
+p05-12	5	Exhibit 3 box 'Aladdin Studio'	ALADDIN STUDIO for clients who build on Aladdin	1
+p05-13	5	Exhibit 3 box 'AladdinSDK'	AladdinSDK calls the shared APIs	23
+p05-14	5	Exhibit 3 box 'Research sandboxes'	Research sandboxes: hosted places to build	-
+p05-15	5	Exhibit 3 box 'Excel tools, feeds'	Excel tools, feeds: events and files out	24
+p05-16	5	Exhibit 3 box 'Shared API layer'	Shared API layer: every app, Copilot and Studio call it · access checked on every call	-
+p05-17	5	Exhibit 3 box 'Domain services'	DOMAIN SERVICES · THE 11 PUBLIC API DOMAINS	6,23
+p05-18	5	Exhibit 3 box 'investment-research'	investment-research: notes, coverage, watchlists	6,23
+p05-19	5	Exhibit 3 box 'portfolio'	portfolio: setup, groups, restrictions	6,23
+p05-20	5	Exhibit 3 box 'portfolio-management'	portfolio-management: cash ladder, strategy, data	6,23
+p05-21	5	Exhibit 3 box 'investment-operations'	investment-operations: settlement, corp. actions	6,23
+p05-22	5	Exhibit 3 box 'trading'	trading: orders, trades	6,23
+p05-23	5	Exhibit 3 box 'compliance'	compliance: rules, levels, violations	6,23
+p05-24	5	Exhibit 3 box 'analytics'	analytics: risk limits, climate, ESG	6,23
+p05-25	5	Exhibit 3 box 'accounting'	accounting: lots, valuations, NAV	6,23
+p05-26	5	Exhibit 3 box 'data'	data: security master	6,23
+p05-27	5	Exhibit 3 box 'platform'	platform: users, permissions, datasets	6,23
+p05-28	5	Exhibit 3 box 'clients'	clients: fund flows in and out	6,23
+p05-29	5	Exhibit 3 box 'Aladdin Analytics'	Aladdin Analytics the risk engine every domain uses · turns positions and market data into risk numbers	6
+p05-30	5	Exhibit 3 box 'Shared data'	SHARED DATA · EVERY DOMAIN READS AND WRITES IT	-
+p05-31	5	Exhibit 3 box 'Shared data'	Shared data stores: Orders, trades; Positions (IBOR, the live book); Accounting (ABOR, NAV); Portfolios; Securities	-
+p05-32	5	Exhibit 3 box 'Aladdin Data Cloud'	Aladdin Data Cloud: Snowflake, this client’s own	1,19
+p05-33	5	Exhibit 3 box 'Aladdin Data Cloud'	Aladdin Data Cloud fed by Aladdin data and analytics	1,19
+p05-34	5	Exhibit 3 box 'Brokers'	OUTSIDE ALADDIN: Brokers: orders, confirms	-
+p05-35	5	Exhibit 3 box 'Custodians'	OUTSIDE ALADDIN: Custodians: settle, reconcile	-
+p05-36	5	Exhibit 3 box 'Data vendors'	OUTSIDE ALADDIN: Data vendors: prices, ESG, Preqin	-
+p05-37	5	Exhibit 3 box 'Hosting'	HOSTING: Azure today	25,15
+p05-38	5	Exhibit 3 box 'Hosting'	HOSTING: AWS option, H2 2026 (hatched = announced, not live)	25,15
+p05-39	5	Exhibit 3 note	about 100 apps, with Copilot in all of them, Rosales and Vicente Valdez at 2:35	8
+p05-40	5	Exhibit 3 note	The 11 domains behind the shared layer are the packages of BlackRock’s public SDK, named as in its specifications	6,23
+p05-41	5	Exhibit 3 note	App names other than Explore come from field descriptions in those specifications, so their screens are not drawn	6,21
+p05-42	5	Exhibit 3 note	Aladdin Analytics is the name the risk specifications give the engine	6
+p05-43	5	Exhibit 3 note	Studio, Woodhead at 4:49	1
+p05-44	5	Exhibit 3 note	Excel tools and feeds, the APIs page	24
+p05-45	5	Exhibit 3 note	Data Cloud fed by Aladdin data and analytics	1,19
+p05-46	5	Exhibit 3 note	hosting (Azure today; AWS option, H2 2026)	25,15
+p05-47	5	Exhibit 4 title	Six pieces make up Studio	14,24
+p05-48	5	Exhibit 4 title	the six pieces are: APIs (Aladdin Graph), Event-driven APIs, Aladdin Data Cloud, Aladdin Compute, Aladdin SDK, Developer Portal and Data Dictionary	14,24,6,23,1,26
+p05-49	5	Exhibit 4 row 'APIs (Aladdin Graph)'	Aladdin Graph is the whole API layer, not one API	6
+p05-50	5	Exhibit 4 row 'APIs (Aladdin Graph)'	every public specification carries an id of the form agraph.<domain>.<segment>.<group>.v1.<API>	6
+p05-51	5	Exhibit 4 row 'Event-driven APIs'	Woodhead names “APIs events” as one part	1
+p05-52	5	Exhibit 4 row 'Event-driven APIs'	Diwakar Goel, Global Head of Data, Aladdin	26
+p05-53	5	Exhibit 4 row 'Event-driven APIs'	Goel wants “every single transaction ... via an event, via an API”	26
+p05-54	5	Exhibit 4 row 'Aladdin Data Cloud'	Aladdin Data Cloud: A managed data store on Snowflake, with Fivetran moving the data	-
+p05-55	5	Exhibit 4 row 'Aladdin Data Cloud'	Goel puts its latency at “within 15 minutes”	26
+p05-56	5	Exhibit 4 row 'Aladdin Compute'	Aladdin Compute: A hosted space where developers run Python next to their Aladdin data	-
+p05-57	5	Exhibit 4 row 'Aladdin Compute'	the SDK has a run mode for “Aladdin Studio Compute sessions”	23
+p05-58	5	Exhibit 4 row 'Aladdin SDK'	Aladdin SDK: An open-source Python library that handles login, retries, rate limits, pagination and long-running operations	23
+p05-59	5	Exhibit 4 row 'Aladdin SDK'	Eleven add-on packages, one per API domain, are generated from the specifications by BlackRock’s plugin builder	27
+p05-60	5	Exhibit 4 row 'Developer Portal and Data Dictionary'	Developer Portal and Data Dictionary: The API catalog, framework guides, field dictionary, notebooks and code samples the APIs page describes	24
+p05-61	5	Exhibit 4 note	Source: BlackRock Studio and APIs pages	14,24
+p05-62	5	Exhibit 4 note	Source: the 54 public specifications and SDK README	6,23
+p05-63	5	Exhibit 4 note	Source: Woodhead and Goel	1,26
+p05-64	5	Exhibit 4 note	No event specification is public	6
+p05-65	5	Exhibit 4 note	the catalog, guides, notebooks and samples sit behind a client login	24

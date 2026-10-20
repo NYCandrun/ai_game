@@ -1,0 +1,7 @@
+id	page	location	claim	sources
+p04-27	4	Exhibit 2 row 4 Position in the IBOR col 'BlackRock API that covers it'	None of the 54 is a position API	6
+p04-28	4	Exhibit 2 row 4 Position in the IBOR col 'BlackRock API that covers it'	Positions appear only as fields: a positions source in PortfolioToolkitAPI	6
+p04-29	4	Exhibit 2 row 4 Position in the IBOR col 'BlackRock API that covers it'	Positions appear only as fields: a violation’s “underlying positions” (Violation spec)	6
+p04-30	4	Exhibit 2 row 5 Lot in the ABOR col 'Who acts'	Lot in the ABOR: who acts: The accounting team, which says of itself: “we are data managers more than anything else” (Schneid or Shannon)	20
+p04-31	4	Exhibit 2 row 5 Lot in the ABOR col 'Product or application names'	Aladdin Accounting, named in the portfolio-configuration specification	6
+p04-32	4	Exhibit 2 row 5 Lot in the ABOR col 'BlackRock API that covers it'	AborLotAPI v1 (alpha)	6

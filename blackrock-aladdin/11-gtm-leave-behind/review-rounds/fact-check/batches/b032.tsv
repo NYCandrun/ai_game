@@ -1,0 +1,7 @@
+id	page	location	claim	sources
+p05-59	5	Exhibit 4 row 'Aladdin SDK'	Eleven add-on packages, one per API domain, are generated from the specifications by BlackRock’s plugin builder	27
+p05-60	5	Exhibit 4 row 'Developer Portal and Data Dictionary'	Developer Portal and Data Dictionary: The API catalog, framework guides, field dictionary, notebooks and code samples the APIs page describes	24
+p05-61	5	Exhibit 4 note	Source: BlackRock Studio and APIs pages	14,24
+p05-62	5	Exhibit 4 note	Source: the 54 public specifications and SDK README	6,23
+p05-63	5	Exhibit 4 note	Source: Woodhead and Goel	1,26
+p05-64	5	Exhibit 4 note	No event specification is public	6

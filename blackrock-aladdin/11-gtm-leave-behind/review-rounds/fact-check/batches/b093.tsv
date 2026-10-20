@@ -1,0 +1,7 @@
+id	page	location	claim	sources
+p13-41	13	Exhibit 14 box 'Compliance on every order'	The order API runs compliance by default and returns any violations.	6
+p13-42	13	Exhibit 14 section header	WHAT COPILOT ADDS FOR AI · FROM BLACKROCK'S OWN ACCOUNT	8,17
+p13-43	13	Exhibit 14 box 'Input guardrails'	Off-topic content is caught and personal data handled before any plan.	8,17
+p13-44	13	Exhibit 14 box 'Output guardrails'	Answers are checked for hallucinations and against domain rules.	8,17
+p13-45	13	Exhibit 14 box 'LLM judges'	Every system prompt is tested daily and on every change.	8,17
+p13-46	13	exhibit note	Solid boxes are in the public record.	8,17,38,39,23,6,19,1,22

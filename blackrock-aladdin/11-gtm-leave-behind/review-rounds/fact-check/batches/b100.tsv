@@ -1,0 +1,7 @@
+id	page	location	claim	sources
+p14-27	14	Exhibit 16 row See the catalog col 'Public today'	but only by unpacking the 11 PyPI add-on packages (11 asdk_plugin PyPI add-on packages)	6
+p14-28	14	Exhibit 16 row See the catalog col 'After qualification'	The API catalog and the Data Dictionary (available after qualification)	24
+p15-01	15	Exhibit 16 row Try col 'Public today'	Nothing to run: no public sandbox or trial is offered	23
+p15-02	15	Exhibit 16 row Try col 'After qualification'	Studio Compute (available after qualification)	23
+p15-03	15	Exhibit 16 row Try col 'After qualification'	an API token or an OAuth application “registered via Studio UI”	23
+p15-04	15	Exhibit 16 row Try col 'After qualification'	the client's own Aladdin host to call	23

@@ -1,0 +1,119 @@
+p15-01	15	Exhibit 16 row Try col 'Public today'	Nothing to run: no public sandbox or trial is offered	23
+p15-02	15	Exhibit 16 row Try col 'After qualification'	Studio Compute (available after qualification)	23
+p15-03	15	Exhibit 16 row Try col 'After qualification'	an API token or an OAuth application “registered via Studio UI”	23
+p15-04	15	Exhibit 16 row Try col 'After qualification'	the client's own Aladdin host to call	23
+p15-05	15	Exhibit 16 row Build col 'Public today'	The open-source SDK on GitHub and PyPI, with a detailed README	23,64
+p15-06	15	Exhibit 16 row Build col 'Public today'	the plugin builder (public today)	27
+p15-07	15	Exhibit 16 row Build col 'After qualification'	A client host and credentials, which the SDK needs for every call	23
+p15-08	15	Exhibit 16 row Get help col 'Public today'	GitHub issues and pull requests on the SDK, answered by BlackRock engineers	38,65
+p15-09	15	Exhibit 16 row Get help col 'Public today'	on the Studio page, “Book a meeting” and “Download the brochure”	14
+p15-10	15	Exhibit 16 row Get help col 'After qualification'	Notebooks, code samples, support (available after qualification)	-
+p15-11	15	Exhibit 16 row Get help col 'Receipt'	Pull request 52 (blackrock/aladdinsdk)	38
+p15-12	15	Exhibit 16 row Get help col 'Receipt'	pull request 57 (blackrock/aladdinsdk)	65
+p15-13	15	Exhibit 16 note	the pages and repositories in the Receipt column, read with no account or login, October 2026	-
+p15-14	15	body para 1	The SDK is the one piece of Studio a prospect can install before any conversation	23
+p15-15	15	body para 1	Its README documents three run modes	23
+p15-16	15	body para 1	three run modes: “a developer's local machine,” “Aladdin Studio Compute sessions” and a test mode	23
+p15-17	15	body para 1	It stores a prompted password in the operating system's credential manager	23
+p15-18	15	body para 1	It carries settings for firms that consume “the Aladdin APIs via an enterprise API management platform such as Azure API Management”	23
+p15-19	15	Exhibit 17 title	Investment platforms, Studio among them, open to developers only after a relationship exists	-
+p15-20	15	Exhibit 17 group 'Investment platforms'	Investment platforms: Bloomberg, Aladdin Studio, State Street, Arcesium, SimCorp, Clearwater (six rows)	-
+p15-21	15	Exhibit 17 group 'Data and cloud platforms'	Data and cloud platforms: Snowflake, Databricks, LSEG, FactSet, MSCI (five rows)	-
+p15-22	15	Exhibit 17 column headers	eight scored columns: Public docs, API catalog, Trial or sandbox, First API call without a contract, Sample code, Community or marketplace, AI connector, Call to action	-
+p15-23	15	Exhibit 17 row Bloomberg col 'Public docs'	Bloomberg, Public docs: 1 (partial or after sign-up or approval)	-
+p15-24	15	Exhibit 17 row Bloomberg col 'API catalog'	Bloomberg, API catalog: 0 (none or blocked)	-
+p15-25	15	Exhibit 17 row Bloomberg col 'Trial or sandbox'	Bloomberg, Trial or sandbox: 1 (partial or after sign-up or approval)	-
+p15-26	15	Exhibit 17 row Bloomberg col 'First API call without a contract'	Bloomberg, First API call without a contract: 1 (partial or after sign-up or approval)	-
+p15-27	15	Exhibit 17 row Bloomberg col 'Sample code'	Bloomberg, Sample code: 1 (partial or after sign-up or approval)	-
+p15-28	15	Exhibit 17 row Bloomberg col 'Community or marketplace'	Bloomberg, Community or marketplace: 0 (none or blocked)	-
+p15-29	15	Exhibit 17 row Bloomberg col 'AI connector'	Bloomberg, AI connector: 0 (none or blocked)	-
+p15-30	15	Exhibit 17 row Bloomberg col 'Call to action'	Bloomberg, Call to action: 1 (partial or after sign-up or approval)	-
+p15-31	15	Exhibit 17 row Aladdin Studio col 'Public docs'	Aladdin Studio, Public docs: 1 (partial or after sign-up or approval)	14
+p15-32	15	Exhibit 17 row Aladdin Studio col 'API catalog'	Aladdin Studio, API catalog: 1 (partial or after sign-up or approval)	14
+p15-33	15	Exhibit 17 row Aladdin Studio col 'Trial or sandbox'	Aladdin Studio, Trial or sandbox: 0 (none or blocked)	14
+p15-34	15	Exhibit 17 row Aladdin Studio col 'First API call without a contract'	Aladdin Studio, First API call without a contract: 0 (none or blocked)	14
+p15-35	15	Exhibit 17 row Aladdin Studio col 'Sample code'	Aladdin Studio, Sample code: 1 (partial or after sign-up or approval)	14
+p15-36	15	Exhibit 17 row Aladdin Studio col 'Community or marketplace'	Aladdin Studio, Community or marketplace: 1 (partial or after sign-up or approval)	14
+p15-37	15	Exhibit 17 row Aladdin Studio col 'AI connector'	Aladdin Studio, AI connector: 0 (none or blocked)	14
+p15-38	15	Exhibit 17 row Aladdin Studio col 'Call to action'	Aladdin Studio, Call to action: 0 (none or blocked)	14
+p15-39	15	Exhibit 17 row State Street col 'Public docs'	State Street, Public docs: 1 (partial or after sign-up or approval)	67
+p15-40	15	Exhibit 17 row State Street col 'API catalog'	State Street, API catalog: 0 (none or blocked)	67
+p15-41	15	Exhibit 17 row State Street col 'Trial or sandbox'	State Street, Trial or sandbox: 1 (partial or after sign-up or approval)	67
+p15-42	15	Exhibit 17 row State Street col 'First API call without a contract'	State Street, First API call without a contract: 0 (none or blocked)	67
+p15-43	15	Exhibit 17 row State Street col 'Sample code'	State Street, Sample code: 0 (none or blocked)	67
+p15-44	15	Exhibit 17 row State Street col 'Community or marketplace'	State Street, Community or marketplace: 1 (partial or after sign-up or approval)	67
+p15-45	15	Exhibit 17 row State Street col 'AI connector'	State Street, AI connector: 0 (none or blocked)	67
+p15-46	15	Exhibit 17 row State Street col 'Call to action'	State Street, Call to action: 1 (partial or after sign-up or approval)	67
+p15-47	15	Exhibit 17 row Arcesium col 'Public docs'	Arcesium, Public docs: 0 (none or blocked)	57
+p15-48	15	Exhibit 17 row Arcesium col 'API catalog'	Arcesium, API catalog: 0 (none or blocked)	57
+p15-49	15	Exhibit 17 row Arcesium col 'Trial or sandbox'	Arcesium, Trial or sandbox: 0 (none or blocked)	57
+p15-50	15	Exhibit 17 row Arcesium col 'First API call without a contract'	Arcesium, First API call without a contract: 0 (none or blocked)	57
+p15-51	15	Exhibit 17 row Arcesium col 'Sample code'	Arcesium, Sample code: 0 (none or blocked)	57
+p15-52	15	Exhibit 17 row Arcesium col 'Community or marketplace'	Arcesium, Community or marketplace: 1 (partial or after sign-up or approval)	57
+p15-53	15	Exhibit 17 row Arcesium col 'AI connector'	Arcesium, AI connector: 2 (fully public or self-serve)	57
+p15-54	15	Exhibit 17 row Arcesium col 'Call to action'	Arcesium, Call to action: 0 (none or blocked)	57
+p15-55	15	Exhibit 17 row SimCorp col 'Public docs'	SimCorp, Public docs: 0 (none or blocked)	7
+p15-56	15	Exhibit 17 row SimCorp col 'API catalog'	SimCorp, API catalog: 0 (none or blocked)	7
+p15-57	15	Exhibit 17 row SimCorp col 'Trial or sandbox'	SimCorp, Trial or sandbox: 0 (none or blocked)	7
+p15-58	15	Exhibit 17 row SimCorp col 'First API call without a contract'	SimCorp, First API call without a contract: 0 (none or blocked)	7
+p15-59	15	Exhibit 17 row SimCorp col 'Sample code'	SimCorp, Sample code: 0 (none or blocked)	7
+p15-60	15	Exhibit 17 row SimCorp col 'Community or marketplace'	SimCorp, Community or marketplace: 1 (partial or after sign-up or approval)	7
+p15-61	15	Exhibit 17 row SimCorp col 'AI connector'	SimCorp, AI connector: 0 (none or blocked)	7
+p15-62	15	Exhibit 17 row SimCorp col 'Call to action'	SimCorp, Call to action: 0 (none or blocked)	7
+p15-63	15	Exhibit 17 row Clearwater col 'Public docs'	Clearwater, Public docs: 0 (none or blocked)	-
+p15-64	15	Exhibit 17 row Clearwater col 'API catalog'	Clearwater, API catalog: 0 (none or blocked)	-
+p15-65	15	Exhibit 17 row Clearwater col 'Trial or sandbox'	Clearwater, Trial or sandbox: 0 (none or blocked)	-
+p15-66	15	Exhibit 17 row Clearwater col 'First API call without a contract'	Clearwater, First API call without a contract: 0 (none or blocked)	-
+p15-67	15	Exhibit 17 row Clearwater col 'Sample code'	Clearwater, Sample code: 0 (none or blocked)	-
+p15-68	15	Exhibit 17 row Clearwater col 'Community or marketplace'	Clearwater, Community or marketplace: 1 (partial or after sign-up or approval)	-
+p15-69	15	Exhibit 17 row Clearwater col 'AI connector'	Clearwater, AI connector: 0 (none or blocked)	-
+p15-70	15	Exhibit 17 row Clearwater col 'Call to action'	Clearwater, Call to action: 0 (none or blocked)	-
+p15-71	15	Exhibit 17 row Snowflake col 'Public docs'	Snowflake, Public docs: 2 (fully public or self-serve)	69
+p15-72	15	Exhibit 17 row Snowflake col 'API catalog'	Snowflake, API catalog: 2 (fully public or self-serve)	69
+p15-73	15	Exhibit 17 row Snowflake col 'Trial or sandbox'	Snowflake, Trial or sandbox: 2 (fully public or self-serve)	69
+p15-74	15	Exhibit 17 row Snowflake col 'First API call without a contract'	Snowflake, First API call without a contract: 2 (fully public or self-serve)	69
+p15-75	15	Exhibit 17 row Snowflake col 'Sample code'	Snowflake, Sample code: 2 (fully public or self-serve)	69
+p15-76	15	Exhibit 17 row Snowflake col 'Community or marketplace'	Snowflake, Community or marketplace: 2 (fully public or self-serve)	69
+p15-77	15	Exhibit 17 row Snowflake col 'AI connector'	Snowflake, AI connector: 2 (fully public or self-serve)	69
+p15-78	15	Exhibit 17 row Snowflake col 'Call to action'	Snowflake, Call to action: 2 (fully public or self-serve)	69
+p15-79	15	Exhibit 17 row Databricks col 'Public docs'	Databricks, Public docs: 2 (fully public or self-serve)	70
+p15-80	15	Exhibit 17 row Databricks col 'API catalog'	Databricks, API catalog: 2 (fully public or self-serve)	70
+p15-81	15	Exhibit 17 row Databricks col 'Trial or sandbox'	Databricks, Trial or sandbox: 2 (fully public or self-serve)	70
+p15-82	15	Exhibit 17 row Databricks col 'First API call without a contract'	Databricks, First API call without a contract: 2 (fully public or self-serve)	70
+p15-83	15	Exhibit 17 row Databricks col 'Sample code'	Databricks, Sample code: 2 (fully public or self-serve)	70
+p15-84	15	Exhibit 17 row Databricks col 'Community or marketplace'	Databricks, Community or marketplace: 2 (fully public or self-serve)	70
+p15-85	15	Exhibit 17 row Databricks col 'AI connector'	Databricks, AI connector: 2 (fully public or self-serve)	70
+p15-86	15	Exhibit 17 row Databricks col 'Call to action'	Databricks, Call to action: 2 (fully public or self-serve)	70
+p15-87	15	Exhibit 17 row LSEG col 'Public docs'	LSEG, Public docs: 1 (partial or after sign-up or approval)	68
+p15-88	15	Exhibit 17 row LSEG col 'API catalog'	LSEG, API catalog: 2 (fully public or self-serve)	68
+p15-89	15	Exhibit 17 row LSEG col 'Trial or sandbox'	LSEG, Trial or sandbox: 1 (partial or after sign-up or approval)	68
+p15-90	15	Exhibit 17 row LSEG col 'First API call without a contract'	LSEG, First API call without a contract: 1 (partial or after sign-up or approval)	68
+p15-91	15	Exhibit 17 row LSEG col 'Sample code'	LSEG, Sample code: 2 (fully public or self-serve)	68
+p15-92	15	Exhibit 17 row LSEG col 'Community or marketplace'	LSEG, Community or marketplace: 2 (fully public or self-serve)	68
+p15-93	15	Exhibit 17 row LSEG col 'AI connector'	LSEG, AI connector: 2 (fully public or self-serve)	68
+p15-94	15	Exhibit 17 row LSEG col 'Call to action'	LSEG, Call to action: 1 (partial or after sign-up or approval)	68
+p15-95	15	Exhibit 17 row FactSet col 'Public docs'	FactSet, Public docs: 2 (fully public or self-serve)	66
+p15-96	15	Exhibit 17 row FactSet col 'API catalog'	FactSet, API catalog: 2 (fully public or self-serve)	66
+p15-97	15	Exhibit 17 row FactSet col 'Trial or sandbox'	FactSet, Trial or sandbox: 0 (none or blocked)	66
+p15-98	15	Exhibit 17 row FactSet col 'First API call without a contract'	FactSet, First API call without a contract: 0 (none or blocked)	66
+p15-99	15	Exhibit 17 row FactSet col 'Sample code'	FactSet, Sample code: 2 (fully public or self-serve)	66
+p15-100	15	Exhibit 17 row FactSet col 'Community or marketplace'	FactSet, Community or marketplace: 1 (partial or after sign-up or approval)	66
+p15-101	15	Exhibit 17 row FactSet col 'AI connector'	FactSet, AI connector: 2 (fully public or self-serve)	66
+p15-102	15	Exhibit 17 row FactSet col 'Call to action'	FactSet, Call to action: 0 (none or blocked)	66
+p15-103	15	Exhibit 17 row MSCI col 'Public docs'	MSCI, Public docs: 0 (none or blocked)	4
+p15-104	15	Exhibit 17 row MSCI col 'API catalog'	MSCI, API catalog: 0 (none or blocked)	4
+p15-105	15	Exhibit 17 row MSCI col 'Trial or sandbox'	MSCI, Trial or sandbox: 0 (none or blocked)	4
+p15-106	15	Exhibit 17 row MSCI col 'First API call without a contract'	MSCI, First API call without a contract: 0 (none or blocked)	4
+p15-107	15	Exhibit 17 row MSCI col 'Sample code'	MSCI, Sample code: 0 (none or blocked)	4
+p15-108	15	Exhibit 17 row MSCI col 'Community or marketplace'	MSCI, Community or marketplace: 0 (none or blocked)	4
+p15-109	15	Exhibit 17 row MSCI col 'AI connector'	MSCI, AI connector: 2 (fully public or self-serve)	4
+p15-110	15	Exhibit 17 row MSCI col 'Call to action'	MSCI, Call to action: 0 (none or blocked)	4
+p15-111	15	Exhibit 17 note (AI connector)	For the AI connector score: 2 means a connector that outside AI tools can use, such as an MCP server. 1 means one announced or in limited release. 0 means none, or an assistant that works only inside the vendor's own platform (scoring key applied to the AI connector column)	-
+p15-112	15	Exhibit 17 source note	my test of each platform's public pages, no accounts or payments, October 8, 2026	14,66,67,68,69,70,7,57,4
+p15-113	15	Exhibit 17 source note	Bloomberg, Clearwater and MSCI may score lower than they deserve, because some of their pages blocked automated access	-
+p15-114	15	body para 2	Exhibit 17 puts Studio beside 10 platforms that a Studio buyer also deals with (10 non-Studio rows)	66,67,68
+p15-115	15	body para 2	It scores each on eight things a developer with no client relationship can reach	-
+p15-116	15	body para 2	2 where the vendor opens it before any sale, 0 where access follows a relationship	-
+p15-117	15	body para 2	Investment platforms cluster low because they gate	-
+p15-118	15	body para 2	At Aladdin, as at Bloomberg, State Street, SimCorp, Clearwater and Arcesium, documentation, a sandbox and a first call come after a relationship exists	-
+p15-119	15	body para 2	Data and cloud platforms sell to developers directly and cluster high	-

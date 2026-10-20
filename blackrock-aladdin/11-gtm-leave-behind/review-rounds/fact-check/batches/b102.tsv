@@ -1,0 +1,7 @@
+id	page	location	claim	sources
+p15-11	15	Exhibit 16 row Get help col 'Receipt'	Pull request 52 (blackrock/aladdinsdk)	38
+p15-12	15	Exhibit 16 row Get help col 'Receipt'	pull request 57 (blackrock/aladdinsdk)	65
+p15-13	15	Exhibit 16 note	the pages and repositories in the Receipt column, read with no account or login, October 2026	-
+p15-14	15	body para 1	The SDK is the one piece of Studio a prospect can install before any conversation	23
+p15-15	15	body para 1	Its README documents three run modes	23
+p15-16	15	body para 1	three run modes: “a developer's local machine,” “Aladdin Studio Compute sessions” and a test mode	23

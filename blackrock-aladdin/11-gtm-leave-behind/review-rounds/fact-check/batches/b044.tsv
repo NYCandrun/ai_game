@@ -1,0 +1,7 @@
+id	page	location	claim	sources
+p06-66	6	body para 2 (What Studio is)	Five BlackRock speakers define Studio	28,29
+p06-67	6	body para 2 (What Studio is)	the 128 recordings I pulled for this document	28,29
+p06-68	6	body para 2 (What Studio is)	BlackRock's own definition comes from the head of Studio engineering, on Snowflake's podcast in November 2025	-
+p06-69	6	block quote	"So we think about Aladdin today as a platform and Aladdin Studio is essentially the user experience that allows people to think of Aladdin as a platform. It exposes everything Aladdin knows how to do as a set of APIs events. The Aladdin data cloud built on top of Snowflake takes all of that information that's generated through our analytics factory and inside of Aladdin and pushes that into Snowflake. And increasingly we're building a set of developer tools."	1
+p06-70	6	block quote attribution	Dave Woodhead, Managing Director and Head of Engineering for Aladdin Studio	1
+p06-71	6	block quote attribution	Snowflake Data Cloud podcast, published November 11, 2025	1

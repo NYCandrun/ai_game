@@ -1,0 +1,7 @@
+id	page	location	claim	sources
+p11-32	11	Exhibit 12 note	The LSEG customer count is from a secondary summary	55
+p11-33	11	Exhibit 12 note	Among system-of-record rivals, only SimCorp and Arcesium have an AI announcement in my sources	-
+p11-34	11	Exhibit 12 note	State Street, Clearwater and Bloomberg have none [no AI announcement], so they are not listed	-
+p11-35	11	direction box sentence 1	A public account of the Copilot plugin model would cover production Aladdin APIs, the same ones Studio exposes	8,17
+p11-36	11	direction box sentence 1	[the Copilot plugin model covers] each user’s own permissions	8,17
+p11-37	11	direction box sentence 1	[the Copilot plugin model covers] tested no-advice guardrails	8,17

@@ -1,0 +1,20 @@
+p02-01	2	body para 1	Studio is Aladdin's developer and data layer	1
+p02-02	2	body para 1	Studio: APIs and events, Aladdin Data Cloud on Snowflake, and developer tools (the three components of Studio)	1
+p02-03	2	body para 1	Aladdin Data Cloud on Snowflake	1
+p02-04	2	body para 1	Many data providers now offer AI tools a way to read their data (LSEG, FactSet, MSCI, Snowflake Cortex)	2,3,4,5
+p02-05	2	body para 1	Aladdin's APIs also change the book. They post orders and set compliance rules	6
+p02-06	2	body para 1	[Aladdin's APIs post orders and set compliance rules] under each user's permissions	6
+p02-07	2	body para 1	[Aladdin's APIs post orders] with a compliance check on every order	6
+p02-08	2	body para 2	SimCorp has announced AI agents	7
+p02-09	2	body para 2	About 100 of its [BlackRock's] applications ... already call these APIs every day	8
+p02-10	2	body para 2	thousands of Copilot tools already call these APIs every day	8
+p02-11	2	body para 2	Buyers say AI is changing what they build	9
+p02-12	2	body para 2	BlackRock has told investors that API calls will grow 17x by 2030	10
+p02-13	2	body para 2	four pieces of marketing work that would follow (count, Part 3)	-
+p02-14	2	method box	Public material only: BlackRock web pages, the 54 API specifications inside 11 public asdk_plugin Python packages, 128 recordings, SEC filings, procurement notices, GitHub and PyPI	-
+p02-15	2	method box	the 54 API specifications inside 11 public asdk_plugin Python packages (54 specifications)	-
+p02-16	2	method box	11 public asdk_plugin Python packages	-
+p02-17	2	method box	128 recordings	-
+p02-18	2	method box	AI agents pulled them in about a day; I checked every fact against its document	-
+p02-19	2	method box	Some recordings are machine-transcribed, so names and jargon can be misheard	-
+p02-20	2	receipts key	Each superscript number points to an entry in Sources, at the end of this document, giving the grade (P, S or T), title, speaker and date	-

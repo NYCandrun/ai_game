@@ -1,0 +1,18 @@
+# Re-check of batch b007 (flagged rows only)
+
+Flagged rows: p03-07, p03-08, p03-09, p03-10 (all CORPUS-ONLY). p03-11 (CONFIRMED) and p03-12 (CONFIRMED (note)) are not re-checked.
+
+What was tried for a web receipt of the speaker's own words:
+- https://www.youtube.com/watch?v=oyqeCHFM5U4 via curl: the page's playabilityStatus is "LOGIN_REQUIRED", reason "Sign in to confirm you're not a bot". It has no captionTracks and no description text.
+- YouTube innertube /youtubei/v1/player with the WEB, ANDROID, IOS and TVHTML5 embedded clients: WEB returned LOGIN_REQUIRED, ANDROID and IOS returned no status and no caption tracks, and the embedded client returned "YouTube is no longer supported in this application or device."
+- WebSearch for other write-ups that quote the talk could not run, because this turn's web search budget was used up. Third-party transcript/reader services were not used, per that limit.
+- https://www.zenml.io/llmops-database/agentic-ai-architecture-for-investment-management-platform was fetched again. It is a third-party paraphrase, not the speaker's words.
+
+| id | claim | first verdict | final verdict | agrees | receipt (URL or file:line, then exact quote) | correction |
+|---|---|---|---|---|---|---|
+| p03-07 | Rosales: The organization is "around 7,000 people, with over 4,000 of those being engineers." | CORPUS-ONLY | CORPUS-ONLY | yes | /home/user/ai_game/blackrock-aladdin/04-transcripts/part1-youtube-and-site/16_How_BlackRock_Built_Production_AI_Agents_for_Asset_Managemen.md:12: "The Aladdin organization is made up of around 7,000 people, with over 4,000 of those being engineers." Also .../timestamped/yt_oyqeCHFM5U4.m4a.ts.txt:17 [01:44]. Web paraphrase: https://www.zenml.io/llmops-database/agentic-ai-architecture-for-investment-management-platform: "maintained by around 4,000 engineers within the 7,000-person Aladdin organization." | None. The quote is verbatim, including the comma, in the part1 transcript. YouTube blocks every caption route from here, so the exact words have no web receipt. |
+| p03-08 | Rosales: around 7,000 people | CORPUS-ONLY | CORPUS-ONLY | yes | yt_oyqeCHFM5U4.m4a.ts.txt:17 [01:44]: "The Aladdin organization is made up of around 7,000 people". ZenML (web paraphrase): "within the 7,000-person Aladdin organization." | None. The figure is backed on the web only by a paraphrase. |
+| p03-09 | Rosales: over 4,000 of those being engineers | CORPUS-ONLY | CORPUS-ONLY | yes | yt_oyqeCHFM5U4.m4a.ts.txt:17 [01:44]: "with over 4,000 of those being engineers". ZenML (web paraphrase): "maintained by around 4,000 engineers" | None. Keep "over", which is what the speaker said. ZenML's "around" is its own paraphrase. |
+| p03-10 | Rosales: They maintain "around 100 Aladdin front-end applications" | CORPUS-ONLY | CORPUS-ONLY | yes | 16_How_BlackRock_Built_..._Managemen.md:14: "And these engineers build and maintain the around 100 Aladdin front-end applications that thousands of people use every day." (The timestamped file ts.txt:18 [01:53] mishears this as "They're around 100 Aladdin front-end applications".) ZenML: "The platform comprises approximately 100 front-end applications maintained by around 4,000 engineers" | None. The quoted words are verbatim in the part1 transcript. If someone cites the timestamped file, they should quote line 17's "build and maintain" together with line 18. |
+
+Summary: I agree with all four CORPUS-ONLY verdicts. No receipt from the speaker's own words could be reached on the open web: YouTube requires sign-in for this video and returns no captions, and web search was unavailable (turn budget used up). The ZenML paraphrase confirms 7,000, about 4,000 and about 100.

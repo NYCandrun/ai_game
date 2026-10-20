@@ -1,0 +1,7 @@
+id	page	location	claim	sources
+p06-54	6	Exhibit 5 note	the four columns count specs by label	-
+p06-55	6	body para 1	Posting an order takes whatIf and runCompliance	6
+p06-56	6	body para 1	runCompliance, which defaults to true	6
+p06-57	6	body para 1	the response returns any compliance violations inline	6
+p06-58	6	body para 1	Ten specifications expose an endpoint for long-running operations	23
+p06-59	6	body para 1	35 operations are flagged as long-running	23

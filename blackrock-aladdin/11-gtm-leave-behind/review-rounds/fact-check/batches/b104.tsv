@@ -1,0 +1,7 @@
+id	page	location	claim	sources
+p15-23	15	Exhibit 17 row Bloomberg col 'Public docs'	Bloomberg, Public docs: 1 (partial or after sign-up or approval)	-
+p15-24	15	Exhibit 17 row Bloomberg col 'API catalog'	Bloomberg, API catalog: 0 (none or blocked)	-
+p15-25	15	Exhibit 17 row Bloomberg col 'Trial or sandbox'	Bloomberg, Trial or sandbox: 1 (partial or after sign-up or approval)	-
+p15-26	15	Exhibit 17 row Bloomberg col 'First API call without a contract'	Bloomberg, First API call without a contract: 1 (partial or after sign-up or approval)	-
+p15-27	15	Exhibit 17 row Bloomberg col 'Sample code'	Bloomberg, Sample code: 1 (partial or after sign-up or approval)	-
+p15-28	15	Exhibit 17 row Bloomberg col 'Community or marketplace'	Bloomberg, Community or marketplace: 0 (none or blocked)	-

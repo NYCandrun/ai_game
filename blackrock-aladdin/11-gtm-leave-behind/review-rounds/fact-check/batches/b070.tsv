@@ -1,0 +1,7 @@
+id	page	location	claim	sources
+p10-18	10	Exhibit 11 box 'Thousands of registered tools'	from “50, 60 Aladdin engineering teams”	8
+p10-19	10	Exhibit 11 box '20 to 30 tools shortlisted'	Copilot filters the registry by environment, user group and app	8
+p10-20	10	Exhibit 11 box '20 to 30 tools shortlisted'	leaving “say, 20 to 30 tools and agents.”	8
+p10-21	10	Exhibit 11 box '20 to 30 tools shortlisted'	More than “40, 50 tools” would hurt performance	8
+p10-22	10	Exhibit 11 box 'Plan and call the API'	an orchestrator loops “over a planning and action node”	8
+p10-23	10	Exhibit 11 box 'Plan and call the API'	using GPT-4 function calling	8

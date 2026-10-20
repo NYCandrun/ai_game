@@ -1,0 +1,12 @@
+# Batch b019: re-check of flagged rows
+
+Method: I downloaded all 11 `asdk_plugin_*==2.0.0b3` wheels fresh from PyPI into a new directory, `fc/dl/b019r/`, and unzipped them. They hold 54 swagger.json files. PyPI JSON for asdk-plugin-accounting returns version 2.0.0b3. I ran a scan with `python3 -I` (fc/posscan.py) over every definition name, property name, path and parameter that matches "position". Paths below are relative to `fc/dl/b019r/x/`.
+
+Only one row was flagged: p04-28.
+
+| id | claim | first verdict | final verdict | agrees | receipt (URL or file:line, then exact quote) | correction |
+|---|---|---|---|---|---|---|
+| p04-28 | Positions appear only as fields: a positions source in PortfolioToolkitAPI | PARTLY | PARTLY | yes | asdk_plugin_portfolio/agraph/portfolio/setup/portfolio_toolkit/v1/PortfolioToolkitAPI/swagger.json:2173-2174 `"positionSource": { "description": "Represents source of positions."`; :1550 `"Describes source of positions. - POSITIONS_SOURCE_UNSPECIFIED ..."`. Missing from the list: asdk_plugin_investment_operations/agraph/investment_operations/collateral_management/collateral_statement/v1/CollateralStatementAPI/swagger.json:979 `"title": "Details of collateral positions"` (a `positions` array of `#/definitions/v1Position`), :1581-1582 `"v1Position": { ... "description": "Represents the position for exposures and collateral held/pledged."`, with fields positionStatus (:1630) and positionSettleDate (:1674). Also ComplianceRuleAPI `settledPositionsOnly`, `includeNonInvestmentPosition`, `disaggregatePositions`. | The PortfolioToolkitAPI field exists exactly as stated. The words "only as fields" also hold, because even the collateral positions are a nested array field and not a position API. What is wrong is the colon list, which reads as complete when it is not. CollateralStatementAPI (beta) defines a full v1Position object, and compliance rules carry position flags. Fix: "Positions appear only as fields, for example a positions source in PortfolioToolkitAPI, collateral positions in CollateralStatementAPI and a violation's "underlying positions" (Violation spec)". Minor point: this spec's info title is "Portfolio"; PortfolioToolkitAPI is its x-aladdin-api-id class name, which is fine. |
+
+Correction:
+- p04-28 (PARTLY): add "for example" or "among others" before the list, or add "collateral positions in CollateralStatementAPI". The PortfolioToolkitAPI example itself is correct.

@@ -1,0 +1,7 @@
+id	page	location	claim	sources
+p10-06	10	section 3 heading	data providers let outside AI tools reach their data	-
+p10-07	10	body para 1 sentence 1	Aladdin Copilot, the AI inside the login, is built on the same APIs Studio exposes	-
+p10-08	10	body para 1 sentence 2	It [Copilot] draws on a registry of plugins, “couple of thousands agents and tools,” built by Aladdin’s engineering teams	-
+p10-09	10	body para 1 sentence 3	The first way a team adds a tool is “to define a tool as kind of mapping one-to-one to an existing Aladdin API already out in production”	8
+p10-10	10	body para 1 sentence 4	So Copilot’s tools are Studio’s APIs	-
+p10-11	10	body para 1 sentence 5	Microsoft’s Adrian Crockett made the dependence plain on BlackRock’s podcast (attribution: Adrian Crockett is Microsoft’s; said on BlackRock’s podcast)	53

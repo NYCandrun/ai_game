@@ -1,0 +1,47 @@
+p07-01	7	Exhibit 6 title	Five BlackRock executives have defined Studio on the record	-
+p07-02	7	Exhibit 6 row Woodhead col 'Title'	Dave Woodhead: Managing Director and Head of Engineering for Aladdin Studio	1
+p07-03	7	Exhibit 6 row Woodhead col 'What they add'	Woodhead: Gives the three-part definition quoted above	1
+p07-04	7	Exhibit 6 row Woodhead col 'Recording'	Woodhead: Snowflake podcast, November 2025	1
+p07-05	7	Exhibit 6 row Newman col 'Title'	Richard Newman: General Manager, Aladdin Studio	16
+p07-06	7	Exhibit 6 row Newman col 'What they add'	Newman: Data Cloud is "part of Studio"	16
+p07-07	7	Exhibit 6 row Newman col 'What they add'	Newman: analytics APIs "releasing soon ... all part of the Studio umbrella"	16
+p07-08	7	Exhibit 6 row Newman col 'Recording'	Newman: Never Done podcast, January 2025	16
+p07-09	7	Exhibit 6 row Goel col 'Title'	Diwakar Goel: Global Head of Data, Aladdin	26
+p07-10	7	Exhibit 6 row Goel col 'What they add'	Goel: Every transaction "via an event, via an API"	26
+p07-11	7	Exhibit 6 row Goel col 'What they add'	Goel: Data Cloud "within 15 minutes of latency"	26
+p07-12	7	Exhibit 6 row Goel col 'Recording'	Goel: Pensions webinar, 2025	26
+p07-13	7	Exhibit 6 row Khara col 'Title'	Kunal Khara: Managing Director and Global Head of Aladdin Product	30
+p07-14	7	Exhibit 6 row Khara col 'What they add'	Khara: Named "the Aladdin studio estate" as a focus	30
+p07-15	7	Exhibit 6 row Khara col 'What they add'	Khara: meaning programmatic access "at machine scale"	30
+p07-16	7	Exhibit 6 row Khara col 'Recording'	Khara: 2024 Awards interview, early 2024	30
+p07-17	7	Exhibit 6 row Miller col 'Title'	Jeff Miller: Managing Director, Global Head of Data Platform and Product Engineering	31
+p07-18	7	Exhibit 6 row Miller col 'What they add'	Miller: Data Cloud replaced "flat files ... FTP and related transfers"	31
+p07-19	7	Exhibit 6 row Miller col 'Recording'	Miller: Snowflake video, undated	31
+p07-20	7	Exhibit 6 note	Quotations are verbatim from the transcripts	1,16,26,30,31
+p07-21	7	Exhibit 6 note	three of the five are machine transcriptions, marked as such in the Sources section at the end of this document	-
+p07-22	7	body para 1	Four of the five describe Studio in the same terms, APIs and events plus the Data Cloud	-
+p07-23	7	body para 1	two of those four add developer tools	-
+p07-24	7	body para 1	Newman calls Data Cloud "part of Studio"	16
+p07-25	7	body para 1	Goel describes events, APIs and a near-real-time data store	26
+p07-26	7	body para 1	Khara calls it programmatic access to data and reporting	30
+p07-27	7	body para 1	A 2026 job posting calls Studio "Aladdin's extensibility layer"	32
+p07-28	7	Exhibit 7 title	All four speakers name APIs, events and the Data Cloud as parts of Studio	-
+p07-29	7	Exhibit 7 row Khara col 'Speaker, date'	Kunal Khara, early 2024	30
+p07-30	7	Exhibit 7 row Khara col 'What they said'	Khara: "More users are craving this ability to interact with our data, with their data, with reporting with dashboards on a programmatic basis"	30
+p07-31	7	Exhibit 7 row Khara cols 'APIs and events / Data Cloud / Developer tools'	Khara: APIs and events Yes; Data Cloud Yes; Developer tools –	30
+p07-32	7	Exhibit 7 row Newman col 'Speaker, date'	Richard Newman, January 2025	16
+p07-33	7	Exhibit 7 row Newman col 'What they said'	Newman: "The Aladdin data cloud ... which is part of Studio"	16
+p07-34	7	Exhibit 7 row Newman col 'What they said'	Newman: "those analytic APIs ... That's all part of the Studio umbrella"	16
+p07-35	7	Exhibit 7 row Newman cols 'APIs and events / Data Cloud / Developer tools'	Newman: APIs and events Yes; Data Cloud Yes; Developer tools –	16
+p07-36	7	Exhibit 7 row Goel col 'Speaker, date'	Diwakar Goel, 2025	26
+p07-37	7	Exhibit 7 row Goel col 'What they said'	Goel: "Every single transaction ... via an event, via an API"	26
+p07-38	7	Exhibit 7 row Goel col 'What they said'	Goel: "a near real time data store"	26
+p07-39	7	Exhibit 7 row Goel col 'What they said'	Goel: exposing "the software and application that we're building"	26
+p07-40	7	Exhibit 7 row Goel cols 'APIs and events / Data Cloud / Developer tools'	Goel: APIs and events Yes; Data Cloud Yes; Developer tools Yes	26
+p07-41	7	Exhibit 7 row Woodhead col 'Speaker, date'	Dave Woodhead, November 2025	1
+p07-42	7	Exhibit 7 row Woodhead col 'What they said'	Woodhead: "It exposes everything Aladdin knows how to do as a set of APIs events. The Aladdin data cloud built on top of Snowflake ... developer tools"	1
+p07-43	7	Exhibit 7 row Woodhead cols 'APIs and events / Data Cloud / Developer tools'	Woodhead: APIs and events Yes; Data Cloud Yes; Developer tools Yes	1
+p07-44	7	Exhibit 7 note	the four recordings cited 30, 16, 26, 1	30,16,26,1
+p07-45	7	Exhibit 7 note	Quotations are verbatim	30,16,26,1
+p07-46	7	Exhibit 7 note	Khara, Goel and Woodhead are machine or auto-caption transcriptions, marked as such in the Sources section at the end of this document	-
+p07-47	7	Exhibit 7 note	Only Goel and Woodhead name developer tools	-

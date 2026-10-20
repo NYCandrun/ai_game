@@ -1,0 +1,7 @@
+id	page	location	claim	sources
+p04-03	4	Exhibit 2 row 1 Order col 'Who acts'	Step 1 Order: who acts: The portfolio manager	6
+p04-04	4	Exhibit 2 row 1 Order col 'Who acts'	An order is “a directive from a portfolio manager to the trading desk to execute a particular investment decision” (Order spec)	6
+p04-05	4	Exhibit 2 row 1 Order col 'Product or application names'	The Explore application: its “new what-if model” (Explore classroom recording)	21
+p04-06	4	Exhibit 2 row 1 Order col 'Product or application names'	Explore's new what-if model compares a changed portfolio with the original before anything is traded	21
+p04-07	4	Exhibit 2 row 1 Order col 'BlackRock API that covers it'	OrderAPI v1 (stable)	6
+p04-08	4	Exhibit 2 row 1 Order col 'BlackRock API that covers it'	Posting an order takes whatIf and runCompliance	6

@@ -1,0 +1,7 @@
+id	page	location	claim	sources
+p15-95	15	Exhibit 17 row FactSet col 'Public docs'	FactSet, Public docs: 2 (fully public or self-serve)	66
+p15-96	15	Exhibit 17 row FactSet col 'API catalog'	FactSet, API catalog: 2 (fully public or self-serve)	66
+p15-97	15	Exhibit 17 row FactSet col 'Trial or sandbox'	FactSet, Trial or sandbox: 0 (none or blocked)	66
+p15-98	15	Exhibit 17 row FactSet col 'First API call without a contract'	FactSet, First API call without a contract: 0 (none or blocked)	66
+p15-99	15	Exhibit 17 row FactSet col 'Sample code'	FactSet, Sample code: 2 (fully public or self-serve)	66
+p15-100	15	Exhibit 17 row FactSet col 'Community or marketplace'	FactSet, Community or marketplace: 1 (partial or after sign-up or approval)	66

@@ -1,0 +1,7 @@
+id	page	location	claim	sources
+s37	19	Sources register, section T, entry 37	Source 37: [T] JP Morgan to connect to BlackRock’s Aladdin . The TRADE, 2016. https://www.thetradenews.com/jp-morgan-to-connect-to-blackrocks-aladdin/	-
+s38	19	Sources register, section P, entry 38	Source 38: [P] Pull request 52, URL rewriting for enterprise API gateways, blackrock/aladdinsdk . GitHub, December 2025. https://github.com/blackrock/aladdinsdk/pull/52	-
+s39	19	Sources register, section P, entry 39	Source 39: [P] Pull request 53, additional HTTP headers, blackrock/aladdinsdk . GitHub, December 2025. https://github.com/blackrock/aladdinsdk/pull/53	-
+s40	19	Sources register, section P, entry 40	Source 40: [P] Open-sourcing the AladdinSDK: empower Python developers with a quantitative edge . BlackRock Engineering, on Medium, 2024. https://engineering.blackrock.com/open-sourcing-the-aladdinsdk-empower-python-developers-with-a-quantitative-edge-7f63376061e6	-
+s41	19	Sources register, section P, entry 41	Source 41: [P] Commit 1c1bd25, raw patch, blackrock/aladdinsdk . GitHub, December 1, 2025. https://github.com/blackrock/aladdinsdk/commit/1c1bd2559e4e4da2591f13dccfd7db6c2f9dc68c.patch	-
+s42	19	Sources register, section P, entry 42	Source 42: [P] Janus Henderson Group, Form 10-K for fiscal year 2025 . SEC EDGAR, filed 2026. https://www.sec.gov/Archives/edgar/data/1274173/000143774926005628/jhg20251231_10k.htm	-

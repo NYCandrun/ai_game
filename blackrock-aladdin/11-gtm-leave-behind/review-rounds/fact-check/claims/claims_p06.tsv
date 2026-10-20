@@ -1,0 +1,71 @@
+p06-01	6	Exhibit 5 title	Two domains hold 127 of the 301 public API operations	-
+p06-02	6	Exhibit 5 title	the 301 public API operations	-
+p06-03	6	Exhibit 5 row Investment operations col 'Specs'	Investment operations: 15 specs	6
+p06-04	6	Exhibit 5 row Investment operations col 'Operations'	Investment operations: 74 operations	6
+p06-05	6	Exhibit 5 row Investment operations cols 'Alpha/Beta/Stable/Sunset'	Investment operations: Alpha 9, Beta 4, Stable 2, Sunset –	6
+p06-06	6	Exhibit 5 row Investment operations col 'Largest APIs by operations'	Investment operations: PrincipalInterestFactor, CounterPartySettlementInstruction, MiscellaneousCashflow, CouponReset and 11 more	6
+p06-07	6	Exhibit 5 row Analytics col 'Specs'	Analytics: 9 specs	6
+p06-08	6	Exhibit 5 row Analytics col 'Operations'	Analytics: 53 operations	6
+p06-09	6	Exhibit 5 row Analytics cols 'Alpha/Beta/Stable/Sunset'	Analytics: Alpha –, Beta –, Stable 8, Sunset 1	6
+p06-10	6	Exhibit 5 row Analytics col 'Largest APIs by operations'	Analytics: RiskRule, RiskWorkflow, RiskException, RiskConfig and 5 more	6
+p06-11	6	Exhibit 5 row Investment research col 'Specs'	Investment research: 5 specs	6
+p06-12	6	Exhibit 5 row Investment research col 'Operations'	Investment research: 41 operations	6
+p06-13	6	Exhibit 5 row Investment research cols 'Alpha/Beta/Stable/Sunset'	Investment research: Alpha 5, Beta –, Stable –, Sunset –	6
+p06-14	6	Exhibit 5 row Investment research col 'Largest APIs by operations'	Investment research: AnalystCoverage, Criterion, Watchlist, ResearchNote and 1 more	6
+p06-15	6	Exhibit 5 row Platform col 'Specs'	Platform: 6 specs	6
+p06-16	6	Exhibit 5 row Platform col 'Operations'	Platform: 29 operations	6
+p06-17	6	Exhibit 5 row Platform cols 'Alpha/Beta/Stable/Sunset'	Platform: Alpha 2, Beta –, Stable 4, Sunset –	6
+p06-18	6	Exhibit 5 row Platform col 'Largest APIs by operations'	Platform: AdcDataset, UserGroup, User, UserGroupPermission and 2 more	6
+p06-19	6	Exhibit 5 row Portfolio management col 'Specs'	Portfolio management: 4 specs	6
+p06-20	6	Exhibit 5 row Portfolio management col 'Operations'	Portfolio management: 28 operations	6
+p06-21	6	Exhibit 5 row Portfolio management cols 'Alpha/Beta/Stable/Sunset'	Portfolio management: Alpha 1, Beta –, Stable 3, Sunset –	6
+p06-22	6	Exhibit 5 row Portfolio management col 'Largest APIs by operations'	Portfolio management: CIDWriter, Strategy, CIDReader, CashLadder	6
+p06-23	6	Exhibit 5 row Portfolio col 'Specs'	Portfolio: 3 specs	6
+p06-24	6	Exhibit 5 row Portfolio col 'Operations'	Portfolio: 23 operations	6
+p06-25	6	Exhibit 5 row Portfolio cols 'Alpha/Beta/Stable/Sunset'	Portfolio: Alpha 1, Beta –, Stable 2, Sunset –	6
+p06-26	6	Exhibit 5 row Portfolio col 'Largest APIs by operations'	Portfolio: PortfolioGroup, RestrictedAsset, PortfolioToolkit	6
+p06-27	6	Exhibit 5 row Data col 'Specs'	Data: 1 spec	6
+p06-28	6	Exhibit 5 row Data col 'Operations'	Data: 15 operations	6
+p06-29	6	Exhibit 5 row Data cols 'Alpha/Beta/Stable/Sunset'	Data: Alpha –, Beta –, Stable 1, Sunset –	6
+p06-30	6	Exhibit 5 row Data col 'Largest APIs by operations'	Data: SecurityCreation	6
+p06-31	6	Exhibit 5 row Trading col 'Specs'	Trading: 2 specs	6
+p06-32	6	Exhibit 5 row Trading col 'Operations'	Trading: 14 operations	6
+p06-33	6	Exhibit 5 row Trading cols 'Alpha/Beta/Stable/Sunset'	Trading: Alpha 1, Beta –, Stable 1, Sunset –	6
+p06-34	6	Exhibit 5 row Trading col 'Largest APIs by operations'	Trading: Order, Trade	6
+p06-35	6	Exhibit 5 row Compliance col 'Specs'	Compliance: 4 specs	6
+p06-36	6	Exhibit 5 row Compliance col 'Operations'	Compliance: 9 operations	6
+p06-37	6	Exhibit 5 row Compliance cols 'Alpha/Beta/Stable/Sunset'	Compliance: Alpha 3, Beta –, Stable 1, Sunset –	6
+p06-38	6	Exhibit 5 row Compliance col 'Largest APIs by operations'	Compliance: ComplianceRuleAssignment, Violation, ComplianceRule, Level	6
+p06-39	6	Exhibit 5 row Accounting col 'Specs'	Accounting: 4 specs	6
+p06-40	6	Exhibit 5 row Accounting col 'Operations'	Accounting: 8 operations	6
+p06-41	6	Exhibit 5 row Accounting cols 'Alpha/Beta/Stable/Sunset'	Accounting: Alpha 2, Beta 2, Stable –, Sunset –	6
+p06-42	6	Exhibit 5 row Accounting col 'Largest APIs by operations'	Accounting: PortfolioConfiguration, Valuations, CompositeMembership, AborLot	6
+p06-43	6	Exhibit 5 row Clients col 'Specs'	Clients: 1 spec	6
+p06-44	6	Exhibit 5 row Clients col 'Operations'	Clients: 7 operations	6
+p06-45	6	Exhibit 5 row Clients cols 'Alpha/Beta/Stable/Sunset'	Clients: Alpha –, Beta –, Stable 1, Sunset –	6
+p06-46	6	Exhibit 5 row Clients col 'Largest APIs by operations'	Clients: EnrichedCapitalFlow	6
+p06-47	6	Exhibit 5 row Total col 'Specs'	Total: 54 specs	6
+p06-48	6	Exhibit 5 row Total col 'Operations'	Total: 301 operations	6
+p06-49	6	Exhibit 5 row Total cols 'Alpha/Beta/Stable/Sunset'	Total: Alpha 24, Beta 6, Stable 23, Sunset 1	6
+p06-50	6	Exhibit 5 row Total col 'Largest APIs by operations'	11 domains, 11 PyPI packages	6
+p06-51	6	Exhibit 5 note	the 54 Swagger 2.0 specifications inside the 11 asdk_plugin packages, version 2.0.0b3, on PyPI	6
+p06-52	6	Exhibit 5 note	The core aladdinsdk package adds four utility APIs (token, subscription, notification and a demo), not counted here	-
+p06-53	6	Exhibit 5 note	Alpha, beta, stable and sunset are the stability labels each specification carries (its x-aladdin-api-stability field), alpha being the earliest	-
+p06-54	6	Exhibit 5 note	the four columns count specs by label	-
+p06-55	6	body para 1	Posting an order takes whatIf and runCompliance	6
+p06-56	6	body para 1	runCompliance, which defaults to true	6
+p06-57	6	body para 1	the response returns any compliance violations inline	6
+p06-58	6	body para 1	Ten specifications expose an endpoint for long-running operations	23
+p06-59	6	body para 1	35 operations are flagged as long-running	23
+p06-60	6	body para 1	the SDK polls them	23
+p06-61	6	body para 1	Risk exceptions and Data Cloud datasets carry bitemporal fields, which record two time dimensions	-
+p06-62	6	body para 1	Rule assignments and dataset releases name a four-eyes approval, a second sign-off	6
+p06-63	6	body para 1	Every request carries an application key plus OAuth 2.0 scopes	23
+p06-64	6	body para 1	OAuth 2.0 scopes such as trading.order_management.order.v1.Order:read	23
+p06-65	6	body para 1	the client ID and secret come from the Studio UI	23
+p06-66	6	body para 2 (What Studio is)	Five BlackRock speakers define Studio	28,29
+p06-67	6	body para 2 (What Studio is)	the 128 recordings I pulled for this document	28,29
+p06-68	6	body para 2 (What Studio is)	BlackRock's own definition comes from the head of Studio engineering, on Snowflake's podcast in November 2025	-
+p06-69	6	block quote	"So we think about Aladdin today as a platform and Aladdin Studio is essentially the user experience that allows people to think of Aladdin as a platform. It exposes everything Aladdin knows how to do as a set of APIs events. The Aladdin data cloud built on top of Snowflake takes all of that information that's generated through our analytics factory and inside of Aladdin and pushes that into Snowflake. And increasingly we're building a set of developer tools."	1
+p06-70	6	block quote attribution	Dave Woodhead, Managing Director and Head of Engineering for Aladdin Studio	1
+p06-71	6	block quote attribution	Snowflake Data Cloud podcast, published November 11, 2025	1

@@ -1,0 +1,50 @@
+p11-01	11	Exhibit 12 title	Of nine providers a Studio buyer compares [nine listed]	-
+p11-02	11	Exhibit 12 title	eight have announced AI features or AI access to their data	-
+p11-03	11	Exhibit 12 column headers	Provider | What is public | Receipt	-
+p11-04	11	Exhibit 12 group label	System-of-record rivals [group containing SimCorp and Arcesium]	-
+p11-05	11	Exhibit 12 row SimCorp col 'What is public'	Agent Launchpad, announced in 2026	7
+p11-06	11	Exhibit 12 row SimCorp col 'What is public'	Agent Launchpad is to offer prebuilt AI agents	7
+p11-07	11	Exhibit 12 row SimCorp col 'What is public'	Agent Launchpad is to let clients build their own [agents] on SimCorp One’s data layer	7
+p11-08	11	Exhibit 12 row SimCorp col 'Receipt'	SimCorp news 7	7
+p11-09	11	Exhibit 12 row Arcesium col 'What is public'	Arcesium added AI features to Aquata	56
+p11-10	11	Exhibit 12 row Arcesium col 'What is public'	Arcesium announced an AI platform	57
+p11-11	11	Exhibit 12 row Arcesium col 'Receipt'	Arcesium press releases 56, 57	56,57
+p11-12	11	Exhibit 12 group label	Data and cloud providers [group containing FactSet, LSEG, MSCI, S&P Global, Snowflake, Databricks, Aladdin]	-
+p11-13	11	Exhibit 12 row FactSet col 'What is public'	FactSet runs an MCP server for its data	3
+p11-14	11	Exhibit 12 row FactSet col 'What is public'	FactSet calls it [its MCP server] the first in its market	3
+p11-15	11	Exhibit 12 row FactSet col 'Receipt'	FactSet press release 3	3
+p11-16	11	Exhibit 12 row LSEG col 'What is public'	LSEG has announced a collaboration with Anthropic	2
+p11-17	11	Exhibit 12 row LSEG col 'What is public'	LSEG has announced an MCP server	2
+p11-18	11	Exhibit 12 row LSEG col 'What is public'	It [LSEG] had 90 customers connected by April 2026	55
+p11-19	11	Exhibit 12 row LSEG col 'Receipt'	LSEG press release 2; Investing.com summary 55	2,55
+p11-20	11	Exhibit 12 row MSCI col 'What is public'	MSCI offers “AI connectors” to its proprietary data	4
+p11-21	11	Exhibit 12 row MSCI col 'Receipt'	MSCI press release 4	4
+p11-22	11	Exhibit 12 row S&P Global col 'What is public'	S&P Global added Credit Ratings to its AI Data Portal in September 2026	58
+p11-23	11	Exhibit 12 row S&P Global col 'Receipt'	S&P Global press release 58	58
+p11-24	11	Exhibit 12 row Snowflake col 'What is public'	Snowflake documents an MCP server for Cortex Agents	5
+p11-25	11	Exhibit 12 row Snowflake col 'Receipt'	Snowflake documentation 5	5
+p11-26	11	Exhibit 12 row Databricks col 'What is public'	Databricks documents managed MCP servers	59
+p11-27	11	Exhibit 12 row Databricks col 'Receipt'	Databricks documentation 59	59
+p11-28	11	Exhibit 12 row Aladdin col 'What is public'	A Forward Deploy Engineer posting for Aladdin Data names “Model Context Protocol (MCP), AI agents, and Copilot extensions”	60
+p11-29	11	Exhibit 12 row Aladdin col 'Receipt'	BlackRock Careers 60	60
+p11-30	11	Exhibit 12 note	Source: the press releases, documentation and job posting in the Receipt column, as of October 2026	-
+p11-31	11	Exhibit 12 note	Aladdin has only a job posting that mentions MCP	60
+p11-32	11	Exhibit 12 note	The LSEG customer count is from a secondary summary	55
+p11-33	11	Exhibit 12 note	Among system-of-record rivals, only SimCorp and Arcesium have an AI announcement in my sources	-
+p11-34	11	Exhibit 12 note	State Street, Clearwater and Bloomberg have none [no AI announcement], so they are not listed	-
+p11-35	11	direction box sentence 1	A public account of the Copilot plugin model would cover production Aladdin APIs, the same ones Studio exposes	8,17
+p11-36	11	direction box sentence 1	[the Copilot plugin model covers] each user’s own permissions	8,17
+p11-37	11	direction box sentence 1	[the Copilot plugin model covers] tested no-advice guardrails	8,17
+p11-38	11	section 4 heading	Buyers at BlackRock’s own webinar said they want a core platform plus their own builds	-
+p11-39	11	body para 1 sentence 1	BlackRock ran a Build vs. Buy webinar for asset managers	9
+p11-40	11	body para 1 sentence 1	[BlackRock] polled the attendees	9
+p11-41	11	body para 1 sentence 2	The first poll asked where firms sit today	9
+p11-42	11	body para 1 sentence 3	37 percent said they run “mostly vendor platforms,”	9
+p11-43	11	body para 1 sentence 3	30 percent run a “hybrid,”	9
+p11-44	11	body para 1 sentence 3	18 percent are “actively reevaluating,”	9
+p11-45	11	body para 1 sentence 3	15 percent are “mostly built in house”	9
+p11-46	11	body para 1 sentence 4	The second poll asked what is driving the build-or-buy decision	9
+p11-47	11	body para 1 sentence 5	“AI and data demands” led at 42 percent	9
+p11-48	11	body para 1 sentence 5	cost and speed to market tied for second	9
+p11-49	11	body para 1 sentence 6	The third poll asked what they would stop maintaining in house	9
+p11-50	11	body para 1 sentence 7	53 percent chose compliance reporting	9

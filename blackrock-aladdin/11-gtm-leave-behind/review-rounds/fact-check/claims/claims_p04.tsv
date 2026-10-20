@@ -1,0 +1,46 @@
+p04-01	4	body para 1	Exhibit 2 follows one trade through Aladdin, step by step, as far as the 54 public specifications describe it	6,20
+p04-02	4	Exhibit 2 title	The public APIs follow a trade from order to NAV	6
+p04-03	4	Exhibit 2 row 1 Order col 'Who acts'	Step 1 Order: who acts: The portfolio manager	6
+p04-04	4	Exhibit 2 row 1 Order col 'Who acts'	An order is “a directive from a portfolio manager to the trading desk to execute a particular investment decision” (Order spec)	6
+p04-05	4	Exhibit 2 row 1 Order col 'Product or application names'	The Explore application: its “new what-if model” (Explore classroom recording)	21
+p04-06	4	Exhibit 2 row 1 Order col 'Product or application names'	Explore's new what-if model compares a changed portfolio with the original before anything is traded	21
+p04-07	4	Exhibit 2 row 1 Order col 'BlackRock API that covers it'	OrderAPI v1 (stable)	6
+p04-08	4	Exhibit 2 row 1 Order col 'BlackRock API that covers it'	Posting an order takes whatIf and runCompliance	6
+p04-09	4	Exhibit 2 row 1 Order col 'BlackRock API that covers it'	OrderAPI: Its example statuses run “Open,” “Compl Pending,” “Authorized,” “Active,” “Booked”	6
+p04-10	4	Exhibit 2 row 2 Compliance check col 'Who acts'	Compliance check: who acts: No one. The check runs automatically when the order is posted, because runCompliance is on by default	6
+p04-11	4	Exhibit 2 row 2 Compliance check col 'Who acts'	Any violation then carries an owner, a disposition and a resolution comment	6
+p04-12	4	Exhibit 2 row 2 Compliance check col 'Product or application names'	Rules “automatically monitor whether a fund adheres to a regulation, client mandate, or internal guideline” (ComplianceRule spec)	6
+p04-13	4	Exhibit 2 row 2 Compliance check col 'Product or application names'	Compliance check: no application is named	6
+p04-14	4	Exhibit 2 row 2 Compliance check col 'BlackRock API that covers it'	ComplianceRuleAPI and ViolationAPI v1 (alpha)	6
+p04-15	4	Exhibit 2 row 2 Compliance check col 'BlackRock API that covers it'	Violations are “generated at time of the compliance breach” (Violation spec)	6
+p04-16	4	Exhibit 2 row 2 Compliance check col 'BlackRock API that covers it'	A check that times out posts the order as “Compl Pending”	6
+p04-17	4	Exhibit 2 row 3 Trade col 'Who acts'	Step 3 Trade: who acts: The trading desk	6
+p04-18	4	Exhibit 2 row 3 Trade col 'Who acts'	Operations then confirms it, because “after a trade is booked in Aladdin, it needs to be confirmed with broker” (BrokerConfirmRouting spec)	6
+p04-19	4	Exhibit 2 row 3 Trade col 'Product or application names'	Schneid or Shannon of Aladdin Accounting describes the run as going “from that first order through the trade, through all the operation protocols into accounting without lifting up the pencil”	20
+p04-20	4	Exhibit 2 row 3 Trade col 'BlackRock API that covers it'	TradeAPI v2 (alpha)	6
+p04-21	4	Exhibit 2 row 3 Trade col 'BlackRock API that covers it'	A block trade carries its per-portfolio trades, plus confirmedWith and confirmedBy	6
+p04-22	4	Exhibit 2 row 3 Trade col 'BlackRock API that covers it'	BrokerConfirmRoutingAPI routes the confirm	6
+p04-23	4	Exhibit 2 row 4 Position in the IBOR col 'Who acts'	Position in the IBOR: who acts: The investment team, whose live book is the IBOR, the investment book of record	-
+p04-24	4	Exhibit 2 row 4 Position in the IBOR col 'Who acts'	Richard Newman, Studio’s general manager	16
+p04-25	4	Exhibit 2 row 4 Position in the IBOR col 'Who acts'	Richard Newman: “It does start with IBOR”	16
+p04-26	4	Exhibit 2 row 4 Position in the IBOR col 'Product or application names'	Aladdin Data Cloud, where users “can access their Investment Books of Record (IBOR), Accounting Books of Record (ABOR) holdings” (Fivetran’s blog)	22
+p04-27	4	Exhibit 2 row 4 Position in the IBOR col 'BlackRock API that covers it'	None of the 54 is a position API	6
+p04-28	4	Exhibit 2 row 4 Position in the IBOR col 'BlackRock API that covers it'	Positions appear only as fields: a positions source in PortfolioToolkitAPI	6
+p04-29	4	Exhibit 2 row 4 Position in the IBOR col 'BlackRock API that covers it'	Positions appear only as fields: a violation’s “underlying positions” (Violation spec)	6
+p04-30	4	Exhibit 2 row 5 Lot in the ABOR col 'Who acts'	Lot in the ABOR: who acts: The accounting team, which says of itself: “we are data managers more than anything else” (Schneid or Shannon)	20
+p04-31	4	Exhibit 2 row 5 Lot in the ABOR col 'Product or application names'	Aladdin Accounting, named in the portfolio-configuration specification	6
+p04-32	4	Exhibit 2 row 5 Lot in the ABOR col 'BlackRock API that covers it'	AborLotAPI v1 (alpha)	6
+p04-33	4	Exhibit 2 row 5 Lot in the ABOR col 'BlackRock API that covers it'	ABOR lots, the accounting book of record, are “retrieved from the ledger_a_summary table” (AborLot spec)	6
+p04-34	4	Exhibit 2 row 6 NAV col 'Who acts'	NAV: who acts: Accounting, whose clients are “CFOs, they’re controllers, they’re heads of performance” (Schneid or Shannon)	20
+p04-35	4	Exhibit 2 row 6 NAV col 'Product or application names'	NAV: Aladdin Accounting; each valuation carries an exception list	6
+p04-36	4	Exhibit 2 row 6 NAV col 'BlackRock API that covers it'	ValuationsAPI v1, beta	6
+p04-37	4	Exhibit 2 row 6 NAV col 'BlackRock API that covers it'	valuations “generated for various processes at the portfolio/portfolio group level” (Valuations spec)	6
+p04-38	4	Exhibit 2 note	Source: the public specifications named in each cell	6
+p04-39	4	Exhibit 2 note	Source: Newman	16
+p04-40	4	Exhibit 2 note	Source: the Explore training recording	21
+p04-41	4	Exhibit 2 note	the Aladdin Accounting episode with David Schneid and Daniel Shannon, which does not label who is speaking	20
+p04-42	4	Exhibit 2 note	Source: Fivetran	22
+p04-43	4	Exhibit 2 note	The specifications name no order screen	6
+p04-44	4	Exhibit 2 note	The specifications hold no position or event API	6
+p04-45	4	Exhibit 2 note	the specifications do not say in what sequence steps 4 to 6 happen	6
+p04-46	4	Exhibit 2 note	The labels in brackets are each specification’s stability label: alpha is the earliest, then beta, stable and sunset	6

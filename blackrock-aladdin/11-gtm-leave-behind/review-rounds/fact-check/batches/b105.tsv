@@ -1,0 +1,7 @@
+id	page	location	claim	sources
+p15-29	15	Exhibit 17 row Bloomberg col 'AI connector'	Bloomberg, AI connector: 0 (none or blocked)	-
+p15-30	15	Exhibit 17 row Bloomberg col 'Call to action'	Bloomberg, Call to action: 1 (partial or after sign-up or approval)	-
+p15-31	15	Exhibit 17 row Aladdin Studio col 'Public docs'	Aladdin Studio, Public docs: 1 (partial or after sign-up or approval)	14
+p15-32	15	Exhibit 17 row Aladdin Studio col 'API catalog'	Aladdin Studio, API catalog: 1 (partial or after sign-up or approval)	14
+p15-33	15	Exhibit 17 row Aladdin Studio col 'Trial or sandbox'	Aladdin Studio, Trial or sandbox: 0 (none or blocked)	14
+p15-34	15	Exhibit 17 row Aladdin Studio col 'First API call without a contract'	Aladdin Studio, First API call without a contract: 0 (none or blocked)	14

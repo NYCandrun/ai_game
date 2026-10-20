@@ -1,0 +1,7 @@
+id	page	location	claim	sources
+p15-53	15	Exhibit 17 row Arcesium col 'AI connector'	Arcesium, AI connector: 2 (fully public or self-serve)	57
+p15-54	15	Exhibit 17 row Arcesium col 'Call to action'	Arcesium, Call to action: 0 (none or blocked)	57
+p15-55	15	Exhibit 17 row SimCorp col 'Public docs'	SimCorp, Public docs: 0 (none or blocked)	7
+p15-56	15	Exhibit 17 row SimCorp col 'API catalog'	SimCorp, API catalog: 0 (none or blocked)	7
+p15-57	15	Exhibit 17 row SimCorp col 'Trial or sandbox'	SimCorp, Trial or sandbox: 0 (none or blocked)	7
+p15-58	15	Exhibit 17 row SimCorp col 'First API call without a contract'	SimCorp, First API call without a contract: 0 (none or blocked)	7

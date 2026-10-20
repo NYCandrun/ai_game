@@ -1,0 +1,7 @@
+id	page	location	claim	sources
+p04-09	4	Exhibit 2 row 1 Order col 'BlackRock API that covers it'	OrderAPI: Its example statuses run “Open,” “Compl Pending,” “Authorized,” “Active,” “Booked”	6
+p04-10	4	Exhibit 2 row 2 Compliance check col 'Who acts'	Compliance check: who acts: No one. The check runs automatically when the order is posted, because runCompliance is on by default	6
+p04-11	4	Exhibit 2 row 2 Compliance check col 'Who acts'	Any violation then carries an owner, a disposition and a resolution comment	6
+p04-12	4	Exhibit 2 row 2 Compliance check col 'Product or application names'	Rules “automatically monitor whether a fund adheres to a regulation, client mandate, or internal guideline” (ComplianceRule spec)	6
+p04-13	4	Exhibit 2 row 2 Compliance check col 'Product or application names'	Compliance check: no application is named	6
+p04-14	4	Exhibit 2 row 2 Compliance check col 'BlackRock API that covers it'	ComplianceRuleAPI and ViolationAPI v1 (alpha)	6

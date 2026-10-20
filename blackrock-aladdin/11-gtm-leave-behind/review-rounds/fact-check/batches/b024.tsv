@@ -1,0 +1,7 @@
+id	page	location	claim	sources
+p05-11	5	Exhibit 3 box 'Aladdin Copilot'	Aladdin Copilot a chat panel inside each app · reads what is on screen · answers through the same APIs	8
+p05-12	5	Exhibit 3 box 'Aladdin Studio'	ALADDIN STUDIO for clients who build on Aladdin	1
+p05-13	5	Exhibit 3 box 'AladdinSDK'	AladdinSDK calls the shared APIs	23
+p05-14	5	Exhibit 3 box 'Research sandboxes'	Research sandboxes: hosted places to build	-
+p05-15	5	Exhibit 3 box 'Excel tools, feeds'	Excel tools, feeds: events and files out	24
+p05-16	5	Exhibit 3 box 'Shared API layer'	Shared API layer: every app, Copilot and Studio call it · access checked on every call	-

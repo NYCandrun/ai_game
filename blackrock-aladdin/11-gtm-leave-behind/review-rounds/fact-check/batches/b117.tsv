@@ -1,0 +1,7 @@
+id	page	location	claim	sources
+p15-101	15	Exhibit 17 row FactSet col 'AI connector'	FactSet, AI connector: 2 (fully public or self-serve)	66
+p15-102	15	Exhibit 17 row FactSet col 'Call to action'	FactSet, Call to action: 0 (none or blocked)	66
+p15-103	15	Exhibit 17 row MSCI col 'Public docs'	MSCI, Public docs: 0 (none or blocked)	4
+p15-104	15	Exhibit 17 row MSCI col 'API catalog'	MSCI, API catalog: 0 (none or blocked)	4
+p15-105	15	Exhibit 17 row MSCI col 'Trial or sandbox'	MSCI, Trial or sandbox: 0 (none or blocked)	4
+p15-106	15	Exhibit 17 row MSCI col 'First API call without a contract'	MSCI, First API call without a contract: 0 (none or blocked)	4

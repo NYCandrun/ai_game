@@ -1,0 +1,7 @@
+id	page	location	claim	sources
+p11-08	11	Exhibit 12 row SimCorp col 'Receipt'	SimCorp news 7	7
+p11-09	11	Exhibit 12 row Arcesium col 'What is public'	Arcesium added AI features to Aquata	56
+p11-10	11	Exhibit 12 row Arcesium col 'What is public'	Arcesium announced an AI platform	57
+p11-11	11	Exhibit 12 row Arcesium col 'Receipt'	Arcesium press releases 56, 57	56,57
+p11-12	11	Exhibit 12 group label	Data and cloud providers [group containing FactSet, LSEG, MSCI, S&P Global, Snowflake, Databricks, Aladdin]	-
+p11-13	11	Exhibit 12 row FactSet col 'What is public'	FactSet runs an MCP server for its data	3

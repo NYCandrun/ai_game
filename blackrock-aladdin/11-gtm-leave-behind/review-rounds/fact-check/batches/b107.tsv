@@ -1,0 +1,7 @@
+id	page	location	claim	sources
+p15-41	15	Exhibit 17 row State Street col 'Trial or sandbox'	State Street, Trial or sandbox: 1 (partial or after sign-up or approval)	67
+p15-42	15	Exhibit 17 row State Street col 'First API call without a contract'	State Street, First API call without a contract: 0 (none or blocked)	67
+p15-43	15	Exhibit 17 row State Street col 'Sample code'	State Street, Sample code: 0 (none or blocked)	67
+p15-44	15	Exhibit 17 row State Street col 'Community or marketplace'	State Street, Community or marketplace: 1 (partial or after sign-up or approval)	67
+p15-45	15	Exhibit 17 row State Street col 'AI connector'	State Street, AI connector: 0 (none or blocked)	67
+p15-46	15	Exhibit 17 row State Street col 'Call to action'	State Street, Call to action: 1 (partial or after sign-up or approval)	67

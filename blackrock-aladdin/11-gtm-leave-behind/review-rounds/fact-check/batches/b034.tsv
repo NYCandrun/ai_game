@@ -1,0 +1,7 @@
+id	page	location	claim	sources
+p06-06	6	Exhibit 5 row Investment operations col 'Largest APIs by operations'	Investment operations: PrincipalInterestFactor, CounterPartySettlementInstruction, MiscellaneousCashflow, CouponReset and 11 more	6
+p06-07	6	Exhibit 5 row Analytics col 'Specs'	Analytics: 9 specs	6
+p06-08	6	Exhibit 5 row Analytics col 'Operations'	Analytics: 53 operations	6
+p06-09	6	Exhibit 5 row Analytics cols 'Alpha/Beta/Stable/Sunset'	Analytics: Alpha –, Beta –, Stable 8, Sunset 1	6
+p06-10	6	Exhibit 5 row Analytics col 'Largest APIs by operations'	Analytics: RiskRule, RiskWorkflow, RiskException, RiskConfig and 5 more	6
+p06-11	6	Exhibit 5 row Investment research col 'Specs'	Investment research: 5 specs	6

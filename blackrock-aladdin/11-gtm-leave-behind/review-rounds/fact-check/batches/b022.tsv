@@ -1,0 +1,7 @@
+id	page	location	claim	sources
+p04-45	4	Exhibit 2 note	the specifications do not say in what sequence steps 4 to 6 happen	6
+p04-46	4	Exhibit 2 note	The labels in brackets are each specification’s stability label: alpha is the earliest, then beta, stable and sunset	6
+p05-01	5	Exhibit 3 title	Apps, Copilot and Studio all call one shared API layer	8,6,23
+p05-02	5	Exhibit 3 header	THE ALADDIN PLATFORM · INSTITUTIONAL	-
+p05-03	5	Exhibit 3 column 'People'	People who use the apps: Portfolio manager, Trader, Compliance, risk, Operations, Accountant, Performance analyst	-
+p05-04	5	Exhibit 3 column 'People'	Client developers, quants (use Aladdin Studio)	1

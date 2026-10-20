@@ -1,0 +1,34 @@
+p10-01	10	direction box (cont. from p9) sentence 1	BlackRock itself says growth will come from API calls	-
+p10-02	10	direction box (cont. from p9) sentence 1	API calls, the fastest-growing measure it showed investors	-
+p10-03	10	direction box (cont. from p9) sentence 2	The data it is adding, private markets and Preqin, arrives through Data Cloud and Explore	-
+p10-04	10	direction box (cont. from p9) sentence 3	Both [Data Cloud and Explore] are Studio surfaces	-
+p10-05	10	section 3 heading	Aladdin’s AI answers inside the login	-
+p10-06	10	section 3 heading	data providers let outside AI tools reach their data	-
+p10-07	10	body para 1 sentence 1	Aladdin Copilot, the AI inside the login, is built on the same APIs Studio exposes	-
+p10-08	10	body para 1 sentence 2	It [Copilot] draws on a registry of plugins, “couple of thousands agents and tools,” built by Aladdin’s engineering teams	-
+p10-09	10	body para 1 sentence 3	The first way a team adds a tool is “to define a tool as kind of mapping one-to-one to an existing Aladdin API already out in production”	8
+p10-10	10	body para 1 sentence 4	So Copilot’s tools are Studio’s APIs	-
+p10-11	10	body para 1 sentence 5	Microsoft’s Adrian Crockett made the dependence plain on BlackRock’s podcast (attribution: Adrian Crockett is Microsoft’s; said on BlackRock’s podcast)	53
+p10-12	10	body para 1 sentence 5	Adrian Crockett: “There’s no copilot without plug-ins”	53
+p10-13	10	body para 1 sentence 6	BlackRock’s AI product head says the team is making sure “the data model itself is structured for agentic use cases” (attribution: BlackRock’s AI product head)	54
+p10-14	10	Exhibit 11 title	Copilot answers a question by choosing from thousands of tools and calling production Aladdin APIs	-
+p10-15	10	Exhibit 11 box 'One question'	One question, with the screen as context: the open app, portfolio and widgets go in with it	8
+p10-16	10	Exhibit 11 box 'One question'	The talk’s example is “what is my exposure to aerospace in Portfolio 1?”	8
+p10-17	10	Exhibit 11 box 'Thousands of registered tools'	a plugin registry holding “couple of thousands agents and tools”	8
+p10-18	10	Exhibit 11 box 'Thousands of registered tools'	from “50, 60 Aladdin engineering teams”	8
+p10-19	10	Exhibit 11 box '20 to 30 tools shortlisted'	Copilot filters the registry by environment, user group and app	8
+p10-20	10	Exhibit 11 box '20 to 30 tools shortlisted'	leaving “say, 20 to 30 tools and agents.”	8
+p10-21	10	Exhibit 11 box '20 to 30 tools shortlisted'	More than “40, 50 tools” would hurt performance	8
+p10-22	10	Exhibit 11 box 'Plan and call the API'	an orchestrator loops “over a planning and action node”	8
+p10-23	10	Exhibit 11 box 'Plan and call the API'	using GPT-4 function calling	8
+p10-24	10	Exhibit 11 box 'Plan and call the API'	Output guardrails then check the answer for hallucinations	8
+p10-25	10	Exhibit 11 box 'One answer, never investment advice'	Copilot’s standing instructions (its system prompt) are tested so it will “never provide investment advice”	8
+p10-26	10	Exhibit 11 box 'One answer, never investment advice'	the product page says the same [never provide investment advice]	17
+p10-27	10	Exhibit 11 note	Source: Rosales and Valdez at LangChain Interrupt 2025 (attribution of the talk to Rosales and Valdez, at LangChain Interrupt 2025)	8
+p10-28	10	Exhibit 11 note	the Copilot page [as source]	17
+p10-29	10	Exhibit 11 note	The tool counts are the speakers’ own approximations	8
+p10-30	10	Exhibit 11 note	the talk is a machine transcription, marked as such in the Sources section	8
+p10-31	10	body para 2 sentence 2	Six data and cloud providers that Studio buyers also use offer a connector or an MCP server	-
+p10-32	10	body para 2 sentence 2	two system-of-record rivals have announced AI features	-
+p10-33	10	body para 2 sentence 3	LSEG had 90 customers connected by April 2026	55,2
+p10-34	10	body para 2 sentence 3	according to a secondary summary of its [LSEG’s] results slides	55

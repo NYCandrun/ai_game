@@ -1,0 +1,7 @@
+id	page	location	claim	sources
+p11-14	11	Exhibit 12 row FactSet col 'What is public'	FactSet calls it [its MCP server] the first in its market	3
+p11-15	11	Exhibit 12 row FactSet col 'Receipt'	FactSet press release 3	3
+p11-16	11	Exhibit 12 row LSEG col 'What is public'	LSEG has announced a collaboration with Anthropic	2
+p11-17	11	Exhibit 12 row LSEG col 'What is public'	LSEG has announced an MCP server	2
+p11-18	11	Exhibit 12 row LSEG col 'What is public'	It [LSEG] had 90 customers connected by April 2026	55
+p11-19	11	Exhibit 12 row LSEG col 'Receipt'	LSEG press release 2; Investing.com summary 55	2,55

@@ -1,0 +1,7 @@
+id	page	location	claim	sources
+p08-02	8	body para 1	a full-text search of SEC EDGAR finds no filing that mentions Studio	33
+p08-03	8	body para 1	On BlackRock’s video, Royal London’s chief executive credits Aladdin’s Snowflake implementation (speaker: Royal London’s chief executive; venue: BlackRock’s video)	34
+p08-04	8	body para 1	Royal London’s chief executive credits Aladdin’s Snowflake implementation (content of the credit)	34
+p08-05	8	body para 1	JPMorgan Chase’s proxy statements report Aladdin payments (source type: JPMorgan Chase proxy statements)	35,36
+p08-06	8	body para 1	Aladdin payments of $4.4 million to $7.6 million a year from 2017 to 2023	35,36
+p08-07	8	body para 1	then $14.7 million in 2024	35,36

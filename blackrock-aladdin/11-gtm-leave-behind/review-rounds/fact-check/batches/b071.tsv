@@ -1,0 +1,7 @@
+id	page	location	claim	sources
+p10-24	10	Exhibit 11 box 'Plan and call the API'	Output guardrails then check the answer for hallucinations	8
+p10-25	10	Exhibit 11 box 'One answer, never investment advice'	Copilot’s standing instructions (its system prompt) are tested so it will “never provide investment advice”	8
+p10-26	10	Exhibit 11 box 'One answer, never investment advice'	the product page says the same [never provide investment advice]	17
+p10-27	10	Exhibit 11 note	Source: Rosales and Valdez at LangChain Interrupt 2025 (attribution of the talk to Rosales and Valdez, at LangChain Interrupt 2025)	8
+p10-28	10	Exhibit 11 note	the Copilot page [as source]	17
+p10-29	10	Exhibit 11 note	The tool counts are the speakers’ own approximations	8

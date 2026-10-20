@@ -1,0 +1,7 @@
+id	page	location	claim	sources
+p15-05	15	Exhibit 16 row Build col 'Public today'	The open-source SDK on GitHub and PyPI, with a detailed README	23,64
+p15-06	15	Exhibit 16 row Build col 'Public today'	the plugin builder (public today)	27
+p15-07	15	Exhibit 16 row Build col 'After qualification'	A client host and credentials, which the SDK needs for every call	23
+p15-08	15	Exhibit 16 row Get help col 'Public today'	GitHub issues and pull requests on the SDK, answered by BlackRock engineers	38,65
+p15-09	15	Exhibit 16 row Get help col 'Public today'	on the Studio page, “Book a meeting” and “Download the brochure”	14
+p15-10	15	Exhibit 16 row Get help col 'After qualification'	Notebooks, code samples, support (available after qualification)	-

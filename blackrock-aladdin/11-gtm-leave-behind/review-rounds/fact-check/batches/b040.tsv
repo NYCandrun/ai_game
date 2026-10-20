@@ -1,0 +1,7 @@
+id	page	location	claim	sources
+p06-42	6	Exhibit 5 row Accounting col 'Largest APIs by operations'	Accounting: PortfolioConfiguration, Valuations, CompositeMembership, AborLot	6
+p06-43	6	Exhibit 5 row Clients col 'Specs'	Clients: 1 spec	6
+p06-44	6	Exhibit 5 row Clients col 'Operations'	Clients: 7 operations	6
+p06-45	6	Exhibit 5 row Clients cols 'Alpha/Beta/Stable/Sunset'	Clients: Alpha –, Beta –, Stable 1, Sunset –	6
+p06-46	6	Exhibit 5 row Clients col 'Largest APIs by operations'	Clients: EnrichedCapitalFlow	6
+p06-47	6	Exhibit 5 row Total col 'Specs'	Total: 54 specs	6

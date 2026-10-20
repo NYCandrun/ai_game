@@ -1,0 +1,7 @@
+id	page	location	claim	sources
+p10-12	10	body para 1 sentence 5	Adrian Crockett: “There’s no copilot without plug-ins”	53
+p10-13	10	body para 1 sentence 6	BlackRock’s AI product head says the team is making sure “the data model itself is structured for agentic use cases” (attribution: BlackRock’s AI product head)	54
+p10-14	10	Exhibit 11 title	Copilot answers a question by choosing from thousands of tools and calling production Aladdin APIs	-
+p10-15	10	Exhibit 11 box 'One question'	One question, with the screen as context: the open app, portfolio and widgets go in with it	8
+p10-16	10	Exhibit 11 box 'One question'	The talk’s example is “what is my exposure to aerospace in Portfolio 1?”	8
+p10-17	10	Exhibit 11 box 'Thousands of registered tools'	a plugin registry holding “couple of thousands agents and tools”	8

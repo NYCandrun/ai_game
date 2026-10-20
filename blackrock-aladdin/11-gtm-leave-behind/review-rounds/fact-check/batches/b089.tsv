@@ -1,0 +1,7 @@
+id	page	location	claim	sources
+p13-17	13	body para 4	BlackRock serves hundreds of Aladdin clients	8,11
+p13-18	13	body para 4	[Aladdin clients] in 70 countries	8,11
+p13-19	13	body para 4	its technology services revenue was $2.0 billion in 2025	8,11
+p13-20	13	body para 4	It projects API calls to grow 17x by 2030	10
+p13-21	13	body para 4	How many clients use the APIs today, or run their own AI tools, is not public.	-
+p13-22	13	Exhibit 14 title	BlackRock's applications and a client's code call the same APIs under the same permissions	8,17,38,39,23,6,19,1,22
