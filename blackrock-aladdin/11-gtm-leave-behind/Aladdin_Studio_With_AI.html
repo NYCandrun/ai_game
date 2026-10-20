@@ -982,10 +982,14 @@ td.num.dim{color:#595959}
 
 <section class="chapter part" id="part-3">
 <h2><span class="pn">Part 3</span>Directions to explore</h2>
-<p>The findings point to one way of presenting Studio: the APIs, data and controls BlackRock’s own teams build on, offered to a client’s engineers as exactly that. The buyer is the client’s engineering and data team; the proof is BlackRock’s own use.</p>
-<figure class="exhibit keep" id="exhibit-14"><p class="ex-title"><span class="ex-num">Exhibit 14.</span> BlackRock’s own applications and a client’s can run on the same APIs, data and controls</p>
-<div role="img" aria-label="Diagram. On the left, BlackRock's own use: about 100 BlackRock applications and Copilot's thousands of tools. On the right, a client's use: its engineering team behind its own gateway, its own applications built with the SDK, and, hatched, its own AI tools, on which BlackRock has published nothing beyond a job posting. All of them sit on the same band, Aladdin's APIs, 54 of them public. Under the band, four controls in the public record: every call checked against the user's permissions, a second person's approval for rule changes, Copilot tested to give no investment advice, and Data Cloud as a copy of the client's Aladdin data in a Snowflake account BlackRock runs for that client.">
-<svg id="pos" viewBox="0 0 1280 468" xmlns="http://www.w3.org/2000/svg" style="display:block;width:466pt;height:auto;overflow:visible">
+<p>The findings suggest that Studio could be presented as a way for a client to read its Aladdin data anywhere and act on it through the same APIs and controls BlackRock’s own applications use. Data Cloud puts the data in the client’s Snowflake account for analysis. Anything that changes the book, such as an order or a compliance rule, goes through the APIs, where user permissions apply and orders are checked for compliance by default. This is my reading of the specifications; BlackRock has not described Studio this way<sup class="fnref"><a href="#s11">11</a>, <a href="#s13">13</a></sup>.</p>
+<p>Buyers now ask about APIs and data connectors in RFPs. SimCorp also invites clients to build on its platform. BlackRock may be able to show something SimCorp cannot: a large investment business that runs on these APIs every day<sup class="fnref"><a href="#s2">2</a>, <a href="#s3">3</a>, <a href="#s61">61</a>, <a href="#s62">62</a></sup>.</p>
+<p>BlackRock told investors that API calls would grow 17x by 2030. If that growth comes from Studio, it likely depends on analysts and portfolio managers who write code using it daily, not only on the engineers who evaluate it. Linking that figure to Studio is my inference<sup class="fnref"><a href="#s7">7</a>, <a href="#s40">40</a></sup>.</p>
+<p>Clients will expect their own AI tools to reach Aladdin, as they already reach FactSet, LSEG and Snowflake<sup class="fnref"><a href="#s55">55</a>, <a href="#s51">51</a>, <a href="#s58">58</a></sup>. Copilot shows how that can work under each user’s permissions and with guardrails<sup class="fnref"><a href="#s3">3</a>, <a href="#s10">10</a></sup>. How a client’s own tools would connect is not public<sup class="fnref"><a href="#s60">60</a></sup>.</p>
+<p>Proof that clients use Aladdin is already public: JPMorgan Chase’s payment records, pension tenders, and client engineers contributing to the SDK. A named Studio story could start with one of them<sup class="fnref"><a href="#s29">29</a>, <a href="#s32">32</a>, <a href="#s33">33</a>, <a href="#s37">37</a>, <a href="#s38">38</a>, <a href="#s39">39</a></sup>.</p>
+<figure class="exhibit keep" id="exhibit-14"><p class="ex-title"><span class="ex-num">Exhibit 14.</span> BlackRock’s applications and a client’s code call the same APIs under the same permissions</p>
+<div role="img" aria-label="Diagram. On the left, BlackRock's own use: about 100 BlackRock applications and Copilot's thousands of tools. On the right, a client's use: its engineers behind its own gateway, its applications, and, hatched, its AI tools, on which BlackRock has published nothing beyond a job posting. All sit on one band, Aladdin's APIs, which all of them call and whose Data Cloud they read. Below, two groups: controls on every call (permissions per user, a second approver, compliance on every order) and what Copilot adds for AI (input guardrails, output guardrails, LLM judges).">
+<svg id="pos" viewBox="0 0 1280 444" xmlns="http://www.w3.org/2000/svg" style="display:block;width:504pt;height:auto;overflow:visible">
 <style>
 #pos text{font-family:"Barlow",sans-serif;font-weight:400;font-size:16px;fill:#000}
 #pos .tt{font-weight:700;font-size:17px}
@@ -1000,85 +1004,96 @@ td.num.dim{color:#595959}
 #pos .cop{fill:#FEEBF0;stroke:#FC9BB3;stroke-width:1.6}
 #pos .api{fill:#F2F2F2;stroke:#000;stroke-width:1.2}
 #pos .studio{fill:#FFF5CC;stroke:#FFCE00;stroke-width:1.6}
+#pos .ai{fill:#EEF1F5;stroke:#000;stroke-width:1.2}
 </style>
 <defs>
 <marker id="pos-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="hd"/></marker>
 <pattern id="pos-hatch" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="2" height="6" style="fill:#BFBFBF"/></pattern>
 </defs>
-<rect x="10" y="8" width="600" height="182" rx="6" class="band"/>
-<text x="24" y="31" class="cap">BLACKROCK’S OWN USE · IN THE PUBLIC RECORD</text>
-<rect x="24" y="48" width="276" height="124" rx="4" class="tile"/>
-<text x="37" y="75" class="tt">About 100 BlackRock applications</text>
-<text x="37" y="97" class="s">Explore, Dashboard, Risk Radar and the rest</text>
-<text x="37" y="117" class="s">all call these APIs. Users see what their</text>
-<text x="37" y="137" class="s">permissions allow.</text>
-<rect x="318" y="48" width="276" height="124" rx="4" class="cop"/>
-<text x="331" y="75" class="tt">Copilot</text>
-<text x="331" y="97" class="s">Thousands of tools, each one an Aladdin</text>
-<text x="331" y="117" class="s">API, built by 50 to 60 BlackRock teams.</text>
-<text x="331" y="137" class="s">Answers go through the user’s permissions.</text>
-<rect x="670" y="8" width="600" height="182" rx="6" class="band"/>
-<text x="684" y="31" class="cap">A CLIENT’S USE · THE SAME APIS</text>
-<rect x="684" y="48" width="180" height="124" rx="4" class="studio"/>
-<text x="697" y="75" class="tt">Its engineers</text>
-<text x="697" y="97" class="s">Route Aladdin calls</text>
-<text x="697" y="117" class="s">through the client’s own</text>
-<text x="697" y="137" class="s">gateway.</text>
-<rect x="880" y="48" width="180" height="124" rx="4" class="studio"/>
-<text x="893" y="75" class="tt">Its applications</text>
-<text x="893" y="97" class="s">Run in the client’s own</text>
-<text x="893" y="117" class="s">environment, on the</text>
-<text x="893" y="137" class="s">client’s credentials.</text>
-<rect x="1076" y="48" width="180" height="124" rx="4" style="fill:#fff"/>
-<rect x="1076" y="48" width="180" height="124" rx="4" class="tile hatch"/>
-<text x="1089" y="75" class="tt">Its AI tools</text>
-<text x="1089" y="97" class="s">How they would connect</text>
-<text x="1089" y="117" class="s">is not published.</text>
-<text x="1089" y="137" class="s">BlackRock’s only public</text>
-<text x="1089" y="157" class="s">word is a job posting.</text>
-<path d="M162 172 V222" class="arr" marker-end="url(#pos-arrow)"/>
-<path d="M456 172 V222" class="arr" marker-end="url(#pos-arrow)"/>
-<path d="M774 172 V222" class="arr" marker-end="url(#pos-arrow)"/>
-<path d="M970 172 V222" class="arr" marker-end="url(#pos-arrow)"/>
-<path d="M1166 172 V222" class="arr" stroke-dasharray="6 5" marker-end="url(#pos-arrow)"/>
-<rect x="10" y="226" width="1260" height="64" rx="6" class="api"/>
-<text x="640" y="253" class="tt tc">Aladdin’s APIs</text>
-<text x="640" y="277" class="s tc">BlackRock’s applications, Copilot and a client’s own code call the same APIs and read the same Data Cloud, the client’s Aladdin data in a Snowflake account BlackRock runs for it.</text>
-<text x="24" y="324" class="cap">THE CONTROLS COPILOT RUNS ON, FROM BLACKROCK’S OWN ACCOUNT</text>
-<rect x="10" y="338" width="300" height="118" rx="4" class="tile"/>
-<text x="23" y="365" class="tt">Permissions per user</text>
-<text x="23" y="387" class="s">Each API has its own access scope.</text>
-<text x="23" y="407" class="s">Copilot filters its tools by environment,</text>
-<text x="23" y="427" class="s">user group and app before it plans.</text>
-<rect x="330" y="338" width="300" height="118" rx="4" class="tile"/>
-<text x="343" y="365" class="tt">Input guardrails</text>
-<text x="343" y="387" class="s">Off-topic and toxic content are caught,</text>
-<text x="343" y="407" class="s">and personal data is identified and</text>
-<text x="343" y="427" class="s">handled, before anything is planned.</text>
-<rect x="650" y="338" width="300" height="118" rx="4" class="tile"/>
-<text x="663" y="365" class="tt">Output guardrails</text>
-<text x="663" y="387" class="s">Answers are checked for hallucinations</text>
-<text x="663" y="407" class="s">and against domain rules before the</text>
-<text x="663" y="427" class="s">user sees them.</text>
-<rect x="970" y="338" width="300" height="118" rx="4" class="tile"/>
-<text x="983" y="365" class="tt">LLM judges</text>
-<text x="983" y="387" class="s">Every system prompt is tested by LLM</text>
-<text x="983" y="407" class="s">judges against synthetic and expert data,</text>
-<text x="983" y="427" class="s">in a pipeline run daily and on every change.</text>
+<rect x="10" y="8" width="600" height="164" rx="6" class="band"/>
+<text x="24" y="30" class="cap">BLACKROCK’S OWN USE · IN THE PUBLIC RECORD</text>
+<rect x="24" y="46" width="276" height="116" rx="4" class="cop"/>
+<text x="36" y="72" class="tt">About 100 BlackRock applications</text>
+<text x="36" y="94" class="s">Explore, Dashboard, Risk Radar and the rest</text>
+<text x="36" y="114" class="s">all call these APIs.</text>
+<rect x="318" y="46" width="276" height="116" rx="4" class="cop"/>
+<text x="330" y="72" class="tt">Copilot</text>
+<text x="330" y="94" class="s">Thousands of tools, each one an Aladdin</text>
+<text x="330" y="114" class="s">API, built by 50 to 60 BlackRock teams.</text>
+<rect x="670" y="8" width="600" height="164" rx="6" class="band"/>
+<text x="684" y="30" class="cap">A CLIENT’S USE · THE SAME APIS</text>
+<rect x="684" y="46" width="180" height="116" rx="4" class="studio"/>
+<text x="696" y="72" class="tt">Its engineers</text>
+<text x="696" y="94" class="s">Route Aladdin calls</text>
+<text x="696" y="114" class="s">through the client’s own</text>
+<text x="696" y="134" class="s">gateway.</text>
+<rect x="880" y="46" width="180" height="116" rx="4" class="studio"/>
+<text x="892" y="72" class="tt">Its applications</text>
+<text x="892" y="94" class="s">Run in the client’s own</text>
+<text x="892" y="114" class="s">environment, on the</text>
+<text x="892" y="134" class="s">client’s credentials.</text>
+<rect x="1076" y="46" width="180" height="116" rx="4" style="fill:#fff"/>
+<rect x="1076" y="46" width="180" height="116" rx="4" class="tile hatch"/>
+<text x="1088" y="72" class="tt">Its AI tools</text>
+<text x="1088" y="94" class="s">How they would connect</text>
+<text x="1088" y="114" class="s">is not published.</text>
+<text x="1088" y="134" class="s">BlackRock’s only public</text>
+<text x="1088" y="154" class="s">word is a job posting.</text>
+<path d="M162 162 V214" class="arr" marker-end="url(#pos-arrow)"/>
+<path d="M456 162 V214" class="arr" marker-end="url(#pos-arrow)"/>
+<path d="M774 162 V214" class="arr" marker-end="url(#pos-arrow)"/>
+<path d="M970 162 V214" class="arr" marker-end="url(#pos-arrow)"/>
+<path d="M1166 162 V214" class="arr" stroke-dasharray="6 5" marker-end="url(#pos-arrow)"/>
+<rect x="10" y="218" width="1260" height="64" rx="6" class="api"/>
+<text x="640" y="245" class="tt tc">Aladdin’s APIs</text>
+<text x="640" y="269" class="s tc">BlackRock’s applications, Copilot and a client’s own code call the same APIs and read the same Data Cloud, the client’s Aladdin data in a Snowflake account BlackRock runs for it.</text>
+<rect x="10" y="300" width="610" height="148" rx="6" class="band"/>
+<text x="24" y="318" class="cap">CONTROLS ON EVERY CALL</text>
+<rect x="24" y="336" width="184" height="108" rx="4" class="tile"/>
+<text x="36" y="362" class="tt">Permissions per user</text>
+<text x="36" y="384" class="s">Each API has its own access</text>
+<text x="36" y="404" class="s">scope. A user sees only what</text>
+<text x="36" y="424" class="s">their entitlements allow.</text>
+<rect x="214" y="336" width="184" height="108" rx="4" class="tile"/>
+<text x="226" y="362" class="tt">A second approver</text>
+<text x="226" y="384" class="s">Rule assignments and dataset</text>
+<text x="226" y="404" class="s">releases record a second</text>
+<text x="226" y="424" class="s">sign-off.</text>
+<rect x="404" y="336" width="200" height="108" rx="4" class="tile"/>
+<text x="416" y="362" class="tt">Compliance on every order</text>
+<text x="416" y="384" class="s">The order API runs compliance</text>
+<text x="416" y="404" class="s">by default and returns any</text>
+<text x="416" y="424" class="s">violations.</text>
+<rect x="660" y="300" width="610" height="148" rx="6" class="band"/>
+<text x="674" y="318" class="cap">WHAT COPILOT ADDS FOR AI · FROM BLACKROCK’S OWN ACCOUNT</text>
+<rect x="674" y="336" width="190" height="108" rx="4" class="ai"/>
+<text x="686" y="362" class="tt">Input guardrails</text>
+<text x="686" y="384" class="s">Off-topic content is caught</text>
+<text x="686" y="404" class="s">and personal data handled</text>
+<text x="686" y="424" class="s">before any plan.</text>
+<rect x="874" y="336" width="190" height="108" rx="4" class="ai"/>
+<text x="886" y="362" class="tt">Output guardrails</text>
+<text x="886" y="384" class="s">Answers are checked for</text>
+<text x="886" y="404" class="s">hallucinations and against</text>
+<text x="886" y="424" class="s">domain rules.</text>
+<rect x="1074" y="336" width="186" height="108" rx="4" class="ai"/>
+<text x="1086" y="362" class="tt">LLM judges</text>
+<text x="1086" y="384" class="s">Every system prompt is tested</text>
+<text x="1086" y="404" class="s">daily and on every change.</text>
 </svg></div>
-<div class="notes"><p><span class="lbl"></span>Solid boxes are in the public record. The hatched box is not: on a client’s AI tools BlackRock has published nothing beyond a job posting<sup class="fnref"><a href="#s60">60</a></sup>. Sources: Rosales and Valdez<sup class="fnref"><a href="#s3">3</a></sup>, the Copilot page<sup class="fnref"><a href="#s10">10</a></sup>, pull requests 52 and 53<sup class="fnref"><a href="#s32">32</a>, <a href="#s33">33</a></sup>, the SDK README<sup class="fnref"><a href="#s17">17</a></sup>, the public specifications<sup class="fnref"><a href="#s11">11</a></sup>, the Data Cloud page<sup class="fnref"><a href="#s13">13</a></sup>, Woodhead<sup class="fnref"><a href="#s1">1</a></sup> and Fivetran<sup class="fnref"><a href="#s16">16</a></sup>.</p></div></figure>
-<figure class="exhibit" id="exhibit-15" style="break-inside:auto"><p class="ex-title"><span class="ex-num">Exhibit 15.</span> Five pieces of marketing work that follow</p>
+<div class="notes"><p><span class="lbl"></span>Solid boxes are in the public record. The hatched box is not: on a client’s AI tools BlackRock has published nothing beyond a job posting<sup class="fnref"><a href="#s60">60</a></sup>. The right-hand controls show how BlackRock governs AI on these APIs today, which is the model a client’s own AI tools could follow. Sources: Rosales and Valdez<sup class="fnref"><a href="#s3">3</a></sup>, the Copilot page<sup class="fnref"><a href="#s10">10</a></sup>, pull requests 52 and 53<sup class="fnref"><a href="#s32">32</a>, <a href="#s33">33</a></sup>, the SDK README<sup class="fnref"><a href="#s17">17</a></sup>, the public specifications<sup class="fnref"><a href="#s11">11</a></sup>, the Data Cloud page<sup class="fnref"><a href="#s13">13</a></sup>, Woodhead<sup class="fnref"><a href="#s1">1</a></sup> and Fivetran<sup class="fnref"><a href="#s16">16</a></sup>.</p></div></figure>
+<figure class="exhibit" id="exhibit-15"><p class="ex-title"><span class="ex-num">Exhibit 15.</span> Five pieces of marketing work to explore, in the order I would start them</p>
 <table>
-<colgroup><col style="width:92pt"><col><col style="width:138pt"></colgroup>
-<thead><tr><th>The work</th><th>What it is</th><th>How to know it worked</th></tr></thead>
+<colgroup><col style="width:16pt"><col style="width:96pt"><col><col style="width:132pt"></colgroup>
+<thead><tr><th></th><th>The work</th><th>What it is</th><th>How to know it worked</th></tr></thead>
 <tbody>
-<tr><td class="first">An answer for RFPs</td><td>A ready answer to “what APIs do you have, and can we connect to them”: the APIs by area with their package labels, how permissions work, how a client routes calls through its own gateway, and the Snowflake and Databricks answer</td><td>Time to answer the API section of an RFP; RFPs that score Studio; how many of those are won</td></tr>
-<tr><td class="first">A public explanation of how Copilot’s tools work</td><td>A page on which APIs Copilot’s tools call, whose permissions apply, what stops it giving advice, and how a client’s AI tools would connect</td><td>The page is published and dated; prospects stop asking about connectors in deal reviews</td></tr>
-<tr style="break-before:auto"><td class="first">One client willing to be named</td><td>One client story, cleared for the Studio page and the RFP answer: a public pension fund already on record, or a client whose engineers have contributed to the SDK</td><td>Named clients sales can cite; deals in which one is cited</td></tr>
-<tr><td class="first">A worked example: compliance reporting</td><td>A page and a demo of compliance reporting on Data Cloud and the compliance APIs, the task webinar attendees would stop running in house first</td><td>Meetings that open on this example; pipeline tagged to it</td></tr>
-<tr><td class="first">A worked example: private-markets data</td><td>A page and a demo of a custom application using Preqin and eFront data from a client’s Data Cloud</td><td>Clients with Data Cloud who take the private-markets data; use in client meetings</td></tr>
+<tr><td class="first">1</td><td class="first">An answer for RFPs</td><td>A ready answer to “what APIs do you have, and can we connect to them”: the APIs by area with their package labels, how permissions work, how a client routes calls through its own gateway, and the Snowflake and Databricks answer.</td><td>Time to answer the API section of an RFP; RFPs that score Studio; how many of those are won</td></tr>
+<tr><td class="first">2</td><td class="first">How a client’s AI tools reach Aladdin</td><td>A page on how a client’s own AI tools could call Aladdin’s APIs under the same permissions and guardrails Copilot uses.</td><td>The page is published; RFPs and deal reviews get a clear answer on AI connections; API calls from client AI tools</td></tr>
+<tr><td class="first">3</td><td class="first">One client willing to be named</td><td>One client story, cleared for the Studio page and the RFP answer: a public pension fund already on record, or a client whose engineers have contributed to the SDK.</td><td>Named clients sales can cite; deals in which one is cited</td></tr>
+<tr><td class="first">4</td><td class="first">A worked example: a rebalancing tool</td><td>A page and a demo of a rebalancing tool a client builds on the order API. It tests trades with what-if, runs compliance on every order, and returns any violations before anything trades. Sewdass names rebalancing tools as what clients build on Aladdin’s APIs<sup class="fnref"><a href="#s2">2</a></sup>.</td><td>Meetings that open on this example; pipeline tagged to it; API calls from clients who build it</td></tr>
+<tr><td class="first">5</td><td class="first">A worked example: private-markets data</td><td>A page and a demo of a custom application using Preqin and eFront data from a client’s Data Cloud.</td><td>Clients with Data Cloud who take the private-markets data; API calls on private-markets data; use in client meetings</td></tr>
 </tbody></table>
-<div class="notes"><p><span class="lbl"></span>Source: my proposals, built on Exhibit 14 and the findings in Part 2.</p></div></figure>
+</figure>
 </section>
 
 <section class="chapter part runon" id="part-4">

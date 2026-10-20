@@ -1,0 +1,147 @@
+<!doctype html>
+<html><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Aladdin Studio, Part 3</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+<style>
+@page { size: Letter; margin: 0.7in 0.75in 0.75in 0.75in; }
+* { box-sizing: border-box; }
+body { font-family: "Inter", sans-serif; color: #1a1a1a; font-size: 9.4pt; line-height: 1.38; margin: 0; }
+.page { position: relative; height: 9.55in; page-break-after: always; }
+.page:last-child { page-break-after: auto; }
+.bar { width: 0.75in; height: 6px; background: #f2c200; margin-bottom: 0.22in; }
+.kicker { font-size: 9pt; color: #555; margin: 0 0 2px; }
+h1 { font-size: 21pt; font-weight: 800; letter-spacing: -0.3px; margin: 0 0 9px; }
+p { margin: 0 0 7px; }
+sup { white-space: nowrap; font-size: 6pt; color: #555; line-height: 0; }
+.ex-title { font-weight: 700; font-size: 9.9pt; border-bottom: 1px solid #1a1a1a; padding-bottom: 5px; margin: 12px 0 9px; }
+.note { font-size: 7.4pt; color: #444; margin-top: 8px; display: flex; gap: 6px; }
+.note .sq { width: 7px; height: 7px; background: #1a1a1a; flex: none; margin-top: 3px; }
+.footer { position: absolute; bottom: 0; left: 0; right: 0; display: flex; justify-content: space-between; font-size: 7pt; color: #777; }
+
+/* Exhibit 14 diagram */
+.grp-label { font-size: 6.3pt; font-weight: 700; letter-spacing: 0.6px; text-transform: uppercase; margin-bottom: 4px; }
+.row { display: flex; gap: 10px; }
+.grp { border: 1px dashed #bbb; padding: 6px; flex: 1; }
+.boxes { display: flex; gap: 6px; }
+.box { border: 1px solid #1a1a1a; padding: 5px 6px; flex: 1; font-size: 6.9pt; line-height: 1.32; }
+.box b { display: block; font-size: 7.3pt; margin-bottom: 2px; }
+.br { background: #fbe9ee; }
+.cl { background: #fff4c7; }
+.ctl { background: #fff; }
+.ai { background: #eef1f5; }
+.hatch { background: repeating-linear-gradient(45deg, #fff 0 4px, #e9e9e9 4px 5px); border-style: dashed; }
+.arrows { display: flex; height: 16px; }
+.arrows span { flex: 1; position: relative; }
+.arrows span::after { content: ""; position: absolute; left: 50%; top: 0; bottom: 3px; border-left: 1px solid #1a1a1a; }
+.arrows span::before { content: ""; position: absolute; left: calc(50% - 3px); bottom: 0; border: 3px solid transparent; border-top: 4px solid #1a1a1a; border-bottom: 0; }
+.arrows span.dash::after { border-left-style: dashed; }
+.api { border: 1px solid #1a1a1a; background: #f4f4f4; text-align: center; padding: 5px 8px; font-size: 6.9pt; }
+.api b { font-size: 7.6pt; display: block; }
+.spacer { height: 8px; }
+
+/* Exhibit 15 table */
+table { width: 100%; border-collapse: collapse; font-size: 8.6pt; line-height: 1.38; }
+th { text-align: left; font-weight: 700; padding: 5px 8px 5px 0; border-bottom: 1px solid #1a1a1a; }
+td { vertical-align: top; padding: 8px 8px 8px 0; border-bottom: 1px solid #d6d6d6; }
+td.n { width: 22px; font-weight: 700; }
+td.w { width: 132px; font-weight: 700; }
+td.m { width: 175px; }
+@media screen {
+  html { background: #e9e9e9; }
+  body { padding: 24px 0; }
+  .page { width: 8.5in; height: 11in; margin: 0 auto 24px; background: #fff; padding: 0.7in 0.75in 0.75in; box-shadow: 0 1px 4px rgba(0,0,0,0.15); }
+  .footer { left: 0.75in; right: 0.75in; bottom: 0.75in; }
+}
+@media print { .page { height: 9.55in; } }
+</style></head>
+<body>
+
+<div class="page">
+  <div class="bar"></div>
+  <p class="kicker">Part 3</p>
+  <h1>Directions to explore</h1>
+
+  <p>The findings suggest that Studio could be presented as a way for a client to read its Aladdin data anywhere and act on it through the same APIs and controls BlackRock’s own applications use. Data Cloud puts the data in the client’s Snowflake account for analysis. Anything that changes the book, such as an order or a compliance rule, goes through the APIs, where user permissions apply and orders are checked for compliance by default. This is my reading of the specifications; BlackRock has not described Studio this way.<sup>11, 13</sup></p>
+  <p>Buyers now ask about APIs and data connectors in RFPs. SimCorp also invites clients to build on its platform. BlackRock may be able to show something SimCorp cannot: a large investment business that runs on these APIs every day.<sup>2, 3, 61, 62</sup></p>
+  <p>BlackRock told investors that API calls would grow 17x by 2030. If that growth comes from Studio, it likely depends on analysts and portfolio managers who write code using it daily, not only on the engineers who evaluate it. Linking that figure to Studio is my inference.<sup>7, 40</sup></p>
+  <p>Clients will expect their own AI tools to reach Aladdin, as they already reach FactSet, LSEG and Snowflake.<sup>55, 51, 58</sup> Copilot shows how that can work under each user’s permissions and with guardrails.<sup>3, 10</sup> How a client’s own tools would connect is not public.<sup>60</sup></p>
+  <p>Proof that clients use Aladdin is already public: JPMorgan Chase’s payment records, pension tenders, and client engineers contributing to the SDK. A named Studio story could start with one of them.<sup>29, 32, 33, 37, 38, 39</sup></p>
+
+  <div class="ex-title">Exhibit 14. BlackRock’s applications and a client’s code call the same APIs under the same permissions</div>
+
+  <div class="row">
+    <div class="grp" style="flex:1">
+      <div class="grp-label">BlackRock’s own use · in the public record</div>
+      <div class="boxes">
+        <div class="box br"><b>About 100 BlackRock applications</b>Explore, Dashboard, Risk Radar and the rest all call these APIs.</div>
+        <div class="box br"><b>Copilot</b>Thousands of tools, each one an Aladdin API, built by 50 to 60 BlackRock teams.</div>
+      </div>
+    </div>
+    <div class="grp" style="flex:1.45">
+      <div class="grp-label">A client’s use · the same APIs</div>
+      <div class="boxes">
+        <div class="box cl"><b>Its engineers</b>Route Aladdin calls through the client’s own gateway.</div>
+        <div class="box cl"><b>Its applications</b>Run in the client’s own environment, on the client’s credentials.</div>
+        <div class="box hatch"><b>Its AI tools</b>How they would connect is not published. BlackRock’s only public word is a job posting.</div>
+      </div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="arrows" style="flex:1"><span></span><span></span></div>
+    <div class="arrows" style="flex:1.45"><span></span><span></span><span class="dash"></span></div>
+  </div>
+  <div class="api"><b>Aladdin’s APIs</b>BlackRock’s applications, Copilot and a client’s own code call the same APIs and read the same Data Cloud, the client’s Aladdin data in a Snowflake account BlackRock runs for it.</div>
+  <div class="spacer"></div>
+
+  <div class="row">
+    <div class="grp" style="flex:1">
+      <div class="grp-label">Controls on every call</div>
+      <div class="boxes">
+        <div class="box ctl"><b>Permissions per user</b>Each API has its own access scope. A user sees only what their entitlements allow.</div>
+        <div class="box ctl"><b>A second approver</b>Rule assignments and dataset releases record a second sign-off.</div>
+        <div class="box ctl"><b>Compliance on every order</b>The order API runs compliance by default and returns any violations.</div>
+      </div>
+    </div>
+    <div class="grp" style="flex:1">
+      <div class="grp-label">What Copilot adds for AI · from BlackRock’s own account</div>
+      <div class="boxes">
+        <div class="box ai"><b>Input guardrails</b>Off-topic content is caught and personal data handled before any plan.</div>
+        <div class="box ai"><b>Output guardrails</b>Answers are checked for hallucinations and against domain rules.</div>
+        <div class="box ai"><b>LLM judges</b>Every system prompt is tested daily and on every change.</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="note"><div class="sq"></div><div>Solid boxes are in the public record. The hatched box is not: on a client’s AI tools BlackRock has published nothing beyond a job posting.<sup>60</sup> The right-hand controls show how BlackRock governs AI on these APIs today, which is the model a client’s own AI tools could follow. Sources: Rosales and Valdez,<sup>3</sup> the Copilot page,<sup>10</sup> pull requests 52 and 53,<sup>32, 33</sup> the SDK README,<sup>17</sup> the public specifications,<sup>11</sup> the Data Cloud page,<sup>13</sup> Woodhead<sup>1</sup> and Fivetran.<sup>16</sup></div></div>
+
+  <div class="footer"><span>Independent analysis from public sources. Not produced, reviewed or endorsed by BlackRock.</span><span>13</span></div>
+</div>
+
+<div class="page">
+  <div class="ex-title" style="margin-top:0">Exhibit 15. Five pieces of marketing work to explore, in the order I would start them</div>
+  <table>
+    <tr><th></th><th>The work</th><th>What it is</th><th>How to know it worked</th></tr>
+    <tr><td class="n">1</td><td class="w">An answer for RFPs</td>
+      <td>A ready answer to “what APIs do you have, and can we connect to them”: the APIs by area with their package labels, how permissions work, how a client routes calls through its own gateway, and the Snowflake and Databricks answer.</td>
+      <td class="m">Time to answer the API section of an RFP; RFPs that score Studio; how many of those are won</td></tr>
+    <tr><td class="n">2</td><td class="w">How a client’s AI tools reach Aladdin</td>
+      <td>A page on how a client’s own AI tools could call Aladdin’s APIs under the same permissions and guardrails Copilot uses.</td>
+      <td class="m">The page is published; RFPs and deal reviews get a clear answer on AI connections; API calls from client AI tools</td></tr>
+    <tr><td class="n">3</td><td class="w">One client willing to be named</td>
+      <td>One client story, cleared for the Studio page and the RFP answer: a public pension fund already on record, or a client whose engineers have contributed to the SDK.</td>
+      <td class="m">Named clients sales can cite; deals in which one is cited</td></tr>
+    <tr><td class="n">4</td><td class="w">A worked example: a rebalancing tool</td>
+      <td>A page and a demo of a rebalancing tool a client builds on the order API. It tests trades with what-if, runs compliance on every order, and returns any violations before anything trades. Sewdass names rebalancing tools as what clients build on Aladdin’s APIs.<sup>2</sup></td>
+      <td class="m">Meetings that open on this example; pipeline tagged to it; API calls from clients who build it</td></tr>
+    <tr><td class="n">5</td><td class="w">A worked example: private-markets data</td>
+      <td>A page and a demo of a custom application using Preqin and eFront data from a client’s Data Cloud.</td>
+      <td class="m">Clients with Data Cloud who take the private-markets data; API calls on private-markets data; use in client meetings</td></tr>
+  </table>
+  
+
+  <div class="footer"><span>Independent analysis from public sources. Not produced, reviewed or endorsed by BlackRock.</span><span>14</span></div>
+</div>
+
+</body></html>
