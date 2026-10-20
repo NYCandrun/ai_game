@@ -21,7 +21,7 @@ Interview preparation research on BlackRock's Aladdin platform and Aladdin Studi
 
 ## Final deliverables (PDF)
 
-- `11-gtm-leave-behind/Aladdin_Studio_With_AI.pdf` (20 pages, the GTM leave-behind)
+- `11-gtm-leave-behind/Aladdin_Studio_With_AI.pdf` (19 pages, the GTM leave-behind)
 
 - `10-compendium/Aladdin_Studio_BlackRock_Compendium.pdf` (35 pages, the single reference document)
 

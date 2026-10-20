@@ -1,0 +1,126 @@
+[1] p2: but the story never names it.
+
+[2] p2: Public proof that clients use Aladdin never names Studio either. Part 3 sets out six directions to close both gaps.
+
+[3] p2: 
+
+[4] p2: Public documents prove named clients use Aladdin (none names Studio): JPMorgan Chase’s proxy statements, Janus Henderson’s code commits and 10-K, Royal London’s CEO on video, and three pension tenders.
+
+[5] p2: The other half is the whole portfolio, public and private; new private-markets data arrives via Data Cloud and Explore, Aladdin’s 6 6 portfolio app . Aladdin Copilot, BlackRock’s AI assistant, works only inside the login, via plugins on Aladdin’s 7 7 APIs, while data providers’ connectors let outside AI tools pull their data .
+
+[6] p2: the Sources section marks which recordings. Figures may be out of date, and I
+
+[7] p2: For recordings it also gives the minute and second where each quoted passage begins.
+
+[8] p3: Aladdin is sold the way enterprise platforms are sold: the conversation comes first, and documentation, a sandbox and credentials come from the solutions team once a prospect is qualified. Part 1 covers what a prospect can see before that conversation.
+
+[9] p3: It has three parts.
+
+[10] p4: The three parts are APIs and events, the Aladdin Data Cloud on Snowflake, and developer tools.
+
+[11] p4: except positions and events
+
+[12] p6: Only 23 of the 54 specifications are stable, and the specifications say more than their count. Every one is tagged 17 17 a label BlackRock does not explain in public . Access.Internal,
+
+[13] p6: The SDK is the one piece that installs before any conversation. It has had 14 releases since May 2024, all alpha or beta. 28, 28, 17 17 The core is at 2.0.0b10 as of July 2026 and the add-ons at 2.0.0b3 . Each release pins an old Snowflake library, so none installs on Python 3.13.
+
+[14] p6: also
+
+[15] p6: (MCP, the Model Context Protocol, is the standard AI assistants use to pull data from other systems.)
+
+[16] p6: Run modes, credential storage and API-gateway settings are the needs of a client’s engineering team.
+
+[17] p8: from 0 to 2.
+
+[18] p9: Nothing can be run.
+
+[19] p10: every bid that
+
+[20] p10: scored, 2017 to 2025
+
+[21] p10: Weights or process
+
+[22] p10: Weights: technical 85, price 6, price sensitivity 6, contract terms 3
+
+[23] p10: Weights: quality 70, cost 20, social value 10
+
+[24] p10: Run as a full and open competition; four bids were received each time
+
+[25] p11: Aladdin adoption is growing among clients whose records are public. Between 2023 and 2025, a bank’s proxy statement, an asset manager’s 10-K and three public pension buyers’ notices all record Aladdin.
+
+[26] p11: The other half of the growth story is the whole portfolio, public and private markets together.
+
+[27] p11: Hosting has moved to the public cloud as well. Microsoft wrote in December 2024 that all BlackRock’s technology platform clients and services are 25 hosted in the Azure cloud, with new rollouts taking “weeks instead of quarters” . In December 2025 BlackRock and AWS announced a second option, with general availability for US-hosted Aladdin Enterprise clients expected in the 14 14 second half of 2026 .
+
+[28] p12: and from the whole portfolio.
+
+[29] p12: So Studio carries the growth story, whether or not BlackRock says its name.
+
+[30] p12: is “now available to all Aladdin clients” and “will not give investment advice or respond to questions 16 outside Aladdin platform boundaries” . Two of its engineers, Brennan Rosales, AI Engineering Lead, and Pedro Vicente Valdez, Principal AI Engineer, describe how it works. Copilot
+
+[31] p12: Outside the login, data providers have chosen the opposite design: they let the buyer’s own AI tools reach their data. 61 MCP is the common standard AI assistants use to pull data from other systems .
+
+[32] p13: Aladdin has a job advert
+
+[33] p13: Exhibit 15. For and against offering AI access inside the Aladdin login or outside it Inside the login (Copilot plugins on production APIs) Outside the login (a public connector or MCP server) For Governance sits in one place. Users keep their Aladdin Prospects can find it. Developers adopt it on their own. It permissions (“permission-dependent access”). Guardrails signals an ecosystem. It answers the connector question against advice are tested in the system prompt. It carries in RFPs (Finding 4). It matches what FactSet, LSEG and 7, enterprise trust. BlackRock controls the rollout, team by MSCI now offer, which is what buyers compare against 16, 9 63, 40, 8 team Against Prospects cannot see it, and neither can the AI tools buyers There is more to secure and more to support. Buyers already run. Rivals set the terms of comparison. The only would read a partial catalog as the whole catalog. Outside public description of the plugin model is one conference AI tools drawing on a platform that will not give advice 9 16 talk would look awkward to a regulator
+
+[34] p13: 16 9 Source: my reading of the Copilot page , the LangChain talk , the provider announcements in Exhibit 14 and the Build vs. Buy webinar
+
+[35] p13: in BlackRock’s own words, answers the connector question buyers now put in RFPs (Finding 4) better than an MCP server with a partial catalog would. It also lets BlackRock, not FactSet and LSEG, set the terms of comparison. I would hold any outside connector for now. The inside model already
+
+[36] p13: An outside connector should wait until those are answered for outside callers. Exhibit 15 is the evidence. This is the Copilot direction in Part 3.
+
+[37] p14: The host read out a slide saying 8 that 60 to 70 percent of technology cost sits in “maintenance of current systems” . Clark Schafer of Alpha FMC, the 8 panelist, said a transformation runs “roughly 12 to 18 months” .
+
+[38] p14: The webinar did not state attendee counts. Poll 2, which is not charted, asked what is driving the decision: “AI and data demands” led at 42 percent, and cost and speed to market tied for second.
+
+[39] p14: “That word monolith is definitely being challenged in the market,” she said.
+
+[40] p14: The APIs, events and Data Cloud that Sewdass describes are the Studio pieces listed in Exhibit 4. It is not yet a finished answer, because the public catalog in Part 1 is mostly alpha and the SDK is beta. The directions in Part 3 put Studio into the RFP, where the buyer is asking.
+
+[41] p15: What would change my view Each finding rests on public facts, so a public fact could overturn it. I would revise: Finding 1, if BlackRock published a named Studio client story, or an SEC filing mentioned Studio. Finding 2, if a BlackRock earnings call or investor deck named Studio. Finding 2, if a slide attributed the API-call growth to specific products. Finding 3, if a public Aladdin MCP server or connector appeared on BlackRock’s pages or GitHub. Finding 4, if a published attendee count showed the Build vs. Buy polls were small.
+
+[42] p15: Part 1 and the four findings point to six likely initial directions. They are not a plan. Exhibit 18 lists what I would need from inside BlackRock before sizing any of them. Each direction uses only what is already public, or already true inside BlackRock. Product owns what is built and when; marketing owns positioning, stories and sales material; compliance checks the final version.
+
+[43] p15: Ask each for one sentence about Studio, or one thing they built on it. A pension fund’s story still serves an insurer, so accept proof from a firm unlike the prospect
+
+[44] p15: with an owner and a measure for each
+
+[45] p15: with the client business for introductions
+
+[46] p15: Have product and compliance review it. Use it in every deck and page
+
+[47] p15: Studio’s name beside Finding 2 Agree with investor relations and product on one Product, with Studio named beside one measure of API measure of API use, starting from the API-call investor the measure in the 1 1 use projection already shown to investors. Then put relations. next investor and Studio’s name beside that measure in investor and Marketing client decks client materials writes the story
+
+[48] p15: Rests on
+
+[49] p15: Finding 1
+
+[50] p15: Part 1
+
+[51] p16: in BlackRock’s words,
+
+[52] p16: Publish the plugin-model and governance parts now.
+
+[53] p16: Compliance reviews it
+
+[54] p16: Share it before the first meeting, or put it on the Studio page
+
+[55] p16: first
+
+[56] p16: prospects who arrive already holding the list
+
+[57] p16: Finding 4
+
+[58] p16: Rests on
+
+[59] p16: Finding 3
+
+[60] p16: Part 1
+
+[61] p16: Schafer says
+
+[62] p16: The solutions team delivers it once a prospect is qualified
+
+[63] p16: Source: my proposals, built on Part 1 and Findings 1 to 4. Receipts in the table point to the public facts each direction rests on. What I would need from inside BlackRock Five questions need internal data that no public source holds. The answers would confirm or correct the findings before anyone puts a number on a direction. They are also where any error in my reading would show first. Exhibit 18. Five questions only internal data can answer Question What the answer would decide How many clients have active API credentials or a Data Cloud instance, The baseline for every measure in Exhibit 17 and how has that number moved since 2024? Which clients would agree to be named, and what usually stops them? How soon the named proof program can start What does the tag on every public specification What the public API catalog summary may say Access.Internal mean? Does it limit what can be described without a login? How will clients connect their own AI tools to Aladdin? Is the Forward When the Copilot plugin description can be Deploy Engineer work that path? published in full Where does adoption stall most: awareness, the first API call, or getting a Where marketing spends first: content, sales build into production? enablement or client success 17 17 65 65 Source: my questions. Question 3 refers to the tag on the public specifications . . Question Question 4 4 refers refers to to the the job job posting posting that that names names MCP MCP . .
+
