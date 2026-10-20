@@ -662,150 +662,89 @@ td.num.dim{color:#595959}
 <tr style="break-before:auto"><td class="first"><span class="stepcell"><span class="step">5</span><span>Lot in the ABOR</span></span></td><td>The accounting team. Daniel Shannon, BlackRock’s head of outsourced platform services, says <a href="https://www.blackrock.com/aladdin/discover/expertise/big-little-questions">“we are data managers more than anything else”</a><sup class="fnref"><a href="#s26">26</a></sup></td><td>Aladdin Accounting, named in the portfolio-configuration&nbsp;specification<sup class="fnref"><a href="#s6">6</a></sup></td><td><code>AborLotAPI</code> v1 (alpha). ABOR lots, the accounting book of record, are <a href="https://pypi.org/project/asdk_plugin_accounting/">“retrieved from the ledger_a_summary table”</a> (AborLot&nbsp;spec)<sup class="fnref"><a href="#s6">6</a></sup></td></tr>
 <tr><td class="first"><span class="stepcell"><span class="step">6</span><span>NAV</span></span></td><td>Accounting, whose clients are <a href="https://www.blackrock.com/aladdin/discover/expertise/big-little-questions">“CFOs, they’re controllers, they’re heads of performance”</a> (Schneid)<sup class="fnref"><a href="#s26">26</a></sup></td><td>Aladdin Accounting; each valuation carries an exception list<sup class="fnref"><a href="#s6">6</a></sup></td><td><code>ValuationsAPI</code> v1, beta: valuations <a href="https://pypi.org/project/asdk_plugin_accounting/">“generated for various processes at the portfolio/portfolio group level”</a> (Valuations spec)<sup class="fnref"><a href="#s6">6</a></sup></td></tr>
 </tbody></table>
-<div class="notes"><p><span class="lbl"></span>Source: the public specifications named in each cell<sup class="fnref"><a href="#s6">6</a></sup>; Newman<sup class="fnref"><a href="#s22">22</a></sup>; the Explore training recording<sup class="fnref"><a href="#s27">27</a></sup>; the Aladdin Accounting episode with David Schneid and Daniel Shannon<sup class="fnref"><a href="#s26">26</a></sup>; Fivetran<sup class="fnref"><a href="#s28">28</a></sup>. The specifications hold no position or event API. They do not say in what sequence steps 4 to 6 happen. The labels in brackets are each specification’s stability label: alpha is the earliest, then beta, stable and sunset; Exhibit 5 counts them.</p></div></figure><figure class="exhibit keep" id="exhibit-3"><p class="ex-title"><span class="ex-num">Exhibit 3.</span> Apps, Copilot and Studio share the same Aladdin services and data</p>
-<div role="img" aria-label="Platform map of institutional Aladdin. People use about 100 apps such as Explore, Dashboard and Risk Radar, with Aladdin Copilot as a chat panel inside each app. Apps, Copilot and Aladdin Studio share the same Aladdin services and data. A layer of shared services and APIs reaches the 11 public API domains. The risk specifications name Aladdin Analytics as their risk engine. The domains read and write shared records: orders and trades, positions, accounting, portfolios and securities. Aladdin Studio holds the AladdinSDK, research sandboxes, Excel tools and feeds, and Aladdin Data Cloud, fed by Aladdin data and analytics. Outside, brokers and custodians exchange orders and settlements, and data vendors feed prices in. Hosting is Azure today, with an AWS option announced for the second half of 2026.">
-<svg id="pmap" viewBox="0 18 1280 680" xmlns="http://www.w3.org/2000/svg" style="display:block;width:504pt;height:auto;overflow:visible">
+<div class="notes"><p><span class="lbl"></span>Source: the public specifications named in each cell<sup class="fnref"><a href="#s6">6</a></sup>; Newman<sup class="fnref"><a href="#s22">22</a></sup>; the Explore training recording<sup class="fnref"><a href="#s27">27</a></sup>; the Aladdin Accounting episode with David Schneid and Daniel Shannon<sup class="fnref"><a href="#s26">26</a></sup>; Fivetran<sup class="fnref"><a href="#s28">28</a></sup>. The specifications hold no position or event API. They do not say in what sequence steps 4 to 6 happen. The labels in brackets are each specification’s stability label: alpha is the earliest, then beta, stable and sunset; Exhibit 5 counts them.</p></div></figure><figure class="exhibit keep" id="exhibit-3"><p class="ex-title"><span class="ex-num">Exhibit 3.</span> Where Studio sits in Aladdin</p>
 <style>
-#pmap text{font-family:"Barlow",sans-serif;font-weight:400;font-size:16px;fill:#000}
-#pmap .tt{font-weight:700;font-size:17px}
-#pmap .s{font-family:"Barlow Condensed",sans-serif;font-weight:300;font-size:16px}
-#pmap .cap{font-family:"Barlow Condensed",sans-serif;font-weight:700;font-size:14px;letter-spacing:.08em}
-#pmap .domn{font-family:"Barlow Condensed",sans-serif;font-weight:700;font-size:18px}
-#pmap .tc{text-anchor:middle}
-#pmap .ic{fill:none;stroke:#000;stroke-width:1.5}
-#pmap .ln{stroke:#000;stroke-width:1.2;fill:none}
-#pmap .arr{stroke:#000;stroke-width:1.5;fill:none}
-#pmap .hd{fill:#000}
-#pmap .env{fill:#fff;stroke:#000;stroke-width:1.6}
-#pmap .band{fill:#fff;stroke:#D6D5DD;stroke-width:1.2}
-#pmap .tile{fill:#fff;stroke:#000;stroke-width:1.4}
-#pmap .tile.hatch{fill:url(#pm-hatch)}
-#pmap .cop{fill:#FEEBF0;stroke:#FC9BB3;stroke-width:1.6}
-#pmap .api{fill:#F2F2F2;stroke:#000;stroke-width:1.2}
-#pmap .eng{fill:#F2F2F2;stroke:#000;stroke-width:1.2}
-#pmap .studio{fill:#FFF5CC;stroke:#FFCE00;stroke-width:1.6}
-#pmap .dom{fill:#fff;stroke:#000;stroke-width:1.3}
-#pmap .cyl{fill:#fff;stroke:#000;stroke-width:1.4}
+#stackD{display:grid;grid-template-columns:60pt 1fr 116pt;column-gap:6pt;row-gap:4pt;font-size:9pt;line-height:10.8pt;align-items:stretch}
+#stackD .lb{grid-column:1;font-weight:700;font-size:9pt;line-height:10.8pt;align-self:center}
+#stackD .row{grid-column:2;display:grid;gap:4pt}
+#stackD .c4{grid-template-columns:repeat(4,1fr)}
+#stackD .c2{grid-template-columns:1fr 1fr}
+#stackD .t{border:.75pt solid #000;background:#fff;padding:2.5pt 5pt;text-align:center;display:flex;flex-direction:column;justify-content:center}
+#stackD .t b{font-weight:700}
+#stackD .t span{font-family:var(--font-cond);font-weight:300;font-size:9pt;line-height:10.4pt}
+#stackD .t.cop{background:var(--tint-pink);border-color:var(--pink)}
+#stackD .t.hatch{background:repeating-linear-gradient(135deg,#fff 0 3pt,#D6D5DD 3pt 4pt);border-style:dashed}
+#stackD .studio{grid-column:2;border:1.5pt solid var(--yellow);background:var(--tint-yellow);padding:4pt 8pt;text-align:center}
+#stackD .studio b{font-weight:700}
+#stackD .core{grid-column:2;background:#000;color:#fff;padding:4pt 8pt;text-align:center}
+#stackD .core b{display:block;font-weight:700}
+#stackD .core span{display:block;font-family:var(--font-cond);font-weight:300;font-size:9pt;line-height:10.4pt;color:#fff}
+#stackD .out{grid-column:2;border:.75pt dashed #000;padding:3pt 8pt;text-align:center}
+#stackD .side{grid-column:3;grid-row:2 / 6;background:var(--box);padding:5pt 7pt}
+#stackD .side .cap{font-family:var(--font-cond);font-weight:700;font-size:8pt;line-height:9.6pt;letter-spacing:.06em;text-transform:uppercase;margin:0 0 4pt}
+#stackD .side p{margin:0 0 3pt}
+#stackD .side p b{display:block}
+#stackD .side p span{font-family:var(--font-cond);font-weight:300}
 </style>
-<defs>
-<marker id="pm-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="hd"/></marker>
-<pattern id="pm-hatch" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="2" height="6" style="fill:#BFBFBF"/></pattern>
-<symbol id="pm-person" viewBox="0 0 20 20"><circle cx="10" cy="6" r="3.6" class="ic"/><path d="M3 18 C3 12.5 17 12.5 17 18" class="ic"/></symbol>
-</defs>
-
-<!-- the platform -->
-<rect x="165" y="20" width="945" height="676" rx="8" class="env"/>
-<text x="180" y="41" class="cap">THE ALADDIN PLATFORM · INSTITUTIONAL</text>
-
-<!-- people -->
-<text x="10" y="40" class="cap">PEOPLE</text>
-<use href="#pm-person" x="8" y="52" width="22" height="22"/><text x="34" y="69">Portfolio manager</text>
-<use href="#pm-person" x="8" y="84" width="22" height="22"/><text x="34" y="101">Trader</text>
-<use href="#pm-person" x="8" y="116" width="22" height="22"/><text x="34" y="133">Compliance, risk</text>
-<use href="#pm-person" x="8" y="148" width="22" height="22"/><text x="34" y="165">Operations</text>
-<use href="#pm-person" x="8" y="180" width="22" height="22"/><text x="34" y="197">Accountant</text>
-<use href="#pm-person" x="8" y="212" width="22" height="22"/><text x="34" y="223">Performance</text><text x="34" y="240">analyst</text>
-<path d="M160 56 V 236" class="ln"/>
-<path d="M160 102 H 377" class="arr" marker-end="url(#pm-arrow)"/>
-<text x="268" y="94" class="s tc">use the apps</text>
-
-<use href="#pm-person" x="8" y="262" width="22" height="22"/><text x="34" y="274">Client developers,</text><text x="34" y="291">data analysts</text>
-<path d="M160 276 H 178" class="arr" marker-end="url(#pm-arrow)"/>
-
-<rect x="8" y="318" width="146" height="48" rx="4" class="tile"/><text x="18" y="338" class="tt">Client systems</text><text x="18" y="356" class="s">the client’s own tools</text>
-
-<!-- apps -->
-<rect x="380" y="50" width="715" height="140" rx="6" class="band"/>
-<text x="392" y="68" class="cap">APPS · ABOUT 100 FRONT-END APPLICATIONS</text>
-<rect x="392" y="78" width="164" height="48" rx="4" class="tile"/><text x="474" y="98" class="tt tc">Explore</text><text x="474" y="116" class="s tc">analyse portfolios, test trades</text>
-<rect x="568" y="78" width="164" height="48" rx="4" class="tile"/><text x="650" y="98" class="tt tc">Dashboard</text><text x="650" y="116" class="s tc">monitor orders and events</text>
-<rect x="744" y="78" width="164" height="48" rx="4" class="tile"/><text x="826" y="98" class="tt tc">Risk Radar</text><text x="826" y="116" class="s tc">work through risk breaches</text>
-<rect x="920" y="78" width="164" height="48" rx="4" class="tile"/><text x="1002" y="98" class="tc">about 95 more</text><text x="1002" y="116" class="s tc">cash, FX, collateral, data</text>
-<rect x="392" y="136" width="692" height="42" rx="5" class="cop"/>
-<text x="406" y="163"><tspan class="tt">Aladdin Copilot</tspan><tspan dx="10" class="s">a chat panel inside each app · reads what is on screen · answers by calling Aladdin APIs</tspan></text>
-<path d="M650 190 V 202" class="arr" marker-end="url(#pm-arrow)"/>
-
-<!-- api -->
-<rect x="380" y="204" width="715" height="38" rx="6" class="api"/>
-<text x="392" y="229"><tspan class="tt">Shared services and APIs</tspan><tspan dx="10" class="s">used by apps, Copilot and Studio · public calls need credentials</tspan></text>
-<path d="M475 242 V 256" class="arr" marker-end="url(#pm-arrow)"/>
-<path d="M649 242 V 256" class="arr" marker-end="url(#pm-arrow)"/>
-<path d="M823 242 V 256" class="arr" marker-end="url(#pm-arrow)"/>
-<path d="M997 242 V 256" class="arr" marker-end="url(#pm-arrow)"/>
-
-<!-- domains: the 11 public API domains -->
-<rect x="380" y="258" width="715" height="232" rx="6" class="band"/>
-<text x="392" y="276" class="cap">DOMAIN SERVICES · THE 11 PUBLIC API DOMAINS</text>
-<rect x="392" y="290" width="166" height="44" rx="4" class="dom"/><text x="400" y="309" class="domn">investment-research</text><text x="400" y="327" class="s">notes, coverage, watchlists</text>
-<rect x="566" y="290" width="166" height="44" rx="4" class="dom"/><text x="574" y="309" class="domn">portfolio</text><text x="574" y="327" class="s">setup, groups, restrictions</text>
-<rect x="740" y="290" width="166" height="44" rx="4" class="dom"/><text x="748" y="309" class="domn">portfolio-management</text><text x="748" y="327" class="s">cash ladder, strategy, data</text>
-<rect x="914" y="290" width="166" height="44" rx="4" class="dom"/><text x="922" y="309" class="domn">investment-operations</text><text x="922" y="327" class="s">settlement, corp. actions</text>
-<rect x="392" y="342" width="166" height="44" rx="4" class="dom"/><text x="400" y="361" class="domn">trading</text><text x="400" y="379" class="s">orders, trades</text>
-<rect x="566" y="342" width="166" height="44" rx="4" class="dom"/><text x="574" y="361" class="domn">compliance</text><text x="574" y="379" class="s">rules, levels, violations</text>
-<rect x="740" y="342" width="166" height="44" rx="4" class="dom"/><text x="748" y="361" class="domn">analytics</text><text x="748" y="379" class="s">risk limits, climate, ESG</text>
-<rect x="914" y="342" width="166" height="44" rx="4" class="dom"/><text x="922" y="361" class="domn">accounting</text><text x="922" y="379" class="s">lots, valuations, NAV</text>
-<rect x="392" y="394" width="166" height="44" rx="4" class="dom"/><text x="400" y="413" class="domn">data</text><text x="400" y="431" class="s">security master</text>
-<rect x="566" y="394" width="166" height="44" rx="4" class="dom"/><text x="574" y="413" class="domn">platform</text><text x="574" y="431" class="s">users, permissions, datasets</text>
-<rect x="740" y="394" width="166" height="44" rx="4" class="dom"/><text x="748" y="413" class="domn">clients</text><text x="748" y="431" class="s">fund flows in and out</text>
-<rect x="392" y="446" width="688" height="36" rx="5" class="eng"/><text x="406" y="470"><tspan class="tt">Aladdin Analytics</tspan><tspan dx="10" class="s">the risk engine · turns positions and market data into risk numbers</tspan></text>
-<path d="M469 490 V 506" class="arr" marker-end="url(#pm-arrow)"/><path d="M481 506 V 490" class="arr" marker-end="url(#pm-arrow)"/>
-<path d="M643 490 V 506" class="arr" marker-end="url(#pm-arrow)"/><path d="M655 506 V 490" class="arr" marker-end="url(#pm-arrow)"/>
-<path d="M817 490 V 506" class="arr" marker-end="url(#pm-arrow)"/><path d="M829 506 V 490" class="arr" marker-end="url(#pm-arrow)"/>
-<path d="M991 490 V 506" class="arr" marker-end="url(#pm-arrow)"/><path d="M1003 506 V 490" class="arr" marker-end="url(#pm-arrow)"/>
-
-<!-- shared data -->
-<rect x="380" y="508" width="715" height="120" rx="6" class="band"/>
-<text x="392" y="526" class="cap">SHARED DATA · READ AND WRITTEN BY THE DOMAINS</text>
-<g>
-<ellipse cx="454" cy="546" rx="58" ry="8" class="cyl"/><path d="M396 546 v40 a58 8 0 0 0 116 0 v-40" class="cyl"/><text x="454" y="575" class="tt tc">Orders, trades</text>
-<ellipse cx="596" cy="546" rx="58" ry="8" class="cyl"/><path d="M538 546 v40 a58 8 0 0 0 116 0 v-40" class="cyl"/><text x="596" y="570" class="tt tc">Positions</text><text x="596" y="587" class="s tc">IBOR, the live book</text>
-<ellipse cx="738" cy="546" rx="58" ry="8" class="cyl"/><path d="M680 546 v40 a58 8 0 0 0 116 0 v-40" class="cyl"/><text x="738" y="570" class="tt tc">Accounting</text><text x="738" y="587" class="s tc">ABOR, NAV</text>
-<ellipse cx="880" cy="546" rx="58" ry="8" class="cyl"/><path d="M822 546 v40 a58 8 0 0 0 116 0 v-40" class="cyl"/><text x="880" y="575" class="tt tc">Portfolios</text>
-<ellipse cx="1022" cy="546" rx="58" ry="8" class="cyl"/><path d="M964 546 v40 a58 8 0 0 0 116 0 v-40" class="cyl"/><text x="1022" y="575" class="tt tc">Securities</text>
-</g>
-
-<!-- hosting -->
-<rect x="380" y="640" width="715" height="42" rx="6" class="band"/>
-<text x="392" y="666" class="cap">HOSTING</text>
-<rect x="470" y="647" width="110" height="28" rx="4" class="tile"/><text x="525" y="667" class="tc">Azure today</text>
-<rect x="592" y="647" width="160" height="28" rx="4" style="fill:#fff"/><rect x="592" y="647" width="160" height="28" rx="4" class="tile hatch"/><text x="672" y="667" class="tc">AWS option, H2 2026</text>
-
-<!-- studio -->
-<rect x="180" y="150" width="184" height="478" rx="6" class="studio"/>
-<text x="192" y="170" class="cap">ALADDIN STUDIO</text><text x="192" y="188" class="s">for clients who build on Aladdin</text>
-<rect x="190" y="204" width="168" height="38" rx="4" class="tile"/><text x="200" y="221" class="tt">AladdinSDK</text><text x="200" y="236" class="s">calls the shared APIs</text>
-<path d="M358 223 H 378" class="arr" marker-end="url(#pm-arrow)"/>
-<rect x="190" y="254" width="168" height="38" rx="4" class="tile"/><text x="198" y="271" class="tt">Research sandboxes</text><text x="198" y="286" class="s">hosted places to build</text>
-<rect x="190" y="320" width="168" height="44" rx="4" class="tile"/><text x="200" y="338" class="tt">Excel tools, feeds</text><text x="200" y="356" class="s">events, files in and out</text>
-<path d="M190 342 H 156" class="arr" marker-start="url(#pm-arrow)" marker-end="url(#pm-arrow)"/>
-<text x="272" y="514" class="s tc">fed by Aladdin data</text><text x="272" y="530" class="s tc">and analytics</text>
-<ellipse cx="272" cy="546" rx="80" ry="8" class="cyl"/><path d="M192 546 v42 a80 8 0 0 0 160 0 v-42" class="cyl"/>
-<text x="272" y="570" class="tt tc">Aladdin Data Cloud</text><text x="272" y="587" class="s tc">Snowflake, this client’s own</text>
-<path d="M380 566 H 354" class="arr" marker-end="url(#pm-arrow)"/>
-
-<!-- outside -->
-<text x="1140" y="290" class="cap">OUTSIDE ALADDIN</text>
-<rect x="1140" y="300" width="136" height="44" rx="4" class="tile"/><text x="1150" y="319" class="tt">Brokers</text><text x="1150" y="336" class="s">orders, confirms</text>
-<path d="M1080 312 H 1138" class="arr" marker-start="url(#pm-arrow)" marker-end="url(#pm-arrow)"/>
-<rect x="1140" y="352" width="136" height="44" rx="4" class="tile"/><text x="1150" y="371" class="tt">Custodians</text><text x="1150" y="388" class="s">settle, reconcile</text>
-<path d="M1080 324 L 1138 368" class="arr" marker-start="url(#pm-arrow)" marker-end="url(#pm-arrow)"/>
-<rect x="1140" y="546" width="136" height="44" rx="4" class="tile"/><text x="1150" y="565" class="tt">Data vendors</text><text x="1150" y="582" class="s">prices, ESG data</text>
-<path d="M1138 568 H 1097" class="arr" marker-end="url(#pm-arrow)"/>
-</svg>
+<div id="stackD" role="img" aria-label="A layered stack in six rows. Who builds: client engineers, code-curious portfolio managers, data analysts and Excel users building reports. BlackRock’s own applications: about 100, such as Explore, Dashboard and Risk Radar, with Aladdin Copilot inside them; each Copilot tool matches an Aladdin API already in production. Aladdin Studio: the developer and data layer, whose parts Exhibit 4 shows. Aladdin’s shared services and data: portfolio management, trading, risk, compliance, operations and accounting, reached through the 11 public API domains. Hosting: Microsoft Azure today, and an AWS option that is announced, not live. Outside inputs: the client’s own and third-party data, loaded into Data Cloud or through the Data eXchange, and vendor data such as prices and ESG research. A side column lists the controls built into the APIs: access set per API, compliance by default on orders, and a second approver for dataset releases.">
+<div class="lb">Who builds</div>
+<div class="row c4"><div class="t">Client engineers</div><div class="t">Code-curious portfolio managers</div><div class="t">Data analysts</div><div class="t">Excel users building reports</div></div>
+<div class="lb">BlackRock’s applications</div>
+<div class="row c2"><div class="t"><b>About 100 applications</b><span>such as Explore, Dashboard and Risk Radar</span></div><div class="t cop"><b>Aladdin Copilot, inside them</b><span>each tool matches an Aladdin API already in production</span></div></div>
+<div class="lb">Aladdin Studio</div>
+<div class="studio"><b>Aladdin Studio:</b> the developer and data layer; its parts are in Exhibit 4</div>
+<div class="lb">Shared services and data</div>
+<div class="core"><b>Portfolio management, trading, risk, compliance, operations, accounting</b><span>reached through the 11 public API domains</span></div>
+<div class="lb">Hosting</div>
+<div class="row c2"><div class="t">Microsoft Azure today</div><div class="t hatch">AWS option, announced</div></div>
+<div class="lb">Outside inputs</div>
+<div class="out">The client’s own and third-party data, loaded into Data Cloud or through the Data eXchange, and vendor data such as prices and ESG research</div>
+<div class="side"><p class="cap">Controls built into the APIs</p>
+<p><b>Access set per API</b><span>Each API has its own access scope. A user sees only what their entitlements allow.</span></p>
+<p><b>Compliance by default</b><span>The order API runs compliance by default and returns any violations.</span></p>
+<p style="margin:0"><b>A second approver</b><span>Dataset releases need a second check.</span></p></div>
 </div>
-<div class="notes"><p><span class="lead">For illustrative purposes only.</span> The 11 domains are the packages of BlackRock’s public SDK, named as in its specifications. Other app names come from those specifications, so their screens are not drawn. <span class="lbl"></span>Source: <a href="https://www.youtube.com/watch?v=oyqeCHFM5U4&amp;t=155s">Rosales and Vicente Valdez at 2:35</a>, for the apps and Copilot<sup class="fnref"><a href="#s9">9</a></sup>; <a href="https://www.youtube.com/watch?v=Me_H_-E6lSg&amp;t=289s">Woodhead at 4:49</a>, for Studio, events and the Data Cloud<sup class="fnref"><a href="#s1">1</a></sup>; the public specifications and SDK<sup class="fnref"><a href="#s6">6</a>, <a href="#s29">29</a></sup>; a training recording, for Explore<sup class="fnref"><a href="#s27">27</a></sup>; BlackRock’s Studio, APIs, ATX, ADX, Data Cloud and Aladdin Risk pages<sup class="fnref"><a href="#s14">14</a>, <a href="#s20">20</a>, <a href="#s30">30</a>, <a href="#s31">31</a>, <a href="#s32">32</a>, <a href="#s33">33</a></sup>; the Data Cloud launch release<sup class="fnref"><a href="#s34">34</a></sup>; hosting<sup class="fnref"><a href="#s21">21</a>, <a href="#s35">35</a></sup>; data vendors, ICE and Sustainalytics<sup class="fnref"><a href="#s36">36</a>, <a href="#s37">37</a></sup>. Solid outline = shown in sources; hatched = announced, not live.</p></div></figure><figure class="exhibit" id="exhibit-4"><p class="ex-title"><span class="ex-num">Exhibit 4.</span> Studio, grouped here into six pieces</p>
-<table>
-<colgroup><col style="width:110pt"><col></colgroup>
-<thead><tr><th>Piece</th><th>What it is, in plain words</th></tr></thead>
-<tbody>
-<tr><td class="first">APIs (Aladdin Graph)</td><td>Ways for a program to read and write Aladdin data. Aladdin Graph<sup class="fnref"><a href="#s29">29</a>, <a href="#s38">38</a></sup> is the whole API layer, not one API. Every public specification’s id starts <code>agraph.&lt;domain&gt;</code><sup class="fnref"><a href="#s6">6</a></sup>.</td></tr>
-<tr><td class="first">Event-driven workflows</td><td>Aladdin tells a program when something happens<sup class="fnref"><a href="#s31">31</a>, <a href="#s39">39</a></sup>. Woodhead names “APIs events” as one part<sup class="fnref"><a href="#s1">1</a></sup>; Diwakar Goel, Global Head of Data, Aladdin, wants <a href="https://www.blackrock.com/aladdin/discover/expertise/webinars/data-as-a-strategic-assets-for-pensions">“every single transaction ... via an event, via an API”</a><sup class="fnref"><a href="#s40">40</a></sup>.</td></tr>
-<tr><td class="first">Aladdin Data Cloud</td><td>A managed data store on Snowflake, with Fivetran moving the data<sup class="fnref"><a href="#s14">14</a>, <a href="#s28">28</a></sup>. Goel puts its latency at <a href="https://www.blackrock.com/aladdin/discover/expertise/webinars/data-as-a-strategic-assets-for-pensions">“within 15 minutes”</a><sup class="fnref"><a href="#s40">40</a></sup>.</td></tr>
-<tr><td class="first">Aladdin Compute</td><td>A hosted analytics platform with ready-to-use Python environments<sup class="fnref"><a href="#s41">41</a></sup>. The SDK has a run mode for <a href="https://github.com/blackrock/aladdinsdk">“Aladdin Studio Compute sessions”</a><sup class="fnref"><a href="#s29">29</a></sup>.</td></tr>
-<tr><td class="first">Aladdin SDK</td><td>An <a href="https://github.com/blackrock/aladdinsdk">open-source Python library</a> that handles login, retries, rate limits, pagination and long-running operations<sup class="fnref"><a href="#s29">29</a></sup>. Eleven add-on packages, one per API domain, are generated from the specifications by BlackRock’s <a href="https://github.com/blackrock/aladdinsdk-plugin-builder">plugin builder</a><sup class="fnref"><a href="#s42">42</a></sup>.</td></tr>
-<tr><td class="first">Developer Portal and Data Dictionary</td><td>The API catalog, framework guides, field dictionary, notebooks and code samples the <a href="https://www.blackrock.com/aladdin/platforms/products/apis">APIs page</a> describes<sup class="fnref"><a href="#s30">30</a></sup>. A BlackRock job posting names the “Aladdin Studio Developer Portal”<sup class="fnref"><a href="#s39">39</a></sup>.</td></tr>
-</tbody></table>
-<div class="notes"><p><span class="lbl"></span>Source: BlackRock Studio and APIs pages<sup class="fnref"><a href="#s14">14</a>, <a href="#s30">30</a></sup>; the 54 public specifications and SDK README<sup class="fnref"><a href="#s6">6</a>, <a href="#s29">29</a></sup>; Woodhead<sup class="fnref"><a href="#s1">1</a></sup>, Goel<sup class="fnref"><a href="#s40">40</a></sup> and Fivetran<sup class="fnref"><a href="#s28">28</a></sup>. BlackRock gives no count. Its APIs page also links Aladdin Data eXchange and Aladdin Tools for Excel, which Exhibit 3 shows<sup class="fnref"><a href="#s30">30</a></sup>. No event specification is public<sup class="fnref"><a href="#s6">6</a></sup>. The APIs page describes the catalog, guides, notebooks and samples but does not link them<sup class="fnref"><a href="#s30">30</a></sup>. The specifications link the guides to a portal behind a client login<sup class="fnref"><a href="#s6">6</a>, <a href="#s43">43</a></sup>.</p></div></figure><figure class="exhibit" id="exhibit-5"><p class="ex-title"><span class="ex-num">Exhibit 5.</span> Two domains hold 127 of the 301 public API operations</p>
+<div class="notes"><p><span class="lead">For illustrative purposes only.</span> Every box is named in the sources below; the AWS option is announced, not live. The 11 domains are the packages of BlackRock’s public SDK; the specifications also name Dashboard and Risk Radar. Controls as in Exhibit 14. <span class="lbl"></span>Source: <a href="https://www.youtube.com/watch?v=oyqeCHFM5U4&amp;t=155s">Rosales and Vicente Valdez at 2:35</a>, for the apps and Copilot<sup class="fnref"><a href="#s9">9</a></sup>; a training recording, for Explore<sup class="fnref"><a href="#s27">27</a></sup>; <a href="https://www.youtube.com/watch?v=Me_H_-E6lSg&amp;t=289s">Woodhead at 4:49</a>, for Studio<sup class="fnref"><a href="#s1">1</a></sup>; the public specifications and SDK<sup class="fnref"><a href="#s6">6</a>, <a href="#s29">29</a></sup>; BlackRock’s Studio, APIs, ATX, ADX, Data Cloud and Aladdin Risk pages<sup class="fnref"><a href="#s14">14</a>, <a href="#s20">20</a>, <a href="#s30">30</a>, <a href="#s31">31</a>, <a href="#s32">32</a>, <a href="#s33">33</a></sup>; the Data Cloud launch release<sup class="fnref"><a href="#s34">34</a></sup>; hosting, Azure and the AWS release<sup class="fnref"><a href="#s21">21</a>, <a href="#s35">35</a></sup>; data vendors, ICE and Sustainalytics<sup class="fnref"><a href="#s36">36</a>, <a href="#s37">37</a></sup>.</p></div></figure><figure class="exhibit keep" id="exhibit-4"><p class="ex-title"><span class="ex-num">Exhibit 4.</span> What Studio is made of</p>
+<style>
+#partsD{font-size:9pt;line-height:10.8pt}
+#partsD .gh{font-family:var(--font-cond);font-weight:700;font-size:8pt;line-height:9.6pt;letter-spacing:.06em;text-transform:uppercase;margin:0 0 3pt}
+#partsD .grid{display:grid;gap:4pt}
+#partsD .g3{grid-template-columns:repeat(3,1fr)}
+#partsD .g4{grid-template-columns:repeat(4,1fr)}
+#partsD .t{border:.75pt solid #000;background:#fff;padding:3pt 5pt}
+#partsD .t b{display:block;font-weight:700}
+#partsD .t span{display:block;font-family:var(--font-cond);font-weight:300;font-size:9pt;line-height:10.4pt}
+#partsD .offer{border:1.5pt solid var(--yellow);background:var(--tint-yellow);padding:4pt}
+#partsD .also{margin:3pt 0 0;font-family:var(--font-cond);font-weight:300;font-size:9pt;line-height:10.4pt;text-align:center}
+#partsD .ws{margin-top:6pt;background:var(--box);padding:4pt 6pt}
+#partsD .ws .grid{grid-template-columns:1fr 1fr;column-gap:12pt;row-gap:0}
+#partsD .ws .grid div{padding:2pt 0;border-top:.5pt solid #BFBFBF}
+#partsD .ws .grid b{font-weight:700}
+#partsD .ws .grid span{font-family:var(--font-cond);font-weight:300}
+#partsD code{font-size:8.5pt}
+</style>
+<div id="partsD" role="img" aria-label="Two groups. What Studio offers, in six pieces: APIs (Aladdin Graph), whose public specification ids all start agraph.domain; event-driven workflows; Aladdin Data Cloud on Snowflake with Fivetran moving the data; Aladdin Compute, hosted Python environments; the Aladdin SDK, whose 11 plugin packages are generated from the specifications by BlackRock’s plugin builder; and the Developer Portal and Data Dictionary behind a client login. The APIs page also links Aladdin Tools for Excel and the Aladdin Data eXchange. Inside a client’s Studio workspace, as the public SDK files name them: Projects, Studio Compute, S3 storage integration, API tokens and API applications, Studio notifications, Studio UI and the ADC Admin Center.">
+<p class="gh">What Studio offers</p>
+<div class="offer"><div class="grid g3">
+<div class="t"><b>APIs (Aladdin Graph)</b><span>Read and write Aladdin data. Every public specification’s id starts <code>agraph.&lt;domain&gt;</code></span></div>
+<div class="t"><b>Event-driven workflows</b><span>Aladdin tells a program when something happens. No event specification is public</span></div>
+<div class="t"><b>Aladdin Data Cloud</b><span>A managed data store on Snowflake, with Fivetran moving the data</span></div>
+<div class="t"><b>Aladdin Compute</b><span>Hosted, ready-to-use Python environments</span></div>
+<div class="t"><b>Aladdin SDK</b><span>Open-source Python library for login, retries and rate limits. BlackRock’s plugin builder generates its 11 plugin packages from the specifications</span></div>
+<div class="t"><b>Developer Portal and Data Dictionary</b><span>Catalog, guides, field dictionary, notebooks and samples, behind a client login</span></div>
+</div><p class="also">The APIs page also links Aladdin Tools for Excel and the Aladdin Data eXchange</p></div>
+<div class="ws"><p class="gh">Inside a client’s Studio workspace, as the public SDK files name it</p>
+<div class="grid">
+<div><b>Projects</b> <span>Personal or shared. OAuth applications and storage are set up under one</span></div>
+<div><b>Studio Compute</b> <span>Sessions where SDK code can run, as an alternative to a developer’s local machine</span></div>
+<div><b>S3 storage integration</b> <span>File storage set up in a Studio Project, its bucket assigned to a user or project</span></div>
+<div><b>API tokens and API applications</b> <span>Sign-in details for programs: a token, or an OAuth client ID and secret</span></div>
+<div><b>Studio notifications</b> <span>Email or push alerts to a user, a Project or a Space</span></div>
+<div><b>Studio UI</b> <span>Studio’s screens, where tokens, applications and storage are set up</span></div>
+<div><b>ADC Admin Center</b> <span>Studio’s screen for managing Data Cloud datasets</span></div>
+</div></div>
+</div>
+<div class="notes"><p><span class="lbl"></span>Source: BlackRock Studio and APIs pages<sup class="fnref"><a href="#s14">14</a>, <a href="#s30">30</a></sup>; the 54 public specifications<sup class="fnref"><a href="#s6">6</a></sup>, for the ids, the portal link and the Admin Center; the SDK README<sup class="fnref"><a href="#s29">29</a></sup>, for the SDK and the lower group; Naik and Kalish, for Aladdin Graph<sup class="fnref"><a href="#s38">38</a></sup>; the plugin builder<sup class="fnref"><a href="#s39">39</a></sup>; Woodhead<sup class="fnref"><a href="#s1">1</a></sup>, Goel<sup class="fnref"><a href="#s40">40</a></sup>, the Aladdin Risk page<sup class="fnref"><a href="#s31">31</a></sup> and a BlackRock job posting<sup class="fnref"><a href="#s41">41</a></sup>, for events and the portal; Fivetran<sup class="fnref"><a href="#s28">28</a></sup>; Snowflake’s partner page, for Compute<sup class="fnref"><a href="#s42">42</a></sup>; the developer portal<sup class="fnref"><a href="#s43">43</a></sup>. BlackRock gives no count of pieces. The APIs page describes the catalog, guides, notebooks and samples but does not link them; the specifications link the guides to a portal behind a client login.</p></div></figure><figure class="exhibit" id="exhibit-5"><p class="ex-title"><span class="ex-num">Exhibit 5.</span> Two domains hold 127 of the 301 public API operations</p>
 <table>
 <colgroup><col style="width:80pt"><col style="width:32pt"><col style="width:84pt"><col style="width:28pt"><col style="width:28pt"><col style="width:30pt"><col style="width:32pt"><col></colgroup>
 <thead><tr><th>Domain</th><th class="num">Specs</th><th>Operations</th><th class="num">Alpha</th><th class="num">Beta</th><th class="num">Stable</th><th class="num">Sunset</th><th>Largest APIs by operations</th></tr></thead>
@@ -1108,10 +1047,10 @@ td.num.dim{color:#595959}
 <thead><tr><th>Step</th><th>Public today</th><th>After qualification</th><th>Receipt</th></tr></thead>
 <tbody>
 <tr><td class="first">Hear</td><td>Podcasts, webinar replays, client videos and conference talks on BlackRock’s site and partner channels</td><td>The invitation-only Aladdin Client Forum and the Solutions Engineering team</td><td>the <a href="https://www.blackrock.com/aladdin/discover/expertise/never-done-podcast-by-aladdin">Never Done podcast</a><sup class="fnref"><a href="#s83">83</a></sup>, the <a href="https://www.blackrock.com/aladdin/discover/expertise/big-little-questions">Big Little Questions video series</a><sup class="fnref"><a href="#s84">84</a></sup>, <a href="https://www.blackrock.com/aladdin/discover/client-story/client-testimonial-royal-london-asset-management">client story video</a><sup class="fnref"><a href="#s48">48</a></sup>, <a href="https://www.blackrock.com/aladdin/discover/expertise/webinars/build-vs-buy-how-asset-managers-are-rethinking-key-decisions">webinar replay</a><sup class="fnref"><a href="#s10">10</a></sup>, <a href="https://www.youtube.com/watch?v=Me_H_-E6lSg">Woodhead</a><sup class="fnref"><a href="#s1">1</a></sup>, <a href="https://www.youtube.com/watch?v=oyqeCHFM5U4">Rosales and Valdez</a><sup class="fnref"><a href="#s9">9</a></sup>, <a href="https://www.blackrock.com/aladdin/discover/expertise/events/aladdin-client-forum-2026">Client Forum page</a><sup class="fnref"><a href="#s85">85</a></sup>, <a href="https://careers.blackrock.com/job/singapore/aladdin-client-business-solutions-engineering-vice-president/45831/98412767088">Solutions Engineering job posting</a><sup class="fnref"><a href="#s86">86</a></sup></td></tr>
-<tr><td class="first">Read</td><td>The Studio page (“Create &amp; automate,” “Make Aladdin your own,” “Align internally &amp; externally”) and the APIs page, which promises “dozens of Aladdin APIs”</td><td>The Developer Portal and the API framework guides</td><td><a href="https://www.blackrock.com/aladdin/platforms/products/aladdin-studio">Studio page</a><sup class="fnref"><a href="#s14">14</a></sup>, <a href="https://www.blackrock.com/aladdin/platforms/products/apis">APIs page</a><sup class="fnref"><a href="#s30">30</a></sup>, <a href="https://www.blackrock.com/apps/aladdin-developer-portal/">developer portal</a><sup class="fnref"><a href="#s6">6</a>, <a href="#s43">43</a></sup>, <a href="https://builtinbristol.uk/job/technical-writer-aladdin-product-vice-president/7444888">job posting</a><sup class="fnref"><a href="#s39">39</a></sup></td></tr>
+<tr><td class="first">Read</td><td>The Studio page (“Create &amp; automate,” “Make Aladdin your own,” “Align internally &amp; externally”) and the APIs page, which promises “dozens of Aladdin APIs”</td><td>The Developer Portal and the API framework guides</td><td><a href="https://www.blackrock.com/aladdin/platforms/products/aladdin-studio">Studio page</a><sup class="fnref"><a href="#s14">14</a></sup>, <a href="https://www.blackrock.com/aladdin/platforms/products/apis">APIs page</a><sup class="fnref"><a href="#s30">30</a></sup>, <a href="https://www.blackrock.com/apps/aladdin-developer-portal/">developer portal</a><sup class="fnref"><a href="#s6">6</a>, <a href="#s43">43</a></sup>, <a href="https://builtinbristol.uk/job/technical-writer-aladdin-product-vice-president/7444888">job posting</a><sup class="fnref"><a href="#s41">41</a></sup></td></tr>
 <tr><td class="first">See the catalog</td><td>The 54 specifications, but only by unpacking the 11 PyPI add-on packages</td><td>The API catalog and the Data Dictionary</td><td><a href="https://pypi.org/search/?q=asdk_plugin">asdk_plugin packages</a><sup class="fnref"><a href="#s6">6</a></sup>, <a href="https://www.blackrock.com/aladdin/platforms/products/apis">APIs page</a><sup class="fnref"><a href="#s30">30</a></sup>, <a href="https://www.blackrock.com/apps/aladdin-developer-portal/">developer portal</a><sup class="fnref"><a href="#s43">43</a></sup></td></tr>
 <tr><td class="first">Try</td><td>Nothing to run: no public sandbox or trial is offered</td><td>Studio Compute; an API token or an OAuth application “registered via Studio UI”; and the client’s own Aladdin host to call</td><td><a href="https://github.com/blackrock/aladdinsdk">SDK README</a><sup class="fnref"><a href="#s29">29</a></sup></td></tr>
-<tr><td class="first">Build</td><td>The open-source SDK on GitHub and PyPI, with a detailed README, sample code and demo notebooks; the plugin builder</td><td>A client host and credentials, which the SDK needs for every call</td><td><a href="https://github.com/blackrock/aladdinsdk">SDK README</a><sup class="fnref"><a href="#s29">29</a></sup>, <a href="https://pypi.org/project/aladdinsdk/#history">PyPI history</a><sup class="fnref"><a href="#s87">87</a></sup>, <a href="https://github.com/blackrock/aladdinsdk-plugin-builder">plugin&nbsp;builder</a><sup class="fnref"><a href="#s42">42</a></sup></td></tr>
+<tr><td class="first">Build</td><td>The open-source SDK on GitHub and PyPI, with a detailed README, sample code and demo notebooks; the plugin builder</td><td>A client host and credentials, which the SDK needs for every call</td><td><a href="https://github.com/blackrock/aladdinsdk">SDK README</a><sup class="fnref"><a href="#s29">29</a></sup>, <a href="https://pypi.org/project/aladdinsdk/#history">PyPI history</a><sup class="fnref"><a href="#s87">87</a></sup>, <a href="https://github.com/blackrock/aladdinsdk-plugin-builder">plugin&nbsp;builder</a><sup class="fnref"><a href="#s39">39</a></sup></td></tr>
 <tr><td class="first">Get help</td><td>Pull requests on the SDK, reviewed and merged by a BlackRock engineer; on the Studio page, “Book a meeting” and “Download the brochure”</td><td>Jupyter notebooks and code samples from the API guides</td><td><a href="https://github.com/blackrock/aladdinsdk/pull/52">Pull request 52</a><sup class="fnref"><a href="#s52">52</a></sup>, <a href="https://github.com/blackrock/aladdinsdk/pull/57">pull request 57</a><sup class="fnref"><a href="#s88">88</a></sup>, <a href="https://www.blackrock.com/aladdin/platforms/products/aladdin-studio">Studio page</a><sup class="fnref"><a href="#s14">14</a></sup>, <a href="https://www.blackrock.com/aladdin/platforms/products/apis">APIs page</a><sup class="fnref"><a href="#s30">30</a></sup></td></tr>
 </tbody></table>
 <div class="notes"><p><span class="lbl"></span>Source: the pages and repositories in the Receipt column, read with no account or login, October 2026. The After qualification column is what those sources say a client receives. I could not test it, because the developer portal opens only after a client login<sup class="fnref"><a href="#s6">6</a>, <a href="#s43">43</a></sup>.</p></div></figure>
@@ -1316,10 +1255,10 @@ td.num.dim{color:#595959}
 <p id="s36"><b class="n">36</b><span class="g">P</span><span class="t">BlackRock Solutions Integrates ICE Data Services’ Continuous Evaluated Pricing Tool</span>. Intercontinental Exchange press release, December 5, 2016. <a href="https://ir.theice.com/press/news-details/2016/BlackRock-Solutions-Integrates-ICE-Data-Services-Continuous-Evaluated-Pricing-Tool/default.aspx">https://ir.theice.com/press/news-details/2016/BlackRock-Solutions-Integrates-ICE-Data-Services-Continuous-Evaluated-Pricing-Tool/default.aspx</a></p>
 <p id="s37"><b class="n">37</b><span class="g">P</span><span class="t">Access our research through your preferred platform</span>. Morningstar Sustainalytics, as of October 20, 2026. Lists Aladdin among institutional investor platforms. <a href="https://www.sustainalytics.com/investor-solutions/analytic-reporting-solutions/esg-investment-platform">https://www.sustainalytics.com/investor-solutions/analytic-reporting-solutions/esg-investment-platform</a></p>
 <p id="s38"><b class="n">38</b><span class="g">P</span><span class="t">Open Sourcing the Aladdin SDK: Empowering Python Developers with a Quantitative Edge</span>. Vedant Naik, Lead Engineer, Aladdin Studio, and Eli Kalish, Product Manager II, Aladdin Studio. BlackRock Engineering, on Medium, May 7, 2024. <a href="https://engineering.blackrock.com/open-sourcing-the-aladdinsdk-empower-python-developers-with-a-quantitative-edge-7f63376061e6">https://engineering.blackrock.com/open-sourcing-the-aladdinsdk-empower-python-developers-with-a-quantitative-edge-7f63376061e6</a></p>
-<p id="s39"><b class="n">39</b><span class="g">T</span><span class="t">Job posting: Technical Writer, Vice President (Edinburgh)</span>. BlackRock, posted February 21, 2026, removed February 23, 2026. Copy kept by Built In Bristol. <a href="https://builtinbristol.uk/job/technical-writer-aladdin-product-vice-president/7444888">https://builtinbristol.uk/job/technical-writer-aladdin-product-vice-president/7444888</a></p>
+<p id="s39"><b class="n">39</b><span class="g">P</span><span class="t">aladdinsdk-plugin-builder</span>. GitHub, blackrock, as of October 19, 2026. <a href="https://github.com/blackrock/aladdinsdk-plugin-builder">https://github.com/blackrock/aladdinsdk-plugin-builder</a></p>
 <p id="s40"><b class="n">40</b><span class="g">S</span><span class="t">Data as a strategic asset for pensions (webinar replay; machine transcription)</span>. Diwakar Goel, Global Head of Data, Aladdin, BlackRock, 2025 (the replay page gives no date). <a href="https://www.blackrock.com/aladdin/discover/expertise/webinars/data-as-a-strategic-assets-for-pensions">https://www.blackrock.com/aladdin/discover/expertise/webinars/data-as-a-strategic-assets-for-pensions</a> Quoted at 25:22, 28:52, 29:28, 29:37.</p>
-<p id="s41"><b class="n">41</b><span class="g">P</span><span class="t">Aladdin® by BlackRock (Powered by Snowflake partner page)</span>. Snowflake, archived September 9, 2024. <a href="https://web.archive.org/web/20240909090246/https://www.snowflake.com/powered-by/aladdin-by-blackrock/">https://web.archive.org/web/20240909090246/https://www.snowflake.com/powered-by/aladdin-by-blackrock/</a></p>
-<p id="s42"><b class="n">42</b><span class="g">P</span><span class="t">aladdinsdk-plugin-builder</span>. GitHub, blackrock, as of October 19, 2026. <a href="https://github.com/blackrock/aladdinsdk-plugin-builder">https://github.com/blackrock/aladdinsdk-plugin-builder</a></p>
+<p id="s41"><b class="n">41</b><span class="g">T</span><span class="t">Job posting: Technical Writer, Vice President (Edinburgh)</span>. BlackRock, posted February 21, 2026, removed February 23, 2026. Copy kept by Built In Bristol. <a href="https://builtinbristol.uk/job/technical-writer-aladdin-product-vice-president/7444888">https://builtinbristol.uk/job/technical-writer-aladdin-product-vice-president/7444888</a></p>
+<p id="s42"><b class="n">42</b><span class="g">P</span><span class="t">Aladdin® by BlackRock (Powered by Snowflake partner page)</span>. Snowflake, archived September 9, 2024. <a href="https://web.archive.org/web/20240909090246/https://www.snowflake.com/powered-by/aladdin-by-blackrock/">https://web.archive.org/web/20240909090246/https://www.snowflake.com/powered-by/aladdin-by-blackrock/</a></p>
 <p id="s43"><b class="n">43</b><span class="g">P</span><span class="t">Aladdin developer portal</span>. BlackRock, checked October 20, 2026. The address redirects to the Aladdin client login. <a href="https://www.blackrock.com/apps/aladdin-developer-portal/">https://www.blackrock.com/apps/aladdin-developer-portal/</a></p>
 <p id="s44"><b class="n">44</b><span class="g">S</span><span class="t">Best Overall Technology Provider for 2023, Buy-Side Technology Awards winner interview (machine transcription)</span>. Kunal Khara, Managing Director and Global Head of Aladdin Product, BlackRock, interviewed by Victor Anderson, WatersTechnology, February 8, 2024. <a href="https://www.waterstechnology.com/awards-rankings/7951675/bst-awards-2023-best-overall-technology-provider-for-2023-winners-interview-blackrock">https://www.waterstechnology.com/awards-rankings/7951675/bst-awards-2023-best-overall-technology-provider-for-2023-winners-interview-blackrock</a> The video is also on the Aladdin hub page, <a href="https://www.blackrock.com/aladdin/discover">https://www.blackrock.com/aladdin/discover</a>. Quoted at 18:37, 18:42, 18:48.</p>
 <p id="s45"><b class="n">45</b><span class="g">S</span><span class="t">BlackRock transforms client data delivery with Snowflake’s Aladdin Data Cloud (Snowflake video; machine transcription)</span>. Jeff Miller, Managing Director, Global Head of Data Platform and Product Engineering, BlackRock. Snowflake video, May 21, 2026. <a href="https://www.youtube.com/watch?v=3iXd7a7_F6g">https://www.youtube.com/watch?v=3iXd7a7_F6g</a> Quoted at 0:36.</p>
