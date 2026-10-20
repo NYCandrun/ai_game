@@ -23,3 +23,10 @@ Follow-up: the author reframed Part 3 around a client's own AI tools acting on i
 Follow-up: the title is now "Aladdin Studio from the outside" with the subtitle "What public sources show, and why Studio could be where clients' AI tools act, not just read"; the method box still discloses the AI work. The HTML title tag, and so the PDF's title property, changed with it. The cover line "Notes made to prepare for interviews, October 2026" stays.
 
 Follow-up: the proof is now the headline. Cover subtitle: "What public sources show, and why clients' AI tools could act on Aladdin under controls BlackRock's own business runs on." Summary headline: "Clients' AI tools could act on Aladdin under the same controls BlackRock's own business runs on," with the Part 3 pointer shortened to "Part 3 suggests presenting Studio this way." Page 13's first two paragraphs are the author's: the claim, then a paragraph saying that letting AI tools act is unlikely to stay unique (SimCorp and Arcesium have announced agents) and that what BlackRock can show is its own use. The "BlackRock can show its own business" paragraph and the SimCorp sentence in the buyers paragraph were removed as folded in. The wording describes only what BlackRock does, not what others cannot, since Arcesium was itself built inside D. E. Shaw. Receipts from the existing register. 19 pages.
+
+## Follow-up: author copy for the executive summary, page 13 and Exhibit 15 (part3f.py)
+
+- Page 2: the two paragraphs under the headline replaced with the author's text.
+- Page 13: all text above Exhibit 14 replaced with five author paragraphs. Exhibit 14 unchanged. The page still fits, so the optional cut was not needed.
+- Exhibit 15 retitled "Four pieces of marketing work to explore, in the order I would start them"; row 1 extended with how a client's own AI tools would connect; row 4 is now a worked example of an AI-proposed rebalance; the private-markets row removed.
+- Sources renumbered by first citation (57 entries moved; 70 sources, no orphans).
