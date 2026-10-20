@@ -1,4 +1,4 @@
-# GTM leave-behind: Aladdin Studio, learned with AI
+# GTM leave-behind: Aladdin Studio from the outside
 
 `Aladdin_Studio_With_AI.pdf` (19 pages) is the document for BlackRock's head of go-to-market. Its frame: this is what an outsider can learn about Aladdin and Aladdin Studio from public sources using AI, this is what it looks like, this is what it says about the direction of BlackRock's business and market, and these are directions to explore for marketing Studio. It treats enterprise gating as the expected model for this market and is explicit about the limits of public information and machine transcription.
 
