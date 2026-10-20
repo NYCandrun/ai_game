@@ -1,0 +1,1344 @@
+[
+ {
+  "id": "p02-lede",
+  "action": "NO CHANGE",
+  "current_html": "Clients’ AI tools could act on Aladdin under the same controls BlackRock’s own business runs on.",
+  "proposed_html": "",
+  "new_sources": [],
+  "also_change": [],
+  "why": "The lede is about controls, not identical APIs. The controls it rests on, access set per API, a second check on dataset releases and compliance by default on orders, stay sourced after the fixes [6].",
+  "page": 2
+ },
+ {
+  "id": "p02-05+p02-06+p02-07",
+  "action": "FIX",
+  "current_html": "They post orders and set compliance rules, under each user’s permissions and with a compliance check on every order<sup class=\"fnref\"><a href=\"#s6\">6</a></sup>.",
+  "proposed_html": "They post orders and assign compliance rules to portfolios. Access is granted per API, to read or to write. Compliance runs on each order by default<sup class=\"fnref\"><a href=\"#s6\">6</a></sup>.",
+  "new_sources": [],
+  "also_change": [],
+  "why": "The order spec says “Filter, post or cancel orders”, but the compliance specs only filter rules and “assign compliance rules for portfolio” (ComplianceRuleAssignmentAPI). Every operation also accepts client-credentials, client-key and basic auth, so “each user’s permissions” overstates it, while OAuth scopes are read or write per API. runCompliance is “Default is true”, and the caller can turn it off, so “every order” becomes “by default”. Reviewer: “OAuth sign-in” was replaced with plain words. The matching Exhibit 14 control-box titles change under p13-37, and the Exhibit 14 description under p13-aria.",
+  "page": 2
+ },
+ {
+  "id": "p02-simcorp",
+  "action": "NO CHANGE",
+  "current_html": "Letting AI tools act will not stay unique; SimCorp has announced AI agents",
+  "proposed_html": "",
+  "new_sources": [],
+  "also_change": [],
+  "why": "SimCorp is one true example [7]. Adding Clearwater here would lengthen page 2, and page 13 carries the fuller list (p11-34).",
+  "page": 2
+ },
+ {
+  "id": "p02-09+p02-10",
+  "action": "DECIDE",
+  "current_html": "About 100 of its applications and thousands of Copilot tools already call these APIs every day<sup class=\"fnref\"><a href=\"#s8\">8</a></sup>.",
+  "proposed_html": "About 100 of its applications carry Copilot. Each Copilot tool matches an Aladdin API already in production<sup class=\"fnref\"><a href=\"#s8\">8</a></sup>.",
+  "alternative_html": "About 100 of its applications carry Copilot. Copilot draws on about two thousand tools and agents. Each tool matches an Aladdin API already in production<sup class=\"fnref\"><a href=\"#s8\">8</a></sup>.",
+  "new_sources": [],
+  "also_change": [],
+  "decide_note": "This sentence carries the claim that BlackRock already runs on the APIs it offers clients. The sources say the apps carry Copilot and each Copilot tool maps to a production Aladdin API. Neither says the apps or tools call the public Studio APIs, so both options drop “these APIs” and “every day”. Recommended: the shorter sentence, which keeps page 2 the same length. Alternative: keep the tool count, which adds about one line to page 2. Under either option, page 13 (p13-06+p13-07+p13-08+p13-09) and Exhibit 14 (p13-22, p13-26, p13-27, p13-34+p13-35, p13-aria) use the same facts: about 100 applications, about two thousand tools and agents, 50 to 60 teams, each tool mapped to a production Aladdin API. The page 2 lede can stay, because it rests on the controls built into the APIs.",
+  "why": "The talk says “around 100 Aladdin front-end applications that thousands of people use every day” [1:53], Copilot “is currently embedded across all of those hundred” [2:34], and a tool maps “one-to-one to an existing Aladdin API already out in production” [4:39]. The count is “a couple thousands agents and tools that are registered” [6:42]. “Every day” in the talk describes people using the apps and the daily test runs.",
+  "page": 2
+ },
+ {
+  "id": "p02-14",
+  "action": "FIX",
+  "current_html": "11 public <code>asdk_plugin</code> Python packages, 128 recordings,",
+  "proposed_html": "11 public <code>asdk_plugin</code> Python packages, about 125 recordings,",
+  "new_sources": [],
+  "also_change": [],
+  "why": "The two corpus indexes have 34 and 95 rows, which gives 129. One row is text notes, at least three recordings appear in both indexes, and at least one is in neither, so there are about 126 distinct recordings. The 11 packages and 54 specifications were reconfirmed on PyPI. The same count on page 6 changes under p06-66.",
+  "page": 2
+ },
+ {
+  "id": "p02-20",
+  "action": "FIX",
+  "current_html": "at the end of this document, giving the grade (P, S or T), title, speaker and date.",
+  "proposed_html": "at the end of this document, giving the grade (P, S or T), title, publisher or speaker, and date where known.",
+  "new_sources": [],
+  "also_change": [],
+  "why": "P entries name a publisher, not a speaker, such as “Aladdin Data Cloud product page. BlackRock, as of October 2026.” Several entries have no date, such as source 20 (“undated”), source 21 (“speaker not named, undated”) and source 9 (“Replay page undated”). Page 16 gets the same words under p16-09.",
+  "page": 2
+ },
+ {
+  "id": "p03-02",
+  "action": "FIX",
+  "current_html": "Brennan Rosales, its AI Engineering Lead, put the scale",
+  "proposed_html": "Brennan Rosales, an AI Engineering Lead at BlackRock, put the scale",
+  "new_sources": [],
+  "also_change": [],
+  "why": "He introduces himself as “an AI engineering lead at BlackRock” [0:15], and the LangChain Interrupt speaker list gives “AI Engineering Lead at BlackRock”. “Its” makes him the only one.",
+  "page": 3
+ },
+ {
+  "id": "p03-14",
+  "action": "FIX",
+  "current_html": "BlackRock sells the platform as one engine with separate entry points, and Studio is the entry point for people who write code.</p>",
+  "proposed_html": "BlackRock sells Aladdin as four platforms that share one data language. They are the Aladdin platform, eFront, Aladdin Wealth and Preqin<sup class=\"fnref\"><a href=\"#sNEW_g01_pr\">NEW</a></sup>. Studio is the entry point for people who write code<sup class=\"fnref\"><a href=\"#s14\">14</a></sup>.</p>",
+  "new_sources": [
+   "<p id=\"sNEW_g01_pr\"><b class=\"n\">NEW</b><span class=\"g\">P</span><span class=\"t\">BlackRock Aladdin Drives Private Markets Transparency By Unifying Pre- and Post-Investment Tech On a Single Platform</span>. BlackRock press release, February 5, 2026. <a href=\"https://www.blackrock.com/aladdin/discover/press-release/blackrock-aladdin-drives-private-markets-transparency\">https://www.blackrock.com/aladdin/discover/press-release/blackrock-aladdin-drives-private-markets-transparency</a></p>"
+  ],
+  "also_change": [],
+  "why": "BlackRock’s 5 February 2026 release says “BlackRock Aladdin, inclusive of the Aladdin platform, eFront, Aladdin Wealth, and Preqin … providing a common data language across the whole portfolio.” “One engine” overstates it, because BlackRock lists four platforms and sells eFront and Preqin on their own. The Studio page says “Build on top of Aladdin”, so source 14 supports the second sentence. Reviewer: reworded so “family of the Aladdin platform” cannot be misread. Exhibit 1 has no Preqin row; see the DECIDE item p03-16+p03-17.",
+  "page": 3
+ },
+ {
+  "id": "p03-16+p03-17",
+  "action": "DECIDE",
+  "current_html": "<span class=\"ex-num\">Exhibit 1.</span> Of Aladdin’s eight named products, Studio is the one for people who write code</p>",
+  "proposed_html": "<span class=\"ex-num\">Exhibit 1.</span> Of eight Aladdin products, Studio is the one for people who write code</p>",
+  "alternative_html": "<span class=\"ex-num\">Exhibit 1.</span> Of nine Aladdin products, Studio is the one for people who write code</p>",
+  "new_sources": [],
+  "also_change": [],
+  "decide_note": "The count sits in an exhibit title. BlackRock names no set of eight. Its Aladdin site links to at least 13 products and solutions, and its boilerplate names four platforms, one of them Preqin. Recommended: “Of eight Aladdin products”, which keeps the eight rows and drops the claim that BlackRock names exactly eight. Alternative: “Of nine Aladdin products” plus a Preqin row after eFront, <tr><td class=\"first\">Preqin</td><td>Private-markets data and analytics, bought by BlackRock in 2025<sup class=\"fnref\"><a href=\"#s11\">11</a></sup></td><td>Private-markets investors and fund managers</td></tr>. The alternative matches the four-part family in the new Part 1 sentence (p03-14) but adds a row to page 3. Nothing else in the document repeats “eight named products”.",
+  "why": "BlackRock’s Aladdin home page links to Accounting, Climate Risk, Aladdin Copilot, Aladdin Data Cloud, Asset Servicers, Risk Management, Aladdin Studio, Sustainability, Whole Portfolio, Aladdin, Aladdin Wealth, eFront and Preqin. All eight rows are real products, but the set of eight is the author’s choice.",
+  "page": 3
+ },
+ {
+  "id": "p03-19",
+  "action": "FIX",
+  "current_html": "<td>The front-to-back system for public markets, the same system BlackRock runs internally<sup class=\"fnref\"><a href=\"#s8\">8</a></sup></td>",
+  "proposed_html": "<td>The front-to-back system for public and private markets<sup class=\"fnref\"><a href=\"#sNEW_g01_wp\">NEW</a></sup>, the same system BlackRock runs internally<sup class=\"fnref\"><a href=\"#s8\">8</a></sup></td>",
+  "new_sources": [
+   "<p id=\"sNEW_g01_wp\"><b class=\"n\">NEW</b><span class=\"g\">P</span><span class=\"t\">Whole Portfolio Management</span>. BlackRock Aladdin product page, as of October 2026. <a href=\"https://www.blackrock.com/aladdin/platforms/products/whole-portfolio\">https://www.blackrock.com/aladdin/platforms/products/whole-portfolio</a></p>"
+  ],
+  "also_change": [
+   {
+    "where": "Exhibit 1 source note (page 3). One combined change covers p03-19, p03-27, p03-30 and p03-36.",
+    "current_html": "<div class=\"notes\"><p><span class=\"lbl\"></span>Source: BlackRock product pages<sup class=\"fnref\"><a href=\"#s14\">14</a>, <a href=\"#s17\">17</a>, <a href=\"#s19\">19</a></sup>; Amazon press release, December 2025<sup class=\"fnref\"><a href=\"#s15\">15</a></sup>; iShares prospectus<sup class=\"fnref\"><a href=\"#s18\">18</a></sup>; the public specifications<sup class=\"fnref\"><a href=\"#s6\">6</a></sup>.</p></div>",
+    "proposed_html": "<div class=\"notes\"><p><span class=\"lbl\"></span>Source: BlackRock product pages<sup class=\"fnref\"><a href=\"#s14\">14</a>, <a href=\"#s17\">17</a>, <a href=\"#s19\">19</a>, <a href=\"#sNEW_g01_wp\">NEW</a>, <a href=\"#sNEW_g01_efi\">NEW</a></sup>; BlackRock AWS release, December 2025<sup class=\"fnref\"><a href=\"#s15\">15</a></sup>; Woodhead<sup class=\"fnref\"><a href=\"#s1\">1</a></sup>; iShares prospectus<sup class=\"fnref\"><a href=\"#s18\">18</a></sup>; the public specifications<sup class=\"fnref\"><a href=\"#s6\">6</a></sup>.</p></div>"
+   }
+  ],
+  "why": "BlackRock’s Whole Portfolio page says “Streamline front-to-back workflows with a unified IBOR for public and private assets.” Source 8 says Aladdin gives “access to both public and private markets” and “BlackRock is the biggest user of Aladdin”, but never says “front-to-back”. The also_change below is the one combined Exhibit 1 source note for p03-19, p03-27, p03-30 and p03-36.",
+  "page": 3
+ },
+ {
+  "id": "p03-27",
+  "action": "CITE",
+  "current_html": "Preqin now sits inside eFront Insight, and",
+  "proposed_html": "Preqin now sits inside eFront Insight<sup class=\"fnref\"><a href=\"#sNEW_g01_efi\">NEW</a></sup>, and",
+  "new_sources": [
+   "<p id=\"sNEW_g01_efi\"><b class=\"n\">NEW</b><span class=\"g\">P</span><span class=\"t\">Powerful Analytics for Private Markets (eFront Insight product page)</span>. eFront, BlackRock, as of October 2026. <a href=\"https://www.efront.com/en/alternative-investment-software/efront-insight\">https://www.efront.com/en/alternative-investment-software/efront-insight</a></p>"
+  ],
+  "also_change": [],
+  "why": "The eFront Insight page says “With Preqin® inside, eFront® Insight makes private markets investing more seamless and more informed.” Source 13 says only that the expansion “brings together Aladdin technology with Preqin and eFront data and analytics”, so 13 stays on the May 2026 clause. The Exhibit 1 source note changes once, under p03-19.",
+  "page": 3
+ },
+ {
+  "id": "p03-30",
+  "action": "CITE",
+  "current_html": "It covers APIs and events, Aladdin Data Cloud, and developer tools. BlackRock calls it",
+  "proposed_html": "It covers APIs and events, Aladdin Data Cloud, and developer tools<sup class=\"fnref\"><a href=\"#s1\">1</a></sup>. BlackRock calls it",
+  "new_sources": [],
+  "also_change": [],
+  "why": "Source 14 covers APIs, Data Cloud and developer tools but not events. Woodhead (source 1, already cited for the same list on page 2) says Studio “exposes everything Aladdin knows how to do as a set of APIs [and] events” and that Data Cloud is “built on top of Snowflake”. The Exhibit 1 source note changes once, under p03-19.",
+  "page": 3
+ },
+ {
+  "id": "p03-36",
+  "action": "CITE",
+  "current_html": "It is <a href=\"https://press.aboutamazon.com/aws/2025/12/blackrock-partners-with-aws-to-deliver-aladdin-on-secure-scalable-cloud-infrastructure\">sold as an add-on to Aladdin Enterprise</a><sup class=\"fnref\"><a href=\"#s15\">15</a></sup>.",
+  "proposed_html": "It is <a href=\"https://www.tradingview.com/news/reuters.com,2025-12-05:newsml_Zaw4R27h7:0-pressr-blackrock-partners-with-aws-to-deliver-aladdin-on-secure-scalable-cloud-infrastructure/\">sold as an add-on to Aladdin Enterprise</a><sup class=\"fnref\"><a href=\"#s15\">15</a></sup>.",
+  "new_sources": [],
+  "also_change": [
+   {
+    "where": "Sources register, existing AWS release entry (reused instead of a duplicate new entry)",
+    "current_html": "<span class=\"t\">BlackRock partners with AWS to deliver Aladdin on secure, scalable cloud infrastructure</span>. Amazon press release, December 2025. <a href=\"https://press.aboutamazon.com/aws/2025/12/blackrock-partners-with-aws-to-deliver-aladdin-on-secure-scalable-cloud-infrastructure\">https://press.aboutamazon.com/aws/2025/12/blackrock-partners-with-aws-to-deliver-aladdin-on-secure-scalable-cloud-infrastructure</a>",
+    "proposed_html": "<span class=\"t\">BlackRock partners with AWS to deliver Aladdin on secure, scalable cloud infrastructure</span>. BlackRock press release, December 5, 2025. Full release with its questions and answers, Reuters copy on TradingView News: <a href=\"https://www.tradingview.com/news/reuters.com,2025-12-05:newsml_Zaw4R27h7:0-pressr-blackrock-partners-with-aws-to-deliver-aladdin-on-secure-scalable-cloud-infrastructure/\">https://www.tradingview.com/news/reuters.com,2025-12-05:newsml_Zaw4R27h7:0-pressr-blackrock-partners-with-aws-to-deliver-aladdin-on-secure-scalable-cloud-infrastructure/</a> Copy without the questions and answers, on Amazon’s press site: <a href=\"https://press.aboutamazon.com/aws/2025/12/blackrock-partners-with-aws-to-deliver-aladdin-on-secure-scalable-cloud-infrastructure\">https://press.aboutamazon.com/aws/2025/12/blackrock-partners-with-aws-to-deliver-aladdin-on-secure-scalable-cloud-infrastructure</a>"
+   }
+  ],
+  "why": "The full release with its questions and answers says AWS hosting will first cover “Aladdin Enterprise (US-hosted only) Accounting (Enterprise add-on) ADC (Enterprise add-on)”. The Amazon copy has no “add-on” wording. The existing AWS release entry (source 15) now carries the full-release copy as well as the Amazon copy, so one release has one entry. Exhibit 3 still cites it for hosting.",
+  "page": 3
+ },
+ {
+  "id": "p04-06",
+  "action": "FIX",
+  "current_html": "compares a changed portfolio with the original before anything is traded<sup class=\"fnref\"><a href=\"#s21\">21</a></sup>",
+  "proposed_html": "shows a changed portfolio beside the original<sup class=\"fnref\"><a href=\"#s21\">21</a></sup>",
+  "new_sources": [],
+  "also_change": [],
+  "why": "The recording shows the original and the what-if portfolio \"side by side\" (BahCi45_BTc captions ~11:09) but never mentions trading. \"Before anything is traded\" was the author's inference, so it goes.",
+  "page": 4
+ },
+ {
+  "id": "p04-11",
+  "action": "FIX",
+  "current_html": "Any violation then carries an owner, a disposition and a resolution comment<sup class=\"fnref\"><a href=\"#s6\">6</a></sup>",
+  "proposed_html": "A violation record can hold an owner and a user’s resolution comment. It gets a disposition when closed<sup class=\"fnref\"><a href=\"#s6\">6</a></sup>",
+  "new_sources": [],
+  "also_change": [],
+  "why": "The Violation spec says the disposition \"will be populated for closed violations\" and the comment is one \"populated by a user\". Only actionStatus is required, so not every violation carries all three.",
+  "page": 4
+ },
+ {
+  "id": "p04-13",
+  "action": "FIX",
+  "current_html": "(ComplianceRule spec); no application is named<sup class=\"fnref\"><a href=\"#s6\">6</a></sup>",
+  "proposed_html": "(ComplianceRule spec). The Level spec names the application <a href=\"https://pypi.org/project/asdk_plugin_compliance/\">“Aladdin Compliance”</a><sup class=\"fnref\"><a href=\"#s6\">6</a></sup>",
+  "new_sources": [],
+  "also_change": [],
+  "why": "Source 6's Level spec says \"A unique name for a rule in Aladdin Compliance\", and step 5 already counts Aladdin Accounting from the same kind of spec text. The alternative is to drop Aladdin Accounting from step 5 so both rows use the stricter standard, but that throws away a true fact.",
+  "page": 4
+ },
+ {
+  "id": "p04-22",
+  "action": "FIX",
+  "current_html": "<code>BrokerConfirmRoutingAPI</code> routes the confirm<sup class=\"fnref\"><a href=\"#s6\">6</a></sup>",
+  "proposed_html": "<code>BrokerConfirmRoutingAPI</code> holds each broker’s instructions for delivering confirms<sup class=\"fnref\"><a href=\"#s6\">6</a></sup>",
+  "new_sources": [],
+  "also_change": [],
+  "why": "The spec says BrokerConfirmRouting \"describes instructions for delivering trade information to a broker desk\" and that routings \"are setup at broker level\". Its only operations create, update, remove, validate and filter those records, so it does not send the confirm itself.",
+  "page": 4
+ },
+ {
+  "id": "p04-28",
+  "action": "FIX",
+  "current_html": "Positions appear only as fields: a positions source in <code>PortfolioToolkitAPI</code>, and a violation’s",
+  "proposed_html": "Positions appear only as fields, for example a positions source in <code>PortfolioToolkitAPI</code>, collateral positions in <code>CollateralStatementAPI</code> and a violation’s",
+  "new_sources": [],
+  "also_change": [],
+  "why": "\"Only as fields\" holds, but the colon made two examples read as the full list. CollateralStatementAPI also has \"Details of collateral positions\" (swagger.json:979), so the sentence now gives examples.",
+  "page": 4
+ },
+ {
+  "id": "p04-41",
+  "action": "FIX",
+  "current_html": "the Aladdin Accounting episode with David Schneid and Daniel Shannon, which does not label who is speaking<sup class=\"fnref\"><a href=\"#s20\">20</a></sup>",
+  "proposed_html": "the Aladdin Accounting episode with David Schneid and Daniel Shannon<sup class=\"fnref\"><a href=\"#s20\">20</a></sup>",
+  "new_sources": [],
+  "also_change": [
+   {
+    "where": "Exhibit 2, step 3, product column",
+    "current_html": "Schneid or Shannon of Aladdin Accounting describes the run",
+    "proposed_html": "David Schneid, head of product management for Aladdin Accounting, describes the run"
+   },
+   {
+    "where": "Exhibit 2, step 5, who acts",
+    "current_html": "The accounting team, which says of itself: <a href=\"https://www.blackrock.com/aladdin/discover/expertise/big-little-questions\">“we are data managers more than anything else”</a> (Schneid or Shannon)<sup class=\"fnref\"><a href=\"#s20\">20</a></sup>",
+    "proposed_html": "The accounting team. Daniel Shannon, BlackRock’s head of outsourced platform services, says <a href=\"https://www.blackrock.com/aladdin/discover/expertise/big-little-questions\">“we are data managers more than anything else”</a><sup class=\"fnref\"><a href=\"#s20\">20</a></sup>"
+   },
+   {
+    "where": "Exhibit 2, step 6, who acts",
+    "current_html": "heads of performance”</a> (Schneid or Shannon)<sup class=\"fnref\"><a href=\"#s20\">20</a></sup>",
+    "proposed_html": "heads of performance”</a> (Schneid)<sup class=\"fnref\"><a href=\"#s20\">20</a></sup>"
+   },
+   {
+    "where": "Sources register, entry 20",
+    "current_html": "David Schneid and Daniel Shannon, Aladdin Accounting, BlackRock, undated; the recording does not label which of the two is speaking.",
+    "proposed_html": "David Schneid, Head of Product Management for Aladdin Accounting, and Daniel Shannon, Head of Outsourced Platform Services, BlackRock, undated."
+   }
+  ],
+  "why": "The video names each speaker on screen: Shannon at 0:13 (\"Head of Outsourced Platform Services, BlackRock\") and Schneid at 0:35 (\"Head of Product Management for Aladdin Accounting\"), checked on frames of the published video. Shannon says \"data managers\" (1:05). Schneid says \"heads of performance\" (0:35) and \"from that first order\" (1:23).",
+  "page": 4
+ },
+ {
+  "id": "p04-43",
+  "action": "FIX",
+  "current_html": "The specifications name no order screen and hold no position or event API, and they do not say in what sequence steps 4 to 6 happen.",
+  "proposed_html": "The specifications hold no position or event API. They do not say in what sequence steps 4 to 6 happen.",
+  "new_sources": [],
+  "also_change": [],
+  "why": "OrderAPI swagger.json:2244 says the Basket ID \"is visible in the Basket column in Order Monitor of Aladdin Dashboard\". So the specifications do name an order screen. Readability review: the Order Monitor sentence was an aside that nothing in the exhibit uses, so the fix now simply drops the wrong clause.",
+  "page": 4
+ },
+ {
+  "id": "p05-01",
+  "action": "DECIDE",
+  "current_html": "<span class=\"ex-num\">Exhibit 3.</span> Apps, Copilot and Studio all call one shared API layer</p>",
+  "proposed_html": "<span class=\"ex-num\">Exhibit 3.</span> Apps, Copilot and Studio share the same Aladdin services and data</p>",
+  "alternative_html": "<span class=\"ex-num\">Exhibit 3.</span> Copilot and Studio call the same Aladdin APIs</p>",
+  "new_sources": [],
+  "also_change": [
+   {
+    "where": "Exhibit 3 aria-label (also carries p05-29 and p05-30)",
+    "current_html": "Apps, Copilot and Aladdin Studio call one shared API layer, which reaches the 11 public API domains, all using Aladdin Analytics, the risk engine. Every domain reads and writes shared data:",
+    "proposed_html": "Apps, Copilot and Aladdin Studio share the same Aladdin services and data. A layer of shared services and APIs reaches the 11 public API domains. The risk specifications name Aladdin Analytics as their risk engine. The domains read and write shared records:"
+   }
+  ],
+  "why": "The Studio page says only “API-first approach across shared services and data” [14], and Rosales says Copilot tools map “one-to-one to an existing Aladdin API already out in production” [8]. No source says BlackRock’s own apps call the public API layer. The recommended title keeps all three actors on the sourced “shared services and data”. The alternative names only the two callers the sources show, and then the Exhibit 14 tile “all call these APIs” must also drop the apps. Either way the box text (p05-16) and Exhibit 14 on page 13 change with it. Both Exhibit 14 replacements are no longer than the current text.",
+  "decide_note": "Recommended: “share the same Aladdin services and data”, which rests on the Studio page’s “shared services and data” [14] and needs no inference. Alternative: “Copilot and Studio call the same Aladdin APIs”. Page 10 (p10-07+p10-10+p10-13) calls that link my inference, so under the alternative the Exhibit 3 note must add “That Copilot and Studio call the same APIs is my inference.” and the Shared API layer box (p05-16) reads “Copilot and Studio call it · every call needs credentials”. Either way the Exhibit 3 description below changes, and the Exhibit 14 boxes on page 13 use the matching “shared services” wording (p13-26, p13-34+p13-35). Diagram: under the recommended title, the arrows from the Apps panel and the SDK into the API bar would still read as every app calling one API layer. The smallest fix is to rename that bar from “Shared API layer” to “Shared services and APIs” (p05-16), so the arrows show apps, Copilot and Studio using shared services. Under the alternative, the bar keeps its name.",
+  "page": 5
+ },
+ {
+  "id": "p05-04",
+  "action": "FIX",
+  "current_html": "<text x=\"34\" y=\"291\">quants</text>",
+  "proposed_html": "<text x=\"34\" y=\"291\">data analysts</text>",
+  "new_sources": [],
+  "also_change": [],
+  "why": "The Studio page names “a professional engineer”, “a code-curious portfolio manager” and “a data analyst automating reporting” as Studio users [14]. No source names quants.",
+  "page": 5
+ },
+ {
+  "id": "p05-copilot-box",
+  "action": "FIX",
+  "current_html": "reads what is on screen · answers through the same APIs</tspan>",
+  "proposed_html": "reads what is on screen · answers by calling Aladdin APIs</tspan>",
+  "new_sources": [],
+  "also_change": [],
+  "why": "Consistency. “The same APIs” implies Copilot and Studio share one API set, which page 10 now calls my inference. Source 8 supports only that each tool maps to a production Aladdin API (4:39). The new text is shorter.",
+  "page": 5
+ },
+ {
+  "id": "p05-16",
+  "action": "FIX",
+  "current_html": "<tspan class=\"tt\">Shared API layer</tspan><tspan dx=\"10\" class=\"s\">every app, Copilot and Studio call it · access checked on every call</tspan>",
+  "proposed_html": "<tspan class=\"tt\">Shared services and APIs</tspan><tspan dx=\"10\" class=\"s\">used by apps, Copilot and Studio · public calls need credentials</tspan>",
+  "new_sources": [],
+  "also_change": [],
+  "why": "No source says every app calls the API layer. The Studio page says “shared services and data” [14] and Copilot tools map to “an existing Aladdin API already out in production” [8]. All 301 operations in the 54 specifications declare a security requirement (rechecked on the PyPI 2.0.0b3 files), but scope checks apply only to the OAuth options, so “needs credentials” is the accurate claim. If the p05-01 alternative is chosen, the box reads “Copilot and Studio call it · every call needs credentials”. Readability review: the arrows from the Apps panel still run into this bar, so the bar is renamed “Shared services and APIs”. Then the picture says what the Studio page says, that apps, Copilot and Studio use shared services. The note cites the Studio page and the specifications.",
+  "page": 5
+ },
+ {
+  "id": "p05-29",
+  "action": "FIX",
+  "current_html": "<tspan dx=\"10\" class=\"s\">the risk engine every domain uses · turns positions and market data into risk numbers</tspan>",
+  "proposed_html": "<tspan dx=\"10\" class=\"s\">the risk engine · turns positions and market data into risk numbers</tspan>",
+  "new_sources": [
+   "<p id=\"sNEW-g03-risk\"><b class=\"n\">NEW</b><span class=\"g\">P</span><span class=\"t\">Risk Management Services (Aladdin Risk product page)</span>. BlackRock, as of October 20, 2026. <a href=\"https://www.blackrock.com/aladdin/platforms/products/aladdin-risk\">https://www.blackrock.com/aladdin/platforms/products/aladdin-risk</a></p>"
+  ],
+  "also_change": [],
+  "why": "The specs name “Aladdin Analytics” only as a metric source in four risk APIs [6], so “every domain uses” has no support. BlackRock’s Aladdin Risk page calls that product “BlackRock’s analytics engine” and says it integrates “positions, data, and analytics”, which supports the rest of the box.",
+  "page": 5
+ },
+ {
+  "id": "p05-30",
+  "action": "FIX",
+  "current_html": "<text x=\"392\" y=\"526\" class=\"cap\">SHARED DATA · EVERY DOMAIN READS AND WRITES IT</text>",
+  "proposed_html": "<text x=\"392\" y=\"526\" class=\"cap\">SHARED DATA · READ AND WRITTEN BY THE DOMAINS</text>",
+  "new_sources": [],
+  "also_change": [],
+  "why": "In the specs the data domain only creates records (15 POST operations) and accounting mostly reads (4 GET and 4 POST, three of the POSTs filters and one a config submit) [6]. So the domains together read and write the records, but not every domain does both.",
+  "page": 5
+ },
+ {
+  "id": "p05-36",
+  "action": "FIX",
+  "current_html": "<text x=\"1150\" y=\"582\" class=\"s\">prices, ESG, Preqin</text>",
+  "proposed_html": "<text x=\"1150\" y=\"582\" class=\"s\">prices, ESG data</text>",
+  "new_sources": [
+   "<p id=\"sNEW-g03-ice\"><b class=\"n\">NEW</b><span class=\"g\">P</span><span class=\"t\">BlackRock Solutions Integrates ICE Data Services’ Continuous Evaluated Pricing Tool</span>. Intercontinental Exchange press release, December 5, 2016. <a href=\"https://ir.theice.com/press/news-details/2016/BlackRock-Solutions-Integrates-ICE-Data-Services-Continuous-Evaluated-Pricing-Tool/default.aspx\">https://ir.theice.com/press/news-details/2016/BlackRock-Solutions-Integrates-ICE-Data-Services-Continuous-Evaluated-Pricing-Tool/default.aspx</a></p>",
+   "<p id=\"sNEW-g03-sust\"><b class=\"n\">NEW</b><span class=\"g\">P</span><span class=\"t\">Access our research through your preferred platform</span>. Morningstar Sustainalytics, as of October 20, 2026. Lists Aladdin among institutional investor platforms. <a href=\"https://www.sustainalytics.com/investor-solutions/analytic-reporting-solutions/esg-investment-platform\">https://www.sustainalytics.com/investor-solutions/analytic-reporting-solutions/esg-investment-platform</a></p>"
+  ],
+  "also_change": [],
+  "why": "BlackRock’s own boilerplate puts Preqin inside BlackRock Aladdin, “inclusive of the Aladdin platform, eFront®, Aladdin Wealth™, and Preqin” [13], so it is not an outside vendor. ICE’s 2016 release says its pricing “has been integrated into BlackRock Solutions’ Aladdin”, and Sustainalytics lists Aladdin among its platforms. Preqin is already placed inside Aladdin in Exhibit 1 and the private-markets finding, so the map does not need a new tile.",
+  "page": 5
+ },
+ {
+  "id": "p05-41+p05-32 (Exhibit 3 note)",
+  "action": "FIX",
+  "current_html": "<div class=\"notes\"><p><span class=\"lead\">For illustrative purposes only.</span> <span class=\"lbl\"></span>Source: about 100 apps, with Copilot in all of them, <a href=\"https://www.youtube.com/watch?v=oyqeCHFM5U4&amp;t=155s\">Rosales and Vicente Valdez at 2:35</a><sup class=\"fnref\"><a href=\"#s8\">8</a></sup>. The 11 domains behind the shared layer are the packages of BlackRock’s public SDK, named as in its specifications<sup class=\"fnref\"><a href=\"#s6\">6</a>, <a href=\"#s23\">23</a></sup>. App names other than Explore come from field descriptions in those specifications, so their screens are not drawn<sup class=\"fnref\"><a href=\"#s6\">6</a>, <a href=\"#s21\">21</a></sup>. Aladdin Analytics is the name the risk specifications give the engine<sup class=\"fnref\"><a href=\"#s6\">6</a></sup>. Studio, <a href=\"https://www.youtube.com/watch?v=Me_H_-E6lSg&amp;t=289s\">Woodhead at 4:49</a><sup class=\"fnref\"><a href=\"#s1\">1</a></sup>; Excel tools and feeds, the APIs page<sup class=\"fnref\"><a href=\"#s24\">24</a></sup>; Data Cloud fed by Aladdin data and analytics<sup class=\"fnref\"><a href=\"#s1\">1</a>, <a href=\"#s19\">19</a></sup>; hosting<sup class=\"fnref\"><a href=\"#s15\">15</a>, <a href=\"#s25\">25</a></sup>. Solid outline = shown in sources; hatched = announced, not live.</p></div>",
+  "proposed_html": "<div class=\"notes\"><p><span class=\"lead\">For illustrative purposes only.</span> The 11 domains are the packages of BlackRock’s public SDK, named as in its specifications. Other app names come from those specifications, so their screens are not drawn. <span class=\"lbl\"></span>Source: <a href=\"https://www.youtube.com/watch?v=oyqeCHFM5U4&amp;t=155s\">Rosales and Vicente Valdez at 2:35</a>, for the apps and Copilot<sup class=\"fnref\"><a href=\"#s8\">8</a></sup>; <a href=\"https://www.youtube.com/watch?v=Me_H_-E6lSg&amp;t=289s\">Woodhead at 4:49</a>, for Studio, events and the Data Cloud<sup class=\"fnref\"><a href=\"#s1\">1</a></sup>; the public specifications and SDK<sup class=\"fnref\"><a href=\"#s6\">6</a>, <a href=\"#s23\">23</a></sup>; a training recording, for Explore<sup class=\"fnref\"><a href=\"#s21\">21</a></sup>; BlackRock’s Studio, APIs, ATX, ADX, Data Cloud and Aladdin Risk pages<sup class=\"fnref\"><a href=\"#s14\">14</a>, <a href=\"#s24\">24</a>, <a href=\"#sNEW-g03-atx\">NEW</a>, <a href=\"#sNEW-g03-adx\">NEW</a>, <a href=\"#s19\">19</a>, <a href=\"#sNEW-g03-risk\">NEW</a></sup>; the Data Cloud launch release<sup class=\"fnref\"><a href=\"#sNEW-g03-adcpr\">NEW</a></sup>; hosting<sup class=\"fnref\"><a href=\"#s15\">15</a>, <a href=\"#s25\">25</a></sup>; data vendors, ICE and Sustainalytics<sup class=\"fnref\"><a href=\"#sNEW-g03-ice\">NEW</a>, <a href=\"#sNEW-g03-sust\">NEW</a></sup>. Solid outline = shown in sources; hatched = announced, not live.</p></div>",
+  "new_sources": [
+   "<p id=\"sNEW-g03-adcpr\"><b class=\"n\">NEW</b><span class=\"g\">P</span><span class=\"t\">BlackRock To Launch the “Aladdin Data Cloud” Powered by Snowflake</span>. BlackRock press release, February 22, 2021. <a href=\"https://www.blackrock.com/corporate/newsroom/media/press-releases/aladdin-data-cloud-powered-by-snowflake\">https://www.blackrock.com/corporate/newsroom/media/press-releases/aladdin-data-cloud-powered-by-snowflake</a></p>"
+  ],
+  "also_change": [],
+  "why": "Dashboard appears in field descriptions, but Risk Radar appears only in the API-level description, e.g. “Retrieve, update, or create Exceptions as surfaced in Risk Radar” [6]. Source 21 names Explore only, so its citation moves to its own sentence. Source 19 confirms Snowflake but not “this client’s own”. The February 22, 2021 BlackRock release says “Each Aladdin Data Cloud client receives an independent, centrally-managed data store”, so the box words stand and only the citation is added. Readability review: the note had grown to six lines with 18 superscripts in two styles. It is now two plain sentences and one source list grouped by source, with 8 superscript groups. It also carries the citations that p05-04, p05-16, p05-29, p05-36 and p05-15+p05-44 used to add one by one: shared services and Studio's users (Studio page), credentials (specifications), Aladdin Risk page, ATX and ADX pages, ICE and Sustainalytics.",
+  "page": 5
+ },
+ {
+  "id": "p05-15+p05-44",
+  "action": "FIX",
+  "current_html": "<text x=\"200\" y=\"356\" class=\"s\">events and files out</text>",
+  "proposed_html": "<text x=\"200\" y=\"356\" class=\"s\">events, files in and out</text>",
+  "new_sources": [
+   "<p id=\"sNEW-g03-atx\"><b class=\"n\">NEW</b><span class=\"g\">P</span><span class=\"t\">ATX: Aladdin tools for Excel</span>. BlackRock product page, as of October 20, 2026. <a href=\"https://www.blackrock.com/aladdin/platforms/products/aladdin-tools-for-excel\">https://www.blackrock.com/aladdin/platforms/products/aladdin-tools-for-excel</a></p>",
+   "<p id=\"sNEW-g03-adx\"><b class=\"n\">NEW</b><span class=\"g\">P</span><span class=\"t\">ADX: Aladdin Data eXchange</span>. BlackRock product page, as of October 20, 2026. <a href=\"https://www.blackrock.com/aladdin/platforms/products/aladdin-data-exchange\">https://www.blackrock.com/aladdin/platforms/products/aladdin-data-exchange</a></p>"
+  ],
+  "also_change": [
+   {
+    "where": "Exhibit 3 arrow from the Excel tools box to Client systems, make it two-way",
+    "current_html": "<path d=\"M190 342 H 156\" class=\"arr\" marker-end=\"url(#pm-arrow)\"/>",
+    "proposed_html": "<path d=\"M190 342 H 156\" class=\"arr\" marker-start=\"url(#pm-arrow)\" marker-end=\"url(#pm-arrow)\"/>"
+   }
+  ],
+  "why": "The APIs page [24] only names and links ATX and ADX. The ATX page says it lets users “retrieve Aladdin data”, and the ADX page describes “automated data transfer to and from Aladdin” by SFTP or IBM MQ, so files go both ways. Events rest on Woodhead’s “a set of APIs events” at 4:49 [1].",
+  "page": 5
+ },
+ {
+  "id": "p05-47+p05-48",
+  "action": "DECIDE",
+  "current_html": "<span class=\"ex-num\">Exhibit 4.</span> Six pieces make up Studio</p>",
+  "proposed_html": "<span class=\"ex-num\">Exhibit 4.</span> Studio, grouped here into six pieces</p>",
+  "alternative_html": "<span class=\"ex-num\">Exhibit 4.</span> Studio, grouped here into eight pieces</p>",
+  "new_sources": [],
+  "also_change": [
+   {
+    "where": "Exhibit 4 note, say there is no official count",
+    "current_html": "Woodhead<sup class=\"fnref\"><a href=\"#s1\">1</a></sup> and Goel<sup class=\"fnref\"><a href=\"#s26\">26</a></sup>.",
+    "proposed_html": "Woodhead<sup class=\"fnref\"><a href=\"#s1\">1</a></sup> and Goel<sup class=\"fnref\"><a href=\"#s26\">26</a></sup>. BlackRock gives no count. Its APIs page also links Aladdin Data eXchange and Aladdin Tools for Excel, which Exhibit 3 shows<sup class=\"fnref\"><a href=\"#s24\">24</a></sup>."
+   }
+  ],
+  "why": "No source gives a count of six. BlackRock’s APIs page lists Studio home, Data Cloud, ADX, Compute and ATX, and Snowflake’s partner page lists five capabilities, so the six rows are the author’s grouping. The recommended title says so and keeps page 5 the same length. The alternative adds ADX and ATX, which Exhibit 3 already shows.",
+  "decide_note": "No source gives a count of six. Recommended: “Studio, grouped here into six pieces”, which keeps page 5 the same length. Alternative: “Studio, grouped here into eight pieces”, adding two rows, “Aladdin Data eXchange: automated file transfer to and from Aladdin” with the ADX page, and “Aladdin Tools for Excel: an Excel plugin that retrieves Aladdin data” with the ATX page. That lengthens page 5 by about four lines. The row fixes p05-48+p05-50, the Event-driven row and the Developer Portal row apply under either option.",
+  "page": 5
+ },
+ {
+  "id": "p05-48+p05-50",
+  "action": "FIX",
+  "current_html": "Aladdin Graph is the whole API layer, not one API: every public specification carries an id of the form <code>agraph.&lt;domain&gt;.&lt;segment&gt;.&lt;group&gt;.v1.&lt;API&gt;</code><sup class=\"fnref\"><a href=\"#s6\">6</a></sup>.",
+  "proposed_html": "Aladdin Graph<sup class=\"fnref\"><a href=\"#s23\">23</a>, <a href=\"#s40\">40</a></sup> is the whole API layer, not one API. Every public specification’s id starts <code>agraph.&lt;domain&gt;</code><sup class=\"fnref\"><a href=\"#s6\">6</a></sup>.",
+  "new_sources": [],
+  "also_change": [],
+  "why": "All 54 ids start agraph.<domain>, but three specs are v2 and three have an extra segment, so only 48 match the five-part v1 form [6]. The name Aladdin Graph is backed by the SDK README, “based on Aladdin Graph API’s swagger specifications” [23], and BlackRock’s engineering blog, “curated Aladdin Graph APIs” [40], which is already in the register.",
+  "page": 5
+ },
+ {
+  "id": "p05-48 (Event-driven row)",
+  "action": "FIX",
+  "current_html": "<td class=\"first\">Event-driven APIs</td><td>Aladdin tells a program when something happens.",
+  "proposed_html": "<td class=\"first\">Event-driven workflows</td><td>Aladdin tells a program when something happens<sup class=\"fnref\"><a href=\"#sNEW-g03-risk\">NEW</a>, <a href=\"#sNEW-g03-job\">NEW</a></sup>.",
+  "new_sources": [
+   "<p id=\"sNEW-g03-job\"><b class=\"n\">NEW</b><span class=\"g\">T</span><span class=\"t\">Job posting: Technical Writer, Vice President (Edinburgh)</span>. BlackRock, posted February 21, 2026, removed February 23, 2026. Copy kept by Built In Bristol. <a href=\"https://builtinbristol.uk/job/technical-writer-aladdin-product-vice-president/7444888\">https://builtinbristol.uk/job/technical-writer-aladdin-product-vice-president/7444888</a></p>"
+  ],
+  "also_change": [],
+  "why": "No BlackRock page uses “Event-driven APIs” as a product name. BlackRock’s Aladdin Risk page lists “Aladdin Studio, APIs, and event-driven workflows” as capabilities, and a BlackRock job posting covers “event-driven workflows, including streaming APIs, webhook subscriptions”. The Aladdin Risk entry is added under p05-29.",
+  "page": 5
+ },
+ {
+  "id": "p05-56",
+  "action": "FIX",
+  "current_html": "A hosted space where developers run Python next to their Aladdin data; the SDK has a run mode for",
+  "proposed_html": "A hosted analytics platform with ready-to-use Python environments<sup class=\"fnref\"><a href=\"#sNEW-g03-snow\">NEW</a></sup>. The SDK has a run mode for",
+  "new_sources": [
+   "<p id=\"sNEW-g03-snow\"><b class=\"n\">NEW</b><span class=\"g\">P</span><span class=\"t\">Aladdin® by BlackRock (Powered by Snowflake partner page)</span>. Snowflake, archived September 9, 2024. <a href=\"https://web.archive.org/web/20240909090246/https://www.snowflake.com/powered-by/aladdin-by-blackrock/\">https://web.archive.org/web/20240909090246/https://www.snowflake.com/powered-by/aladdin-by-blackrock/</a></p>"
+  ],
+  "also_change": [],
+  "why": "Snowflake’s BlackRock partner page says “Aladdin Compute – a hosted analytics platform with ready to use python environments and automation tools.” No source says it runs “next to their Aladdin data”, so that phrase goes.",
+  "page": 5
+ },
+ {
+  "id": "p05-48 (Developer Portal row)",
+  "action": "CITE",
+  "current_html": "notebooks and code samples the <a href=\"https://www.blackrock.com/aladdin/platforms/products/apis\">APIs page</a> describes.</td>",
+  "proposed_html": "notebooks and code samples the <a href=\"https://www.blackrock.com/aladdin/platforms/products/apis\">APIs page</a> describes<sup class=\"fnref\"><a href=\"#s24\">24</a></sup>. A BlackRock job posting names the “Aladdin Studio Developer Portal”<sup class=\"fnref\"><a href=\"#sNEW-g03-job\">NEW</a></sup>.</td>",
+  "new_sources": [],
+  "also_change": [],
+  "why": "The APIs page describes the content but never says “Developer Portal”. The name comes from the job posting: “the Aladdin Studio Developer Portal”. The job posting entry is added under the Event-driven row.",
+  "page": 5
+ },
+ {
+  "id": "p05-65",
+  "action": "FIX",
+  "current_html": "No event specification is public<sup class=\"fnref\"><a href=\"#s6\">6</a></sup>; the catalog, guides, notebooks and samples sit behind a client login<sup class=\"fnref\"><a href=\"#s24\">24</a></sup>.",
+  "proposed_html": "No event specification is public<sup class=\"fnref\"><a href=\"#s6\">6</a></sup>. The APIs page describes the catalog, guides, notebooks and samples but does not link them<sup class=\"fnref\"><a href=\"#s24\">24</a></sup>. The specifications link the guides to a portal behind a client login<sup class=\"fnref\"><a href=\"#s6\">6</a>, <a href=\"#sNEW-g03-portal\">NEW</a></sup>.",
+  "new_sources": [
+   "<p id=\"sNEW-g03-portal\"><b class=\"n\">NEW</b><span class=\"g\">P</span><span class=\"t\">Aladdin developer portal</span>. BlackRock, checked October 20, 2026. The address redirects to the Aladdin client login. <a href=\"https://www.blackrock.com/apps/aladdin-developer-portal/\">https://www.blackrock.com/apps/aladdin-developer-portal/</a></p>"
+  ],
+  "also_change": [],
+  "why": "Source 24 never mentions a login. Seventeen specs link to “apps/aladdin-developer-portal/#/guides/developer-guide” [6], and that address returns a 302 to aladdin-login.blackrock.com (rechecked October 20, 2026). That the catalog, notebooks and samples are also behind it is an inference, so the text states only what was observed.",
+  "page": 5
+ },
+ {
+  "id": "p06-58+p06-59",
+  "action": "CITE",
+  "current_html": "Ten specifications expose an endpoint for long-running operations, 35 operations are flagged as long-running, and the <a href=\"https://github.com/blackrock/aladdinsdk\">SDK polls them</a><sup class=\"fnref\"><a href=\"#s23\">23</a></sup>.",
+  "proposed_html": "Ten specifications expose an endpoint for long-running operations, and 35 operations are flagged as long-running<sup class=\"fnref\"><a href=\"#s6\">6</a></sup>. The <a href=\"https://github.com/blackrock/aladdinsdk\">SDK polls them</a><sup class=\"fnref\"><a href=\"#s23\">23</a></sup>.",
+  "new_sources": [],
+  "also_change": [],
+  "why": "Both counts are right and come from the 54 specifications in source 6: 10 specs have a /longrunningoperations/{id} endpoint and \"x-aladdin-lro\" appears on 35 operations. The SDK README (23) supports only the polling (\"LRO Utilities to trigger and poll Long Running Operation endpoint calls\"), so 23 stays on that clause alone.",
+  "page": 6
+ },
+ {
+  "id": "p06-63+p06-64",
+  "action": "FIX",
+  "current_html": "Every request carries an application key plus OAuth 2.0 scopes such as <code>trading.order_management.order.v1.Order:read</code>, and the <a href=\"https://github.com/blackrock/aladdinsdk\">client ID and secret come from the Studio UI</a><sup class=\"fnref\"><a href=\"#s23\">23</a></sup>.",
+  "proposed_html": "Every request carries an application key and a second credential. That is an OAuth 2.0 token, a client key, or a user name and password<sup class=\"fnref\"><a href=\"#s6\">6</a></sup>. OAuth scopes look like <code>trading.order_management.order.v1.Order:read</code><sup class=\"fnref\"><a href=\"#s6\">6</a></sup>. The <a href=\"https://github.com/blackrock/aladdinsdk\">client ID and secret come from the Studio UI</a><sup class=\"fnref\"><a href=\"#s23\">23</a></sup>.",
+  "new_sources": [],
+  "also_change": [],
+  "why": "Every security option in all 54 specs pairs the \"VND.com.blackrock.API-Key\" header with one of OAuth2 (access code or client credentials), \"ClientKeyHeader\" or \"basicAuth\" (OrderAPI/swagger.json:24-45), and the scope string appears only in those specs (source 6, :27-28). The SDK README (23) lists \"`Basic Auth` / `OAuth`\" with Basic Auth as the default, so OAuth is one option, and 23 stays only on the Studio UI clause.",
+  "page": 6
+ },
+ {
+  "id": "p06-66+p02-14",
+  "action": "FIX",
+  "current_html": "<p>Five BlackRock speakers define Studio in the 128 recordings I pulled for this document<sup class=\"fnref\"><a href=\"#s28\">28</a>, <a href=\"#s29\">29</a></sup>; Exhibit 6 lists each",
+  "proposed_html": "<p>I pulled about 125 recordings. Five BlackRock speakers in them describe Studio or its parts<sup class=\"fnref\"><a href=\"#s1\">1</a>, <a href=\"#s16\">16</a>, <a href=\"#s26\">26</a>, <a href=\"#s30\">30</a>, <a href=\"#s31\">31</a></sup>. Exhibit 6 lists each",
+  "new_sources": [],
+  "also_change": [],
+  "why": "Sources 28 and 29 are series index pages whose only \"Studio\" is navigation text, so the five recordings themselves (1, 16, 26, 30, 31) are cited instead. Goel and Miller describe parts (events, APIs, the Data Cloud) without naming Studio (Goel webinar [28:52] \"via an event, via an API\"; Miller transcript has 0 hits for \"studio\"), so \"define\" becomes \"describe Studio or its parts\". Sources 28 and 29 stay cited in the Exhibit on where recordings live, so neither is orphaned. The recording count matches page 2 (p02-14): about 125, because the two indexes overlap.",
+  "page": 6
+ },
+ {
+  "id": "p07-01",
+  "action": "FIX",
+  "current_html": "<span class=\"ex-num\">Exhibit 6.</span> Five BlackRock executives have defined Studio on the record</p>",
+  "proposed_html": "<span class=\"ex-num\">Exhibit 6.</span> Five BlackRock executives describe Studio or its parts on the record</p>",
+  "new_sources": [],
+  "also_change": [],
+  "why": "Only Woodhead, Newman and Khara name Studio. Miller speaks only about the Data Cloud (\"We sent flat files, we sent large schema definitions, FTP and related transfers\", 0 hits for \"studio\") and Goel never says Studio, so the title matches the body text in p06-66.",
+  "page": 7
+ },
+ {
+  "id": "p07-22+p07-27+p07-28+p07-31+p07-40+p07-45",
+  "action": "DECIDE",
+  "current_html": "<p>Four of the five describe Studio in the same terms, APIs and events plus the Data Cloud, and two of those four add developer tools. Newman calls Data Cloud “part of Studio”<sup class=\"fnref\"><a href=\"#s16\">16</a></sup>. Goel describes events, APIs and a near-real-time data store<sup class=\"fnref\"><a href=\"#s26\">26</a></sup>. Khara calls it programmatic access to data and reporting<sup class=\"fnref\"><a href=\"#s30\">30</a></sup>. A 2026 <a href=\"https://careers.blackrock.com/job/new-york/senior-product-director-aladdin-studio-developer/45831/96232273856\">job posting</a> calls Studio “Aladdin’s extensibility layer”<sup class=\"fnref\"><a href=\"#s32\">32</a></sup>. The message is consistent across speakers and years, so BlackRock already has a positioning for Studio.</p>",
+  "proposed_html": "<p>Khara, Newman, Goel and Woodhead describe ways for clients to reach Aladdin through code. Only Woodhead names every part, developer tools included<sup class=\"fnref\"><a href=\"#s1\">1</a></sup>. Newman calls the Data Cloud and the analytics APIs part of Studio<sup class=\"fnref\"><a href=\"#s16\">16</a></sup>. Goel says every transaction should be available to clients through an event or an API. He also describes a near-real-time data store<sup class=\"fnref\"><a href=\"#s26\">26</a></sup>. Khara calls Studio programmatic access to data and reporting<sup class=\"fnref\"><a href=\"#s30\">30</a></sup>. A 2026 <a href=\"https://careers.blackrock.com/job/new-york/senior-product-director-aladdin-studio-developer/45831/96232273856\">job posting</a> for a product director of Aladdin Studio Developer calls it “Aladdin’s extensibility layer”<sup class=\"fnref\"><a href=\"#s32\">32</a></sup>. APIs and data access recur across speakers and years, so BlackRock already has the core of a positioning for Studio.</p>",
+  "alternative_html": "<p>Newman, Goel and Woodhead each name APIs and a data store. Only Woodhead also names developer tools<sup class=\"fnref\"><a href=\"#s1\">1</a></sup>. Newman calls the Data Cloud and the analytics APIs part of Studio<sup class=\"fnref\"><a href=\"#s16\">16</a></sup>. Goel says every transaction should be available to clients through an event or an API. He also describes a near-real-time data store<sup class=\"fnref\"><a href=\"#s26\">26</a></sup>. Khara calls Studio programmatic access to data and reporting<sup class=\"fnref\"><a href=\"#s30\">30</a></sup>. A 2026 <a href=\"https://careers.blackrock.com/job/new-york/senior-product-director-aladdin-studio-developer/45831/96232273856\">job posting</a> for a product director of Aladdin Studio Developer calls it “Aladdin’s extensibility layer”<sup class=\"fnref\"><a href=\"#s32\">32</a></sup>. APIs and data access recur across speakers and years, so BlackRock already has the core of a positioning for Studio.</p>",
+  "new_sources": [],
+  "also_change": [
+   {
+    "where": "Exhibit 7 (title, columns, rows and note). Recommended table; the alternative table is in alternative_html of this entry.",
+    "current_html": "<figure class=\"exhibit\" id=\"exhibit-7\"><p class=\"ex-title\"><span class=\"ex-num\">Exhibit 7.</span> All four speakers name APIs, events and the Data Cloud as parts of Studio</p>\n<table>\n<colgroup><col style=\"width:84pt\"><col><col style=\"width:36pt\"><col style=\"width:36pt\"><col style=\"width:36pt\"></colgroup>\n<thead><tr><th>Speaker, date</th><th>What they said</th><th class=\"ctr\">APIs and events</th><th class=\"ctr\">Data Cloud</th><th class=\"ctr\">Developer tools</th></tr></thead>\n<tbody>\n<tr><td class=\"first\">Kunal Khara, early 2024</td><td><a href=\"https://www.blackrock.com/aladdin/discover\">“More users are craving this ability to interact with our data, with their data, with reporting with dashboards on a programmatic basis”</a><sup class=\"fnref\"><a href=\"#s30\">30</a></sup></td><td class=\"ctr chk\">Yes</td><td class=\"ctr chk\">Yes</td><td class=\"ctr dim\">–</td></tr>\n<tr><td class=\"first\">Richard Newman, January 2025</td><td><a href=\"https://www.blackrock.com/aladdin/discover/podcast/snowflake-podcast-data-the-key-ingredient\">“The Aladdin data cloud ... which is part of Studio”; “those analytic APIs ... That’s all part of the Studio umbrella”</a><sup class=\"fnref\"><a href=\"#s16\">16</a></sup></td><td class=\"ctr chk\">Yes</td><td class=\"ctr chk\">Yes</td><td class=\"ctr dim\">–</td></tr>\n<tr><td class=\"first\">Diwakar Goel, 2025</td><td><a href=\"https://www.blackrock.com/aladdin/discover/expertise/webinars/data-as-a-strategic-assets-for-pensions\">“Every single transaction ... via an event, via an API”; “a near real time data store”; exposing “the software and application that we’re building”</a><sup class=\"fnref\"><a href=\"#s26\">26</a></sup></td><td class=\"ctr chk\">Yes</td><td class=\"ctr chk\">Yes</td><td class=\"ctr chk\">Yes</td></tr>\n<tr><td class=\"first\">Dave Woodhead, November 2025</td><td><a href=\"https://www.youtube.com/watch?v=Me_H_-E6lSg\">“It exposes everything Aladdin knows how to do as a set of APIs events. The Aladdin data cloud built on top of Snowflake ... developer tools”</a><sup class=\"fnref\"><a href=\"#s1\">1</a></sup></td><td class=\"ctr chk\">Yes</td><td class=\"ctr chk\">Yes</td><td class=\"ctr chk\">Yes</td></tr>\n</tbody></table>\n<div class=\"notes\"><p><span class=\"lbl e\"></span>Source: the four recordings cited<sup class=\"fnref\"><a href=\"#s1\">1</a>, <a href=\"#s16\">16</a>, <a href=\"#s26\">26</a>, <a href=\"#s30\">30</a></sup>. Quotations are verbatim; Khara, Goel and Woodhead are machine or auto-caption transcriptions, marked as such in the Sources section at the end of this document. Yes means the speaker names that part; – means not. Only Goel and Woodhead name developer tools.</p></div></figure>",
+    "proposed_html": "<figure class=\"exhibit\" id=\"exhibit-7\"><p class=\"ex-title\"><span class=\"ex-num\">Exhibit 7.</span> Four speakers describe parts of Studio, and only Woodhead names them all</p>\n<table>\n<colgroup><col style=\"width:84pt\"><col><col style=\"width:108pt\"></colgroup>\n<thead><tr><th>Speaker, date</th><th>What they said</th><th>Parts they name</th></tr></thead>\n<tbody>\n<tr><td class=\"first\">Kunal Khara, early 2024</td><td><a href=\"https://www.blackrock.com/aladdin/discover\">“More users are craving this ability to interact with our data, with their data, with reporting with dashboards on a programmatic basis”</a><sup class=\"fnref\"><a href=\"#s30\">30</a></sup></td><td>None by name. Programmatic access implies APIs</td></tr>\n<tr><td class=\"first\">Richard Newman, January 2025</td><td><a href=\"https://www.blackrock.com/aladdin/discover/podcast/snowflake-podcast-data-the-key-ingredient\">“Aladdin data cloud specifically comes in, which is part of Studio”; “those analytic APIs ... That’s all part of the Studio umbrella”</a><sup class=\"fnref\"><a href=\"#s16\">16</a></sup></td><td>APIs, Data Cloud</td></tr>\n<tr><td class=\"first\">Diwakar Goel, 2025</td><td><a href=\"https://www.blackrock.com/aladdin/discover/expertise/webinars/data-as-a-strategic-assets-for-pensions\">“Every single transaction ... via an event, via an API”; “a near real time data store”; exposing “the software and application that we’re building”</a><sup class=\"fnref\"><a href=\"#s26\">26</a></sup></td><td>APIs, events, a near-real-time data store</td></tr>\n<tr><td class=\"first\">Dave Woodhead, November 2025</td><td><a href=\"https://www.youtube.com/watch?v=Me_H_-E6lSg\">“It exposes everything Aladdin knows how to do as a set of APIs events. The Aladdin data cloud built on top of Snowflake ... developer tools”</a><sup class=\"fnref\"><a href=\"#s1\">1</a></sup></td><td>APIs, events, Data Cloud, developer tools</td></tr>\n</tbody></table>\n<div class=\"notes\"><p><span class=\"lbl e\"></span>Source: the four recordings cited<sup class=\"fnref\"><a href=\"#s1\">1</a>, <a href=\"#s16\">16</a>, <a href=\"#s26\">26</a>, <a href=\"#s30\">30</a></sup>. Quotations are verbatim. Khara, Goel and Woodhead are machine or auto-caption transcriptions, marked as such in the Sources section at the end of this document. Goel does not use the name Studio.</p></div></figure>",
+    "alternative_html": "<figure class=\"exhibit\" id=\"exhibit-7\"><p class=\"ex-title\"><span class=\"ex-num\">Exhibit 7.</span> Three speakers name APIs and a data store, and only Woodhead names developer tools</p>\n<table>\n<colgroup><col style=\"width:84pt\"><col><col style=\"width:108pt\"></colgroup>\n<thead><tr><th>Speaker, date</th><th>What they said</th><th>Parts they name</th></tr></thead>\n<tbody>\n<tr><td class=\"first\">Richard Newman, January 2025</td><td><a href=\"https://www.blackrock.com/aladdin/discover/podcast/snowflake-podcast-data-the-key-ingredient\">“Aladdin data cloud specifically comes in, which is part of Studio”; “those analytic APIs ... That’s all part of the Studio umbrella”</a><sup class=\"fnref\"><a href=\"#s16\">16</a></sup></td><td>APIs, Data Cloud</td></tr>\n<tr><td class=\"first\">Diwakar Goel, 2025</td><td><a href=\"https://www.blackrock.com/aladdin/discover/expertise/webinars/data-as-a-strategic-assets-for-pensions\">“Every single transaction ... via an event, via an API”; “a near real time data store”; exposing “the software and application that we’re building”</a><sup class=\"fnref\"><a href=\"#s26\">26</a></sup></td><td>APIs, events, a near-real-time data store</td></tr>\n<tr><td class=\"first\">Dave Woodhead, November 2025</td><td><a href=\"https://www.youtube.com/watch?v=Me_H_-E6lSg\">“It exposes everything Aladdin knows how to do as a set of APIs events. The Aladdin data cloud built on top of Snowflake ... developer tools”</a><sup class=\"fnref\"><a href=\"#s1\">1</a></sup></td><td>APIs, events, Data Cloud, developer tools</td></tr>\n</tbody></table>\n<div class=\"notes\"><p><span class=\"lbl e\"></span>Source: the three recordings cited<sup class=\"fnref\"><a href=\"#s1\">1</a>, <a href=\"#s16\">16</a>, <a href=\"#s26\">26</a></sup>. Quotations are verbatim. Goel and Woodhead are machine or auto-caption transcriptions, marked as such in the Sources section at the end of this document. Goel does not use the name Studio.</p></div></figure>"
+   }
+  ],
+  "why": "Only Woodhead names APIs, events and the Data Cloud while calling it Studio (Simplecast transcript [00:05:25] \"a set of APIs events. The Aladdin Data Cloud\"). Newman has the Data Cloud and APIs but no events, Goel has all three without saying Studio, and Khara gives only programmatic access ([18:37] \"on a programmatic basis at machine scale\"). The job posting gives the label to Studio Developer: \"Set and evolve the vision for Studio Developer as Aladdin's extensibility layer\". The opening count is the paragraph's thesis, hence DECIDE. Recommended keeps \"Four\", which holds because Khara describes programmatic access and Miller speaks only about the Data Cloud. The alternative drops Khara from Exhibit 7 and names the three speakers who name APIs and the Data Cloud. Newman never says \"event\", Khara names none of the three ([18:42] \"on a programmatic basis\"), and Goel never says \"developer tools\" ([35:40] is about BlackRock staff). The “Parts they name” column shows Newman's APIs without events, Goel's data store and Khara's unnamed programmatic access. The Newman quote now matches the published transcript word for word: \"and Aladdin data cloud specifically comes in, which is part of Studio\". The old \"The Aladdin data cloud ... which is part of Studio\" dropped \"data cloud and\" without an ellipsis. The new title and column change the exhibit, hence DECIDE. Optional: Woodhead now has a published transcript (Simplecast, [00:05:25]), so source 1 could cite it instead of YouTube auto-captions.",
+  "decide_note": "The opening of the paragraph and the Exhibit 7 title carry the same claim, so both take the same option. Recommended: Exhibit 7 keeps all four speakers and replaces the tick columns with one “Parts they name” column, so the quote column keeps its width and rows stay at two lines. The title says “Four speakers describe parts of Studio, and only Woodhead names them all”, and the paragraph names the four speakers. Alternative: drop Khara from Exhibit 7, title it “Three speakers name APIs and a data store, and only Woodhead names developer tools”, and open the paragraph with those three. Under either option the paragraph closes with “APIs and data access recur across speakers and years”, which every row supports. Page 6 (p06-66) and the Exhibit 6 title (p07-01) already say “describe Studio or its parts”, which fits both options.",
+  "page": 7
+ },
+ {
+  "id": "p08-03",
+  "action": "FIX",
+  "current_html": "On BlackRock’s video, Royal London’s chief executive credits",
+  "proposed_html": "On BlackRock’s video, Hans Georgeson, then chief executive of Royal London Asset Management, credits",
+  "new_sources": [],
+  "also_change": [],
+  "why": "BlackRock’s page for the video (source 34) reads “A conversation with Hans Georgeson, CEO of Royal London Asset Management”. The Royal London group chief executive is Barry O’Dwyer, and Georgeson stepped down in September 2026, so “then” keeps the sentence true as of October 2026. Register entry 34 already names Georgeson with his title at recording and needs no change.",
+  "page": 8
+ },
+ {
+  "id": "p08-31",
+  "action": "DECIDE",
+  "current_html": "Aladdin won the tenders of three public pension bodies</p>",
+  "proposed_html": "BlackRock won the tenders of three public pension bodies</p>",
+  "new_sources": [
+   "<p id=\"sNEW_g05_nest\"><b class=\"n\">NEW</b><span class=\"g\">P</span><span class=\"t\">Nest selects BlackRock’s Aladdin as its investment risk platform</span>. Nest press release, November 13, 2023. <a href=\"https://www.nestpensions.org.uk/schemeweb/nest/nestcorporation/news-press-and-policy/press-releases/Nest-selects-BlackRock-s-Aladdin-as-its-investment-risk-platform.html\">https://www.nestpensions.org.uk/schemeweb/nest/nestcorporation/news-press-and-policy/press-releases/Nest-selects-BlackRock-s-Aladdin-as-its-investment-risk-platform.html</a></p>"
+  ],
+  "also_change": [
+   {
+    "where": "Exhibit 9, Nest row (needed under either option)",
+    "current_html": "<td>2023</td><td>Aladdin won against six other bids</td>",
+    "proposed_html": "<td>2023</td><td>Nest chose BlackRock’s Aladdin over six other bids<sup class=\"fnref\"><a href=\"#sNEW_g05_nest\">NEW</a></sup></td>"
+   }
+  ],
+  "why": "All three award records name BlackRock Financial Management as the winner. Only the PPF notice (supplier web address blackrock.com/aladdin) and Nest’s own press release (“Nest selects BlackRock’s Aladdin as its investment risk platform”, 13 November 2023) tie a win to Aladdin. The PBGC records describe an “Investment Risk Management System” and name no product, and a search found no PBGC source naming Aladdin. Recommended: retitle to BlackRock and keep all three rows. Alternative: keep Aladdin and drop the PBGC row, which weakens the exhibit to two UK bodies.",
+  "alternative_html": "Aladdin won the tenders of two UK public pension bodies</p>",
+  "decide_note": "All three award records name BlackRock Financial Management as the winner, and only the PPF and Nest records tie a win to Aladdin. Recommended: retitle to “BlackRock won” and keep all three rows. The PPF, PBGC and note fixes (p08-35, p08-40+p08-41+p08-42, p08-43) already say “BlackRock won”. Alternative: keep “Aladdin” and drop the PBGC row, which weakens the exhibit to two UK bodies. Then the PPF and Nest cells start “Aladdin won”, the note drops USAspending.gov and both PBGC sources leave the register. Nothing else in the document counts the pension bodies.",
+  "page": 8
+ },
+ {
+  "id": "p08-35",
+  "action": "FIX",
+  "current_html": "<td>2025</td><td>Aladdin won both parts of the tender, at a price above the fund’s own estimate</td>",
+  "proposed_html": "<td>2025</td><td>BlackRock won both parts of the tender, at up to £74.0 million, against the fund’s estimate of up to £55 million<sup class=\"fnref\"><a href=\"#sNEW_g05_ppfcn\">NEW</a></sup></td>",
+  "new_sources": [
+   "<p id=\"sNEW_g05_ppfcn\"><b class=\"n\">NEW</b><span class=\"g\">P</span><span class=\"t\">Contract notice 001014-2025, order management, portfolio monitoring and risk analytics system, Pension Protection Fund</span>. UK Find a Tender, January 13, 2025. Estimated value £43 million to £55 million across both lots over ten years. <a href=\"https://www.find-tender.service.gov.uk/Notice/001014-2025\">https://www.find-tender.service.gov.uk/Notice/001014-2025</a></p>"
+  ],
+  "also_change": [],
+  "why": "The award notice (source 43, 6 October 2025) values the contract at “between £48,766,000 and £74,025,496” over ten years. The earlier contract notice 001014-2025 (13 January 2025) gives an estimate “between £43m and £55m across Lots 1 and 2”. The low end of the award sits inside the estimate, so the honest comparison is ceiling against ceiling, and the estimate needs its own citation. If the author takes the p08-31 alternative, the cell starts “Aladdin won”.",
+  "page": 8
+ },
+ {
+  "id": "p08-40+p08-41+p08-42",
+  "action": "FIX",
+  "current_html": "<td>2017 and 2023</td><td>Aladdin won in 2017 and again in 2023, at an unchanged price</td>",
+  "proposed_html": "<td>2017 and 2023</td><td>BlackRock won an investment risk system contract both times, at about the same yearly price<sup class=\"fnref\"><a href=\"#s45\">45</a>, <a href=\"#sNEW_g05_pbgc17\">NEW</a></sup></td>",
+  "new_sources": [
+   "<p id=\"sNEW_g05_pbgc17\"><b class=\"n\">NEW</b><span class=\"g\">P</span><span class=\"t\">Award 16PBGC17C5002, Investment Risk Management System (IRMS), Pension Benefit Guaranty Corporation to BlackRock Financial Management</span>. USAspending.gov award record. Full and open competition, four offers received, signed September 28, 2017, performance September 2017 to March 2023. <a href=\"https://api.usaspending.gov/api/v2/awards/CONT_AWD_16PBGC17C5002_1665_-NONE-_-NONE-/\">https://api.usaspending.gov/api/v2/awards/CONT_AWD_16PBGC17C5002_1665_-NONE-_-NONE-/</a></p>"
+  ],
+  "also_change": [],
+  "why": "The two USAspending awards, 16PBGC17C5002 (signed 28 September 2017) and 16PBGC23C0006 (source 45, signed 27 March 2023), both go to BlackRock Financial Management for an “Investment Risk Management System” after full and open competition with four offers each. Neither names Aladdin. Each base year is $1,389,350.64 and each option year $1,387,500, so the yearly price is about the same, but only both records together show it.",
+  "page": 8
+ },
+ {
+  "id": "p08-43",
+  "action": "FIX",
+  "current_html": "Source: UK Find a Tender<sup class=\"fnref\"><a href=\"#s43\">43</a>, <a href=\"#s44\">44</a></sup>; USAspending.gov<sup class=\"fnref\"><a href=\"#s45\">45</a></sup>.</p>",
+  "proposed_html": "Source: UK Find a Tender<sup class=\"fnref\"><a href=\"#s43\">43</a>, <a href=\"#sNEW_g05_ppfcn\">NEW</a>, <a href=\"#s44\">44</a></sup>; Nest<sup class=\"fnref\"><a href=\"#sNEW_g05_nest\">NEW</a></sup>; USAspending.gov<sup class=\"fnref\"><a href=\"#s45\">45</a>, <a href=\"#sNEW_g05_pbgc17\">NEW</a></sup>. The PPF notice gives BlackRock’s Aladdin web page as the supplier’s address<sup class=\"fnref\"><a href=\"#s43\">43</a></sup>.</p>",
+  "new_sources": [],
+  "also_change": [],
+  "why": "Source 45 covers only the 2023 PBGC award, so the 2017 award record joins it. The PPF estimate notice and Nest’s press release are now cited in the rows and belong in the note too. The PPF award record lists the supplier URL as “http://www.blackrock.com/aladdin”, which is the public link from that win to Aladdin. Its three NEW entries are listed under p08-31, p08-35 and p08-40+p08-41+p08-42. Page fit: Exhibit 9 ends just before a forced page break, and the longer rows add about two lines, so check that page 8 still fits.",
+  "page": 8
+ },
+ {
+  "id": "p09-01",
+  "action": "DECIDE",
+  "current_html": "<p>BlackRock tells investors growth will come from API calls, without naming the product behind them. It projected at its <a href=\"https://s24.q4cdn.com/856567660/files/doc_presentations/2025/BLK-Investor-Day-2025-WEB.pdf\">2025 Investor Day</a> that API calls across BlackRock and Aladdin would grow 17x by 2030<sup class=\"fnref\"><a href=\"#s10\">10</a></sup>.",
+  "proposed_html": "<p>BlackRock tells investors that API calls will grow fastest, without naming the product behind them. At its <a href=\"https://s24.q4cdn.com/856567660/files/doc_presentations/2025/BLK-Investor-Day-2025-WEB.pdf\">2025 Investor Day</a> it forecast four volumes to 2030. API calls across BlackRock and Aladdin led, with 17x growth<sup class=\"fnref\"><a href=\"#s10\">10</a></sup>.",
+  "new_sources": [],
+  "also_change": [
+   {
+    "where": "Finding 2 heading (alternative only)",
+    "current_html": "2. BlackRock’s growth story to investors runs through Studio, though it rarely says the name</h2>",
+    "proposed_html": "2. BlackRock’s fastest-growing forecast for investors runs through Studio, though it rarely says the name</h2>"
+   }
+  ],
+  "why": "Slide 23 of the 2025 Investor Day deck (source 10) sits under “Continuously drive marginal costs down”. It forecasts four volumes to 2030: portfolios 2x, model portfolios 4x, trade allocations 1.3x and API calls 17x. It does not say growth comes from API calls. The fix changes the lead sentence of Finding 2 and its direction box. Recommended: change those two and keep the heading, which the paragraph already labels as the author’s inference. Alternative: also retitle the heading as shown. Page 2 (“API calls will grow 17x by 2030”) is already correct.",
+  "alternative_html": "<p>BlackRock tells investors that API calls will grow fastest, without naming the product behind them. At its <a href=\"https://s24.q4cdn.com/856567660/files/doc_presentations/2025/BLK-Investor-Day-2025-WEB.pdf\">2025 Investor Day</a> it forecast four volumes to 2030. API calls across BlackRock and Aladdin led, with 17x growth<sup class=\"fnref\"><a href=\"#s10\">10</a></sup>.",
+  "decide_note": "Slide 23 forecasts four volumes and does not say growth comes from API calls. Recommended: fix the two lead sentences and the direction box (p10-01) and keep the Finding 2 heading, which the paragraph already labels as my inference. Alternative: also retitle the heading to “2. BlackRock’s fastest-growing forecast for investors runs through Studio, though it rarely says the name”. Page 2 and Part 3 already state the 17x forecast correctly.",
+  "page": 9
+ },
+ {
+  "id": "p09-27",
+  "action": "FIX",
+  "current_html": "<td class=\"first\">Agent</td><td class=\"num\">0</td><td>Never</td>",
+  "proposed_html": "<td class=\"first\">AI agent or agentic</td><td class=\"num\">0</td><td>Never</td>",
+  "new_sources": [],
+  "also_change": [],
+  "why": "The word “agent” appears once, in Fink’s Q4 2023 remarks (“being an agent for and adapting to change”), which are not about AI. No transcript checked uses “AI agent” or “agentic”. Relabelling the row keeps the note “A zero means the term appears in no transcript” true without touching it.",
+  "page": 9
+ },
+ {
+  "id": "p10-01",
+  "action": "FIX",
+  "current_html": "BlackRock itself says growth will come from API calls, the fastest-growing measure it showed investors.",
+  "proposed_html": "BlackRock projects API calls across BlackRock and Aladdin to grow 17x by 2030, the fastest of the four volumes it showed investors<sup class=\"fnref\"><a href=\"#s10\">10</a></sup>.",
+  "new_sources": [],
+  "also_change": [],
+  "why": "Slide 23 of the 2025 Investor Day deck (source 10) lists four 2030 volume estimates under “4. Continuously drive marginal costs down”: portfolios 2x, model portfolios 4x, trade allocations 1.3x and “API Calls (#) 17x”. It is a volume forecast, and the growth areas BlackRock names for Aladdin are Whole Portfolio, Wealth and Data (slides 31 to 33). Reviewer: “the four volumes” matches the page 9 sentence (p09-01).",
+  "page": 10
+ },
+ {
+  "id": "p10-03+p10-04",
+  "action": "FIX",
+  "current_html": "The data it is adding, private markets and Preqin, arrives through Data Cloud and Explore. Both are Studio surfaces.",
+  "proposed_html": "The private-markets data it is adding from eFront and Preqin is going into Data Cloud, which is part of Studio<sup class=\"fnref\"><a href=\"#s16\">16</a></sup>.",
+  "new_sources": [],
+  "also_change": [
+   {
+    "where": "Page 9 body, opening sentence of the private-markets paragraph (optional, same overstatement of routes)",
+    "current_html": "The private-markets data BlackRock has been adding reaches clients through Data Cloud and Explore.",
+    "proposed_html": "Much of the private-markets data BlackRock has been adding reaches clients through Data Cloud and Explore."
+   }
+  ],
+  "why": "Newman, the Studio general manager (source 16), says eFront data is “coming into the Aladdin Data Cloud” and Preqin is “bringing in that data”, and calls Data Cloud “part of Studio”. No source calls Explore a Studio surface, and Preqin benchmarks also reach clients through Preqin Pro, eFront, Aladdin Wealth and APIs (BlackRock press release, July 8, 2026), so the sentence names only the Data Cloud route.",
+  "page": 10
+ },
+ {
+  "id": "p10-07+p10-10+p10-13",
+  "action": "FIX",
+  "current_html": ", the AI inside the login, is built on the same APIs Studio exposes. It draws on a registry of plugins, <a href=\"https://www.youtube.com/watch?v=oyqeCHFM5U4\">“couple of thousands agents and tools,”</a> built by Aladdin’s engineering teams. The first way a team adds a tool is “to define a tool as kind of mapping one-to-one to an existing Aladdin API already out in production”<sup class=\"fnref\"><a href=\"#s8\">8</a></sup>. So Copilot’s tools are Studio’s APIs. Microsoft’s Adrian Crockett made the dependence plain on BlackRock’s podcast: <a href=\"https://www.blackrock.com/aladdin/discover/podcast/microsoft-part-2-podcast\">“There’s no copilot without plug-ins”</a><sup class=\"fnref\"><a href=\"#s53\">53</a></sup>. On the data side, BlackRock’s AI product head says the team is making sure <a href=\"https://www.blackrock.com/aladdin/discover/podcast/reducing-time-to-insight-how-ai-is-reshaping-risk-management\">“the data model itself is structured for agentic use cases”</a><sup class=\"fnref\"><a href=\"#s54\">54</a></sup>.",
+  "proposed_html": ", the AI inside the login, calls Aladdin’s production APIs as tools. It draws on a registry of plugins, <a href=\"https://www.youtube.com/watch?v=oyqeCHFM5U4\">“couple of thousands agents and tools,”</a> built by Aladdin’s engineering teams. The first way a team adds a tool is “to define a tool as kind of mapping one-to-one to an existing Aladdin API already out in production”<sup class=\"fnref\"><a href=\"#s8\">8</a></sup>. Teams can also register agents of their own<sup class=\"fnref\"><a href=\"#s8\">8</a></sup>. Studio “exposes everything Aladdin knows how to do” as APIs and events<sup class=\"fnref\"><a href=\"#s1\">1</a></sup>. So I infer that Copilot and Studio use the same APIs. Microsoft’s Adrian Crockett made the dependence plain on BlackRock’s podcast: <a href=\"https://www.blackrock.com/aladdin/discover/podcast/microsoft-part-2-podcast\">“There’s no copilot without plug-ins”</a><sup class=\"fnref\"><a href=\"#s53\">53</a></sup>. On the data side, a BlackRock product leader says the team is making sure <a href=\"https://www.blackrock.com/aladdin/discover/podcast/reducing-time-to-insight-how-ai-is-reshaping-risk-management\">“the data model itself is structured for agentic use cases”</a><sup class=\"fnref\"><a href=\"#s54\">54</a></sup>.",
+  "new_sources": [],
+  "also_change": [],
+  "why": "Rosales and Valdez (source 8) describe two ways to add a tool: “mapping one-to-one to an existing Aladdin API already out in production”, or teams registering “their own agents”. No source says these are the APIs Studio exposes, so the link rests on Woodhead (source 1, “It exposes everything Aladdin knows how to do as a set of APIs events”) and is marked as inference. In source 54 the 17:37 speaker refers to “what Pavana is speaking to”, so the quote is not Pemmaraju’s. Register entry 54 changes under s54.",
+  "page": 10
+ },
+ {
+  "id": "p10-ex11-title",
+  "action": "FIX",
+  "current_html": "Copilot answers a question by choosing from thousands of tools and calling production Aladdin APIs</p>",
+  "proposed_html": "Copilot answers a question by picking from about two thousand tools and agents, then calling production Aladdin APIs</p>",
+  "new_sources": [],
+  "also_change": [],
+  "why": "Consistency. Source 8 says “a couple thousands agents and tools” (6:42). Pages 2 and 13 and Exhibit 14 now say “about two thousand tools and agents”, so Exhibit 11 says the same.",
+  "page": 10
+ },
+ {
+  "id": "p10-ex11-aria",
+  "action": "FIX",
+  "current_html": "aria-label=\"Funnel: one question, thousands of registered tools, 20 to 30 candidate tools,",
+  "proposed_html": "aria-label=\"Funnel: one question, about two thousand registered tools and agents, 20 to 30 candidate tools,",
+  "new_sources": [],
+  "also_change": [],
+  "why": "Consistency with the Exhibit 11 title and Exhibit 14.",
+  "page": 10
+ },
+ {
+  "id": "p10-ex11-box",
+  "action": "FIX",
+  "current_html": "<b>Thousands of registered tools</b>: a plugin registry",
+  "proposed_html": "<b>About two thousand registered tools and agents</b>: a plugin registry",
+  "new_sources": [],
+  "also_change": [],
+  "why": "Consistency with the Exhibit 11 title. The quotation in the same box, “couple of thousands agents and tools”, supports it.",
+  "page": 10
+ },
+ {
+  "id": "p10-25",
+  "action": "FIX",
+  "current_html": "<b>One answer</b>, never investment advice: Copilot’s standing instructions (its system prompt) are tested so it will <a href=\"https://www.youtube.com/watch?v=oyqeCHFM5U4\">“never provide investment advice”</a><sup class=\"fnref\"><a href=\"#s8\">8</a></sup>, and the product page says the same<sup class=\"fnref\"><a href=\"#s17\">17</a></sup>",
+  "proposed_html": "<b>One answer</b>, never investment advice: the product page says Copilot “will not give investment advice”<sup class=\"fnref\"><a href=\"#s17\">17</a></sup>. The team <a href=\"https://www.youtube.com/watch?v=oyqeCHFM5U4\">tests every rule</a> in its system prompts<sup class=\"fnref\"><a href=\"#s8\">8</a></sup>",
+  "new_sources": [],
+  "also_change": [],
+  "why": "The talk (source 8) says the team writes test cases “for every intended behavior encoded in system prompts” and gives “you must never provide investment advice” as “a very dummy example”, so it is not a quoted rule from Copilot’s actual prompt. The Aladdin Copilot page (source 17, fetched October 20, 2026) does say “Aladdin Copilot: Will not give investment advice or respond to questions outside Aladdin platform boundaries”, so the no-advice claim keeps 17.",
+  "page": 10
+ },
+ {
+  "id": "p11-12",
+  "action": "FIX",
+  "current_html": "<tr class=\"focus\"><td class=\"first\">Aladdin</td>",
+  "proposed_html": "<tr class=\"group\"><td colspan=\"3\">Aladdin, for comparison</td></tr>\n<tr class=\"focus\"><td class=\"first\">Aladdin</td>",
+  "new_sources": [],
+  "also_change": [],
+  "why": "Aladdin is the platform under study, which BlackRock calls “a tech platform that unifies the investment management process” (blackrock.com/aladdin), so it sits badly under “Data and cloud providers”. A separate group row fixes the label without changing any count, because the title already counts Aladdin as the ninth provider.",
+  "page": 11
+ },
+ {
+  "id": "p11-34",
+  "action": "DECIDE",
+  "current_html": "Among system-of-record rivals, only SimCorp and Arcesium have an AI announcement in my sources. State Street, Clearwater and Bloomberg have none, so they are not listed.",
+  "proposed_html": "State Street is not listed because my sources show no AI feature it offers clients.",
+  "new_sources": [
+   "<p id=\"sNEW-g06-bbg\"><b class=\"n\">NEW</b><span class=\"g\">P</span><span class=\"t\">Bloomberg Launches Enterprise MCP to Seamlessly Connect Bloomberg Data with Clients’ Enterprise AI Applications</span>. Bloomberg press release, PR Newswire, September 29, 2026. <a href=\"https://www.prnewswire.com/news-releases/bloomberg-launches-enterprise-mcp-to-seamlessly-connect-bloomberg-data-with-clients-enterprise-ai-applications-302891331.html\">https://www.prnewswire.com/news-releases/bloomberg-launches-enterprise-mcp-to-seamlessly-connect-bloomberg-data-with-clients-enterprise-ai-applications-302891331.html</a></p>",
+   "<p id=\"sNEW-g06-cwan\"><b class=\"n\">NEW</b><span class=\"g\">P</span><span class=\"t\">CWAN Reports 800+ AI Agents Now Available for Deployment Across $10 Trillion in Client Assets</span>. Clearwater Analytics press release (Business Wire), November 5, 2025. <a href=\"https://www.businesswire.com/news/home/20251105092732/en/\">https://www.businesswire.com/news/home/20251105092732/en/</a></p>"
+  ],
+  "also_change": [
+   {
+    "where": "Exhibit 12 table, add Clearwater and Bloomberg rows after the Arcesium row (recommended only)",
+    "current_html": "<a href=\"https://www.arcesium.com/press-release/arcesium-unveils-new-suite-of-ai-features-in-aquata\">Arcesium press releases</a><sup class=\"fnref\"><a href=\"#s56\">56</a>, <a href=\"#s57\">57</a></sup></td></tr>",
+    "proposed_html": "<a href=\"https://www.arcesium.com/press-release/arcesium-unveils-new-suite-of-ai-features-in-aquata\">Arcesium press releases</a><sup class=\"fnref\"><a href=\"#s56\">56</a>, <a href=\"#s57\">57</a></sup></td></tr>\n<tr><td class=\"first\">Clearwater</td><td>Clearwater announced CWAN GenAI, with more than 800 AI agents for clients, in November 2025</td><td><a href=\"https://www.businesswire.com/news/home/20251105092732/en/\">Clearwater press release</a><sup class=\"fnref\"><a href=\"#sNEW-g06-cwan\">NEW</a></sup></td></tr>\n<tr><td class=\"first\">Bloomberg</td><td>Bloomberg launched an MCP server for licensed data in September 2026</td><td><a href=\"https://www.prnewswire.com/news-releases/bloomberg-launches-enterprise-mcp-to-seamlessly-connect-bloomberg-data-with-clients-enterprise-ai-applications-302891331.html\">Bloomberg press release</a><sup class=\"fnref\"><a href=\"#sNEW-g06-bbg\">NEW</a></sup></td></tr>"
+   },
+   {
+    "where": "Exhibit 12 title (recommended only)",
+    "current_html": "Of nine providers a Studio buyer compares, eight have announced AI features or AI access to their data",
+    "proposed_html": "Of 11 providers a Studio buyer compares, ten have announced AI features or AI access to their data"
+   },
+   {
+    "where": "Page 10 prose before Exhibit 12 (recommended only)",
+    "current_html": "Six data and cloud providers that Studio buyers also use offer a connector or an MCP server, and two system-of-record rivals have announced AI features.",
+    "proposed_html": "Six data and cloud providers that Studio buyers also use offer a connector or an MCP server. Four system-of-record rivals have announced AI features or AI access to their data."
+   },
+   {
+    "where": "Part 3, page 13 (both options; same length or shorter, so page 13 still fits)",
+    "current_html": "SimCorp has announced AI agents, Arcesium an AI platform, and other systems of record will likely follow<sup class=\"fnref\"><a href=\"#s7\">7</a>, <a href=\"#s56\">56</a>, <a href=\"#s57\">57</a></sup>.",
+    "proposed_html": "SimCorp and Clearwater have announced AI agents, Arcesium an AI platform, and others will likely follow<sup class=\"fnref\"><a href=\"#s7\">7</a>, <a href=\"#sNEW-g06-cwan\">NEW</a>, <a href=\"#s56\">56</a>, <a href=\"#s57\">57</a></sup>."
+   }
+  ],
+  "why": "Bloomberg announced Enterprise MCP, “an AI access layer for Data License Plus”, on September 29, 2026 (PR Newswire), and Clearwater “announced the global deployment of CWAN GenAI” with 800+ AI agents on November 5, 2025 (Business Wire), both before the October 2026 as-of date. Recommended: add both rows, which changes the exhibit title count and the prose count. State Street has stated AI plans but no client AI feature in the sources found, so it alone stays off the table.",
+  "alternative_html": "Clearwater announced CWAN GenAI, with more than 800 AI agents for clients, in November 2025<sup class=\"fnref\"><a href=\"#sNEW-g06-cwan\">NEW</a></sup>. Bloomberg launched an MCP server for licensed data in late September 2026<sup class=\"fnref\"><a href=\"#sNEW-g06-bbg\">NEW</a></sup>. State Street is not listed because my sources show no AI feature it offers clients.",
+  "decide_note": "Bloomberg launched Enterprise MCP on September 29, 2026 and Clearwater announced CWAN GenAI with 800+ AI agents on November 5, 2025. Recommended: add both as rows, so the title reads “Of 11 providers a Studio buyer compares, ten have announced AI features or AI access to their data” and the prose before the exhibit counts four rivals. Alternative: keep nine rows, put both facts in the note (alternative_html), and change the prose to “Six data and cloud providers that Studio buyers also use offer a connector or an MCP server, and system-of-record rivals have announced AI features.” Under either option, Part 3 on page 13 adds Clearwater (same length), and Exhibit 17 scores Bloomberg’s AI connector 2 (p15-26+p15-27+p15-28+p15-29). Exhibit 17 keeps Clearwater’s AI connector at 0, which fits its definition if CWAN’s agents run only inside Clearwater’s platform. The author should confirm that from the release.",
+  "page": 11
+ },
+ {
+  "id": "p11-35",
+  "action": "FIX",
+  "current_html": "A public account of the Copilot plugin model would cover production Aladdin APIs, the same ones Studio exposes, each user’s own permissions, and tested no-advice guardrails<sup class=\"fnref\"><a href=\"#s8\">8</a>, <a href=\"#s17\">17</a></sup>.",
+  "proposed_html": "A public account of the Copilot plugin model would cover the production Aladdin APIs its tools call, which user groups may use each tool, and tested no-advice guardrails<sup class=\"fnref\"><a href=\"#s8\">8</a>, <a href=\"#s17\">17</a></sup>.",
+  "new_sources": [],
+  "also_change": [],
+  "why": "Source 8 supports “an existing Aladdin API already out in production”, but no source says these are the APIs Studio exposes, so that phrase goes. Source 17 stays because the Copilot page says it “will not give investment advice”, which supports the no-advice guardrail. Reviewer: “each user’s own permissions” became “the user groups each tool’s owning team allows”, to match page 13 (p13-06+p13-07+p13-08+p13-09). Source 8 says teams control “which user groups have access to this” (6:51).",
+  "page": 11
+ },
+ {
+  "id": "p11-38",
+  "action": "DECIDE",
+  "current_html": "<h2>4. Buyers at BlackRock’s own webinar said they want a core platform plus their own builds</h2>",
+  "proposed_html": "<h2>4. At BlackRock’s own webinar, two thirds of attendees said they run vendor or hybrid platforms</h2>",
+  "new_sources": [],
+  "also_change": [
+   {
+    "where": "Page 12 body, first sentence of the rivals paragraph (repeats the same 'want' claim)",
+    "current_html": "Rivals are selling to the same buyer, the one who wants a core platform plus their own builds.",
+    "proposed_html": "Rivals sell the same model, a core platform with the client’s own builds on top."
+   }
+  ],
+  "why": "Attendees reported where they sit today, “mostly vendor platforms at 37%” and “hybrid ... at 30”, so 67 percent (source 9, 00:04:40). The core-plus-builds model is the panel’s description: Schafer says hybrid firms use “vendor platforms ... as the core architecture” and build around it, and Sewdass calls it “that hybrid approach” (00:05:15, 00:49:09). No attendee said they want it.",
+  "alternative_html": "<h2>4. BlackRock’s own webinar panel described a core platform plus each firm’s own builds</h2>",
+  "decide_note": "The heading is the finding. Attendees reported where they sit today, and the core-plus-builds model is the panel’s description. Recommended: “4. At BlackRock’s own webinar, two thirds of attendees said they run vendor or hybrid platforms”, which matches the Exhibit 13 title. Alternative: “4. BlackRock’s own webinar panel described a core platform plus each firm’s own builds”. Under either option the page 12 rivals sentence changes as below.",
+  "page": 11
+ },
+ {
+  "id": "p13-01",
+  "action": "CITE",
+  "current_html": "It sells Aladdin as the system it runs internally<sup class=\"fnref\"><a href=\"#s8\">8</a>, <a href=\"#s14\">14</a>, <a href=\"#s17\">17</a>, <a href=\"#s19\">19</a></sup>.",
+  "proposed_html": "It sells Aladdin as the system it runs internally<sup class=\"fnref\"><a href=\"#s8\">8</a>, <a href=\"#sNEW-g07-efront\">NEW</a></sup>.",
+  "new_sources": [
+   "<p id=\"sNEW-g07-efront\"><b class=\"n\">NEW</b><span class=\"g\">P</span><span class=\"t\">BlackRock Completes Acquisition of eFront</span>. BlackRock press release, May 10, 2019. <a href=\"https://www.blackrock.com/corporate/newsroom/media/press-releases/blackrock-efront-acquisition\">https://www.blackrock.com/corporate/newsroom/media/press-releases/blackrock-efront-acquisition</a></p>"
+  ],
+  "also_change": [],
+  "why": "The words are true, but sources 14, 17 and 19 do not mention internal use. BlackRock’s eFront release says “Aladdin was first built to manage BlackRock’s business” and the firm offers clients “the same technology … that BlackRock uses to manage investments day-to-day”. Source 8 at 1:33 says “BlackRock is the biggest user of Aladdin, but we also sell and support hundreds of clients”.",
+  "page": 13
+ },
+ {
+  "id": "p13-06+p13-07+p13-08+p13-09",
+  "action": "FIX",
+  "current_html": "About 100 of its applications and thousands of Copilot tools, built by 50 to 60 of its teams, call these APIs every day under each user’s permissions<sup class=\"fnref\"><a href=\"#s8\">8</a></sup>.",
+  "proposed_html": "About 100 of its applications carry Copilot. Each Copilot tool maps to a production Aladdin API. The team that owns each tool sets which user groups can use it<sup class=\"fnref\"><a href=\"#s8\">8</a></sup>.",
+  "new_sources": [],
+  "also_change": [],
+  "why": "Source 8 says “around 100 Aladdin front-end applications that thousands of people use every day” (1:53) and that Copilot is “embedded across all of those hundred” (2:34). It defines a tool “as kind of mapping one-to-one to an existing Aladdin API already out in production” (4:39). Teams that onboard a plugin control “which user groups have access to this” (6:51). No source says the apps or tools call the APIs every day or under each user’s permissions. The 50 to 60 teams build tools and agents, not the apps, so that count moves to the Copilot box in Exhibit 14. Length: 29 words in place of 27, so page 13 does not grow. Page 2 uses the same facts under p02-09+p02-10.",
+  "page": 13
+ },
+ {
+  "id": "p13-22",
+  "action": "DECIDE",
+  "current_html": "<span class=\"ex-num\">Exhibit 14.</span> BlackRock’s applications and a client’s code call the same APIs under the same permissions</p>",
+  "proposed_html": "<span class=\"ex-num\">Exhibit 14.</span> BlackRock’s applications and a client’s code draw on Aladdin’s shared services and APIs</p>",
+  "alternative_html": "<span class=\"ex-num\">Exhibit 14.</span> BlackRock’s applications and a client’s code call the same APIs</p>",
+  "new_sources": [],
+  "also_change": [
+   {
+    "where": "Exhibit 14 right-hand band header (recommended only)",
+    "current_html": "<text x=\"684\" y=\"30\" class=\"cap\">A CLIENT’S USE · THE SAME APIS</text>",
+    "proposed_html": "<text x=\"684\" y=\"30\" class=\"cap\">A CLIENT’S USE · THROUGH STUDIO</text>"
+   }
+  ],
+  "why": "No source says BlackRock’s apps and a client’s code call identical APIs under identical permissions. The Studio page (source 14) says “API-first approach across shared services and data” and “secure, common, and extensible services”. Source 8 says the trading team owns “all of the services that serve trading data to all Aladdin applications” (4:06). The recommended title states only that. Permissions are shown in the boxes below and drop out of the title. The new title is shorter than the old one.",
+  "decide_note": "No source says BlackRock’s apps and a client’s code call identical APIs under identical permissions. Recommended: “draw on Aladdin’s shared services and APIs”, from the Studio page’s “shared services” [14], with the right-hand header “A CLIENT’S USE · THROUGH STUDIO”. Alternative: “call the same APIs”, keeping the header, plus a note sentence after “The hatched box is not.”: “That both sides call the same APIs is my inference. Copilot’s tools map to production Aladdin APIs, and Studio offers clients APIs built on shared services.” The alternative adds about one line to the note on page 13, so something else on that page must shrink. Under either option the boxes, the band caption and the description (p13-26, p13-27, p13-34+p13-35, p13-37, p13-40, p13-aria) change as listed, and the Part 3 lede stays, because it is about controls. This choice should match p05-01 (Exhibit 3 title) and page 10, which calls the Copilot and Studio link my inference.",
+  "page": 13
+ },
+ {
+  "id": "p13-aria",
+  "action": "FIX",
+  "current_html": "aria-label=\"Diagram. On the left, BlackRock's own use: about 100 BlackRock applications and Copilot's thousands of tools. On the right, a client's use: its engineers behind its own gateway, its applications, and, hatched, its AI tools, on which BlackRock has published nothing beyond a job posting. All sit on one band, Aladdin's APIs, which all of them call and whose Data Cloud they read. Below, two groups: controls on every call (permissions per user, a second approver, compliance on every order) and what Copilot adds for AI (input guardrails, output guardrails, LLM judges).\"",
+  "proposed_html": "aria-label=\"Diagram. On the left, BlackRock's own use: about 100 BlackRock applications, and Copilot with about two thousand tools and agents. On the right, a client's use: its engineers behind its own gateway, its applications, and, hatched, its AI tools, for which the nearest public sign is an internal job posting. All sit on one band, Aladdin's APIs. BlackRock's applications, Copilot and a client's code draw on Aladdin's shared services and APIs, and each client reads its own Data Cloud. Below, two groups: controls built into the APIs (access set per API, a second check on dataset releases, compliance by default) and what Copilot adds for AI (input guardrails, output guardrails, LLM judges).\"",
+  "new_sources": [],
+  "also_change": [],
+  "why": "The screen-reader description of Exhibit 14 must say what the fixed boxes say. One rewrite replaces the four partial rewrites drafted under p02-05+p02-06+p02-07, p02-09+p02-10 and p13-22, and carries p13-26, p13-27, p13-34+p13-35, p13-37, p13-40 and p13-47. It is not printed, so page 13 does not change length.",
+  "page": 13
+ },
+ {
+  "id": "p13-26",
+  "action": "FIX",
+  "current_html": "<text x=\"36\" y=\"114\" class=\"s\">all call these APIs.</text>",
+  "proposed_html": "<text x=\"36\" y=\"114\" class=\"s\">draw on Aladdin’s shared services.</text>",
+  "new_sources": [],
+  "also_change": [],
+  "why": "The specifications tie only some APIs to these apps, for example RiskRuleAPI rules “as surfaced in Risk Radar” and orders “visible in the \"Basket\" column in Order Monitor of Aladdin Dashboard”. Source 8 says services “serve trading data to all Aladdin applications” (4:06), and source 14 speaks of “shared services”. No source says every app calls these APIs. Reviewer: three groups drafted this line differently (“all carry Copilot.”, “share these services and data.”, this one). This one matches the recommended Exhibit 14 title and the band caption, and fits the box.",
+  "page": 13
+ },
+ {
+  "id": "p13-27",
+  "action": "FIX",
+  "current_html": "<text x=\"330\" y=\"94\" class=\"s\">Thousands of tools, each one an Aladdin</text>\n<text x=\"330\" y=\"114\" class=\"s\">API, built by 50 to 60 BlackRock teams.</text>",
+  "proposed_html": "<text x=\"330\" y=\"94\" class=\"s\">About two thousand tools and agents,</text>\n<text x=\"330\" y=\"114\" class=\"s\">from 50 to 60 BlackRock teams. Each</text>\n<text x=\"330\" y=\"134\" class=\"s\">tool maps to a production Aladdin API.</text>",
+  "new_sources": [],
+  "also_change": [],
+  "why": "Source 8 says “a couple thousands agents and tools that are registered in the plug-in registry” (6:42). A tool maps “one-to-one to an existing Aladdin API already out in production” (4:39), while an agent is a separate path for “complex workflows” (4:49). There are “50 60 Aladdin engineering teams” (3:58). The box has room for a third line at y=134, and each line is no wider than the line it replaces. Reviewer: merged with the g01 draft. “Production” is kept so the box matches pages 2 and 13. The longest line is 38 characters, against 39 now.",
+  "page": 13
+ },
+ {
+  "id": "p13-34+p13-35",
+  "action": "FIX",
+  "current_html": "<text x=\"640\" y=\"269\" class=\"s tc\">BlackRock’s applications, Copilot and a client’s own code call the same APIs and read the same Data Cloud, the client’s Aladdin data in a Snowflake account BlackRock runs for it.</text>",
+  "proposed_html": "<text x=\"640\" y=\"269\" class=\"s tc\">BlackRock’s applications, Copilot and a client’s code draw on Aladdin’s shared services and APIs. Each client reads its own Data Cloud, which BlackRock runs on Snowflake.</text>",
+  "new_sources": [],
+  "also_change": [
+   {
+    "where": "Exhibit 14 source line: add the Studio page and the Data Cloud launch release (both options)",
+    "current_html": "Sources: Rosales and Valdez<sup class=\"fnref\"><a href=\"#s8\">8</a></sup>, the Copilot page",
+    "proposed_html": "Sources: Rosales and Valdez<sup class=\"fnref\"><a href=\"#s8\">8</a></sup>, the Studio page<sup class=\"fnref\"><a href=\"#s14\">14</a></sup>, the Data Cloud launch release<sup class=\"fnref\"><a href=\"#sNEW-g03-adcpr\">NEW</a></sup>, the Copilot page"
+   }
+  ],
+  "why": "Source 8 says services “serve trading data to all Aladdin applications” (4:06) and Copilot tools map “to an existing Aladdin API already out in production” (4:39). The Studio page (14) says “API-first approach across shared services and data”. BlackRock’s Data Cloud release says “Each Aladdin Data Cloud client receives an independent, centrally-managed data store”. No source says Copilot reads the Data Cloud. Reviewer: three groups drafted this caption. This version uses the same “shared services” wording as the Exhibit 14 title, the left box and Exhibit 3, and is 170 characters against 178 now.",
+  "page": 13
+ },
+ {
+  "id": "p13-37",
+  "action": "FIX",
+  "current_html": "<text x=\"24\" y=\"318\" class=\"cap\">CONTROLS ON EVERY CALL</text>",
+  "proposed_html": "<text x=\"24\" y=\"318\" class=\"cap\">CONTROLS BUILT INTO THE APIS</text>",
+  "new_sources": [],
+  "also_change": [
+   {
+    "where": "Exhibit 14, first control box title",
+    "current_html": "<text x=\"36\" y=\"362\" class=\"tt\">Permissions per user</text>",
+    "proposed_html": "<text x=\"36\" y=\"362\" class=\"tt\">Access set per API</text>"
+   },
+   {
+    "where": "Exhibit 14, third control box title",
+    "current_html": "<text x=\"416\" y=\"362\" class=\"tt\">Compliance on every order</text>",
+    "proposed_html": "<text x=\"416\" y=\"362\" class=\"tt\">Compliance by default</text>"
+   }
+  ],
+  "why": "In the 54 public specifications, all 301 operations require an API key together with OAuth, a client key or a user name and password (source 6). OAuth scopes are set per API, which the first box’s text already says. The four-eyes check covers only dataset workflow states. Compliance applies to order posts, where OrderAPI says runCompliance “Default is true to run compliance on this post order request.”, so “every order” becomes “by default”. The first box title follows page 2 (p02-05+p02-06+p02-07).",
+  "page": 13
+ },
+ {
+  "id": "p13-40",
+  "action": "FIX",
+  "current_html": "<text x=\"226\" y=\"384\" class=\"s\">Rule assignments and dataset</text>\n<text x=\"226\" y=\"404\" class=\"s\">releases record a second</text>\n<text x=\"226\" y=\"424\" class=\"s\">sign-off.</text>",
+  "proposed_html": "<text x=\"226\" y=\"384\" class=\"s\">Dataset releases need a</text>\n<text x=\"226\" y=\"404\" class=\"s\">second check. Capital flows</text>\n<text x=\"226\" y=\"424\" class=\"s\">record who approved them.</text>",
+  "new_sources": [],
+  "also_change": [],
+  "why": "AdcDatasetAPI says “STATE_REVIEW: In review state, dataset is ready for a 4-eyes check prior to release”. EnrichedCapitalFlowAPI records an “approverUserId” (“Approver Aladdin user Id”) and an “authorizerUserId” (source 6). The rule assignment spec has review states but no approver field, and its four-eyes flag is “By default … false”, so rule assignments leave the box. No new line is longer than the widest line now in the box (28 characters).",
+  "page": 13
+ },
+ {
+  "id": "p13-47",
+  "action": "FIX",
+  "current_html": "The hatched box is not: on a client’s AI tools BlackRock has published nothing beyond a job posting<sup class=\"fnref\"><a href=\"#s60\">60</a></sup>.",
+  "proposed_html": "The hatched box is not. The nearest public sign is a September 2026 posting for an internal data role that names MCP and AI agents<sup class=\"fnref\"><a href=\"#s60\">60</a></sup>.",
+  "new_sources": [],
+  "also_change": [
+   {
+    "where": "Exhibit 14 hatched box, last two lines",
+    "current_html": "<text x=\"1088\" y=\"134\" class=\"s\">BlackRock’s only public</text>\n<text x=\"1088\" y=\"154\" class=\"s\">word is a job posting.</text>",
+    "proposed_html": "<text x=\"1088\" y=\"134\" class=\"s\">Nearest public sign:</text>\n<text x=\"1088\" y=\"154\" class=\"s\">an internal job posting.</text>"
+   },
+   {
+    "where": "Part 3 body. The sentence is true and stays. The posting is about an internal role, so it does not support this sentence. Recommend dropping the citation.",
+    "current_html": "How those tools would connect is not public<sup class=\"fnref\"><a href=\"#s60\">60</a></sup>.",
+    "proposed_html": "How those tools would connect is not public."
+   }
+  ],
+  "why": "The posting (Workday R264906, posted September 4, 2026) asks the hire to “Implement emerging AI tooling including Model Context Protocol (MCP), AI agents, and Copilot extensions to automate repetitive onboarding tasks” with “partner engineering and data teams”. That is internal data-platform work, not client AI tools. The careers URL now returns 404, so entry 60 moves to the Saarthi copy. The new note is shorter than the old one. Register entry 60 is replaced once, under s60.",
+  "page": 13
+ },
+ {
+  "id": "p14-02+p14-04",
+  "action": "FIX",
+  "current_html": "the APIs by area with their package labels, how permissions work, how a client routes calls through its own gateway, and the Snowflake and Databricks answer, plus",
+  "proposed_html": "the APIs by area with their stability labels, how permissions work, how a client routes calls through its own gateway, and an answer on Snowflake and Databricks connectors, plus",
+  "new_sources": [],
+  "also_change": [],
+  "why": "The labels belong to each specification, and one package can mix them: in asdk_plugin_trading 2.0.0b3, OrderAPI carries “x-aladdin-api-stability”: “stable” and TradeAPI carries “alpha”. The RFP question Schafer quotes is “Are you using connectors to Snowflake or to Databricks?” [9]. No public source shows a Databricks connection, so the row now names the answer to that question and asserts no connection.",
+  "page": 14
+ },
+ {
+  "id": "p14-ex15-row",
+  "action": "NO CHANGE",
+  "current_html": "under the same permissions, compliance checks and guardrails Copilot uses",
+  "proposed_html": "",
+  "new_sources": [],
+  "also_change": [],
+  "why": "This row describes a page BlackRock could publish, not a current fact. It stays consistent with the fixed Exhibit 14, which keeps permissions, compliance and Copilot’s guardrails as its two control groups.",
+  "page": 14
+ },
+ {
+  "id": "p14-15",
+  "action": "FIX",
+  "current_html": "I could not run anything, open the catalog, guides, notebooks or samples, or test what a client receives; where this document describes those, it relies on what sources say.",
+  "proposed_html": "I could not run anything, test what a client receives, or open the catalog and the API guides with their notebooks and code samples. Where this document describes those, it relies on what sources say.",
+  "new_sources": [],
+  "also_change": [],
+  "why": "The APIs page offers notebooks and code samples “from carefully curated API guides” with no public link [24]. The SDK’s own sample code is public on GitHub (README line 226: “Sample code snippets ... are provided under resources/sample_code_snippets”), so the sentence now names only the guide material.",
+  "page": 14
+ },
+ {
+  "id": "p14-18",
+  "action": "FIX",
+  "current_html": "<td>Client forums and the solutions team</td><td>the <a href=\"https://www.blackrock.com/aladdin/discover/expertise/never-done-podcast-by-aladdin\">Never Done podcast</a><sup class=\"fnref\"><a href=\"#s28\">28</a></sup>, the <a href=\"https://www.blackrock.com/aladdin/discover/expertise/big-little-questions\">Big Little Questions video series</a><sup class=\"fnref\"><a href=\"#s29\">29</a></sup>, <a href=\"https://www.youtube.com/watch?v=Me_H_-E6lSg\">Woodhead</a><sup class=\"fnref\"><a href=\"#s1\">1</a></sup>, <a href=\"https://www.youtube.com/watch?v=oyqeCHFM5U4\">Rosales and Valdez</a><sup class=\"fnref\"><a href=\"#s8\">8</a></sup></td>",
+  "proposed_html": "<td>The invitation-only Aladdin Client Forum and the Solutions Engineering team</td><td>the <a href=\"https://www.blackrock.com/aladdin/discover/expertise/never-done-podcast-by-aladdin\">Never Done podcast</a><sup class=\"fnref\"><a href=\"#s28\">28</a></sup>, the <a href=\"https://www.blackrock.com/aladdin/discover/expertise/big-little-questions\">Big Little Questions video series</a><sup class=\"fnref\"><a href=\"#s29\">29</a></sup>, <a href=\"https://www.youtube.com/watch?v=Me_H_-E6lSg\">Woodhead</a><sup class=\"fnref\"><a href=\"#s1\">1</a></sup>, <a href=\"https://www.youtube.com/watch?v=oyqeCHFM5U4\">Rosales and Valdez</a><sup class=\"fnref\"><a href=\"#s8\">8</a></sup>, <a href=\"https://www.blackrock.com/aladdin/discover/expertise/events/aladdin-client-forum-2026\">Client Forum page</a><sup class=\"fnref\"><a href=\"#sNEW-g08-acf\">NEW</a></sup>, <a href=\"https://careers.blackrock.com/job/singapore/aladdin-client-business-solutions-engineering-vice-president/45831/98412767088\">Solutions Engineering job posting</a><sup class=\"fnref\"><a href=\"#sNEW-g08-se\">NEW</a></sup></td>",
+  "new_sources": [
+   "<p id=\"sNEW-g08-acf\"><b class=\"n\">NEW</b><span class=\"g\">P</span><span class=\"t\">Aladdin Client Forum 2026</span>. BlackRock Aladdin event page, as of October 20, 2026. <a href=\"https://www.blackrock.com/aladdin/discover/expertise/events/aladdin-client-forum-2026\">https://www.blackrock.com/aladdin/discover/expertise/events/aladdin-client-forum-2026</a></p>",
+   "<p id=\"sNEW-g08-se\"><b class=\"n\">NEW</b><span class=\"g\">P</span><span class=\"t\">Job posting: Aladdin Client Business, Solutions Engineering, Vice President (R265631, Singapore)</span>. BlackRock Careers, posted October 2, 2026. <a href=\"https://careers.blackrock.com/job/singapore/aladdin-client-business-solutions-engineering-vice-president/45831/98412767088\">https://careers.blackrock.com/job/singapore/aladdin-client-business-solutions-engineering-vice-president/45831/98412767088</a></p>"
+  ],
+  "also_change": [],
+  "why": "The Forum page says it “is an invitation-only event” whose attendees include “a select group of prospective clients”. BlackRock’s job posting R265631 (October 2, 2026) says the Solutions Engineering team works “to help prospective clients understand how Aladdin and eFront can address” their needs. Both fit the After qualification column and now carry receipts. The Receipt cell grows by about one line.",
+  "page": 14
+ },
+ {
+  "id": "p14-24",
+  "action": "FIX",
+  "current_html": "the APIs page, which promises “dozens of APIs”",
+  "proposed_html": "the APIs page, which promises “dozens of Aladdin APIs”",
+  "new_sources": [],
+  "also_change": [],
+  "why": "The APIs page reads “Dozens of Aladdin APIs available – with constant new additions” [24]. The quotation now matches it word for word.",
+  "page": 14
+ },
+ {
+  "id": "p14-25",
+  "action": "CITE",
+  "current_html": "<td>The Developer Portal and the API framework guides</td><td><a href=\"https://www.blackrock.com/aladdin/platforms/products/aladdin-studio\">Studio page</a><sup class=\"fnref\"><a href=\"#s14\">14</a></sup>, <a href=\"https://www.blackrock.com/aladdin/platforms/products/apis\">APIs page</a><sup class=\"fnref\"><a href=\"#s24\">24</a></sup></td>",
+  "proposed_html": "<td>The Developer Portal and the API framework guides</td><td><a href=\"https://www.blackrock.com/aladdin/platforms/products/aladdin-studio\">Studio page</a><sup class=\"fnref\"><a href=\"#s14\">14</a></sup>, <a href=\"https://www.blackrock.com/aladdin/platforms/products/apis\">APIs page</a><sup class=\"fnref\"><a href=\"#s24\">24</a></sup>, <a href=\"https://www.blackrock.com/apps/aladdin-developer-portal/\">developer portal</a><sup class=\"fnref\"><a href=\"#s6\">6</a>, <a href=\"#sNEW-g03-portal\">NEW</a></sup>, <a href=\"https://builtinbristol.uk/job/technical-writer-aladdin-product-vice-president/7444888\">job posting</a><sup class=\"fnref\"><a href=\"#sNEW-g03-job\">NEW</a></sup></td>",
+  "new_sources": [],
+  "also_change": [],
+  "why": "The words hold, but their receipts were missing. Seventeen of the public specifications link to “apps/aladdin-developer-portal/#/guides/developer-guide” [6], and that address redirects to aladdin-login.blackrock.com (rechecked October 20, 2026, HTTP 302). A BlackRock job posting names the “Aladdin Studio Developer Portal”. Both NEW entries are already drafted by g03 (sNEW-g03-portal, sNEW-g03-job). The APIs page says “Learn about our API framework” [24].",
+  "page": 14
+ },
+ {
+  "id": "p14-28",
+  "action": "CITE",
+  "current_html": "<td>The API catalog and the Data Dictionary</td><td><a href=\"https://pypi.org/search/?q=asdk_plugin\">asdk_plugin packages</a><sup class=\"fnref\"><a href=\"#s6\">6</a></sup>, <a href=\"https://www.blackrock.com/aladdin/platforms/products/apis\">APIs page</a><sup class=\"fnref\"><a href=\"#s24\">24</a></sup></td>",
+  "proposed_html": "<td>The API catalog and the Data Dictionary</td><td><a href=\"https://pypi.org/search/?q=asdk_plugin\">asdk_plugin packages</a><sup class=\"fnref\"><a href=\"#s6\">6</a></sup>, <a href=\"https://www.blackrock.com/aladdin/platforms/products/apis\">APIs page</a><sup class=\"fnref\"><a href=\"#s24\">24</a></sup>, <a href=\"https://www.blackrock.com/apps/aladdin-developer-portal/\">developer portal</a><sup class=\"fnref\"><a href=\"#sNEW-g03-portal\">NEW</a></sup></td>",
+  "new_sources": [],
+  "also_change": [],
+  "why": "The APIs page describes the Data Dictionary (“Our Data Dictionary allows you to explore Aladdin data”) and “Dozens of Aladdin APIs available” with no public link [24]. “API catalog” is a plain description of that list. The gate itself is shown by the developer portal address, which redirects to the Aladdin client login (sNEW-g03-portal). The note now says that is the basis.",
+  "page": 14
+ },
+ {
+  "id": "p15-08+p15-10",
+  "action": "FIX",
+  "current_html": "<td>The open-source SDK on GitHub and PyPI, with a detailed README; the plugin builder</td><td>A client host and credentials, which the SDK needs for every call</td><td><a href=\"https://github.com/blackrock/aladdinsdk\">SDK README</a><sup class=\"fnref\"><a href=\"#s23\">23</a></sup>, <a href=\"https://pypi.org/project/aladdinsdk/#history\">PyPI history</a><sup class=\"fnref\"><a href=\"#s65\">65</a></sup>, <a href=\"https://github.com/blackrock/aladdinsdk-plugin-builder\">plugin builder</a><sup class=\"fnref\"><a href=\"#s27\">27</a></sup></td></tr>\n<tr><td class=\"first\">Get help</td><td>GitHub issues and pull requests on the SDK, answered by BlackRock engineers; on the Studio page, “Book a meeting” and “Download the brochure”</td><td>Notebooks, code samples, support</td><td><a href=\"https://github.com/blackrock/aladdinsdk/pull/52\">Pull request 52</a><sup class=\"fnref\"><a href=\"#s38\">38</a></sup>, <a href=\"https://github.com/blackrock/aladdinsdk/pull/57\">pull request 57</a><sup class=\"fnref\"><a href=\"#s66\">66</a></sup>, <a href=\"https://www.blackrock.com/aladdin/platforms/products/aladdin-studio\">Studio page</a><sup class=\"fnref\"><a href=\"#s14\">14</a></sup></td>",
+  "proposed_html": "<td>The open-source SDK on GitHub and PyPI, with a detailed README, sample code and demo notebooks; the plugin builder</td><td>A client host and credentials, which the SDK needs for every call</td><td><a href=\"https://github.com/blackrock/aladdinsdk\">SDK README</a><sup class=\"fnref\"><a href=\"#s23\">23</a></sup>, <a href=\"https://pypi.org/project/aladdinsdk/#history\">PyPI history</a><sup class=\"fnref\"><a href=\"#s65\">65</a></sup>, <a href=\"https://github.com/blackrock/aladdinsdk-plugin-builder\">plugin&nbsp;builder</a><sup class=\"fnref\"><a href=\"#s27\">27</a></sup></td></tr>\n<tr><td class=\"first\">Get help</td><td>Pull requests on the SDK, reviewed and merged by a BlackRock engineer; on the Studio page, “Book a meeting” and “Download the brochure”</td><td>Jupyter notebooks and code samples from the API guides</td><td><a href=\"https://github.com/blackrock/aladdinsdk/pull/52\">Pull request 52</a><sup class=\"fnref\"><a href=\"#s38\">38</a></sup>, <a href=\"https://github.com/blackrock/aladdinsdk/pull/57\">pull request 57</a><sup class=\"fnref\"><a href=\"#s66\">66</a></sup>, <a href=\"https://www.blackrock.com/aladdin/platforms/products/aladdin-studio\">Studio page</a><sup class=\"fnref\"><a href=\"#s14\">14</a></sup>, <a href=\"https://www.blackrock.com/aladdin/platforms/products/apis\">APIs page</a><sup class=\"fnref\"><a href=\"#s24\">24</a></sup></td>",
+  "new_sources": [],
+  "also_change": [],
+  "why": "The SDK’s only issue (59) has no BlackRock reply. Pull requests 52 (from Janus Henderson) and 57 were both approved (“LGTM”) and merged by Vedant Naik, Lead Engineer, Aladdin Studio [38, 66, 40]. The APIs page offers “Python Jupyter Notebooks” and “code samples ... from carefully curated API guides” [24]. No public source offers support, so that word goes. The SDK’s sample snippets and two demo notebooks (SDK_Demo_template.ipynb, SDK_Demo_ADC_template.ipynb) are public in the repository [23], so the Build row now lists them. Register entry 66 changes once, under s66.",
+  "page": 15
+ },
+ {
+  "id": "p14-25+p14-28 (exhibit note)",
+  "action": "FIX",
+  "current_html": "The After qualification column is what those sources say a client receives; I did not test it.",
+  "proposed_html": "The After qualification column is what those sources say a client receives. I could not test it, because the developer portal opens only after a client login<sup class=\"fnref\"><a href=\"#s6\">6</a>, <a href=\"#sNEW-g03-portal\">NEW</a></sup>.",
+  "new_sources": [],
+  "also_change": [],
+  "why": "Neither BlackRock page says these resources are for clients only. The gate is observed at the developer portal address that the specifications link to, which redirects to aladdin-login.blackrock.com [6, sNEW-g03-portal]. The note now names that basis. It adds about half a line on page 15.",
+  "page": 15
+ },
+ {
+  "id": "p15-26+p15-27+p15-28+p15-29",
+  "action": "DECIDE",
+  "current_html": "<td>Bloomberg</td>\n<td class=\"s1\">1</td>\n<td class=\"s0\">0</td>\n<td class=\"s1\">1</td>\n<td class=\"s1\">1</td>\n<td class=\"s1\">1</td>\n<td class=\"s0\">0</td>\n<td class=\"s0\">0</td>\n<td class=\"s1\">1</td>\n</tr>",
+  "proposed_html": "<td>Bloomberg</td>\n<td class=\"s1\">1</td>\n<td class=\"s0\">0</td>\n<td class=\"s1\">1</td>\n<td class=\"s0\">0</td>\n<td class=\"s2\">2</td>\n<td class=\"s1\">1</td>\n<td class=\"s2\">2</td>\n<td class=\"s1\">1</td>\n</tr>",
+  "new_sources": [
+   "<p id=\"sNEW-g09-bbglib\"><b class=\"n\">NEW</b><span class=\"g\">P</span><span class=\"t\">API Library</span>. Bloomberg Professional Services, as of October 2026. <a href=\"https://professional.bloomberg.com/support/api-library/\">https://professional.bloomberg.com/support/api-library/</a></p>",
+   "<p id=\"sNEW-g09-bbgapp\"><b class=\"n\">NEW</b><span class=\"g\">P</span><span class=\"t\">App Portal overview for developers</span>. Bloomberg Professional Services, PDF dated June 30, 2022. <a href=\"https://assets.bbhub.io/professional/sites/10/App-Portal-Overview-for-Developers.pdf\">https://assets.bbhub.io/professional/sites/10/App-Portal-Overview-for-Developers.pdf</a></p>"
+  ],
+  "also_change": [],
+  "why": "Bloomberg's API Library says its libraries \"are only compatible with the Bloomberg Server API and B-Pipe data feed products\", and the trial needs a signed Trial License Agreement, so a first call needs a contract (0). The same public page offers SDK zips with 127 example files, so sample code is public (2). The App Portal PDF describes a third-party app marketplace for \"more than 350,000 Bloomberg users\", which matches the 1 given to other client-only marketplaces. Bloomberg launched Enterprise MCP on September 29, 2026, which the exhibit's own footnote scores 2. DECIDE because the AI connector change must match the Exhibit 12 note (g06), and the first-call and sample-code scores have a reasonable alternative.",
+  "alternative_html": "<td>Bloomberg</td>\n<td class=\"s1\">1</td>\n<td class=\"s0\">0</td>\n<td class=\"s1\">1</td>\n<td class=\"s1\">1</td>\n<td class=\"s1\">1</td>\n<td class=\"s1\">1</td>\n<td class=\"s2\">2</td>\n<td class=\"s1\">1</td>\n</tr>",
+  "decide_note": "Recommended scores: First API call 0, because the trial needs a signed Trial License Agreement, and Sample code 2, because the API Library page offers SDK downloads with example files. Alternative: First API call 1, counting the emailed trial as sign-up, and Sample code 1. Both give Bloomberg 8 of 16, still the top of the investment-platform cluster. The AI connector goes from 0 to 2 under both options. That matches Exhibit 12, which lists the Bloomberg MCP launch under either option of p11-34. The p15-118 alternative works only with the recommended First API call score of 0.",
+  "page": 15
+ },
+ {
+  "id": "p15-43",
+  "action": "FIX",
+  "current_html": "<td><a href=\"https://developer.statestreet.com\">State Street</a></td>\n<td class=\"s1\">1</td>\n<td class=\"s0\">0</td>\n<td class=\"s1\">1</td>\n<td class=\"s0\">0</td>\n<td class=\"s0\">0</td>\n<td class=\"s1\">1</td>\n<td class=\"s0\">0</td>\n<td class=\"s1\">1</td>\n</tr>",
+  "proposed_html": "<td><a href=\"https://developer.statestreet.com\">State Street</a></td>\n<td class=\"s1\">1</td>\n<td class=\"s0\">0</td>\n<td class=\"s1\">1</td>\n<td class=\"s0\">0</td>\n<td class=\"s1\">1</td>\n<td class=\"s1\">1</td>\n<td class=\"s0\">0</td>\n<td class=\"s1\">1</td>\n</tr>",
+  "new_sources": [],
+  "also_change": [],
+  "why": "The public Development Environment page gives one complete example, in cURL, NodeJS, Python and Java, that gets a token and calls Sample Transactions (\"find an example below that incorporates authentication and a successful invocation of State Street API\"). Running it needs client credentials and there is no public SDK, so the score is 1, partial. Source 68 already covers it.",
+  "page": 15
+ },
+ {
+  "id": "p15-54",
+  "action": "FIX",
+  "current_html": "<td><a href=\"https://www.arcesium.com/press-release/arcesium-launches-comprehensive-ai-platform\">Arcesium</a></td>\n<td class=\"s0\">0</td>\n<td class=\"s0\">0</td>\n<td class=\"s0\">0</td>\n<td class=\"s0\">0</td>\n<td class=\"s0\">0</td>\n<td class=\"s1\">1</td>\n<td class=\"s2\">2</td>\n<td class=\"s0\">0</td>\n</tr>",
+  "proposed_html": "<td><a href=\"https://www.arcesium.com/press-release/arcesium-launches-comprehensive-ai-platform\">Arcesium</a></td>\n<td class=\"s0\">0</td>\n<td class=\"s0\">0</td>\n<td class=\"s1\">1</td>\n<td class=\"s0\">0</td>\n<td class=\"s0\">0</td>\n<td class=\"s1\">1</td>\n<td class=\"s2\">2</td>\n<td class=\"s1\">1</td>\n</tr>",
+  "new_sources": [
+   "<p id=\"sNEW-g09-aquata\"><b class=\"n\">NEW</b><span class=\"g\">P</span><span class=\"t\">Demo Center</span>. Aquata by Arcesium, as of October 2026. <a href=\"https://aquata.ai/demo-center\">https://aquata.ai/demo-center</a></p>"
+  ],
+  "also_change": [],
+  "why": "Aquata, Arcesium's platform, has a public free-trial request: \"You can request a 30-day trial ... There are no sales calls required to get started.\" A trial request scores 1 under the Call to action definition in p15-38. Reviewer: Trial or sandbox also goes from 0 to 1. The same Aquata trial request gives the Call to action its 1, and FactSet’s trial request scores 1 in both columns (p15-97+p15-102), so the two rows now follow one rule. Arcesium totals 5 of 16.",
+  "page": 15
+ },
+ {
+  "id": "p15-97+p15-102",
+  "action": "FIX",
+  "current_html": "<td><a href=\"https://developer.factset.com\">FactSet</a></td>\n<td class=\"s2\">2</td>\n<td class=\"s2\">2</td>\n<td class=\"s0\">0</td>\n<td class=\"s0\">0</td>\n<td class=\"s2\">2</td>\n<td class=\"s1\">1</td>\n<td class=\"s2\">2</td>\n<td class=\"s0\">0</td>\n</tr>",
+  "proposed_html": "<td><a href=\"https://developer.factset.com\">FactSet</a></td>\n<td class=\"s2\">2</td>\n<td class=\"s2\">2</td>\n<td class=\"s1\">1</td>\n<td class=\"s0\">0</td>\n<td class=\"s2\">2</td>\n<td class=\"s1\">1</td>\n<td class=\"s2\">2</td>\n<td class=\"s1\">1</td>\n</tr>",
+  "new_sources": [],
+  "also_change": [],
+  "why": "FactSet's developer portal invites requests for \"a free trial to our APIs\", and access follows a login with a corporate email or approval. That is \"after sign-up or approval\", so Trial or sandbox and Call to action both score 1, as Bloomberg and State Street do. Source 67 supports it.",
+  "page": 15
+ },
+ {
+  "id": "p15-103+p15-104+p15-107+p15-108+p15-110",
+  "action": "FIX",
+  "current_html": "<td><a href=\"https://www.msci.com/discover-msci/media-room/msci-unveils-new-ai-connectors-transforming-access-to-proprietary-data\">MSCI</a></td>\n<td class=\"s0\">0</td>\n<td class=\"s0\">0</td>\n<td class=\"s0\">0</td>\n<td class=\"s0\">0</td>\n<td class=\"s0\">0</td>\n<td class=\"s0\">0</td>\n<td class=\"s2\">2</td>\n<td class=\"s0\">0</td>\n</tr>",
+  "proposed_html": "<td><a href=\"https://developer.msci.com/\">MSCI</a></td>\n<td class=\"s1\">1</td>\n<td class=\"s2\">2</td>\n<td class=\"s0\">0</td>\n<td class=\"s0\">0</td>\n<td class=\"s1\">1</td>\n<td class=\"s1\">1</td>\n<td class=\"s2\">2</td>\n<td class=\"s1\">1</td>\n</tr>",
+  "new_sources": [
+   "<p id=\"sNEW-g09-msciportal\"><b class=\"n\">NEW</b><span class=\"g\">P</span><span class=\"t\">MSCI Developer Community</span>. MSCI, as of October 2026. <a href=\"https://developer.msci.com/\">https://developer.msci.com/</a></p>",
+   "<p id=\"sNEW-g09-msciguide\"><b class=\"n\">NEW</b><span class=\"g\">P</span><span class=\"t\">MSCI API User Guide: how to get access to MSCI APIs on Developer Community</span>. MSCI, PDF dated December 13, 2021. <a href=\"https://www.msci.com/documents/1296102/28171902/MSCI-API-Developer-Community-User+Guide.pdf\">https://www.msci.com/documents/1296102/28171902/MSCI-API-Developer-Community-User+Guide.pdf</a></p>",
+   "<p id=\"sNEW-g09-mscisdk\"><b class=\"n\">NEW</b><span class=\"g\">P</span><span class=\"t\">msci.sdk, version 1.37.1</span>. PyPI, published by MSCI, September 23, 2026. <a href=\"https://pypi.org/project/msci.sdk/\">https://pypi.org/project/msci.sdk/</a></p>"
+  ],
+  "also_change": [],
+  "why": "MSCI's Developer Community is public: it has a catalog of 28 APIs (\"Explore our catalog to find APIs\"), public overview pages, a public SDK with example code on PyPI, and Skills and Labs sections. API definitions and notebook downloads need a login, and keys come through a \"Get Access\" request, so docs, sample code, community and call to action score 1 and the catalog 2. The row link moves to the portal because the old link was the AI-connector press release. Trial or sandbox and First API call stay 0 (see p15-105+p15-106). The source line drops MSCI from the access caveat under the p15-31 CITE item. Totals used in p15-119: MSCI 8, FactSet 11.",
+  "page": 15
+ },
+ {
+  "id": "p15-38",
+  "action": "DECIDE",
+  "current_html": "<p>For the AI connector score: 2 means a connector that outside AI tools can use, such as an MCP server. 1 means one announced or in limited release. 0 means none, or an assistant that works only inside the vendor’s own platform.</p>",
+  "proposed_html": "<p>For the AI connector score: 2 means a connector that outside AI tools can use, such as an MCP server. 1 means one announced or in limited release. 0 means none, or an assistant that works only inside the vendor’s own platform. For the Call to action score: 2 means a developer can sign up and start alone, 1 a trial or access request, and 0 sales contact only.</p>",
+  "new_sources": [],
+  "also_change": [],
+  "why": "The Studio page offers \"Book a meeting\" and \"Download the brochure\", so it has calls to action, but they are sales contacts. Clearwater and SimCorp have the same kind and also score 0, while the 1s go to trial or access requests such as State Street's \"Get Started\". A one-line definition makes the 0 accurate and keeps the column consistent. DECIDE because the definition sets the scale for the whole column.",
+  "alternative_html": "<p>For the AI connector score: 2 means a connector that outside AI tools can use, such as an MCP server. 1 means one announced or in limited release. 0 means none, or an assistant that works only inside the vendor’s own platform. For the Call to action score: 2 means a developer can sign up and start alone, and 1 means a request form, a meeting or a demo.</p>",
+  "decide_note": "The definition sets the scale for the whole Call to action column. Recommended: 2 for self-serve sign-up, 1 for a trial or access request, 0 for sales contact only. FactSet, MSCI and Arcesium then score 1, Studio, SimCorp and Clearwater stay 0, and Snowflake and Databricks stay 2. Alternative: count any call to action, sales contact included, as 1. Then the last cell of the Aladdin Studio, SimCorp and Clearwater rows also goes from 0 to 1, and Studio shows “Book a meeting”, which Exhibit 16 already quotes.",
+  "page": 15
+ },
+ {
+  "id": "p15-31+p15-32+p15-52+p15-55+p15-56+p15-57+p15-58+p15-77+p15-80+p15-83+p15-85+p15-93+p15-105+p15-106",
+  "action": "CITE",
+  "current_html": "Source: my test of each platform’s public pages<sup class=\"fnref\"><a href=\"#s4\">4</a>, <a href=\"#s7\">7</a>, <a href=\"#s14\">14</a>, <a href=\"#s57\">57</a>, <a href=\"#s67\">67</a>, <a href=\"#s68\">68</a>, <a href=\"#s69\">69</a>, <a href=\"#s70\">70</a>, <a href=\"#s71\">71</a></sup>, no accounts or payments, October 8, 2026. Bloomberg, Clearwater and MSCI may score lower than they deserve, because some of their pages blocked automated access.",
+  "proposed_html": "Source: my test of each platform’s public pages<sup class=\"fnref\"><a href=\"#s2\">2</a>, <a href=\"#s4\">4</a>, <a href=\"#s5\">5</a>, <a href=\"#s6\">6</a>, <a href=\"#s7\">7</a>, <a href=\"#s14\">14</a>, <a href=\"#s23\">23</a>, <a href=\"#s24\">24</a>, <a href=\"#s57\">57</a>, <a href=\"#s59\">59</a>, <a href=\"#s67\">67</a>, <a href=\"#s68\">68</a>, <a href=\"#s69\">69</a>, <a href=\"#s70\">70</a>, <a href=\"#s71\">71</a>, <a href=\"#sNEW-g06-bbg\">NEW</a>, <a href=\"#sNEW-g09-bbglib\">NEW</a>, <a href=\"#sNEW-g09-bbgapp\">NEW</a>, <a href=\"#sNEW-g09-msciportal\">NEW</a>, <a href=\"#sNEW-g09-msciguide\">NEW</a>, <a href=\"#sNEW-g09-mscisdk\">NEW</a>, <a href=\"#sNEW-g09-simcorp\">NEW</a>, <a href=\"#sNEW-g09-arcmkt\">NEW</a>, <a href=\"#sNEW-g09-aquata\">NEW</a>, <a href=\"#sNEW-g09-dbxapi\">NEW</a>, <a href=\"#sNEW-g09-dbxsdk\">NEW</a></sup>, no accounts or payments, October 8, 2026. Bloomberg and Clearwater may score lower than they deserve, because some of their pages blocked automated access.",
+  "new_sources": [
+   "<p id=\"sNEW-g09-simcorp\"><b class=\"n\">NEW</b><span class=\"g\">P</span><span class=\"t\">Data Model Portal</span>. SimCorp, as of October 2026. <a href=\"https://thesim.dev/\">https://thesim.dev/</a></p>",
+   "<p id=\"sNEW-g09-arcmkt\"><b class=\"n\">NEW</b><span class=\"g\">P</span><span class=\"t\">Arcesium Unveils Aquata® Marketplace to Power Data Connectivity, Elevate Workflows and Accelerate AI Readiness for Institutional Investors</span>. Arcesium press release (Business Wire), October 7, 2025. <a href=\"https://www.businesswire.com/news/home/20251007929556/en/\">https://www.businesswire.com/news/home/20251007929556/en/</a></p>",
+   "<p id=\"sNEW-g09-dbxapi\"><b class=\"n\">NEW</b><span class=\"g\">P</span><span class=\"t\">Databricks REST API reference</span>. Databricks, as of October 2026. <a href=\"https://docs.databricks.com/api/workspace/introduction\">https://docs.databricks.com/api/workspace/introduction</a></p>",
+   "<p id=\"sNEW-g09-dbxsdk\"><b class=\"n\">NEW</b><span class=\"g\">P</span><span class=\"t\">Databricks SDK for Python, README and examples, databricks/databricks-sdk-py</span>. GitHub, as of October 2026. <a href=\"https://github.com/databricks/databricks-sdk-py\">https://github.com/databricks/databricks-sdk-py</a></p>"
+  ],
+  "also_change": [],
+  "why": "The scores in these cells are right, but the cited sources did not show them. Studio docs and catalog: sources 6, 23 and 24 (SDK README, PyPI plugins, APIs page). SimCorp: thesim.dev, whose content \"is strictly limited and controlled by SimCorp\". Arcesium marketplace: the Aquata Marketplace release (\"available to users of the Aquata platform\"). Snowflake and LSEG AI connectors: sources 5 and 2. Databricks: the REST API reference, the SDK README examples and source 59, which lists \"Claude Code, Codex, Cursor\" setups. MSCI trial and first call: the portal and user guide, where clients without keys can try APIs \"only after requesting for the API Keys\". MSCI leaves the access caveat because its developer portal answered plain requests.",
+  "page": 15
+ },
+ {
+  "id": "p15-114",
+  "action": "FIX",
+  "current_html": "deals with<sup class=\"fnref\"><a href=\"#s67\">67</a>, <a href=\"#s68\">68</a>, <a href=\"#s69\">69</a></sup>.",
+  "proposed_html": "deals with.",
+  "new_sources": [],
+  "also_change": [],
+  "why": "The count of 10 holds. Sources 67 to 69 cover only FactSet, State Street and LSEG. Readability review: the exhibit's own source note directly above already cites every platform page tested, so the sentence drops its citation instead of repeating nine numbers.",
+  "page": 15
+ },
+ {
+  "id": "p15-116",
+  "action": "FIX",
+  "current_html": "It scores each on eight things a developer with no client relationship can reach: 2 where the vendor opens it before any sale, 0 where access follows a relationship.",
+  "proposed_html": "It scores each from 0 to 2 on eight things a developer with no client relationship can reach.",
+  "new_sources": [],
+  "also_change": [],
+  "why": "The exhibit legend reads “2: Fully public or self-serve, 1: Partial or after sign-up or approval, 0: None or blocked”. State Street’s sandbox scores 1 behind an account (“Start here using your State Street account”), so a two-level description is wrong. Readability and layout review: the sentence now points to the three-level key printed above the table instead of restating it, which saves the lines that kept this paragraph on the exhibit's page.",
+  "page": 15
+ },
+ {
+  "id": "p15-118",
+  "action": "DECIDE",
+  "current_html": "At Aladdin, as at Bloomberg, State Street, SimCorp, Clearwater and Arcesium, documentation, a sandbox and a first call come after a relationship exists.",
+  "proposed_html": "At Aladdin, as at Bloomberg, State Street, SimCorp, Clearwater and Arcesium, a first API call needs a contract or a relationship.",
+  "new_sources": [],
+  "also_change": [
+   {
+    "where": "Exhibit 17 title (recommended)",
+    "current_html": "<span class=\"ex-num\">Exhibit 17.</span> Investment platforms, Studio among them, open to developers only after a relationship exists</p>",
+    "proposed_html": "<span class=\"ex-num\">Exhibit 17.</span> Investment platforms, Studio among them, open to developers mostly after a relationship</p>"
+   },
+   {
+    "where": "Exhibit 17 title (alternative only)",
+    "current_html": "<span class=\"ex-num\">Exhibit 17.</span> Investment platforms, Studio among them, open to developers only after a relationship exists</p>",
+    "proposed_html": "<span class=\"ex-num\">Exhibit 17.</span> At investment platforms, Studio among them, a first API call needs a relationship</p>"
+   }
+  ],
+  "why": "Exhibit 17 scores Aladdin, Bloomberg and State Street 1 for public docs, and Bloomberg 1 for sandbox and first call. The public SDK README is real documentation [23]. The sentence holds fully for SimCorp, Clearwater and Arcesium, which score 0 on all three. Reviewer: after g09’s score changes, SimCorp and Clearwater score 0 on all three and Arcesium scores 1 for its trial (p15-54), so the sentence needs “mostly” and the title must agree.",
+  "alternative_html": "At Aladdin, as at Bloomberg, State Street, SimCorp, Clearwater and Arcesium, a first API call needs a contract or a relationship.",
+  "decide_note": "Under the corrected scores, Aladdin, Bloomberg and State Street show partial public docs, and Bloomberg, State Street and Arcesium a trial on request. All six investment platforms score 0 for a first API call without a contract. The sentence states that one fact, which holds for all six (it needs Bloomberg's first call at 0, the recommended option of p15-26+p15-27+p15-28+p15-29). Recommended: that sentence, and the Exhibit 17 title says the platforms “open to developers mostly after a relationship”. Alternative: the same sentence, and the title narrows to the first call: “At investment platforms, Studio among them, a first API call needs a relationship”. Both titles fit on one line.",
+  "page": 15
+ },
+ {
+  "id": "p15-119",
+  "action": "DECIDE",
+  "current_html": "Data and cloud platforms sell to developers directly and cluster high.</p>",
+  "proposed_html": "Snowflake and Databricks sell to developers directly and score highest. LSEG and FactSet come next. FactSet and MSCI allow a first API call only for licensed clients<sup class=\"fnref\"><a href=\"#s4\">4</a>, <a href=\"#s67\">67</a></sup>.</p>",
+  "alternative_html": "Cloud data platforms sell to developers directly and score highest. Market data vendors publish their API catalogs but tie a first call to sign-up or a license.</p>",
+  "new_sources": [],
+  "also_change": [
+   {
+    "where": "Exhibit 17 group row (alternative only; the second group row goes before LSEG)",
+    "current_html": "<tr class=\"group\"><td colspan=\"9\">Data and cloud platforms</td></tr>",
+    "proposed_html": "<tr class=\"group\"><td colspan=\"9\">Cloud data platforms</td></tr>"
+   }
+  ],
+  "why": "This is the paragraph’s closing claim, so it changes the argument. Snowflake and Databricks score 16 of 16 and offer self-serve trials (“Start your 30-day trial with $400 in free credits”). LSEG scores 12. FactSet scores 9: its “Try for free” is a contact form and its guide says to “contact your FactSet account manager”. MSCI scores 2 and “grants no right or license ... without an appropriate license” [4].",
+  "decide_note": "This is the paragraph’s closing claim. Totals out of 16 after the g09 score fixes: Snowflake 16, Databricks 16, LSEG 12, FactSet 11, MSCI 8. Recommended: name the platforms. Alternative: split the “Data and cloud platforms” band of Exhibit 17 into “Cloud data platforms” (Snowflake, Databricks) and “Market data vendors” (LSEG, FactSet, MSCI) and use the alternative sentence. Reviewer: g08’s draft said FactSet keeps trials for licensed clients, but FactSet’s trial now scores 1 on request (p15-97+p15-102), so the sentence speaks of the first call, which FactSet and MSCI both score 0.",
+  "page": 15
+ },
+ {
+  "id": "p16-02",
+  "action": "FIX",
+  "current_html": "The sources are BlackRock product pages, SEC filings, procurement notices, public code and packages on GitHub and PyPI, press releases, job postings, and transcripts of BlackRock recordings. BlackRock did not produce, review or endorse it.",
+  "proposed_html": "The sources are BlackRock product pages, investor presentations, SEC filings, a fund prospectus, procurement notices, press releases and job postings. They also include public code and packages on GitHub and PyPI, other vendors’ product and developer pages, blogs and trade press. The rest are transcripts of recordings and earnings calls with BlackRock speakers. BlackRock did not produce, review or endorse this analysis.",
+  "new_sources": [],
+  "also_change": [],
+  "why": "The register also holds two Investor Day presentations [10, 47], the iShares V plc prospectus [18], earnings call transcripts [46, 48 to 51], blogs by Fivetran, Microsoft and BlackRock Engineering [22, 25, 40], trade press [37, 55] and other vendors’ pages [5, 59, 67 to 71]. The list now covers every kind.",
+  "page": 16
+ },
+ {
+  "id": "p16-05",
+  "action": "FIX",
+  "current_html": "AI agents pulled the pages, unpacked the packages, transcribed the recordings and drafted the text.",
+  "proposed_html": "AI agents pulled the pages, unpacked the packages, transcribed the recordings that had no published transcript or captions, and drafted the text.",
+  "new_sources": [],
+  "also_change": [],
+  "why": "The transcript corpus README says “Published transcript or caption text was preferred; local Whisper ... was used only where neither existed”. In the register, 9 recordings are machine transcriptions and 4 use published transcripts, published captions or auto-captions.",
+  "page": 16
+ },
+ {
+  "id": "p16-09",
+  "action": "FIX",
+  "current_html": "each source’s grade (P, S or T), title, speaker and date.</p>",
+  "proposed_html": "each source’s grade (P, S or T), title, publisher or speaker, and date where known.</p>",
+  "new_sources": [],
+  "also_change": [],
+  "why": "Only S entries name a speaker. P and T entries give a publisher, for example entry 2, “LSEG press release, 2025.” Entries 9, 20, 21 and 31 are undated (“Replay page undated”). Page 2 gets the same words under p02-20.",
+  "page": 16
+ },
+ {
+  "id": "p16-10",
+  "action": "FIX",
+  "current_html": "BlackRock and Aladdin are registered trademarks of BlackRock, Inc.",
+  "proposed_html": "BlackRock and Aladdin are trademarks of BlackRock, Inc. or its affiliates.",
+  "new_sources": [],
+  "also_change": [],
+  "why": "The ALADDIN registration (US 5829287) is owned by BlackRock Finance, Inc., the renamed former parent that is now a subsidiary. BlackRock’s own Studio page uses this wording: “BLACKROCK and ALADDIN are trademarks of BlackRock, Inc. or its affiliates.”",
+  "page": 16
+ },
+ {
+  "id": "s02",
+  "action": "FIX",
+  "current_html": "<span class=\"t\">LSEG announces collaboration with Anthropic</span>. LSEG press release, 2025.",
+  "proposed_html": "<span class=\"t\">LSEG and Anthropic collaborate to make more financial data accessible to Claude for Enterprise customers</span>. LSEG press release, October 27, 2025.",
+  "new_sources": [],
+  "also_change": [],
+  "why": "The cited LSEG page carries the title and H1 “LSEG and Anthropic collaborate to make more financial data accessible to Claude for Enterprise customers” and the date “October 27, 2025” (re-fetched 2026-10-20). The URL is unchanged.",
+  "page": 17
+ },
+ {
+  "id": "s04",
+  "action": "FIX",
+  "current_html": "<span class=\"t\">MSCI unveils new AI connectors</span>. MSCI press release, 2025.",
+  "proposed_html": "<span class=\"t\">MSCI unveils new AI connectors transforming access to proprietary data</span>. MSCI press release, February 24, 2026.",
+  "new_sources": [],
+  "also_change": [],
+  "why": "The MSCI page headline is “MSCI unveils new AI connectors transforming access to proprietary data”, datelined “February 24, 2026” (re-fetched 2026-10-20). fintech.global reported the launch on February 25, 2026.",
+  "page": 17
+ },
+ {
+  "id": "s09",
+  "action": "FIX",
+  "current_html": "<span class=\"t\">Build vs. buy: how asset managers are rethinking key decisions (webinar replay; published captions)</span>. Michael Campos, US asset manager coverage, and Alisha Sewdass, Head of Aladdin Solutions Engineering, Americas, BlackRock, with Clark Schafer, Partner, Alpha FMC. Replay page undated.",
+  "proposed_html": "<span class=\"t\">Build vs. Buy: How Asset Managers Are Rethinking Key Decisions Today (webinar replay; published captions)</span>. Michael Campos, US asset manager coverage, and Alisha Sewdass, Head of Aladdin Solutions Engineering, Americas, BlackRock, with Clark Schafer, Partner, Alpha FMC. Replay page dated June 2026.",
+  "new_sources": [],
+  "also_change": [
+   {
+    "where": "Same entry, the cue list at its end (separate span because the URL sits between).",
+    "current_html": "Quoted at 4:37, 4:40, 14:46, 24:34, 31:56, 32:01, 39:15, 39:42, 42:22, 47:41 (Sewdass at 31:56, 32:01, 39:15 and 39:42; Schafer at 42:22).",
+    "proposed_html": "Quoted at 4:37, 4:40, 4:47, 24:34, 24:39, 31:56, 32:01, 39:42, 40:11, 40:20, 42:22, 50:41, 50:46, 50:49 (Sewdass at 31:56, 32:01, 39:42, 40:11 and 40:20; Schafer at 42:22)."
+   }
+  ],
+  "why": "The replay page H1 reads “Build vs. Buy: How Asset Managers Are Rethinking Key Decisions Today” and the page shows “June 2026” (re-fetched 2026-10-20). The cue list is checked against the published captions: 4:37 “15%”, 4:40 “18%” and “30”, 4:47 “37%”, 24:34 and 24:39 “AI and data demands at 42%” and the tie, 31:56 and 32:01 system of record and system of work, 39:42 “modular approach”, 40:11 “very, very robust APIs”, 40:20 “secret sauce rebalancing tools”, 42:22 to 42:29 Schafer on APIs, Snowflake and RFPs, 50:41 to 50:49 poll 3. The document quotes nothing at 14:46, 39:15 or 47:41.",
+  "page": 17
+ },
+ {
+  "id": "s21",
+  "action": "FIX",
+  "current_html": "<p id=\"s21\"><b class=\"n\">21</b><span class=\"g\">T</span><span class=\"t\">Blackrock Aladdin Explore: Intro (an Aladdin classroom session; third-party YouTube upload; machine transcription)</span>. Uploaded by the channel “jas jas,” speaker not named, undated. <a href=\"https://www.youtube.com/watch?v=BahCi45_BTc\">https://www.youtube.com/watch?v=BahCi45_BTc</a> Quoted at 6:26, 9:34.</p>",
+  "proposed_html": "<p id=\"s21\"><b class=\"n\">21</b><span class=\"g\">T</span><span class=\"t\">Blackrock Aladdin Explore - Intro (an Aladdin classroom session; third-party YouTube upload; machine transcription)</span>. Uploaded by the channel “jas jas” on December 25, 2022. Speaker not named. <a href=\"https://www.youtube.com/watch?v=BahCi45_BTc\">https://www.youtube.com/watch?v=BahCi45_BTc</a> Quoted at 9:34.</p>",
+  "new_sources": [],
+  "also_change": [],
+  "why": "YouTube oEmbed gives the title “Blackrock Aladdin Explore - Intro” and channel “jas jas”. The watch page saved on 2026-10-20 shows “Dec 25, 2022”. The document quotes only “new what-if model”, at 9:34 in the machine transcript (9:37 in YouTube’s captions). Nothing at 6:26 is quoted.",
+  "page": 17
+ },
+ {
+  "id": "p07-16",
+  "action": "CITE",
+  "current_html": "Kunal Khara, Managing Director and Global Head of Aladdin Product, BlackRock, early 2024. <a href=\"https://www.blackrock.com/aladdin/discover\">https://www.blackrock.com/aladdin/discover</a> This is the hub page; the interview video is linked from it.",
+  "proposed_html": "Kunal Khara, Managing Director and Global Head of Aladdin Product, BlackRock, interviewed by Victor Anderson, WatersTechnology, February 8, 2024. <a href=\"https://www.waterstechnology.com/awards-rankings/7951675/bst-awards-2023-best-overall-technology-provider-for-2023-winners-interview-blackrock\">https://www.waterstechnology.com/awards-rankings/7951675/bst-awards-2023-best-overall-technology-provider-for-2023-winners-interview-blackrock</a> The video is also on the Aladdin hub page, <a href=\"https://www.blackrock.com/aladdin/discover\">https://www.blackrock.com/aladdin/discover</a>.",
+  "new_sources": [],
+  "also_change": [],
+  "why": "The Exhibit 6 cell actually reads \"Awards interview, early 2024\" next to \"as a 2024 focus\" in the column before it, and both are right: Khara says the themes are \"where we're very, very focused in 2024\" [18:59], and WatersTechnology dated the 2023 BST Awards winner's interview \"2024-02-08\". Only the register entry improves: it gains the exact date and the article URL instead of the hub page alone.",
+  "page": 18
+ },
+ {
+  "id": "s31",
+  "action": "FIX",
+  "current_html": "Jeff Miller, Managing Director, Global Head of Data Platform and Product Engineering, BlackRock, undated.",
+  "proposed_html": "Jeff Miller, Managing Director, Global Head of Data Platform and Product Engineering, BlackRock. Snowflake video, May 21, 2026.",
+  "new_sources": [],
+  "also_change": [
+   {
+    "where": "Exhibit of BlackRock speakers, Jeff Miller row, receipt cell",
+    "current_html": "<a href=\"https://www.youtube.com/watch?v=3iXd7a7_F6g\">Snowflake video, undated</a>",
+    "proposed_html": "<a href=\"https://www.youtube.com/watch?v=3iXd7a7_F6g\">Snowflake video, May&nbsp;2026</a>"
+   }
+  ],
+  "why": "YouTube oEmbed gives the channel “Snowflake Inc.”. The watch page saved on 2026-10-20 gives “publishDate” “May 21, 2026”. The job title is the one Miller gives on camera. The video description calls him “Global Head of Data Factory and Enterprise Data Platforms”, so the author may prefer to keep the spoken title.",
+  "page": 18
+ },
+ {
+  "id": "s36",
+  "action": "FIX",
+  "current_html": "payments for 2025</span>. SEC EDGAR, filed April 2, 2026.",
+  "proposed_html": "payments for 2025</span>. SEC EDGAR, filed April 6, 2026.",
+  "new_sources": [],
+  "also_change": [],
+  "why": "The EDGAR filing index for accession 0000019617-26-000096 shows “Filing Date 2026-04-06” (re-fetched 2026-10-20). “20260402” is only part of the file name. The URL and the $25.6 million figure stand.",
+  "page": 18
+ },
+ {
+  "id": "s40",
+  "action": "FIX",
+  "current_html": "<span class=\"t\">Open-sourcing the AladdinSDK: empower Python developers with a quantitative edge</span>. BlackRock Engineering, on Medium, 2024.",
+  "proposed_html": "<span class=\"t\">Open Sourcing the Aladdin SDK: Empowering Python Developers with a Quantitative Edge</span>. Vedant Naik, Lead Engineer, Aladdin Studio, and Eli Kalish, Product Manager II, Aladdin Studio. BlackRock Engineering, on Medium, May 7, 2024.",
+  "new_sources": [],
+  "also_change": [],
+  "why": "The BlackRock Engineering feed item for this URL has the title “Open Sourcing the Aladdin SDK: Empowering Python Developers with a Quantitative Edge”, pubDate “Tue, 07 May 2024”, and the byline “By: Vedant Naik, Lead Engineer, Aladdin Studio, and Eli Kalish, Product Manager II, Aladdin Studio” (re-fetched 2026-10-20). The authors are added because page 9 cites this entry for “the BlackRock engineer who co-wrote the SDK’s launch post”.",
+  "page": 18
+ },
+ {
+  "id": "s54",
+  "action": "FIX",
+  "current_html": "Pavan Pemmaraju, Head of AI Product and Engineering, BlackRock, July 16, 2026. <a href=\"https://www.blackrock.com/aladdin/discover/podcast/reducing-time-to-insight-how-ai-is-reshaping-risk-management\">https://www.blackrock.com/aladdin/discover/podcast/reducing-time-to-insight-how-ai-is-reshaping-risk-management</a> Quoted at 10:00, 17:37. The episode also features Jess Fitzgibbon, Head of Product for Aladdin Risk. The recording does not label speakers, so this document does not attribute the 10:00 passage to either by name.",
+  "proposed_html": "Pavan Pemmaraju, Head of AI Product and Engineering, and Jess Fitzgibbon, Head of Product for Aladdin Risk, BlackRock, July 16, 2026. <a href=\"https://www.blackrock.com/aladdin/discover/podcast/reducing-time-to-insight-how-ai-is-reshaping-risk-management\">https://www.blackrock.com/aladdin/discover/podcast/reducing-time-to-insight-how-ai-is-reshaping-risk-management</a> Quoted at 17:37. The recording does not label speakers, so the speaker of that passage is left unnamed.",
+  "new_sources": [],
+  "also_change": [],
+  "why": "The episode page lists “Pavan Pemmaraju, Head of AI Product & Engineering, and Jess Fitzgibbon, Head of Product for Aladdin Risk”. The 17:37 speaker builds on “what Pavana is speaking to”, so that speaker is not Pemmaraju. The document quotes this episode only at 17:37 (“the data model itself is structured for agentic use cases”), so 10:00 goes.",
+  "page": 18
+ },
+ {
+  "id": "s59",
+  "action": "FIX",
+  "current_html": "<span class=\"t\">Managed MCP servers, product documentation</span>. Databricks, as of October 2026. <a href=\"https://docs.databricks.com/aws/en/generative-ai/mcp/managed-mcp\">https://docs.databricks.com/aws/en/generative-ai/mcp/managed-mcp</a>",
+  "proposed_html": "<span class=\"t\">Databricks-provided MCPs, product documentation</span>. Databricks, last updated October 16, 2026. <a href=\"https://docs.databricks.com/aws/en/agents/mcp-tools/built-in-mcp-services\">https://docs.databricks.com/aws/en/agents/mcp-tools/built-in-mcp-services</a>",
+  "new_sources": [],
+  "also_change": [
+   {
+    "where": "Exhibit of AI connections by vendor, Databricks row, receipt cell",
+    "current_html": "<a href=\"https://docs.databricks.com/aws/en/generative-ai/mcp/managed-mcp\">Databricks documentation</a>",
+    "proposed_html": "<a href=\"https://docs.databricks.com/aws/en/agents/mcp-tools/built-in-mcp-services\">Databricks documentation</a>"
+   }
+  ],
+  "why": "The old URL now returns 301 to /aws/en/agents/mcp-tools/built-in-mcp-services. That page is titled “Databricks-provided MCPs” and shows “Last updated on Oct 16, 2026” (re-fetched 2026-10-20). It says “You don’t need to host or register a server”, so the exhibit row “Databricks documents managed MCP servers” stays true. Only its link changes.",
+  "page": 19
+ },
+ {
+  "id": "s60",
+  "action": "FIX",
+  "current_html": "<p id=\"s60\"><b class=\"n\">60</b><span class=\"g\">P</span><span class=\"t\">Job posting: Forward Deploy Engineer, Aladdin Data, Associate (Mumbai)</span>. BlackRock Careers, as of October 2026. <a href=\"https://careers.blackrock.com/job/mumbai/forward-deploy-engineer-aladdin-data-associate/45831/97466309856\">https://careers.blackrock.com/job/mumbai/forward-deploy-engineer-aladdin-data-associate/45831/97466309856</a></p>",
+  "proposed_html": "<p id=\"s60\"><b class=\"n\">60</b><span class=\"g\">P</span><span class=\"t\">Job posting: Forward Deploy Engineer, Aladdin Data, Associate (R264906, Mumbai)</span>. BlackRock, posted September 4, 2026. Removed from BlackRock Careers by October 20, 2026. Copy kept by Saarthi. <a href=\"https://joinsaarthi.com/jobs/blackrock/forward-deploy-engineer-aladdin-data-associate-mumbai/46c71ea1-8135-43ac-9591-17a49139ceb6\">https://joinsaarthi.com/jobs/blackrock/forward-deploy-engineer-aladdin-data-associate-mumbai/46c71ea1-8135-43ac-9591-17a49139ceb6</a></p>",
+  "new_sources": [],
+  "also_change": [
+   {
+    "where": "Exhibit 12, Aladdin row, Receipt cell (the careers address now returns 404)",
+    "current_html": "<a href=\"https://careers.blackrock.com/job/mumbai/forward-deploy-engineer-aladdin-data-associate/45831/97466309856\">BlackRock Careers</a>",
+    "proposed_html": "<a href=\"https://joinsaarthi.com/jobs/blackrock/forward-deploy-engineer-aladdin-data-associate-mumbai/46c71ea1-8135-43ac-9591-17a49139ceb6\">BlackRock job posting</a>"
+   }
+  ],
+  "why": "The careers URL returns 404 (“no longer exists”) and has no archive copy. The Saarthi copy keeps the title and the line “Implement emerging AI tooling including Model Context Protocol (MCP), AI agents, and Copilot extensions”, with “datePosted” “2026-09-04” and the Workday link ending R264906. This is the same replacement g07 drafted under p13-47, so apply it once. The exhibit row and the other uses of [60] are handled in g07 p13-47. Reviewer: the Exhibit 12 receipt link pointed at the dead careers address, so it moves to the same copy.",
+  "page": 19
+ },
+ {
+  "id": "s66 (finding s65)+p15-08 register",
+  "action": "FIX",
+  "current_html": "<span class=\"t\">Pull request 57, dependency conflict with the MCP toolkit, blackrock/aladdinsdk</span>. GitHub, merged August 2026.",
+  "proposed_html": "<span class=\"t\">Pull request 57, add Pydantic v2 compatibility support, blackrock/aladdinsdk</span>. GitHub, merged August 11, 2026.",
+  "new_sources": [],
+  "also_change": [],
+  "why": "Pull request 57 is titled “add Pydantic v2 compatibility support” and was merged on August 11, 2026. Neither the PR nor its patch mentions MCP. The document cites it only as an example of a pull request BlackRock merged, so the entry gives the PR’s own title. This is the same span and text g08 drafted under p15-08+p15-10, so apply it once. The entry is now number 66.",
+  "page": 19
+ },
+ {
+  "id": "layout (table cells ending on one word plus a superscript)",
+  "action": "FIX",
+  "page": 4,
+  "current_html": "“Active,” “Booked”</a>",
+  "proposed_html": "“Active,”&nbsp;“Booked”</a>",
+  "new_sources": [],
+  "also_change": [
+   {
+    "where": "Exhibit 2, step 3, product column",
+    "current_html": "without lifting up the pencil”",
+    "proposed_html": "without lifting up the&nbsp;pencil”"
+   },
+   {
+    "where": "Exhibit 2, step 5, product column",
+    "current_html": "portfolio-configuration specification",
+    "proposed_html": "portfolio-configuration&nbsp;specification"
+   },
+   {
+    "where": "Exhibit 2, step 5, API column",
+    "current_html": "(AborLot spec)",
+    "proposed_html": "(AborLot&nbsp;spec)"
+   },
+   {
+    "where": "Exhibit 6, Goel receipt",
+    "current_html": ">Pensions webinar, 2025</a>",
+    "proposed_html": ">Pensions webinar,&nbsp;2025</a>"
+   },
+   {
+    "where": "Exhibit 9, PPF buyer",
+    "current_html": "UK Pension Protection Fund</a>",
+    "proposed_html": "UK Pension Protection&nbsp;Fund</a>"
+   },
+   {
+    "where": "Exhibit 9, PBGC buyer",
+    "current_html": "US Pension Benefit Guaranty Corporation</a>",
+    "proposed_html": "US Pension Benefit Guaranty&nbsp;Corporation</a>"
+   },
+   {
+    "where": "Exhibit 12, LSEG receipt",
+    "current_html": "Investing.com summary</a>",
+    "proposed_html": "Investing.com&nbsp;summary</a>"
+   }
+  ],
+  "why": "Layout only, no visible word changes. In these cells the last printed line held one word and its superscript. A non-breaking space keeps the last two words together. Most of these were already in the original; the plan fixes them while the tables are being touched."
+ }
+]
