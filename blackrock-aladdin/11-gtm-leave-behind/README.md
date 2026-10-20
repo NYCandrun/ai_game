@@ -4,7 +4,7 @@
 
 - Part 1, what the public record shows: what BlackRock sells, the products, a trade's path through the APIs, the architecture, the six pieces and the 54-spec catalog, then how BlackRock's speakers define Studio.
 - Part 2, four findings about direction: public customer proof already exists and is viable; the growth story is API consumption and the whole portfolio; the AI front door is kept inside the platform while data providers market theirs outside, with the case for each side; buyers want a core platform plus their own builds.
-- Part 3, five directions to explore for marketing Studio, each with what marketing would produce, why, and how to measure it.
+- Part 3, one way of presenting Studio that the findings support, drawn as a diagram, and the five pieces of marketing work that follow, each with how to know it worked.
 - Part 4, what could not be seen from outside: the prospect's journey before and after qualification, and how providers draw the access line differently.
 - A 72-entry source register graded P (primary document), S (BlackRock speaker, with minute:second timestamps) and T (third party).
 

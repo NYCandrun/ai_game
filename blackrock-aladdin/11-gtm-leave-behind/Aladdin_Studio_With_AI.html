@@ -614,7 +614,7 @@ td.num.dim{color:#595959}
 <h2>Executive summary</h2>
 <p class="lede">Studio is the layer of Aladdin that clients build on.</p>
 <p style="margin-bottom:8pt">Studio is Aladdin’s developer and data layer, with three parts: APIs and events, Aladdin Data Cloud on Snowflake, and developer tools. Five BlackRock speakers have defined it on the record, and four give these same three parts<sup class="fnref"><a href="#s1">1</a></sup>.</p>
-<p style="margin-bottom:8pt">BlackRock’s investor story and its buyers’ own answers both point to Studio. API calls are the fastest-growing measure BlackRock showed investors: 17x by 2030. Buyers at BlackRock’s webinar want a core platform plus their own builds, and rivals already sell to that demand<sup class="fnref"><a href="#s2">2</a></sup>. Part 3 lists five directions to explore for marketing Studio, each resting on a finding.</p>
+<p style="margin-bottom:8pt">BlackRock’s investor story and its buyers’ own answers both point to Studio. API calls are the fastest-growing measure BlackRock showed investors: 17x by 2030. Buyers at BlackRock’s webinar want a core platform plus their own builds, and rivals already sell to that demand<sup class="fnref"><a href="#s2">2</a></sup>. Part 3 puts the findings together into one way of presenting Studio, and the marketing work that follows.</p>
 <div class="method" style="margin-top:2pt; margin-bottom:4pt">
 <h3>What this method can and cannot do</h3>
 <p><b>Public material only:</b> BlackRock web pages, the 54 API specifications inside 11 public <code>asdk_plugin</code> Python packages, 128 recordings, SEC filings, procurement notices, GitHub and PyPI. AI agents pulled them in about a day; I checked every fact against its document. Some recordings are machine-transcribed, so names and jargon can be misheard. I have no internal product context, so some conclusions may be wrong for reasons I cannot see.</p>
@@ -982,25 +982,123 @@ td.num.dim{color:#595959}
 
 <section class="chapter part" id="part-3">
 <h2><span class="pn">Part 3</span>Directions to explore</h2>
-<p>Each of these follows from a finding and rests only on what is public.</p>
-<figure class="exhibit" id="exhibit-14"><p class="ex-title"><span class="ex-num">Exhibit 14.</span> Five directions to explore for marketing Studio</p>
+<p>Put the findings together and they say one thing about how to present Studio: it is the same set of APIs, data and controls that BlackRock’s own teams build on, offered to a client’s engineers as exactly that. The buyer is the client’s engineering and data team. The proof that it works is BlackRock’s own use of it.</p>
+<figure class="exhibit keep" id="exhibit-14"><p class="ex-title"><span class="ex-num">Exhibit 14.</span> BlackRock’s own applications and a client’s can run on the same APIs, data and controls</p>
+<div role="img" aria-label="Diagram. On the left, BlackRock's own use: about 100 BlackRock applications and Copilot's thousands of tools. On the right, a client's use: its engineering team behind its own gateway, its own applications built with the SDK, and, hatched, its own AI tools, on which BlackRock has published nothing beyond a job posting. All of them sit on the same band, Aladdin's APIs, 54 of them public. Under the band, four controls in the public record: every call checked against the user's permissions, a second person's approval for rule changes, Copilot tested to give no investment advice, and Data Cloud as a copy of the client's Aladdin data in a Snowflake account BlackRock runs for that client.">
+<svg id="pos" viewBox="0 0 1280 560" xmlns="http://www.w3.org/2000/svg" style="display:block;width:504pt;height:auto;overflow:visible">
+<style>
+#pos text{font-family:"Barlow",sans-serif;font-weight:400;font-size:16px;fill:#000}
+#pos .tt{font-weight:700;font-size:17px}
+#pos .s{font-family:"Barlow Condensed",sans-serif;font-weight:300;font-size:16px}
+#pos .cap{font-family:"Barlow Condensed",sans-serif;font-weight:700;font-size:14px;letter-spacing:.08em}
+#pos .tc{text-anchor:middle}
+#pos .arr{stroke:#000;stroke-width:1.5;fill:none}
+#pos .hd{fill:#000}
+#pos .band{fill:#fff;stroke:#D6D5DD;stroke-width:1.2}
+#pos .tile{fill:#fff;stroke:#000;stroke-width:1.4}
+#pos .tile.hatch{fill:url(#pos-hatch)}
+#pos .cop{fill:#FEEBF0;stroke:#FC9BB3;stroke-width:1.6}
+#pos .api{fill:#F2F2F2;stroke:#000;stroke-width:1.2}
+#pos .studio{fill:#FFF5CC;stroke:#FFCE00;stroke-width:1.6}
+</style>
+<defs>
+<marker id="pos-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0,0 L10,5 L0,10 z" class="hd"/></marker>
+<pattern id="pos-hatch" width="6" height="6" patternUnits="userSpaceOnUse" patternTransform="rotate(45)"><rect width="2" height="6" style="fill:#BFBFBF"/></pattern>
+</defs>
+
+<!-- left group: BlackRock's own use -->
+<rect x="10" y="10" width="600" height="210" rx="6" class="band"/>
+<text x="24" y="34" class="cap">BLACKROCK’S OWN USE · IN THE PUBLIC RECORD</text>
+<rect x="24" y="52" width="276" height="148" rx="4" class="tile"/>
+<text x="38" y="80" class="tt">About 100 BlackRock applications</text>
+<text x="38" y="104" class="s">Explore, Dashboard, Risk Radar and the rest</text>
+<text x="38" y="126" class="s">all call these APIs. Users see what their</text>
+<text x="38" y="148" class="s">permissions allow.</text>
+<rect x="318" y="52" width="276" height="148" rx="4" class="cop"/>
+<text x="332" y="80" class="tt">Copilot</text>
+<text x="332" y="104" class="s">Thousands of tools, each one an</text>
+<text x="332" y="126" class="s">Aladdin API, built by 50 to 60 BlackRock</text>
+<text x="332" y="148" class="s">engineering teams. Answers go through</text>
+<text x="332" y="170" class="s">the user’s own permissions.</text>
+
+<!-- right group: a client's use -->
+<rect x="670" y="10" width="600" height="210" rx="6" class="band"/>
+<text x="684" y="34" class="cap">A CLIENT’S USE · THE SAME APIS</text>
+<rect x="684" y="52" width="180" height="148" rx="4" class="studio"/>
+<text x="696" y="80" class="tt">Its engineers</text>
+<text x="696" y="104" class="s">Route Aladdin calls</text>
+<text x="696" y="126" class="s">through the client’s</text>
+<text x="696" y="148" class="s">own gateway. Two code</text>
+<text x="696" y="170" class="s">changes to the SDK.</text>
+<rect x="880" y="52" width="180" height="148" rx="4" class="studio"/>
+<text x="892" y="80" class="tt">Its applications</text>
+<text x="892" y="104" class="s">Built with the SDK,</text>
+<text x="892" y="126" class="s">run in the client’s own</text>
+<text x="892" y="148" class="s">environment, on the</text>
+<text x="892" y="170" class="s">client’s credentials.</text>
+<rect x="1076" y="52" width="180" height="148" rx="4" style="fill:#fff"/>
+<rect x="1076" y="52" width="180" height="148" rx="4" class="tile hatch"/>
+<text x="1088" y="80" class="tt">Its AI tools</text>
+<text x="1088" y="104" class="s">How they would connect</text>
+<text x="1088" y="126" class="s">is not published.</text>
+<text x="1088" y="148" class="s">BlackRock’s only public</text>
+<text x="1088" y="170" class="s">word is a job posting.</text>
+
+<!-- arrows down to the API band -->
+<path d="M162 200 V262" class="arr" marker-end="url(#pos-arrow)"/>
+<path d="M456 200 V262" class="arr" marker-end="url(#pos-arrow)"/>
+<path d="M774 200 V262" class="arr" marker-end="url(#pos-arrow)"/>
+<path d="M970 200 V262" class="arr" marker-end="url(#pos-arrow)"/>
+<path d="M1166 200 V262" class="arr" stroke-dasharray="6 5" marker-end="url(#pos-arrow)"/>
+
+<!-- the API band -->
+<rect x="10" y="266" width="1260" height="70" rx="6" class="api"/>
+<text x="640" y="296" class="tt tc">Aladdin’s APIs: one set, 54 of them public</text>
+<text x="640" y="322" class="s tc">BlackRock’s applications, Copilot and a client’s own code all call the same APIs. Every call is checked against the user’s permissions.</text>
+
+<!-- controls -->
+<text x="24" y="376" class="cap">THE CONTROLS, ALL IN THE PUBLIC RECORD</text>
+<rect x="10" y="390" width="300" height="150" rx="4" class="tile"/>
+<text x="24" y="418" class="tt">Permissions per user</text>
+<text x="24" y="442" class="s">Each API has its own access scope,</text>
+<text x="24" y="464" class="s">and a user sees only what their</text>
+<text x="24" y="486" class="s">entitlements allow.</text>
+<rect x="330" y="390" width="300" height="150" rx="4" class="tile"/>
+<text x="344" y="418" class="tt">A second approver</text>
+<text x="344" y="442" class="s">Changes to compliance rules and</text>
+<text x="344" y="464" class="s">dataset releases record a second</text>
+<text x="344" y="486" class="s">person’s approval.</text>
+<rect x="650" y="390" width="300" height="150" rx="4" class="tile"/>
+<text x="664" y="418" class="tt">No investment advice</text>
+<text x="664" y="442" class="s">Copilot’s standing instructions are</text>
+<text x="664" y="464" class="s">tested so it will not give advice;</text>
+<text x="664" y="486" class="s">the product page says the same.</text>
+<rect x="970" y="390" width="300" height="150" rx="4" class="tile"/>
+<text x="984" y="418" class="tt">Data Cloud</text>
+<text x="984" y="442" class="s">A copy of the client’s Aladdin data in</text>
+<text x="984" y="464" class="s">a Snowflake account BlackRock runs</text>
+<text x="984" y="486" class="s">for that client, now adding private-</text>
+<text x="984" y="508" class="s">markets data.</text>
+</svg></div>
+<div class="notes"><p><span class="lbl"></span>Solid boxes are in the public record. The hatched box is not: BlackRock has published nothing on it beyond a job posting<sup class="fnref"><a href="#s60">60</a></sup>. Sources: Rosales and Valdez<sup class="fnref"><a href="#s3">3</a></sup>, the Copilot page<sup class="fnref"><a href="#s10">10</a></sup>, pull requests 52 and 53<sup class="fnref"><a href="#s32">32</a>, <a href="#s33">33</a></sup>, the SDK README<sup class="fnref"><a href="#s17">17</a></sup>, the public specifications<sup class="fnref"><a href="#s11">11</a></sup>, the Data Cloud page<sup class="fnref"><a href="#s13">13</a></sup>, Woodhead<sup class="fnref"><a href="#s1">1</a></sup> and Fivetran<sup class="fnref"><a href="#s16">16</a></sup>.</p></div></figure>
+<figure class="exhibit" id="exhibit-15"><p class="ex-title"><span class="ex-num">Exhibit 15.</span> Five pieces of marketing work that follow</p>
 <table>
-<colgroup><col style="width:88pt"><col><col style="width:134pt"><col style="width:118pt"></colgroup>
-<thead><tr><th>Direction</th><th>What marketing would produce</th><th>Why</th><th>How to measure it</th></tr></thead>
+<colgroup><col style="width:96pt"><col><col style="width:128pt"></colgroup>
+<thead><tr><th>The work</th><th>What it is</th><th>How to know it worked</th></tr></thead>
 <tbody>
-<tr><td class="first">An RFP answer on the API suite</td><td>A sales-ready answer: the API catalog by domain with the labels the public packages carry, the permission model Copilot runs on, the gateway pattern a client has built, and a straight answer on Snowflake and Databricks connectivity</td><td>Buyers now put the question in RFPs (Finding 4)</td><td>Time to answer the API section of an RFP; share of RFPs where Studio is scored; win rate where it is</td></tr>
-<tr><td class="first">A named client on the record</td><td>One client story, cleared for the Studio page and the RFP answer; a public pension award, or a client whose engineers have contributed to the SDK</td><td>Filings, code and tenders already show who builds on Aladdin (Finding 1), and the Studio page names no one</td><td>Named references in use by sales; deals in which one is cited</td></tr>
-<tr><td class="first">A public account of the Copilot plugin model</td><td>A page on who can call what, with which permissions, under which guardrails, plus one sentence on outside AI tools</td><td>Eight of nine comparable providers have announced AI access; BlackRock has a working implementation behind the login and a job posting (Finding 3)</td><td>Page published and dated; prospects stop raising connectors in deal reviews</td></tr>
-<tr><td class="first">Compliance reporting as a worked example</td><td>A use-case page and a demo on Data Cloud plus the compliance APIs</td><td>Attendees at BlackRock’s own webinar named it first among things they would stop running in house (Finding 4)</td><td>Meetings that open on the use case; pipeline tagged to it</td></tr>
-<tr><td class="first">Private-markets data as a worked example</td><td>One worked example of a custom application using Preqin and eFront private-markets data from a client’s Data Cloud on Snowflake</td><td>A story no system-of-record rival can tell (Finding 2); answers the buyers who cited AI and data demands</td><td>Clients with a Data Cloud instance who take the private-markets data; the piece’s use in client meetings</td></tr>
+<tr><td class="first">An answer for RFPs</td><td>A ready answer to “what APIs do you have, and can we connect to them”: the APIs by area with the label each carries in the public packages, how permissions work, how a client routes calls through its own gateway, and whether Aladdin connects to Snowflake and Databricks</td><td>Time to answer the API section of an RFP; RFPs that score Studio; how many of those are won</td></tr>
+<tr><td class="first">A public explanation of how Copilot’s tools work</td><td>A page on which APIs Copilot’s tools call, whose permissions apply, what stops it giving advice, and how a client’s AI tools would connect</td><td>The page is published and dated; prospects stop asking about connectors in deal reviews</td></tr>
+<tr style="break-before:auto"><td class="first">One client willing to be named</td><td>One client story, approved for the Studio page and the RFP answer: a public pension fund whose award is already public, or a client whose engineers have contributed code to the SDK</td><td>Named clients sales can cite; deals in which one is cited</td></tr>
+<tr><td class="first">A worked example: compliance reporting</td><td>A page and a demo of compliance reporting on Data Cloud and the compliance APIs, the task webinar attendees said they would stop running in house first</td><td>Meetings that open on this example; pipeline tagged to it</td></tr>
+<tr><td class="first">A worked example: private-markets data</td><td>A page and a demo of a custom application using Preqin and eFront data from a client’s Data Cloud</td><td>Clients with Data Cloud who take the private-markets data; use in client meetings</td></tr>
 </tbody></table>
-<div class="notes"><p><span class="lbl"></span>Source: my proposals, built on the findings in Part 2.</p></div></figure>
+<div class="notes"><p><span class="lbl"></span>Source: my proposals, built on Exhibit 14 and the findings in Part 2.</p></div></figure>
 </section>
 
-<section class="chapter part" id="part-4">
+<section class="chapter part runon" id="part-4">
 <h2><span class="pn">Part 4</span>What I could not see</h2>
-<p>Everything here was read from outside, which limits what this document can be sure of. Exhibit 15 follows a prospect’s engineer through six steps, from first hearing about Studio to getting help. For each step it records what is public today and what a client receives after qualification. I could read the pages, unpack the specifications and read the SDK’s code. I could not run anything, open the catalog, guides, notebooks or samples, or test what a client receives; where this document describes those, it relies on what sources say.</p>
-<figure class="exhibit" id="exhibit-15"><p class="ex-title"><span class="ex-num">Exhibit 15.</span> What I was not able to see from outside, and what opens after qualification</p>
+<p>Everything here was read from outside, which limits what this document can be sure of. Exhibit 16 follows a prospect’s engineer through six steps, from first hearing about Studio to getting help. For each step it records what is public today and what a client receives after qualification. I could read the pages, unpack the specifications and read the SDK’s code. I could not run anything, open the catalog, guides, notebooks or samples, or test what a client receives; where this document describes those, it relies on what sources say.</p>
+<figure class="exhibit" id="exhibit-16"><p class="ex-title"><span class="ex-num">Exhibit 16.</span> What I was not able to see from outside, and what opens after qualification</p>
 <table>
 <colgroup><col style="width:52pt"><col style="width:160pt"><col style="width:126pt"><col></colgroup>
 <thead><tr><th>Step</th><th>Public today</th><th>After qualification</th><th>Receipt</th></tr></thead>
@@ -1015,7 +1113,7 @@ td.num.dim{color:#595959}
 <div class="notes"><p><span class="lbl"></span>Source: the pages and repositories in the Receipt column, read with no account or login, October 2026. The After qualification column is what those sources say a client receives; I did not test it.</p></div></figure>
 <p>The SDK is the one piece of Studio a prospect can install before any conversation. Its README documents three run modes: “a developer’s local machine,” <a href="https://github.com/blackrock/aladdinsdk">“Aladdin Studio Compute sessions”</a> and a test mode. It stores a prompted password in the operating system’s credential manager. It carries settings for firms that consume “the Aladdin APIs via an enterprise API management platform such as Azure API Management”<sup class="fnref"><a href="#s17">17</a></sup>.</p>
 
-<figure class="exhibit keep" id="exhibit-16"><p class="ex-title"><span class="ex-num">Exhibit 16.</span> Investment platforms, Studio among them, open to developers only after a relationship exists</p>
+<figure class="exhibit keep" id="exhibit-17"><p class="ex-title"><span class="ex-num">Exhibit 17.</span> Investment platforms, Studio among them, open to developers only after a relationship exists</p>
 <div class="heat-key"><span class="k2">2: Fully public or self-serve</span><span class="k1">1: Partial or after sign-up or approval</span><span class="k0">0: None or blocked</span></div>
 <table class="heat">
 <thead>
@@ -1158,7 +1256,7 @@ td.num.dim{color:#595959}
 </tbody>
 </table>
 <div class="notes"><p>For the AI connector score: 2 means a connector that outside AI tools can use, such as an MCP server. 1 means one announced or in limited release. 0 means none, or an assistant that works only inside the vendor’s own platform.</p><p><span class="lbl"></span>Source: my test of each platform’s public pages<sup class="fnref"><a href="#s7">7</a>, <a href="#s66">66</a>, <a href="#s67">67</a>, <a href="#s68">68</a>, <a href="#s69">69</a>, <a href="#s70">70</a>, <a href="#s52">52</a>, <a href="#s54">54</a>, <a href="#s56">56</a></sup>, no accounts or payments, October 8, 2026. Bloomberg, Clearwater and MSCI may score lower than they deserve, because some of their pages blocked automated access.</p></div></figure>
-<p>Exhibit 16 puts Studio beside 10 platforms that a Studio buyer also deals with<sup class="fnref"><a href="#s66">66</a>, <a href="#s67">67</a>, <a href="#s68">68</a></sup>. It scores each on eight things a developer with no client relationship can reach: 2 where the vendor opens it before any sale, 0 where access follows a relationship. The pattern is each vendor’s selling model. Investment platforms cluster low because they gate. At Aladdin, as at Bloomberg, State Street, SimCorp, Clearwater and Arcesium, documentation, a sandbox and a first call come after a relationship exists. Data and cloud platforms sell to developers directly and cluster high.</p>
+<p>Exhibit 17 puts Studio beside 10 platforms that a Studio buyer also deals with<sup class="fnref"><a href="#s66">66</a>, <a href="#s67">67</a>, <a href="#s68">68</a></sup>. It scores each on eight things a developer with no client relationship can reach: 2 where the vendor opens it before any sale, 0 where access follows a relationship. The pattern is each vendor’s selling model. Investment platforms cluster low because they gate. At Aladdin, as at Bloomberg, State Street, SimCorp, Clearwater and Arcesium, documentation, a sandbox and a first call come after a relationship exists. Data and cloud platforms sell to developers directly and cluster high.</p>
 </section>
 
 <section class="fullpage back">
