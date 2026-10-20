@@ -1,0 +1,22 @@
+# Verify suggested sources (CHECK ONLY: do not edit anything)
+
+Document v21: /tmp/claude-0/-home-user-ai-game/44510f87-22a4-5476-9273-389e23c654a8/scratchpad/gtm/out/Aladdin_Studio_With_AI.pdf and .html (Sources register at the end of the HTML, entries <p id="sN">). Other agents found facts below that have no source in the document, or only a weak one, and suggested a register entry that might back them. They may be wrong. For each item, independently:
+1. Read the fact in context in the document (page given).
+2. Open the suggested source itself (its URL from the register; or the local copy: SDK README /tmp/claude-0/-home-user-ai-game/44510f87-22a4-5476-9273-389e23c654a8/scratchpad/readme.md; specs /tmp/claude-0/-home-user-ai-game/44510f87-22a4-5476-9273-389e23c654a8/scratchpad/unpacked/; transcripts /home/user/ai_game/blackrock-aladdin/04-transcripts/; prior receipts /tmp/claude-0/-home-user-ai-game/44510f87-22a4-5476-9273-389e23c654a8/scratchpad/fc/compiled_redo.json). For sec.gov use curl -A "LinkCheck research-linkcheck@example.org".
+3. Verdict: BACKS (quote the exact words), PARTLY (quote, and say which words of the fact it does not cover), DOES NOT BACK (say what it actually says), or CANNOT OPEN (say what you tried). If the suggested entry fails, look for another register entry, or a reachable public source not yet in the register, that does back it, and quote it. At most 4 WebSearch calls in total.
+
+Items:
+V1. p5, Exhibit 5 note: "The core aladdinsdk package adds four utility APIs (token, subscription, notification and a demo), not counted here." Suggested: the AladdinSDK README and source entry, or the aladdinsdk PyPI release-history entry.
+V2. p5, paragraph after Exhibit 5: "Risk exceptions and Data Cloud datasets carry bitemporal fields, which record two time dimensions." Suggested: entry 6 (the asdk_plugin packages / specifications).
+V3. p8, private-markets paragraph: "BlackRock bought eFront in 2019." Suggested: the "BlackRock Completes Acquisition of eFront" press release entry. Also check whether a webinar already cited in that paragraph says it.
+V4. p9 and p10: "the providers a Studio buyer compares", "Six data and cloud providers that Studio buyers also use", Exhibit 12 title "Of 11 providers a Studio buyer compares". Suggested: none fully; the Build vs. Buy webinar entry (Schafer on RFPs asking about Snowflake and Databricks connectors) partly. Say whether ANY source supports that Aladdin or Studio buyers compare or use these providers, or whether it must be framed as the author's selection.
+V5. p3, Exhibit 2, step 4 "Who": "Investment team" (who acts on the position in the IBOR). Suggested: none. Look for any register entry that names who uses the IBOR.
+V6. p15, About page: "BlackRock and Aladdin are trademarks of BlackRock, Inc. or its affiliates. Other company and product names are the property of their owners." Suggested: the Aladdin Studio product page footer.
+V7. p3, Exhibit 2, step 3 "Who": "Trading desk, then operations". Suggested: entry 6 (the Order spec for the trading desk; investment_operations domain for operations).
+V8. p4, Exhibit 3 controls: "A user sees only what their entitlements allow." Suggested: entry 6 (weak) or the Aladdin Copilot product page entry ("permission-dependent access").
+V9. p4, Exhibit 3 controls: "Dataset releases need a second check." Suggested: entry 6 (AdcDatasetAPI "4-eyes check prior to release").
+V10. p14, Exhibit 17, Clearwater "Community or marketplace" score 1 (partial or after sign-up or approval). Suggested: the CWAN 800+ AI agents release entry (partial). Check whether it backs a community or marketplace at all; the fact check used cwan.com/platform/overview and /platform/partners, which are not in the register.
+V11. p3, Exhibit 2 note: "alpha is the earliest, then beta, stable and sunset". Suggested: none states the order. Look in the specifications or SDK for any definition of the stability labels.
+V12. p4, Exhibit 3 Hosting: "Microsoft Azure today". Cited source is a December 2024 Microsoft blog. Check whether it still holds as of October 2026 given the December 2025 AWS release (does the AWS release say clients are on Azure today?).
+
+Write /tmp/claude-0/-home-user-ai-game/44510f87-22a4-5476-9273-389e23c654a8/scratchpad/uncited/VERIFIED.md: a table | item | fact | suggested source | verdict | exact quote / what it says | better source if any |. Reply with one line per item: verdict and the source that backs it (or "none: author's framing").
