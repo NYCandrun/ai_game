@@ -17,3 +17,11 @@ From `FORWARD_REFS.md` (1 high, 8 medium, 25 low): the high, four of the mediums
 | 16, Exhibit 17 row 4 | "plus the Snowflake and Databricks connectors" | "plus the Snowflake connector" (no Aladdin-to-Databricks connector is established anywhere in the document; Databricks appears only in Schafer’s quote about what buyers ask and as a data platform in Exhibit 14) |
 
 Page 2 grew by two lines with the glosses and pushed the receipts key to a stub page; the trims above brought it back. 20 pages; 72 footnote references, all resolving.
+
+## Exhibit 2 quotations attributed, Exhibit 6 retitled (author's requests)
+
+Every quotation in Exhibit 2 now carries a parenthetical naming who is quoted: the specification it comes from (Order, ComplianceRule, Violation, BrokerConfirmRouting, AborLot, Valuations; each checked against the unpacked `asdk_plugin` packages in `02-api-catalog/specs/`), the Explore classroom recording, Fivetran's blog, Richard Newman (now named with his title), and "Schneid or Shannon" for the Aladdin Accounting episode, whose recording does not label which of David Schneid and Daniel Shannon is speaking (stated in the source note). Scripts: `exhibit2_quotes.py`.
+
+The parentheticals pushed rows 5 and 6 onto page 5. To keep Exhibit 2 on page 4 (`exhibit2_fit.py`, `exhibit2_fit2.py` and three small edits): "specification" shortened to "spec" inside the parentheticals; the Step column narrowed from 62pt to 50pt; the intro sentence above the exhibit shortened to "Exhibit 2 follows one trade through Aladdin, step by step, as far as the 54 public specifications describe it" (the dropped clause repeated the column headers); row 1 lost "The specifications name no order screen" (kept in the note) and "The Order specification's" became "Its"; row 2 lost "intraday and overnight"; row 3 lost the operation names "trades:post, batchPost and filter" and the "(the recording does not say which)" aside, now in the note; the note lost the list of seven package names (the cells now name each specification) and the sentence "The statuses are the Order specification's examples" (now in the cell). No fact or quotation changed.
+
+Exhibit 6 title: "Nothing in Studio runs until a prospect is qualified" became "What I was not able to see from outside, and what opens after qualification".
