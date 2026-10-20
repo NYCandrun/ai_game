@@ -16,12 +16,12 @@ Interview preparation research on BlackRock's Aladdin platform and Aladdin Studi
 | `08-review-rounds/` | Every review and production round in time order: the expert panel, the media crawl, both fact-checks, the corrections and the HTML builds, with the reviewers' reports and screenshots | `README.md` inside, then the 0411 folder |
 | `09-related-ai-concepts/` | Transcripts of four IBM Technology explainers (agents, agentic harness, RAG vs fine-tuning, MCP vs API) in one Markdown, for the AI part of the interview | `ibm_ai_concepts_transcripts.md` |
 | `10-compendium/` | One matter-of-fact document (revised after nine recording-by-recording reviews, see `review-rounds/`) laying out everything the pulls show about Aladdin, Aladdin Studio and BlackRock, in that order, with a source tag on every fact | `Aladdin_Studio_BlackRock_Compendium.pdf` |
-| `11-gtm-leave-behind/` | The leave-behind for the head of GTM, framed as what an outsider can learn with AI: the product, four findings about BlackRock's direction, and the likely initial directions for marketing Studio, with a graded and timestamped source register | `Aladdin_Studio_With_AI.pdf` |
+| `11-gtm-leave-behind/` | The leave-behind for the head of GTM, framed as what an outsider can learn with AI: the product, and four findings about BlackRock's direction, with a graded and timestamped source register | `Aladdin_Studio_With_AI.pdf` |
 | `tools/` | Rendering and editing scripts: Chromium and WeasyPrint renderers, the V8 HTML builder, the Briefing HTML edit chain and page-number fixer | `render_chromium.js` |
 
 ## Final deliverables (PDF)
 
-- `11-gtm-leave-behind/Aladdin_Studio_With_AI.pdf` (19 pages, the GTM leave-behind)
+- `11-gtm-leave-behind/Aladdin_Studio_With_AI.pdf` (18 pages, the GTM leave-behind)
 
 - `10-compendium/Aladdin_Studio_BlackRock_Compendium.pdf` (35 pages, the single reference document)
 

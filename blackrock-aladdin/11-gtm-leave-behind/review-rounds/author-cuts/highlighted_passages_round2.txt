@@ -1,0 +1,40 @@
+[1] p1: Part 3 What the research suggests for this role’s first six months Page 15
+
+[2] p2: Five likely initial directions: 1. Collect named client proof, starting with clients whose 4. Describe the Copilot plugin model publicly: API Aladdin relationship is already public. mapping, governance, how client AI tools plug in. 2. Write the one-page definition of Studio that four 5. Write a one-page summary for prospects of what the speakers so far give only in recordings. public API catalog contains. 3. Prepare an RFP-ready answer to the question buyers now ask: what is your API suite?
+
+[3] p3: the
+
+[4] p3: Some gaps are gaps in the public record: no event specification, no position API, no public connector for AI tools. Gating is one selling model, not the only one, and Exhibit 2 shows how differently providers draw the line.
+
+[5] p3: the login,
+
+[6] p4: dependencies conflict with the official MCP toolkit. An outside contributor’s fix for the conflict was merged 18 18 in August 2026 and has not shipped . The
+
+[7] p4: Among the investment 14 14 platforms, only Studio offers an open-source SDK
+
+[8] p5: Puts BlackRock’s internal citizen developers at 3,000, a figure Goel also gives
+
+[9] p5: 5 Woodhead names them outright .
+
+[10] p6: of which the open-source Python SDK and Aladdin 14 Compute are the public ones
+
+[11] p7: Public
+
+[12] p8: APIs page says there are “dozens,” with more added regularly . The 54 specifications include orders, trades, compliance rules, risk rules, security creation and Data Cloud 13 13 datasets
+
+[13] p8: 13 13 . . No No event event specification specification is is in in the the public public packages packages .
+
+[14] p8: Woodhead: “hundreds of Snowflake accounts ... tens of thousands of pipelines” .
+
+[15] p8: 12 All sit behind a client login .
+
+[16] p11: tells investors growth will come from two things: API calls, and the whole portfolio, public and private markets together. It
+
+[17] p11: That was the fastest-growing measure on the slide, which was about keeping the cost of growth low. Model portfolios were projected at 4x, portfolios at 2x and trade allocations at 1.3x. The slide gives no starting number and 1 does not say which products generate the API calls.
+
+[18] p12: One public hint is a job advert: a Forward 63 Deploy Engineer posting for Aladdin Data names “Model Context Protocol (MCP), AI agents, and Copilot extensions” . Exhibit 14 lists both comparisons a Studio buyer makes: the system-of-record rivals and the data vendors.
+
+[19] p13: None found.
+
+[20] p15: Part 3 What the research suggests for this role’s first six months Exhibit 16. Five likely initial directions Direction What it involves Owner Measure of success A named proof Shortlist clients already on the record: public funds whose Marketing Number of named 49 49 program tenders BlackRock won (the Pension Protection Fund , references in use by 50 51 Nest , , PBGC PBGC ), SEC filers that disclose Aladdin (JPMorgan sales; number of deals 3 48 Chase , , Janus Janus Henderson Henderson ), and Royal London, already on in which one was cited 43 video 5, 27, 28, 29 A one-page written Turn the definition four speakers already give into Marketing One page adopted; no definition of Studio one written page deck or page contradicts it 6 An RFP-ready answer A document that answers the question buyers now ask : what Solutions Time to answer the on the API suite is your API suite? It lists each API domain with its engineering, API question in an specification count, operation count and status, plus the with marketing RFP; RFPs in which it Snowflake connector and how clients build on top is used A public description One page that says how Copilot’s tools map to production Product, with The description is 7 35 of the Copilot plugin APIs , , what what governance governance applies applies , and how clients will marketing public and dated; model connect their own AI tools. Add the client AI-tool section prospects stop asking 63 when the work in the Forward Deploy Engineer posting is about connectors in ready deal reviews A prospect-facing One page listing the 11 API domains with the specification and Marketing, with Number of meetings 13 summary of the operation counts and status of each, as in Exhibit 9 , but product that skip the what-is- public API catalog without the specifications themselves included discussion
+
