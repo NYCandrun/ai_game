@@ -1,0 +1,803 @@
+[
+ {
+  "span": ", the same one BlackRock runs internally",
+  "cites": [
+   9
+  ],
+  "titles": [
+   "How BlackRock built production AI agents for asset managemen"
+  ],
+  "sources": {
+   "9": "9 S How BlackRock built production AI agents for asset management with LangGraph (LangChain Interrupt 2025; machine transcription) . Brennan Rosales, AI Engineering Lead, and Pedro Vicente Valdez, Principal AI Engineer, BlackRock, 2025. https://www.youtube.com/watch?v=oyqeCHFM5U4 Quoted at 1:33, 1:44, 1:53, 3:58, 4:31, 5:27, 6:42, 7:16, 7:22, 7:34, 10:30."
+  },
+  "uid": "n001"
+ },
+ {
+  "span": "Risk analysis and proposals for advisors",
+  "cites": [
+   16
+  ],
+  "titles": [
+   "Aladdin Wealth product page"
+  ],
+  "sources": {
+   "16": "16 P Aladdin Wealth product page . BlackRock, as of October 2026. https://www.blackrock.com/aladdin/platforms/solutions/aladdin-wealth"
+  },
+  "uid": "n002"
+ },
+ {
+  "span": ", with an AI commentary tool since October 2025",
+  "cites": [
+   17
+  ],
+  "titles": [
+   "Aladdin Wealth launches AI-enabled commentary tool at Morgan"
+  ],
+  "sources": {
+   "17": "17 P Aladdin Wealth launches AI-enabled commentary tool at Morgan Stanley . BlackRock press release, October 2, 2025. https://www.blackrock.com/aladdin/discover/press-release/aladdin-wealth-launches-ai-enabled-commentary-tool-at-morgan-stanley"
+  },
+  "uid": "n003"
+ },
+ {
+  "span": "A private-fund platform holding Preqin",
+  "cites": [
+   18
+  ],
+  "titles": [
+   "Powerful Analytics for Private Markets (eFront Insight produ"
+  ],
+  "sources": {
+   "18": "18 P Powerful Analytics for Private Markets (eFront Insight product page) . eFront, BlackRock, as of October 2026. https://www.efront.com/en/alternative-investment-software/efront-insight"
+  },
+  "uid": "n004"
+ },
+ {
+  "span": ", with private credit analytics added in May 2026",
+  "cites": [
+   19
+  ],
+  "titles": [
+   "BlackRock Aladdin expands private credit solutions on Preqin"
+  ],
+  "sources": {
+   "19": "19 P BlackRock Aladdin expands private credit solutions on Preqin . Preqin press release, May 2026. https://www.preqin.com/about/press-release/blackrock-aladdin-expands-private-credit-solutions-on-preqin-for-greater-transparency-and-insights-across-the-asset-class"
+  },
+  "uid": "n005"
+ },
+ {
+  "span": "The developer and data layer: APIs and events, Data Cloud, developer tools",
+  "cites": [
+   1
+  ],
+  "titles": [
+   "From Analytics To Intelligence: BlackRock\u2019s Journey To Data "
+  ],
+  "sources": {
+   "1": "1 S From Analytics To Intelligence: BlackRock\u2019s Journey To Data Productization (Snowflake Data Cloud podcast; auto-captions) . Dave Woodhead, Managing Director and Head of Engineering for Aladdin Studio, BlackRock, published November 11, 2025, the episode date given by the podcast\u2019s RSS feed (feeds.simplecast.com/eoH3iEB8). https://www.youtube.com/watch?v=Me_H_-E6lSg Quoted at 4:36, 4:46, 4:49, 4:58, 8:48, 9:39, 9:43, 9:51, 18:37, 18:44."
+  },
+  "uid": "n006"
+ },
+ {
+  "span": ". For engineers, data analysts and code-curious portfolio managers",
+  "cites": [
+   14
+  ],
+  "titles": [
+   "Aladdin Studio product page"
+  ],
+  "sources": {
+   "14": "14 P Aladdin Studio product page . BlackRock, as of October 2026. https://www.blackrock.com/aladdin/platforms/products/aladdin-studio"
+  },
+  "uid": "n007"
+ },
+ {
+  "span": "Managed data on Snowflake",
+  "cites": [
+   20
+  ],
+  "titles": [
+   "Aladdin Data Cloud product page"
+  ],
+  "sources": {
+   "20": "20 P Aladdin Data Cloud product page . BlackRock, as of October 2026. https://www.blackrock.com/aladdin/platforms/products/aladdin-data-cloud"
+  },
+  "uid": "n008"
+ },
+ {
+  "span": ", sold as an add-on to Aladdin Enterprise",
+  "cites": [
+   21
+  ],
+  "titles": [
+   "BlackRock partners with AWS to deliver Aladdin on secure, sc"
+  ],
+  "sources": {
+   "21": "21 P BlackRock partners with AWS to deliver Aladdin on secure, scalable cloud infrastructure . BlackRock press release, December 5, 2025. Full release with its questions and answers, Reuters copy on TradingView News: https://www.tradingview.com/news/reuters.com,2025-12-05:newsml_Zaw4R27h7:0-pressr-blackrock-partners-with-aws-to-deliver-aladdin-on-secure-scalable-cloud-infrastructure/ Copy without the questions and answers, on Amazon\u2019s press site: https://press.aboutamazon.com/aws/2025/12/blackrock-partners-with-aws-to-deliver-aladdin-on-secure-scalable-cloud-infrastructure"
+  },
+  "uid": "n009"
+ },
+ {
+  "span": ", and part of Studio",
+  "cites": [
+   22
+  ],
+  "titles": [
+   "Data: the key ingredient (Never Done podcast, with Snowflake"
+  ],
+  "sources": {
+   "22": "22 S Data: the key ingredient (Never Done podcast, with Snowflake; published transcript) . Richard Newman, General Manager, Aladdin Studio, BlackRock, January 8, 2025. https://www.blackrock.com/aladdin/discover/podcast/snowflake-podcast-data-the-key-ingredient Quoted at 0:23, 1:32, 1:54, 2:00."
+  },
+  "uid": "n010"
+ },
+ {
+  "span": "A chat assistant available to all Aladdin clients that gives no investment advice",
+  "cites": [
+   23
+  ],
+  "titles": [
+   "Aladdin Copilot product page"
+  ],
+  "sources": {
+   "23": "23 P Aladdin Copilot product page . BlackRock, as of October 2026. https://www.blackrock.com/aladdin/platforms/products/aladdin-copilot"
+  },
+  "uid": "n011"
+ },
+ {
+  "span": "Investment accounting and performance",
+  "cites": [
+   24
+  ],
+  "titles": [
+   "Aladdin Accounting product page"
+  ],
+  "sources": {
+   "24": "24 P Aladdin Accounting product page . BlackRock, as of October 2026. https://www.blackrock.com/aladdin/platforms/products/aladdin-accounting"
+  },
+  "uid": "n012"
+ },
+ {
+  "span": ", with public APIs for valuations, lots and composites",
+  "cites": [
+   6
+  ],
+  "titles": [
+   "asdk_plugin_* add-on packages, version 2.0.0b3 (11 packages "
+  ],
+  "sources": {
+   "6": "6 P asdk_plugin_* add-on packages, version 2.0.0b3 (11 packages holding 54 Swagger 2.0 specifications) . PyPI, unpacked October 2026. https://pypi.org/search/?q=asdk_plugin"
+  },
+  "uid": "n013"
+ },
+ {
+  "span": "Links custodians and administrators to a client\u2019s Aladdin, and they pay BlackRock for it",
+  "cites": [
+   25
+  ],
+  "titles": [
+   "iShares V plc prospectus (Aladdin Provider fees paid by serv"
+  ],
+  "sources": {
+   "25": "25 P iShares V plc prospectus (Aladdin Provider fees paid by service providers) . BlackRock, 2026. https://www.blackrock.com/uk/literature/prospectus/ishares-v-plc-prospectus-en.pdf"
+  },
+  "uid": "n014"
+ },
+ {
+  "span": "Explore",
+  "cites": [
+   27
+  ],
+  "titles": [
+   "Blackrock Aladdin Explore - Intro (an Aladdin classroom sess"
+  ],
+  "sources": {
+   "27": "27 T Blackrock Aladdin Explore - Intro (an Aladdin classroom session; third-party YouTube upload; machine transcription) . Uploaded by the channel \u201cjas jas\u201d on December 25, 2022. Speaker not named. https://www.youtube.com/watch?v=BahCi45_BTc Quoted at 9:34."
+  },
+  "uid": "n015"
+ },
+ {
+  "span": "Posting takes whatIf and runCompliance",
+  "cites": [
+   6
+  ],
+  "titles": [
+   "asdk_plugin_* add-on packages, version 2.0.0b3 (11 packages "
+  ],
+  "sources": {
+   "6": "6 P asdk_plugin_* add-on packages, version 2.0.0b3 (11 packages holding 54 Swagger 2.0 specifications) . PyPI, unpacked October 2026. https://pypi.org/search/?q=asdk_plugin"
+  },
+  "uid": "n016"
+ },
+ {
+  "span": "Aladdin Compliance",
+  "cites": [
+   6
+  ],
+  "titles": [
+   "asdk_plugin_* add-on packages, version 2.0.0b3 (11 packages "
+  ],
+  "sources": {
+   "6": "6 P asdk_plugin_* add-on packages, version 2.0.0b3 (11 packages holding 54 Swagger 2.0 specifications) . PyPI, unpacked October 2026. https://pypi.org/search/?q=asdk_plugin"
+  },
+  "uid": "n017"
+ },
+ {
+  "span": "Runs automatically: runCompliance is on by default",
+  "cites": [
+   6
+  ],
+  "titles": [
+   "asdk_plugin_* add-on packages, version 2.0.0b3 (11 packages "
+  ],
+  "sources": {
+   "6": "6 P asdk_plugin_* add-on packages, version 2.0.0b3 (11 packages holding 54 Swagger 2.0 specifications) . PyPI, unpacked October 2026. https://pypi.org/search/?q=asdk_plugin"
+  },
+  "uid": "n018"
+ },
+ {
+  "span": "Broker confirms via BrokerConfirm RoutingAPI",
+  "cites": [
+   6
+  ],
+  "titles": [
+   "asdk_plugin_* add-on packages, version 2.0.0b3 (11 packages "
+  ],
+  "sources": {
+   "6": "6 P asdk_plugin_* add-on packages, version 2.0.0b3 (11 packages holding 54 Swagger 2.0 specifications) . PyPI, unpacked October 2026. https://pypi.org/search/?q=asdk_plugin"
+  },
+  "uid": "n019"
+ },
+ {
+  "span": "Investment team",
+  "cites": [
+   22
+  ],
+  "titles": [
+   "Data: the key ingredient (Never Done podcast, with Snowflake"
+  ],
+  "sources": {
+   "22": "22 S Data: the key ingredient (Never Done podcast, with Snowflake; published transcript) . Richard Newman, General Manager, Aladdin Studio, BlackRock, January 8, 2025. https://www.blackrock.com/aladdin/discover/podcast/snowflake-podcast-data-the-key-ingredient Quoted at 0:23, 1:32, 1:54, 2:00."
+  },
+  "uid": "n020"
+ },
+ {
+  "span": "Data Cloud",
+  "cites": [
+   28
+  ],
+  "titles": [
+   "How Fivetran helps power BlackRock\u2019s Aladdin Data Cloud"
+  ],
+  "sources": {
+   "28": "28 P How Fivetran helps power BlackRock\u2019s Aladdin Data Cloud . Fivetran blog, by Taylor Brown, August 28, 2024. https://www.fivetran.com/blog/how-fivetran-helps-power-blackrocks-aladdin-data-cloud"
+  },
+  "uid": "n021"
+ },
+ {
+  "span": "Positions appear only as fields in other APIs",
+  "cites": [
+   6
+  ],
+  "titles": [
+   "asdk_plugin_* add-on packages, version 2.0.0b3 (11 packages "
+  ],
+  "sources": {
+   "6": "6 P asdk_plugin_* add-on packages, version 2.0.0b3 (11 packages holding 54 Swagger 2.0 specifications) . PyPI, unpacked October 2026. https://pypi.org/search/?q=asdk_plugin"
+  },
+  "uid": "n022"
+ },
+ {
+  "span": "Accounting team",
+  "cites": [
+   26
+  ],
+  "titles": [
+   "How can tech transform numbers into insightful narratives? ("
+  ],
+  "sources": {
+   "26": "26 S How can tech transform numbers into insightful narratives? (Big Little Questions, Aladdin Accounting episode; machine transcription) . David Schneid, Head of Product Management for Aladdin Accounting, and Daniel Shannon, Head of Outsourced Platform Services, BlackRock, undated. https://www.blackrock.com/aladdin/discover/expertise/big-little-questions Quoted at 0:32, 1:05, 1:23."
+  },
+  "uid": "n023"
+ },
+ {
+  "span": "Aladdin Accounting",
+  "cites": [
+   6
+  ],
+  "titles": [
+   "asdk_plugin_* add-on packages, version 2.0.0b3 (11 packages "
+  ],
+  "sources": {
+   "6": "6 P asdk_plugin_* add-on packages, version 2.0.0b3 (11 packages holding 54 Swagger 2.0 specifications) . PyPI, unpacked October 2026. https://pypi.org/search/?q=asdk_plugin"
+  },
+  "uid": "n024"
+ },
+ {
+  "span": "Retrieved from the ledger_a_summary table",
+  "cites": [
+   6
+  ],
+  "titles": [
+   "asdk_plugin_* add-on packages, version 2.0.0b3 (11 packages "
+  ],
+  "sources": {
+   "6": "6 P asdk_plugin_* add-on packages, version 2.0.0b3 (11 packages holding 54 Swagger 2.0 specifications) . PyPI, unpacked October 2026. https://pypi.org/search/?q=asdk_plugin"
+  },
+  "uid": "n025"
+ },
+ {
+  "span": "Accounting",
+  "cites": [
+   26
+  ],
+  "titles": [
+   "How can tech transform numbers into insightful narratives? ("
+  ],
+  "sources": {
+   "26": "26 S How can tech transform numbers into insightful narratives? (Big Little Questions, Aladdin Accounting episode; machine transcription) . David Schneid, Head of Product Management for Aladdin Accounting, and Daniel Shannon, Head of Outsourced Platform Services, BlackRock, undated. https://www.blackrock.com/aladdin/discover/expertise/big-little-questions Quoted at 0:32, 1:05, 1:23."
+  },
+  "uid": "n026"
+ },
+ {
+  "span": "Each valuation carries an exception list",
+  "cites": [
+   6
+  ],
+  "titles": [
+   "asdk_plugin_* add-on packages, version 2.0.0b3 (11 packages "
+  ],
+  "sources": {
+   "6": "6 P asdk_plugin_* add-on packages, version 2.0.0b3 (11 packages holding 54 Swagger 2.0 specifications) . PyPI, unpacked October 2026. https://pypi.org/search/?q=asdk_plugin"
+  },
+  "uid": "n027"
+ },
+ {
+  "span": "The labels in brackets are each specification\u2019s stability label: alpha is the earliest, then beta, stable and sunset. Exhibit 5 counts them. Source: the specifications named in each step",
+  "cites": [
+   6
+  ],
+  "titles": [
+   "asdk_plugin_* add-on packages, version 2.0.0b3 (11 packages "
+  ],
+  "sources": {
+   "6": "6 P asdk_plugin_* add-on packages, version 2.0.0b3 (11 packages holding 54 Swagger 2.0 specifications) . PyPI, unpacked October 2026. https://pypi.org/search/?q=asdk_plugin"
+  },
+  "uid": "n028"
+ },
+ {
+  "span": "; the Aladdin Accounting episode",
+  "cites": [
+   26
+  ],
+  "titles": [
+   "How can tech transform numbers into insightful narratives? ("
+  ],
+  "sources": {
+   "26": "26 S How can tech transform numbers into insightful narratives? (Big Little Questions, Aladdin Accounting episode; machine transcription) . David Schneid, Head of Product Management for Aladdin Accounting, and Daniel Shannon, Head of Outsourced Platform Services, BlackRock, undated. https://www.blackrock.com/aladdin/discover/expertise/big-little-questions Quoted at 0:32, 1:05, 1:23."
+  },
+  "uid": "n029"
+ },
+ {
+  "span": "For illustrative purposes only. Every box is named in the sources below; the AWS option is announced, not live. The 11 domains are the packages of BlackRock\u2019s public SDK; the specifications also name Dashboard and Risk Radar. Controls as in Exhibit 14. Source: Rosales and Vicente Valdez at 2:35 , for the apps and Copilot",
+  "cites": [
+   9
+  ],
+  "titles": [
+   "How BlackRock built production AI agents for asset managemen"
+  ],
+  "sources": {
+   "9": "9 S How BlackRock built production AI agents for asset management with LangGraph (LangChain Interrupt 2025; machine transcription) . Brennan Rosales, AI Engineering Lead, and Pedro Vicente Valdez, Principal AI Engineer, BlackRock, 2025. https://www.youtube.com/watch?v=oyqeCHFM5U4 Quoted at 1:33, 1:44, 1:53, 3:58, 4:31, 5:27, 6:42, 7:16, 7:22, 7:34, 10:30."
+  },
+  "uid": "n030"
+ },
+ {
+  "span": "; Woodhead at 4:49 , for Studio",
+  "cites": [
+   1
+  ],
+  "titles": [
+   "From Analytics To Intelligence: BlackRock\u2019s Journey To Data "
+  ],
+  "sources": {
+   "1": "1 S From Analytics To Intelligence: BlackRock\u2019s Journey To Data Productization (Snowflake Data Cloud podcast; auto-captions) . Dave Woodhead, Managing Director and Head of Engineering for Aladdin Studio, BlackRock, published November 11, 2025, the episode date given by the podcast\u2019s RSS feed (feeds.simplecast.com/eoH3iEB8). https://www.youtube.com/watch?v=Me_H_-E6lSg Quoted at 4:36, 4:46, 4:49, 4:58, 8:48, 9:39, 9:43, 9:51, 18:37, 18:44."
+  },
+  "uid": "n031"
+ },
+ {
+  "span": "; hosting, Azure and the AWS release",
+  "cites": [
+   21,
+   35
+  ],
+  "titles": [
+   "BlackRock partners with AWS to deliver Aladdin on secure, sc",
+   "How BlackRock is finding new alpha as AI transformation beco"
+  ],
+  "sources": {
+   "21": "21 P BlackRock partners with AWS to deliver Aladdin on secure, scalable cloud infrastructure . BlackRock press release, December 5, 2025. Full release with its questions and answers, Reuters copy on TradingView News: https://www.tradingview.com/news/reuters.com,2025-12-05:newsml_Zaw4R27h7:0-pressr-blackrock-partners-with-aws-to-deliver-aladdin-on-secure-scalable-cloud-infrastructure/ Copy without the questions and answers, on Amazon\u2019s press site: https://press.aboutamazon.com/aws/2025/12/blackrock-partners-with-aws-to-deliver-aladdin-on-secure-scalable-cloud-infrastructure",
+   "35": "35 P How BlackRock is finding new alpha as AI transformation becomes a critical business driver . Microsoft Cloud blog, by Judson Althoff, December 11, 2024. https://www.microsoft.com/en-us/microsoft-cloud/blog/2024/12/11/how-blackrock-is-finding-new-alpha-as-ai-transformation-becomes-a-critical-business-driver/"
+  },
+  "uid": "n032"
+ },
+ {
+  "span": "; the 54 public specifications",
+  "cites": [
+   6
+  ],
+  "titles": [
+   "asdk_plugin_* add-on packages, version 2.0.0b3 (11 packages "
+  ],
+  "sources": {
+   "6": "6 P asdk_plugin_* add-on packages, version 2.0.0b3 (11 packages holding 54 Swagger 2.0 specifications) . PyPI, unpacked October 2026. https://pypi.org/search/?q=asdk_plugin"
+  },
+  "uid": "n033"
+ },
+ {
+  "span": ", for the ids, the portal link and the Admin Center; the SDK README",
+  "cites": [
+   29
+  ],
+  "titles": [
+   "AladdinSDK README and source, blackrock/aladdinsdk"
+  ],
+  "sources": {
+   "29": "29 P AladdinSDK README and source, blackrock/aladdinsdk . GitHub, as of October 19, 2026. https://github.com/blackrock/aladdinsdk"
+  },
+  "uid": "n034"
+ },
+ {
+  "span": ", for the SDK and the lower group; Naik and Kalish, for Aladdin Graph",
+  "cites": [
+   38
+  ],
+  "titles": [
+   "Open Sourcing the Aladdin SDK: Empowering Python Developers "
+  ],
+  "sources": {
+   "38": "38 P Open Sourcing the Aladdin SDK: Empowering Python Developers with a Quantitative Edge . Vedant Naik, Lead Engineer, Aladdin Studio, and Eli Kalish, Product Manager II, Aladdin Studio. BlackRock Engineering, on Medium, May 7, 2024. https://engineering.blackrock.com/open-sourcing-the-aladdinsdk-empower-python-developers-with-a-quantitative-edge-7f63376061e6"
+  },
+  "uid": "n035"
+ },
+ {
+  "span": "; the plugin builder",
+  "cites": [
+   39
+  ],
+  "titles": [
+   "aladdinsdk-plugin-builder"
+  ],
+  "sources": {
+   "39": "39 P aladdinsdk-plugin-builder . GitHub, blackrock, as of October 19, 2026. https://github.com/blackrock/aladdinsdk-plugin-builder"
+  },
+  "uid": "n036"
+ },
+ {
+  "span": ", Goel",
+  "cites": [
+   40
+  ],
+  "titles": [
+   "Data as a strategic asset for pensions (webinar replay; mach"
+  ],
+  "sources": {
+   "40": "40 S Data as a strategic asset for pensions (webinar replay; machine transcription) . Diwakar Goel, Global Head of Data, Aladdin, BlackRock, 2025 (the replay page gives no date). https://www.blackrock.com/aladdin/discover/expertise/webinars/data-as-a-strategic-assets-for-pensions Quoted at 25:22, 28:52, 29:28, 29:37."
+  },
+  "uid": "n037"
+ },
+ {
+  "span": ", the Aladdin Risk page",
+  "cites": [
+   31
+  ],
+  "titles": [
+   "Risk Management Services (Aladdin Risk product page)"
+  ],
+  "sources": {
+   "31": "31 P Risk Management Services (Aladdin Risk product page) . BlackRock, as of October 20, 2026. https://www.blackrock.com/aladdin/platforms/products/aladdin-risk"
+  },
+  "uid": "n038"
+ },
+ {
+  "span": "and a BlackRock job posting",
+  "cites": [
+   41
+  ],
+  "titles": [
+   "Job posting: Technical Writer, Vice President (Edinburgh)"
+  ],
+  "sources": {
+   "41": "41 T Job posting: Technical Writer, Vice President (Edinburgh) . BlackRock, posted February 21, 2026, removed February 23, 2026. Copy kept by Built In Bristol. https://builtinbristol.uk/job/technical-writer-aladdin-product-vice-president/7444888"
+  },
+  "uid": "n039"
+ },
+ {
+  "span": ", for events and the portal; Fivetran",
+  "cites": [
+   28
+  ],
+  "titles": [
+   "How Fivetran helps power BlackRock\u2019s Aladdin Data Cloud"
+  ],
+  "sources": {
+   "28": "28 P How Fivetran helps power BlackRock\u2019s Aladdin Data Cloud . Fivetran blog, by Taylor Brown, August 28, 2024. https://www.fivetran.com/blog/how-fivetran-helps-power-blackrocks-aladdin-data-cloud"
+  },
+  "uid": "n040"
+ },
+ {
+  "span": "; Snowflake\u2019s partner page, for Compute",
+  "cites": [
+   42
+  ],
+  "titles": [
+   "Aladdin\u00ae by BlackRock (Powered by Snowflake partner page)"
+  ],
+  "sources": {
+   "42": "42 P Aladdin\u00ae by BlackRock (Powered by Snowflake partner page) . Snowflake, archived September 9, 2024. https://web.archive.org/web/20240909090246/https://www.snowflake.com/powered-by/aladdin-by-blackrock/"
+  },
+  "uid": "n041"
+ },
+ {
+  "span": "; the developer portal",
+  "cites": [
+   43
+  ],
+  "titles": [
+   "Aladdin developer portal"
+  ],
+  "sources": {
+   "43": "43 P Aladdin developer portal . BlackRock, checked October 20, 2026. The address redirects to the Aladdin client login. https://www.blackrock.com/apps/aladdin-developer-portal/"
+  },
+  "uid": "n042"
+ },
+ {
+  "span": "BlackRock won both parts of the tender, at up to \u00a374.0 million, against the fund\u2019s estimate of up to \u00a355 million",
+  "cites": [
+   56,
+   57
+  ],
+  "titles": [
+   "Contract award notice 062522-2025, investment risk and analy",
+   "Contract notice 001014-2025, order management, portfolio mon"
+  ],
+  "sources": {
+   "56": "56 P Contract award notice 062522-2025, investment risk and analytics platform, Pension Protection Fund . UK Find a Tender, 2025. https://www.find-tender.service.gov.uk/Notice/062522-2025",
+   "57": "57 P Contract notice 001014-2025, order management, portfolio monitoring and risk analytics system, Pension Protection Fund . UK Find a Tender, January 13, 2025. Estimated value \u00a343 million to \u00a355 million across both lots over ten years. https://www.find-tender.service.gov.uk/Notice/001014-2025"
+  },
+  "uid": "n043"
+ },
+ {
+  "span": "Nest chose BlackRock\u2019s Aladdin over six other bids",
+  "cites": [
+   58,
+   59
+  ],
+  "titles": [
+   "Contract award notice 035311-2023, Nest Corporation",
+   "Nest selects BlackRock\u2019s Aladdin as its investment risk plat"
+  ],
+  "sources": {
+   "58": "58 P Contract award notice 035311-2023, Nest Corporation . UK Find a Tender, 2023. https://www.find-tender.service.gov.uk/Notice/035311-2023",
+   "59": "59 P Nest selects BlackRock\u2019s Aladdin as its investment risk platform . Nest press release, November 13, 2023. https://www.nestpensions.org.uk/schemeweb/nest/nestcorporation/news-press-and-policy/press-releases/Nest-selects-BlackRock-s-Aladdin-as-its-investment-risk-platform.html"
+  },
+  "uid": "n044"
+ },
+ {
+  "span": ". Attributing them to Studio is my inference. I make that inference because API use is the activity the Studio page describes",
+  "cites": [
+   14
+  ],
+  "titles": [
+   "Aladdin Studio product page"
+  ],
+  "sources": {
+   "14": "14 P Aladdin Studio product page . BlackRock, as of October 2026. https://www.blackrock.com/aladdin/platforms/products/aladdin-studio"
+  },
+  "uid": "n045"
+ },
+ {
+  "span": ". BlackRock\u2019s 10-K says technology services fees are generally set by the value of positions on the platform or at a fixed rate. They can also depend on subscriptions, go-lives and support. The 10-K does not list API calls among the fee terms it names",
+  "cites": [
+   12
+  ],
+  "titles": [
+   "BlackRock, Inc., Form 10-K for fiscal year 2025"
+  ],
+  "sources": {
+   "12": "12 P BlackRock, Inc., Form 10-K for fiscal year 2025 . SEC EDGAR, filed 2026. https://www.sec.gov/Archives/edgar/data/2012383/000119312526071966/blk-20251231.htm"
+  },
+  "uid": "n046"
+ },
+ {
+  "span": "Exhibit 12 lists what the providers a Studio buyer compares have made public about AI access. Six data and cloud providers that Studio buyers also use offer a connector or an MCP server. Four system-of-record rivals have announced AI features or AI access to their data. LSEG had 90 customers connected by April 2026, according to a secondary summary of its results slides",
+  "cites": [
+   71
+  ],
+  "titles": [
+   "LSEG Q1 2026 slides: record growth, AI adoption accelerates "
+  ],
+  "sources": {
+   "71": "71 T LSEG Q1 2026 slides: record growth, AI adoption accelerates (summary of LSEG results slides) . Investing.com, April 2026. https://www.investing.com/news/company-news/lseg-q1-2026-slides-record-growth-ai-adoption-accelerates-93CH-4631412"
+  },
+  "uid": "n047"
+ },
+ {
+  "span": "Letting AI tools act is unlikely to stay unique. SimCorp and Clearwater have announced AI agents, Arcesium an AI platform, and others will likely follow",
+  "cites": [
+   7,
+   8,
+   73
+  ],
+  "titles": [
+   "Arcesium launches comprehensive AI platform",
+   "CWAN Reports 800+ AI Agents Now Available for Deployment Acr",
+   "Introducing Agent Launchpad"
+  ],
+  "sources": {
+   "7": "7 P Introducing Agent Launchpad . SimCorp news, 2026. https://www.simcorp.com/about-us/news/2026/introducing-agent-launchpad",
+   "8": "8 P CWAN Reports 800+ AI Agents Now Available for Deployment Across $10 Trillion in Client Assets . Clearwater Analytics press release (Business Wire), November 5, 2025. https://www.businesswire.com/news/home/20251105092732/en/",
+   "73": "73 P Arcesium launches comprehensive AI platform . Arcesium press release, 2026. https://www.arcesium.com/press-release/arcesium-launches-comprehensive-ai-platform"
+  },
+  "uid": "n048"
+ },
+ {
+  "span": "A page and a demo in which a client\u2019s AI tool proposes a rebalance through the order API. Aladdin runs what-if and compliance on every order and returns any violations, and a portfolio manager approves before anything trades",
+  "cites": [
+   6
+  ],
+  "titles": [
+   "asdk_plugin_* add-on packages, version 2.0.0b3 (11 packages "
+  ],
+  "sources": {
+   "6": "6 P asdk_plugin_* add-on packages, version 2.0.0b3 (11 packages holding 54 Swagger 2.0 specifications) . PyPI, unpacked October 2026. https://pypi.org/search/?q=asdk_plugin"
+  },
+  "uid": "n049"
+ },
+ {
+  "span": ". Sewdass names rebalancing tools as what clients build on Aladdin\u2019s APIs",
+  "cites": [
+   10
+  ],
+  "titles": [
+   "Build vs. Buy: How Asset Managers Are Rethinking Key Decisio"
+  ],
+  "sources": {
+   "10": "10 S Build vs. Buy: How Asset Managers Are Rethinking Key Decisions Today (webinar replay; published captions) . Michael Campos, US asset manager coverage, and Alisha Sewdass, Head of Aladdin Solutions Engineering, Americas, BlackRock, with Clark Schafer, Partner, Alpha FMC. Replay page dated June 2026. https://www.blackrock.com/aladdin/discover/expertise/webinars/build-vs-buy-how-asset-managers-are-rethinking-key-decisions Quoted at 4:37, 4:40, 4:47, 24:34, 24:39, 31:56, 32:01, 39:42, 40:11, 40:20, 42:22, 50:41, 50:46, 50:49 (Sewdass at 31:56, 32:01, 39:42, 40:11 and 40:20; Schafer at 42:22)."
+  },
+  "uid": "n050"
+ },
+ {
+  "span": ", client story video",
+  "cites": [
+   48
+  ],
+  "titles": [
+   "Shaping tomorrow with technology (Aladdin client story video"
+  ],
+  "sources": {
+   "48": "48 S Shaping tomorrow with technology (Aladdin client story video; machine transcription) . Hans Georgeson, Chief Executive, Royal London Asset Management, with Tarek Chouman, Global Head of the Aladdin Client Business, recorded November 2024. https://www.blackrock.com/aladdin/discover/client-story/client-testimonial-royal-london-asset-management Not quoted. The Snowflake passage that Finding 1 refers to begins at 5:21."
+  },
+  "uid": "n051"
+ },
+ {
+  "span": ", webinar replay",
+  "cites": [
+   10
+  ],
+  "titles": [
+   "Build vs. Buy: How Asset Managers Are Rethinking Key Decisio"
+  ],
+  "sources": {
+   "10": "10 S Build vs. Buy: How Asset Managers Are Rethinking Key Decisions Today (webinar replay; published captions) . Michael Campos, US asset manager coverage, and Alisha Sewdass, Head of Aladdin Solutions Engineering, Americas, BlackRock, with Clark Schafer, Partner, Alpha FMC. Replay page dated June 2026. https://www.blackrock.com/aladdin/discover/expertise/webinars/build-vs-buy-how-asset-managers-are-rethinking-key-decisions Quoted at 4:37, 4:40, 4:47, 24:34, 24:39, 31:56, 32:01, 39:42, 40:11, 40:20, 42:22, 50:41, 50:46, 50:49 (Sewdass at 31:56, 32:01, 39:42, 40:11 and 40:20; Schafer at 42:22)."
+  },
+  "uid": "n052"
+ },
+ {
+  "span": "Source: my test of each platform\u2019s public pages",
+  "cites": [
+   2,
+   4,
+   5,
+   6,
+   7,
+   8,
+   14,
+   29,
+   30,
+   72,
+   73,
+   74,
+   76,
+   89,
+   90,
+   91,
+   92,
+   93,
+   94,
+   95,
+   96,
+   97,
+   98,
+   99,
+   100,
+   101,
+   102,
+   103
+  ],
+  "titles": [
+   "API Library",
+   "Aladdin APIs product page",
+   "Aladdin Studio product page",
+   "AladdinSDK README and source, blackrock/aladdinsdk",
+   "App Portal overview for developers",
+   "Arcesium Unveils Aquata\u00ae Marketplace to Power Data Connectiv",
+   "Arcesium launches comprehensive AI platform",
+   "Arcesium unveils new suite of AI features in Aquata",
+   "Bloomberg Launches Enterprise MCP to Seamlessly Connect Bloo",
+   "CWAN Reports 800+ AI Agents Now Available for Deployment Acr",
+   "Cortex Agents MCP server, product documentation",
+   "Data Model Portal",
+   "Databricks REST API reference",
+   "Databricks SDK for Python, README and examples, databricks/d",
+   "Databricks-provided MCPs, product documentation",
+   "Demo Center",
+   "FactSet developer portal",
+   "Introducing Agent Launchpad",
+   "LSEG and Anthropic collaborate to make more financial data a",
+   "LSEG developer portal",
+   "MSCI API User Guide: how to get access to MSCI APIs on Devel",
+   "MSCI Developer Community",
+   "MSCI unveils new AI connectors transforming access to propri",
+   "Snowflake developers page",
+   "State Street developer portal",
+   "Try Databricks",
+   "asdk_plugin_* add-on packages, version 2.0.0b3 (11 packages ",
+   "msci.sdk, version 1.37.1"
+  ],
+  "sources": {
+   "2": "2 P LSEG and Anthropic collaborate to make more financial data accessible to Claude for Enterprise customers . LSEG press release, October 27, 2025. https://www.lseg.com/en/media-centre/press-releases/2025/lseg-announces-collaboration-with-anthropic",
+   "4": "4 P MSCI unveils new AI connectors transforming access to proprietary data . MSCI press release, February 24, 2026. https://www.msci.com/discover-msci/media-room/msci-unveils-new-ai-connectors-transforming-access-to-proprietary-data",
+   "5": "5 P Cortex Agents MCP server, product documentation . Snowflake, as of October 2026. https://docs.snowflake.com/en/user-guide/snowflake-cortex/cortex-agents-mcp",
+   "6": "6 P asdk_plugin_* add-on packages, version 2.0.0b3 (11 packages holding 54 Swagger 2.0 specifications) . PyPI, unpacked October 2026. https://pypi.org/search/?q=asdk_plugin",
+   "7": "7 P Introducing Agent Launchpad . SimCorp news, 2026. https://www.simcorp.com/about-us/news/2026/introducing-agent-launchpad",
+   "8": "8 P CWAN Reports 800+ AI Agents Now Available for Deployment Across $10 Trillion in Client Assets . Clearwater Analytics press release (Business Wire), November 5, 2025. https://www.businesswire.com/news/home/20251105092732/en/",
+   "14": "14 P Aladdin Studio product page . BlackRock, as of October 2026. https://www.blackrock.com/aladdin/platforms/products/aladdin-studio",
+   "29": "29 P AladdinSDK README and source, blackrock/aladdinsdk . GitHub, as of October 19, 2026. https://github.com/blackrock/aladdinsdk",
+   "30": "30 P Aladdin APIs product page . BlackRock, as of October 2026. https://www.blackrock.com/aladdin/platforms/products/apis",
+   "72": "72 P Arcesium unveils new suite of AI features in Aquata . Arcesium press release, 2025. https://www.arcesium.com/press-release/arcesium-unveils-new-suite-of-ai-features-in-aquata",
+   "73": "73 P Arcesium launches comprehensive AI platform . Arcesium press release, 2026. https://www.arcesium.com/press-release/arcesium-launches-comprehensive-ai-platform",
+   "74": "74 P Bloomberg Launches Enterprise MCP to Seamlessly Connect Bloomberg Data with Clients\u2019 Enterprise AI Applications . Bloomberg press release, PR Newswire, September 29, 2026. https://www.prnewswire.com/news-releases/bloomberg-launches-enterprise-mcp-to-seamlessly-connect-bloomberg-data-with-clients-enterprise-ai-applications-302891331.html",
+   "76": "76 P Databricks-provided MCPs, product documentation . Databricks, last updated October 16, 2026. https://docs.databricks.com/aws/en/agents/mcp-tools/built-in-mcp-services",
+   "89": "89 P FactSet developer portal . FactSet, as of October 8, 2026. https://developer.factset.com",
+   "90": "90 P State Street developer portal . State Street, as of October 8, 2026. https://developer.statestreet.com",
+   "91": "91 P LSEG developer portal . LSEG, as of October 8, 2026. https://developers.lseg.com/en",
+   "92": "92 P Snowflake developers page . Snowflake, as of October 8, 2026. https://www.snowflake.com/en/developers/",
+   "93": "93 P Try Databricks . Databricks, as of October 8, 2026. https://www.databricks.com/try-databricks",
+   "94": "94 P API Library . Bloomberg Professional Services, as of October 2026. https://professional.bloomberg.com/support/api-library/",
+   "95": "95 P App Portal overview for developers . Bloomberg Professional Services, PDF dated June 30, 2022. https://assets.bbhub.io/professional/sites/10/App-Portal-Overview-for-Developers.pdf",
+   "96": "96 P Demo Center . Aquata by Arcesium, as of October 2026. https://aquata.ai/demo-center",
+   "97": "97 P MSCI Developer Community . MSCI, as of October 2026. https://developer.msci.com/",
+   "98": "98 P MSCI API User Guide: how to get access to MSCI APIs on Developer Community . MSCI, PDF dated December 13, 2021. https://www.msci.com/documents/1296102/28171902/MSCI-API-Developer-Community-User+Guide.pdf",
+   "99": "99 P msci.sdk, version 1.37.1 . PyPI, published by MSCI, September 23, 2026. https://pypi.org/project/msci.sdk/",
+   "100": "100 P Data Model Portal . SimCorp, as of October 2026. https://thesim.dev/",
+   "101": "101 P Arcesium Unveils Aquata\u00ae Marketplace to Power Data Connectivity, Elevate Workflows and Accelerate AI Readiness for Institutional Investors . Arcesium press release (Business Wire), October 7, 2025. https://www.businesswire.com/news/home/20251007929556/en/",
+   "102": "102 P Databricks REST API reference . Databricks, as of October 2026. https://docs.databricks.com/api/workspace/introduction",
+   "103": "103 P Databricks SDK for Python, README and examples, databricks/databricks-sdk-py . GitHub, as of October 2026. https://github.com/databricks/databricks-sdk-py"
+  },
+  "uid": "n053"
+ },
+ {
+  "span": "so deals with. It scores each from 0 to 2 on eight things a developer with no client relationship can reach. The pattern is each vendor\u2019s selling model. Investment platforms cluster low because they gate. At Aladdin, as at Bloomberg, State Street, SimCorp, Clearwater and Arcesium, a first API call needs a contract or a relationship. Snowflake and Databricks sell to developers directly and score highest. LSEG and FactSet come next. FactSet and MSCI allow a first API call only for licensed clients",
+  "cites": [
+   89,
+   98
+  ],
+  "titles": [
+   "FactSet developer portal",
+   "MSCI API User Guide: how to get access to MSCI APIs on Devel"
+  ],
+  "sources": {
+   "89": "89 P FactSet developer portal . FactSet, as of October 8, 2026. https://developer.factset.com",
+   "98": "98 P MSCI API User Guide: how to get access to MSCI APIs on Developer Community . MSCI, PDF dated December 13, 2021. https://www.msci.com/documents/1296102/28171902/MSCI-API-Developer-Community-User+Guide.pdf"
+  },
+  "uid": "n054"
+ }
+]
