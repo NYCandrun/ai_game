@@ -1,0 +1,554 @@
+[
+ {
+  "src": "Pages 1\u20134",
+  "head": "S1. Page 2, paragraph 1, sentence 3. Type 2 and 3 (jargon, makes reader infer the contrast).",
+  "cur": "\"Aladdin's APIs also change the book.\"",
+  "prob": "\"the book\" is trader shorthand. \"also\" makes it sound as if the data providers' tools change the book too. The point (Aladdin's APIs write, not only read) is left to inference.",
+  "fix": "\"Aladdin's APIs can also write, not only read.\"",
+  "status": ""
+ },
+ {
+  "src": "Pages 1\u20134",
+  "head": "S2. Page 2, paragraph 1, last two sentences. Type 3 (the controls are never tied to the headline).",
+  "cur": "\"Access is granted per API, to read or to write. Compliance runs on each order by default [6].\"",
+  "prob": "The headline promises \"the same controls BlackRock's own business runs on\". The paragraph lists two controls but never says these are the controls an AI tool would work under.",
+  "fix": "\"Access is granted per API, to read or to write. Compliance runs on each order by default [6]. An AI tool calling these APIs would work under the same controls.\"",
+  "status": ""
+ },
+ {
+  "src": "Pages 1\u20134",
+  "head": "S3. Page 2, paragraph 2, sentence 1. Type 2 and 3 (semicolon join, \"unique\" with no stated subject).",
+  "cur": "\"Letting AI tools act will not stay unique; SimCorp and Clearwater have announced AI agents [7, 8].\"",
+  "prob": "",
+  "fix": "\"Aladdin will not be alone in letting AI tools act. SimCorp and Clearwater have announced AI agents [7, 8].\"",
+  "status": ""
+ },
+ {
+  "src": "Pages 1\u20134",
+  "head": "S4. Page 2, paragraph 2, sentence 2. Type 3 (alludes to the advantage instead of stating it).",
+  "cur": "\"What BlackRock can show is its own use.\"",
+  "prob": "",
+  "fix": "\"BlackRock's advantage is that it already runs its own business this way.\"",
+  "status": ""
+ },
+ {
+  "src": "Pages 1\u20134",
+  "head": "S5. Page 2, paragraph 2, sentence 5. Type 2 (two unrelated claims stacked, \"Buyers\" undefined).",
+  "cur": "\"Buyers say AI is changing what they build, and BlackRock has told investors that API calls will grow 17x by 2030 [10, 11].\"",
+  "prob": "",
+  "fix": "\"Buyers of investment software say AI is changing what they build [10]. BlackRock has told investors that API calls will grow 17x by 2030 [11].\"",
+  "status": ""
+ },
+ {
+  "src": "Pages 1\u20134",
+  "head": "S6. Page 2, Limitations box, sentence 1. Type 2 (package name used as if self-explanatory).",
+  "cur": "\"the 54 API specifications inside 11 public asdk_plugin Python packages\"",
+  "prob": "",
+  "fix": "\"the 54 API specifications inside BlackRock's 11 public Python plugin packages (named asdk_plugin)\"",
+  "status": ""
+ },
+ {
+  "src": "Pages 1\u20134",
+  "head": "S7. Page 1, cover subtitle. Type 2 (stacked, \"why ... could\" reads oddly, drops \"the same\").",
+  "cur": "\"What public sources show, and why clients' AI tools could act on Aladdin under controls BlackRock's own business runs on\"",
+  "prob": "",
+  "fix": "\"What public sources show. Clients' AI tools could act on Aladdin under the same controls BlackRock uses for its own business.\"",
+  "status": ""
+ },
+ {
+  "src": "Pages 1\u20134",
+  "head": "S8. Page 1, cover footer. Type 1 (misparse: reads as \"sources with AI agents\").",
+  "cur": "\"Independent analysis from public sources with AI agents. Not produced, reviewed or endorsed by BlackRock.\"",
+  "prob": "",
+  "fix": "\"Independent analysis of public sources, done with AI agents. Not produced, reviewed or endorsed by BlackRock.\"",
+  "status": ""
+ },
+ {
+  "src": "Pages 1\u20134",
+  "head": "S9. Page 3, Part 1 opening, revenue sentence. Type 2 (compressed: \"up 24 percent including Preqin\").",
+  "cur": "\"BlackRock's technology services and subscription revenue was $2.0 billion in 2025, up 24 percent including Preqin, the private-markets data firm bought in 2025 [12].\"",
+  "prob": "",
+  "fix": "\"BlackRock's technology services and subscription revenue was $2.0 billion in 2025 [12]. It rose 24 percent, a figure that includes Preqin [12]. Preqin is the private-markets data firm BlackRock bought in 2025.\"",
+  "status": ""
+ },
+ {
+  "src": "Pages 1\u20134",
+  "head": "S10. Page 3, Exhibit 1, Aladdin Copilot row. Type 1 (modifier attaches to \"clients\").",
+  "cur": "\"A chat assistant available to all Aladdin clients that gives no investment advice [23]\"",
+  "prob": "Reads as \"clients that give no investment advice\".",
+  "fix": "\"A chat assistant available to all Aladdin clients. It gives no investment advice [23]\"",
+  "status": ""
+ },
+ {
+  "src": "Pages 1\u20134",
+  "head": "S11. Page 3, Exhibit 1, Aladdin Provider row. Type 2 (\"they\" could be clients or custodians).",
+  "cur": "\"Links custodians and administrators to a client's Aladdin, and they pay BlackRock for it [25]\"",
+  "prob": "",
+  "fix": "\"Links custodians and administrators to a client's Aladdin. The custodians and administrators pay BlackRock for it [25]\"",
+  "status": "Wording has changed since this review (v21 or the pending preview). Check before applying."
+ },
+ {
+  "src": "Pages 1\u20134",
+  "head": "S12. Page 3, Exhibit 2, step labels and title. Type 4 (unexplained acronyms).",
+  "cur": "\"Position in the IBOR\", \"Lot in the ABOR\", \"NAV\"",
+  "prob": "",
+  "fix": "\"Position in the investment book of record (IBOR)\", \"Lot in the accounting book of record (ABOR)\", \"Net asset value (NAV)\". If space is short, keep the short labels and add one line to the note: \"IBOR is the investment book of record. ABOR is the accounting book of record. NAV is net asset value.\"",
+  "status": "Wording has changed since this review (v21 or the pending preview). Check before applying."
+ },
+ {
+  "src": "Pages 1\u20134",
+  "head": "S13. Page 3, Exhibit 2, Detail row, steps 1 and 5. Type 4 (spec field names used as if self-explanatory).",
+  "cur": "\"Posting takes whatIf and runCompliance [6]\"",
+  "prob": "",
+  "fix": "\"An order can be posted as a test (whatIf) and with a compliance check (runCompliance) [6]\"",
+  "status": ""
+ },
+ {
+  "src": "Pages 1\u20134",
+  "head": "S14. Page 4, Exhibit 3 title. Type 4 (names the topic, not the finding).",
+  "cur": "\"Exhibit 3. Where Studio sits in Aladdin\"",
+  "prob": "",
+  "fix": "\"Exhibit 3. Studio sits between BlackRock's applications and Aladdin's shared services, and the APIs carry their own controls\"",
+  "status": ""
+ },
+ {
+  "src": "Pages 1\u20134",
+  "head": "S15. Page 4, Exhibit 3, top row label. Type 4 (label misreads: clients appear to build BlackRock's applications).",
+  "cur": "\"Who builds\"",
+  "prob": "",
+  "fix": "\"Who builds on Studio\"",
+  "status": ""
+ },
+ {
+  "src": "Pages 1\u20134",
+  "head": "S16. Page 4, Exhibit 3 note, first part. Type 2 and 3 (semicolon joins, fragment, unexplained aside).",
+  "cur": "\"For illustrative purposes only. Every box is named in the sources below; the AWS option is announced, not live. The 11 domains are the packages of BlackRock's public SDK; the specifications also name Dashboard and Risk Radar. Controls as in Exhibit 14.\"",
+  "prob": "",
+  "fix": "\"For illustrative purposes only. Every box is named in the sources below. The AWS option is announced, not live. The 11 domains are the packages of BlackRock's public software development kit (SDK). Dashboard and Risk Radar are also named in the specifications. Exhibit 14 shows the same controls.\"",
+  "status": ""
+ },
+ {
+  "src": "Pages 1\u20134",
+  "head": "S17. Page 4, Exhibit 4, workspace item \"Projects\". Type 1 (dangling \"one\").",
+  "cur": "\"Projects Personal or shared. OAuth applications and storage are set up under one\"",
+  "prob": "",
+  "fix": "\"Projects Personal or shared. Sign-in applications (OAuth) and storage are set up inside a Project\"",
+  "status": ""
+ },
+ {
+  "src": "Pages 1\u20134",
+  "head": "S18. Page 4, Exhibit 4 note, end. Type 3 (alludes to the point that the grouping is the author's).",
+  "cur": "\"BlackRock gives no count of pieces. The APIs page describes the catalog, guides, notebooks and samples but does not link them; the specifications link the guides to a portal behind a client login.\" Also: \"the SDK README 29, for the SDK and the lower group\"",
+  "prob": "",
+  "fix": "\"The grouping into parts is mine. BlackRock does not give a count. The APIs page describes the catalog, guides, notebooks and samples but does not link them. The specifications link the guides to a portal behind a client login.\" And: \"the SDK README [29], for the SDK and the workspace items\"",
+  "status": ""
+ },
+ {
+  "src": "Pages 1\u20134",
+  "head": "S19. Page 4, Exhibit 4, APIs box. Type 4 (spec id format shown without saying why it matters).",
+  "cur": "\"Read and write Aladdin data. Every public specification's id starts agraph.<domain>\"",
+  "prob": "",
+  "fix": "\"Read and write Aladdin data. Every public specification's ID begins agraph.<domain>, for Aladdin Graph [6]\"",
+  "status": ""
+ },
+ {
+  "src": "Pages 5\u20138",
+  "head": "S1. p5, specifications paragraph, opening",
+  "cur": "\"The specifications say more than Exhibit 5\u2019s counts: they show how the APIs behave.\"",
+  "prob": "3 ALLUDING. The paragraph then lists eight facts and never says what they add up to. Most of them are controls built into the APIs (compliance by default, four-eyes sign-off, scoped access), which Exhibit 3 also names.",
+  "fix": "\"The specifications also show how the APIs behave. Several controls are built into the APIs themselves.\"",
+  "status": ""
+ },
+ {
+  "src": "Pages 5\u20138",
+  "head": "S2. p5, specifications paragraph, order sentence",
+  "cur": "\"Posting an order takes whatIf and runCompliance, which defaults to true, and the response returns any compliance violations inline 6.\"",
+  "prob": "2 HARD TO READ (spec field names used as if self-explanatory, stacked clauses).",
+  "fix": "\"An order can be posted as a test (the whatIf setting). A compliance check runs by default (runCompliance). The response lists any compliance breaches with the order [6].\"",
+  "status": ""
+ },
+ {
+  "src": "Pages 5\u20138",
+  "head": "S3. p5, specifications paragraph, long-running operations",
+  "cur": "\"Ten specifications expose an endpoint for long-running operations, and 35 operations are flagged as long-running 6. The SDK polls them 29.\"",
+  "prob": "2 HARD TO READ (\"endpoint\", \"polls\"; \"them\" could be the specifications or the operations).",
+  "fix": "\"Some operations take time to finish. Ten specifications offer a way to track them, and 35 operations are marked long-running [6]. The SDK checks back on these operations until they finish [29].\"",
+  "status": ""
+ },
+ {
+  "src": "Pages 5\u20138",
+  "head": "S4. p5, specifications paragraph, bitemporal and four-eyes",
+  "cur": "\"Risk exceptions and Data Cloud datasets carry bitemporal fields, which record two time dimensions. Rule assignments and dataset releases name a four-eyes approval, a second sign-off 6.\"",
+  "prob": "2 HARD TO READ (\"two time dimensions\" does not say which two; \"name\" is an odd verb; \"Rule assignments\" is shorthand for compliance rule assignments).",
+  "fix": "\"Risk exceptions and Data Cloud datasets carry bitemporal fields. These record when a fact was true and when the system recorded it. Assigning a compliance rule and releasing a dataset both call for four-eyes approval, a second person\u2019s sign-off [6].\"",
+  "status": ""
+ },
+ {
+  "src": "Pages 5\u20138",
+  "head": "S5. p5, specifications paragraph, credentials and scopes",
+  "cur": "\"Every request carries an application key and a second credential. That is an OAuth 2.0 token, a client key, or a user name and password 6. OAuth scopes look like trading.order_management.order.v1.Order:read 6. The client ID and secret come from the Studio UI 29.\"",
+  "prob": "2 HARD TO READ and 3 ALLUDING. \"That is\" reads as \"i.e.\". The scope string is shown without its point. \"Client ID and secret\" and \"UI\" are unexplained.",
+  "fix": "\"Every request carries an application key and a second credential. The second credential is an OAuth 2.0 token, a client key, or a user name and password [6]. Access is granted per API and per action. A typical OAuth scope reads trading.order_management.order.v1.Order:read [6]. Developers get their OAuth client ID and secret from Studio\u2019s screens [29].\"",
+  "status": ""
+ },
+ {
+  "src": "Pages 5\u20138",
+  "head": "S6. p5, Exhibit 5 note",
+  "cur": "\"Alpha, beta, stable and sunset are the stability labels each specification carries (its x-aladdin-api-stability field), alpha being the earliest; the four columns count specs by label.\"",
+  "prob": "4 EXHIBITS (spec field name in a reader note, semicolon, \"sunset\" not explained).",
+  "fix": "\"Each specification carries one stability label: alpha, beta, stable or sunset. Alpha is the earliest stage and sunset marks an API being retired. The four columns count specifications by label.\"",
+  "status": ""
+ },
+ {
+  "src": "Pages 5\u20138",
+  "head": "S7. p5, Exhibit 5 labels",
+  "cur": "rows \"Portfolio management\" and \"Portfolio\" side by side; Total row puts \"11 domains, 11 PyPI packages\" under \"Largest APIs by operations\".",
+  "prob": "4 EXHIBITS. A reader cannot tell how \"Portfolio\" differs from \"Portfolio management\". The total text sits under a column it does not describe.",
+  "fix": "add \"Domain names are BlackRock\u2019s own, taken from each specification\u2019s id.\" Total row: move \"11 domains, 11 PyPI packages\" into the note as \"The 54 specifications span 11 domains and 11 PyPI packages.\"",
+  "status": ""
+ },
+ {
+  "src": "Pages 5\u20138",
+  "head": "S8. p6, Exhibit 6 Khara row",
+  "cur": "\"Named \u201cthe Aladdin studio estate\u201d as a 2024 focus, meaning programmatic access \u201cat machine scale\u201d\"",
+  "prob": "4 EXHIBITS (\"meaning\" leaves unclear whether Khara or the author gives the meaning).",
+  "fix": "\"Named \u201cthe Aladdin studio estate\u201d a 2024 focus. Described it as programmatic access \u201cat machine scale\u201d\"",
+  "status": ""
+ },
+ {
+  "src": "Pages 5\u20138",
+  "head": "S9. p6, Exhibit 6 and Exhibit 7 notes",
+  "cur": "Exhibit 6: \"Quotations are verbatim from the transcripts; three of the five are machine transcriptions, marked as such in the Sources section at the end of this document.\" Exhibit 7: \"Khara, Goel and Woodhead are machine or auto-caption transcriptions, marked as such...\"",
+  "prob": "4 EXHIBITS (semicolon; people are called transcriptions).",
+  "fix": "\"Quotations are verbatim from the transcripts. Three of the five transcripts are machine-made, as marked in the Sources section.\"",
+  "status": ""
+ },
+ {
+  "src": "Pages 5\u20138",
+  "head": "S10. p6, Jeff Miller drops out between Exhibit 6 and Exhibit 7",
+  "cur": "Exhibit 6 lists five speakers, including Miller on Data Cloud. Body: \"Khara, Newman, Goel and Woodhead describe ways for clients to reach Aladdin through code.\" Exhibit 7: \"Four speakers describe parts of Studio\".",
+  "prob": "1/4. Miller also names a part (Data Cloud), so the reader wonders why he is left out.",
+  "fix": "\"Miller, in Exhibit 6, speaks only about Data Cloud replacing file transfers, so he is not shown.\"",
+  "status": ""
+ },
+ {
+  "src": "Pages 5\u20138",
+  "head": "S11. p6, job posting sentence",
+  "cur": "\"A 2026 job posting for a product director of Aladdin Studio Developer calls it \u201cAladdin\u2019s extensibility layer\u201d 46.\"",
+  "prob": "1 GARBLED (dangling \"it\": Studio, or Aladdin Studio Developer).",
+  "fix": "\"A 2026 job posting calls Studio \u201cAladdin\u2019s extensibility layer\u201d [46]. The role is a product director for Aladdin Studio Developer.\"",
+  "status": ""
+ },
+ {
+  "src": "Pages 5\u20138",
+  "head": "S12. p6, last sentence of body paragraph",
+  "cur": "\"APIs and data access recur across speakers and years, so BlackRock already has the core of a positioning for Studio.\"",
+  "prob": "3 ALLUDING (\"the core of a positioning\" hints without saying what it is).",
+  "fix": "\"Speakers since 2024 describe Studio as APIs and data access. BlackRock can build Studio\u2019s positioning on that shared description.\"",
+  "status": ""
+ },
+ {
+  "src": "Pages 5\u20138",
+  "head": "S13. p7, Georgeson sentence",
+  "cur": "\"On BlackRock\u2019s video, Hans Georgeson, then chief executive of Royal London Asset Management, credits Aladdin\u2019s Snowflake implementation 48.\"",
+  "prob": "1/2. \"Credits\" has no object (credits it with what). \"Aladdin\u2019s Snowflake implementation\" reads as BlackRock\u2019s own work, while the speaker means his firm\u2019s implementation within its Aladdin programme. \"On BlackRock\u2019s video\" names no video.",
+  "fix": "\"In a BlackRock client video, Hans Georgeson praises the Snowflake implementation in Royal London\u2019s Aladdin programme [48]. He was then chief executive of Royal London Asset Management.\"",
+  "status": ""
+ },
+ {
+  "src": "Pages 5\u20138",
+  "head": "S14. p7, SDK contribution sentences",
+  "cur": "\"In December 2025 an engineer at a client firm submitted two changes to the open-source SDK: URL rewriting and custom headers. Both are for firms that route Aladdin calls through an enterprise gateway. The BlackRock engineer who co-wrote the SDK\u2019s launch post merged them 38, 52, 53, 54.\"",
+  "prob": "2 HARD TO READ (\"URL rewriting\", \"custom headers\", \"enterprise gateway\", \"merged\").",
+  "fix": "\"In December 2025 an engineer at a client firm submitted two changes to the open-source SDK. Both help firms that send Aladdin calls through their own enterprise gateway. One rewrites web addresses and one adds custom headers. The BlackRock engineer who co-wrote the SDK\u2019s launch post accepted both into the SDK [38, 52, 53, 54].\"",
+  "status": ""
+ },
+ {
+  "src": "Pages 5\u20138",
+  "head": "S15. p8, finding 1 closing sentences and callout",
+  "cur": "\"Public pension funds, and firms whose filings or tenders already name BlackRock, are easier to name in public. So they are the natural first candidates for a named Studio story.\" Callout: \"A named Studio story can start with clients whose Aladdin use is already on the record.\"",
+  "prob": "2 HARD TO READ (\"named Studio story\" is shorthand; firms do not issue tenders, public buyers do).",
+  "fix": "\"Some clients are easier to name in public: public pension funds, and firms whose filings already name BlackRock. They are the natural first subjects for a Studio case study that names the client.\" Callout: \"A Studio case study that names the client can start with clients whose Aladdin use is already on the record.\"",
+  "status": ""
+ },
+ {
+  "src": "Pages 5\u20138",
+  "head": "S16. p8, finding 2 heading",
+  "cur": "\"2. BlackRock\u2019s growth story to investors runs through Studio, though it rarely says the name\"",
+  "prob": "1 GARBLED (dangling \"it\": a story cannot say a name, and BlackRock is in the possessive).",
+  "fix": "\"2. BlackRock\u2019s growth story to investors runs through Studio, but BlackRock rarely names Studio to investors\"",
+  "status": ""
+ },
+ {
+  "src": "Pages 5\u20138",
+  "head": "S17. p8, Investor Day sentences",
+  "cur": "\"At its 2025 Investor Day it forecast four volumes to 2030. API calls across BlackRock and Aladdin led, with 17x growth 11. Attributing them to Studio is my inference. I make that inference because API use is the activity the Studio page describes 14.\"",
+  "prob": "2 HARD TO READ (\"four volumes\" is shorthand, \"17x\", two sentences to state one inference).",
+  "fix": "\"At its 2025 Investor Day, BlackRock forecast four usage measures to 2030. API calls across BlackRock and Aladdin had the fastest forecast growth, 17 times [11]. I attribute those API calls to Studio, because the Studio page describes API use [14].\"",
+  "status": ""
+ },
+ {
+  "src": "Pages 5\u20138",
+  "head": "S18. p8, 10-K fee sentences",
+  "cur": "\"BlackRock\u2019s 10-K says technology services fees are generally set by the value of positions on the platform or at a fixed rate. They can also depend on subscriptions, go-lives and support. The 10-K does not list API calls among the fee terms it names 12.\"",
+  "prob": "3 ALLUDING (the reader must infer what this means for the 17x forecast) and 2 (\"go-lives\" is jargon).",
+  "fix": "\"BlackRock\u2019s 10-K says technology services fees are generally set by the value of positions on the platform or at a fixed rate. Fees can also depend on subscriptions, client launches (go-lives) and support. The 10-K does not list API calls among its fee terms [12]. So, under the terms it names, more API calls do not by themselves raise fees.\"",
+  "status": ""
+ },
+ {
+  "src": "Pages 5\u20138",
+  "head": "S19. p8, Exhibit 10 note",
+  "cur": "\"My tally. The non-zero counts add up to about four mentions in six and a half years. A zero means the term appears in no transcript; the non-zero counts are approximate.\"",
+  "prob": "4 EXHIBITS (fragment, semicolon; \"about four\" beside a column that adds to exactly four).",
+  "fix": "\"The tally is mine. The non-zero counts total four mentions in six and a half years, and are approximate. A zero means the term appears in no transcript.\"",
+  "status": ""
+ },
+ {
+  "src": "Pages 5\u20138",
+  "head": "S20. p8, private-markets paragraph",
+  "cur": "\"In September 2025 its private markets team described the result on a client webinar 68. ... And \u201cover 10 different transaction types\u201d were added to Aladdin, covering commitments, fundings, paydowns and PIK, so private credit loans are captured natively. The team said those were designed with BlackRock\u2019s own professionals and \u201cour new colleagues from HPS\u201d 68.\"",
+  "prob": "2 HARD TO READ (\"the result\" is vague; \"PIK\", \"captured natively\" and \"HPS\" are unexplained; \"those\" is loose).",
+  "fix": "\"In September 2025 its private markets team described what the two deals brought clients, on a client webinar [68]. ... More than 10 new transaction types were added to Aladdin (\u201cover 10 different transaction types\u201d). They cover commitments, fundings, paydowns and payment-in-kind (PIK) interest. So Aladdin now records private credit loans directly. The team said it designed the new types with BlackRock\u2019s own professionals and \u201cour new colleagues from HPS\u201d [68].\" Add a short gloss for HPS where it first appears (for example, \"HPS, the private credit firm BlackRock bought\"). ---",
+  "status": ""
+ },
+ {
+  "src": "Pages 9\u201312",
+  "head": "S1. p9, Section 2 callout (top of page)",
+  "cur": "\"BlackRock projects API calls across BlackRock and Aladdin to grow 17x by 2030, the fastest of the four volumes it showed investors 11. The private-markets data it is adding from eFront and Preqin is going into Data Cloud, which is part of Studio 22.\"",
+  "prob": "3. Under a \"direction\" label it only repeats two facts. It never states the direction. \"Four volumes\" is shorthand for the four 2030 forecasts on page 7.",
+  "fix": "\"BlackRock's two growth bets both run through Studio. It projects API calls across BlackRock and Aladdin to grow 17x by 2030 [11]. That is the fastest of the four forecasts it showed investors [11]. Its new eFront and Preqin private-markets data is going into Data Cloud, which is part of Studio [22]. BlackRock could name Studio when it tells investors this growth story.\"",
+  "status": ""
+ },
+ {
+  "src": "Pages 9\u201312",
+  "head": "S2. p9, Section 3, sentences 2 and 3",
+  "cur": "\"It draws on a registry of plugins, \"couple of thousands agents and tools,\" built by Aladdin's engineering teams. The first way a team adds a tool is \"to define a tool as kind of mapping one-to-one to an existing Aladdin API already out in production\" 9. Teams can also register agents of their own 9.\"",
+  "prob": "2. The ungrammatical quote is wedged in as an appositive. \"The first way a team adds a tool\" reads as the first of several ways to add a tool. That seems to clash with page 12 and Exhibit 14 (\"Each Copilot tool maps to a production Aladdin API\").",
+  "fix": "\"It draws on a registry of plugins built by Aladdin's engineering teams. The speakers put it at a \"couple of thousands agents and tools\" [9]. Teams add to the registry in two ways. The first is \"to define a tool as kind of mapping one-to-one to an existing Aladdin API already out in production\" [9]. The second is to register an agent of their own [9].\"",
+  "status": ""
+ },
+ {
+  "src": "Pages 9\u201312",
+  "head": "S3. p9, Section 3, Crockett sentence",
+  "cur": "\"Microsoft's Adrian Crockett made the dependence plain on BlackRock's podcast: \"There's no copilot without plug-ins\" 69.\"",
+  "prob": "1/2. \"The dependence\" has no antecedent. The reader must work out that it means Copilot depends on plugins.",
+  "fix": "\"On BlackRock's podcast, Microsoft's Adrian Crockett said Copilot depends on its plugins: \"There's no copilot without plug-ins\" [69].\"",
+  "status": ""
+ },
+ {
+  "src": "Pages 9\u201312",
+  "head": "S4. p9, Section 3 heading and body: Aladdin's own position never stated in the text",
+  "cur": "\"Aladdin's AI answers inside the login; data providers let outside AI tools reach their data\". Current (body): \"Six data and cloud providers that Studio buyers also use offer a connector or an MCP server. Four system-of-record rivals have announced AI features or AI access to their data.\"",
+  "prob": "3 and 2. The section's point is that Aladdin has no public route for outside AI tools while ten others do. That point only appears in the Exhibit 12 note. \"Inside the login\" is shorthand. The heading uses a semicolon to join two clauses. \"MCP\" is never spelled out in the body (only inside a quote in Exhibit 12).",
+  "fix": "\"Aladdin's AI works only for logged-in users. Data providers let outside AI tools reach their data.\" Rewrite (body, add after the two sentences): \"Many offer an MCP (Model Context Protocol) server, a standard way for outside AI tools to connect. Aladdin has published no such route. Its only public mention of MCP is a job posting [77].\"",
+  "status": ""
+ },
+ {
+  "src": "Pages 9\u201312",
+  "head": "S5. p9 body and p10 Exhibit 12 LSEG row: \"connected\" to what",
+  "cur": "\"LSEG had 90 customers connected by April 2026, according to a secondary summary of its results slides 71.\" and \"It had 90 customers connected by April 2026\".",
+  "prob": "1. \"Connected\" has no object, so the reader cannot tell what the 90 customers connected to.",
+  "fix": "\"LSEG had 90 customers connected to [its MCP server / AI offering, per 71] by April 2026 [71]. The figure comes from a secondary summary of its results slides.\" Fill the bracket from source 71.",
+  "status": ""
+ },
+ {
+  "src": "Pages 9\u201312",
+  "head": "S6. p10, Exhibit 12 title",
+  "cur": "\"Of 11 providers a Studio buyer compares, ten have announced AI features or AI access to their data\"",
+  "prob": "4 and 3. The title leaves the reader to work out that the eleventh is Aladdin. That is the point of the exhibit.",
+  "fix": "\"Ten of the 11 providers a Studio buyer compares have announced AI features or AI access. Aladdin has not.\"",
+  "status": ""
+ },
+ {
+  "src": "Pages 9\u201312",
+  "head": "S7. p10, Exhibit 12 column header \"Receipt\"",
+  "cur": "\"Receipt\"",
+  "prob": "4. Cryptic label. The note itself calls these \"press releases, documentation and job posting\".",
+  "fix": "\"Source\"",
+  "status": ""
+ },
+ {
+  "src": "Pages 9\u201312",
+  "head": "S8. p9, Exhibit 11 note",
+  "cur": "\"The tool counts are the speakers' own approximations; the talk is a machine transcription, marked as such in the Sources section.\"",
+  "prob": "2/1. A semicolon joins two sentences. \"The talk is a machine transcription\" is wrong: the talk is not a transcription, the record of it is.",
+  "fix": "\"The tool counts are the speakers' own estimates. Quotes come from a machine transcript of the talk, marked as such in Sources.\"",
+  "status": ""
+ },
+ {
+  "src": "Pages 9\u201312",
+  "head": "S9. p9, Exhibit 11, box 4",
+  "cur": "\"Plan and call the API: an orchestrator loops \"over a planning and action node\" using GPT-4 function calling. Output guardrails then check the answer for hallucinations 9\"",
+  "prob": "2/4. \"Orchestrator\", \"planning and action node\" and \"function calling\" are engineering terms that a business reader would not know.",
+  "fix": "\"Plan and call the APIs: Copilot plans which tools to call, calls them through GPT-4, and repeats. The talk describes a loop \"over a planning and action node\" [9]. Output guardrails then check the answer for hallucinations [9].\"",
+  "status": ""
+ },
+ {
+  "src": "Pages 9\u201312",
+  "head": "S10. p11, Sewdass paragraph, sentences 2 to 4",
+  "cur": "\"She described the shift of the last two years. It is \"to more of a modular approach where clients are looking for that backbone foundational data that supports both publics and privates workflows.\" That comes, she said, with \"very, very robust APIs that manage the end to end life cycle of a transaction.\"\"",
+  "prob": "2. \"It is \"to more of...\"\" does not read as English because the quote starts mid-phrase. \"That comes\" has a loose antecedent.",
+  "fix": "\"She said clients have moved over the last two years \"to more of a modular approach\" [10]. They want \"that backbone foundational data that supports both publics and privates workflows\" [10]. They also want \"very, very robust APIs that manage the end to end life cycle of a transaction\" [10].\"",
+  "status": ""
+ },
+ {
+  "src": "Pages 9\u201312",
+  "head": "S11. p11, Sewdass paragraph, last sentence",
+  "cur": "\"She also said \"the other layer that is almost equally important is a really defined system of work\" 10.\"",
+  "prob": "3/2. \"System of work\" is left unexplained, and the text does nothing with it. The reader cannot tell why it is quoted.",
+  "fix": "say in one sentence what she meant by it, if the transcript says. If it does not, cut the sentence. For example: \"She called a \"really defined system of work\" the other layer that is \"almost equally important\" [10]. By that she meant [her gloss from 10].\"",
+  "status": ""
+ },
+ {
+  "src": "Pages 9\u201312",
+  "head": "S12. p12, Part 3, opening sentence",
+  "cur": "\"The findings suggest that Studio could be presented as the place where a client's own AI tools act on investment data under the same controls BlackRock's own business runs on.\"",
+  "prob": "2/3. Hedges are stacked (\"suggest\", \"could be presented\") in a 30-word sentence.",
+  "fix": "\"BlackRock could present Studio as the place where a client's own AI tools act on investment data. Those tools would run under the same controls as BlackRock's own business.\"",
+  "status": ""
+ },
+ {
+  "src": "Pages 9\u201312",
+  "head": "S13. p12, Exhibit 14 title, and the caption under \"Aladdin's APIs\"",
+  "cur": "\"BlackRock's applications and a client's code draw on Aladdin's shared services and APIs\". Current (caption): \"BlackRock's applications, Copilot and a client's code draw on Aladdin's shared services and APIs. Each client reads its own Data Cloud, which BlackRock runs on Snowflake.\"",
+  "prob": "4. The title states the plumbing, not the message: the controls already exist, and the client AI-tool path is the one missing piece. The caption repeats the title almost word for word.",
+  "fix": "\"BlackRock's apps, Copilot and client code share Aladdin's APIs and controls. How a client's AI tools would connect is not public.\" Rewrite (caption): \"Each client reads its own Data Cloud, which BlackRock runs on Snowflake.\"",
+  "status": ""
+ },
+ {
+  "src": "Pages 9\u201312",
+  "head": "S14. p12, Exhibit 14, Copilot control boxes",
+  "cur": "\"Input guardrails: Off-topic content is caught and personal data handled before any plan.\" and \"LLM judges: Every system prompt is tested daily and on every change.\"",
+  "prob": "4/2. \"Before any plan\" is cryptic. \"Personal data handled\" does not say how it is handled. \"LLM judges\" is jargon the box does not explain.",
+  "fix": "\"Input guardrails: Copilot catches off-topic requests and handles personal data before it plans any API calls.\" and \"AI-graded tests: AI models (\"LLM judges\") test every system prompt daily and on every change.\"",
+  "status": ""
+ },
+ {
+  "src": "Pages 9\u201312",
+  "head": "S15. p12, Exhibit 14 note, source list",
+  "cur": "\"... the Copilot page 23, pull requests 52 and 53 52, 53, the SDK README 29, the public specifications 6, ...\"",
+  "prob": "2/4. \"52 and 53 52, 53\" doubles the numbers and clutters the line. \"The public specifications\" does not say whose.",
+  "fix": "\"... the Copilot page [23], two SDK pull requests [52, 53], the SDK README [29], Aladdin's public API specifications [6], ...\" ---",
+  "status": "Wording has changed since this review (v21 or the pending preview). Check before applying."
+ },
+ {
+  "src": "Pages 13\u201316",
+  "head": "S1. p13, Exhibit 16 title. Type 4.",
+  "cur": "\"What I was not able to see from outside, and what opens after qualification\"",
+  "prob": "both halves describe the After qualification column. The title leaves out the Public today column, which is half the table. It also does not name the six-step path.",
+  "fix": "\"At each step of a prospect engineer's path, what is public today and what opens only after qualification\"",
+  "status": ""
+ },
+ {
+  "src": "Pages 13\u201316",
+  "head": "S2. p13, Part 4 intro, sentence 1. Type 3.",
+  "cur": "\"Everything here was read from outside, which limits what this document can be sure of.\"",
+  "prob": "a hedge that does not say what the limit is.",
+  "fix": "\"I read everything here from outside, with no client login. So this document cannot confirm what clients see after login.\"",
+  "status": ""
+ },
+ {
+  "src": "Pages 13\u201316",
+  "head": "S3. p13, Part 4 intro, last sentence. Type 1 (unclear antecedent).",
+  "cur": "\"Where this document describes those, it relies on what sources say.\"",
+  "prob": "\"those\" could mean the catalog, the guides, the notebooks, or everything a client receives.",
+  "fix": "\"Where this document describes the catalog, the guides or what a client receives, it relies on what sources say.\"",
+  "status": ""
+ },
+ {
+  "src": "Pages 13\u201316",
+  "head": "S4. p13, Part 4 intro and Exhibit 16 column head, \"after qualification\". Type 2.",
+  "cur": "\"For each step it records what is public today and what a client receives after qualification.\"",
+  "prob": "\"qualification\" is never defined. The column mixes items for qualified prospects (the Client Forum, Solutions Engineering) with items only signed clients get (a client host, credentials). The source note then calls the whole column \"what a client receives\".",
+  "fix": "\"For each step it records what is public today. It also records what opens only to qualified prospects and clients.\" (Optionally rename the column \"After qualification or signing\".)",
+  "status": ""
+ },
+ {
+  "src": "Pages 13\u201316",
+  "head": "S5. p13, Exhibit 15, row 1 (\"An answer for RFPs\"), \"What it is\" cell. Type 2.",
+  "cur": "\"A ready answer to \"what APIs do you have, and can we connect to them\": the APIs by area with their stability labels, how permissions work, how a client routes calls through its own gateway, and an answer on Snowflake and Databricks connectors, plus how a client's own AI tools would connect.\"",
+  "prob": "a five-item list stacked in one 50-word sentence, with \"and an answer on ... plus how ...\" at the end.",
+  "fix": "\"A ready answer to \"what APIs do you have, and can we connect to them\". It lists the APIs by area, each with its stability label. It explains how permissions work and how a client routes calls through its own gateway. It covers Snowflake and Databricks connectors. It also says how a client's own AI tools would connect.\"",
+  "status": ""
+ },
+ {
+  "src": "Pages 13\u201316",
+  "head": "S6. p13, Exhibit 15, row 1, \"How to know it worked\" cell. Type 2.",
+  "cur": "\"Time to answer the API section of an RFP; RFPs that score Studio; how many of those are won\"",
+  "prob": "\"RFPs that score Studio\" does not say what is counted.",
+  "fix": "\"Time to answer the API section of an RFP. Number of RFPs in which buyers score Studio. How many of those are won.\"",
+  "status": ""
+ },
+ {
+  "src": "Pages 13\u201316",
+  "head": "S7. p14, Exhibit 16, \"Try\" row, After qualification cell. Type 2.",
+  "cur": "\"Studio Compute; an API token or an OAuth application \"registered via Studio UI\"; and the client's own Aladdin host to call\"",
+  "prob": "three spec terms in a row (\"Studio Compute\", \"OAuth application\", \"Aladdin host\") with no gloss, joined by semicolons.",
+  "fix": "\"Studio Compute, BlackRock's hosted Python environments. Credentials: an API token, or an OAuth application \"registered via Studio UI\". The address of the client's own Aladdin environment to call.\"",
+  "status": ""
+ },
+ {
+  "src": "Pages 13\u201316",
+  "head": "S8. p14, Exhibit 16, \"Get help\" row, Public today cell. Type 2 and 3.",
+  "cur": "\"Pull requests on the SDK, reviewed and merged by a BlackRock engineer; on the Studio page, \"Book a meeting\" and \"Download the brochure\"\"",
+  "prob": "\"pull requests\" is developer shorthand. The reader must infer why a code review counts as help.",
+  "fix": "\"Code changes that outside developers propose to the SDK, which a BlackRock engineer reviews and merges. The Studio page offers \"Book a meeting\" and \"Download the brochure\".\"",
+  "status": ""
+ },
+ {
+  "src": "Pages 13\u201316",
+  "head": "S9. p14, Exhibit 16, \"Get help\" row, Receipt cell. Type 2.",
+  "cur": "\"Pull request 52 52, pull request 57 88\"",
+  "prob": "the label number and the superscript are both 52, so the image reads \"Pull request 52\u2075\u00b2\", which looks like a typo.",
+  "fix": "\"SDK change for enterprise gateways [52], SDK change for Pydantic v2 [88]\"",
+  "status": "Wording has changed since this review (v21 or the pending preview). Check before applying."
+ },
+ {
+  "src": "Pages 13\u201316",
+  "head": "S10. p14, SDK paragraph below Exhibit 16. Type 3 and 2.",
+  "cur": "\"Its README documents three run modes: ... and a test mode. It stores a prompted password in the operating system's credential manager. It carries settings for firms that consume \"the Aladdin APIs via an enterprise API management platform such as Azure API Management\" 29.\"",
+  "prob": "three details listed with no point stated, so the reader has to infer what they show. \"A prompted password\" is unclear. \"Consume\" is jargon.",
+  "fix": "\"The SDK is the one piece of Studio a prospect can install before any conversation. Its README shows it is built for firms with strict IT controls. It runs in three modes: \"a developer's local machine,\" \"Aladdin Studio Compute sessions\" and a test mode. When it asks the user for a password, it keeps it in the operating system's credential manager. It has settings for firms that call \"the Aladdin APIs via an enterprise API management platform such as Azure API Management\" [29].\" (The second sentence is a reading of the README. Keep it only if the author agrees.)",
+  "status": "Wording has changed since this review (v21 or the pending preview). Check before applying."
+ },
+ {
+  "src": "Pages 13\u201316",
+  "head": "S11. p14, Exhibit 17 title. Type 4.",
+  "cur": "\"Investment platforms, Studio among them, open to developers mostly after a relationship\"",
+  "prob": "half the table (the data and cloud platforms, which score highest) is missing from the title, so the contrast the exhibit shows is not stated. \"Studio among them\" interrupts the sentence.",
+  "fix": "\"Data platforms let any developer start, while investment platforms, Studio included, mostly open only after a relationship\"",
+  "status": ""
+ },
+ {
+  "src": "Pages 13\u201316",
+  "head": "S12. p14, Exhibit 17 legend, \"0: None or blocked\". Type 4.",
+  "cur": "\"0: None or blocked\"",
+  "prob": "the note says some Bloomberg and Clearwater pages \"blocked automated access\". So a reader can take a 0 to mean the test was blocked, not that the vendor closes access.",
+  "fix": "\"0: None, or closed to non-clients\"",
+  "status": ""
+ },
+ {
+  "src": "Pages 13\u201316",
+  "head": "S13. p14, paragraph after Exhibit 17, sentences 3 and 4. Type 3 and 2.",
+  "cur": "\"The pattern is each vendor's selling model. Investment platforms cluster low because they gate.\"",
+  "prob": "\"the pattern is ... model\" gestures at the point instead of stating it. \"Gate\" is used as shorthand with no object.",
+  "fix": "\"The scores follow how each vendor sells. Investment platforms score low because they keep API access behind a contract.\"",
+  "status": ""
+ },
+ {
+  "src": "Pages 13\u201316",
+  "head": "S14. p14, paragraph after Exhibit 17, whole. Type 3.",
+  "cur": "(the whole paragraph)",
+  "prob": "the paragraph ranks the other vendors but never says where Studio stands. The reader has to read that off the table.",
+  "fix": "\"Studio scores in line with the other investment platforms. It trails Bloomberg and Arcesium on AI connectors, where it scores 0 and they score 2.\"",
+  "status": ""
+ },
+ {
+  "src": "Pages 13\u201316",
+  "head": "S15. p15, About this document, paragraph 1, sentences 2 to 4. Type 1 and 2.",
+  "cur": "\"The sources are BlackRock product pages, ... and job postings. They also include public code ... trade press. The rest are transcripts of recordings and earnings calls with BlackRock speakers.\"",
+  "prob": "\"The sources are\" reads as a complete list, then two more groups follow. \"The rest are\" is vague. Some recordings also include non-BlackRock speakers (for example Crockett of Microsoft [69] and Schafer of Alpha FMC [10]).",
+  "fix": "\"The sources include BlackRock product pages, investor presentations, SEC filings, a fund prospectus, procurement notices, press releases and job postings. They also include public code and packages on GitHub and PyPI, other vendors' product and developer pages, blogs and trade press. Finally, they include transcripts of recordings and earnings calls in which BlackRock speakers take part.\"",
+  "status": "Wording has changed since this review (v21 or the pending preview). Check before applying."
+ }
+]
