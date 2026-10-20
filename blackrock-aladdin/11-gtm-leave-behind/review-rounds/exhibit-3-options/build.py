@@ -157,11 +157,103 @@ def renumber_exhibits(h):
     body = re.sub(r'(href="#exhibit-)(\d+)', dec, body)
     return head + body
 
+# ---------------- Variant D: skinny platform view (Exhibit 3) + Studio components (Exhibit 4), no renumbering ----------------
+CSS_D3 = """<style>
+#stackD{display:grid;grid-template-columns:60pt 1fr 116pt;column-gap:6pt;row-gap:4pt;font-size:9pt;line-height:10.8pt;align-items:stretch}
+#stackD .lb{grid-column:1;font-weight:700;font-size:9pt;line-height:10.8pt;align-self:center}
+#stackD .row{grid-column:2;display:grid;gap:4pt}
+#stackD .c4{grid-template-columns:repeat(4,1fr)}
+#stackD .c2{grid-template-columns:1fr 1fr}
+#stackD .t{border:.75pt solid #000;background:#fff;padding:2.5pt 5pt;text-align:center;display:flex;flex-direction:column;justify-content:center}
+#stackD .t b{font-weight:700}
+#stackD .t span{font-family:var(--font-cond);font-weight:300;font-size:9pt;line-height:10.4pt}
+#stackD .t.cop{background:var(--tint-pink);border-color:var(--pink)}
+#stackD .t.hatch{background:repeating-linear-gradient(135deg,#fff 0 3pt,#D6D5DD 3pt 4pt);border-style:dashed}
+#stackD .studio{grid-column:2;border:1.5pt solid var(--yellow);background:var(--tint-yellow);padding:4pt 8pt;text-align:center}
+#stackD .studio b{font-weight:700}
+#stackD .core{grid-column:2;background:#000;color:#fff;padding:4pt 8pt;text-align:center}
+#stackD .core b{display:block;font-weight:700}
+#stackD .core span{display:block;font-family:var(--font-cond);font-weight:300;font-size:9pt;line-height:10.4pt;color:#fff}
+#stackD .out{grid-column:2;border:.75pt dashed #000;padding:3pt 8pt;text-align:center}
+#stackD .side{grid-column:3;grid-row:2 / 6;background:var(--box);padding:5pt 7pt}
+#stackD .side .cap{font-family:var(--font-cond);font-weight:700;font-size:8pt;line-height:9.6pt;letter-spacing:.06em;text-transform:uppercase;margin:0 0 4pt}
+#stackD .side p{margin:0 0 3pt}
+#stackD .side p b{display:block}
+#stackD .side p span{font-family:var(--font-cond);font-weight:300}
+</style>"""
+
+D3 = f"""<figure class="exhibit keep" id="exhibit-3">{TITLE.format('Apps, Copilot and Studio share the same Aladdin services and data')}
+{CSS_D3}
+<div id="stackD" role="img" aria-label="A layered stack in six rows. Who builds: client engineers, code-curious portfolio managers, data analysts and Excel users building reports. BlackRock’s own applications: about 100, such as Explore, Dashboard and Risk Radar, with Aladdin Copilot inside them; each Copilot tool matches an Aladdin API already in production. Aladdin Studio: the developer and data layer, whose parts Exhibit 4 shows. Aladdin’s shared services and data: portfolio management, trading, risk, compliance, operations and accounting, reached through the 11 public API domains. Hosting: Microsoft Azure today, and an AWS option that is announced, not live. Outside inputs: the client’s own and third-party data, loaded into Data Cloud or through the Data eXchange, and vendor data such as prices and ESG research. A side column lists the controls built into the APIs: access set per API, compliance by default on orders, and a second approver for dataset releases.">
+<div class="lb">Who builds</div>
+<div class="row c4"><div class="t">Client engineers</div><div class="t">Code-curious portfolio managers</div><div class="t">Data analysts</div><div class="t">Excel users building reports</div></div>
+<div class="lb">BlackRock’s applications</div>
+<div class="row c2"><div class="t"><b>About 100 applications</b><span>such as Explore, Dashboard and Risk Radar</span></div><div class="t cop"><b>Aladdin Copilot, inside them</b><span>each tool matches an Aladdin API already in production</span></div></div>
+<div class="lb">Aladdin Studio</div>
+<div class="studio"><b>Aladdin Studio:</b> the developer and data layer; its parts are in Exhibit 4</div>
+<div class="lb">Shared services and data</div>
+<div class="core"><b>Portfolio management, trading, risk, compliance, operations, accounting</b><span>reached through the 11 public API domains</span></div>
+<div class="lb">Hosting</div>
+<div class="row c2"><div class="t">Microsoft Azure today</div><div class="t hatch">AWS option, announced</div></div>
+<div class="lb">Outside inputs</div>
+<div class="out">The client’s own and third-party data, loaded into Data Cloud or through the Data eXchange, and vendor data such as prices and ESG research</div>
+<div class="side"><p class="cap">Controls built into the APIs</p>
+<p><b>Access set per API</b><span>Each API has its own access scope. A user sees only what their entitlements allow.</span></p>
+<p><b>Compliance by default</b><span>The order API runs compliance by default and returns any violations.</span></p>
+<p style="margin:0"><b>A second approver</b><span>Dataset releases need a second check.</span></p></div>
+</div>
+<div class="notes"><p><span class="lead">For illustrative purposes only.</span> Every box is named in the sources below; the AWS option is announced, not live. The 11 domains are the packages of BlackRock’s public SDK; the specifications also name Dashboard and Risk Radar. Controls as in Exhibit 14. <span class="lbl"></span>Source: <a href="https://www.youtube.com/watch?v=oyqeCHFM5U4&amp;t=155s">Rosales and Vicente Valdez at 2:35</a>, for the apps and Copilot{sup(9)}; a training recording, for Explore{sup(25)}; <a href="https://www.youtube.com/watch?v=Me_H_-E6lSg&amp;t=289s">Woodhead at 4:49</a>, for Studio{sup(1)}; the public specifications and SDK{sup(6, 27)}; BlackRock’s Studio, APIs, ATX, ADX, Data Cloud and Aladdin Risk pages{sup(14, 23, 28, 29, 30, 31)}; the Data Cloud launch release{sup(32)}; hosting, Azure and the AWS release{sup(19, 33)}; data vendors, ICE and Sustainalytics{sup(34, 35)}.</p></div></figure>"""
+
+CSS_D4 = """<style>
+#partsD{font-size:9pt;line-height:10.8pt}
+#partsD .gh{font-family:var(--font-cond);font-weight:700;font-size:8pt;line-height:9.6pt;letter-spacing:.06em;text-transform:uppercase;margin:0 0 3pt}
+#partsD .grid{display:grid;gap:4pt}
+#partsD .g3{grid-template-columns:repeat(3,1fr)}
+#partsD .g4{grid-template-columns:repeat(4,1fr)}
+#partsD .t{border:.75pt solid #000;background:#fff;padding:3pt 5pt}
+#partsD .t b{display:block;font-weight:700}
+#partsD .t span{display:block;font-family:var(--font-cond);font-weight:300;font-size:9pt;line-height:10.4pt}
+#partsD .offer{border:1.5pt solid var(--yellow);background:var(--tint-yellow);padding:4pt}
+#partsD .also{margin:3pt 0 0;font-family:var(--font-cond);font-weight:300;font-size:9pt;line-height:10.4pt;text-align:center}
+#partsD .ws{margin-top:6pt;background:var(--box);padding:4pt 6pt}
+#partsD .ws .grid{grid-template-columns:1fr 1fr;column-gap:12pt;row-gap:0}
+#partsD .ws .grid div{padding:2pt 0;border-top:.5pt solid #BFBFBF}
+#partsD .ws .grid b{font-weight:700}
+#partsD .ws .grid span{font-family:var(--font-cond);font-weight:300}
+#partsD code{font-size:8.5pt}
+</style>"""
+
+D4 = f"""<figure class="exhibit keep" id="exhibit-4">{TITLE.format('Studio, grouped here into six pieces, and the parts of a client’s Studio named in the SDK files').replace('Exhibit 3.', 'Exhibit 4.')}
+{CSS_D4}
+<div id="partsD" role="img" aria-label="Two groups. What Studio offers, in six pieces: APIs (Aladdin Graph), whose public specification ids all start agraph.domain; event-driven workflows; Aladdin Data Cloud on Snowflake with Fivetran moving the data; Aladdin Compute, hosted Python environments; the Aladdin SDK, whose 11 plugin packages are generated from the specifications by BlackRock’s plugin builder; and the Developer Portal and Data Dictionary behind a client login. The APIs page also links Aladdin Tools for Excel and the Aladdin Data eXchange. Inside a client’s Studio workspace, as the public SDK files name them: Projects, Studio Compute, S3 storage integration, API tokens and API applications, Studio notifications, Studio UI and the ADC Admin Center.">
+<p class="gh">What Studio offers</p>
+<div class="offer"><div class="grid g3">
+<div class="t"><b>APIs (Aladdin Graph)</b><span>Read and write Aladdin data. Every public specification’s id starts <code>agraph.&lt;domain&gt;</code></span></div>
+<div class="t"><b>Event-driven workflows</b><span>Aladdin tells a program when something happens. No event specification is public</span></div>
+<div class="t"><b>Aladdin Data Cloud</b><span>A managed data store on Snowflake, with Fivetran moving the data</span></div>
+<div class="t"><b>Aladdin Compute</b><span>Hosted, ready-to-use Python environments</span></div>
+<div class="t"><b>Aladdin SDK</b><span>Open-source Python library for login, retries and rate limits. BlackRock’s plugin builder generates its 11 plugin packages from the specifications</span></div>
+<div class="t"><b>Developer Portal and Data Dictionary</b><span>Catalog, guides, field dictionary, notebooks and samples, behind a client login</span></div>
+</div><p class="also">The APIs page also links Aladdin Tools for Excel and the Aladdin Data eXchange</p></div>
+<div class="ws"><p class="gh">Inside a client’s Studio workspace, as the public SDK files name it</p>
+<div class="grid">
+<div><b>Projects</b> <span>Personal or shared. OAuth applications and storage are set up under one</span></div>
+<div><b>Studio Compute</b> <span>Sessions where SDK code can run, as an alternative to a developer’s local machine</span></div>
+<div><b>S3 storage integration</b> <span>File storage set up in a Studio Project, its bucket assigned to a user or project</span></div>
+<div><b>API tokens and API applications</b> <span>Sign-in details for programs: a token, or an OAuth client ID and secret</span></div>
+<div><b>Studio notifications</b> <span>Email or push alerts to a user, a Project or a Space</span></div>
+<div><b>Studio UI</b> <span>Studio’s screens, where tokens, applications and storage are set up</span></div>
+<div><b>ADC Admin Center</b> <span>Studio’s screen for managing Data Cloud datasets</span></div>
+</div></div>
+</div>
+<div class="notes"><p><span class="lbl"></span>Source: BlackRock Studio and APIs pages{sup(14, 28)}; the 54 public specifications{sup(6)}, for the ids, the portal link and the Admin Center; the SDK README{sup(27)}, for the SDK and the lower group; Naik and Kalish, for Aladdin Graph{sup("naik")}; the plugin builder{sup("builder")}; Woodhead{sup(1)}, Goel{sup("goel")}, the Aladdin Risk page{sup(29)} and a BlackRock job posting{sup("job")}, for events and the portal; Fivetran{sup("fivetran")}; Snowflake’s partner page, for Compute{sup("snowpb")}; the developer portal{sup(41)}. BlackRock gives no count of pieces. The APIs page describes the catalog, guides, notebooks and samples but does not link them; the specifications link the guides to a portal behind a client login.</p></div></figure>"""
+D = D3 + D4
+
 def build(var, block):
     h = open(REAL, encoding="utf-8").read()
     a = h.index('<figure class="exhibit keep" id="exhibit-3">')
     b = h.index('</figure>', a) + len('</figure>')
-    if var == "C":
+    if var in ("C", "D"):
         assert h[b:].startswith('<figure class="exhibit" id="exhibit-4">')
         b = h.index('</figure>', b) + len('</figure>')
     h = h[:a] + block + h[b:]
@@ -185,5 +277,5 @@ def build(var, block):
     h = re.sub(r'<sup class="fnref">(.*?)</sup>', fix, h)
     open(P, "w", encoding="utf-8").write(h)
 
-for v in (sys.argv[1:] or ["A", "B", "C"]):
-    build(v, {"A": A, "B": B, "C": C}[v])
+for v in (sys.argv[1:] or ["A", "B", "C", "D"]):
+    build(v, {"A": A, "B": B, "C": C, "D": D}[v])

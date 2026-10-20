@@ -147,3 +147,76 @@ Some of these still appear elsewhere in the document: Goel’s quotes, including
 - In A and B, page 5 is the only page with changed text. The other differences are citation digits after renumbering, which reflow a few lines in the register.
 - In C, the domains table (now Exhibit 4) starts on page 5 and continues on page 6 with its header repeated. Part 1 still ends on page 7.
   - If the author would rather not split the table, adding `break-before:page` to it would put it whole on page 6. That should still end Part 1 on page 7, because pages 6 and 7 would then match the current layout, but I have not rendered it.
+
+## Variant D: skinny platform view (Exhibit 3) and Studio components (Exhibit 4), no renumbering
+
+Variant D is built from v17, the real file as modified at 16:17. The outputs are `preview_D.html` and `preview_D.pdf`. `Exhibit_3_4_option_D.pdf` has two pages, each with a yellow label bar:
+- Page 1: "CURRENT page 5"
+- Page 2: "VERSION D: skinny platform view + Studio components"
+
+The pages are rasterized at 150 dpi.
+
+### Exhibit 3
+
+The title is unchanged. The layout follows `images/2.png`: row labels on the left, one compact row per layer, and a narrow controls column on the right. The rows are:
+- **Who builds:** client engineers, code-curious portfolio managers, data analysts, Excel users building reports.
+- **BlackRock's applications:** about 100, such as Explore, Dashboard and Risk Radar, with Aladdin Copilot inside them. Each Copilot tool matches an Aladdin API already in production.
+- **Aladdin Studio:** one yellow band, "the developer and data layer; its parts are in Exhibit 4".
+- **Shared services and data:** portfolio management, trading, risk, compliance, operations and accounting, reached through the 11 public API domains.
+- **Hosting:** Microsoft Azure today, and a hatched "AWS option, announced" box. I added this row so that the requested key line refers to something in the drawing.
+- **Outside inputs:** the client's own and third-party data, loaded into Data Cloud or through the Data eXchange, and vendor data such as prices and ESG research.
+
+The side column is titled "Controls built into the APIs" and uses Exhibit 14's wording. It spans the rows from the applications to hosting.
+
+The note opens with "For illustrative purposes only." and the key line "Every box is named in the sources below; the AWS option is announced, not live." It keeps all 16 current Exhibit 3 citations.
+
+### Exhibit 4
+
+The title is now "Studio, grouped here into six pieces, and the parts of a client's Studio named in the SDK files". It has two groups.
+
+**(1) What Studio offers:** six tiles inside a yellow frame.
+- **APIs (Aladdin Graph):** read and write Aladdin data. Every public specification's id starts `agraph.<domain>`.
+- **Event-driven workflows:** Aladdin tells a program when something happens. No event specification is public.
+- **Aladdin Data Cloud:** a managed data store on Snowflake, with Fivetran moving the data.
+- **Aladdin Compute:** hosted, ready-to-use Python environments.
+- **Aladdin SDK:** open-source Python library for login, retries and rate limits. BlackRock's plugin builder generates its 11 plugin packages from the specifications.
+- **Developer Portal and Data Dictionary:** catalog, guides, field dictionary, notebooks and samples, behind a client login.
+
+A line under the tiles reads: "The APIs page also links Aladdin Tools for Excel and the Aladdin Data eXchange".
+
+**(2) Inside a client's Studio workspace, as the public SDK files name it:** a grey two-column list. Each line was checked against `scratchpad/readme.md`, which is identical to the README copy used by the fact check, and against the AdcDatasetAPI specification.
+
+| Line | Quote from the file |
+|---|---|
+| Projects: personal or shared; OAuth applications and storage are set up under one | README: "creating a OAuth application under a Project"; "Create a Storage integration on Studio UI under a personal / shared project" |
+| Studio Compute: sessions where SDK code can run, as an alternative to a developer's local machine | README: "AladdinSDK can run on a developer's local machine or in Aladdin Studio Compute sessions" |
+| S3 storage integration: file storage set up in a Studio Project, its bucket assigned to a user or project | README: "To be sourced from S3 Storage Integration in a Studio Project"; "Name of Bucket assigned to user/project workspace" |
+| API tokens and API applications: sign-in details for programs, a token or an OAuth client ID and secret | README: "API Token registered via Studio UI. Required only for Basic Auth"; "Client ID and Secret can be sourced from Studio UI by creating a OAuth application" |
+| Studio notifications: email or push alerts to a user, a Project or a Space | README: "send SMPT/Push notifications using the Studio Subscription and Notification APIs"; entity types USER / PROJECT / SPACE |
+| Studio UI: Studio's screens, where tokens, applications and storage are set up | README lines 89, 258 and 432, quoted above |
+| ADC Admin Center: Studio's screen for managing Data Cloud datasets | AdcDatasetAPI: "Manages Datasets in Aladdin Data Cloud (ADC). Used by Studio's ADC Admin Center." |
+
+These lines make no "hosted workspace" inference, and there is no Space box: Space appears only as an alert target. The README says "push", not "in-app", so the notifications line says "push".
+
+The note keeps all 13 current Exhibit 4 citations: the Studio and APIs pages, the specifications, the README, Naik and Kalish, the plugin builder, Woodhead, Goel, the Aladdin Risk page, the job posting, Fivetran, Snowflake's partner page and the developer portal. It also keeps "BlackRock gives no count", "does not link them" and the portal behind a client login.
+
+### Current Exhibit 4 details no longer in Variant D
+
+- "Aladdin Graph is the whole API layer, not one API"
+- Woodhead naming "APIs events" as one part (the quote)
+- Goel's "every single transaction ... via an event, via an API" (still in Exhibits 6 and 7)
+- Goel's "within 15 minutes" Data Cloud latency (still in Exhibit 6)
+- Compute as "a hosted analytics platform" (now "Hosted, ready-to-use Python environments")
+- SDK pagination and long-running operations (only login, retries and rate limits remain)
+- "one per API domain" for the add-on packages
+- "API catalog" and "code samples" shortened to "catalog" and "samples"
+- The job posting's name "Aladdin Studio Developer Portal"
+- The note's "Its APIs page also links ADX and ATX, which Exhibit 3 shows". It became a line inside Exhibit 4, because Exhibit 3 no longer shows them.
+
+### Page fit
+
+- 20 pages.
+- Exhibits 3 and 4 are both whole on page 5, and Exhibit 5 is on page 6.
+- Part 2, 3 and 4 start on pages 8, 13 and 14, matching the cover.
+- Text differs from v17 only on page 5. Pages 18 to 20, the register, change only because three entries were renumbered.
+- No em-dashes, no "suggested", and none of the removed claims appear in either exhibit.
