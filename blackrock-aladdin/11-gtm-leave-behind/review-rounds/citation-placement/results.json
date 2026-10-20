@@ -1,0 +1,1818 @@
+{
+ "c001": {
+  "uid": "c001",
+  "page": "2",
+  "verdict": "RIGHT",
+  "per_source": "1: SUPPORTS",
+  "evidence": "Woodhead, YouTube Me_H_-E6lSg 4:39-5:21: \"It exposes everything Aladdin knows how to do as a set of APIs events. The Aladdin data cloud built on top of Snowflake ... And increasingly we're building a set of developer tools. ... So the third pillar of studio\"",
+  "fix": "None. 'Developer and data layer' is a fair paraphrase and is not presented as a quote."
+ },
+ "c002": {
+  "uid": "c002",
+  "page": "2",
+  "verdict": "RIGHT",
+  "per_source": "2: SUPPORTS; 3: SUPPORTS; 4: SUPPORTS; 5: PARTLY (Snowflake is a data platform, not a data provider)",
+  "evidence": "LSEG: \"LSEG's MCP server ... ensures secure, seamless access to LSEG's licensed AI-ready content.\" FactSet: \"enabling AI systems to reason over trusted FactSet data without intermediaries\". MSCI (Feb 24, 2026): \"now offering clients AI connectivity to engage MSCI's proprietary data\". Snowflake: \"lets AI agents securely retrieve data from Snowflake accounts\"",
+  "fix": "Optional: 'data providers and platforms'."
+ },
+ "c003": {
+  "uid": "c003",
+  "page": "2",
+  "verdict": "RIGHT",
+  "per_source": "6: SUPPORTS for post orders, assign compliance rules, per-API access and compliance by default; PARTLY for 'to read or to write' (35 of 54 specs split the scope into :read and :write; 19 grant a single scope 'to all endpoints' of the API)",
+  "evidence": "OrderAPI: \"Filter, post or cancel orders.\"; scopes \"trading.order_management.order.v1.Order:read\": \"non-sensitive read\" / \":write\": \"non-sensitive write\"; runCompliance: \"Default is true to run compliance on this post order request.\"; ComplianceRuleAssignmentAPI: \"Rule assignment assigns compliance rules for portfolio.\"; BrokerAPI scope: \"This grants access to all endpoints in the ... Broker API\"",
+  "fix": "The citation is correct. Optional wording: 'Access is granted per API, often split into read and write'."
+ },
+ "c004": {
+  "uid": "c004",
+  "page": "2",
+  "verdict": "RIGHT",
+  "per_source": "7: SUPPORTS (SimCorp); 8: SUPPORTS (Clearwater)",
+  "evidence": "SimCorp, Apr 22, 2026: \"today announced Agent Launchpad, an agentic AI ecosystem that allows investment managers to employ agents from SimCorp and curated partners\". Clearwater, Nov 5, 2025 (cwan.com copy of the release; Business Wire returned 403): \"The platform currently supports 800+ AI agents created by Clearwater clients and internal teams, plus 20 highly trained domain-specific agents.\"",
+  "fix": "None. The numbers are already in ascending order."
+ },
+ "c005": {
+  "uid": "c005",
+  "page": "2",
+  "verdict": "RIGHT",
+  "per_source": "9: SUPPORTS",
+  "evidence": "Rosales (local transcript part1 16_...md:14,20; ts [02:34], [04:31]-[04:39]): \"The Aladdin Co-Pilot application is currently embedded across all of those 100 front-end applications\"; \"we come to define a tool as kind of mapping one-to-one to an existing Aladdin API already out in production\"",
+  "fix": "None. Optional: add about 2:34 to the 'Quoted at' list of register entry 9."
+ },
+ "c006": {
+  "uid": "c006",
+  "page": "2",
+  "verdict": "RIGHT",
+  "per_source": "10: SUPPORTS 'Buyers say AI is changing what they build' and adds nothing to the 17x figure; 11: SUPPORTS the 17x clause",
+  "evidence": "10 (captions 24:31-24:44): \"the most common answer was AI and data demands at 42%\". 11, slide 23: \"Metric Increase by 2030 ... BlackRock + Aladdin ... API Calls (#) 17x\"",
+  "fix": "None needed. Optional: move 10 to sit after 'build' so each clause has its own source. Note that 17x is a forward-looking estimate."
+ },
+ "c007": {
+  "uid": "c007",
+  "page": "3",
+  "verdict": "RIGHT",
+  "per_source": "9: SUPPORTS",
+  "evidence": "Transcript 16_...md:10-14: \"My name is Brennan Rosales, and I am an AI engineering lead at BlackRock\"; \"BlackRock is the biggest user of Aladdin, but we also sell and support hundreds of clients globally across 70 countries\"; \"around 7,000 people, with over 4,000 of those being engineers\"; \"the around 100 Aladdin front-end applications\". Video title '... | LangChain Interrupt', publishDate 2025-06-12",
+  "fix": "None."
+ },
+ "c008": {
+  "uid": "c008",
+  "page": "3",
+  "verdict": "RIGHT",
+  "per_source": "12: SUPPORTS",
+  "evidence": "10-K FY2025: \"Technology services and subscription revenue of $2.0 billion was up 24% year-over-year.\" / \"approximately $210 million of revenue related to the Preqin Transaction\" / \"On March 3, 2025, BlackRock completed the acquisition of 100% of the shares of Preqin, a leading provider of private markets data\"",
+  "fix": "None."
+ },
+ "c009": {
+  "uid": "c009",
+  "page": "3",
+  "verdict": "RIGHT",
+  "per_source": "13: SUPPORTS",
+  "evidence": "Press release 5 Feb 2026 (fetched live): \"BlackRock Aladdin\u00ae\u2014inclusive of the Aladdin platform, eFront\u00ae, Aladdin Wealth\u2122, and Preqin\u2014empowers institutional investors to make more informed decisions by providing a common data language across the whole portfolio.\" The word 'Platforms' comes from the site navigation only.",
+  "fix": "None."
+ },
+ "c010": {
+  "uid": "c010",
+  "page": "3",
+  "verdict": "RIGHT",
+  "per_source": "14: SUPPORTS",
+  "evidence": "Studio page: \"Whether you're a professional engineer building new workflow applications, a code-curious portfolio manager ... or a data analyst automating reporting, Aladdin Studio gives you the data, tools, and governance support\"; \"Start building in minutes with developer guides, code snippets\"",
+  "fix": "None."
+ },
+ "c011": {
+  "uid": "c011",
+  "page": "3",
+  "verdict": "RIGHT",
+  "per_source": "15: SUPPORTS",
+  "evidence": "Whole Portfolio page (fetched 2026-10-20): \"Streamline front-to-back workflows with a unified IBOR for public and private assets.\" / \"Whole Portfolio by Aladdin was the industry's first end-to-end solution for managing public and private assets on a single platform.\"",
+  "fix": "None."
+ },
+ "c012": {
+  "uid": "c012",
+  "page": "3",
+  "verdict": "RIGHT",
+  "per_source": "9: SUPPORTS",
+  "evidence": "Source 9 captions [01:31]-[01:41] (fc/yt_b009r_cap.xml): \"BlackRock is the biggest user of Aladdin, but we also sell and support hundreds of clients globally across 70 countries, all using the Aladdin platform.\"",
+  "fix": "None."
+ },
+ "c013": {
+  "uid": "c013",
+  "page": "3",
+  "verdict": "MISSING",
+  "per_source": "16: PARTLY (backs risk analytics, advisors, October 2025 launch, Morgan Stanley first to implement; does not back 'proposals')",
+  "evidence": "16 (fetched): \"NEW YORK \u2013 2 October 2025\"; \"the Aladdin Wealth platform's robust data and risk analytics\"; \"Morgan Stanley's proprietary Portfolio Risk Platform ... will be the first to implement\". The word 'proposal' does not appear in 16. The Aladdin Wealth product page (/aladdin/platforms/solutions/aladdin-wealth, not in the register) says: \"Flexible Proposal Generation ... enable advisors to deliver impactful presentations, proposals, and portfolio outcomes\".",
+  "fix": "No register entry backs 'proposals'. Add the Aladdin Wealth product page to the register and cite it after 'for advisors', or change the wording to 'Portfolio risk analytics for advisors', which 16 covers."
+ },
+ "c014": {
+  "uid": "c014",
+  "page": "3",
+  "verdict": "RIGHT",
+  "per_source": "17: SUPPORTS",
+  "evidence": "eFront Insight page (fetched): \"Due diligence. Manager selection. Portfolio monitoring. Now all connected\"; \"Gain clarity on cash flows and commitment pacing\"; \"supports the full investment lifecycle, from opportunity evaluation through ongoing performance and risk oversight and reporting\"; \"With Preqin\u00ae inside, eFront\u00ae Insight makes private markets investing more seamless\".",
+  "fix": "None. The page says 'private markets', not 'private-fund'. That is a wording difference only."
+ },
+ "c015": {
+  "uid": "c015",
+  "page": "3",
+  "verdict": "RIGHT",
+  "per_source": "18: SUPPORTS",
+  "evidence": "Preqin release (fetched): \"May 06, 2026 Preqin expands private credit data across closed end, BDC and semi liquid vehicles, adds analytics and research products ... London, 6 May 2026\".",
+  "fix": "None."
+ },
+ "c016": {
+  "uid": "c016",
+  "page": "3",
+  "verdict": "RIGHT",
+  "per_source": "1: SUPPORTS",
+  "evidence": "Woodhead, source 1 (YouTube auto-captions, local copy yt/transcripts/01_From_Analytics_To_Intelligence...md, about 4:36-4:58): \"Aladdin Studio is essentially the user experience that allows people to think of Aladdin as a platform. It exposes everything Aladdin knows how to do as a set of APIs events. The Aladdin data cloud built on top of Snowflake ... And increasingly we're building a set of developer tools.\"",
+  "fix": "None."
+ },
+ "c017": {
+  "uid": "c017",
+  "page": "3",
+  "verdict": "RIGHT",
+  "per_source": "14: SUPPORTS",
+  "evidence": "Studio page (fetched): \"Empowering unique outcomes via our API-first approach\"; \"Whether you're a professional engineer building new workflow applications, a code-curious portfolio manager extracting investment insights, or a data analyst automating reporting\".",
+  "fix": "None."
+ },
+ "c018": {
+  "uid": "c018",
+  "page": "3",
+  "verdict": "MISSING",
+  "per_source": "19: PARTLY (backs 'sold as an add-on to Aladdin Enterprise' and the Snowflake link; does not back 'managed data service ... puts Aladdin and outside data in one place')",
+  "evidence": "19 (TradingView Reuters copy, fetched): \"Aladdin Enterprise (US-hosted only) Accounting (Enterprise add-on) ADC (Enterprise add-on)\"; \"For clients using Aladdin Data Cloud (ADC), will Snowflake be co-located...\". Register 23, the ADC product page (fetched): \"Store and access your Aladdin & non-Aladdin data on a single platform\"; \"powered by Snowflake's cloud-native technology\"; \"a managed investment data pipeline\".",
+  "fix": "Add 23 after 'in one place'. Source 14 would also work: \"managed data-as-a-service ... Aladdin and non-Aladdin data on a single platform\". Keep 19 on the add-on sentence."
+ },
+ "c019": {
+  "uid": "c019",
+  "page": "3",
+  "verdict": "RIGHT",
+  "per_source": "20: SUPPORTS",
+  "evidence": "Podcast page (fetched): \"Richard Newman, General Manager, Aladdin Studio\"; transcript: \"Aladdin data cloud specifically comes in, which is part of Studio\".",
+  "fix": "None."
+ },
+ "c020": {
+  "uid": "c020",
+  "page": "3",
+  "verdict": "RIGHT",
+  "per_source": "21: SUPPORTS",
+  "evidence": "Copilot page (fetched): \"Introducing Aladdin\u00ae Copilot, now available to all Aladdin clients. Through generative AI ... surfacing answers instantly\"; \"Will not give investment advice or respond to questions outside Aladdin platform boundaries\".",
+  "fix": "None. 'Chat assistant' is a paraphrase; the page says it answers questions."
+ },
+ "c031": {
+  "uid": "c031",
+  "page": "4",
+  "verdict": "RIGHT",
+  "per_source": "6: SUPPORTS",
+  "evidence": "OrderAPI:17 \"x-aladdin-api-stability\": \"stable\"; v1PostOrderConfig has \"whatIf\" (\"True to post orders in a what-if mode\") and \"runCompliance\"; :2196 \"Aladdin order status. Examples: \\\"Open\\\", \\\"Compl Pending\\\", \\\"Authorized\\\", \\\"Active\\\", \\\"Expired\\\", \\\"Rejected\\\", \\\"Canceled\\\", \\\"Booked\\\".\"",
+  "fix": "None. The document lists 5 of the 8 example statuses (it leaves out Expired, Rejected and Canceled), which is fine."
+ },
+ "c032": {
+  "uid": "c032",
+  "page": "4",
+  "verdict": "RIGHT",
+  "per_source": "6: SUPPORTS",
+  "evidence": "OrderAPI runCompliance: \"Default is true to run compliance on this post order request.\"; ViolationAPI Violation has violationOwner; resolutionComment: \"The current resolution comment for the violation which has been populated by a user.\"; violationDisposition: \"This will be populated for closed violations\".",
+  "fix": "None"
+ },
+ "c033": {
+  "uid": "c033",
+  "page": "4",
+  "verdict": "RIGHT",
+  "per_source": "6: SUPPORTS",
+  "evidence": "ComplianceRuleAPI:13 \"Compliance Rules are used to automatically monitor whether a fund adheres to a regulation, client mandate, or internal guideline.\"; LevelAPI:327 \"A unique name for a rule in Aladdin Compliance.\"",
+  "fix": "None"
+ },
+ "c034": {
+  "uid": "c034",
+  "page": "4",
+  "verdict": "RIGHT",
+  "per_source": "6: SUPPORTS",
+  "evidence": "ComplianceRuleAPI and ViolationAPI: \"x-aladdin-api-stability\": \"alpha\"; ViolationAPI:824 \"Violation describes the intraday and overnight violation generated at time of the compliance breach\"; OrderAPI complianceTimeout: \"If the non-zero time is reached and the run is not complete, orders will be posted with the \\\"Compl Pending\\\" status set\".",
+  "fix": "None. The timeout sentence comes from the Order spec, not the compliance specs. Source 6 covers both."
+ },
+ "c035": {
+  "uid": "c035",
+  "page": "4",
+  "verdict": "RIGHT",
+  "per_source": "6: SUPPORTS",
+  "evidence": "BrokerConfirmRoutingAPI:1363 \"After a trade is booked in Aladdin, it needs to be confirmed with broker.\" The spec is in asdk_plugin_investment_operations (api-id agraph.investment_operations.reference_data.broker). OrderAPI:13 \"a directive from a portfolio manager to the trading desk\".",
+  "fix": "None"
+ },
+ "c036": {
+  "uid": "c036",
+  "page": "4",
+  "verdict": "RIGHT",
+  "per_source": "24: SUPPORTS",
+  "evidence": "BLQ accounting video (dwu7l6as21h3p.cloudfront.net/blq_accounting-232): the 0:35 lower-third reads \"DAVID SCHNEID, CFA / HEAD OF PRODUCT MANAGEMENT FOR ALADDIN ACCOUNTING\". At 1:21.8-1:33.0 Schneid says \"what we've built is a process where you can go from that first order through the trade, through all the operation protocols into accounting without lifting up the pencil\" (fc p04-19, p04-41). This matches the register's \"Quoted at ... 1:23\".",
+  "fix": "None"
+ },
+ "c037": {
+  "uid": "c037",
+  "page": "4",
+  "verdict": "RIGHT",
+  "per_source": "6: SUPPORTS",
+  "evidence": "TradeAPI v2 is alpha. v2BlockTrade \"trades\": \"The trades contained in this BlockTrade\", and each v2Trade has portfolioReference (\"Portfolio reference - cannot be null\"). confirmedWith: \"Trade confirmed with - external party which confirms the trade\"; confirmedBy: \"Trade confirmed by initials\". BrokerConfirmRouting \"describes instructions for delivering trade information to a broker desk.\"",
+  "fix": "None"
+ },
+ "c038": {
+  "uid": "c038",
+  "page": "4",
+  "verdict": "RIGHT",
+  "per_source": "20: SUPPORTS (quote and title). The gloss 'investment team, whose live book is the IBOR' is the document's own wording.",
+  "evidence": "Fresh fetch of blackrock.com/.../snowflake-podcast-data-the-key-ingredient: \"Richard Newman, General Manager, Aladdin Studio, discuss the\"; transcript: \"It does start with IBOR. This other IP we have here at Aladdin\".",
+  "fix": "None. 'Investment book of record' is the standard expansion, and source 26 in the next cell spells it out."
+ },
+ "c039": {
+  "uid": "c039",
+  "page": "4",
+  "verdict": "RIGHT",
+  "per_source": "26: SUPPORTS",
+  "evidence": "Fresh fetch of the Fivetran blog: \"ADC offers a cloud-based data and analytics platform ... Users can access their Investment Books of Record (IBOR), Accounting Books of Record (ABOR) holdings and other market data\".",
+  "fix": "None"
+ },
+ "c040": {
+  "uid": "c040",
+  "page": "4",
+  "verdict": "RIGHT",
+  "per_source": "6: SUPPORTS",
+  "evidence": "None of the 54 API names is a Position API. PortfolioToolkitAPI enumsPositionsSource: \"Describes source of positions.\" CollateralStatementAPI: \"Collateral positions details\" / positions \"Details of collateral positions\". ViolationAPI:883 \"Each violation is caused by one or more underlying positions.\"",
+  "fix": "None"
+ },
+ "c021": {
+  "uid": "c021",
+  "page": "3",
+  "verdict": "MISSING",
+  "per_source": "6: PARTLY (backs 'Its public APIs cover configuration, valuations, lots and composites' only; nothing in the specs says 'Investment accounting and performance')",
+  "evidence": "asdk_plugin_accounting 2.0.0b3 holds exactly AborLotAPI, CompositeMembershipAPI, PortfolioConfigurationAPI, ValuationsAPI. The words 'Investment accounting and performance' come from https://www.blackrock.com/aladdin/platforms/products/aladdin-accounting: \"Powerful investment accounting and performance solutions, integrated in a unified tech ecosystem.\" That page is not in the register, and the Exhibit 1 source line does not list it.",
+  "fix": "Add the Aladdin Accounting product page to the register. Cite it after 'performance', or add it to the source line's 'BlackRock product pages'. Keep 6 on the second sentence."
+ },
+ "c022": {
+  "uid": "c022",
+  "page": "3",
+  "verdict": "RIGHT",
+  "per_source": "22: SUPPORTS",
+  "evidence": "iShares V plc prospectus p.204: \"Custodial and fund administration service providers may use Provider Aladdin, a form of Aladdin software, to access data used by the Investment Manager and the Manager. Each service provider remunerates BlackRock Group for the use of Provider Aladdin.\"",
+  "fix": "None. Optional: the Aladdin Provider product page ('connects asset managers and asset servicers through a single platform') would back 'to a client's Aladdin' more directly, but it is not in the register."
+ },
+ "c023": {
+  "uid": "c023",
+  "page": "3",
+  "verdict": "RIGHT",
+  "per_source": "14: SUPPORTS (Studio row); 15: SUPPORTS (Aladdin row); 17: SUPPORTS (eFront row); 21: SUPPORTS (Copilot row); 23: SUPPORTS (Data Cloud row, first sentence, which has no in-cell cite)",
+  "evidence": "14: \"API-first approach\" / \"a professional engineer building new workflow applications, a code-curious portfolio manager extracting investment insights, or a data analyst automating reporting\"; 15: \"the industry's first end-to-end solution for managing public and private assets on a single platform\"; 17: \"With Preqin(R) inside, eFront(R) Insight makes private markets investing more seamless\"; 21: \"now available to all Aladdin clients\" / \"Will not give investment advice\"; 23: \"powered by Snowflake's cloud-native technology\" / \"Store and access your Aladdin & non-Aladdin data on a single platform\" (all live, fetched 2026-10-20)",
+  "fix": "None for the five listed. The list leaves out the Accounting product page (see c021). In-cell sources 9, 16, 18 and 20 are also not in the source line. Add them only if the line is meant to be complete."
+ },
+ "c024": {
+  "uid": "c024",
+  "page": "3",
+  "verdict": "RIGHT",
+  "per_source": "19: SUPPORTS",
+  "evidence": "Full release (TradingView/Reuters copy): \"Initially, AWS hosting will be available for: Aladdin Enterprise (US-hosted only) Accounting (Enterprise add-on) ADC (Enterprise add-on)\". This backs 'sold as an add-on to Aladdin Enterprise' in the Data Cloud row.",
+  "fix": "None"
+ },
+ "c025": {
+  "uid": "c025",
+  "page": "3",
+  "verdict": "RIGHT",
+  "per_source": "1: SUPPORTS",
+  "evidence": "Woodhead (Simplecast transcript / YouTube ~4:47-5:48): \"It exposes everything Aladdin knows how to do as a set of APIs events. The Aladdin Data Cloud built on top of Snowflake ... And increasingly we're building a set of developer tools\". This backs the Studio row 'APIs and events, Aladdin Data Cloud, and developer tools'.",
+  "fix": "None"
+ },
+ "c026": {
+  "uid": "c026",
+  "page": "3",
+  "verdict": "RIGHT",
+  "per_source": "22: SUPPORTS",
+  "evidence": "\"iShares V Public Limited Company Prospectus Dated 3 September 2026\"; \"Each service provider remunerates BlackRock Group for the use of Provider Aladdin.\"",
+  "fix": "None"
+ },
+ "c027": {
+  "uid": "c027",
+  "page": "3",
+  "verdict": "RIGHT",
+  "per_source": "6: SUPPORTS",
+  "evidence": "11 PyPI asdk-plugin-* 2.0.0b3 wheels; local unpack has 54 swagger.json, including the accounting APIs AborLotAPI, CompositeMembershipAPI, PortfolioConfigurationAPI and ValuationsAPI cited in the Accounting row.",
+  "fix": "None"
+ },
+ "c028": {
+  "uid": "c028",
+  "page": "4",
+  "verdict": "RIGHT",
+  "per_source": "6: SUPPORTS; 24: PARTLY (backs 'one trade through Aladdin' from order to accounting; does not back 'the 54 public specifications')",
+  "evidence": "6: OrderAPI, ComplianceRuleAPI, ViolationAPI, TradeAPI v2, BrokerConfirmRoutingAPI, AborLotAPI, ValuationsAPI among 54 swagger.json. 24 [01:23] (corpus blq_accounting ts.txt): \"what we've built is a process where you can go from that first order / through the trade, through all the operation protocols into accounting / without lifting up the pencil.\"",
+  "fix": "None. 24 adds the end-to-end framing, and placing it here keeps 24 first cited before 25 (step 1). Moving it would force renumbering."
+ },
+ "c029": {
+  "uid": "c029",
+  "page": "4",
+  "verdict": "RIGHT",
+  "per_source": "6: SUPPORTS",
+  "evidence": "asdk_plugin_trading 2.0.0b3 .../OrderAPI/swagger.json:13 and :2188: \"An order is a directive from a portfolio manager to the trading desk to execute a particular investment decision.\"",
+  "fix": "None"
+ },
+ "c030": {
+  "uid": "c030",
+  "page": "4",
+  "verdict": "RIGHT",
+  "per_source": "25: SUPPORTS",
+  "evidence": "YouTube auto-captions BahCi45_BTc 00:09:38 \"if you go to the new what if model\"; 00:10:21 \"modified column for any changes\"; 00:11:11 \"portfolio side by side\". Corpus yt_BahCi45_BTc ts.txt [09:34] \"If you go to the New What If model button\", [11:03] \"my original portfolio, and my new What If portfolio side by side\".",
+  "fix": "None. The register gives only 9:34, which covers the quoted words. 'Beside the original' paraphrases 11:03 and needs no timestamp."
+ },
+ "c041": {
+  "uid": "c041",
+  "page": "4",
+  "verdict": "RIGHT",
+  "per_source": "24: SUPPORTS",
+  "evidence": "BLQ accounting video (cloudfront blq_accounting-232). The 0:13 lower-third reads \"DANIEL SHANNON / HEAD OF OUTSOURCED PLATFORM SERVICES, BLACKROCK\". At 1:06 Shannon says \"We actually look at our jobs as we are data managers, more than anything else\" (fc p04-30, p04-41). The page blurb reads: \"The episode explores our role as 'data managers'\".",
+  "fix": "None. The local corpus ASR at 1:05 reads 'we are the managers', but two fresh transcriptions read 'data managers'."
+ },
+ "c042": {
+  "uid": "c042",
+  "page": "4",
+  "verdict": "RIGHT",
+  "per_source": "6: SUPPORTS",
+  "evidence": "PortfolioConfigurationAPI/swagger.json:13 \"Configurations API for Aladdin Accounting allows you to access accounting configuration attributes for process types that portfolios are setup on.\"",
+  "fix": "None"
+ },
+ "c043": {
+  "uid": "c043",
+  "page": "4",
+  "verdict": "RIGHT",
+  "per_source": "6: SUPPORTS",
+  "evidence": "AborLotAPI/swagger.json:17 \"x-aladdin-api-stability\": \"alpha\"; :284 \"AborLot describes the data of ABOR lots retrieved from the ledger_a_summary table.\"",
+  "fix": "None. The gloss 'the accounting book of record' is not in the spec, but it is a standard expansion and source 26 uses it."
+ },
+ "c044": {
+  "uid": "c044",
+  "page": "4",
+  "verdict": "RIGHT",
+  "per_source": "24: SUPPORTS",
+  "evidence": "Video 0:32-0:40: \"our clients are CFOs they are controllers they are heads of performance\" (fc/dl/r030/clip_transcript.txt:4-5). The 0:35 lower-third reads \"DAVID SCHNEID, CFA / HEAD OF PRODUCT MANAGEMENT FOR ALADDIN ACCOUNTING\" (fc p04-41).",
+  "fix": "None"
+ },
+ "c045": {
+  "uid": "c045",
+  "page": "4",
+  "verdict": "RIGHT",
+  "per_source": "6: SUPPORTS (the name comes from the PortfolioConfiguration spec, the exception list from the Valuations spec; both are source 6)",
+  "evidence": "PortfolioConfigurationAPI:13 \"Configurations API for Aladdin Accounting...\"; ValuationsAPI:242 path \"/valuations/{parent}/valuationExceptions\", :266 \"Gets a list of ValuationExceptions for a given valuation id\".",
+  "fix": "None for placement. Optional wording: 'has an exception list', because the list comes from a sub-endpoint and the record itself holds only an exception count."
+ },
+ "c046": {
+  "uid": "c046",
+  "page": "4",
+  "verdict": "RIGHT",
+  "per_source": "6: SUPPORTS",
+  "evidence": "ValuationsAPI/swagger.json:13 \"In an accounting workflow, valuations are generated for various processes at the portfolio/portfolio group level.\"; :17 \"x-aladdin-api-stability\": \"beta\"",
+  "fix": "None"
+ },
+ "c047": {
+  "uid": "c047",
+  "page": "4",
+  "verdict": "RIGHT",
+  "per_source": "6: SUPPORTS",
+  "evidence": "Every spec named in Exhibit 2 is in the asdk_plugin_* 2.0.0b3 wheels: OrderAPI, ComplianceRuleAPI, ViolationAPI, TradeAPI v2, BrokerConfirmRoutingAPI, PortfolioToolkitAPI, AborLotAPI, ValuationsAPI and PortfolioConfigurationAPI (fc p04-38).",
+  "fix": "None"
+ },
+ "c048": {
+  "uid": "c048",
+  "page": "4",
+  "verdict": "RIGHT",
+  "per_source": "20: SUPPORTS",
+  "evidence": "Covers step 4, 'It does start with IBOR' 20. Published transcript at blackrock.com/.../snowflake-podcast-data-the-key-ingredient: \"[RICHARD NEWMAN] ... What's our key? It does start with IBOR.\"",
+  "fix": "None"
+ },
+ "c049": {
+  "uid": "c049",
+  "page": "4",
+  "verdict": "RIGHT",
+  "per_source": "25: SUPPORTS",
+  "evidence": "Covers step 1, 'new what-if model' 25. YouTube BahCi45_BTc auto-captions at 9:36: \"if you go to the new what if model / button in the top right corner of / explore\"; at 11:05: \"my original portfolio and my new what if / portfolio side by side\".",
+  "fix": "None"
+ },
+ "c050": {
+  "uid": "c050",
+  "page": "4",
+  "verdict": "RIGHT",
+  "per_source": "24: SUPPORTS",
+  "evidence": "Covers steps 3, 5 and 6. The episode page blurb reads \"David Schneid and Daniel Shannon explore the importance of technology not only providing data but deriving actionable insights\".",
+  "fix": "None. Style note: the source note lists its sources in the order 6, 20, 25, 24, 26, each with its own superscript. This is not a citation cluster, but if ascending order is wanted, swap the last items: '...; Newman 20; the Aladdin Accounting episode with David Schneid and Daniel Shannon 24; the Explore training recording 25; Fivetran 26'."
+ },
+ "c051": {
+  "uid": "c051",
+  "page": "4",
+  "verdict": "RIGHT",
+  "per_source": "26: SUPPORTS",
+  "evidence": "Fivetran blog (Taylor Brown, Aug 28 2024): \"Users can access their Investment Books of Record (IBOR), Accounting Books of Record (ABOR) holdings and other market data\". This is the Fivetran quote in Exhibit 2, row 4.",
+  "fix": "None"
+ },
+ "c052": {
+  "uid": "c052",
+  "page": "5",
+  "verdict": "RIGHT",
+  "per_source": "9: SUPPORTS (checked in our local captions; YouTube shows a bot check)",
+  "evidence": "yt_oyqeCHFM5U4.m4a.ts.txt [02:32]-[02:41]: \"The Aladdin co-pilot application is currently embedded across all of those hundred front-end applications ... acts as the connective tissue across the Aladdin platform\"; [01:53] \"around 100 Aladdin front-end applications\". The ZenML write-up of the talk says the same.",
+  "fix": "None. Optional: add 2:35 to the \"Quoted at\" list in register entry 9. It lists 1:53 but not 2:35."
+ },
+ "c053": {
+  "uid": "c053",
+  "page": "5",
+  "verdict": "RIGHT",
+  "per_source": "1: SUPPORTS",
+  "evidence": "Auto-captions: 4:43 \"Aladdin Studio is essentially the user experience that allows people to think of Aladdin as a platform\"; 4:49 \"It exposes everything Aladdin knows how to do as a set of APIs events\"; 4:52-5:02 \"The Aladdin data cloud built on top of Snowflake takes all of that information ... and pushes that into Snowflake\".",
+  "fix": "None. 4:49 falls within the 4:43-5:02 passage that covers all three topics."
+ },
+ "c054": {
+  "uid": "c054",
+  "page": "5",
+  "verdict": "RIGHT",
+  "per_source": "6: SUPPORTS; 27: SUPPORTS",
+  "evidence": "SDK README lines 312-323: \"List of official AladdinSDK API plugins\", which lists the 11 domain names. Line 276: \"wraps over OpenAPI generated python client code based on Aladdin Graph API's swagger specifications\". The 54 swagger.json files use the hyphenated domain names in their paths, e.g. \"/api/investment-research/analyst/coverage/v1/\".",
+  "fix": "None"
+ },
+ "c055": {
+  "uid": "c055",
+  "page": "5",
+  "verdict": "RIGHT",
+  "per_source": "25: SUPPORTS (checked in our local captions)",
+  "evidence": "yt_BahCi45_BTc [09:34]: \"If you go to the New What If model button in the top right corner of Explore\"; [09:58]: \"allocation changes or weight changes in your portfolio at any level\"; [00:38]: \"search through any of the portfolios in your environment\".",
+  "fix": "None for the citation. Wording note: \"test trades\" in the Explore box paraphrases the what-if weight changes, and the earlier fact-check flagged it as a stretch."
+ },
+ "c056": {
+  "uid": "c056",
+  "page": "5",
+  "verdict": "RIGHT",
+  "per_source": "14: SUPPORTS (Studio box); 23: SUPPORTS (Data Cloud fed by Aladdin data); 28: SUPPORTS (APIs read/write); 29: SUPPORTS (Risk Radar, event-driven workflows); 30: SUPPORTS (Excel tools); 31: SUPPORTS (files in and out)",
+  "evidence": "14: \"Build on top of Aladdin\". 23: \"preloaded Aladdin data that is normalized & mapped on ingestion\". 28 (fetched today): \"Retrieve, write, and modify data from across the Aladdin ecosystem\". 29 (fetched today): \"Risk Radar helps teams detect, analyze, and resolve risk issues\" and \"Aladdin Studio, APIs, and event-driven workflows\". 30: \"an Excel plugin that enables users to retrieve Aladdin data\". 31: \"automated data transfer to and from Aladdin\".",
+  "fix": "None. The page names are listed in a different order from the ascending numbers, which does no harm."
+ },
+ "c057": {
+  "uid": "c057",
+  "page": "5",
+  "verdict": "RIGHT",
+  "per_source": "32: SUPPORTS",
+  "evidence": "BlackRock press release, Feb 22 2021: \"Each Aladdin Data Cloud client receives an independent, centrally-managed data store pre-loaded with rich front-to-back Aladdin data sets\". This backs \"Snowflake, this client's own\".",
+  "fix": "None"
+ },
+ "c058": {
+  "uid": "c058",
+  "page": "5",
+  "verdict": "RIGHT",
+  "per_source": "19: SUPPORTS (AWS option, H2 2026); 33: SUPPORTS (Azure today)",
+  "evidence": "33: \"Today, all BlackRock's technology platform clients and services are hosted in the Azure cloud\". 19: \"General availability for Aladdin Enterprise clients hosted in the United States is expected in the second half of 2026.\"",
+  "fix": "None for the citation. Content note: we are now in H2 2026, and the earlier fact-check found no announcement of general availability as of 2026-10-20, so the hatched \"announced\" box still holds."
+ },
+ "c059": {
+  "uid": "c059",
+  "page": "5",
+  "verdict": "RIGHT",
+  "per_source": "34: SUPPORTS (prices); 35: SUPPORTS (ESG data)",
+  "evidence": "34: \"ICE Data Services' Continuous Evaluated Pricing (CEP) has been integrated into BlackRock Solutions' Aladdin\". 35: the Sustainalytics platforms page lists \"Aladdin\" under \"Institutional Investor Platforms\".",
+  "fix": "None"
+ },
+ "c060": {
+  "uid": "c060",
+  "page": "5",
+  "verdict": "RIGHT",
+  "per_source": "27: SUPPORTS (the name Aladdin Graph); 36: SUPPORTS (the name Aladdin Graph). Neither literally says \"read and write\".",
+  "evidence": "27, line 276: \"based on Aladdin Graph API's swagger specifications\". 36 (web.archive copy): \"interact with curated Aladdin Graph APIs and ADC datasets\". \"Read and write\" is backed by source 28, the APIs page (\"Retrieve, write, and modify data from across the Aladdin ecosystem\"), which the Exhibit 4 source note cites.",
+  "fix": "None needed. Optional: add 28 after \"read and write Aladdin data.\""
+ },
+ "c061": {
+  "uid": "c061",
+  "page": "5",
+  "verdict": "RIGHT",
+  "per_source": "6: SUPPORTS",
+  "evidence": "Local asdk_plugin_* 2.0.0b3: 54 distinct x-aladdin-spec-id values, 0 not starting 'agraph.' (e.g. 'agraph.accounting.transactions.abor_lot.v1.AborLotAPI'). OrderAPI swagger: 'postOrder is the agreed naming with Aladdin Graph team.' The 'whole API layer' clause is inferred from all 54 specs across 11 domains carrying the agraph prefix; 27/36, cited just before, also name 'Aladdin Graph' APIs.",
+  "fix": "None"
+ },
+ "c062": {
+  "uid": "c062",
+  "page": "5",
+  "verdict": "RIGHT",
+  "per_source": "29: PARTLY (names 'event-driven workflows' as a capability, does not describe notifying a program); 37: SUPPORTS",
+  "evidence": "29 Aladdin Risk page (fetched 2026-10-20): 'Aladdin supports this through concrete capabilities such as Aladdin Studio, APIs, and event-driven workflows, enabling clients to connect Aladdin data and analytics with their own applications'. 37 job posting: 'Document event-driven workflows, including streaming APIs, webhook subscriptions, and real-time data integration patterns'; 'event publishing/subscription models'.",
+  "fix": "None"
+ },
+ "c063": {
+  "uid": "c063",
+  "page": "5",
+  "verdict": "RIGHT",
+  "per_source": "1: SUPPORTS",
+  "evidence": "YouTube Me_H_-E6lSg auto-captions 4:49-4:52: 'exposes everything Aladdin knows how to / do as a set of APIs events.' Simplecast transcript [00:05:25] has the same words.",
+  "fix": "None"
+ },
+ "c064": {
+  "uid": "c064",
+  "page": "5",
+  "verdict": "RIGHT",
+  "per_source": "38: SUPPORTS",
+  "evidence": "Webinar replay 28:52-29:04: 'So every single transaction that happens should be available and accessible to you via an event, via an API.' Self-intro: 'Global Head of Data from Aladdin'.",
+  "fix": "None"
+ },
+ "c065": {
+  "uid": "c065",
+  "page": "5",
+  "verdict": "MISSING",
+  "per_source": "38: PARTLY (backs 'within 15 minutes' and, loosely, Snowflake; does not say 'managed' and never mentions Fivetran)",
+  "evidence": "38 at 29:37: 'ADC ... through one single source within 15 minutes of latency'. The full transcript has no 'Fivetran'. 26 Fivetran blog (fetched): 'ADC is supported by Fivetran for data movement and Snowflake as its cloud data platform.' 14 Studio page (fetched): 'Aladdin Data Cloud (ADC) is a managed data-as-a-service offering that brings together Aladdin ... with Snowflake's data platform'.",
+  "fix": "Cite 14, 26 after the first sentence: '...with Fivetran moving the data 14, 26. Goel puts its latency at \"within 15 minutes\" 38.' Add Fivetran 26 to the Exhibit 4 source note."
+ },
+ "c066": {
+  "uid": "c066",
+  "page": "5",
+  "verdict": "RIGHT",
+  "per_source": "39: SUPPORTS",
+  "evidence": "Snowflake partner page (archived 2024-09-09): 'Aladdin Compute \u2013 a hosted analytics platform with ready to use python environments and automation tools.'",
+  "fix": "None. Optional: the Exhibit 4 source note omits 37, 39 and 40."
+ },
+ "c067": {
+  "uid": "c067",
+  "page": "5",
+  "verdict": "RIGHT",
+  "per_source": "27: SUPPORTS",
+  "evidence": "aladdinsdk README L179: 'AladdinSDK can run on a developer's local machine or in Aladdin Studio Compute sessions.' (ASDK_RUN_MODE local/compute/test)",
+  "fix": "None"
+ },
+ "c068": {
+  "uid": "c068",
+  "page": "5",
+  "verdict": "RIGHT",
+  "per_source": "27: SUPPORTS",
+  "evidence": "README: 'Authentication: Using Basic Auth or OAuth ... Retry mechanism - Rate limiting per API endpoint ... LRO Utilities to trigger and poll Long Running Operation endpoint calls'; L128 pagination config; LICENSE 'Apache License Version 2.0'.",
+  "fix": "None"
+ },
+ "c069": {
+  "uid": "c069",
+  "page": "5",
+  "verdict": "RIGHT",
+  "per_source": "40: SUPPORTS",
+  "evidence": "plugin-builder README: 'This project builds API bundle plugins for AladdinSDK using swagger specifications.' / 'These are essentially API bundles created at domain level.'; 11 asdk_plugin_* sections.",
+  "fix": "None"
+ },
+ "c070": {
+  "uid": "c070",
+  "page": "5",
+  "verdict": "RIGHT",
+  "per_source": "28: SUPPORTS",
+  "evidence": "APIs page (fetched 2026-10-20): 'Dozens of Aladdin APIs available'; 'Learn about our API framework'; 'Download Python Jupyter Notebooks, or cut and paste code samples'; 'Our Data Dictionary allows you to explore Aladdin data and search for the field definitions you need.'",
+  "fix": "None. 'catalog' paraphrases 'Dozens of Aladdin APIs available'."
+ },
+ "c071": {
+  "uid": "c071",
+  "page": "5",
+  "verdict": "RIGHT",
+  "per_source": "37: SUPPORTS",
+  "evidence": "builtinbristol.uk/job/technical-writer-aladdin-product-vice-president/7444888 (HTTP 200, 2026-10-20): \"Technical Writer, Vice President\"; \"Edinburgh\"; \"Continuously improve the discoverability and usability of content within the Aladdin Studio Developer Portal.\"",
+  "fix": "None"
+ },
+ "c072": {
+  "uid": "c072",
+  "page": "5",
+  "verdict": "RIGHT",
+  "per_source": "14: SUPPORTS; 28: SUPPORTS",
+  "evidence": "Studio page: \"Aladdin Data Cloud (ADC) is a managed data-as-a-service offering ... Snowflake\"; \"Start building in minutes with developer guides, code snippets, and convenient documentation.\" APIs page: \"Learn about our API framework\"; \"Download Python Jupyter Notebooks\"; \"Our Data Dictionary allows you to explore Aladdin data\"; \"Aladdin Compute\".",
+  "fix": "None. Optional: the note's source list leaves out 29, 36, 37, 39 and 40, which the rows cite. Each row carries its own citation, so nothing is left unsourced."
+ },
+ "c073": {
+  "uid": "c073",
+  "page": "5",
+  "verdict": "RIGHT",
+  "per_source": "6: SUPPORTS; 27: SUPPORTS",
+  "evidence": "Local unpack of the 11 asdk_plugin 2.0.0b3 wheels gives 54 swagger.json files, all \"swagger\": \"2.0\", with ids agraph.<domain>. README (27) backs the SDK and Compute rows: \"Aladdin Studio Compute sessions\".",
+  "fix": "None"
+ },
+ "c074": {
+  "uid": "c074",
+  "page": "5",
+  "verdict": "RIGHT",
+  "per_source": "1: SUPPORTS",
+  "evidence": "yt/transcripts/01_From_Analytics...md:24 (4:49): \"It exposes everything Aladdin knows how to do as a set of APIs events. The Aladdin data cloud built on top of Snowflake ... increasingly we're building a set of developer tools.\"",
+  "fix": "None"
+ },
+ "c075": {
+  "uid": "c075",
+  "page": "5",
+  "verdict": "RIGHT",
+  "per_source": "38: SUPPORTS",
+  "evidence": "timestamped/data_strat-asset_pens...ts.txt:164 [28:52]: \"every single transaction ... should be available and accessible to you via an event, via an API\"; :168 [29:37]: \"within 15 minutes of latency\".",
+  "fix": "None"
+ },
+ "c076": {
+  "uid": "c076",
+  "page": "5",
+  "verdict": "RIGHT",
+  "per_source": "28: SUPPORTS",
+  "evidence": "APIs page (fetched 2026-10-20): \"Additional Aladdin Studio resources / Aladdin Studio home / Aladdin Data Cloud / Aladdin Data eXchange (ADX) / Aladdin Compute / Aladdin Tools for Excel (ATX)\", with hrefs .../aladdin-data-exchange and .../aladdin-tools-for-excel. The page gives no count of Studio's parts; its only number is \"Dozens of Aladdin APIs\".",
+  "fix": "None"
+ },
+ "c077": {
+  "uid": "c077",
+  "page": "5",
+  "verdict": "RIGHT",
+  "per_source": "6: SUPPORTS",
+  "evidence": "All 54 of 54 specs are \"swagger\": \"2.0\" REST. A grep for asyncapi, webhook and \"callbacks\", and a search for *event* or *async* files across the 11 unpacked packages, return nothing.",
+  "fix": "None"
+ },
+ "c078": {
+  "uid": "c078",
+  "page": "5",
+  "verdict": "RIGHT",
+  "per_source": "28: SUPPORTS",
+  "evidence": "APIs page: \"Dozens of Aladdin APIs available\"; \"Learn about our API framework\"; \"Download Python Jupyter Notebooks, or cut and paste code samples ... from carefully curated API guides\"; \"Our Data Dictionary\". That section links only to the Studio, ADC, ADX, Compute and ATX pages; everywhere else it offers \"Sign In\" and \"Contact us to learn more\".",
+  "fix": "None"
+ },
+ "c079": {
+  "uid": "c079",
+  "page": "5",
+  "verdict": "RIGHT",
+  "per_source": "6: PARTLY (only 1 of 54 specs, UserAPI, carries the link, and it points to one \"Developer Guide\". The plurals \"the specifications\" and \"the guides\" go beyond what the source shows); 41: SUPPORTS",
+  "evidence": "unpacked/asdk_plugin_platform.../identity/user/v1/UserAPI/swagger.json: \"[Developer Guide]: apps/aladdin-developer-portal/#/guides/developer-guide\" (grep finds it in 1 file of 54). curl https://www.blackrock.com/apps/aladdin-developer-portal/ (2026-10-20): \"302 https://aladdin-login.blackrock.com/oauth2/v1/authorize?...\"",
+  "fix": "The citations are placed correctly. Optional wording fix: \"One specification links its developer guide to a portal behind a client login 6, 41.\""
+ },
+ "c080": {
+  "uid": "c080",
+  "page": "6",
+  "verdict": "RIGHT",
+  "per_source": "6: SUPPORTS",
+  "evidence": "The 11 *-2.0.0b3-py3-none-any wheels, unpacked, hold 54 swagger.json files, each \"swagger\": \"2.0\".",
+  "fix": "None"
+ },
+ "c091": {
+  "uid": "c091",
+  "page": "7",
+  "verdict": "RIGHT",
+  "per_source": "20: SUPPORTS",
+  "evidence": "Page: \"Never Done by Aladdin ... Richard Newman, General Manager, Aladdin Studio\"; BlackRock art19 RSS pubDate \"Wed, 08 Jan 2025\" (page meta publicationDate 16 Jan 2025; either way January 2025).",
+  "fix": "None"
+ },
+ "c092": {
+  "uid": "c092",
+  "page": "7",
+  "verdict": "RIGHT",
+  "per_source": "38: SUPPORTS",
+  "evidence": "Replay page \"Webinar: Data as a strategic asset for pensions\"; video file Last-Modified \"Thu, 24 Jul 2025\"; speaker self-intro [00:28] \"Global Head of Data from Aladdin\".",
+  "fix": "None"
+ },
+ "c093": {
+  "uid": "c093",
+  "page": "7",
+  "verdict": "RIGHT",
+  "per_source": "42: SUPPORTS",
+  "evidence": "WatersTechnology \"Best overall technology provider for 2023 winner's interview: BlackRock\", datePublished \"2024-02-08\".",
+  "fix": "Optional: the cell's hyperlink goes to the BlackRock hub page; the register's primary, dated URL is the WatersTechnology page."
+ },
+ "c094": {
+  "uid": "c094",
+  "page": "7",
+  "verdict": "RIGHT",
+  "per_source": "43: SUPPORTS",
+  "evidence": "Saved YouTube page for 3iXd7a7_F6g: publishDate \"2026-05-21\"; oEmbed author \"Snowflake Inc.\".",
+  "fix": "None"
+ },
+ "c095": {
+  "uid": "c095",
+  "page": "7",
+  "verdict": "RIGHT",
+  "per_source": "1: SUPPORTS for the Woodhead clause (Khara, Newman, Goel in the topic sentence are backed by 42, 20, 38 in the next three sentences)",
+  "evidence": "Woodhead [05:25-05:48]: \"It exposes everything Aladdin knows how to do as a set of APIs events. The Aladdin Data Cloud built on top of Snowflake ... And increasingly we're building a set of developer tools\".",
+  "fix": "None"
+ },
+ "c096": {
+  "uid": "c096",
+  "page": "7",
+  "verdict": "RIGHT",
+  "per_source": "20: SUPPORTS",
+  "evidence": "Live page: \"Aladdin data cloud specifically comes in, which is part of Studio\"; \"access those analytic APIs ... That's all part of the Studio umbrella\".",
+  "fix": "None"
+ },
+ "c097": {
+  "uid": "c097",
+  "page": "7",
+  "verdict": "RIGHT",
+  "per_source": "38: SUPPORTS (machine transcription only)",
+  "evidence": "[28:52] \"every single transaction that happens should be available and accessible to you via an event, via an API\"; [29:28] \"we actually want to give you a near real time data store\".",
+  "fix": "None"
+ },
+ "c098": {
+  "uid": "c098",
+  "page": "7",
+  "verdict": "RIGHT",
+  "per_source": "42: SUPPORTS (machine transcription only)",
+  "evidence": "[18:37-18:48] \"What we call the Aladdin studio estate ... more users are craving this ability to interact with our data, with their data, with reporting with dashboards on a programmatic basis at machine scale\".",
+  "fix": "None"
+ },
+ "c099": {
+  "uid": "c099",
+  "page": "7",
+  "verdict": "RIGHT",
+  "per_source": "44: SUPPORTS",
+  "evidence": "Live posting: \"Set and evolve the vision for Studio Developer as Aladdin's extensibility layer\"; datePosted \"2026-09-09\".",
+  "fix": "Optional clarity: write \"calls Studio Developer\" instead of \"calls it\", because the posting gives the label to Studio Developer, not to Studio as a whole."
+ },
+ "c100": {
+  "uid": "c100",
+  "page": "7",
+  "verdict": "RIGHT",
+  "per_source": "42: SUPPORTS (verbatim against the machine transcription)",
+  "evidence": "[18:42-18:48] \"more users are craving this ability to interact with our data, with their data, with reporting with dashboards on a programmatic basis at machine scale\".",
+  "fix": "None"
+ },
+ "c081": {
+  "uid": "c081",
+  "page": "6",
+  "verdict": "RIGHT",
+  "per_source": "6: SUPPORTS",
+  "evidence": "asdk_plugin_trading OrderAPI/swagger.json:3017-3028 \"whatIf\" (required); \"runCompliance\": \"Default is true to run compliance on this post order request.\"; :3065 \"complianceViolations\": \"Compliance violations triggered by posting this order.\"",
+  "fix": "None"
+ },
+ "c082": {
+  "uid": "c082",
+  "page": "6",
+  "verdict": "RIGHT",
+  "per_source": "6: SUPPORTS",
+  "evidence": "Script over the 54 unpacked swagger.json files: 10 specs carry a longrunningoperations/{id} (or longRunning...) path (OrderAPI, TradeAPI, AdcDatasetAPI, CollateralStatementAPI, RiskRuleAPI, RiskExceptionAPI, RiskWorkflowAPI, RiskCustomEvaluationMetricAPI, EvaluatorAnalyticsAPI, PortfolioConfigurationAPI); \"x-aladdin-lro\" occurs 35 times. OrderAPI:46 \"API to poll for the results of a long running operation.\"",
+  "fix": "None. The earlier misattribution to the SDK README is already fixed. Optional nuance: 35 includes the 10 polling endpoints."
+ },
+ "c083": {
+  "uid": "c083",
+  "page": "6",
+  "verdict": "RIGHT",
+  "per_source": "27: SUPPORTS",
+  "evidence": "raw.githubusercontent.com/blackrock/aladdinsdk/main/README.md:288 \"LRO Utilities to trigger and poll Long Running Operation endpoint calls\"; :118 \"Used for `call_lro_api` method to determine polling interval between status checks.\"",
+  "fix": "None"
+ },
+ "c084": {
+  "uid": "c084",
+  "page": "6",
+  "verdict": "RIGHT",
+  "per_source": "6: SUPPORTS (covers both sentences: bitemporal and four-eyes)",
+  "evidence": "AdcDatasetAPI/swagger.json:2623-2625 \"bitemporal\": {\"type\": \"boolean\", \"title\": \"Is dataset bitemporal\"}; RiskExceptionAPI validBeginDate \"The date on which the exception record is valid\" / entryTime \"The timestamp when the record entered the system\"; ComplianceRuleAssignmentAPI:1147 \"resolutionRequiresFourEyesApproval\"; AdcDatasetAPI:3400 \"STATE_REVIEW: In review state, dataset is ready for a 4-eyes check prior to release\"",
+  "fix": "None needed. One superscript covers both sentences, and both come from source 6. Wording nuance only: datasets carry a boolean bitemporal flag, and risk exceptions carry the two time fields."
+ },
+ "c085": {
+  "uid": "c085",
+  "page": "6",
+  "verdict": "RIGHT",
+  "per_source": "6: SUPPORTS",
+  "evidence": "All 54 specs: every security alternative is APIKeyHeader paired with one of OAuth2AccessCode / OAuth2ClientCredentials / ClientKeyHeader / basicAuth (355 operations each). OrderAPI:3305-3307 APIKeyHeader name \"VND.com.blackrock.API-Key\".",
+  "fix": "None"
+ },
+ "c086": {
+  "uid": "c086",
+  "page": "6",
+  "verdict": "RIGHT",
+  "per_source": "6: SUPPORTS",
+  "evidence": "asdk_plugin_trading OrderAPI/swagger.json:28 security OAuth2AccessCode: [\"trading.order_management.order.v1.Order:read\"]; the scope is defined in securityDefinitions",
+  "fix": "None. The earlier wrong cite (to the SDK README) is already corrected to 6."
+ },
+ "c087": {
+  "uid": "c087",
+  "page": "6",
+  "verdict": "RIGHT",
+  "per_source": "27: SUPPORTS",
+  "evidence": "aladdinsdk README:258 \"**Client ID** and **Secret** can be sourced from Studio UI by creating a OAuth application under a Project.\"",
+  "fix": "None"
+ },
+ "c088": {
+  "uid": "c088",
+  "page": "6",
+  "verdict": "RIGHT",
+  "per_source": "1: SUPPORTS (Woodhead defines Studio); 20: SUPPORTS (Newman, Data Cloud 'part of Studio'); 38: SUPPORTS for 'its parts' only (Goel: APIs, events, ADC; never says 'Studio'; corpus machine transcription); 42: SUPPORTS (Khara, 'Aladdin studio estate'; corpus transcription); 43: SUPPORTS for 'its parts' (Miller, Aladdin Data Cloud)",
+  "evidence": "20 blackrock.com transcript: \"Aladdin data cloud specifically comes in, which is part of Studio\"; 38 ts.txt:164 [28:52] \"available and accessible to you via an event, via an API\"; 42 [18:37] \"What we call the Aladdin studio estate\"; 43 [00:36] \"We sent flat files ... FTP and related transfers\" (Aladdin Data Cloud video); 1: \"Aladdin Studio is essentially the user experience that allows people to think of Aladdin as a platform\"",
+  "fix": "None. The five cites are exactly the five Exhibit 6 speakers, and 'describe Studio or its parts' covers Goel and Miller, who never say 'Studio'. 'About 125 recordings' is the author's own corpus count, and no register entry could support it. It needs no cite."
+ },
+ "c089": {
+  "uid": "c089",
+  "page": "6",
+  "verdict": "RIGHT",
+  "per_source": "1: SUPPORTS",
+  "evidence": "em360tech transcript of the episode: \"Dave Woodhead, Managing Director and Head of Engineering for Aladdin Studio at BlackRock\"; RSS feeds.simplecast.com/eoH3iEB8 \"<pubDate>Tue, 11 Nov 2025 10:00:00 +0000</pubDate>\", channel \"The Data Cloud Podcast\", itunes:author Snowflake",
+  "fix": "None"
+ },
+ "c090": {
+  "uid": "c090",
+  "page": "7",
+  "verdict": "RIGHT",
+  "per_source": "1: SUPPORTS",
+  "evidence": "RSS \"<pubDate>Tue, 11 Nov 2025 10:00:00 +0000</pubDate>\"; YouTube oEmbed for Me_H_-E6lSg \"author_name\":\"Snowflake Inc.\"",
+  "fix": "None"
+ },
+ "c101": {
+  "uid": "c101",
+  "page": "7",
+  "verdict": "RIGHT",
+  "per_source": "20: SUPPORTS",
+  "evidence": "Published transcript (blackrock.com snowflake-podcast-data-the-key-ingredient): \"where the data cloud and Aladdin data cloud specifically comes in, which is part of Studio\"; \"We're releasing soon the ability to actually access those analytic APIs ... That's all part of the Studio umbrella.\"",
+  "fix": "None"
+ },
+ "c102": {
+  "uid": "c102",
+  "page": "7",
+  "verdict": "RIGHT",
+  "per_source": "38: SUPPORTS (machine transcript of the replay)",
+  "evidence": "data_strat-asset_pens ts.txt:164 [28:52] \"So every single transaction that happens should be available and accessible to you via an event, via an API.\"; :167 [29:28] \"we actually want to give you a near real time data store\"; :140 [25:22] \"start exposing some of the software and application that we're building\"",
+  "fix": "None"
+ },
+ "c103": {
+  "uid": "c103",
+  "page": "7",
+  "verdict": "RIGHT",
+  "per_source": "1: SUPPORTS",
+  "evidence": "Simplecast transcript of the same episode [05:25]: \"It exposes everything Aladdin knows how to do as a set of APIs events. The Aladdin Data Cloud built on top of Snowflake ...\"; [05:48] \"we're building a set of developer tools\"",
+  "fix": "None (optional: capitalise 'Data Cloud' as in the published transcript)"
+ },
+ "c104": {
+  "uid": "c104",
+  "page": "7",
+  "verdict": "RIGHT",
+  "per_source": "1: SUPPORTS (Woodhead); 20: SUPPORTS (Newman); 38: SUPPORTS (Goel); 42: SUPPORTS (Khara)",
+  "evidence": "Each number matches one of the four Exhibit 7 rows, and the register entries name the same four speakers.",
+  "fix": "None"
+ },
+ "c105": {
+  "uid": "c105",
+  "page": "8",
+  "verdict": "RIGHT",
+  "per_source": "14: SUPPORTS",
+  "evidence": "Aladdin Studio product page: \"Whether you're a professional engineer building new workflow applications, a code-curious portfolio manager ...\". It names no client. The only firms named are Microsoft (in a podcast promo) and Snowflake (a partner).",
+  "fix": "None"
+ },
+ "c106": {
+  "uid": "c106",
+  "page": "8",
+  "verdict": "RIGHT",
+  "per_source": "45: SUPPORTS",
+  "evidence": "efts.sec.gov q=\"Aladdin Studio\": \"total\":{\"value\":0,\"relation\":\"eq\"}. Control search q=\"Aladdin\", CIK 19617, DEF 14A: 15 hits.",
+  "fix": "Optional: write \"mentions 'Aladdin Studio'\", since that is the phrase searched"
+ },
+ "c107": {
+  "uid": "c107",
+  "page": "8",
+  "verdict": "RIGHT",
+  "per_source": "46: PARTLY (backs the speaker, his role, the BlackRock venue and his credit for the Snowflake implementation; 'Aladdin's' is loose, because he credits RLAM's own Snowflake implementation, done as part of its Aladdin programme)",
+  "evidence": "Page: \"Hans Georgeson, CEO, Royal London Asset Management, shares his vision ... with Tarek Chouman\"; transcript [05:21] \"and the implementation of Snowflake that we did, [05:25] as part of the overall programme, has been really successful for us\"",
+  "fix": "The superscript is placed correctly. Reword to: \"credits the Snowflake implementation done as part of its Aladdin programme\""
+ },
+ "c108": {
+  "uid": "c108",
+  "page": "8",
+  "verdict": "RIGHT",
+  "per_source": "47: SUPPORTS (the 2017-2024 figures; the series runs through the 2026 proxy); 48: SUPPORTS ($25.6M for 2025)",
+  "evidence": "2018 proxy: \"approximately $4.4 million in 2017\"; 2023 proxy: \"$7.6 million in 2022\"; 2025 proxy: \"$14.7 million in 2024\"; jpm-20260402.htm: \"approximately $25.6 million in 2025 to access and utilize its Aladdin platform\"",
+  "fix": "None"
+ },
+ "c109": {
+  "uid": "c109",
+  "page": "8",
+  "verdict": "RIGHT",
+  "per_source": "47: SUPPORTS; 48: SUPPORTS",
+  "evidence": "EDGAR browse, CIK 19617, DEF 14A: filings from 2017-04-05 to 2026-04-06. The 2026 proxy (48) carries the 2025 figure.",
+  "fix": "None"
+ },
+ "c110": {
+  "uid": "c110",
+  "page": "8",
+  "verdict": "MISSING",
+  "per_source": "49: PARTLY (backs the 2016 connection to Aladdin and the custody-client link, but the custody-client reason is The TRADE's paraphrase, not JPMorgan's own words; it does not cover 'JPMorgan is also a custodian'. The chart notes are covered by 47 in the source line just before.)",
+  "evidence": "The TRADE, 2016-02-25: \"it will be able to link up directly to its other custody clients that are connected to the platform\"; JPMorgan's Pinto, quoted: \"we are working with BlackRock and are integrating ourselves to their platform by connecting with Aladdin\". The custodian fact is in 48 (2026 proxy): \"#3 custodian globally by revenue\".",
+  "fix": "Add 48 after \"JPMorgan is also a custodian\". Optionally reword: \"In 2016 The TRADE reported it was connecting to Aladdin to link up with custody clients on the platform 49\""
+ },
+ "c111": {
+  "uid": "c111",
+  "page": "8",
+  "verdict": "RIGHT",
+  "per_source": "36: SUPPORTS (co-author is a BlackRock engineer); 50: SUPPORTS (URL rewriting, enterprise API management, merged by vedantnaik); 51: SUPPORTS (custom headers, routing through API management, merged by vedantnaik); 52: SUPPORTS (the author is at Janus Henderson; dated Dec 1 2025)",
+  "evidence": "36: \"By: Vedant Naik, Lead Engineer, Aladdin Studio, and Eli Kalish\"; PR 52: \"[FEATURE] URL rewriting\" by willemdupreez, opened Dec 1 2025, \"When consuming the Aladdin APIs via an enterprise API management platform such as Azure API Management\", merged Dec 9 2025 by vedantnaik; PR 53: \"[FEATURE] Additional HTTP headers\", \"required when routing requests to API management platforms\", merged Dec 8 2025 by vedantnaik; 52 patch: \"From: Willem du Preez <Willem.DuPreez@janushenderson.com>\". GitHub returned 403 to this session, so these quotes come from the prior fact-check receipts (p08-24..27, s38, s39, s41).",
+  "fix": "None. Minor notes: the link from vedantnaik to Vedant Naik rests on his GitHub profile name, which is not a register entry. 'Client firm' needs 52 together with 53 in the next sentence, which is how the text reads."
+ },
+ "c112": {
+  "uid": "c112",
+  "page": "8",
+  "verdict": "RIGHT",
+  "per_source": "53: SUPPORTS",
+  "evidence": "10-K: \"the strategic decision in the third quarter of 2025 to transition our investment management platform to Aladdin\"; \"a project to implement BlackRock's Aladdin platform, a complex, multi-year initiative\"",
+  "fix": "None. Optional: the 10-K says 'platform', not 'system'."
+ },
+ "c113": {
+  "uid": "c113",
+  "page": "8",
+  "verdict": "RIGHT",
+  "per_source": "54: SUPPORTS",
+  "evidence": "Find a Tender OCDS 062522-2025: buyer \"Pension Protection Fund\", tag award/contract, date 2025-10-06",
+  "fix": "None"
+ },
+ "c114": {
+  "uid": "c114",
+  "page": "8",
+  "verdict": "MISSING",
+  "per_source": "55: PARTLY (backs only 'the fund's estimate of up to \u00a355 million'. It is the pre-award contract notice, so it names no winner and gives no \u00a374.0m award value. 'BlackRock won both parts ... at up to \u00a374.0 million' is backed by 54, which is not cited in this cell.)",
+  "evidence": "55: \"Estimated total value ... \u00a355,000,000\", \"between \u00a343m and \u00a355m across Lots 1 and 2\". 54 (not cited here): award 1 (lot 1) and award 2 (lot 2) both to \"BlackRock Financial Management, Inc\"; \"projected to range between \u00a348,766,000 and \u00a374,025,496\"",
+  "fix": "Cite 54, 55 on the outcome cell instead of 55 alone."
+ },
+ "c115": {
+  "uid": "c115",
+  "page": "8",
+  "verdict": "RIGHT",
+  "per_source": "56: SUPPORTS",
+  "evidence": "Find a Tender OCDS 035311-2023: buyer \"National Employment Savings Trust (NEST)\", supplier \"BlackRock Financial Management Inc\", date 2023-11-30",
+  "fix": "None"
+ },
+ "c116": {
+  "uid": "c116",
+  "page": "8",
+  "verdict": "MISSING",
+  "per_source": "57: PARTLY (backs 'Nest chose BlackRock's Aladdin' but says nothing about the number of bids. 'Over six other bids' comes from 56, which reports 7 tenders received.)",
+  "evidence": "57: \"Nest will use BlackRock Aladdin to manage the risk of its entire investment strategy on a single platform\". The release never uses bid, tender, six or seven. 56 OCDS: bids statistic {measure: bids, relatedLot: 1, value: 7}, award to BlackRock Financial Management Inc",
+  "fix": "Cite 56, 57 on the outcome cell instead of 57 alone."
+ },
+ "c117": {
+  "uid": "c117",
+  "page": "8",
+  "verdict": "RIGHT",
+  "per_source": "58: SUPPORTS",
+  "evidence": "USAspending 16PBGC23C0006: awarding agency \"Pension Benefit Guaranty Corporation\", recipient \"BLACKROCK FINANCIAL MANAGEMENT INC\"",
+  "fix": "None"
+ },
+ "c118": {
+  "uid": "c118",
+  "page": "8",
+  "verdict": "RIGHT",
+  "per_source": "58: SUPPORTS (2023 award); 59: SUPPORTS (2017 award); together they back the price comparison",
+  "evidence": "58: \"INVESTMENT RISK MANAGEMENT SYSTEM\", 4 offers, FULL AND OPEN COMPETITION, total_obligation 5,550,000 for 2023-03-28 to 2027-03-27 (about $1.39m a year). 59: \"INVESTMENT RISK MANAGEMENT SYSTEM (IRMS)\", 4 offers, total_obligation 7,628,372 for 2017-09-28 to 2023-03-27 (about $1.39m a year)",
+  "fix": "None"
+ },
+ "c119": {
+  "uid": "c119",
+  "page": "8",
+  "verdict": "RIGHT",
+  "per_source": "54: SUPPORTS; 55: SUPPORTS; 56: SUPPORTS (all three are UK Find a Tender notices)",
+  "evidence": "The register URLs for 54, 55 and 56 are all find-tender.service.gov.uk/Notice/...",
+  "fix": "None"
+ },
+ "c120": {
+  "uid": "c120",
+  "page": "8",
+  "verdict": "RIGHT",
+  "per_source": "57: SUPPORTS (Nest's own press release)",
+  "evidence": "\"Nest selects BlackRock's Aladdin as its investment risk platform. Published: 13 November 2023\"",
+  "fix": "None"
+ },
+ "c121": {
+  "uid": "c121",
+  "page": "8",
+  "verdict": "RIGHT",
+  "per_source": "58: SUPPORTS; 59: SUPPORTS",
+  "evidence": "USAspending API: 16PBGC23C0006 'INVESTMENT RISK MANAGEMENT SYSTEM', 'BLACKROCK FINANCIAL MANAGEMENT INC', 2023-03-28 to 2027-03-27; 16PBGC17C5002 'INVESTMENT RISK MANAGEMENT SYSTEM (IRMS)', 2017-09-28 to 2023-03-27; both 'FULL AND OPEN COMPETITION', offers received 4 (fetched today).",
+  "fix": "None"
+ },
+ "c122": {
+  "uid": "c122",
+  "page": "8",
+  "verdict": "RIGHT",
+  "per_source": "54: SUPPORTS",
+  "evidence": "Find a Tender OCDS 062522-2025: supplier 'BlackRock Financial Management, Inc', details 'url': 'http://www.blackrock.com/aladdin' (both lots); notice HTML 'Internet address www.blackrock.com/aladdin'.",
+  "fix": "None"
+ },
+ "c123": {
+  "uid": "c123",
+  "page": "9",
+  "verdict": "RIGHT",
+  "per_source": "11: SUPPORTS",
+  "evidence": "2025 Investor Day slide 23 '2030 Estimate': 'Portfolios (#) 2x / Model Portfolios (#) 4x / Trade Allocations (#) 1.3x / API Calls (#) 17x' under 'BlackRock + Aladdin'; four volumes, API calls largest; deck has 0 'Studio' hits (product not named).",
+  "fix": "None"
+ },
+ "c124": {
+  "uid": "c124",
+  "page": "9",
+  "verdict": "EXTRA",
+  "per_source": "11: NOT SUPPORT (backs the preceding 17x sentence; the deck never names Studio, and the attribution is the author's own inference)",
+  "evidence": "2025 Investor Day deck: 0 hits for 'Studio'. The superscript repeats the 11 already placed after '17x growth' and adds nothing to 'Attributing them to Studio is my inference'.",
+  "fix": "Drop the second superscript 11 after 'my inference'."
+ },
+ "c125": {
+  "uid": "c125",
+  "page": "9",
+  "verdict": "RIGHT",
+  "per_source": "14: SUPPORTS",
+  "evidence": "Studio product page: 'Empowering unique outcomes via our API-first approach across shared services and data.' and 'Aladdin Studio APIs enable you to build your own solutions.'",
+  "fix": "None"
+ },
+ "c126": {
+  "uid": "c126",
+  "page": "9",
+  "verdict": "RIGHT",
+  "per_source": "60: CANNOT CHECK directly (roic.ai returns HTTP 403 to curl, retried today; WebFetch also 403 in prior check); claim supported by independent transcripts",
+  "evidence": "Prior check searched all 26 calls (22 fool.com, 4 marketbeat/allmind) for 'studio': '0 hits in every transcript body'. Archived roic.ai index lists BLK transcripts from Q1 2020.",
+  "fix": "None needed; optionally add a readable mirror (fool.com) to entry 60."
+ },
+ "c127": {
+  "uid": "c127",
+  "page": "9",
+  "verdict": "RIGHT",
+  "per_source": "61: SUPPORTS",
+  "evidence": "2023 Investor Day PDF slide 31 product tiles: 'eFront  Aladdin Accounting  Aladdin Studio'; the only 'Studio' hit in the 138-page deck.",
+  "fix": "None"
+ },
+ "c128": {
+  "uid": "c128",
+  "page": "9",
+  "verdict": "EXTRA",
+  "per_source": "12: SUPPORTS; 11: NOT SUPPORT (2025 Investor Day deck says nothing about 10-K fee terms; it backs the earlier 17x sentence)",
+  "evidence": "FY2025 10-K: fees 'generally determined using the value of positions on the Aladdin platform, or on a fixed-rate basis'; 'Revenue for these services may be based on several criteria including value of positions, number of subscriptions, implementation go-lives and software solution delivery and support.' No API calls among fee criteria (APIs appear once, in the business description).",
+  "fix": "Change '11, 12' to '12'."
+ },
+ "c129": {
+  "uid": "c129",
+  "page": "9",
+  "verdict": "RIGHT",
+  "per_source": "61: PARTLY (covers the 2023 slide line; 'Never on a call' rests on source 60, cited in the Exhibit 10 source line)",
+  "evidence": "2023 Investor Day slide 31: 'Aladdin Studio' product tile, only mention in deck.",
+  "fix": "None"
+ },
+ "c130": {
+  "uid": "c130",
+  "page": "9",
+  "verdict": "RIGHT",
+  "per_source": "62: CANNOT CHECK directly (roic.ai 403, retried today); claim supported by fool.com transcript of the same call",
+  "evidence": "Fool Q3 2022 transcript (13 Oct 2022, local copy fc/dl/b061/fool): 'It includes clients leveraging Enterprise Aladdin, alongside Aladdin Accounting or the Aladdin Data Cloud.'",
+  "fix": "None needed; optionally add the fool.com URL to entry 62."
+ },
+ "c131": {
+  "uid": "c131",
+  "page": "9",
+  "verdict": "RIGHT",
+  "per_source": "63: SUPPORTS (roic.ai returns 403; same call read on fool.com)",
+  "evidence": "fool.com Q4 2024 call (15 Jan 2025), Fink: \"It includes clients leveraging enterprise Aladdin, alongside Aladdin Accounting or the Aladdin Data Cloud.\"",
+  "fix": "None for the superscript. Optional: the trailing words \"described as an add-on sold with Aladdin Enterprise\" paraphrase \"alongside\"; \"named as sold alongside Enterprise Aladdin\" is closer."
+ },
+ "c132": {
+  "uid": "c132",
+  "page": "9",
+  "verdict": "RIGHT",
+  "per_source": "64: SUPPORTS (roic.ai 403; fool.com transcript of same call)",
+  "evidence": "fool.com Q4 2021 call (14 Jan 2022), Shedlin: \"where clients are really looking to use both data and APIs in ways that differentiate them\"",
+  "fix": "None"
+ },
+ "c133": {
+  "uid": "c133",
+  "page": "9",
+  "verdict": "RIGHT",
+  "per_source": "65: SUPPORTS (roic.ai 403; waterstechnology and bullfincher copies)",
+  "evidence": "waterstechnology.com/node/7951617 (12 Jan 2024), Fink: \"Investments in Aladdin AI copilots, enhancements in openness\" (Fool renders it \"copilot\")",
+  "fix": "None"
+ },
+ "c134": {
+  "uid": "c134",
+  "page": "9",
+  "verdict": "RIGHT",
+  "per_source": "60: SUPPORTS (live roic.ai 403; archived list page plus independent transcripts)",
+  "evidence": "web.archive.org capture of roic.ai/quote/BLK/transcripts: \"Earnings Call Transcripts 2025 2 Quarter Jul 15 ... 2020 ... 1 Quarter Apr 16\"; a recount over all 26 transcripts gives Data Cloud 2, API 1, Copilot 1 = 4",
+  "fix": "None. Optional: add fool.com as a readable mirror, since roic.ai blocks non-browser clients."
+ },
+ "c135": {
+  "uid": "c135",
+  "page": "9",
+  "verdict": "RIGHT",
+  "per_source": "66: PARTLY (backs eFront 2019, Preqin acquired 'earlier this year', the webinar itself, and Preqin indices in Explore and Data Cloud; does not back the generalisation 'Much of the private-markets data')",
+  "evidence": "Webinar transcript L14: \"I joined Black Rock earlier this year when it acquired ... prequin\" / \"In 2019 Black Rock acquired E-Front\"; L68: \"Prequin indices are also available today in Aladdin explore and our Aladdin data cloud capabilities\"; L70 also says Preqin is \"being embedded into e front insight\"",
+  "fix": "The superscript is in the right place. The opening topic sentence is backed by the cited evidence that follows (66, and 20 for Data Cloud). Optional: soften 'Much of' to 'Some of'."
+ },
+ "c136": {
+  "uid": "c136",
+  "page": "9",
+  "verdict": "RIGHT",
+  "per_source": "66: SUPPORTS",
+  "evidence": "L68 (20:51, 21:21): \"investors now have access to over 15,000 fund investments within e front insight\" / \"Prequin indices are also available today in Aladdin explore and our Aladdin data cloud capabilities\"; L58 (17:36): \"we've introduced over 10 different transaction types to Aladdin across commitments, fundings, pay downs, picks\"; L64 (19:21): \"do the same with our new colleagues from HPS\"",
+  "fix": "None. Optional: the HPS remark is about the private-credit 'models' as a whole, not only the transaction types."
+ },
+ "c137": {
+  "uid": "c137",
+  "page": "9",
+  "verdict": "RIGHT",
+  "per_source": "18: SUPPORTS",
+  "evidence": "preqin.com press release: \"London, 6 May 2026 - BlackRock Aladdin today announced new private credit capabilities on Preqin ... With an expansion of private credit data, benchmarks and analytics\"",
+  "fix": "None"
+ },
+ "c138": {
+  "uid": "c138",
+  "page": "9",
+  "verdict": "RIGHT",
+  "per_source": "20: SUPPORTS",
+  "evidence": "Never Done podcast transcript (Newman): \"So eFront's an obvious example of that, that data coming into the Aladdin Data Cloud. With the announcement of the Prequin acquisition, bringing in that data.\"",
+  "fix": "None"
+ },
+ "c139": {
+  "uid": "c139",
+  "page": "10",
+  "verdict": "RIGHT",
+  "per_source": "11: SUPPORTS",
+  "evidence": "Investor Day 2025 PDF slide 23 (downloaded fresh): \"2030 Estimate ... BlackRock: Portfolios (#) 2x, Model Portfolios (#) 4x; BlackRock + Aladdin: Trade Allocations (#) 1.3x, API Calls (#) 17x\". Four volumes are shown and 17x is the largest.",
+  "fix": "None"
+ },
+ "c140": {
+  "uid": "c140",
+  "page": "10",
+  "verdict": "RIGHT",
+  "per_source": "20: SUPPORTS",
+  "evidence": "Podcast transcript L10: \"the data cloud and Aladdin data cloud specifically comes in, which is part of Studio\"; L14: \"eFront's an obvious example of that, that data coming into the Aladdin Data Cloud ... Prequin acquisition, bringing in that data\"",
+  "fix": "None"
+ },
+ "c141": {
+  "uid": "c141",
+  "page": "10",
+  "verdict": "RIGHT",
+  "per_source": "9: SUPPORTS",
+  "evidence": "yt_oyqeCHFM5U4.m4a.ts.txt [06:42] \"a couple thousands agents and tools that are registered in the plug-in registry\"; [03:58] \"Say 50 60 Aladdin engineering teams\"; [04:31]-[04:39] \"two ways to onboard the first we we come to define a tool as / Kind of mapping one-to-one to an existing Aladdin API already out in production\"",
+  "fix": "none"
+ },
+ "c142": {
+  "uid": "c142",
+  "page": "10",
+  "verdict": "RIGHT",
+  "per_source": "9: SUPPORTS",
+  "evidence": "[04:45]-[04:49] \"the second onboarding path that we give to these development teams for very Complex workflows is the ability to spin up a custom agent and also plug that into the system\"",
+  "fix": "none"
+ },
+ "c143": {
+  "uid": "c143",
+  "page": "10",
+  "verdict": "RIGHT",
+  "per_source": "1: SUPPORTS",
+  "evidence": "Woodhead (em360tech published transcript; Simplecast transcript; local captions yt/subs/Me_H_-E6lSg.txt): \"Aladdin Studio is essentially the user experience ... It exposes everything Aladdin knows how to do as a set of APIs events.\" \"APIs and events\" is a fair reading of \"APIs events\".",
+  "fix": "none"
+ },
+ "c144": {
+  "uid": "c144",
+  "page": "10",
+  "verdict": "RIGHT",
+  "per_source": "67: SUPPORTS (quote and speaker)",
+  "evidence": "blackrock.com/aladdin/discover/podcast/microsoft-part-2-podcast (fetched 2026-10-20), [ADRIAN CROCKETT]: \"you need to actually create the plug-ins. There's no copilot without plug-ins.\" The 'So I infer' sentence is signposted as the author's inference from sources 9 and 1, so it needs no cite of its own.",
+  "fix": "none"
+ },
+ "c145": {
+  "uid": "c145",
+  "page": "10",
+  "verdict": "RIGHT",
+  "per_source": "68: SUPPORTS",
+  "evidence": "Source 68's page (fetched 2026-10-20) now embeds a published transcript. Under [JESS FITZGIBBON] (Head of Product for Aladdin Risk) it reads: \"ensuring that the data model itself is structured for agentic use cases\". Local timestamped copy at [17:37]-[17:44]. 'A BlackRock product leader' is accurate.",
+  "fix": "No text change. Optional register tidy-up: entry 68 says the recording does not label speakers, but BlackRock's page transcript names Jess Fitzgibbon."
+ },
+ "c146": {
+  "uid": "c146",
+  "page": "10",
+  "verdict": "RIGHT",
+  "per_source": "9: SUPPORTS",
+  "evidence": "[05:27] \"What is my exposure to aerospace in portfolio one?\"; [05:40]-[05:45] \"which Aladdin application they're asking this question from / What they actually have up on the screen what portfolios what assets what widgets\"",
+  "fix": "none"
+ },
+ "c147": {
+  "uid": "c147",
+  "page": "10",
+  "verdict": "RIGHT",
+  "per_source": "9: SUPPORTS",
+  "evidence": "[06:42] \"a couple thousands agents and tools that are registered in the plug-in registry\"; [03:58] \"Say 50 60 Aladdin engineering teams\". The exhibit note flags the counts as the speakers' approximations.",
+  "fix": "none"
+ },
+ "c148": {
+  "uid": "c148",
+  "page": "10",
+  "verdict": "RIGHT",
+  "per_source": "9: SUPPORTS",
+  "evidence": "[06:51]-[06:58] \"which environment ... which user groups have access to this and even which which Aladdin apps can even access these plugins\"; [07:16]-[07:22] \"if we're sending more than 4050 tools / We probably won't have that good of a performance ... some set of say 20 to 30 30 tools and agents\"",
+  "fix": "none"
+ },
+ "c149": {
+  "uid": "c149",
+  "page": "10",
+  "verdict": "RIGHT",
+  "per_source": "9: SUPPORTS",
+  "evidence": "[07:31]-[07:34] \"we're very reliant on GPT 4 / Function calling today. We essentially just iterate over a planning and action node\"; [07:48]-[07:53] \"we pass back out to our output guard rail nodes / Try to detect hallucinations as best as we can\"",
+  "fix": "none"
+ },
+ "c150": {
+  "uid": "c150",
+  "page": "10",
+  "verdict": "RIGHT",
+  "per_source": "21: SUPPORTS",
+  "evidence": "https://www.blackrock.com/aladdin/platforms/products/aladdin-copilot (fetched 2026-10-20): \"Aladdin Copilot: Will not give investment advice or respond to questions outside Aladdin platform boundaries\"",
+  "fix": "none"
+ },
+ "c151": {
+  "uid": "c151",
+  "page": "10",
+  "verdict": "RIGHT",
+  "per_source": "9: SUPPORTS (from the local transcript only; the ZenML summary corroborates it)",
+  "evidence": "yt_oyqeCHFM5U4 [10:48] \"We do this for every intended behavior we code into our system prompts\"; [11:02] \"we do this for every every system prompt that we have\"; the talk's example rule at [10:25-10:37] is \"You must never provide investment advice\"",
+  "fix": "None"
+ },
+ "c152": {
+  "uid": "c152",
+  "page": "10",
+  "verdict": "RIGHT",
+  "per_source": "9: SUPPORTS",
+  "evidence": "[07:16] \"more than 4050 tools\"; [07:22] \"say 20 to 30 30 tools and agents\"; [07:31-07:34] \"very reliant on GPT 4 / Function calling ... iterate over a planning and action node\"; [09:33] \"output guard rails ... and hallucination checks\"",
+  "fix": "None"
+ },
+ "c153": {
+  "uid": "c153",
+  "page": "10",
+  "verdict": "RIGHT",
+  "per_source": "21: SUPPORTS",
+  "evidence": "blackrock.com aladdin-copilot (HTTP 200, 2026-10-20): \"Aladdin Copilot: Will not give investment advice or respond to questions outside Aladdin platform boundaries\"",
+  "fix": "None"
+ },
+ "c154": {
+  "uid": "c154",
+  "page": "10",
+  "verdict": "EXTRA",
+  "per_source": "2: NOT SUPPORT (the Oct 27, 2025 release on the Anthropic collaboration and the MCP rollout gives no customer count; it backs the LSEG row of Exhibit 12 instead); 69: SUPPORTS",
+  "evidence": "69 (Investing.com, Apr 23, 2026): \"with 90 customers now actively connected and 64 in the onboarding process.\" Source 2 has no count, only \"LSEG's AI-ready content will be accessible through MCP in a phased rollout\"",
+  "fix": "Drop 2 from this superscript and keep 69. Optionally add LSEG's Q1 2026 trading update (Apr 23, 2026) as the primary source: \"Since launch in December 2025, 90 customers have connected via our Model Context Protocol ('MCP') server\". The first two sentences of the paragraph summarize Exhibit 12, whose rows have their own receipts."
+ },
+ "c155": {
+  "uid": "c155",
+  "page": "11",
+  "verdict": "RIGHT",
+  "per_source": "7: SUPPORTS",
+  "evidence": "simcorp.com (HTTP 200): \"today announced Agent Launchpad\" (April 22, 2026); \"Agent Launchpad will allow clients to build their own agents, with controlled access to data from SimCorp One\"",
+  "fix": "None"
+ },
+ "c156": {
+  "uid": "c156",
+  "page": "11",
+  "verdict": "RIGHT",
+  "per_source": "70: SUPPORTS (checked through syndicated coverage because arcesium.com returned HTTP 429 to curl); 71: SUPPORTS (checked through a syndicated Business Wire reprint)",
+  "evidence": "70: Hedgeweek, Dec 17, 2025, on the Aquata release: \"a new Model Context Protocol (MCP) server designed to improve interoperability between enterprise AI tools and Aquata's governed data foundation\"; 71: Business Wire reprint, May 20, 2026: \"today launches Arcesium Intelligence, an AI platform purpose-built for institutional investment firms\"",
+  "fix": "None. Optionally add the Business Wire URLs as fallbacks, because arcesium.com blocks automated fetches."
+ },
+ "c157": {
+  "uid": "c157",
+  "page": "11",
+  "verdict": "RIGHT",
+  "per_source": "8: SUPPORTS",
+  "evidence": "Business Wire, via seekingalpha.com/pr/20295483 (Nov 5, 2025): \"today announced the global deployment of CWAN GenAI, a newly-launched, embedded generative AI platform\"; \"The platform currently supports 800+ AI agents created by CWAN clients and internal teams\"",
+  "fix": "None"
+ },
+ "c158": {
+  "uid": "c158",
+  "page": "11",
+  "verdict": "RIGHT",
+  "per_source": "72: SUPPORTS",
+  "evidence": "prnewswire (HTTP 200): \"Sept. 29, 2026 /PRNewswire/ -- Bloomberg today announced the launch of Bloomberg Enterprise Model Context Protocol (MCP), an AI access layer for Data License Plus (DL+) ... retrieve licensed Bloomberg data\"",
+  "fix": "None"
+ },
+ "c159": {
+  "uid": "c159",
+  "page": "11",
+  "verdict": "RIGHT",
+  "per_source": "3: SUPPORTS (factset.com shows only the headline, so the body was read in the GlobeNewswire reprint on StockTitan)",
+  "evidence": "Headline: \"First to Announce MCP Sans Intermediary\"; body (Dec 16, 2025): \"today announced availability of the industry's first production-grade model context protocol (MCP) server\"",
+  "fix": "None. Optionally give the register date as December 16, 2025."
+ },
+ "c160": {
+  "uid": "c160",
+  "page": "11",
+  "verdict": "RIGHT",
+  "per_source": "2: SUPPORTS",
+  "evidence": "lseg.com (HTTP 200): \"LSEG today announced a collaboration with Anthropic\"; \"LSEG's AI-ready content will be accessible through MCP in a phased rollout\"",
+  "fix": "None"
+ },
+ "c161": {
+  "uid": "c161",
+  "page": "11",
+  "verdict": "RIGHT",
+  "per_source": "69: SUPPORTS",
+  "evidence": "Investing.com, Apr 23 2026 (prior receipt): \"with 90 customers now actively connected and 64 in the onboarding process.\" This is the summary that the LSEG row's Receipt cell names.",
+  "fix": "none"
+ },
+ "c162": {
+  "uid": "c162",
+  "page": "11",
+  "verdict": "RIGHT",
+  "per_source": "4: SUPPORTS",
+  "evidence": "msci.com, Feb 24 2026: \"MSCI unveils new AI connectors transforming access to proprietary data\"; \"is now offering clients AI connectivity to engage MSCI's proprietary data\".",
+  "fix": "none"
+ },
+ "c163": {
+  "uid": "c163",
+  "page": "11",
+  "verdict": "RIGHT",
+  "per_source": "73: SUPPORTS",
+  "evidence": "press.spglobal.com, Sept 28 2026: \"RatingsXpress credit data from S&P Global Ratings is now available through the S&P Global AI Data Portal\".",
+  "fix": "none"
+ },
+ "c164": {
+  "uid": "c164",
+  "page": "11",
+  "verdict": "RIGHT",
+  "per_source": "5: SUPPORTS",
+  "evidence": "docs.snowflake.com cortex-agents-mcp: \"You can configure the MCP server to serve Cortex Analyst, Cortex Search, and Cortex Agents as tools\".",
+  "fix": "none"
+ },
+ "c165": {
+  "uid": "c165",
+  "page": "11",
+  "verdict": "RIGHT",
+  "per_source": "74: SUPPORTS",
+  "evidence": "docs.databricks.com built-in-mcp-services, fetched today (\"Last updated on Oct 16, 2026\"): \"Databricks provides MCPs in the system.ai schema ... You don't need to host or register a server.\"; \"a workspace administrator must enable Managed MCP Servers\".",
+  "fix": "none"
+ },
+ "c166": {
+  "uid": "c166",
+  "page": "11",
+  "verdict": "RIGHT",
+  "per_source": "75: SUPPORTS",
+  "evidence": "joinsaarthi.com copy of the posting: \"Forward Deploy Engineer, Aladdin Data, Associate BlackRock\"; \"Implement emerging AI tooling including Model Context Protocol (MCP), AI agents, and Copilot extensions\".",
+  "fix": "none"
+ },
+ "c167": {
+  "uid": "c167",
+  "page": "11",
+  "verdict": "RIGHT",
+  "per_source": "75: SUPPORTS (the posting mentions MCP. \"Only\" is the author's own negative finding, which no citation can carry. The prior searches found no other BlackRock item about MCP.)",
+  "evidence": "Posting copy: \"Model Context Protocol (MCP), AI agents, and Copilot extensions\". The superscript sits on the sentence about Aladdin, not on the general \"Source:\" sentence before it, which is correct.",
+  "fix": "none"
+ },
+ "c168": {
+  "uid": "c168",
+  "page": "11",
+  "verdict": "RIGHT",
+  "per_source": "69: SUPPORTS",
+  "evidence": "Investing.com byline \"By Investing.com\", \"generated with the support of AI and reviewed by an editor\"; \"90 customers now actively connected\". It is a secondary summary of LSEG's slides.",
+  "fix": "none"
+ },
+ "c169": {
+  "uid": "c169",
+  "page": "11",
+  "verdict": "RIGHT",
+  "per_source": "9: SUPPORTS (production APIs, user groups, tested no-advice prompt); 21: SUPPORTS (no-advice only)",
+  "evidence": "Local transcript yt_oyqeCHFM5U4: [04:39] \"mapping one-to-one to an existing Aladdin API already out in production\"; [06:58] \"which user groups have access to this\"; [10:30]-[10:37] \"You must never provide investment advice ... build an evaluation pilot and make sure that we are never gonna give investment advice\". Copilot page: \"Will not give investment advice\".",
+  "fix": "none"
+ },
+ "c170": {
+  "uid": "c170",
+  "page": "11",
+  "verdict": "RIGHT",
+  "per_source": "10: SUPPORTS",
+  "evidence": "Webinar captions 00:04:37-00:04:47: \"mostly built in house at about 15%. The next is actively reevaluating at 18%, hybrid second most at 30 and then mostly vendor platforms at 37%.\"",
+  "fix": "none. Also, outside this batch: in the current PDF the page-13 citation the user mentioned already reads \"others will likely follow 7, 8, 70, 71\", so it is in ascending order."
+ },
+ "c171": {
+  "uid": "c171",
+  "page": "12",
+  "verdict": "RIGHT",
+  "per_source": "10: SUPPORTS (the poll question is paraphrased)",
+  "evidence": "Captions 00:21:17 \"what is the single biggest pressure driving your firm to reevaluate its Technology Strategy?\"; 00:24:34-00:24:44 \"the most common answer was AI and data demands at 42% an exact tie between cost and speed to market And last place was regulatory complexity.\"",
+  "fix": "None needed. Optional: 'what is driving firms to rethink their technology strategy' matches the poll question more closely than 'the build-or-buy decision'."
+ },
+ "c172": {
+  "uid": "c172",
+  "page": "12",
+  "verdict": "RIGHT",
+  "per_source": "10: SUPPORTS",
+  "evidence": "00:46:48 \"what capability would you most like to stop maintaining internally?\"; 00:50:41-00:50:46 \"compliance reporting is number one at 53%\"",
+  "fix": "None"
+ },
+ "c173": {
+  "uid": "c173",
+  "page": "12",
+  "verdict": "RIGHT",
+  "per_source": "10: SUPPORTS",
+  "evidence": "00:04:37-00:04:47 \"mostly built in house at about 15% ... actively reevaluating at 18%, hybrid second most at 30 and then mostly vendor platforms at 37%\"; 00:50:41-00:50:53 \"53% followed by position and cash management 22%, trade life cycle at 17 and finally risk infrastructure at 9%.\"",
+  "fix": "None"
+ },
+ "c174": {
+  "uid": "c174",
+  "page": "12",
+  "verdict": "RIGHT",
+  "per_source": "10: SUPPORTS",
+  "evidence": "00:42:22-00:42:33 \"what's the API suite that you have? Are you using connectors to Snowflake or to data bricks? And I think that that part of the RFP has become much more prominent.\" Speaker introduced at 00:00:17 as \"Clark Schafer, who is a partner ... at Alpha FMC.\"",
+  "fix": "None. 'data bricks' is a caption error for Databricks."
+ },
+ "c175": {
+  "uid": "c175",
+  "page": "12",
+  "verdict": "RIGHT",
+  "per_source": "10: SUPPORTS",
+  "evidence": "00:39:42-00:39:52 \"the shift that we're seeing ... over the last 2024 [24] months is this move to more of a modular approach where clients are looking for that backbone foundational data...\"; 00:40:11-00:40:20 \"very, very robust APIs that manage the end to end life cycle of a transaction.\"; 00:40:20 \"their secret sauce rebalancing tools\"",
+  "fix": "None"
+ },
+ "c176": {
+  "uid": "c176",
+  "page": "12",
+  "verdict": "RIGHT",
+  "per_source": "10: SUPPORTS",
+  "evidence": "00:31:56 \"you need that system of record that underpins anything that AI is built upon.\"; 00:32:01 \"But I would say the other layer that is almost equally important is a really defined system of work.\"",
+  "fix": "None"
+ },
+ "c177": {
+  "uid": "c177",
+  "page": "12",
+  "verdict": "RIGHT",
+  "per_source": "76: SUPPORTS (the AB win, Feb 2026, and 'specialized in-house technology'; the register URL returns 403, so I checked the same release reposted on simcorp.com); 77: SUPPORTS (the Pictet win, May 2026, and the API connection, which the release puts in the future tense)",
+  "evidence": "76: \"February 17, 2026 - AllianceBernstein ... today announced it has selected ... SimCorp\"; \"Supporting the firm's specialized in-house technology\". 77: \"May 20, 2026 - SimCorp ... today announced that ... Pictet Asset Management ... has selected SimCorp\"; \"Pictet AM will leverage API connectivity to integrate SimCorp One's cutting-edge capabilities with its specialized in-house technology\"",
+  "fix": "The placement is fine. Wording only: AllianceBernstein, not SimCorp, announced the AB win, and Pictet 'will connect' rather than 'connects'."
+ },
+ "c178": {
+  "uid": "c178",
+  "page": "12",
+  "verdict": "RIGHT",
+  "per_source": "78: SUPPORTS (the page shows no date)",
+  "evidence": "Fetched page heading: \"Build vs buy is no longer a binary question\"",
+  "fix": "None. The only evidence for 'August 2026' is the timestamp on the listing tile, so it could be softened to '2026'."
+ },
+ "c179": {
+  "uid": "c179",
+  "page": "13",
+  "verdict": "RIGHT",
+  "per_source": "9: SUPPORTS; 79: SUPPORTS",
+  "evidence": "9 [01:33]: \"BlackRock is the biggest user of Aladdin, but we also sell and support hundreds of clients globally\". 79: \"Aladdin was first built to manage BlackRock's business, and the firm continues to be the largest user of Aladdin today. Through Aladdin, the firm offers to clients the same technology and intellectual capital that BlackRock uses to manage investments day-to-day.\"",
+  "fix": "None. The earlier wrong citations 14, 17 and 19 have already been replaced."
+ },
+ "c180": {
+  "uid": "c180",
+  "page": "13",
+  "verdict": "RIGHT",
+  "per_source": "10: SUPPORTS",
+  "evidence": "00:31:52-00:32:01 (Sewdass): \"So I think data is, as we've been alluding to the foundation, you need that system of record that underpins anything that AI is built upon.\"",
+  "fix": "None. Optional: 'speakers' is plural, but only Sewdass said this, so 'a BlackRock speaker has said' would be more exact."
+ },
+ "c191": {
+  "uid": "c191",
+  "page": "13",
+  "verdict": "RIGHT",
+  "per_source": "75: SUPPORTS",
+  "evidence": "Saarthi mirror (HTTP 200, 2026-10-20): \"datePosted\":\"2026-09-04\"; \"BlackRock's Enterprise Data Platform (EDP) is the firm's strategic foundation...\" (internal data role); \"Implement emerging AI tooling including Model Context Protocol (MCP), AI agents, and Copilot extensions to automate repetitive onboarding tasks\". Matches register 75 (R264906, posted Sept 4 2026, removed from BlackRock Careers).",
+  "fix": "None"
+ },
+ "c192": {
+  "uid": "c192",
+  "page": "13",
+  "verdict": "RIGHT",
+  "per_source": "9: SUPPORTS",
+  "evidence": "Source-list entry for the talk, which backs the left-hand boxes and the AI controls: \"around 100 Aladdin front-end applications\" [01:53]; \"50 60 Aladdin engineering teams\" [03:58]; \"mapping one-to-one to an existing Aladdin API already out in production\" [04:39]; \"a couple thousands agents and tools\" [06:42]; input guardrails for off-topic/PII [06:09-06:30]; \"output guard rails custom to our domain and hallucination checks\" [09:33]; LLM-as-judge \"for every every system prompt ... runs every day ... on every PR\" [10:57-11:12]. The sentence before it ('the model a client's own AI tools could follow') is the author's inference, framed as such.",
+  "fix": "Optional naming consistency: Exhibit 3's note says 'Rosales and Vicente Valdez' while this caption and two other places say 'Rosales and Valdez'. Use one form. The citation itself is fine."
+ },
+ "c193": {
+  "uid": "c193",
+  "page": "13",
+  "verdict": "RIGHT",
+  "per_source": "14: SUPPORTS",
+  "evidence": "Studio page (HTTP 200): \"Empowering unique outcomes via our API-first approach across shared services and data\"; \"Aladdin Studio APIs enable you to build your own solutions.\" Backs the exhibit title ('shared services and APIs') and the 'Aladdin's APIs' box.",
+  "fix": "None"
+ },
+ "c194": {
+  "uid": "c194",
+  "page": "13",
+  "verdict": "RIGHT",
+  "per_source": "32: SUPPORTS",
+  "evidence": "2021 press release (HTTP 200): \"Each Aladdin Data Cloud client receives an independent, centrally-managed data store pre-loaded with rich front-to-back Aladdin data sets\"; title 'powered by Snowflake'. Backs 'Each client reads its own Data Cloud, which BlackRock runs on Snowflake'.",
+  "fix": "None"
+ },
+ "c195": {
+  "uid": "c195",
+  "page": "13",
+  "verdict": "RIGHT",
+  "per_source": "21: SUPPORTS",
+  "evidence": "Copilot page (HTTP 200): \"Enable more informed decision making with permission-dependent access to insights\" (entitlements box); \"Contains content filtering and parameters to limit risk of hallucination, misinformation or inappropriate outputs\" (input/output guardrails). It does not back the LLM-judges box, but 9 covers that.",
+  "fix": "None"
+ },
+ "c196": {
+  "uid": "c196",
+  "page": "13",
+  "verdict": "RIGHT",
+  "per_source": "50: SUPPORTS; 51: SUPPORTS",
+  "evidence": "PR 52: \"When consuming the Aladdin APIs via an enterprise API management platform such as Azure API Management, the relative URL of the Aladdin APIs are likely to be different\"; PR 53: \"This is required when routing requests to API management platforms such as Azure API Management\". Backs 'Route Aladdin calls through the client's own gateway'. Each number sits on its own PR.",
+  "fix": "None"
+ },
+ "c197": {
+  "uid": "c197",
+  "page": "13",
+  "verdict": "RIGHT",
+  "per_source": "27: SUPPORTS",
+  "evidence": "README: \"AladdinSDK allows developers to easily integrate BlackRock's Aladdin functionality into their own applications and systems\"; \"AladdinSDK can run on a developer's local machine or in Aladdin Studio Compute sessions\"; \"Client ID and Secret can be sourced from Studio UI by creating a OAuth application\". Backs 'Run in the client's own environment, on the client's credentials' (Studio Compute is a BlackRock-hosted option, already noted by the fact-check).",
+  "fix": "None"
+ },
+ "c198": {
+  "uid": "c198",
+  "page": "13",
+  "verdict": "RIGHT",
+  "per_source": "6: SUPPORTS",
+  "evidence": "asdk_plugin_* 2.0.0b3 specs: AdcDatasetAPI \"This grants access to all endpoints in the platform.studio.adc.adc_dataset.v1.AdcDataset API\" (per-API scope); \"STATE_REVIEW: In review state, dataset is ready for a 4-eyes check prior to release\"; EnrichedCapitalFlowAPI \"approverUserId\" \"Approver Aladdin user Id\"; OrderAPI \"Default is true to run compliance on this post order request\" and \"Compliance violations triggered by posting this order\"; RiskRuleAPI \"as surfaced in Risk Radar\". Backs the whole 'Controls built into the APIs' column and the Explore/Dashboard/Risk Radar box.",
+  "fix": "None"
+ },
+ "c199": {
+  "uid": "c199",
+  "page": "13",
+  "verdict": "RIGHT",
+  "per_source": "23: SUPPORTS",
+  "evidence": "Data Cloud page (HTTP 200): \"a next-generation data and analytics platform, powered by Snowflake's cloud-native technology\"; \"managed investment data pipeline with preloaded Aladdin data\". Backs 'Data Cloud, which BlackRock runs on Snowflake'.",
+  "fix": "None"
+ },
+ "c200": {
+  "uid": "c200",
+  "page": "13",
+  "verdict": "RIGHT",
+  "per_source": "1: SUPPORTS",
+  "evidence": "Podcast's own transcript (Simplecast API): \"[00:05:25] ... The Aladdin Data Cloud built on top of Snowflake takes all of that information ... and pushes that into Snowflake\"; \"[00:19:01] ... we operate hundreds of Snowflake accounts. We share data to hundreds of Snowflake accounts\". Backs that BlackRock runs the Data Cloud on Snowflake.",
+  "fix": "None"
+ },
+ "c181": {
+  "uid": "c181",
+  "page": "13",
+  "verdict": "RIGHT",
+  "per_source": "68: SUPPORTS",
+  "evidence": "Podcast transcript [17:37]-[17:44]: \"ensuring that the data model itself / is structured for agentic use cases\". BlackRock's web transcript puts it under [JESS FITZGIBBON] (fc receipt p13-03).",
+  "fix": "None. Optional: the register entry says the recording has no speaker labels, but BlackRock's web transcript labels Fitzgibbon."
+ },
+ "c182": {
+  "uid": "c182",
+  "page": "13",
+  "verdict": "EXTRA",
+  "per_source": "7: SUPPORTS (SimCorp Agent Launchpad: \"pre-built AI agents\"); 8: SUPPORTS (CWAN release, Nov 5 2025: \"800+ AI Agents Now Available for Deployment\"); 70: NOT SUPPORT for \"an AI platform\" (the Dec 2025 release covers AI features in Aquata: an extraction agent and an MCP server); 71: SUPPORTS (\"Arcesium Launches Comprehensive AI Platform to Operationalize Agentic AI\", May 2026). \"others will likely follow\" is the author's forecast.",
+  "evidence": "Search titles: \"CWAN Reports 800+ AI Agents Now Available for Deployment Across $10 Trillion in Client Assets\" (Business Wire 20251105092732); \"Arcesium Launches Comprehensive AI Platform to Operationalize Agentic AI for Institutional Investment\" (01net/abladvisor reprint of 71); 70 = \"Arcesium Unveils New Suite of AI Features in Aquata\". arcesium.com returned 429 and businesswire returned 403/empty, so these were confirmed from search results and reprints. The ordering the user flagged is already fixed in the final HTML/PDF, which reads \"7, 8, 70, 71\". A scan of every fnref sup in Aladdin_Studio_With_AI.html finds 0 unsorted lists, while before_citeorder.html had 6.",
+  "fix": "Drop 70 (giving \"7, 8, 71\"), or keep it and reword to \"Arcesium AI features and an AI platform\". No reordering needed."
+ },
+ "c183": {
+  "uid": "c183",
+  "page": "13",
+  "verdict": "RIGHT",
+  "per_source": "9: SUPPORTS",
+  "evidence": "Talk transcript [02:34] \"embedded across all of those hundred front-end applications\"; [04:39] \"mapping one-to-one to an existing Aladdin API already out in production\"; [06:51]-[06:58] \"they have complete control over which environment ... which user groups have access to this\".",
+  "fix": "None. Optional: the register's \"Quoted at\" list leaves out 2:34 and 6:51/6:58."
+ },
+ "c184": {
+  "uid": "c184",
+  "page": "13",
+  "verdict": "RIGHT",
+  "per_source": "6: SUPPORTS the compliance-by-default clause; 9: SUPPORTS the guardrails-tested-daily clause",
+  "evidence": "asdk_plugin_trading OrderAPI swagger runCompliance: \"Default is true to run compliance on this post order request.\" Talk [11:02]-[11:07]: \"we do this for every every system prompt that we have ... It runs every day\".",
+  "fix": "None. Each source covers one clause. Earlier wording note: a caller can switch compliance off (runCompliance=false)."
+ },
+ "c185": {
+  "uid": "c185",
+  "page": "13",
+  "verdict": "RIGHT",
+  "per_source": "10: SUPPORTS",
+  "evidence": "Webinar captions [24:34] \"the most common answer was AI and data demands at 42%\"; [42:22]-[42:29] \"what's the API suite that you have? Are you using connectors to Snowflake or to data bricks? ... that part of the RFP has become much more prominent\".",
+  "fix": "None. Optional: the poll question was the \"biggest pressure driving your firm to reevaluate its Technology Strategy\", not build vs buy as such."
+ },
+ "c186": {
+  "uid": "c186",
+  "page": "13",
+  "verdict": "RIGHT",
+  "per_source": "9: SUPPORTS",
+  "evidence": "Talk [01:33]-[01:38]: \"we also sell and support hundreds of clients globally across 70 countries\".",
+  "fix": "None"
+ },
+ "c187": {
+  "uid": "c187",
+  "page": "13",
+  "verdict": "RIGHT",
+  "per_source": "12: SUPPORTS",
+  "evidence": "10-K FY2025: \"Technology services and subscription revenue of $2.0 billion in 2025 increased $378 million\".",
+  "fix": "Optional: use the 10-K label \"technology services and subscription revenue\"."
+ },
+ "c188": {
+  "uid": "c188",
+  "page": "13",
+  "verdict": "RIGHT",
+  "per_source": "80: SUPPORTS (fetched live, HTTP 200, Job Requisition # R266598)",
+  "evidence": "Posting: \"Building solutions for BlackRock and over 200 institutions that rely on our technology ... The team behind Aladdin Graph\u2014enabling API-first engineering through a schema repository, governance, and production runtime infrastructure for APIs and events.\"",
+  "fix": "None"
+ },
+ "c189": {
+  "uid": "c189",
+  "page": "13",
+  "verdict": "RIGHT",
+  "per_source": "11: SUPPORTS (slide 35)",
+  "evidence": "Investor Day 2025 PDF slide 35 (fetched): \"The market opportunity for Aladdin\u00ae continues to grow / $20B+ addressable market\".",
+  "fix": "None"
+ },
+ "c190": {
+  "uid": "c190",
+  "page": "13",
+  "verdict": "RIGHT",
+  "per_source": "11: SUPPORTS the 17x clause; the \"AI tools could become a large source\" clause is the author's inference, flagged in the next sentence",
+  "evidence": "Slide 23 (fetched): \"2030 Estimate ... BlackRock + Aladdin\u00ae ... API Calls (#) 17x\"; the slide notes these are \"forward-looking statements\".",
+  "fix": "None"
+ },
+ "c201": {
+  "uid": "c201",
+  "page": "13",
+  "verdict": "RIGHT",
+  "per_source": "26: PARTLY (backs the Data Cloud running on Snowflake, with APIs on top. This overlaps sources 23 and 32, and the exhibit never names Fivetran.)",
+  "evidence": "Fivetran blog: \"ADC is supported by Fivetran for data movement and Snowflake as its cloud data platform.\" and \"Once the data is in Snowflake, analytics services are provided through APIs\"",
+  "fix": "No fix needed. Optionally drop it, since 23 and 32 already cover this."
+ },
+ "c202": {
+  "uid": "c202",
+  "page": "14",
+  "verdict": "MISSING",
+  "per_source": "10: PARTLY (backs only the last sentence, that Sewdass names rebalancing tools. It does not back the claims about the order API's what-if mode, compliance check, returned violations or PM approval.)",
+  "evidence": "10 at 40:11: \"if clients want to build, you know, their secret sauce rebalancing tools or defined optimizers, they can absolutely do so.\" The order API claims come from the public specifications (6, asdk_plugin_trading OrderAPI swagger.json): runCompliance \"Default is true to run compliance on this post order request\"; complianceViolations \"Compliance violations triggered by posting this order\"; authorizeTime \"The PM authorizes the order\"; whatIf \"True to post orders in a what-if mode\".",
+  "fix": "Add 6 after \"before anything trades\" (\"...a portfolio manager approves before anything trades 6.\"). Note: in the spec, what-if is a flag on the order, so \"what-if ... on every order\" holds only for orders posted in what-if mode."
+ },
+ "c203": {
+  "uid": "c203",
+  "page": "14",
+  "verdict": "RIGHT",
+  "per_source": "81: SUPPORTS (a podcast on BlackRock's site)",
+  "evidence": "81: \"The Never Done by Aladdin podcast highlights stories about innovation, transformation, and technology\u2014for and by the Aladdin community.\"",
+  "fix": "None"
+ },
+ "c204": {
+  "uid": "c204",
+  "page": "14",
+  "verdict": "MISSING",
+  "per_source": "82: PARTLY (backs videos on BlackRock's site. The speakers are mostly Aladdin staff and partners such as Microsoft, so it does not back \"client videos\". No source in the Hear receipt cell backs \"webinar replays\".)",
+  "evidence": "82: \"Big Little Questions is a new series by Aladdin...\" The episodes include \"Syril Garson and Microsoft's Allison Nachtigal discuss the evolution of AI in financial services\". These are staff and partner conversations, not client videos.",
+  "fix": "Add the client story video 46 (Royal London) and a webinar replay 10 (or 38) to the Hear receipt cell, e.g. \"..., the Big Little Questions video series 82, client story video 46, webinar replay 10, Woodhead 1, ...\""
+ },
+ "c205": {
+  "uid": "c205",
+  "page": "14",
+  "verdict": "RIGHT",
+  "per_source": "1: SUPPORTS (a podcast on a partner channel, the Snowflake Data Cloud podcast)",
+  "evidence": "Register 1: \"From Analytics To Intelligence ... (Snowflake Data Cloud podcast) ... Dave Woodhead, Managing Director and Head of Engineering for Aladdin Studio\"",
+  "fix": "None"
+ },
+ "c206": {
+  "uid": "c206",
+  "page": "14",
+  "verdict": "RIGHT",
+  "per_source": "9: SUPPORTS (a conference talk on a partner channel, LangChain Interrupt 2025 on YouTube)",
+  "evidence": "Register 9: \"How BlackRock built production AI agents for asset management with LangGraph (LangChain Interrupt 2025)\"",
+  "fix": "None"
+ },
+ "c207": {
+  "uid": "c207",
+  "page": "14",
+  "verdict": "RIGHT",
+  "per_source": "83: SUPPORTS (the invitation-only Aladdin Client Forum)",
+  "evidence": "83: \"The Aladdin Client Forum is an invitation-only event. It brings together CIOs, COOs, and other C-suite leaders...\"",
+  "fix": "None"
+ },
+ "c208": {
+  "uid": "c208",
+  "page": "14",
+  "verdict": "RIGHT",
+  "per_source": "84: SUPPORTS (the Solutions Engineering team works with prospects during the sales process)",
+  "evidence": "84: \"the Solutions Engineering team partners closely with Business Development, Product, Services, and Sales teams to help prospective clients understand how Aladdin and eFront can address complex investment, risk management, and operational challenges.\"",
+  "fix": "None"
+ },
+ "c209": {
+  "uid": "c209",
+  "page": "14",
+  "verdict": "RIGHT",
+  "per_source": "14: SUPPORTS (all three quoted headings appear on the page)",
+  "evidence": "14: \"01. Create & automate with ease ... 02. Make Aladdin your own ... 03. Align internally & externally\"",
+  "fix": "None"
+ },
+ "c210": {
+  "uid": "c210",
+  "page": "14",
+  "verdict": "RIGHT",
+  "per_source": "28: SUPPORTS (\"dozens of Aladdin APIs\" and the API framework guides)",
+  "evidence": "28: \"Dozens of Aladdin APIs available \u2013 with constant new additions\"; \"Learn about our API framework\"; \"Download Python Jupyter Notebooks, or cut and paste code samples ... from carefully curated API guides\"",
+  "fix": "None"
+ },
+ "c211": {
+  "uid": "c211",
+  "page": "14",
+  "verdict": "RIGHT",
+  "per_source": "6: SUPPORTS (the spec ties the API guides to the developer portal); 41: SUPPORTS (the portal needs a client login)",
+  "evidence": "asdk_plugin_platform UserAPI swagger.json: \"[Developer Guide]: apps/aladdin-developer-portal/#/guides/developer-guide\". curl https://www.blackrock.com/apps/aladdin-developer-portal/ on 2026-10-20 returns 302 to https://aladdin-login.blackrock.com/oauth2/v1/authorize?... The Read row says 'The Developer Portal and the API framework guides' open after qualification.",
+  "fix": "None"
+ },
+ "c212": {
+  "uid": "c212",
+  "page": "14",
+  "verdict": "RIGHT",
+  "per_source": "37: SUPPORTS (the posting names the Aladdin Studio Developer Portal)",
+  "evidence": "Built In Bristol copy of the posting (fetched 2026-10-20): \"Continuously improve the discoverability and usability of content within the Aladdin Studio Developer Portal.\"",
+  "fix": "None"
+ },
+ "c213": {
+  "uid": "c213",
+  "page": "14",
+  "verdict": "RIGHT",
+  "per_source": "6: SUPPORTS",
+  "evidence": "Prior receipts p14-26/p14-27: the 11 asdk-plugin-* 2.0.0b3 wheels on PyPI unpack to 54 swagger.json files, all \"swagger\": \"2.0\". The row says 'The 54 specifications, but only by unpacking the 11 PyPI add-on packages'.",
+  "fix": "None"
+ },
+ "c214": {
+  "uid": "c214",
+  "page": "14",
+  "verdict": "RIGHT",
+  "per_source": "28: SUPPORTS for the Data Dictionary; PARTLY for 'API catalog' (the page does not use that word; it is the author's paraphrase)",
+  "evidence": "APIs page: \"Our Data Dictionary allows you to explore Aladdin data and search for the field definitions you need.\" and \"Dozens of Aladdin APIs available \u2013 with constant new additions\"; the only call to action is \"Contact us to learn more\".",
+  "fix": "None"
+ },
+ "c215": {
+  "uid": "c215",
+  "page": "14",
+  "verdict": "RIGHT",
+  "per_source": "41: PARTLY (it shows the client-login gate behind 'after qualification', but not that the catalog sits in the portal, which is inferred)",
+  "evidence": "On 2026-10-20 the portal URL returns 302 to the Aladdin Okta client login (client_id=0oangjmoyueyPY1VC357).",
+  "fix": "None"
+ },
+ "c216": {
+  "uid": "c216",
+  "page": "15",
+  "verdict": "RIGHT",
+  "per_source": "27: SUPPORTS (that there is no public sandbox is supported only indirectly, through the mandatory client web server and the absence of any trial)",
+  "evidence": "README L179: \"AladdinSDK can run on a developer's local machine or in Aladdin Studio Compute sessions.\" L89: \"API Token registered via Studio UI. Required only for Basic Auth\". L43: \"defaultWebServer | BlackRock client environment's default web server | Yes\" (mandatory). The README has no 'sandbox' or 'trial'.",
+  "fix": "None"
+ },
+ "c217": {
+  "uid": "c217",
+  "page": "15",
+  "verdict": "RIGHT",
+  "per_source": "27: SUPPORTS (README and source repo)",
+  "evidence": "README L23 \"pip install aladdinsdk\"; L226 \"Sample code snippets and user configuration files are provided under resources/sample_code_snippets\"; raw .../resources/sample_code_snippets/SDK_Demo_template.ipynb returns HTTP 200; L43 shows defaultWebServer is mandatory and L89 the credentials.",
+  "fix": "None"
+ },
+ "c218": {
+  "uid": "c218",
+  "page": "15",
+  "verdict": "RIGHT",
+  "per_source": "85: SUPPORTS ('on GitHub and PyPI')",
+  "evidence": "pypi.org/pypi/aladdinsdk/json lists 14 releases, from 0.0.1a4.post0 (2024-05-02) to 2.0.0b10 (2026-07-27).",
+  "fix": "None"
+ },
+ "c219": {
+  "uid": "c219",
+  "page": "15",
+  "verdict": "RIGHT",
+  "per_source": "40: SUPPORTS ('the plugin builder')",
+  "evidence": "aladdinsdk-plugin-builder README: \"This project builds API bundle plugins for AladdinSDK using swagger specifications.\" Public repo, Apache-2.0.",
+  "fix": "None"
+ },
+ "c220": {
+  "uid": "c220",
+  "page": "15",
+  "verdict": "RIGHT",
+  "per_source": "50: PARTLY (it shows a PR on the SDK reviewed and merged by vedantnaik, but nothing in it says he is a BlackRock engineer; source 36 says that, and 36 is not in this Receipt cell)",
+  "evidence": "PR 52 (prior receipt p15-11): vedantnaik \"LGTM! Just one minor change requested in api/client.py\", merged Dec 9, 2025. Source 36 byline: \"Vedant Naik, Lead Engineer, Aladdin Studio\". The p15-11 receipt noted that the PR page does not state his employer.",
+  "fix": "Optional: add 'launch post 36' to the Get help Receipt cell so that 'reviewed and merged by a BlackRock engineer' has a receipt. The superscript 50 on 'Pull request 52' is correct as is."
+ },
+ "c221": {
+  "uid": "c221",
+  "page": "15",
+  "verdict": "RIGHT",
+  "per_source": "86: SUPPORTS",
+  "evidence": "github.com/blackrock/aladdinsdk/pull/57 'add Pydantic v2 compatibility support', opened by llajko, approved by vedantnaik with 'LGTM', merged Aug 11, 2026 (fc p15-08, p15-12)",
+  "fix": "None. GitHub does not say that vedantnaik works for BlackRock (already noted in fc p15-11)."
+ },
+ "c222": {
+  "uid": "c222",
+  "page": "15",
+  "verdict": "RIGHT",
+  "per_source": "14: SUPPORTS",
+  "evidence": "The Studio page contains 'Book a meeting' and 'Download the brochure' (fc p15-13, fetched anonymously)",
+  "fix": "None"
+ },
+ "c223": {
+  "uid": "c223",
+  "page": "15",
+  "verdict": "RIGHT",
+  "per_source": "28: SUPPORTS",
+  "evidence": "APIs page: 'Download Python Jupyter Notebooks, or cut and paste code samples ... from carefully curated API guides' (fc p05-65), which backs the row's After-qualification cell",
+  "fix": "None"
+ },
+ "c224": {
+  "uid": "c224",
+  "page": "15",
+  "verdict": "RIGHT",
+  "per_source": "41: SUPPORTS; 6: PARTLY (shows the developer guides sit on the developer portal, but says nothing about a login)",
+  "evidence": "curl https://www.blackrock.com/apps/aladdin-developer-portal/ returned 302 to aladdin-login.blackrock.com/oauth2/v1/authorize (re-run 2026-10-20). asdk_plugin_platform .../UserAPI/swagger.json: 'Developer Guide]: apps/aladdin-developer-portal/#/guides/developer-guide' (16 spec files)",
+  "fix": "None needed. Source 41 carries the login claim. Source 6 is marginal and could be dropped."
+ },
+ "c225": {
+  "uid": "c225",
+  "page": "15",
+  "verdict": "RIGHT",
+  "per_source": "27: SUPPORTS",
+  "evidence": "README L23 'pip install aladdinsdk'; L179 'AladdinSDK can run on a developer's local machine or in Aladdin Studio Compute sessions. There is also a test mode'; L243 'prompt the user for their password in command line, and store the password in the OS specific credential manager'; L633 'When consuming the Aladdin APIs via an enterprise API management platform such as Azure API Management' (re-fetched 2026-10-20)",
+  "fix": "None. 'The one piece ... before any conversation' is the author's judgment; the README only shows that the SDK installs with pip."
+ },
+ "c226": {
+  "uid": "c226",
+  "page": "15",
+  "verdict": "MISSING",
+  "per_source": "All 26 cited sources: SUPPORTS as public pages of the scored platforms (Bloomberg 72, 92, 93; Aladdin 6, 14, 27, 28; State Street 88; Arcesium 71, 94, 99; SimCorp 7, 98; Snowflake 5, 90; Databricks 74, 91, 100, 101; LSEG 2, 89; FactSet 87; MSCI 4, 95, 96, 97). Gaps: no Clearwater source is cited at all, and 70 (the Aquata MCP server) is missing.",
+  "evidence": "The Clearwater row is scored, but no cited source is a Clearwater page (fc p15-68: 'none of the exhibit's sources ... is a Clearwater page'). Register 8 ('CWAN Reports 800+ AI Agents...') backs Clearwater's AI connector score of 0, for agents that work only inside its own platform. Arcesium's AI connector score of 2 rests on the Aquata MCP server from the Dec 15, 2025 release (register 70). Hedgeweek, Dec 17, 2025: 'a new Model Context Protocol (MCP) server' (fc p15-53, s56). Sources 71 and 99 are other Arcesium releases. arcesium.com returned 429 on 2026-10-20.",
+  "fix": "Add 8 and 70 in ascending order: '2, 4, 5, 6, 7, 8, 14, 27, 28, 70, 71, 72, 74, 87, 88, ..., 101'"
+ },
+ "c227": {
+  "uid": "c227",
+  "page": "15",
+  "verdict": "MISSING",
+  "per_source": "87: SUPPORTS (FactSet half); 4: PARTLY (says only that MSCI is 'offering clients AI connectivity' and has a generic licence disclaimer; it does not cover who can make an API call)",
+  "evidence": "developer.factset.com/learn/getting-started: 'Login to the Developer Portal with your corporate email address ... Enter your FactSet username-serial and API key'. MSCI API User Guide (register 96): 'If you are an existing MSCI client with API Keys, then after signing in to the developer community you can Try Out the APIs' (fc p15-106). Source 4: 'is now offering clients AI connectivity'; 'MSCI grants no right or license to use its products or services without an appropriate license'. The rest of the paragraph reads from Exhibit 17 and needs no citation.",
+  "fix": "Add 96 (optionally 95) to back the MSCI half: 'licensed clients 4, 87, 96' or 'licensed clients 87, 96'. Fact note, outside placement: FactSet offers a free API trial on request (fc p15-97), so 'only for licensed clients' is slightly strong for FactSet."
+ }
+}
