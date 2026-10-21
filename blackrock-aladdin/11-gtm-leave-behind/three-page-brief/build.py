@@ -95,11 +95,11 @@ p{margin:0 0 7pt}
 .mast h1{font-weight:800; font-size:22pt; line-height:25pt; margin:0 0 3pt}
 .mast .sub{font-size:12pt; line-height:15pt; margin:0 0 4pt}
 .mast .by{font-family:var(--font-cond); font-weight:400; font-size:9pt; line-height:11pt; color:var(--ink-2); margin:0 0 8pt}
-.intro{font-size:10.5pt; line-height:13.5pt; margin:0 0 6pt; padding:0 0 8pt; border-bottom:.75pt solid var(--series-gray)}
+.intro{font-size:10pt; line-height:13pt; margin:0 0 4pt; padding:0 0 6pt; border-bottom:.75pt solid var(--series-gray)}
 h2.hl{font-weight:800; font-size:15pt; line-height:18pt; margin:8pt 0 5pt}
 h2.hl::before{content:""; display:block; width:40pt; height:5pt; background:var(--yellow); margin:0 0 8pt}
 .pg.first h2.hl::before{display:none}
-h3.sh{font-weight:800; font-size:10.5pt; line-height:13pt; margin:9pt 0 4pt}
+h3.sh{font-weight:800; font-size:10.5pt; line-height:13pt; margin:7pt 0 3pt}
 .exhibit{margin:6pt 0 6pt; padding-top:5pt}
 .exhibit > .ex-title{font-size:10pt; line-height:12pt; margin:0 0 5pt}
 .notes{font-size:8pt; line-height:9.6pt; margin:4pt 0 0}
@@ -122,6 +122,12 @@ h3.sh{font-weight:800; font-size:10.5pt; line-height:13pt; margin:9pt 0 4pt}
 .figs div{display:flex; align-items:baseline; gap:6pt}
 .figs b{font-weight:800; font-size:18pt; line-height:21pt}
 .figs span{font-size:9pt; line-height:10.5pt}
+.figs .figcap{grid-column:1 / -1; margin:4pt 0 0; font-size:9pt; line-height:11pt}
+.insight{background:var(--tint-yellow); border-left:3pt solid var(--yellow); padding:5pt 9pt; font-size:9.5pt; line-height:12pt; margin:0 0 6pt}
+.obs3{display:grid; grid-template-columns:1fr 1fr 1fr; gap:10pt; margin:0 0 5pt}
+.obs3 div{border-top:1.5pt solid #000; padding-top:4pt}
+.obs3 h4{margin:0 0 2pt; font-size:9.5pt; line-height:11.5pt}
+.obs3 p{margin:0; font-size:9.3pt; line-height:11.6pt}
 .obs{display:grid; grid-template-columns:1fr 1fr; gap:12pt; margin:2pt 0 5pt}
 .obs h4{margin:0 0 2pt; font-size:9.5pt; line-height:11.5pt}
 .obs p{margin:0; font-size:9.5pt; line-height:12pt}
@@ -187,7 +193,6 @@ p1 = f"""
 <p>Aladdin Studio gives developers programmatic access to Aladdin through APIs and events, Aladdin Data Cloud on Snowflake, and developer tools{c('woodhead')}. BlackRock describes Studio as the experience that allows clients to treat Aladdin as a platform and build applications and workflows around its capabilities{c('woodhead', 'studio')}.</p>
 
 <figure class="exhibit keep studio-dg"><p class="ex-title"><span class="ex-num">Exhibit 1.</span> What Studio offers, in three groups</p>
-<p class="cap">Aladdin Studio</p>
 <div class="groups">
 <div class="g"><h4>APIs and events</h4><ul>
 <li><b>APIs:</b> read and write access to documented Aladdin capabilities{c('apis')}</li>
@@ -207,14 +212,17 @@ p1 = f"""
 </figure>
 
 <h3 class="sh">Evidence from the public API specifications</h3>
-<div class="figs"><div><b>54</b><span>public API specifications</span></div><div><b>301</b><span>operations</span></div><div><b>11</b><span>domains</span></div></div>
-<p style="font-size:9.5pt;line-height:12pt">I counted 301 operations in 54 Swagger specifications across the 11 public asdk_plugin packages, version 2.0.0b3. The specifications cover areas including investment operations, analytics, portfolio management, trading, compliance, and accounting. These counts describe the public packages examined, not necessarily Studio’s full API surface{c('specs')}.</p>
-<div class="obs">
-<div><h4>Read and write</h4><p>The documented APIs extend beyond data retrieval. For example, the Order API includes a what-if setting and an option to run compliance checks{c('specs')}.</p></div>
-<div><h4>Access and integration</h4><p>The specifications document API-specific OAuth scopes{c('specs')}, while the SDK supports authenticated calls and enterprise API gateway configurations{c('sdk')}.</p></div>
+<div class="figs"><div><b>54</b><span>public API specifications</span></div><div><b>301</b><span>operations</span></div><div><b>11</b><span>domains</span></div>
+<p class="figcap">I counted these in the 11 public asdk_plugin packages, version 2.0.0b3. They describe the packages examined, not necessarily Studio’s full API surface{c('specs')}.</p></div>
+<h3 class="sh">What these capabilities enable</h3>
+<p class="insight">Studio gives clients ways to extend Aladdin rather than treating its standard applications as the boundary of what they can build. BlackRock says its APIs support tools and workflows “that expand beyond native Aladdin functionality”{c('apis')}. Its Alisha Sewdass gave clients’ own rebalancing tools as an example{c('webinar')}.</p>
+<div class="obs3">
+<div><h4>Extend investment workflows</h4><p>Documented APIs support programmatic interaction with Aladdin capabilities, including order what-if testing and compliance-check options{c('specs')}.</p></div>
+<div><h4>Use Aladdin data beyond its standard interfaces</h4><p>Data Cloud makes Aladdin data available through Snowflake for downstream analysis and integration{c('adc')}.</p></div>
+<div><h4>Build client-specific tools</h4><p>The SDK, Compute, and Excel tooling provide development and analysis paths for client-specific applications, integrations, and reports{c('sdk', 'apis', 'atx')}.</p></div>
 </div>
 <div class="grow"></div>
-<p class="method"><b>Limitation.</b> This analysis examines public product material, SDK code, and API specifications. I could not authenticate to a client environment or verify the full developer experience. <b>Method.</b> Public-source review, October 2026. AI tools assisted with collection, transcription, package analysis, and drafting. Claims were checked against cited materials. No internal or authenticated client access.</p>
+<p class="method"><b>Limitation.</b> This analysis examines public product material, SDK code, and API specifications. I could not authenticate to a client environment or verify the full developer experience.</p>
 {srcline(1)}
 </section>
 """
@@ -286,6 +294,7 @@ p3 = f"""
 <p class="ctl"><b>Technical note on workstream 3:</b> API permissions and service controls do not automatically give external AI tools Copilot’s tool-registry rules or AI-specific guardrails{c('specs', 'rosales')}.</p>
 <p class="close">These are starting points for internal discovery, not ranked recommendations. Establishing priorities would require customer evidence, product and engineering input, visibility into the current GTM materials and roadmap, and an understanding of Studio’s commercial objectives.</p>
 <div class="grow"></div>
+<p class="method"><b>Method.</b> Public-source review, October 2026. AI tools assisted with collection, transcription, package analysis, and drafting. Claims were checked against cited materials. No internal or authenticated client access.</p>
 {srcline(3)}
 </section>
 """

@@ -57,3 +57,21 @@ Body copy alone is about 330, 300 and 300 words.
 - **Page 3:** three validation questions per workstream.
   - Workstream 1's first question now covers partner integrations: "Which questions and partner integrations, such as Snowflake and Databricks, recur in deals?"
   - Workstream 3's second question keeps permissions and safeguards: "What can the product safely support, and under which permissions and safeguards?"
+
+## Third round: what Studio lets clients do
+
+- **New section on page 1:** "What these capabilities enable" replaces the two technical observations. It opens with the extensibility point, then gives the supplied three items:
+  - Extend investment workflows
+  - Use Aladdin data beyond its standard interfaces
+  - Build client-specific tools
+- **Sources for the extensibility point:**
+  - BlackRock's APIs page (brief source 3): the APIs let clients "create tools and workflows that expand beyond native Aladdin functionality".
+  - Sewdass on the Build vs. Buy webinar (brief source 9): rebalancing tools as an example. Her words were "if clients want to build … their secret sauce rebalancing tools … they can absolutely do so", so the brief says she gave them "as an example", not that clients have built them.
+- **Dropped from page 1:**
+  - The OAuth-scope and gateway observation. The gateway point stays on page 2 under "Enterprise integration signal". API permissions stay in the page 3 technical note.
+  - The list of domains under the API counts. The services band in Exhibit 1 names the same areas.
+- **Room made on page 1:**
+  - The count explanation is shorter and sits inside the figures box.
+  - The diagram's "Aladdin Studio" label was removed, because the exhibit title already names Studio.
+  - The introduction is at 10pt.
+  - The method note moved to the foot of page 3. The limitation stays on page 1.
