@@ -1,0 +1,271 @@
+<!doctype html><html><head><meta charset="utf-8"><title>Accuracy audit, v23</title>
+<style>
+@page{size:Letter;margin:0.55in 0.6in}
+body{font-family:Helvetica,Arial,sans-serif;font-size:9.6pt;color:#111;line-height:1.38}
+h1{font-size:16pt;margin:0 0 4pt}
+h2{font-size:12pt;margin:16pt 0 5pt;border-bottom:1.5px solid #111;padding-bottom:2pt}
+h3{font-size:10.5pt;margin:10pt 0 3pt}
+p{margin:0 0 6pt}
+ul{margin:0 0 6pt 14pt;padding:0}
+li{margin:0 0 3pt}
+.lead{color:#333;margin-bottom:10pt}
+.box{background:#fff3c4;padding:7pt 9pt;margin:6pt 0 10pt}
+table{width:100%;border-collapse:collapse;margin:4pt 0 8pt;font-size:8.8pt}
+th,td{border:1px solid #bbb;padding:3pt 5pt;vertical-align:top;text-align:left}
+th{background:#eee}
+.v{font-weight:bold;white-space:nowrap}
+.item{break-inside:avoid;border-top:1px solid #bbb;padding-top:6pt;margin-top:6pt}
+.item h3{margin-top:0}
+.k{font-weight:bold}
+code{font-size:8.6pt;background:#f2f2f2;padding:0 2pt}
+.small{font-size:8.6pt;color:#333}
+</style></head><body>
+
+<h1>Accuracy audit of "Aladdin Studio from the outside" (v23)</h1>
+<p class="lead">This is an adversarial review for my own confidence, not a revision. Five reviewers went back to the original sources only: the PyPI packages (re-downloaded and hash-checked), a fresh clone of the SDK, the transcripts, the 10-K, the proxies, the Investor Day deck, the tender notices and live competitor pages. They did not use earlier project summaries. Three conceptual reviews of all 17 exhibits ran alongside. I checked every finding below that changes a verdict against the source myself. The checks I could not complete are listed at the end.</p>
+
+<div class="box"><b>Bottom line.</b> The arithmetic and the source records hold up. Every count, dollar figure and quote that was re-derived matches. The weak points are interpretive. The report merges the controls a client's API calls would face with Copilot's own controls. It treats a cost-slide volume estimate as Studio's growth story. It describes the competitive position the wrong way round. It also has four plain factual errors, all on secondary points. The central idea survives in a narrower form, and one piece of evidence we missed strengthens it.</div>
+
+<h2>1. The central AI thesis</h2>
+<p><span class="k">Claim</span> (cover, page 2, page 12): "Clients' AI tools could act on Aladdin under the same controls BlackRock uses for its own business."</p>
+<p><span class="k">Controls that are shared at the API level.</span> These are in the public specifications, and any caller with client credentials would be subject to them:</p>
+<ul>
+<li><b>OAuth scopes per API.</b> 21 of the 54 specifications split read from write. 13 are read-only or write-only. 17 use one scope for the whole API, and 3 mix both styles. No scope is per operation: posting and cancelling an order both need <code>Order:write</code>. The client-key and user-name/password options carry no scopes.</li>
+<li><b>Aladdin user permissions</b> by function, action and portfolio. Several specifications state these as preconditions, for example <code>permType='brkrSettlm'</code>. The report never mentions them, though they are the strongest public control.</li>
+<li><b>Compliance on order posting by default.</b> This covers orders only. See section 2.</li>
+<li><b>Workflow states and records.</b> The portfolio manager authorises, then the trader activates. There are Hold and Do-not-trade statuses, named owners for violations, an optional four-eyes flag on resolving a violation, and approver fields on capital flows. Some of these are fields the caller supplies, for example the approver ID and <code>autoApproved</code> on settlement instructions. So the API records them but is not shown enforcing them.</li>
+</ul>
+<p><span class="k">Controls specific to Copilot.</span> These come from the Rosales/Valdez talk: tool access by user group, input and output guardrails, the planning loop, and daily and per-change tests graded by AI judges. They sit inside BlackRock's Copilot system. A client's AI tool calling the APIs would not pass through any of them.</p>
+<p><span class="k">What would need to be built or exposed:</span> a documented, supported way for outside agents to authenticate and act, such as an agent identity or bot-account class, scopes narrow enough for an agent, and per-action approval. Equivalents of Copilot's guardrails and evaluation would have to be offered as a service, or left to the client to build. Read coverage is also missing: there is no position or exposure API. A published connector such as MCP is the last and smallest step.</p>
+<p><span class="k">Verdict: OVERSTATED.</span> The thesis is sound for the API-level controls. It is overstated where it implies Copilot's guardrails come along. Exhibit 15, row 2, says this outright: "under the same permissions, compliance checks and guardrails Copilot uses". That last part is wrong. "BlackRock's own business" also suggests AI already acts internally, and no source shows that (statement 2 below).</p>
+<p><span class="k">Strongest wording the evidence supports:</span> "A client's AI tool calling Aladdin's public APIs would face the same API-level controls as any other caller: OAuth scopes, the user's Aladdin permissions, and compliance by default when posting orders. Copilot's own guardrails sit inside Copilot, so they would not apply unless BlackRock offered them."</p>
+<p><span class="k">Evidence we missed, which supports demand.</span> On BlackRock's own podcast (source 71), Microsoft's Crockett says a client "might say that they've actually got a custom copilot and they want your plug-ins exposed there". BlackRock's Head of Product for AI, Syril Smith Garson, replies "100%", then "And we are hearing that from our clients." This is nearer evidence of demand than the MCP job posting the report cites.</p>
+
+<h2>2. The compliance finding</h2>
+<p><span class="k">What the specification says.</span> In <code>v1PostOrderConfig</code>, <code>runCompliance</code> reads: "Default is true to run compliance on this post order request." That is all it says. It does not say whether setting it to false skips the check, defers it, or leaves it to a later run.</p>
+<ul>
+<li><b>Other controls still apply.</b> The fields describe violations as "intraday and overnight", start-of-day compliance levels, and a "Compl Pending" order status. So compliance appears to run at other times too, though the spec does not say so outright.</li>
+<li><b>Left out of the report: <code>complianceTimeout</code>.</b> "If the non-zero time is reached and the run is not complete, orders will be posted with the 'Compl Pending' status set regardless of any violations that may have resulted." Violations are returned alongside the order that was created. So the check flags violations, and the spec does not show it blocking the order.</li>
+<li><b>TradeAPI</b> (alpha) posts trades directly and has no compliance or what-if option. "Compliance by default" therefore applies to orders only.</li>
+<li><b>Permissions.</b> Posting with compliance on or off needs the same <code>Order:write</code> scope. So at the OAuth level, turning it off needs no separate permission. Whether Aladdin's user permissions restrict it is not public.</li>
+</ul>
+<p><span class="k">Verdict:</span> what the report says ("Posting an order runs compliance by default. The caller can turn it off. Whether turning it off needs a separate permission is not public.") is <b>CORRECT but incomplete</b>. An Aladdin engineer would probe the timeout and the TradeAPI first. Exhibit 2's "Who: No one / Runs automatically" for the compliance step is <b>OVERSTATED</b>, because violations have owners and a resolution process. <b>Strongest wording:</b> "Posting an order runs compliance by default. The caller can turn it off with the same scope it uses to post, and a timeout can post the order before the check finishes. Whether Aladdin user permissions restrict this is not public."</p>
+
+<h2>3. Copilot and Studio architecture</h2>
+<ul>
+<li><b>What the talk establishes.</b> Copilot tools map "one-to-one to an existing Aladdin API already out in production". A second route lets teams register their own agents. There are about two thousand tools and agents. "In production" means live, not public. The speakers never mention Studio, OAuth, the SDK or client-callable APIs.</li>
+<li><b>Are internal and public APIs conflated? Partly.</b> All 54 public specifications are Aladdin Graph APIs, and some back BlackRock's own screens, so a shared runtime is well supported. But the registry has about 2,000 tools against 54 public APIs. The SDK's own core specifications are labelled "Internal". And none of the 54 could answer the talk's example question, a portfolio's exposure to aerospace. So Copilot evidently uses many APIs that clients cannot call. Page 9 calls the link an inference, which is right. Exhibit 14 draws it solid.</li>
+<li><b>What an Aladdin engineer would challenge in Exhibit 14 (page 12):</b>
+<ul>
+<li>The left column is headed "BlackRock's own use", but the ~100 apps and Copilot are products clients use. Copilot is "available to all Aladdin clients".</li>
+<li>The legend explains solid and hatched boxes, but not the arrows. The inferred Copilot-to-public-API link looks like fact.</li>
+<li>The API controls panel sits under BlackRock's use too. Nothing shows Copilot going through OAuth scopes.</li>
+<li>"Compliance by default ... Any violations are returned" is right, but does not say violations do not block the order.</li>
+<li>"Run in the client's own environment" is not always true: SDK code also runs in BlackRock-hosted Studio Compute.</li>
+<li>The "nearest public sign", the MCP job posting, is for an internal data-platform team using MCP "to automate repetitive onboarding tasks".</li>
+</ul></li>
+<li><b>Exhibit 3 (page 4).</b> The layered stack puts Studio under BlackRock's applications. Khara, Global Head of Aladdin Product, calls Studio access "over and above what they get through our front end applications". That describes a parallel way in, not a layer underneath. Exhibit 14 draws the two side by side, so the report contradicts itself. Four of six earlier panellists flagged this. It is a drawing choice, but it is the one most likely to draw a correction from an insider.</li>
+</ul>
+
+<h2>4. External AI connectivity</h2>
+<ul>
+<li><b>(a) Technically possible today: yes, for a licensed client.</b> The SDK supports OAuth <code>client_credentials</code>, a no-user flow ("SDK allows for OAuth API calls with either <code>client_credentials</code> or <code>refresh_token</code> flow"). The UserAPI specification refers to bot accounts. An agent can call the APIs through the SDK with a Studio OAuth app. It needs the client's Aladdin address, credentials set up in Studio, the right user-group permissions and contract terms. Private network links are needed for Data Cloud.</li>
+<li><b>(b) Documented support for AI or agent use:</b> none found.</li>
+<li><b>(c) A published AI integration, such as an MCP server or connector:</b> none found in the SDK, the plugin builder, the 54 specifications or the live BlackRock pages.</li>
+<li><b>Does the report keep these apart?</b> Exhibit 17 does. Pages 9 and 12 and Exhibit 14 do not. "Aladdin has published no such route" and "How they would connect is not published" are fair for (b) and (c), but read as if (a) were false.</li>
+<li><b>Is MCP overstated? Partly.</b> With the APIs, the specifications and the SDK in place, an MCP server is packaging and support, not new access. A client could wrap the APIs in MCP itself. The bigger gap for an outside agent is read coverage, such as positions and exposures. Most of the comparison set are data vendors, for whom MCP is a sales channel. MCP still matters as an RFP checkbox and a ready-made answer.</li>
+</ul>
+
+<h2>5. API inventory and workflow</h2>
+<ul>
+<li><b>The counts reproduce exactly.</b> Four wheels were re-downloaded from PyPI and their SHA-256 hashes match. 2.0.0b3 is still the latest version (uploaded 2026-01-22). The plugin builder's 54 specifications are JSON-identical to the wheels. Counting rule: one operation per HTTP method under <code>paths</code>. Result: 54 specifications, 301 operations, 11 domains, and 74 + 53 = 127 in the two largest. Every cell in Exhibit 5 matches. Stability labels: alpha 24, beta 6, stable 23, sunset 1. 10 specifications have status endpoints and 35 operations are marked long-running, though 10 of those 35 are the status calls themselves. I re-ran the spec, operation and scope counts independently.</li>
+<li><b>Exhibit 2 (page 3):</b>
+<ul>
+<li><b>WRONG:</b> "Where: Explore what-if" for the order step. The cited recording uses Explore's "new what if model" to compare a hypothetical portfolio with changed weights for risk reports. The OrderAPI spec places orders in the "Order Monitor of Aladdin Dashboard". An earlier citation check flagged this cell, and it was never changed.</li>
+<li><b>OVERSTATED:</b> the title "cover a trade from order to NAV". Write operations stop at orders and trades. No operation covers execution, confirmation matching, settlement or positions. The lot and valuation APIs are read-only.</li>
+<li><b>MISLEADING:</b> "Where: Data Cloud" for the position. Data Cloud holds a copy, not the book of record.</li>
+<li><b>CORRECT:</b> "no position API". But "positions appear only as fields" undersells two things: CollateralStatementAPI defines a full nested Position object, and CashLadderAPI returns balances.</li>
+</ul></li>
+<li><b>Operations versus workflows.</b> The report never says a full workflow can be run through the API, but the Exhibit 2 title implies it. The public operations let a caller post orders and trades and read what follows, not drive the later steps.</li>
+</ul>
+
+<h2>6. The commercial evidence</h2>
+<ul>
+<li><b>The 17x.</b> Slide 23 of the 2025 Investor Day deck is titled "4. Continuously drive marginal costs down". It lists four "2030 Estimate" multiples: Portfolios 2x and Model Portfolios 4x (BlackRock), Trade Allocations 1.3x and API Calls 17x (BlackRock + Aladdin). It closes: "Our objective is for the marginal cost of this growth to be as low as possible". It gives no base year and does not say who makes the calls, and it is marked as forward-looking. "Studio" appears nowhere in the 147 slides. So "I attribute those API calls to Studio" (page 8) is <b>UNSUPPORTED</b>. "BlackRock's two growth bets both run through Studio" (page 9) is <b>OVERSTATED</b>: this is a cost-and-scale slide, and the calls include BlackRock's own apps and Copilot's tool calls. Slides 33 and 35 ("Growing Aladdin as a Platform"; "Aladdin as a platform" as a growth driver) would have been better support.</li>
+<li><b>The 10-K checks out.</b> Revenue was $1,981M against $1,603M, up 23.6%. About $210M of the rise came from Preqin. The fee terms and the Azure/AWS hosting sentence are quoted correctly. "API" appears once in the filing, and not as a fee term.</li>
+<li><b>JPMorgan.</b> All ten figures were re-derived from the DEF 14As and match: 1.5, 4.4, 5.0, 5.3, 6.8, 4.6, 7.6, 6.9, 14.7 and 25.6 ($ millions). They are disclosed because BlackRock owns more than 5% of JPMorgan. The payments are "to access and utilize its Aladdin platform", which may include custody connectivity. A separate information-services line disappears in the year the Aladdin figure jumps, so 2023 and 2024 are not strictly comparable. Nothing in them is about Studio. Verdict: <b>DEFENSIBLE BUT UNCERTAIN</b> as evidence of adoption.</li>
+<li><b>Tenders and client examples.</b> The figures are correct: PPF bids and values, Nest's 7 bids and modules, PBGC's identical pricing. All of them show Aladdin bought and kept, not Studio used. Page 8's "a buyer wants to know that another institution built on the platform and stayed", and naming a public pension fund as the first Studio case study (page 13), go beyond them. The only client evidence that touches a Studio component is the Janus Henderson engineer's SDK changes. Royal London's "implementation of Snowflake" never names Data Cloud.</li>
+<li><b>Exhibit 10 holds.</b> A recount on 27 transcripts matches. The Q3 2026 call (October 14) mentions Studio 0 times. The window is one quarter behind the report's date, but correctly labelled.</li>
+</ul>
+
+<h2>7. Competitive analysis</h2>
+<ul>
+<li><b>Checked live and confirmed:</b> Bloomberg Enterprise MCP, LSEG's MCP server and its 90 customers, MSCI's connectors, S&amp;P's AI Data Portal, Snowflake's and Databricks' MCP documentation (Databricks partly in beta), and SimCorp's Agent Launchpad.</li>
+<li><b>WRONG:</b> page 14 groups Arcesium with platforms where "a first API call needs a contract or a relationship". The Aquata Demo Center, our own source 96, says: "You can request a 30-day trial ... There are no sales calls required to get started". Exhibit 17's 0 for Arcesium's first call is wrong.</li>
+<li><b>Reversed:</b> "Aladdin will not be alone in letting AI tools act" (page 2) and "Letting AI tools act is unlikely to stay unique" (page 12). Rivals already have AI that acts:
+<ul>
+<li>Arcesium's MCP lets Claude or ChatGPT build pipelines and rules.</li>
+<li>Clearwater claims more than 800 agents in production.</li>
+<li>SimCorp has a portfolio-management agent live.</li>
+</ul>
+Aladdin is the one with no published route. An earlier reviewer raised this and I dropped it. That was my mistake.</li>
+<li><b>Inconsistent:</b> Exhibit 12's title counts "AI features or AI access", and SimCorp's and Clearwater's in-platform agents count. Aladdin's row shows only the job posting, though Copilot, eFront Copilot and Auto Commentary meet the same test. The Finding 3 heading on page 9 has the fairer framing: "Aladdin's AI works only for logged-in users. Data providers let outside AI tools reach their data."</li>
+<li><b>Exhibit 17's scoring is uneven:</b>
+<ul>
+<li>State Street's sandbox is for clients only but scores 1, while Aladdin's client-only equivalent scores 0.</li>
+<li>The AI-connector column scores whether a connector exists, though most are licensed-only. That breaks the "no client relationship" premise.</li>
+<li>The title says data platforms are "open to any developer", yet FactSet and MSCI score 0 for a first call.</li>
+<li>Snowflake and Databricks are Data Cloud's foundation and connector partners, so "may compete" is weak.</li>
+</ul></li>
+<li><b>What a competitor's product manager would accept:</b> the sourced announcements, the dates, and "Aladdin has published no MCP server or connector". They would attack the "not unique" framing, the Arcesium score, Exhibit 12's Aladdin row and the uneven Exhibit 17 scores.</li>
+<li><b>Reasonable hypotheses, not mistakes:</b> the zeros for Clearwater and SimCorp where pages were blocked or behind a login, and State Street having no AI for clients (the press mentions a beta "Alpha Co-pilot").</li>
+</ul>
+
+<h2>8. The ten most vulnerable statements</h2>
+
+<div class="item"><h3>1. The central thesis: "the same controls"</h3>
+<p><b>Claim, pages 1, 2 and 12, Exhibit 14, Exhibit 15 row 2:</b> "Clients' AI tools could act on Aladdin under the same controls BlackRock uses for its own business"; "under the same permissions, compliance checks and guardrails Copilot uses".<br>
+<b>Source:</b> the OAuth scopes and permission notes in the 54 specifications, <code>runCompliance</code> in OrderAPI, and the Rosales/Valdez talk (source 9) on Copilot's guardrails and tests.<br>
+<b>What it establishes:</b> the API-level controls apply to any caller. Copilot's guardrails are internal to Copilot.<br>
+<b>Inferred beyond it:</b> that the client's tool gets the whole set, including Copilot's.<br>
+<b>Verdict: OVERSTATED</b>. The Exhibit 15 phrase "guardrails Copilot uses" is <b>WRONG</b>.<br>
+<b>Strongest wording:</b> "...under the same API-level controls as BlackRock's own applications: scopes, user permissions and compliance on orders."</p></div>
+
+<div class="item"><h3>2. "It already runs its own business this way"</h3>
+<p><b>Claim, page 2:</b> "BlackRock's advantage is that it already runs its own business this way." The surrounding sentences are about AI tools that act.<br>
+<b>Source:</b> source 9. Every Copilot example is a question. Valdez says: "So hopefully next year, we are here doing autonomous agents."<br>
+<b>What it establishes:</b> Copilot answers questions by calling tools mapped to production APIs.<br>
+<b>Inferred beyond it:</b> that AI acts on BlackRock's business.<br>
+<b>Verdict: UNSUPPORTED</b> for the acting part.<br>
+<b>Strongest wording:</b> "BlackRock already runs AI on these APIs: Copilot answers questions for staff and clients by calling about two thousand tools mapped to production Aladdin APIs."</p></div>
+
+<div class="item"><h3>3. The 17x as Studio's growth story</h3>
+<p><b>Claim, pages 8 and 9:</b> "I attribute those API calls to Studio, because the Studio page describes API use"; "BlackRock's two growth bets both run through Studio."<br>
+<b>Source:</b> Investor Day 2025, slide 23, "Continuously drive marginal costs down", "API Calls (#) 17x" under "BlackRock + Aladdin", "2030 Estimate".<br>
+<b>What it establishes:</b> BlackRock expects API call volume across BlackRock and Aladdin to rise about 17 times, and aims to keep the marginal cost low.<br>
+<b>Inferred beyond it:</b> that the calls are Studio's, and that they are a revenue bet.<br>
+<b>Verdict: UNSUPPORTED</b> (the attribution). <b>OVERSTATED</b> ("growth bets").<br>
+<b>Strongest wording:</b> "BlackRock expects API calls across BlackRock and Aladdin to grow about 17x by 2030, the fastest of four volume estimates on a slide about keeping marginal costs down. The deck does not say how much of that is client use through Studio."</p></div>
+
+<div class="item"><h3>4. "Will not be alone" / "unlikely to stay unique"</h3>
+<p><b>Claim, pages 2 and 12:</b> "Aladdin will not be alone in letting AI tools act"; "Letting AI tools act is unlikely to stay unique."<br>
+<b>Source:</b> sources 7, 8 and 76, plus Arcesium's live MCP page and Clearwater's "800+ AI Agents".<br>
+<b>What it establishes:</b> rivals already offer AI that acts.<br>
+<b>Inferred beyond it:</b> that Aladdin leads and others will follow.<br>
+<b>Verdict: OVERSTATED, and the wrong way round.</b><br>
+<b>Strongest wording:</b> "SimCorp, Clearwater and Arcesium already offer AI agents that act. Aladdin's AI answers questions inside the login. What BlackRock could add is AI acting under the controls it already uses."</p></div>
+
+<div class="item"><h3>5. "Its only public mention of MCP is a job posting"</h3>
+<p><b>Claim, page 9, the Exhibit 12 note, and Exhibit 14 ("nearest public sign"):</b> "Its only public mention of MCP is a job posting."<br>
+<b>Source:</b> source 10. BlackRock's Build vs Buy webinar moderator says: "You can have your MCP, you can have your different APIs, but how do we actually make use of that data?" Source 73, the posting, lists MCP for an internal team "to automate repetitive onboarding tasks".<br>
+<b>What it establishes:</b> Aladdin has published no MCP server, and the posting is about internal tooling.<br>
+<b>Inferred beyond it:</b> "only", and that the posting signals client connectivity.<br>
+<b>Verdict: WRONG</b> ("only"). <b>OVERSTATED</b> ("nearest public sign").<br>
+<b>Strongest wording:</b> "Aladdin has published no MCP server or connector. BlackRock's Head of Product for AI says clients are asking to use Aladdin's plug-ins in their own copilots (source 71)."</p></div>
+
+<div class="item"><h3>6. Exhibit 12's title and Aladdin row</h3>
+<p><b>Claim, page 10:</b> "Ten of the 11 providers I compared have announced AI features or AI access to their data", with Aladdin's row showing only the job posting.<br>
+<b>Source:</b> source 23: Copilot "now available to all Aladdin clients"; source 17, Auto Commentary.<br>
+<b>What it establishes:</b> Aladdin has announced AI features.<br>
+<b>Inferred beyond it:</b> Aladdin is set apart as the one without.<br>
+<b>Verdict: OVERSTATED</b>. It is inconsistent with the exhibit's own test.<br>
+<b>Strongest wording:</b> "Most of the 11 offer outside AI tools a connector or an MCP server. Aladdin, like SimCorp and Clearwater, offers AI only inside its platform."</p></div>
+
+<div class="item"><h3>7. Arcesium needs a contract for a first API call</h3>
+<p><b>Claim, page 14, and Exhibit 17:</b> "a first API call needs a contract or a relationship, at Aladdin as at ... Arcesium".<br>
+<b>Source:</b> source 96, the Aquata Demo Center: "You can request a 30-day trial ... There are no sales calls required to get started".<br>
+<b>What it establishes:</b> a self-serve trial.<br>
+<b>Verdict: WRONG.</b><br>
+<b>Strongest wording:</b> drop Arcesium from that list and score its first call at least 1.</p></div>
+
+<div class="item"><h3>8. Exhibit 2: "Explore what-if" and "order to NAV"</h3>
+<p><b>Claim, page 3:</b> the order step's "Where: Explore what-if", and the title "The public APIs cover a trade from order to NAV".<br>
+<b>Source:</b> the Explore recording (source 27): the "new what if model" compares a hypothetical portfolio for risk. OrderAPI: orders appear "in Order Monitor of Aladdin Dashboard". Write operations exist only for orders and trades.<br>
+<b>What it establishes:</b> orders live in Dashboard's Order Monitor, and the API writes stop at the trade.<br>
+<b>Verdict: WRONG</b> (Explore). <b>OVERSTATED</b> (title).<br>
+<b>Strongest wording:</b> "Where: Order Monitor in Aladdin Dashboard". Title: "The public APIs post orders and trades and read what follows, except positions."</p></div>
+
+<div class="item"><h3>9. "Access is granted per API, to read or to write"</h3>
+<p><b>Claim, page 2 ("per API, to read or to write") and page 5 ("per API and per action"):</b><br>
+<b>Source:</b> the security sections of the 54 specifications, recounted: 21 split read and write, 13 are single-direction, 17 use one API-wide scope, and 3 are mixed. No scope is per operation.<br>
+<b>What it establishes:</b> scopes are per API, and usually, but not always, split by read and write.<br>
+<b>Verdict: OVERSTATED</b>, especially "per action".<br>
+<b>Strongest wording:</b> "Each API has its own OAuth scopes, and most split read from write. Aladdin user permissions add limits by function and portfolio."</p></div>
+
+<div class="item"><h3>10. The compliance check, as described throughout</h3>
+<p><b>Claim, pages 2, 3, 12 and 13:</b> "Posting an order runs compliance by default. The caller can turn it off." Exhibit 2: "Who: No one / Runs automatically."<br>
+<b>Source:</b> OrderAPI <code>runCompliance</code> and <code>complianceTimeout</code> ("orders will be posted with the 'Compl Pending' status set regardless of any violations"). TradeAPI has no compliance option. ViolationAPI has owners and resolutions.<br>
+<b>What it establishes:</b> a default check on order posting that the caller can switch off or cut short with a timeout, which flags violations but is not shown to block the order.<br>
+<b>Verdict: CORRECT but incomplete.</b> "No one" is <b>OVERSTATED</b>.<br>
+<b>Strongest wording:</b> see section 2.</p></div>
+
+<p class="small"><b>Also worth knowing, below the top ten:</b></p>
+<ul class="small">
+<li>Exhibit 3's layering is a drawing choice, and contradicts Exhibit 14.</li>
+<li>Exhibit 14's "BlackRock's own use" label: clients use the apps and Copilot too.</li>
+<li>Page 8 says "another institution built on the platform and stayed", and page 13 names a public pension fund as the first Studio case study. The records show Aladdin bought and kept, not Studio used.</li>
+<li>The JPMorgan payments may include custody connectivity.</li>
+<li>Exhibit 4: ADC Admin Center placed inside a client's workspace.</li>
+<li>Exhibit 6: Goel's aims presented as current facts.</li>
+<li>Exhibit 11 leaves out the input-guardrail step.</li>
+<li>Exhibit 13's poll forced a single choice.</li>
+</ul>
+
+<h2>Three questions</h2>
+<h3>1. The most serious errors</h3>
+<p><b>Plain factual errors</b> (four, all on secondary points):</p>
+<ul>
+<li>Arcesium's first call.</li>
+<li>"Explore what-if" as where orders are placed.</li>
+<li>"Only public mention of MCP".</li>
+<li>Exhibit 15's "guardrails Copilot uses".</li>
+</ul>
+<p><b>Serious interpretive overreaches</b> (three):</p>
+<ul>
+<li>Merging the API controls with Copilot's controls in the central thesis.</li>
+<li>Reading the 17x cost-slide estimate as Studio's growth story.</li>
+<li>Framing Aladdin as ahead on AI that acts, when rivals already ship it.</li>
+</ul>
+<p>No number, quote or dollar figure was found to be wrong.</p>
+
+<h3>2. If every questionable claim were corrected</h3>
+<p><b>The thesis</b> survives in a narrower and, I think, stronger form. Aladdin already exposes write APIs with real controls: per-API scopes, Aladdin user permissions and compliance by default on orders. BlackRock already runs AI on Aladdin's production APIs. Its own Head of Product for AI says clients are asking to use Aladdin's plug-ins in their own copilots. What is missing is a documented, supported route for outside AI tools. The "advantage" becomes "BlackRock has the controls and the internal practice, and rivals are already shipping", which is more urgent, not less.</p>
+<p><b>The four recommendations:</b></p>
+<ul>
+<li><b>RFP answer: stands as is.</b></li>
+<li><b>Client AI page: stands</b>, if it promises the API-level controls rather than Copilot's guardrails, and says plainly that licensed clients can already connect with OAuth.</li>
+<li><b>Named client: stands</b>, but the stronger candidate is the SDK contributor, not a public pension fund. Public bodies are often barred from endorsing vendors.</li>
+<li><b>AI-proposed rebalance demo: stands.</b> The specs support the PM-authorises step, and the demo should account for the compliance timeout.</li>
+</ul>
+<p>The 17x paragraph would need to drop the Studio attribution. It is supporting colour, not load-bearing.</p>
+
+<h3>3. A skeptical Aladdin Studio engineering leader</h3>
+<p><b>What they would likely respect:</b></p>
+<ul>
+<li>The spec work: every count reproduces exactly from the packages.</li>
+<li>The stability labels.</li>
+<li>Finding that orders run compliance by default, with an opt-out.</li>
+<li>The long-running operations.</li>
+<li>Reading the SDK's pull requests and spotting a client engineer's contribution.</li>
+<li>Saying plainly what is not public, with sources graded.</li>
+<li>The care to separate inference from fact in most of the text.</li>
+</ul>
+<p><b>What they would legitimately criticise:</b></p>
+<ul>
+<li>Drawing Studio under BlackRock's apps (Exhibit 3).</li>
+<li>Implying Copilot's guardrails would cover client AI.</li>
+<li>Treating Copilot's ~2,000 internal tools as the public 54.</li>
+<li>Missing the timeout, the TradeAPI and the Aladdin user permissions in the controls story.</li>
+<li>"Explore what-if" for order entry.</li>
+<li>Overstating scope granularity.</li>
+<li>Treating "no published connector" as "no way to connect", when licensed clients can already do it with OAuth.</li>
+</ul>
+
+<h2>What I could not verify</h2>
+<ul class="small">
+<li><b>Audio:</b> the Rosales/Valdez talk and the Royal London video exist only as machine transcripts. Two independent transcriptions agree on the key sentences, but no one listened to the audio.</li>
+<li><b>Blocked pages:</b> Arcesium's releases (sources 75 and 76: bot checkpoint and HTTP 429), Clearwater's own pages, Find a Tender HTML (read through its API instead), GitHub pull-request pages (so not who merged them), Medium (source 38), roic.ai (the earnings-call count was redone on Bullfincher transcripts) and The TRADE 2016 article.</li>
+<li><b>Unverified signals:</b> the "Studio Compute Platform" speaker bio could not be read. No full transcript of the 2025 Investor Day was found.</li>
+<li><b>Search limits:</b> "no Aladdin MCP server" rests on searches, PyPI, the SDK repositories and live BlackRock pages. BlackRock's full GitHub organisation could not be listed.</li>
+</ul>
+</body></html>
