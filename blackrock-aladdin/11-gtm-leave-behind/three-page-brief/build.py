@@ -180,11 +180,11 @@ p1 = f"""
 <div class="mast"><span class="accent-bar"></span>
 <h1>Aladdin Studio from the outside</h1>
 <p class="sub">What the public record shows about the product, the market, and questions for GTM discovery</p>
-<p class="by">Prepared by Jacob Nikolau &nbsp;|&nbsp; As of October 19, 2026</p></div>
+<p class="by">Prepared by Jacob Nikolau &nbsp;|&nbsp; Research conducted October 2026</p></div>
 <p class="intro">This brief distills public-source research into Aladdin Studio’s technical capabilities, the buyer and competitive evidence surrounding extensible investment platforms, and three questions for internal GTM discovery. I examined BlackRock product material, the public Python SDK and API specifications, recordings featuring BlackRock leaders, and competitors’ published materials, without access to internal product, customer, roadmap, or commercial information.</p>
 
 <h2 class="hl">Studio exposes Aladdin through APIs, data, and developer tools</h2>
-<p>BlackRock describes Aladdin Studio as the user experience that lets people treat Aladdin as a platform, through APIs and events, Aladdin Data Cloud on Snowflake, and developer tools{c('woodhead')}. These capabilities let clients build applications, access data, and connect their own workflows to Aladdin{c('studio')}. This three-part description comes from Dave Woodhead, BlackRock’s Head of Engineering for Studio, speaking in November 2025{c('woodhead')}.</p>
+<p>Aladdin Studio gives developers programmatic access to Aladdin through APIs and events, Aladdin Data Cloud on Snowflake, and developer tools{c('woodhead')}. BlackRock describes Studio as the experience that allows clients to treat Aladdin as a platform and build applications and workflows around its capabilities{c('woodhead', 'studio')}.</p>
 
 <figure class="exhibit keep studio-dg"><p class="ex-title"><span class="ex-num">Exhibit 1.</span> What Studio offers, in three groups</p>
 <p class="cap">Aladdin Studio</p>
@@ -214,7 +214,7 @@ p1 = f"""
 <div><h4>Access and integration</h4><p>The specifications document API-specific OAuth scopes{c('specs')}, while the SDK supports authenticated calls and enterprise API gateway configurations{c('sdk')}.</p></div>
 </div>
 <div class="grow"></div>
-<p class="method"><b>Limitation.</b> This analysis examines public product material, SDK code, and API specifications. I could not authenticate to a client environment or verify the full developer experience. <b>Method.</b> Public-source review, as of October 19, 2026. AI tools assisted with collection, transcription, package analysis, and drafting. Claims were checked against cited materials. No internal or authenticated client access.</p>
+<p class="method"><b>Limitation.</b> This analysis examines public product material, SDK code, and API specifications. I could not authenticate to a client environment or verify the full developer experience. <b>Method.</b> Public-source review, October 2026. AI tools assisted with collection, transcription, package analysis, and drafting. Claims were checked against cited materials. No internal or authenticated client access.</p>
 {srcline(1)}
 </section>
 """
@@ -272,15 +272,15 @@ p3 = f"""
 <tr class="w"><td class="first"><span class="n">1</span>API and integration positioning</td>
 <td>BlackRock’s webinar indicates that questions about API suites and data-platform connectivity have become more prominent in RFPs{c('webinar')}. The public SDK provides a concrete basis for describing Studio’s documented API domains and integration patterns{c('specs', 'sdk')}.</td>
 <td>A technically validated API and integration narrative for RFPs, sales conversations, or developer-oriented materials.</td>
-<td><ul><li>Which questions recur in deals?</li><li>What collateral already exists?</li><li>Which capabilities are generally available and approved for external positioning?</li><li>Where does better enablement have the greatest potential value?</li></ul></td></tr>
+<td><ul><li>Which questions and partner integrations, such as Snowflake and Databricks, recur in deals?</li><li>What collateral already exists?</li><li>Where does stronger enablement have the greatest potential value?</li></ul></td></tr>
 <tr class="w"><td class="first"><span class="n">2</span>Studio-specific customer proof</td>
 <td>Public sources document institutions using Aladdin{c('jhg')}, but this review found limited named examples specifically describing applications those institutions built with Studio{c('studio', 'edgar')}.</td>
 <td>A permissioned Studio customer story explaining what the client built, why it mattered, and what outcomes can be substantiated.</td>
-<td><ul><li>Which clients actively build with Studio?</li><li>What measurable results exist?</li><li>Which customers are willing and permitted to be named?</li><li>What kind of proof helps buyers evaluate Studio?</li></ul></td></tr>
+<td><ul><li>Which clients actively build with Studio?</li><li>What outcomes can be verified?</li><li>Which customers are willing and permitted to be named?</li></ul></td></tr>
 <tr class="w"><td class="first"><span class="n">3</span>Client-built AI integration use cases</td>
 <td>Studio exposes documented Aladdin APIs that external applications can call with appropriate credentials{c('specs', 'sdk')}. Competitors have announced AI integrations and agent capabilities{c('simcorp', 'arcesium', 'bloomberg')}. This suggests a possible area for client-built AI use cases, but does not establish demand, supported workflows, or product readiness.</td>
 <td>If customer demand and technical readiness justify it, a validated use-case narrative or demonstration showing how a client-built AI application could interact with supported Aladdin capabilities.</td>
-<td><ul><li>Which client use cases are requested?</li><li>What actions are supported?</li><li>What approvals and permissions apply?</li><li>What AI-specific safeguards are available or required?</li><li>Is this commercially important relative to other Studio priorities?</li></ul></td></tr>
+<td><ul><li>Which client use cases are requested?</li><li>What can the product safely support, and under which permissions and safeguards?</li><li>Is this commercially important relative to other Studio priorities?</li></ul></td></tr>
 </tbody></table>
 </figure>
 <p class="ctl"><b>Technical note on workstream 3:</b> API permissions and service controls do not automatically give external AI tools Copilot’s tool-registry rules or AI-specific guardrails{c('specs', 'rosales')}.</p>

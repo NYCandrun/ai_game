@@ -6,9 +6,7 @@
 
 ## Where the text departs from the supplied wording, and why
 
-1. **Page 1, Studio definition.**
-   - **Change:** "the developer experience for extending Aladdin" became "the user experience that lets people treat Aladdin as a platform".
-   - **Why:** Woodhead's words (Prep 2 source 1) are "Aladdin Studio is essentially the user experience that allows people to think of Aladdin as a platform." The Studio page does not use "developer experience".
+1. **Page 1, Studio definition.** The paragraph now uses the two sentences you supplied in the second round. The second sentence keeps Woodhead's framing ("the experience that allows clients to treat Aladdin as a platform") and cites him and the Studio page.
 2. **Page 2, Sewdass.**
    - **Change:** "shared data foundations" became "foundational data".
    - **Why:** her words are "that backbone foundational data that supports both publics and privates workflows". The word "shared" is not in the source.
@@ -51,3 +49,11 @@ These counts include diagram labels and captions and leave out each page's sourc
 | 3 | 355 |
 
 Body copy alone is about 330, 300 and 300 words.
+
+## Second round
+
+- **Date line:** now reads "Research conducted October 2026". The method note now reads "Public-source review, October 2026." The source lines keep each source's own check date.
+- **Page 1 introduction:** replaced with the supplied two-sentence version, keeping its citations.
+- **Page 3:** three validation questions per workstream.
+  - Workstream 1's first question now covers partner integrations: "Which questions and partner integrations, such as Snowflake and Databricks, recur in deals?"
+  - Workstream 3's second question keeps permissions and safeguards: "What can the product safely support, and under which permissions and safeguards?"
