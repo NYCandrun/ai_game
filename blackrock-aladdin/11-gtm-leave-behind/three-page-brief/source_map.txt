@@ -9,7 +9,7 @@ Brief number -> Prep 2 source number
 8 -> 32  BlackRock, ATX: Aladdin Tools for Excel product page, as of Oct. 20, 2026
 9 -> 10  BlackRock, “Build vs. Buy: How Asset Managers Are Rethinking Key Decisions Today,” webinar replay dated June 2026, published captions
 10 -> 7  SimCorp, “Introducing Agent Launchpad,” 2026
-11 -> 75  Arcesium, “Arcesium unveils new suite of AI features in Aquata,” press release, 2025
+11 -> None  FinTech Global, “Arcesium launches AI platform for institutional investment,” May 20, 2026
 12 -> 77  Bloomberg, “Bloomberg Launches Enterprise MCP…,” press release, Sept. 29, 2026
 13 -> 56  Pull request 52, URL rewriting for enterprise API gateways, blackrock/aladdinsdk, Dec. 2025
 14 -> 57  Pull request 53, additional HTTP headers, blackrock/aladdinsdk, Dec. 2025

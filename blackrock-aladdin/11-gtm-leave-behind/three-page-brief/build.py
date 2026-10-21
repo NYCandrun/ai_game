@@ -39,8 +39,8 @@ REG = {
                 'https://www.blackrock.com/aladdin/discover/expertise/webinars/build-vs-buy-how-asset-managers-are-rethinking-key-decisions'),
     'simcorp': (7, 'SimCorp, “Introducing Agent Launchpad,” 2026',
                 'https://www.simcorp.com/about-us/news/2026/introducing-agent-launchpad'),
-    'arcesium': (75, 'Arcesium, “Arcesium unveils new suite of AI features in Aquata,” press release, 2025',
-                 'https://www.arcesium.com/press-release/arcesium-unveils-new-suite-of-ai-features-in-aquata'),
+    'arcesium': (None, 'FinTech Global, “Arcesium launches AI platform for institutional investment,” May 20, 2026',
+                 'https://fintech.global/2026/05/20/arcesium-launches-ai-platform-for-institutional-investment/'),
     'bloomberg': (77, 'Bloomberg, “Bloomberg Launches Enterprise MCP…,” press release, Sept. 29, 2026',
                   'https://www.prnewswire.com/news-releases/bloomberg-launches-enterprise-mcp-to-seamlessly-connect-bloomberg-data-with-clients-enterprise-ai-applications-302891331.html'),
     'pr52': (56, 'Pull request 52, URL rewriting for enterprise API gateways, blackrock/aladdinsdk, Dec. 2025',
@@ -245,7 +245,7 @@ p2 = f"""
 <figure class="exhibit keep"><p class="ex-title"><span class="ex-num">Exhibit 2.</span> Selective competitive observations</p>
 <table class="comp"><thead><tr><th>Provider</th><th>Public development</th></tr></thead><tbody>
 <tr><td class="first">SimCorp</td><td>SimCorp announced Agent Launchpad in 2026, including plans for prebuilt agents and client-built agents on SimCorp One’s data layer{c('simcorp')}.</td></tr>
-<tr><td class="first">Arcesium</td><td>Arcesium added AI features to Aquata, including an MCP server that connects external AI tools to client data{c('arcesium')}.</td></tr>
+<tr><td class="first">Arcesium</td><td>Arcesium launched Arcesium Intelligence in May 2026, with more than 100 pre-configured agents across its Opterra and Aquata platforms. It builds on an MCP server, released in December 2025, that connects external AI tools to client data in Aquata{c('arcesium')}.</td></tr>
 <tr><td class="first">Bloomberg</td><td>Bloomberg launched an MCP server for licensed data in September 2026{c('bloomberg')}.</td></tr>
 </tbody></table>
 <p class="take">These examples indicate that competitors are publicly emphasizing extensibility or AI access, but the offerings differ substantially. They do not establish feature parity, a competitive ranking, or customer demand for a specific Studio integration.</p>

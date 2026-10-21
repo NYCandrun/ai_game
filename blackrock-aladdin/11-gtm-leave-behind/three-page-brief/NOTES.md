@@ -75,3 +75,12 @@ Body copy alone is about 330, 300 and 300 words.
   - The diagram's "Aladdin Studio" label was removed, because the exhibit title already names Studio.
   - The introduction is at 10pt.
   - The method note moved to the foot of page 3. The limitation stays on page 1.
+
+## Fourth round: Arcesium row
+
+- **Exhibit 2, Arcesium row:** now reads "Arcesium launched Arcesium Intelligence in May 2026, with more than 100 pre-configured agents across its Opterra and Aquata platforms. It builds on an MCP server, released in December 2025, that connects external AI tools to client data in Aquata."
+- **Source 11:** now FinTech Global, "Arcesium launches AI platform for institutional investment," May 20, 2026. The source title links to https://fintech.global/2026/05/20/arcesium-launches-ai-platform-for-institutional-investment/
+  - The URL was opened on October 21, 2026. It loaded with HTTP 200.
+  - It states the "catalogue of over 100 pre-configured agents" across Opterra and Aquata.
+  - It also states the "December rollout of AI features, which included an MCP server enabling investment firms to connect enterprise AI tools to their governed data foundation in the Aquata platform."
+  - It is trade press (grade T). It is not part of the Prep 2 source register.
