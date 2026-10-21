@@ -43,19 +43,19 @@ add(4, "p2", "Many data providers now offer AI tools a way to read their data. A
     "\"Many data providers now let outside AI tools read their data. Aladdin's APIs can also post orders and assign compliance rules to portfolios.\"",
     "My \"some let them act\" had no source and was dropped. Arcesium is covered in fix 3.")
 add(5, "p2, p5", "Access is granted per API, to read or to write. / With OAuth, access is granted per API and per action.",
-    "p2: \"Each API has its own OAuth scopes, and most split read from write.\" p5: delete \"and per action\" and add \"The specifications also name Aladdin user permissions, set by function, action and portfolio, and several APIs state which permission an operation needs.\"",
+    "p2: \"Each API has its own OAuth scopes, and most split read from write.\" p5: delete \"and per action\" and add \"The specifications also name Aladdin user permissions, set by function, action and portfolio.\"",
     "The engineer warns that the specs name permissions but do not show them enforced, so the wording describes, not asserts. The devil says the split holds for the APIs the thesis uses.")
 add(6, "p2, p12, Exhibits 3 and 14", "Posting an order runs compliance by default. The caller can turn it off. Whether turning it off needs a separate permission is not public.",
     "p2: keep as is. p12: \"Posting an order runs a compliance check by default. The caller can skip that check with the same Order:write scope it uses to post. If the caller sets a time limit and the check runs over it, the order posts with the status Compl Pending. Whether an Aladdin permission restricts either option is not public. A portfolio manager authorizes each order before a trader works it, and the public order API has no call to authorize one.\"",
     "The reader and engineer both want the detail out of the executive summary. Adding the authorization step turns a weakness into the human-approval control.")
 add(7, "p2, p8 heading and text, p9 box, p12", "API calls will grow 17x / I attribute those API calls to Studio / BlackRock's growth story to investors runs through Studio / two growth bets both run through Studio",
-    "p2: \"BlackRock estimated that API calls across BlackRock and Aladdin would grow 17x by 2030.\" p8 heading: \"2. BlackRock tells investors Aladdin is growing as a platform, but rarely names Studio\". p8 text: \"The slide counts calls across BlackRock and Aladdin together. It does not say who makes them or how a call is counted.\" p9 box: \"BlackRock tells investors it is 'empowering clients with data and APIs' and lists 'Aladdin as a platform' among Aladdin's growth drivers. Studio is the product clients use to build on Aladdin.\" Add slides 33 and 35 to source 11.",
+    "p2: \"BlackRock estimated that API calls across BlackRock and Aladdin would grow 17x by 2030.\" p8 heading: \"2. BlackRock tells investors Aladdin is growing as a platform, but rarely names Studio\". p8 text: \"The slide counts calls across BlackRock and Aladdin together and does not say who makes them.\" p9 box: \"BlackRock tells investors it is 'empowering clients with data and APIs' and lists 'Aladdin as a platform' among Aladdin's growth drivers. Studio is the product clients use to build on Aladdin.\" Add slides 33 and 35 to source 11.",
     "My \"They include BlackRock's own applications and Copilot\" was unsourced and is dropped. \"Rarely\", because one 2023 slide does name Studio.")
 add(8, "p9, p12, Exhibit 14", "Aladdin has published no such route. / How those tools would connect is not public.",
-    "\"A licensed client's own programs, AI tools included, can already call the APIs with credentials registered in Studio, acting for a user or as an application. BlackRock has published no guide or connector for AI tools.\"",
+    "\"A licensed client's own programs, AI tools included, can already call the APIs with credentials registered in Studio. BlackRock has published no guide or connector for AI tools.\"",
     "\"Licensed\" was added because licence terms on automated use are not public. The devil rejects any claim about what is allowed.")
 add(9, "Exhibit 14 note, p9", "Nearest public sign: a September 2026 Forward Deploy Engineer posting ... that names MCP",
-    "\"In November 2024, on BlackRock's podcast, Microsoft's Adrian Crockett said clients with their own copilots might want BlackRock's plug-ins exposed there. Syril Smith Garson, BlackRock's Head of Product for AI, answered '100%', and later, 'we are hearing that from our clients.'\" Drop the posting from Exhibit 14. Keep it on p9, described as an internal data-platform role.",
+    "\"Asked about clients using BlackRock's plug-ins in their own copilots, BlackRock's Head of Product for AI said, 'we are hearing that from our clients.'\" [source 71, Never Done podcast, November 6, 2024] Drop the posting from Exhibit 14. Keep it on p9, described as an internal data-platform role.",
     "I checked the transcript. \"100%\" follows Crockett's list ending with plug-ins in a client's own copilot. Dated, because it is two years old.")
 add(10, "Exhibit 15 row 2", "A page on how a client's own AI tools could read data and take actions through Aladdin's APIs, under the same permissions, compliance checks and guardrails Copilot uses.",
     "\"Once BlackRock decides to offer it: a page on how a client's AI tools could use the tools Copilot uses, for each user under that user's Aladdin permissions, with a portfolio manager authorizing each order before it trades.\"",
@@ -66,21 +66,21 @@ add(12, "Exhibit 3 (p4)", "Layers stack Studio under BlackRock's applications.",
     "Redraw side by side. See Decision 3.", "Same split as fix 11.")
 
 add(13, "Exhibit 2, Order \"Where\" and caption", "Explore what-if 27",
-    "\"Order Monitor in Aladdin Dashboard 6\". Delete \"the Explore training recording 27\" from the caption.", "Unanimous, the devil included.")
+    "\"Order Monitor in Aladdin Dashboard\" [source 6, the API specifications]. Delete the Explore training recording [source 27] from the caption.", "Unanimous, the devil included.")
 add(14, "p9, Exhibit 12 note", "Its only public mention of MCP is a job posting 73.",
     "\"BlackRock has published no MCP server or AI connector for Aladdin.\"", "\"AI connector\", because Data Cloud has a Snowflake connector.")
 add(15, "p14, Exhibit 17", "a first API call needs a contract or a relationship, at Aladdin as at ... Arcesium; Arcesium first call 0",
-    "Arcesium first call 1, trial stays 1. \"Investment platforms score low because a first API call needs a client relationship at Aladdin, Bloomberg, State Street, SimCorp and Clearwater. Arcesium offers its Aquata data platform on a 30-day trial, on request 96.\"", "Verified in source 96.")
+    "Arcesium first call 1, trial stays 1. \"Investment platforms score low because a first API call needs a client relationship at Aladdin, Bloomberg, State Street, SimCorp and Clearwater. Arcesium offers its Aquata data platform on a 30-day trial.\" [source 96, Aquata Demo Center]", "Verified in source 96.")
 add(16, "Exhibit 12 title", "Ten of the 11 providers I compared have announced AI features or AI access to their data",
     "\"Eight of the 11 providers offer outside AI tools a connector or an MCP server. Aladdin's AI, like SimCorp's and Clearwater's, works inside the platform.\" Update the page 9 counts to match.",
     "My premise was wrong. The devil and I checked: Aladdin is a separate comparison row, so \"Ten of the 11\" was arithmetically right. The title still changes because Aladdin meets its test.")
 add(17, "Exhibit 12 Aladdin row", "A Forward Deploy Engineer posting ... names Model Context Protocol (MCP)",
-    "\"Copilot and eFront Copilot for clients, inside the platform. No published connector or MCP server for outside AI tools.\" Source: the Copilot page.", "The reader: \"the comparison I would mind most\".")
+    "\"Copilot for clients, inside the platform. No published connector for outside AI tools.\" [source 23, the Copilot page]", "The reader: \"the comparison I would mind most\".")
 add(18, "Exhibit 17 title", "Data platforms open to any developer, investment platforms like Studio mostly to clients",
     "\"Snowflake and Databricks are self-serve. Most others, Studio included, open fully only to clients.\"", "")
 add(19, "Exhibit 2 Valuation", "Each valuation carries an exception list", "\"Each valuation counts its exceptions. Another call lists them.\"", "")
 add(20, "Exhibit 4 SDK tile", "typed clients for the APIs and Data Cloud, with login, retries and rate limits built in",
-    "\"Open-source Python library with typed clients for the APIs and a Snowflake connection for Data Cloud, with login, retries and configurable rate limiting built in.\"",
+    "\"Open-source Python library with typed clients for the APIs and a Snowflake connection for Data Cloud, with login and retries built in.\"",
     "The engineer: the SDK applies only limits the user sets, not BlackRock's quotas.")
 add(21, "Exhibit 6 Miller; Exhibit 7 note", "replaced \"flat files ... FTP and related transfers\"",
     "\"Data Cloud is 'much simpler' than sending flat files over FTP.\" Fix the Exhibit 7 note to match.", "The devil calls \"replaced\" a fair paraphrase. ADX still does bulk file transfer.")
@@ -90,11 +90,11 @@ add(22, "Exhibit 2 title", "The public APIs cover a trade from order to NAV, exc
 add(23, "Exhibit 2 Compliance", "Who: No one / Runs automatically",
     "Who: \"Runs automatically. The owner of each violation resolves it.\" API: \"OrderAPI (runCompliance), then ViolationAPI to resolve\".", "The check runs inside the order post, not in the APIs v23 named.")
 add(24, "Exhibit 2 Position", "Where: Data Cloud / Positions appear only as fields in other APIs",
-    "Where: \"Read from Data Cloud, which carries IBOR holdings\". Detail: \"No holdings API. Collateral positions and cash balances can be read.\"", "")
+    "Where: \"Read from Data Cloud, which carries IBOR holdings\". Detail: \"No holdings API.\"", "")
 add(25, "p8", "a buyer wants to know that another institution built on the platform and stayed",
     "\"...because Studio is sold for building on Aladdin, and a buyer who builds on a platform wants to know that other institutions chose it and kept it.\"", "The devil reads the old sentence as about what a buyer wants. The new wording states the link explicitly.")
 add(26, "p8, Exhibit 15 row 3", "public pension funds ... natural first subjects for a Studio case study",
-    "Row 3: \"One client willing to be named: a client whose engineers have contributed to the SDK, once its move to Aladdin is live.\" p8: \"Firms whose filings or tenders already name BlackRock are easier to name in public as Aladdin references.\"",
+    "Row 3: \"One named client that builds with Studio.\" p8: \"Firms whose filings or tenders already name BlackRock are easier to name in public as Aladdin references.\"",
     "The devil notes that the US federal rule my list cited does not bind UK pension bodies. The recommendation holds either way.")
 add(27, "Exhibit 8 note", "The grey 2016 bar is a payment for integration services; the figures in the text start with 2017. JPMorgan is also a custodian...",
     "\"Disclosed because BlackRock owns more than 5 percent of JPMorgan. The proxies do not say which Aladdin services the payments cover. A 2016 trade press report says JPMorgan was connecting to Aladdin for its custody clients.\"",
@@ -102,7 +102,7 @@ add(27, "Exhibit 8 note", "The grey 2016 bar is a payment for integration servic
 add(28, "p5", "Compliance rule assignments move through review states before they are approved",
     "\"Compliance rule assignments carry a review state, such as draft, review required or approved.\"", "")
 add(29, "Exhibit 14 Approvals", "Capital flows record who approved them.",
-    "\"Capital flows need the user's Aladdin cash permissions for each action and record who authorized and approved each one.\"", "Callers can create a flow already authorized, so no sequence is implied.")
+    "\"Capital flows need the user's Aladdin cash permissions and record who authorized and approved them.\"", "Callers can create a flow already authorized, so no sequence is implied.")
 add(30, "Exhibit 14 client tiles", "Route Aladdin calls through the client's own gateway. / Run in the client's own environment",
     "\"Can route calls through the client's own gateway.\" \"Run in the client's environment or in Aladdin Compute.\"", "")
 add(31, "Exhibit 11 (p9)", "...then calling production Aladdin APIs; no input guardrail step",
@@ -117,26 +117,26 @@ add(34, "Exhibit 12 rows", "SimCorp, Arcesium, Clearwater, Bloomberg, FactSet ro
 add(35, "Exhibit 17 scores, legend, date", "State Street trial 1; Aladdin sample code 1; Bloomberg docs 1; MSCI sample code 1; legend 0 = \"None, or closed to non-clients\"; \"October 8, 2026\"",
     "State Street trial 0, Aladdin sample code 2, Bloomberg docs 2, MSCI sample code 2. Replace the legend: \"In every column, 0 means not reachable without a client relationship. The AI connector column scores whether a connector exists. Most connectors are for licensed clients.\" Date: \"October 8 to 20, 2026\".", "")
 add(36, "p14", "10 platforms that may compete with Aladdin for certain uses",
-    "\"Exhibit 17 puts Studio beside five investment platforms that compete with Aladdin and five data and cloud platforms, included as benchmarks for developer access. Aladdin Data Cloud runs on Snowflake.\"", "My \"Databricks is a named connector partner\" had no source and was dropped.")
+    "\"Exhibit 17 puts Studio beside five investment platforms that compete with Aladdin and five data and cloud platforms, included as benchmarks for developer access.\"", "My \"Databricks is a named connector partner\" had no source and was dropped.")
 add(37, "Exhibit 3 secondary", "Controls column spans every row; Data Cloud and ADX shown only as inputs", "Folded into Decision 3.", "")
 add(38, "Exhibit 4 tiles", "ADC Admin Center: The screen for managing Data Cloud datasets / Developer Portal: Catalog, guides, field dictionary... behind a client login / Governance quote",
-    "Admin Center: \"The screen for managing Data Cloud datasets. Four of its ten API operations are for BlackRock's internal use.\" Portal: \"Guides, behind a client login.\" Governance: quote only \"access management and usage monitoring\".", "Only \"guides\" is tied to the portal in the sources.")
+    "Admin Center: no change. Portal: \"Guides, behind a client login.\" Governance: quote only \"access management and usage monitoring\".", "Only \"guides\" is tied to the portal in the sources.")
 add(39, "Exhibit 6 Goel", "every transaction via an event, via an API ... within 15 minutes of latency", "Prefix with \"Aims for:\".", "")
 add(40, "Exhibit 1 title", "Of eight Aladdin products, Studio is the one for people who write code",
     "\"Of eight Aladdin products shown, Studio is the one for people who write code.\" Note: \"BlackRock lists four platforms and nine solutions.\"", "")
 add(41, "Exhibit 16 and p13", "after qualification; Get help: SDK changes from outside developers...",
-    "\"After becoming a client\" in all six places. Get help, public: \"No public support channel. The SDK's support file lists headings but no channels.\" Move the merged code changes to the Build row.", "")
+    "\"After becoming a client\" in all six places. Get help, public: \"No public support channel.\" Move the merged code changes to the Build row.", "")
 add(42, "p8, Exhibit 10, register 64", "26 earnings calls, Q1 2020 to Q2 2026; six and a half years",
     "\"27 earnings calls, Q1 2020 to Q3 2026\", \"nearly seven years\". All six terms were recounted on Q3 2026, all zero. Name the transcript source used.", "")
 
-add(43, "p5", "35 operations are marked long-running", "\"25 operations run as long-running jobs, and each of the 10 specifications that has them offers a status call.\"", "")
+add(43, "p5", "35 operations are marked long-running", "Consider skipping. Extra detail that does not change the argument. If kept: \"25 operations run as long-running jobs, and each of the 10 specifications that has them offers a status call.\"", "")
 add(44, "Exhibit 4, Exhibit 2 note", "No event specification is public", "\"No public specification covers business events.\"", "")
 add(45, "p8, p9 box", "four usage measures; fastest", "\"four volume estimates to 2030\". Drop \"fastest\".", "")
 add(46, "Exhibit 10", "an add-on sold with Aladdin Enterprise", "\"cited among products clients use alongside Aladdin Enterprise\"", "")
 add(47, "Exhibit 9 PPF", "up to £74.0 million ... estimate of up to £55 million; supplier's address", "Add \"over ten years\". Say \"supplier web address\".", "")
 add(48, "Exhibit 9 PBGC", "about the same yearly price", "\"at the same yearly price\". The records name BlackRock, not Aladdin.", "")
 add(49, "Register 3 and 58", "FactSet dated \"2025\"; 58 title mismatch", "Date 3 as December 16, 2025. Correct 58's title.", "")
-add(50, "p3", "Its 24 percent rise includes Preqin", "Add \"Annual contract value grew 16 percent excluding Preqin.\"", "The reader: use BlackRock's own figure, not a derived one.")
+add(50, "p3", "Its 24 percent rise includes Preqin", "Consider skipping. Extra detail that does not change the argument. If kept: Add \"Annual contract value grew 16 percent excluding Preqin.\"", "The reader: use BlackRock's own figure, not a derived one.")
 add(51, "p12", "A 2026 job posting for Aladdin Graph ... over 200 institutions", "Delete the sentence. It repeats the client base line before it.", "")
 add(52, "p12", "Copilot's guardrails are tested daily", "\"Copilot's system prompts are tested daily by AI judges\", placed with the controls that stay inside Copilot.", "")
 add(53, "p6, Exhibit 7", "Only Woodhead names every part / names them all", "\"Only Woodhead lists all three parts in one definition.\"", "")
@@ -146,25 +146,25 @@ add(55, "Exhibit 13", "would stop maintaining compliance reporting in house firs
 add(56, "Exhibit 15 row 1", "It lists the APIs by area, with stability labels. ... It covers Snowflake and Databricks connectors",
     "\"It lists the APIs by area and marks which are stable. It covers the Snowflake connection for Data Cloud, and how a client's own AI tools can call the APIs today.\"", "The reader: showing that 24 of 54 specs are alpha would cost marks.")
 add(57, "Exhibit 16", "See the catalog: public", "\"Public, but only by unpacking the packages\"", "")
-add(58, "Exhibit 4 note", "I read Studio Compute sessions as the SDK's name for Aladdin Compute", "\"The SDK uses both names for the same hosted environment.\"", "")
+add(58, "Exhibit 4 note", "I read Studio Compute sessions as the SDK's name for Aladdin Compute", "Consider skipping. Extra detail that does not change the argument. If kept: \"The SDK uses both names for the same hosted environment.\"", "")
 add(59, "Exhibit 12 smaller rows, note", "MSCI, S&P, Snowflake, Databricks rows; State Street note",
-    "The competitive analyst's qualifiers. State Street note: \"State Street is not listed because I found no AI feature it has released to clients. In December 2023 it described an Alpha Co-pilot in beta.\"", "The Alpha Co-pilot article is from 2023. Undated, it reads as current.")
-add(60, "Exhibit 5 note", "", "Optional: \"five are marked for internal use\".", "")
-add(61, "Exhibit 4 Spaces", "", "Recommend leaving out.", "The marketer: not actionable. The reader defers. The others would add it.")
+    "The competitive analyst's qualifiers. State Street note: \"State Street is not listed because I found no AI feature it has released to clients.\"", "")
+add(60, "Exhibit 5 note", "", "Consider skipping. Extra detail that does not change the argument. If kept: \"five are marked for internal use\".", "")
+add(61, "Exhibit 4 Spaces", "", "Consider skipping. Recommend leaving out.", "The marketer: not actionable. The reader defers. The others would add it.")
 
 NEW = [
  ("N1", "Cover heading", "What public sources show.", "\"What public sources show, and one direction they point to.\"", "The marketer: the thesis is a proposal and should not sit under a findings heading."),
  ("N2", "p12 conditions", "Three things would have to be true ... BlackRock would have to open its controls to tools it did not build.",
-  "\"Four things would have to be true. Clients would have to want Aladdin's tools inside their own AI tools, and later want those tools to act. Their risk teams and regulators would have to accept it, with a portfolio manager authorizing each order. BlackRock would have to offer tools it built to AI models it did not build, including tools on APIs that are not public today. And BlackRock would have to decide how to package and price that access.\"", "The marketer, reader and engineer each added part of this."),
+  "\"Four things would have to be true. Clients would have to want Aladdin's tools inside their own AI tools, and later want those tools to act. Their risk teams and regulators would have to accept it, with a portfolio manager authorizing each order. BlackRock would have to offer tools it built to AI models it did not build. And BlackRock would have to decide how to package and price that access.\"", "The marketer, reader and engineer each added part of this."),
  ("N3", "p12", "What BlackRock can show is its own use.", "Folded into fix 3: \"What BlackRock can show is scale in production...\"", ""),
  ("N4", "p10 direction box", "BlackRock could publish ... which production APIs each tool calls, which user groups may use each tool, and the tested guardrails that block investment advice",
   "\"BlackRock could describe how Copilot's tools are registered, permissioned and tested.\"", "The reader and engineer: no risk or security function would publish the tool-to-API map."),
  ("N5", "Exhibit 15 row 4", "Posting an order runs compliance by default, unless the caller turns it off...",
   "\"In the demo, the client's AI tool proposes a rebalance and posts it as what-if orders with compliance on. A portfolio manager authorizes them before a trader works them.\"", "The reader: do not pitch the off-switch to a buyer's risk team."),
- ("N6", "Exhibit 15 order and owners", "Rows 1, 2, 3, 4", "Reorder to 1, 4, 3, 2 and add one line: \"Only the RFP answer is marketing's to ship alone. The demo needs product and legal, the client story needs client consent, and the page needs a product decision.\"", "From the reader."),
+ ("N6", "Exhibit 15 order and owners", "Rows 1, 2, 3, 4", "Reorder to 1, 4, 3, 2. Consider skipping the owners line. If kept: \"Only the RFP answer is marketing's to ship alone. The demo needs product and legal, the client story needs client consent, and the page needs a product decision.\"", "From the reader."),
  ("N7", "p12 identity", "(absent)", "\"Acting for each user\" means a delegated sign-in for that user. An application account would carry its own permissions.", "The engineer: this is what makes \"that user's permissions\" true."),
  ("N8", "Route label", "(absent)", "Label the route \"an MCP server or an agent protocol such as A2A, my inference\".", "The Copilot team said it is evaluating A2A and LangChain's agent protocol."),
- ("N9", "Why the tools matter", "(absent)", "\"Copilot's flagship example, a portfolio's exposure to a sector, has no public API today.\"", "The engineer: this is the concrete reason opening Copilot's tools adds something."),
+ ("N9", "Why the tools matter", "(absent)", "Optional. \"Copilot's flagship example, a portfolio's exposure to a sector, has no public API today.\"", "The engineer: this is the concrete reason opening Copilot's tools adds something."),
  ("N10", "Register", "(absent)", "Add the Aquata MCP page and the State Street article. Fix numbering at 27/28 and 73/74.", ""),
  ("N11", "Existing v23 rule breaks", "p2, p7, p10, p13 semicolons; p6, p11 em-dashes", "Replace each with full stops or plain attribution lines.", "The editor found these."),
  ("N12", "Accessibility labels", "Exhibits 3, 11, 14", "Update to match the new text.", ""),
@@ -205,7 +205,7 @@ parts.append("""<h1>Proposed changes for v24: panel review</h1>
 <li>New text states only the fact.</li>
 <li>Say things explicitly.</li>
 </ul>
-<p class='lead'>Layout is left to fix later, as you asked, so no wording here was shortened to fit a page.</p>
+<p class='lead'>Layout is left to fix later, as you asked, so no wording here was shortened to fit a page. Asides that do not serve the point have been cut. Fixes that are only extra detail are marked "Consider skipping". Citations appear as [source N, name] so they do not read as part of the wording.</p>
 <p class='lead'>Panel key: A accept, C accept with change (my recommendation uses the changed wording), R reject, D defer.</p>
 <div class='box'><b>Bottom line.</b> Five of six reviewers back an evolved thesis and a v24. The devil's advocate argues for leaving v23 alone and fixing only three lines. All six agree on three changes: page 2's "already runs its own business this way", Exhibit 15 row 2's promise of Copilot's guardrails, and Exhibit 2's "Explore what-if". The panel also found real faults in my own fix list:
 <ul>
@@ -265,9 +265,9 @@ All of these are corrected below.</div>
 <ul>
 <li>Reorder the rows to 1, 4, 3, 2.</li>
 <li>Rewrite the demo with compliance on and a portfolio manager authorizing (N5).</li>
-<li>Make the SDK contributor the named client, after go-live (fix 26).</li>
+<li>Name one client that builds with Studio (fix 26).</li>
 <li>Drop the stability labels from the RFP answer (fix 56).</li>
-<li>Add one line on who owns each row (N6).</li>
+<li>Optional: one line on who owns each row (N6).</li>
 <li>Add a pricing and packaging condition on page 12 (N2).</li>
 </ul></div>
 <div class='dec'><h3>Decision 5. Does your "suggested" rule cover "suggests"?</h3>
