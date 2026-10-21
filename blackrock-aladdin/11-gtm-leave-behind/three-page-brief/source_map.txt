@@ -1,0 +1,18 @@
+Brief number -> Prep 2 source number
+1 -> 1  Dave Woodhead, Head of Engineering for Aladdin Studio, Snowflake Data Cloud podcast, Nov. 11, 2025
+2 -> 14  BlackRock, Aladdin Studio product page, as of Oct. 2026
+3 -> 30  BlackRock, Aladdin APIs product page, as of Oct. 2026
+4 -> 6  asdk_plugin_* packages, version 2.0.0b3, 11 packages holding 54 Swagger 2.0 specifications, PyPI, unpacked Oct. 2026
+5 -> 20  BlackRock, Aladdin Data Cloud product page, as of Oct. 2026
+6 -> 29  AladdinSDK README and source, github.com/blackrock/aladdinsdk, as of Oct. 19, 2026
+7 -> 44  Aladdin developer portal, checked Oct. 20, 2026 (redirects to the client login)
+8 -> 32  BlackRock, ATX: Aladdin Tools for Excel product page, as of Oct. 20, 2026
+9 -> 10  BlackRock, “Build vs. Buy: How Asset Managers Are Rethinking Key Decisions Today,” webinar replay dated June 2026, published captions
+10 -> 7  SimCorp, “Introducing Agent Launchpad,” 2026
+11 -> 75  Arcesium, “Arcesium unveils new suite of AI features in Aquata,” press release, 2025
+12 -> 77  Bloomberg, “Bloomberg Launches Enterprise MCP…,” press release, Sept. 29, 2026
+13 -> 56  Pull request 52, URL rewriting for enterprise API gateways, blackrock/aladdinsdk, Dec. 2025
+14 -> 57  Pull request 53, additional HTTP headers, blackrock/aladdinsdk, Dec. 2025
+15 -> 53  Janus Henderson Group, Form 10-K for fiscal 2025, SEC EDGAR
+16 -> 49  Full-text search of SEC EDGAR for “Aladdin Studio,” run Oct. 2026
+17 -> 9  Brennan Rosales and Pedro Vicente Valdez, BlackRock, LangChain Interrupt 2025, machine transcription
