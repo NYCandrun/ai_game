@@ -1,23 +1,6 @@
-# PMM onboarding research: the one-shot prompt
+# Company research prompt
 
-## How to use it
-
-1. Create an empty private GitHub repository for the company.
-2. Optionally, put anything you already have in a folder called `00-inputs/` at the top of the repo. For example:
-   - PDFs, decks, transcripts or exported pages;
-   - a list of links;
-   - your own notes, questions or the job description for your role;
-   - a design guide for the final deliverable: a brand guide, a sample HTML or PDF page, fonts, or a template.
-3. Start a fresh Claude Code session on the repo, in the cloud or locally.
-4. Paste everything from "BEGIN PROMPT" to "END PROMPT" as your first message, with the company's URL on the first line.
-
-The run goes straight through without stopping. It still writes a coverage report and a list of pages it could not reach, so you can check them afterwards. Expect a few hours and dozens of agents. The second line of the prompt asks for a workflow, which is what lets it orchestrate agents at that scale.
-
----
-
-BEGIN PROMPT
-
-COMPANY URL: [https://company.com]
+The company URL is in my chat message. This document is the prompt to apply to the company, and the website, that URL points to.
 
 Use a workflow for this. Run agents in parallel wherever the steps below allow it.
 
@@ -35,7 +18,7 @@ The facts come first. Sense-making only uses facts that are in the facts store.
 ## Inputs
 
 You have two inputs:
-1. **The company URL** on the first line of this message.
+1. **The company URL** in my chat message.
 2. **Everything in `00-inputs/`,** if the folder exists. I put it there before this run.
 
 Everything else you work out yourself.
@@ -366,24 +349,3 @@ Finish with a short report:
 - the top five open questions;
 - the blocked list;
 - the three findings you are least sure of, and why.
-
-END PROMPT
-
----
-
-## Notes from the Aladdin Studio project that shaped this prompt
-
-- **The best evidence was rarely on the product pages.** It came from:
-  - API specifications inside public packages;
-  - job postings;
-  - a customer's proxy statement;
-  - government tender records;
-  - captions files on the company's media CDN;
-  - executives' podcast appearances.
-
-  The channel list above is built to reach those.
-- **The errors that survived longest were conceptual, not factual.** The facts were right but tied together wrongly: a diagram arrow, a "runs on", a shortened quote that turned an aim into a fact, or a quote attributed to the wrong speaker. That is why verification checks meaning and speakers, and why Phase 5 has a technical product marketer.
-- **Agents' hand-back summaries miss things.** Reading the full reports found fixes the summaries left out.
-- **Some sites block automated access.** Plan for a short list of pages to open by hand.
-- **Machine transcripts need a spot-check** wherever a quote carries weight.
-- **Leave out the heavier rounds for onboarding.** These are the adversarial audit, the expert panel and the extra-information cut. They are worth running only when a document goes to someone outside the company. Phase 3 and Phase 5 are enough for onboarding.
