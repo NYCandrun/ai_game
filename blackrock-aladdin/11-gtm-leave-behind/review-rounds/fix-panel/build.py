@@ -129,14 +129,14 @@ add(41, "Exhibit 16 and p13", "after qualification; Get help: SDK changes from o
 add(42, "p8, Exhibit 10, register 64", "26 earnings calls, Q1 2020 to Q2 2026; six and a half years",
     "\"27 earnings calls, Q1 2020 to Q3 2026\", \"nearly seven years\". All six terms were recounted on Q3 2026, all zero. Name the transcript source used.", "")
 
-add(43, "p5", "35 operations are marked long-running", "Consider skipping. Extra detail that does not change the argument. If kept: \"25 operations run as long-running jobs, and each of the 10 specifications that has them offers a status call.\"", "")
+add(43, "p5", "35 operations are marked long-running", "Your decision: cut. No change to v23. (Was: \"25 operations run as long-running jobs, and each of the 10 specifications that has them offers a status call.\")", "")
 add(44, "Exhibit 4, Exhibit 2 note", "No event specification is public", "\"No public specification covers business events.\"", "")
 add(45, "p8, p9 box", "four usage measures; fastest", "\"four volume estimates to 2030\". Drop \"fastest\".", "")
 add(46, "Exhibit 10", "an add-on sold with Aladdin Enterprise", "\"cited among products clients use alongside Aladdin Enterprise\"", "")
 add(47, "Exhibit 9 PPF", "up to £74.0 million ... estimate of up to £55 million; supplier's address", "Add \"over ten years\". Say \"supplier web address\".", "")
 add(48, "Exhibit 9 PBGC", "about the same yearly price", "\"at the same yearly price\". The records name BlackRock, not Aladdin.", "")
 add(49, "Register 3 and 58", "FactSet dated \"2025\"; 58 title mismatch", "Date 3 as December 16, 2025. Correct 58's title.", "")
-add(50, "p3", "Its 24 percent rise includes Preqin", "Consider skipping. Extra detail that does not change the argument. If kept: Add \"Annual contract value grew 16 percent excluding Preqin.\"", "The reader: use BlackRock's own figure, not a derived one.")
+add(50, "p3", "Its 24 percent rise includes Preqin", "Your decision: keep. Add \"Annual contract value grew 16 percent excluding Preqin.\"", "The reader: use BlackRock's own figure, not a derived one.")
 add(51, "p12", "A 2026 job posting for Aladdin Graph ... over 200 institutions", "Delete the sentence. It repeats the client base line before it.", "")
 add(52, "p12", "Copilot's guardrails are tested daily", "\"Copilot's system prompts are tested daily by AI judges\", placed with the controls that stay inside Copilot.", "")
 add(53, "p6, Exhibit 7", "Only Woodhead names every part / names them all", "\"Only Woodhead lists all three parts in one definition.\"", "")
@@ -146,11 +146,11 @@ add(55, "Exhibit 13", "would stop maintaining compliance reporting in house firs
 add(56, "Exhibit 15 row 1", "It lists the APIs by area, with stability labels. ... It covers Snowflake and Databricks connectors",
     "\"It lists the APIs by area and marks which are stable. It covers the Snowflake connection for Data Cloud, and how a client's own AI tools can call the APIs today.\"", "The reader: showing that 24 of 54 specs are alpha would cost marks.")
 add(57, "Exhibit 16", "See the catalog: public", "\"Public, but only by unpacking the packages\"", "")
-add(58, "Exhibit 4 note", "I read Studio Compute sessions as the SDK's name for Aladdin Compute", "Consider skipping. Extra detail that does not change the argument. If kept: \"The SDK uses both names for the same hosted environment.\"", "")
+add(58, "Exhibit 4 note", "I read Studio Compute sessions as the SDK's name for Aladdin Compute", "Your decision: keep. \"The SDK uses both names for the same hosted environment.\"", "")
 add(59, "Exhibit 12 smaller rows, note", "MSCI, S&P, Snowflake, Databricks rows; State Street note",
     "The competitive analyst's qualifiers. State Street note: \"State Street is not listed because I found no AI feature it has released to clients.\"", "")
-add(60, "Exhibit 5 note", "", "Consider skipping. Extra detail that does not change the argument. If kept: \"five are marked for internal use\".", "")
-add(61, "Exhibit 4 Spaces", "", "Consider skipping. Recommend leaving out.", "The marketer: not actionable. The reader defers. The others would add it.")
+add(60, "Exhibit 5 note", "", "Your decision: keep. Add \"five are marked for internal use\".", "")
+add(61, "Exhibit 4 Spaces", "", "Your decision: keep. Add \"Spaces: named alongside Projects. Not described publicly.\"", "The marketer: not actionable. The reader defers. The others would add it.")
 
 NEW = [
  ("N1", "Cover heading", "What public sources show.", "\"What public sources show, and one direction they point to.\"", "The marketer: the thesis is a proposal and should not sit under a findings heading."),
@@ -161,10 +161,10 @@ NEW = [
   "\"BlackRock could describe how Copilot's tools are registered, permissioned and tested.\"", "The reader and engineer: no risk or security function would publish the tool-to-API map."),
  ("N5", "Exhibit 15 row 4", "Posting an order runs compliance by default, unless the caller turns it off...",
   "\"In the demo, the client's AI tool proposes a rebalance and posts it as what-if orders with compliance on. A portfolio manager authorizes them before a trader works them.\"", "The reader: do not pitch the off-switch to a buyer's risk team."),
- ("N6", "Exhibit 15 order and owners", "Rows 1, 2, 3, 4", "Reorder to 1, 4, 3, 2. Consider skipping the owners line. If kept: \"Only the RFP answer is marketing's to ship alone. The demo needs product and legal, the client story needs client consent, and the page needs a product decision.\"", "From the reader."),
+ ("N6", "Exhibit 15 order and owners", "Rows 1, 2, 3, 4", "Reorder to 1, 4, 3, 2. Your decision: keep. Add the owners line: \"Only the RFP answer is marketing's to ship alone. The demo needs product and legal, the client story needs client consent, and the page needs a product decision.\"", "From the reader."),
  ("N7", "p12 identity", "(absent)", "\"Acting for each user\" means a delegated sign-in for that user. An application account would carry its own permissions.", "The engineer: this is what makes \"that user's permissions\" true."),
  ("N8", "Route label", "(absent)", "Label the route \"an MCP server or an agent protocol such as A2A, my inference\".", "The Copilot team said it is evaluating A2A and LangChain's agent protocol."),
- ("N9", "Why the tools matter", "(absent)", "Optional. \"Copilot's flagship example, a portfolio's exposure to a sector, has no public API today.\"", "The engineer: this is the concrete reason opening Copilot's tools adds something."),
+ ("N9", "Why the tools matter", "(absent)", "Your decision: cut. No change to v23. (Was: \"Copilot's flagship example, a portfolio's exposure to a sector, has no public API today.\")", "The engineer: this is the concrete reason opening Copilot's tools adds something."),
  ("N10", "Register", "(absent)", "Add the Aquata MCP page and the State Street article. Fix numbering at 27/28 and 73/74.", ""),
  ("N11", "Existing v23 rule breaks", "p2, p7, p10, p13 semicolons; p6, p11 em-dashes", "Replace each with full stops or plain attribution lines.", "The editor found these."),
  ("N12", "Accessibility labels", "Exhibits 3, 11, 14", "Update to match the new text.", ""),
@@ -205,7 +205,7 @@ parts.append("""<h1>Proposed changes for v24: panel review</h1>
 <li>New text states only the fact.</li>
 <li>Say things explicitly.</li>
 </ul>
-<p class='lead'>Layout is left to fix later, as you asked, so no wording here was shortened to fit a page. Asides that do not serve the point have been cut. Fixes that are only extra detail are marked "Consider skipping". Citations appear as [source N, name] so they do not read as part of the wording.</p>
+<p class='lead'>Layout is left to fix later, as you asked, so no wording here was shortened to fit a page. Asides that do not serve the point have been cut. Your decisions on the extra-detail items are marked: keep 50, 58, 60, 61 and N6. Cut 43 and N9. Citations appear as [source N, name] so they do not read as part of the wording.</p>
 <p class='lead'>Panel key: A accept, C accept with change (my recommendation uses the changed wording), R reject, D defer.</p>
 <div class='box'><b>Bottom line.</b> Five of six reviewers back an evolved thesis and a v24. The devil's advocate argues for leaving v23 alone and fixing only three lines. All six agree on three changes: page 2's "already runs its own business this way", Exhibit 15 row 2's promise of Copilot's guardrails, and Exhibit 2's "Explore what-if". The panel also found real faults in my own fix list:
 <ul>
